@@ -45,7 +45,8 @@ for (const file of files) {
     if (/\d/.test(m.model || "")) err(W, "mission.model has digits");
     if (!Array.isArray(m.checklist) || m.checklist.length < 3 || m.checklist.length > 5 || !m.checklist.every(str)) err(W, "mission.checklist needs 3-5 items");
   });
-  if (types.filter((t) => t === "oral").length !== 2) err("file", "exactly 2 oral and 2 ecrit missions per level");
+  const oral = types.filter((t) => t === "oral").length;
+  if (oral < 2 || types.length - oral < 2) err("file", "at least 2 oral and 2 ecrit missions per level");
   total += errors.length;
   console.log(`${file}: ${errors.length} errors`);
   errors.forEach((e) => console.log("  ERROR " + e));
