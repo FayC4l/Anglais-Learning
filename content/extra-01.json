@@ -1,0 +1,131 @@
+{
+  "level": 1,
+  "units": [
+    {
+      "unit": "1.1",
+      "pron": {
+        "focus": "Le « h » qu'on entend",
+        "ipa": "/h/",
+        "explain": "En français, le « h » ne se prononce jamais (« un hôtel »), mais en anglais, il s'entend presque toujours ! C'est un petit souffle chaud, comme quand tu réchauffes tes mains en plein hiver à Ottawa : « hhha ». Mets ta main devant ta bouche : sur [[hello]] et sur [[hockey]], tu dois sentir de l'air chaud. Attention, le piège marche dans les deux sens : sans souffle, [[hand]] (main) devient [[and]] (et), mais avec un souffle en trop, [[eat]] (manger) devient [[heat]] (chaleur) !",
+        "words": [
+          { "en": "hello", "fr": "bonjour, salut", "hint": "« hè-LÔ » : souffle le « h », accent sur la fin" },
+          { "en": "hi", "fr": "salut", "hint": "« haï » : un petit souffle, puis « aï »" },
+          { "en": "how", "fr": "comment", "hint": "« haou » : souffle d'abord, comme dans [[How are you?]]" },
+          { "en": "happy", "fr": "content, heureux", "hint": "« HA-pi » : souffle sur « HA », accent au début" },
+          { "en": "hockey", "fr": "hockey", "hint": "« HO-ki » : en français on dit « ockey », en anglais on souffle !" },
+          { "en": "he", "fr": "il", "hint": "« hii » : souffle, puis un « i » bien long" },
+          { "en": "house", "fr": "maison", "hint": "« haouss » : souffle, puis « aou » et un « s » bien sifflé" },
+          { "en": "hand", "fr": "main", "hint": "« hannd » : sans le souffle, ça devient [[and]] (et) !" }
+        ],
+        "pairs": [["hand", "and"], ["heat", "eat"], ["hat", "at"], ["hold", "old"], ["hear", "ear"], ["hi", "I"]],
+        "practice": ["Hi, Emma! Hello, Amir! How are you?", "Henry has a hat, and Ana has an apple."]
+      },
+      "mission": {
+        "type": "ecrit",
+        "prompt": "Ta classe échange des messages avec une classe de Toronto. Écris ton premier message à ta correspondante, Maya : salue-la, présente-toi, dis que tu es content(e) de la connaître et demande-lui comment elle va.",
+        "model": "Hi, Maya! My name is Félix. Nice to meet you! How are you?",
+        "checklist": [
+          "J'ai commencé par [[Hi]] ou [[Hello]], suivi du prénom",
+          "Je me suis présenté(e) avec [[My name is]] ou [[I'm]] + mon prénom",
+          "J'ai écrit [[Nice to meet you!]]",
+          "J'ai posé la question [[How are you?]] avec un point d'interrogation",
+          "J'ai relu mon message à voix haute en soufflant le « h » de [[Hi]] et de [[How]]"
+        ]
+      }
+    },
+    {
+      "unit": "1.2",
+      "pron": {
+        "focus": "Le « th » de three",
+        "ipa": "/θ/",
+        "explain": "Le « th » de [[three]] n'existe pas en français, alors on le remplace souvent par un « t » ou un « s »… et ton ami entend [[tree]] (un arbre) au lieu de [[three]] (trois) ! Pour le réussir, glisse le bout de ta langue entre tes dents du haut et du bas (juste un peu, pas besoin de tirer la langue !), puis souffle doucement. Ta gorge ne vibre pas : c'est le bruit d'un serpent qui zozote. Entraîne-toi devant un miroir : si tu vois le bout de ta langue, c'est gagné !",
+        "words": [
+          { "en": "three", "fr": "trois", "hint": "« thrii » : langue entre les dents, souffle, puis « rii » (pas « trii » !)" },
+          { "en": "thirteen", "fr": "treize", "hint": "« theur-TIIN » : « th » soufflé au début, accent sur la fin" },
+          { "en": "thank you", "fr": "merci", "hint": "« THANNK-you » : langue entre les dents pour le « th », pas « tannk-you »" },
+          { "en": "think", "fr": "penser, croire", "hint": "« thinnk » : souffle sur le « th », puis un « i » court" },
+          { "en": "birthday", "fr": "anniversaire", "hint": "« BEURTH-déï » : n'oublie pas le « th » caché au milieu !" },
+          { "en": "math", "fr": "mathématiques", "hint": "« math » : comme « les maths », mais finis en soufflant, langue entre les dents" },
+          { "en": "mouth", "fr": "bouche", "hint": "« maouth » : finis avec la langue entre les dents (pas « maouss » !)" },
+          { "en": "both", "fr": "les deux", "hint": "« bôth » : finis en soufflant (pas « bôte » !)" }
+        ],
+        "pairs": [["three", "tree"], ["thank", "tank"], ["think", "sink"], ["thin", "tin"], ["math", "mat"], ["path", "pass"]],
+        "practice": ["I think three is my lucky number.", "Happy birthday! Are you thirteen today?"]
+      },
+      "mission": {
+        "type": "oral",
+        "prompt": "Au parc, ta nouvelle voisine Mei, qui parle seulement anglais, te demande : [[How old are you?]] Salue-la, réponds avec une phrase complète, puis pose-lui la même question.",
+        "model": "Hi, Mei! I'm thirteen years old. How old are you?",
+        "checklist": [
+          "J'ai dit [[I'm]] + mon âge, jamais [[I have]] + mon âge",
+          "J'ai dit [[I'm ten]] ou [[I'm ten years old]], mais jamais « I'm ten years » tout court",
+          "J'ai posé la question [[How old are you?]]",
+          "Si mon âge contient un « th » ([[three]], [[thirteen]]), j'ai bien mis ma langue entre mes dents"
+        ]
+      }
+    },
+    {
+      "unit": "1.3",
+      "pron": {
+        "focus": "Le « i » court (big) ou long (green)",
+        "ipa": "/ɪ/ – /iː/",
+        "explain": "En anglais, il y a deux « i », et ils changent le sens des mots : [[ship]] (bateau) n'est pas [[sheep]] (mouton) ! Le « i » long de [[green]] est tendu et étiré : fais un grand sourire, comme pour une photo, « griiine ». Le « i » court de [[big]] est rapide et détendu, la bouche moins souriante : c'est le « i » de « vite » ou de « petite » quand tu parles avec l'accent d'ici. Le piège du francophone, c'est de tout dire avec le même « i » : écoute bien la différence entre [[sit]] (s'asseoir) et [[seat]] (siège) !",
+        "words": [
+          { "en": "big", "fr": "gros, grand", "hint": "« bigue » : « i » court et détendu, comme dans « vite »" },
+          { "en": "sit", "fr": "s'asseoir", "hint": "« sitt » : « i » court, bouche détendue" },
+          { "en": "six", "fr": "six", "hint": "« siks » : « i » court, et un « k » caché (pas « sisse » !)" },
+          { "en": "it", "fr": "ça, il ou elle (pour une chose)", "hint": "« itt » : un « i » court et détendu, puis un « t » net" },
+          { "en": "green", "fr": "vert", "hint": "« griine » : « ii » long, avec un grand sourire" },
+          { "en": "see", "fr": "voir", "hint": "« sii » : « ii » long et tendu" },
+          { "en": "teacher", "fr": "enseignant, enseignante", "hint": "« TII-tcheur » : « ii » long, accent au début" },
+          { "en": "please", "fr": "s'il te plaît, s'il vous plaît", "hint": "« pliiz » : « ii » long, et finis par un « z »" },
+          { "en": "sixteen", "fr": "seize", "hint": "« siks-TIIN » : les deux « i » dans un seul mot, court puis long et accentué !" }
+        ],
+        "pairs": [["ship", "sheep"], ["sit", "seat"], ["it", "eat"], ["fill", "feel"], ["hit", "heat"], ["bin", "bean"]],
+        "practice": ["It's a big green bin.", "Please sit in this seat.", "Six sheep sleep on a big ship."]
+      },
+      "mission": {
+        "type": "ecrit",
+        "prompt": "Ta prof organise une chasse aux couleurs dans la classe. Écris trois phrases pour décrire trois objets de ton pupitre avec leur couleur ; au moins une phrase doit utiliser [[an]].",
+        "model": "It's a red pen. It's an orange eraser. It's a green pencil.",
+        "checklist": [
+          "J'ai mis la couleur AVANT l'objet ([[a red pen]], pas « a pen red »)",
+          "J'ai choisi [[a]] ou [[an]] selon le son du mot juste après : [[an orange pen]], mais [[a red eraser]]",
+          "J'ai écrit [[It's]] avec une apostrophe",
+          "J'ai relu à voix haute : « i » court dans [[it's]], « ii » long dans [[green]]"
+        ]
+      }
+    },
+    {
+      "unit": "1.4",
+      "pron": {
+        "focus": "Le « th » de mother",
+        "ipa": "/ð/",
+        "explain": "Le « th » de [[mother]] et de [[this]] est le cousin du « th » de [[three]] : même position, le bout de la langue entre les dents, mais cette fois ta voix vibre. Pose ta main sur ta gorge : sur [[three]], rien ne bouge ; sur [[this]], ça vibre comme un téléphone ! Le piège le plus courant ici, c'est de dire « dis » et « moder » avec un « d » (ou « zis » avec un « z ») : on entend alors [[day]] (jour) au lieu de [[they]] (ils). Bonne nouvelle : tu vas dire [[the]], [[this]] et [[that]] des milliers de fois, alors tu vas devenir un pro très vite !",
+        "words": [
+          { "en": "mother", "fr": "mère", "hint": "« MEU-theur » : « th » qui vibre, langue entre les dents" },
+          { "en": "father", "fr": "père", "hint": "« FÂ-theur » : « â » bien ouvert, puis « th » qui vibre" },
+          { "en": "brother", "fr": "frère", "hint": "« BREU-theur » : pas « bro-deur » !" },
+          { "en": "this", "fr": "ce, cette, ceci", "hint": "« thiss » : « i » court, et ta gorge vibre" },
+          { "en": "that", "fr": "ce… là, cela", "hint": "« thatt » : bouche bien ouverte sur le « a »" },
+          { "en": "the", "fr": "le, la, les", "hint": "« theu » : tout petit et rapide (« thi » devant une voyelle : [[the apple]])" },
+          { "en": "they", "fr": "ils, elles", "hint": "« théï » : « th » qui vibre, puis « é » qui glisse vers « i »" },
+          { "en": "there", "fr": "là, là-bas", "hint": "« thèr » : « th » qui vibre, et un « r » anglais à la fin" }
+        ],
+        "pairs": [["they", "day"], ["then", "den"], ["there", "dare"], ["though", "dough"], ["breathe", "breeze"]],
+        "practice": ["This is my mother, and that is my father.", "The other brother is over there."]
+      },
+      "mission": {
+        "type": "oral",
+        "prompt": "Tu montres une photo de ta famille à ta nouvelle amie Olivia, qui parle seulement anglais. Présente-lui trois personnes de la photo et dis l'âge de l'une d'entre elles.",
+        "model": "This is my mom, and this is my dad. This is my sister, Léa. She's eight.",
+        "checklist": [
+          "J'ai présenté chaque personne avec [[This is my]]",
+          "J'ai dit [[this]] avec la langue entre les dents et la gorge qui vibre (pas « dis »)",
+          "J'ai utilisé [[he]] pour un garçon ou un homme, et [[she]] pour une fille ou une femme",
+          "J'ai dit l'âge avec [[He's]] ou [[She's]] + le nombre (jamais [[has]])"
+        ]
+      }
+    }
+  ]
+}

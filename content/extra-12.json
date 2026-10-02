@@ -1,0 +1,155 @@
+{
+  "level": 12,
+  "units": [
+    {
+      "unit": "12.1",
+      "pron": {
+        "focus": "Le rythme de l'anglais soutenu",
+        "ipa": "",
+        "explain": "Le français est une mitraillette : chaque syllabe a la même force. L'anglais, lui, est un tambour : les **mots pleins** (noms, verbes, adjectifs) frappent fort, et les **mots outils** ([[a]], [[the]], [[to]], [[that]], [[you]], [[were]], [[as]]) se glissent entre les coups, tout petits. Même dans une phrase très soutenue comme [[Should you need help]], on n'articule pas tout pareil : « cheud-yeu-NIID-HÈLP ». Le piège des francophones : croire que « formel » veut dire « chaque mot détaché »… et sonner comme un robot ! Truc : tape le rythme sur la table, un coup par mot plein seulement.",
+        "words": [
+          { "en": "it's high time we left", "fr": "il est grand temps qu'on parte", "hint": "« its-HAÏ-TAÏM-wi-LÈFT » : [[we]] tout petit entre deux coups forts" },
+          { "en": "I'd rather you didn't", "fr": "je préférerais que tu ne le fasses pas", "hint": "« aïd-RA-theur-yeu-DI-deunt » : [[you]] devient « yeu »" },
+          { "en": "you'd better hurry", "fr": "tu ferais mieux de te dépêcher", "hint": "« youd-BÈ-deur-HEU-ri » : le d de [[you'd]] est minuscule, mais il est là" },
+          { "en": "as if it were a game", "fr": "comme si c'était un jeu", "hint": "« eu-ZI-fit-weur-eu-GUÉIM » : tout glisse jusqu'à [[game]]" },
+          { "en": "should you need help", "fr": "si jamais tu as besoin d'aide", "hint": "« cheud-yeu-NIID-HÈLP » : [[should]] et [[you]] restent légers" },
+          { "en": "were I to win", "fr": "si je devais gagner", "hint": "« weur-aï-teu-WIN » : seul [[win]] frappe fort" },
+          { "en": "provided that you're on time", "fr": "à condition que tu sois à l'heure", "hint": "« preu-VAÏ-did-theut-yeur-ân-TAÏM » : [[that]] devient « theut »" },
+          { "en": "in case it rains", "fr": "au cas où il pleuvrait", "hint": "« in-KÉIS-it-RÉINZ » : deux coups forts, [[in]] et [[it]] avalés" },
+          { "en": "we insist that he be there", "fr": "nous exigeons qu'il soit là", "hint": "« wi-in-SIST-theut-hi-BII-THÈR » : [[be]] reste fort, c'est le cœur de la demande" },
+          { "en": "as though nothing had happened", "fr": "comme si de rien n'était", "hint": "« eu-THÔ-NEU-thing-eud-HA-peund » : [[had]] devient un petit « eud »" }
+        ],
+        "pairs": [],
+        "practice": [
+          "Should you need any help, please do not hesitate to contact us.",
+          "It's high time we started, provided that everyone is here.",
+          "I'd rather you called me, in case the message gets lost."
+        ]
+      },
+      "mission": {
+        "type": "ecrit",
+        "prompt": "Tu es président ou présidente du club de robotique de ton école. Écris l'annonce officielle de cinq à huit phrases pour préparer la grande compétition, avec au moins cinq structures de l'unité ([[it's high time]], [[had better]], [[should you need]], [[provided that]], [[in case]], [[insist that]]…).",
+        "model": "Dear members, it's high time we got ready for the regional robotics competition. Our coach insists that every member be present on Thursday at four o'clock. Should you need a ride, please contact me before Wednesday. You had better bring your laptop, in case the school computers are all busy. Provided that everyone does their part, we have a real chance of winning. Personally, I would rather we started early than finished in a panic. Thank you, and see you on Thursday! Priya, club president",
+        "checklist": [
+          "Après [[it's high time]] et [[I would rather]] + autre personne, j'ai mis le passé ([[we got]], [[we started]])",
+          "Après [[insist that]], j'ai mis le verbe de base, même avec he/she : [[that every member be]]",
+          "J'ai écrit [[Should you need]] sans [[if]], avec l'inversion",
+          "J'ai écrit [[had better]] + verbe de base, sans [[to]]",
+          "En relisant à voix haute, j'ai gardé les petits mots légers"
+        ]
+      }
+    },
+    {
+      "unit": "12.2",
+      "pron": {
+        "focus": "L'intonation des émotions et des sous-entendus",
+        "ipa": "",
+        "explain": "En anglais, la mélodie peut dire le contraire des mots ! Une voix qui **descend** franchement est sincère ([[Fine.]] = ça va vraiment) ; une voix qui **descend puis remonte** (le « ton fourche ») sous-entend un « mais… » : [[Fine…]] = d'accord, mais je ne suis pas content. Et une voix toute **plate**, presque ennuyée, sonne sarcastique : [[Great.]] = c'est tout sauf génial. Soyons honnêtes : la voix de synthèse de l'appli ne sait pas jouer toutes ces émotions, elle lit presque tout de façon neutre ; elle te sert pour les sons, mais c'est **toi** l'acteur pour la mélodie, en suivant les indices. Le piège des francophones : garder la mélodie française partout, qui monte souvent à la fin… et avoir l'air de poser une question quand tu veux être poli !",
+        "words": [
+          { "en": "fine", "fr": "bien, d'accord", "hint": "« FAÏN » ↘ (descend) = ça va vraiment ; ↘↗ (descend puis remonte) = bon… d'accord, mais j'ai un reproche" },
+          { "en": "really", "fr": "vraiment", "hint": "« RII-li » ↗ (monte) = « Ah oui ? » surprise et intérêt ; ↘ (descend, lent) = je ne suis pas impressionné" },
+          { "en": "great", "fr": "génial, super", "hint": "« GRÉIT » ↘ qui part de haut = vrai enthousiasme ; tout plat et bas = sarcasme" },
+          { "en": "sure", "fr": "bien sûr, d'accord", "hint": "« CHOUR » ↘ = oui, sans problème ; ↘↗ allongé = oui… mais j'en doute" },
+          { "en": "whatever", "fr": "peu importe, n'importe quoi", "hint": "« weu-DÈ-veur » ↘ sec = très impoli, ça veut dire « je m'en fiche » ; à éviter avec les adultes !" },
+          { "en": "sorry", "fr": "désolé ; pardon ?", "hint": "« SÔ-ri » ↘ = je m'excuse ; ↗ (monte) = « Pardon ? Je n'ai pas compris »" },
+          { "en": "thanks a lot", "fr": "merci beaucoup", "hint": "« THANK-seu-LÂT » ↘ chaleureux = sincère ; plat et lent = « merci pour rien » (sarcasme)" },
+          { "en": "oh", "fr": "oh, ah", "hint": "« Ô » ↘ long = déception ; ↗ court = surprise ; ↘↗ = « ah, je vois… »" },
+          { "en": "that's nice", "fr": "c'est gentil, c'est bien", "hint": "« thats-NAÏS » ↘ chaleureux = sincère ; plat = poli, mais pas intéressé" }
+        ],
+        "pairs": [],
+        "practice": [
+          "Oh, that's just great.",
+          "Really? I didn't know that!",
+          "Sure, I'd love to help."
+        ]
+      },
+      "mission": {
+        "type": "oral",
+        "prompt": "Ton ami dit que ton petit frère est [[nosy]], [[stubborn]], [[stingy]] et [[childish]]. Défends-le à voix haute en cinq à sept phrases, en remplaçant chaque mot négatif par un mot positif qui veut presque dire la même chose. Commence par un [[Sure]] ou un [[Really?]] avec une mélodie qui montre ton émotion.",
+        "model": "Really? You think my little brother is nosy? Sure, he asks a lot of questions, but he isn't nosy, he's just curious. And he's not stubborn, he's determined: he practised his skating jumps every day until he finally landed one. Okay, he never spends his allowance, but that makes him thrifty, not stingy. And childish? No way. He's childlike: he still gets excited about the first snow, and honestly, that's what I love about him.",
+        "checklist": [
+          "J'ai remplacé chaque mot négatif par son « jumeau » positif ([[curious]], [[determined]], [[thrifty]], [[childlike]])",
+          "J'ai montré la différence de sens, pas seulement changé le mot",
+          "Mon [[Really?]] montait (surprise), mon [[Sure]] descendait puis remontait (oui, mais…)",
+          "J'ai vraiment joué l'émotion avec ma voix, sans attendre que l'appli le fasse pour moi"
+        ]
+      }
+    },
+    {
+      "unit": "12.3",
+      "pron": {
+        "focus": "L'accent des verbes à trois mots",
+        "ipa": "",
+        "explain": "Dans un verbe à trois mots comme [[come up with]], c'est la **particule du milieu** qui prend le coup le plus fort : « keu-MEUP-with ». La préposition finale ([[with]], [[to]], [[of]], [[for]], [[on]]) reste petite et se colle au complément. Et comme dans les phrasal verbs simples, tout s'enchaîne : la consonne de la fin glisse sur la voyelle suivante, [[run out of]] sonne « reu-NAOU-deuv ». Le piège des francophones : couper entre chaque mot, ou appuyer sur le dernier comme en français. Truc : imagine que la particule est la vedette, et les deux autres ses gardes du corps !",
+        "words": [
+          { "en": "come up with", "fr": "trouver (une idée), inventer", "hint": "« keu-MEUP-with » : le m glisse sur [[up]], qui prend l'accent" },
+          { "en": "put up with", "fr": "endurer, supporter", "hint": "« pou-DEUP-with » : le t devient un « d » léger devant [[up]]" },
+          { "en": "look forward to", "fr": "avoir hâte de (+ -ing)", "hint": "« louk-FOR-weurd-teu » : accent sur « for », [[to]] tout petit" },
+          { "en": "get away with", "fr": "s'en tirer, s'en sortir sans punition", "hint": "« guè-deu-OUÉI-with » : accent sur « wéi »" },
+          { "en": "catch up with", "fr": "rattraper (quelqu'un)", "hint": "« ka-TCHEUP-with » : le « tch » glisse sur [[up]]" },
+          { "en": "run out of", "fr": "manquer de, ne plus avoir de", "hint": "« reu-NAOU-deuv » : le n glisse sur [[out]], le t devient « d »" },
+          { "en": "look up to", "fr": "admirer (quelqu'un)", "hint": "« lou-KEUP-teu » : accent sur [[up]]" },
+          { "en": "cut down on", "fr": "réduire, consommer moins de", "hint": "« keut-DAOU-nân » : accent sur [[down]], le n glisse sur [[on]]" },
+          { "en": "make up for", "fr": "compenser, se rattraper", "hint": "« méi-KEUP-for » : le k glisse sur [[up]]" },
+          { "en": "fall out with", "fr": "se brouiller avec", "hint": "« fâ-LAOUT-with » : le l glisse sur [[out]]" }
+        ],
+        "pairs": [],
+        "practice": [
+          "I can't put up with the noise, so I came up with a plan.",
+          "Don't count your chickens before they hatch.",
+          "Actions speak louder than words."
+        ]
+      },
+      "mission": {
+        "type": "ecrit",
+        "prompt": "Le blogue de ton école publie chaque semaine « Le proverbe de la semaine ». Écris un billet de six à huit phrases : choisis un proverbe anglais, raconte une petite histoire qui l'illustre (vraie ou inventée), et utilise au moins quatre verbes à particule de l'unité.",
+        "model": "This week's proverb: actions speak louder than words. Last month, my friend Jaden fell out with his teammate after a silly argument. He kept saying sorry, but nothing changed. Then he came up with a better idea: every day, he helped his teammate catch up with the rest of the class in math. That made up for everything, and now they're inseparable again. So, if you've hurt someone's feelings, don't just talk: show them you care. And if it takes a while, remember: better late than never!",
+        "checklist": [
+          "J'ai cité au moins un proverbe exact, sans le traduire mot à mot",
+          "Mon histoire illustre vraiment le sens du proverbe",
+          "J'ai utilisé au moins quatre verbes à trois mots ([[come up with]], [[fall out with]], [[make up for]]…)",
+          "Après [[look forward to]], j'ai mis un verbe en -ing, si je l'ai utilisé",
+          "En relisant à voix haute, j'ai mis l'accent sur la particule du milieu"
+        ]
+      }
+    },
+    {
+      "unit": "12.4",
+      "pron": {
+        "focus": "Lettres muettes et casse-tête « ough »",
+        "ipa": "",
+        "explain": "L'anglais est plein de lettres fantômes : le k devant n ([[knife]], [[knight]]), le b après m ou devant t ([[comb]], [[doubt]]), le t de [[listen]], le s de [[island]], le h de [[hour]] et [[honest]], le p de [[receipt]], et même le d de [[Wednesday]] ! Et « ough » est le roi du casse-tête : « ô » dans [[though]], « ou » dans [[through]], « euf » dans [[tough]], « â » dans [[thought]], « âf » dans [[cough]]. Il n'y a pas de règle magique : c'est l'oreille qui apprend, alors répète chaque mot jusqu'à ce qu'il sonne naturel. Bonne nouvelle : [[knight]] et [[night]], [[hour]] et [[our]] se prononcent exactement pareil, deux mots pour le prix d'un !",
+        "words": [
+          { "en": "knight", "fr": "un chevalier", "hint": "« NAÏT » : le k est muet ; identique à [[night]] (la nuit)" },
+          { "en": "island", "fr": "une île", "hint": "« AÏ-leund » : le s est muet, accent au début" },
+          { "en": "Wednesday", "fr": "mercredi", "hint": "« OUÈNZ-déi » : deux syllabes seulement, le d est muet" },
+          { "en": "doubt", "fr": "un doute, douter", "hint": "« DAOUT » : le b est muet" },
+          { "en": "hour", "fr": "une heure", "hint": "« AOUR » : le h est muet ; identique à [[our]] (notre)" },
+          { "en": "receipt", "fr": "un reçu, une facture", "hint": "« ri-SIIT » : le p est muet, accent à la fin" },
+          { "en": "though", "fr": "pourtant, quand même", "hint": "« thô » : th doux, « ough » = « ô »" },
+          { "en": "through", "fr": "à travers", "hint": "« throu » : th soufflé, « ough » = « ou »" },
+          { "en": "tough", "fr": "dur, difficile, coriace", "hint": "« TEUF » : « ough » = « euf »" },
+          { "en": "thought", "fr": "une pensée ; pensé (passé de think)", "hint": "« THÂT » : th soufflé, « ough » = « â », gh muet" }
+        ],
+        "pairs": [["comb", "come"], ["listen", "lesson"], ["island", "Iceland"], ["cough", "cuff"]],
+        "practice": [
+          "Honestly, I doubt the knight can reach the island in an hour.",
+          "Although the walk through the snow was tough, I thought it was fun.",
+          "On Wednesday, listen carefully and keep your receipt."
+        ]
+      },
+      "mission": {
+        "type": "oral",
+        "prompt": "Le grand oral ! Tu animes l'introduction du balado de ton école. Présente à voix haute, en six à huit phrases, l'invitée du jour : une autrice qui vient de publier un roman. Glisse au moins cinq mots-pièges de l'unité (lettres muettes, « ough »).",
+        "model": "Hi everyone, and welcome to the Wednesday edition of our school podcast! To be honest, I had my doubts about today's topic, but our guest turned out to be amazing. She's a writer who has just published a novel about a knight who lives alone on a tiny island. Although the story is often funny, it's also quite tough at times. I thought it would take me a week to read, but I went through it in a few hours! Stay with us: after the break, she'll answer all your questions.",
+        "checklist": [
+          "J'ai utilisé au moins cinq mots de l'unité ([[Wednesday]], [[honest]], [[doubt]], [[knight]], [[island]], [[though]], [[through]]…)",
+          "Je n'ai prononcé aucune lettre fantôme : pas de k dans [[knight]], pas de s dans [[island]], pas de h dans [[honest]]",
+          "J'ai dit [[Wednesday]] en deux syllabes : « OUÈNZ-déi »",
+          "J'ai bien distingué [[though]], [[through]], [[tough]] et [[thought]]",
+          "J'ai parlé comme un vrai animateur : souriant, avec des pauses et des mots forts"
+        ]
+      }
+    }
+  ]
+}

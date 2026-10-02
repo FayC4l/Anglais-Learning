@@ -1,0 +1,2636 @@
+{
+  "id": 5,
+  "cefr": "B1",
+  "title": "Hier",
+  "titleEn": "Yesterday",
+  "intro": "Raconte ce qui s'est passé hier, la semaine dernière ou il y a longtemps. À la fin du niveau, tu racontes une vraie histoire en anglais, avec du suspense !",
+  "boss": {
+    "name": "Le Fantôme du Passé",
+    "taunt": "Bouhouhou… Hier encore, tu disais « I goed » et « Did you went ? ». Prouve-moi que le passé n'a plus de secrets pour toi !",
+    "defeat": "Nooon… Je retourne dans le passé… et cette fois, pour de bon !"
+  },
+  "units": [
+    {
+      "id": "5.1",
+      "title": "Was, were et -ed",
+      "titleEn": "Back in Time",
+      "goal": "Parler du passé avec was / were, les verbes réguliers en -ed et les mots comme yesterday et ago.",
+      "lesson": [
+        {
+          "type": "p",
+          "text": "Bienvenue dans le passé ! Pour raconter une action **finie** (hier, la fin de semaine dernière…), l'anglais utilise le **passé simple**. Là où le français dit « j'ai joué » ou « je jouais », l'anglais dit souvent juste [[I played]]."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Sujet",
+            "to be au passé",
+            "Négatif",
+            "Question"
+          ],
+          "rows": [
+            [
+              "I",
+              "[[I was]]",
+              "[[I wasn't]]",
+              "[[Was I late?]]"
+            ],
+            [
+              "you",
+              "[[you were]]",
+              "[[you weren't]]",
+              "[[Were you late?]]"
+            ],
+            [
+              "he / she / it",
+              "[[she was]]",
+              "[[she wasn't]]",
+              "[[Was she late?]]"
+            ],
+            [
+              "we / they",
+              "[[they were]]",
+              "[[they weren't]]",
+              "[[Were they late?]]"
+            ]
+          ]
+        },
+        {
+          "type": "rule",
+          "title": "Les verbes réguliers : + -ed",
+          "text": "On ajoute **-ed** à la base du verbe : [[visit → visited]], [[play → played]]. C'est la **même forme pour tout le monde** : [[I played]], [[she played]], [[they played]]. Jamais de -s au passé !"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Cas",
+            "Ce qu'on fait",
+            "Exemples"
+          ],
+          "rows": [
+            [
+              "le verbe finit par -e",
+              "+ d",
+              "[[arrive → arrived]], [[decide → decided]]"
+            ],
+            [
+              "consonne + y",
+              "y → ied",
+              "[[study → studied]], [[carry → carried]], [[try → tried]]"
+            ],
+            [
+              "voyelle + y",
+              "+ ed (on garde le y)",
+              "[[play → played]], [[stay → stayed]]"
+            ],
+            [
+              "court : consonne + voyelle + consonne",
+              "on double la consonne",
+              "[[stop → stopped]], [[plan → planned]], [[drop → dropped]]"
+            ],
+            [
+              "travel (anglais canadien)",
+              "on double le l",
+              "[[travel → travelled]]"
+            ]
+          ]
+        },
+        {
+          "type": "rule",
+          "title": "Les mots du passé",
+          "text": "[[yesterday]] = hier, [[the day before yesterday]] = avant-hier, [[last night]] = hier soir, [[last weekend]] = la fin de semaine dernière. Pour « il y a » + une durée, on met la durée **puis** [[ago]] : [[two days ago]] = il y a deux jours."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "I was born in Gatineau.",
+              "fr": "Je suis né à Gatineau."
+            },
+            {
+              "en": "We visited the museum two weeks ago.",
+              "fr": "Nous avons visité le musée il y a deux semaines."
+            },
+            {
+              "en": "She studied all weekend.",
+              "fr": "Elle a étudié toute la fin de semaine."
+            },
+            {
+              "en": "Were you tired last night?",
+              "fr": "Étais-tu fatigué hier soir ?"
+            },
+            {
+              "en": "The bus stopped in front of my house.",
+              "fr": "L'autobus s'est arrêté devant ma maison."
+            }
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "Pièges de francophone : « il y a trois jours » se dit [[three days ago]], **jamais** [[there are three days]]. « Hier soir » = [[last night]], pas [[yesterday night]]. Et « je suis né » = [[I was born]] (avec **was** : c'est du passé !)."
+        },
+        {
+          "type": "dialogue",
+          "title": "Lundi matin",
+          "lines": [
+            {
+              "who": "Léa",
+              "en": "Hi Karim! Where were you yesterday?",
+              "fr": "Salut Karim ! Où étais-tu hier ?"
+            },
+            {
+              "who": "Karim",
+              "en": "I was at my grandma's house in Gatineau.",
+              "fr": "J'étais chez ma grand-mère à Gatineau."
+            },
+            {
+              "who": "Léa",
+              "en": "Was it fun?",
+              "fr": "C'était amusant ?"
+            },
+            {
+              "who": "Karim",
+              "en": "Yes! We played cards and I helped her in the kitchen.",
+              "fr": "Oui ! On a joué aux cartes et je l'ai aidée dans la cuisine."
+            },
+            {
+              "who": "Léa",
+              "en": "Lucky you! I stayed home and studied all day.",
+              "fr": "Chanceux ! Moi, je suis restée à la maison et j'ai étudié toute la journée."
+            },
+            {
+              "who": "Karim",
+              "en": "Oh no! Was your test hard?",
+              "fr": "Oh non ! Ton examen était difficile ?"
+            },
+            {
+              "who": "Léa",
+              "en": "No, it was easy. I finished it ten minutes ago!",
+              "fr": "Non, il était facile. Je l'ai fini il y a dix minutes !"
+            }
+          ]
+        },
+        {
+          "type": "fun",
+          "text": "Le sais-tu ? Le canal Rideau, à Ottawa, a ouvert en 1832. En anglais, on lit les années en deux morceaux : [[eighteen thirty-two]]."
+        }
+      ],
+      "vocab": [
+        {
+          "en": "yesterday",
+          "fr": "hier",
+          "alt": [],
+          "ex": "I was very tired yesterday."
+        },
+        {
+          "en": "last night",
+          "fr": "hier soir",
+          "alt": [],
+          "ex": "We watched a movie last night."
+        },
+        {
+          "en": "last weekend",
+          "fr": "la fin de semaine dernière",
+          "alt": [],
+          "ex": "Where were you last weekend?"
+        },
+        {
+          "en": "ago",
+          "fr": "il y a (+ une durée, dans le passé)",
+          "alt": [],
+          "ex": "We moved here three years ago."
+        },
+        {
+          "en": "the day before yesterday",
+          "fr": "avant-hier",
+          "alt": [],
+          "ex": "It snowed the day before yesterday."
+        },
+        {
+          "en": "be born",
+          "fr": "naître",
+          "alt": [],
+          "ex": "I was born in Montreal."
+        },
+        {
+          "en": "arrived",
+          "fr": "arrivé (passé de arrive)",
+          "alt": [],
+          "ex": "The bus arrived late."
+        },
+        {
+          "en": "studied",
+          "fr": "étudié (passé de study)",
+          "alt": [],
+          "ex": "She studied for her test."
+        },
+        {
+          "en": "stopped",
+          "fr": "arrêté (passé de stop)",
+          "alt": [],
+          "ex": "The rain stopped at noon."
+        },
+        {
+          "en": "planned",
+          "fr": "planifié (passé de plan)",
+          "alt": [],
+          "ex": "We planned a picnic."
+        },
+        {
+          "en": "tried",
+          "fr": "essayé (passé de try)",
+          "alt": [],
+          "ex": "I tried to call you."
+        },
+        {
+          "en": "visited",
+          "fr": "visité (passé de visit)",
+          "alt": [],
+          "ex": "We visited our cousins."
+        },
+        {
+          "en": "stayed",
+          "fr": "resté (passé de stay)",
+          "alt": [],
+          "ex": "I stayed home all day."
+        },
+        {
+          "en": "dropped",
+          "fr": "échappé, laissé tomber (passé de drop)",
+          "alt": [],
+          "ex": "Oops! I dropped my phone."
+        },
+        {
+          "en": "carried",
+          "fr": "porté dans ses bras (passé de carry)",
+          "alt": [],
+          "ex": "Dad carried the heavy box."
+        },
+        {
+          "en": "decided",
+          "fr": "décidé (passé de decide)",
+          "alt": [],
+          "ex": "We decided to stay inside."
+        },
+        {
+          "en": "travelled",
+          "fr": "voyagé (passé de travel)",
+          "alt": [],
+          "ex": "They travelled to Vancouver."
+        },
+        {
+          "en": "happened",
+          "fr": "s'est produit (passé de happen)",
+          "alt": [],
+          "ex": "What happened at school?"
+        },
+        {
+          "en": "hurried",
+          "fr": "s'est dépêché (passé de hurry)",
+          "alt": [],
+          "ex": "We hurried to the bus stop."
+        },
+        {
+          "en": "moved",
+          "fr": "déménagé (passé de move)",
+          "alt": [],
+          "ex": "My family moved to Ottawa last year."
+        }
+      ],
+      "sentences": [
+        {
+          "en": "I was very tired last night.",
+          "fr": "J'étais très fatigué hier soir.",
+          "trap": [
+            "were",
+            "am"
+          ],
+          "alt": [
+            "Last night I was very tired."
+          ]
+        },
+        {
+          "en": "We were at the museum yesterday.",
+          "fr": "Nous étions au musée hier.",
+          "trap": [
+            "was",
+            "are"
+          ],
+          "alt": [
+            "Yesterday we were at the museum."
+          ]
+        },
+        {
+          "en": "My parents moved to Ottawa ten years ago.",
+          "fr": "Mes parents ont déménagé à Ottawa il y a dix ans.",
+          "trap": [
+            "since",
+            "there"
+          ],
+          "alt": [
+            "Ten years ago my parents moved to Ottawa."
+          ]
+        },
+        {
+          "en": "She studied for her math test.",
+          "fr": "Elle a étudié pour son examen de maths.",
+          "trap": [
+            "studyed",
+            "did"
+          ],
+          "alt": []
+        },
+        {
+          "en": "The bus stopped in front of the school.",
+          "fr": "L'autobus s'est arrêté devant l'école.",
+          "trap": [
+            "stoped",
+            "were"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Were you at home the day before yesterday?",
+          "fr": "Étais-tu à la maison avant-hier ?",
+          "trap": [
+            "Was",
+            "Did"
+          ],
+          "alt": []
+        },
+        {
+          "en": "I wasn't born in Canada.",
+          "fr": "Je ne suis pas né au Canada.",
+          "trap": [
+            "didn't",
+            "weren't"
+          ],
+          "alt": []
+        },
+        {
+          "en": "We travelled to Vancouver last summer.",
+          "fr": "Nous avons voyagé à Vancouver l'été dernier.",
+          "trap": [
+            "travel",
+            "the"
+          ],
+          "alt": [
+            "Last summer we travelled to Vancouver."
+          ]
+        },
+        {
+          "en": "What happened at school yesterday?",
+          "fr": "Qu'est-ce qui s'est passé à l'école hier ?",
+          "trap": [
+            "happenned",
+            "was"
+          ],
+          "alt": []
+        },
+        {
+          "en": "They tried to call you last weekend.",
+          "fr": "Ils ont essayé de t'appeler la fin de semaine dernière.",
+          "trap": [
+            "tryed",
+            "calls"
+          ],
+          "alt": [
+            "Last weekend they tried to call you."
+          ]
+        },
+        {
+          "en": "Why were you late this morning?",
+          "fr": "Pourquoi étais-tu en retard ce matin ?",
+          "trap": [
+            "was",
+            "did"
+          ],
+          "alt": []
+        },
+        {
+          "en": "It was cold, so we stayed inside.",
+          "fr": "Il faisait froid, alors nous sommes restés à l'intérieur.",
+          "trap": [
+            "were",
+            "staied"
+          ],
+          "alt": []
+        }
+      ],
+      "grammar": [
+        {
+          "type": "mcq",
+          "q": "My friends ___ at the park yesterday.",
+          "choices": [
+            "was",
+            "are",
+            "were"
+          ],
+          "answer": 2,
+          "explain": "Avec un sujet pluriel (my friends = they), le passé de to be est were."
+        },
+        {
+          "type": "mcq",
+          "q": "Comment dit-on « il y a trois jours » ?",
+          "choices": [
+            "there are three days",
+            "three days ago",
+            "ago three days",
+            "since three days"
+          ],
+          "answer": 1,
+          "explain": "« Il y a » + durée dans le passé = durée + ago : three days ago."
+        },
+        {
+          "type": "mcq",
+          "q": "___ she at school yesterday?",
+          "choices": [
+            "Was",
+            "Did",
+            "Were"
+          ],
+          "answer": 0,
+          "explain": "Avec she, le passé de to be est was. Pour la question, on met was devant le sujet."
+        },
+        {
+          "type": "mcq",
+          "q": "It rained all day, so we ___ at home.",
+          "choices": [
+            "stay",
+            "staied",
+            "stayed",
+            "stayd"
+          ],
+          "answer": 2,
+          "explain": "Voyelle + y : on garde le y et on ajoute -ed → stayed."
+        },
+        {
+          "type": "mcq",
+          "q": "Quel est le passé de « plan » ?",
+          "choices": [
+            "planed",
+            "planted",
+            "plann",
+            "planned"
+          ],
+          "answer": 3,
+          "explain": "Plan est court (consonne-voyelle-consonne) : on double le n → planned."
+        },
+        {
+          "type": "mcq",
+          "q": "Comment dit-on « hier soir » ?",
+          "choices": [
+            "last night",
+            "yesterday night",
+            "the last night"
+          ],
+          "answer": 0,
+          "explain": "Hier soir = last night. On ne dit pas yesterday night, et jamais the devant last."
+        },
+        {
+          "type": "fill",
+          "q": "Last year, my brother ___ to Toronto.",
+          "hint": "move",
+          "answer": [
+            "moved"
+          ],
+          "explain": "Move finit par -e : on ajoute seulement -d → moved."
+        },
+        {
+          "type": "fill",
+          "q": "Yesterday, she ___ for three hours.",
+          "hint": "study",
+          "answer": [
+            "studied"
+          ],
+          "explain": "Consonne + y : le y devient ied → studied."
+        },
+        {
+          "type": "fill",
+          "q": "The rain finally ___ at six o'clock last night.",
+          "hint": "stop",
+          "answer": [
+            "stopped"
+          ],
+          "explain": "Stop est court : on double le p → stopped."
+        },
+        {
+          "type": "fill",
+          "q": "Noah and Liam ___ late for school yesterday.",
+          "hint": "be",
+          "answer": [
+            "were"
+          ],
+          "explain": "Noah and Liam = they, donc were."
+        },
+        {
+          "type": "fill",
+          "q": "I ___ at home yesterday. I was at my aunt's house.",
+          "hint": "be, négatif",
+          "answer": [
+            "wasn't"
+          ],
+          "explain": "Avec I, le négatif de was est wasn't (was not)."
+        },
+        {
+          "type": "fill",
+          "q": "We arrived in Montreal two hours ___.",
+          "hint": "il y a",
+          "answer": [
+            "ago"
+          ],
+          "explain": "« Il y a deux heures » = two hours ago : ago vient après la durée."
+        },
+        {
+          "type": "error",
+          "q": "Noah and Emma was late for school yesterday.",
+          "wrong": 3,
+          "fix": [
+            "were"
+          ],
+          "explain": "Noah and Emma = they, donc were, pas was."
+        },
+        {
+          "type": "error",
+          "q": "She studyed all weekend.",
+          "wrong": 1,
+          "fix": [
+            "studied"
+          ],
+          "explain": "Consonne + y : study → studied."
+        },
+        {
+          "type": "error",
+          "q": "The bus stoped near my house.",
+          "wrong": 2,
+          "fix": [
+            "stopped"
+          ],
+          "explain": "On double la consonne : stop → stopped."
+        },
+        {
+          "type": "error",
+          "q": "Was Emma and Noah at the park yesterday?",
+          "wrong": 0,
+          "fix": [
+            "Were"
+          ],
+          "explain": "Emma and Noah = they, donc la question commence par Were."
+        },
+        {
+          "type": "error",
+          "q": "Last summer, we plaied soccer every day.",
+          "wrong": 3,
+          "fix": [
+            "played"
+          ],
+          "explain": "Voyelle + y : on garde le y → played."
+        },
+        {
+          "type": "error",
+          "q": "Three days ago, Ethan is sick.",
+          "wrong": 4,
+          "fix": [
+            "was"
+          ],
+          "explain": "Three days ago = passé, donc was, pas is."
+        }
+      ],
+      "reading": {
+        "title": "A Snowy Saturday",
+        "text": "Last Saturday, it was very cold in Ottawa. Maya and her brother Ethan wanted to go skating on the Rideau Canal, but there was too much snow. So they stayed home.\n\nIn the morning, Maya studied for her science test. Ethan tried to bake cookies, but he dropped the eggs on the floor! Their dad laughed and helped him clean the kitchen.\n\nIn the afternoon, the snow stopped. The kids hurried outside and played in the park for two hours. They were very happy.\n\nAt six o'clock, their grandma arrived for supper. She was born in Haiti, and she loved the cookies. After supper, Ethan decided to bake again the next day.",
+        "questions": [
+          {
+            "q": "Pourquoi Maya et Ethan ne sont-ils pas allés patiner ?",
+            "choices": [
+              "Il faisait trop chaud.",
+              "Il y avait trop de neige.",
+              "Ils étaient malades.",
+              "Ils n'avaient pas de patins."
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Qu'est-ce qu'Ethan a échappé par terre ?",
+            "choices": [
+              "les biscuits",
+              "le lait",
+              "les œufs",
+              "ses patins"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Quand la neige s'est-elle arrêtée ?",
+            "choices": [
+              "l'après-midi",
+              "le matin",
+              "le soir",
+              "pendant la nuit"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Combien de temps ont-ils joué au parc ?",
+            "choices": [
+              "une heure",
+              "trois heures",
+              "toute la journée",
+              "deux heures"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Où la grand-mère est-elle née ?",
+            "choices": [
+              "à Ottawa",
+              "en Haïti",
+              "à Montréal",
+              "en France"
+            ],
+            "answer": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "5.2",
+      "title": "Irréguliers (1)",
+      "titleEn": "Wild Verbs",
+      "goal": "Utiliser au passé les verbes irréguliers les plus fréquents (went, saw, ate, bought…).",
+      "lesson": [
+        {
+          "type": "p",
+          "text": "Mauvaise nouvelle : les verbes les plus utilisés ne prennent **pas** -ed. Ils sont **irréguliers** : [[go → went]], [[see → saw]]. Bonne nouvelle : comme au régulier, c'est la **même forme pour toutes les personnes**."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Base",
+            "Passé",
+            "Français"
+          ],
+          "rows": [
+            [
+              "go",
+              "[[went]]",
+              "allé"
+            ],
+            [
+              "see",
+              "[[saw]]",
+              "vu"
+            ],
+            [
+              "have",
+              "[[had]]",
+              "eu"
+            ],
+            [
+              "do",
+              "[[did]]",
+              "fait"
+            ],
+            [
+              "make",
+              "[[made]]",
+              "fait, fabriqué"
+            ],
+            [
+              "take",
+              "[[took]]",
+              "pris"
+            ],
+            [
+              "come",
+              "[[came]]",
+              "venu"
+            ],
+            [
+              "eat",
+              "[[ate]]",
+              "mangé"
+            ],
+            [
+              "drink",
+              "[[drank]]",
+              "bu"
+            ],
+            [
+              "buy",
+              "[[bought]]",
+              "acheté"
+            ],
+            [
+              "think",
+              "[[thought]]",
+              "pensé"
+            ],
+            [
+              "get",
+              "[[got]]",
+              "reçu, obtenu"
+            ],
+            [
+              "give",
+              "[[gave]]",
+              "donné"
+            ],
+            [
+              "say",
+              "[[said]]",
+              "dit"
+            ],
+            [
+              "tell",
+              "[[told]]",
+              "dit à quelqu'un, raconté"
+            ],
+            [
+              "find",
+              "[[found]]",
+              "trouvé"
+            ],
+            [
+              "know",
+              "[[knew]]",
+              "su, connu"
+            ],
+            [
+              "write",
+              "[[wrote]]",
+              "écrit"
+            ]
+          ]
+        },
+        {
+          "type": "rule",
+          "title": "Une seule forme, pas de -ed",
+          "text": "On n'ajoute **jamais** -ed à un verbe irrégulier : [[went]], pas [[goed]] ; [[bought]], pas [[buyed]]. Et pas de -s : [[she went]], [[he ate]]."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "We went to the movies last Friday.",
+              "fr": "Nous sommes allés au cinéma vendredi dernier."
+            },
+            {
+              "en": "My mom made pancakes for breakfast.",
+              "fr": "Ma mère a fait des crêpes pour le déjeuner (petit-déjeuner)."
+            },
+            {
+              "en": "He told me a funny story.",
+              "fr": "Il m'a raconté une histoire drôle."
+            },
+            {
+              "en": "She said hello to everyone.",
+              "fr": "Elle a dit bonjour à tout le monde."
+            },
+            {
+              "en": "I thought the test was easy.",
+              "fr": "J'ai pensé que l'examen était facile."
+            }
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "Say ou tell ? Avec **tell**, on dit **à qui** tout de suite : [[He told me a secret.]] Avec **say**, pas de personne juste après : [[He said hello.]] Donc **jamais** [[He said me]] !"
+        },
+        {
+          "type": "tip",
+          "text": "Make ou do ? Pour fabriquer ou cuisiner, c'est **make** : [[I made a cake.]] Pour une activité ou des devoirs, c'est **do** : [[I did my homework.]] Et attention : [[thought]] (pensé) n'est pas [[taught]] (enseigné), et [[bought]] (acheté) n'est pas [[brought]] (apporté)."
+        },
+        {
+          "type": "dialogue",
+          "title": "La fin de semaine de Félix",
+          "lines": [
+            {
+              "who": "Olivia",
+              "en": "How was your weekend, Félix?",
+              "fr": "Comment s'est passée ta fin de semaine, Félix ?"
+            },
+            {
+              "who": "Félix",
+              "en": "Great! We went to Montreal and saw a hockey game.",
+              "fr": "Super ! On est allés à Montréal et on a vu un match de hockey."
+            },
+            {
+              "who": "Olivia",
+              "en": "Wow! What was the best part?",
+              "fr": "Wow ! C'était quoi, le meilleur moment ?"
+            },
+            {
+              "who": "Félix",
+              "en": "We ate poutine, and my dad bought me a jersey.",
+              "fr": "On a mangé de la poutine, et mon père m'a acheté un chandail."
+            },
+            {
+              "who": "Olivia",
+              "en": "Lucky you! I stayed home. I wrote a story and made cookies.",
+              "fr": "Chanceux ! Moi, je suis restée à la maison. J'ai écrit une histoire et j'ai fait des biscuits."
+            },
+            {
+              "who": "Félix",
+              "en": "Cookies? You told me nothing!",
+              "fr": "Des biscuits ? Tu ne m'as rien dit !"
+            },
+            {
+              "who": "Olivia",
+              "en": "Don't worry, I saved two for you!",
+              "fr": "Ne t'inquiète pas, je t'en ai gardé deux !"
+            }
+          ]
+        },
+        {
+          "type": "fun",
+          "text": "Le sais-tu ? Parmi les verbes les plus fréquents en anglais, la plupart sont irréguliers : [[be]], [[have]], [[do]], [[say]], [[go]], [[get]], [[make]]… C'est justement parce qu'on les utilise tout le temps qu'ils ont gardé leurs vieilles formes !"
+        }
+      ],
+      "vocab": [
+        {
+          "en": "went",
+          "fr": "allé (passé de go)",
+          "alt": [],
+          "ex": "We went to the park."
+        },
+        {
+          "en": "saw",
+          "fr": "vu (passé de see)",
+          "alt": [],
+          "ex": "I saw a fox in the garden."
+        },
+        {
+          "en": "had",
+          "fr": "eu (passé de have)",
+          "alt": [],
+          "ex": "We had a great time."
+        },
+        {
+          "en": "did",
+          "fr": "fait (passé de do)",
+          "alt": [],
+          "ex": "I did my homework after school."
+        },
+        {
+          "en": "made",
+          "fr": "fabriqué, cuisiné (passé de make)",
+          "alt": [],
+          "ex": "Dad made pancakes."
+        },
+        {
+          "en": "took",
+          "fr": "pris (passé de take)",
+          "alt": [],
+          "ex": "She took the bus to school."
+        },
+        {
+          "en": "came",
+          "fr": "venu (passé de come)",
+          "alt": [],
+          "ex": "My cousins came for supper."
+        },
+        {
+          "en": "ate",
+          "fr": "mangé (passé de eat)",
+          "alt": [],
+          "ex": "We ate poutine in Montreal."
+        },
+        {
+          "en": "drank",
+          "fr": "bu (passé de drink)",
+          "alt": [],
+          "ex": "He drank a glass of milk."
+        },
+        {
+          "en": "bought",
+          "fr": "acheté (passé de buy)",
+          "alt": [],
+          "ex": "Mom bought a new toque."
+        },
+        {
+          "en": "thought",
+          "fr": "pensé (passé de think)",
+          "alt": [],
+          "ex": "I thought it was a good idea."
+        },
+        {
+          "en": "got",
+          "fr": "reçu, obtenu (passé de get)",
+          "alt": [],
+          "ex": "I got a text from Emma."
+        },
+        {
+          "en": "gave",
+          "fr": "donné (passé de give)",
+          "alt": [],
+          "ex": "Grandma gave me a book."
+        },
+        {
+          "en": "said",
+          "fr": "dit (passé de say)",
+          "alt": [],
+          "ex": "She said goodbye."
+        },
+        {
+          "en": "told",
+          "fr": "raconté, dit à quelqu'un (passé de tell)",
+          "alt": [],
+          "ex": "He told me a secret."
+        },
+        {
+          "en": "found",
+          "fr": "trouvé (passé de find)",
+          "alt": [],
+          "ex": "I found my keys under the bed."
+        },
+        {
+          "en": "knew",
+          "fr": "su, connu (passé de know)",
+          "alt": [],
+          "ex": "She knew the answer."
+        },
+        {
+          "en": "wrote",
+          "fr": "écrit (passé de write)",
+          "alt": [],
+          "ex": "Malik wrote a poem."
+        }
+      ],
+      "sentences": [
+        {
+          "en": "We went to the movies last Friday.",
+          "fr": "Nous sommes allés au cinéma vendredi dernier.",
+          "trap": [
+            "goed",
+            "go"
+          ],
+          "alt": [
+            "Last Friday we went to the movies."
+          ]
+        },
+        {
+          "en": "I saw a moose near the lake.",
+          "fr": "J'ai vu un orignal près du lac.",
+          "trap": [
+            "seen",
+            "sawed"
+          ],
+          "alt": []
+        },
+        {
+          "en": "She bought a new toque for her brother.",
+          "fr": "Elle a acheté une nouvelle tuque pour son frère.",
+          "trap": [
+            "buyed",
+            "buied"
+          ],
+          "alt": []
+        },
+        {
+          "en": "My mom made pancakes for breakfast.",
+          "fr": "Ma mère a fait des crêpes pour le déjeuner (petit-déjeuner).",
+          "trap": [
+            "maked",
+            "did"
+          ],
+          "alt": []
+        },
+        {
+          "en": "He told me a funny story.",
+          "fr": "Il m'a raconté une histoire drôle.",
+          "trap": [
+            "said",
+            "telled"
+          ],
+          "alt": []
+        },
+        {
+          "en": "I thought the test was easy.",
+          "fr": "J'ai pensé que l'examen était facile.",
+          "trap": [
+            "thinked",
+            "taught"
+          ],
+          "alt": []
+        },
+        {
+          "en": "We ate poutine and drank orange juice.",
+          "fr": "Nous avons mangé de la poutine et bu du jus d'orange.",
+          "trap": [
+            "eated",
+            "drinked"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Zoé found her phone under the bed.",
+          "fr": "Zoé a trouvé son téléphone sous le lit.",
+          "trap": [
+            "finded",
+            "founded"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Our teacher gave us a lot of homework.",
+          "fr": "Notre enseignante nous a donné beaucoup de devoirs.",
+          "trap": [
+            "gived",
+            "give"
+          ],
+          "alt": []
+        },
+        {
+          "en": "They knew the answer, but they said nothing.",
+          "fr": "Ils connaissaient la réponse, mais ils n'ont rien dit.",
+          "trap": [
+            "knowed",
+            "told"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Malik wrote a letter to his grandpa.",
+          "fr": "Malik a écrit une lettre à son grand-père.",
+          "trap": [
+            "writed",
+            "wrotes"
+          ],
+          "alt": []
+        },
+        {
+          "en": "I got a text from Sofia this morning.",
+          "fr": "J'ai reçu un texto de Sofia ce matin.",
+          "trap": [
+            "getted",
+            "gotted"
+          ],
+          "alt": [
+            "This morning I got a text from Sofia."
+          ]
+        }
+      ],
+      "grammar": [
+        {
+          "type": "mcq",
+          "q": "Yesterday, Liam ___ to the dentist.",
+          "choices": [
+            "goed",
+            "gone",
+            "went",
+            "go"
+          ],
+          "answer": 2,
+          "explain": "Go est irrégulier : son passé est went."
+        },
+        {
+          "type": "mcq",
+          "q": "She ___ me the truth.",
+          "choices": [
+            "said",
+            "told",
+            "say"
+          ],
+          "answer": 1,
+          "explain": "Quand la personne (me) suit le verbe, on utilise tell → told."
+        },
+        {
+          "type": "mcq",
+          "q": "Quel est le passé de « buy » ?",
+          "choices": [
+            "bought",
+            "brought",
+            "buyed",
+            "buy"
+          ],
+          "answer": 0,
+          "explain": "Buy → bought. Brought est le passé de bring (apporter)."
+        },
+        {
+          "type": "mcq",
+          "q": "Quel est le passé de « think » ?",
+          "choices": [
+            "taught",
+            "thinked",
+            "thought"
+          ],
+          "answer": 2,
+          "explain": "Think → thought. Taught est le passé de teach (enseigner)."
+        },
+        {
+          "type": "mcq",
+          "q": "Last night, we ___ a great movie on TV.",
+          "choices": [
+            "saw",
+            "see",
+            "seen"
+          ],
+          "answer": 0,
+          "explain": "Last night = passé : see → saw."
+        },
+        {
+          "type": "mcq",
+          "q": "Who ___ this cake? It's delicious!",
+          "choices": [
+            "did",
+            "do",
+            "made",
+            "maked"
+          ],
+          "answer": 2,
+          "explain": "Pour cuisiner ou fabriquer, on utilise make → made."
+        },
+        {
+          "type": "fill",
+          "q": "Yesterday, I ___ two glasses of milk at lunch.",
+          "hint": "drink",
+          "answer": [
+            "drank"
+          ],
+          "explain": "Drink → drank au passé."
+        },
+        {
+          "type": "fill",
+          "q": "Last summer, we ___ the train to Toronto.",
+          "hint": "take",
+          "answer": [
+            "took"
+          ],
+          "explain": "Take → took au passé."
+        },
+        {
+          "type": "fill",
+          "q": "Emma ___ her homework before supper yesterday.",
+          "hint": "do",
+          "answer": [
+            "did"
+          ],
+          "explain": "Do → did. On fait des devoirs avec do."
+        },
+        {
+          "type": "fill",
+          "q": "Grandpa ___ to visit us last Sunday.",
+          "hint": "come",
+          "answer": [
+            "came"
+          ],
+          "explain": "Come → came au passé."
+        },
+        {
+          "type": "fill",
+          "q": "Two days ago, I ___ a great idea.",
+          "hint": "have",
+          "answer": [
+            "had"
+          ],
+          "explain": "Have → had au passé, pour toutes les personnes."
+        },
+        {
+          "type": "fill",
+          "q": "Last week, Mei ___ a poem for her mom.",
+          "hint": "write",
+          "answer": [
+            "wrote"
+          ],
+          "explain": "Write → wrote au passé."
+        },
+        {
+          "type": "error",
+          "q": "We eated pizza last night.",
+          "wrong": 1,
+          "fix": [
+            "ate"
+          ],
+          "explain": "Eat est irrégulier : le passé est ate."
+        },
+        {
+          "type": "error",
+          "q": "She said me a secret.",
+          "wrong": 1,
+          "fix": [
+            "told"
+          ],
+          "explain": "Avec une personne juste après le verbe, c'est tell : She told me a secret."
+        },
+        {
+          "type": "error",
+          "q": "I buyed a new bike last spring.",
+          "wrong": 1,
+          "fix": [
+            "bought"
+          ],
+          "explain": "Buy → bought, jamais buyed."
+        },
+        {
+          "type": "error",
+          "q": "Last weekend, they goed to Montreal.",
+          "wrong": 3,
+          "fix": [
+            "went"
+          ],
+          "explain": "Go → went, jamais goed."
+        },
+        {
+          "type": "error",
+          "q": "Ana knowed the answer.",
+          "wrong": 1,
+          "fix": [
+            "knew"
+          ],
+          "explain": "Know → knew au passé."
+        },
+        {
+          "type": "error",
+          "q": "My dad gived me ten dollars yesterday.",
+          "wrong": 2,
+          "fix": [
+            "gave"
+          ],
+          "explain": "Give → gave au passé."
+        }
+      ],
+      "reading": {
+        "title": "Noah's Big Day",
+        "text": "Last Saturday was Noah's birthday. In the morning, his mom made pancakes with maple syrup, and his dad gave him a big box. Inside, Noah found a new hockey stick!\n\nIn the afternoon, Noah and his friends took the bus to the Rideau Canal. They went skating for an hour. After that, they drank hot chocolate and ate cookies.\n\nWhen they came home, Noah saw a card on the table. His grandma wrote it in Vancouver. In the card, she said: \"Happy birthday! I bought you a big surprise.\" Noah thought it was another present. But the surprise was his grandma! She came from Vancouver by plane, and she was in the kitchen with his mom.",
+        "questions": [
+          {
+            "q": "Qu'est-ce que Noah a trouvé dans la boîte que son père lui a donnée ?",
+            "choices": [
+              "un bâton de hockey neuf",
+              "des patins",
+              "une carte",
+              "un livre"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Comment Noah et ses amis sont-ils allés au canal ?",
+            "choices": [
+              "à pied",
+              "en voiture",
+              "en autobus",
+              "à vélo"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Qu'ont-ils bu après le patin ?",
+            "choices": [
+              "du jus",
+              "du chocolat chaud",
+              "du lait",
+              "de l'eau"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Qui a écrit la carte ?",
+            "choices": [
+              "sa mère",
+              "son ami",
+              "son père",
+              "sa grand-mère"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Quelle était la vraie surprise ?",
+            "choices": [
+              "un deuxième cadeau",
+              "un gâteau",
+              "sa grand-mère était là",
+              "un voyage à Vancouver"
+            ],
+            "answer": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "5.3",
+      "title": "Did you… ?",
+      "titleEn": "Did You Do It?",
+      "goal": "Poser des questions et dire non au passé avec did / didn't + verbe de base.",
+      "lesson": [
+        {
+          "type": "p",
+          "text": "Pour poser une question ou dire non au passé, l'anglais appelle un assistant : **did**. Et comme **did** porte déjà le passé, le verbe qui suit revient à sa **forme de base**."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Affirmatif",
+            "Négatif",
+            "Question",
+            "Réponse courte"
+          ],
+          "rows": [
+            [
+              "[[I saw it.]]",
+              "[[I didn't see it.]]",
+              "[[Did you see it?]]",
+              "[[Yes, I did.]] / [[No, I didn't.]]"
+            ],
+            [
+              "[[She won.]]",
+              "[[She didn't win.]]",
+              "[[Did she win?]]",
+              "[[Yes, she did.]] / [[No, she didn't.]]"
+            ],
+            [
+              "[[They left.]]",
+              "[[They didn't leave.]]",
+              "[[Did they leave?]]",
+              "[[Yes, they did.]] / [[No, they didn't.]]"
+            ]
+          ]
+        },
+        {
+          "type": "rule",
+          "title": "Un seul passé par phrase",
+          "text": "**did / didn't + verbe de base**. Le passé est déjà dans did, alors pas de deuxième passé : [[Did you go?]] (pas [[Did you went?]]), [[I didn't see]] (pas [[I didn't saw]])."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Base",
+            "Passé",
+            "Français"
+          ],
+          "rows": [
+            [
+              "begin",
+              "[[began]]",
+              "commencé"
+            ],
+            [
+              "break",
+              "[[broke]]",
+              "cassé"
+            ],
+            [
+              "bring",
+              "[[brought]]",
+              "apporté"
+            ],
+            [
+              "catch",
+              "[[caught]]",
+              "attrapé"
+            ],
+            [
+              "choose",
+              "[[chose]]",
+              "choisi"
+            ],
+            [
+              "fall",
+              "[[fell]]",
+              "tombé"
+            ],
+            [
+              "feel",
+              "[[felt]]",
+              "ressenti"
+            ],
+            [
+              "fly",
+              "[[flew]]",
+              "volé, pris l'avion"
+            ],
+            [
+              "forget",
+              "[[forgot]]",
+              "oublié"
+            ],
+            [
+              "leave",
+              "[[left]]",
+              "parti, quitté"
+            ],
+            [
+              "lose",
+              "[[lost]]",
+              "perdu"
+            ],
+            [
+              "meet",
+              "[[met]]",
+              "rencontré"
+            ],
+            [
+              "pay",
+              "[[paid]]",
+              "payé"
+            ],
+            [
+              "run",
+              "[[ran]]",
+              "couru"
+            ],
+            [
+              "sleep",
+              "[[slept]]",
+              "dormi"
+            ],
+            [
+              "speak",
+              "[[spoke]]",
+              "parlé"
+            ],
+            [
+              "win",
+              "[[won]]",
+              "gagné"
+            ],
+            [
+              "wear",
+              "[[wore]]",
+              "porté (un vêtement)"
+            ]
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "Did you sleep well?",
+              "fr": "As-tu bien dormi ?"
+            },
+            {
+              "en": "I didn't bring my lunch.",
+              "fr": "Je n'ai pas apporté mon dîner."
+            },
+            {
+              "en": "Where did you meet Sofia?",
+              "fr": "Où as-tu rencontré Sofia ?"
+            },
+            {
+              "en": "Why didn't she win?",
+              "fr": "Pourquoi n'a-t-elle pas gagné ?"
+            },
+            {
+              "en": "Were you scared? No, I wasn't.",
+              "fr": "Avais-tu peur ? Non."
+            }
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "Les deux pièges du niveau : [[Did you went?]] et [[I didn't saw]] : **faux** ! Après did, toujours la base. Autre piège : avec **to be**, pas de did ! On dit [[Were you tired?]] et [[I wasn't tired]], jamais [[Did you be tired?]]."
+        },
+        {
+          "type": "dialogue",
+          "title": "Le party manqué",
+          "lines": [
+            {
+              "who": "Emma",
+              "en": "Did you go to the party on Saturday?",
+              "fr": "Es-tu allé au party samedi ?"
+            },
+            {
+              "who": "Samuel",
+              "en": "No, I didn't. I felt sick.",
+              "fr": "Non. Je me sentais malade."
+            },
+            {
+              "who": "Emma",
+              "en": "Oh no! Did you sleep a lot?",
+              "fr": "Oh non ! As-tu beaucoup dormi ?"
+            },
+            {
+              "who": "Samuel",
+              "en": "Yes, I slept all afternoon. What did I miss?",
+              "fr": "Oui, j'ai dormi tout l'après-midi. Qu'est-ce que j'ai manqué ?"
+            },
+            {
+              "who": "Emma",
+              "en": "Malik won the dance contest, and Zoé broke a glass!",
+              "fr": "Malik a gagné le concours de danse, et Zoé a cassé un verre !"
+            },
+            {
+              "who": "Samuel",
+              "en": "No way! Was she okay?",
+              "fr": "Pas vrai ! Est-ce qu'elle allait bien ?"
+            },
+            {
+              "who": "Emma",
+              "en": "Yes, she was fine. But she didn't dance after that!",
+              "fr": "Oui, ça allait. Mais elle n'a plus dansé après ça !"
+            }
+          ]
+        }
+      ],
+      "vocab": [
+        {
+          "en": "began",
+          "fr": "commencé (passé de begin)",
+          "alt": [],
+          "ex": "The game began at noon."
+        },
+        {
+          "en": "broke",
+          "fr": "cassé (passé de break)",
+          "alt": [],
+          "ex": "I broke my pencil."
+        },
+        {
+          "en": "brought",
+          "fr": "apporté (passé de bring)",
+          "alt": [],
+          "ex": "She brought cookies to school."
+        },
+        {
+          "en": "caught",
+          "fr": "attrapé (passé de catch)",
+          "alt": [],
+          "ex": "He caught the ball."
+        },
+        {
+          "en": "chose",
+          "fr": "choisi (passé de choose)",
+          "alt": [],
+          "ex": "We chose a funny movie."
+        },
+        {
+          "en": "fell",
+          "fr": "tombé (passé de fall)",
+          "alt": [],
+          "ex": "Liam fell on the ice."
+        },
+        {
+          "en": "felt",
+          "fr": "ressenti, senti (passé de feel)",
+          "alt": [],
+          "ex": "I felt sick yesterday."
+        },
+        {
+          "en": "flew",
+          "fr": "pris l'avion, volé (passé de fly)",
+          "alt": [],
+          "ex": "We flew to Vancouver."
+        },
+        {
+          "en": "forgot",
+          "fr": "oublié (passé de forget)",
+          "alt": [],
+          "ex": "I forgot my lunch."
+        },
+        {
+          "en": "left",
+          "fr": "parti, quitté (passé de leave)",
+          "alt": [],
+          "ex": "The bus left without me."
+        },
+        {
+          "en": "lost",
+          "fr": "perdu (passé de lose)",
+          "alt": [],
+          "ex": "Amir lost his glasses."
+        },
+        {
+          "en": "met",
+          "fr": "rencontré (passé de meet)",
+          "alt": [],
+          "ex": "I met Sofia at camp."
+        },
+        {
+          "en": "paid",
+          "fr": "payé (passé de pay)",
+          "alt": [],
+          "ex": "Dad paid for the tickets."
+        },
+        {
+          "en": "ran",
+          "fr": "couru (passé de run)",
+          "alt": [],
+          "ex": "We ran to the bus stop."
+        },
+        {
+          "en": "slept",
+          "fr": "dormi (passé de sleep)",
+          "alt": [],
+          "ex": "The baby slept all night."
+        },
+        {
+          "en": "spoke",
+          "fr": "parlé (passé de speak)",
+          "alt": [],
+          "ex": "She spoke English with the tourists."
+        },
+        {
+          "en": "won",
+          "fr": "gagné (passé de win)",
+          "alt": [],
+          "ex": "Our team won the game."
+        },
+        {
+          "en": "wore",
+          "fr": "porté un vêtement (passé de wear)",
+          "alt": [],
+          "ex": "He wore a red toque."
+        }
+      ],
+      "sentences": [
+        {
+          "en": "Did you see the hockey game last night?",
+          "fr": "As-tu vu le match de hockey hier soir ?",
+          "trap": [
+            "saw",
+            "Were"
+          ],
+          "alt": []
+        },
+        {
+          "en": "I didn't sleep well last night.",
+          "fr": "Je n'ai pas bien dormi hier soir.",
+          "trap": [
+            "slept",
+            "don't"
+          ],
+          "alt": [
+            "Last night I didn't sleep well."
+          ]
+        },
+        {
+          "en": "She didn't win the race, but she ran fast.",
+          "fr": "Elle n'a pas gagné la course, mais elle a couru vite.",
+          "trap": [
+            "won",
+            "runned"
+          ],
+          "alt": [
+            "She ran fast, but she didn't win the race."
+          ]
+        },
+        {
+          "en": "Where did you meet your best friend?",
+          "fr": "Où as-tu rencontré ton meilleur ami ?",
+          "trap": [
+            "met",
+            "were"
+          ],
+          "alt": []
+        },
+        {
+          "en": "We forgot our lunch at home.",
+          "fr": "Nous avons oublié notre dîner à la maison.",
+          "trap": [
+            "forgetted",
+            "did"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Did Félix bring his skates?",
+          "fr": "Félix a-t-il apporté ses patins ?",
+          "trap": [
+            "brought",
+            "Was"
+          ],
+          "alt": []
+        },
+        {
+          "en": "My little brother fell and broke his arm.",
+          "fr": "Mon petit frère est tombé et s'est cassé le bras.",
+          "trap": [
+            "falled",
+            "breaked"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Why didn't you pay for the tickets?",
+          "fr": "Pourquoi n'as-tu pas payé les billets ?",
+          "trap": [
+            "paid",
+            "payed"
+          ],
+          "alt": []
+        },
+        {
+          "en": "The movie began at seven o'clock.",
+          "fr": "Le film a commencé à sept heures.",
+          "trap": [
+            "begun",
+            "beginned"
+          ],
+          "alt": [
+            "At seven o'clock the movie began."
+          ]
+        },
+        {
+          "en": "They flew to Vancouver last summer.",
+          "fr": "Ils ont pris l'avion pour Vancouver l'été dernier.",
+          "trap": [
+            "flied",
+            "flown"
+          ],
+          "alt": [
+            "Last summer they flew to Vancouver."
+          ]
+        },
+        {
+          "en": "I didn't catch the bus, so I was late.",
+          "fr": "Je n'ai pas attrapé l'autobus, alors j'étais en retard.",
+          "trap": [
+            "caught",
+            "catched"
+          ],
+          "alt": []
+        },
+        {
+          "en": "What did she wear to the party?",
+          "fr": "Qu'est-ce qu'elle a porté au party ?",
+          "trap": [
+            "wore",
+            "was"
+          ],
+          "alt": []
+        }
+      ],
+      "grammar": [
+        {
+          "type": "mcq",
+          "q": "Did you ___ my message?",
+          "choices": [
+            "got",
+            "get",
+            "gets",
+            "getting"
+          ],
+          "answer": 1,
+          "explain": "Après did, le verbe reste à la base : Did you get…?"
+        },
+        {
+          "type": "mcq",
+          "q": "Comment dit-on « Je n'ai pas fait mes devoirs » ?",
+          "choices": [
+            "I didn't did my homework.",
+            "I don't did my homework.",
+            "I didn't do my homework.",
+            "I not did my homework."
+          ],
+          "answer": 2,
+          "explain": "Négatif au passé : didn't + base → I didn't do."
+        },
+        {
+          "type": "mcq",
+          "q": "Where ___ you go last weekend?",
+          "choices": [
+            "did",
+            "were",
+            "do",
+            "went"
+          ],
+          "answer": 0,
+          "explain": "Question au passé avec un verbe d'action : Where did you go?"
+        },
+        {
+          "type": "mcq",
+          "q": "Did they ___ the bus this morning?",
+          "choices": [
+            "caught",
+            "catched",
+            "catch"
+          ],
+          "answer": 2,
+          "explain": "Après did : la base catch, pas le passé caught."
+        },
+        {
+          "type": "mcq",
+          "q": "Lucas ___ the game. He was so happy!",
+          "choices": [
+            "win",
+            "won",
+            "winned"
+          ],
+          "answer": 1,
+          "explain": "Phrase affirmative au passé : win → won."
+        },
+        {
+          "type": "mcq",
+          "q": "___ you tired after the game?",
+          "choices": [
+            "Did",
+            "Were",
+            "Was"
+          ],
+          "answer": 1,
+          "explain": "Avec to be (tired), pas de did : Were you tired?"
+        },
+        {
+          "type": "fill",
+          "q": "We ___ the movie. It was so boring!",
+          "hint": "like, négatif",
+          "answer": [
+            "didn't like"
+          ],
+          "explain": "Négatif au passé : didn't + base → didn't like."
+        },
+        {
+          "type": "fill",
+          "q": "___ you sleep well last night?",
+          "hint": "auxiliaire du passé",
+          "answer": [
+            "Did"
+          ],
+          "explain": "Pour une question au passé : Did + sujet + base."
+        },
+        {
+          "type": "fill",
+          "q": "Mei didn't ___ her lunch yesterday.",
+          "hint": "apporter",
+          "answer": [
+            "bring"
+          ],
+          "explain": "Après didn't, le verbe reste à la base : bring."
+        },
+        {
+          "type": "fill",
+          "q": "Last week, Amir ___ his glasses at school.",
+          "hint": "lose",
+          "answer": [
+            "lost"
+          ],
+          "explain": "Phrase affirmative au passé : lose → lost."
+        },
+        {
+          "type": "fill",
+          "q": "An hour ago, the plane ___ over our house.",
+          "hint": "fly",
+          "answer": [
+            "flew"
+          ],
+          "explain": "Fly → flew au passé."
+        },
+        {
+          "type": "fill",
+          "q": "I ___ Priya for the first time last Monday.",
+          "hint": "meet",
+          "answer": [
+            "met"
+          ],
+          "explain": "Meet → met au passé."
+        },
+        {
+          "type": "error",
+          "q": "Did you went to the party last night?",
+          "wrong": 2,
+          "fix": [
+            "go"
+          ],
+          "explain": "Après did, la base : Did you go?"
+        },
+        {
+          "type": "error",
+          "q": "I did not saw the bus this morning.",
+          "wrong": 3,
+          "fix": [
+            "see"
+          ],
+          "explain": "Après did not, la base : I did not see."
+        },
+        {
+          "type": "error",
+          "q": "She did not won the race.",
+          "wrong": 3,
+          "fix": [
+            "win"
+          ],
+          "explain": "Après did not, la base : win."
+        },
+        {
+          "type": "error",
+          "q": "Did he paid for the pizza last night?",
+          "wrong": 2,
+          "fix": [
+            "pay"
+          ],
+          "explain": "Après did, la base : pay."
+        },
+        {
+          "type": "error",
+          "q": "Where did she bought her shoes last week?",
+          "wrong": 3,
+          "fix": [
+            "buy"
+          ],
+          "explain": "Après did, la base : buy."
+        },
+        {
+          "type": "error",
+          "q": "Yesterday I falled on the ice.",
+          "wrong": 2,
+          "fix": [
+            "fell"
+          ],
+          "explain": "Fall est irrégulier : fell."
+        }
+      ],
+      "reading": {
+        "title": "The Lost Skates",
+        "text": "Last Friday, Chloé's class went skating on the Rideau Canal. When they arrived, Chloé opened her bag, but her skates weren't there! She felt terrible.\n\n\"Did you forget them at home?\" asked her friend Malik.\n\n\"No, I didn't. I had them on the bus this morning,\" said Chloé.\n\n\"Maybe you left them on the bus,\" said Malik. Chloé ran to the bus stop, but the bus wasn't there. It left five minutes ago.\n\nChloé sat on the snow. She didn't want to cry, but she was very sad. Ten minutes later, the bus came back! The driver found the skates under a seat and brought them to Chloé. She thanked him and skated all afternoon. She didn't fall once!",
+        "questions": [
+          {
+            "q": "Où la classe est-elle allée vendredi dernier ?",
+            "choices": [
+              "au musée",
+              "au canal Rideau",
+              "au cinéma",
+              "au parc"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Est-ce que Chloé avait oublié ses patins à la maison ?",
+            "choices": [
+              "Oui, elle les avait oubliés.",
+              "On ne sait pas.",
+              "Oui, sa mère les avait.",
+              "Non, elle les avait dans l'autobus."
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Qui a trouvé les patins ?",
+            "choices": [
+              "le chauffeur d'autobus",
+              "Malik",
+              "l'enseignante",
+              "Chloé"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Où étaient les patins ?",
+            "choices": [
+              "dans son sac",
+              "sous un siège",
+              "à la maison",
+              "sur la glace"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Comment s'est passé le patin pour Chloé ?",
+            "choices": [
+              "Elle est tombée souvent.",
+              "Elle n'a pas patiné.",
+              "Elle n'est pas tombée une seule fois.",
+              "Elle est tombée une fois."
+            ],
+            "answer": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "5.4",
+      "title": "Raconter une histoire",
+      "titleEn": "Story Time",
+      "goal": "Raconter une histoire au passé avec le passé continu, when, while et les mots de liaison.",
+      "lesson": [
+        {
+          "type": "p",
+          "text": "Pour bien raconter, il faut deux temps : le **passé continu** pour le **décor** (ce qui était en train de se passer) et le **passé simple** pour les **actions** (ce qui arrive tout à coup)."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Sujet",
+            "Passé continu",
+            "Négatif",
+            "Question"
+          ],
+          "rows": [
+            [
+              "I / he / she / it",
+              "[[was reading]]",
+              "[[wasn't reading]]",
+              "[[Was she reading?]]"
+            ],
+            [
+              "you / we / they",
+              "[[were reading]]",
+              "[[weren't reading]]",
+              "[[Were they reading?]]"
+            ]
+          ]
+        },
+        {
+          "type": "rule",
+          "title": "When ou while ?",
+          "text": "**was / were + verbe en -ing**. L'action longue est au passé continu, l'action courte au passé simple. **while** (pendant que) + action longue : [[While I was cooking, the cat jumped on the table.]] **when** (quand) + action courte : [[I was reading when the lights went out.]]"
+        },
+        {
+          "type": "rule",
+          "title": "Pas de -ing avec les verbes d'état",
+          "text": "Les verbes qui décrivent un état (**know, like, love, want, need, understand**) ne se mettent pas au passé continu : [[I knew the answer.]], jamais [[I was knowing]]."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Mot de liaison",
+            "Français",
+            "Exemple"
+          ],
+          "rows": [
+            [
+              "[[first]]",
+              "d'abord",
+              "[[First, we made a fire.]]"
+            ],
+            [
+              "[[then]]",
+              "ensuite, puis",
+              "[[Then, we ate.]]"
+            ],
+            [
+              "[[after that]]",
+              "après ça",
+              "[[After that, we played cards.]]"
+            ],
+            [
+              "[[suddenly]]",
+              "tout à coup",
+              "[[Suddenly, someone knocked at the door.]]"
+            ],
+            [
+              "[[at that moment]]",
+              "à ce moment-là",
+              "[[At that moment, the dog barked.]]"
+            ],
+            [
+              "[[later]]",
+              "plus tard",
+              "[[Later, we went to bed.]]"
+            ],
+            [
+              "[[finally]]",
+              "finalement",
+              "[[Finally, the power came back.]]"
+            ]
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "What were you doing at eight o'clock?",
+              "fr": "Que faisais-tu à huit heures ?"
+            },
+            {
+              "en": "It was snowing when we left school.",
+              "fr": "Il neigeait quand on est sortis de l'école."
+            },
+            {
+              "en": "While Dad was cooking, we were watching TV.",
+              "fr": "Pendant que papa cuisinait, nous regardions la télé."
+            },
+            {
+              "en": "Suddenly, the lights went out!",
+              "fr": "Tout à coup, les lumières se sont éteintes !"
+            }
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "L'imparfait français n'est pas toujours un passé continu ! « Quand j'étais petit, j'aimais les dinosaures » = [[When I was little, I liked dinosaurs.]] (verbe d'état). Et n'oublie jamais le **-ing** : [[I was watching]], pas [[I was watch]]."
+        },
+        {
+          "type": "dialogue",
+          "title": "La panne",
+          "lines": [
+            {
+              "who": "Liam",
+              "en": "What were you doing last night? I called you twice.",
+              "fr": "Qu'est-ce que tu faisais hier soir ? Je t'ai appelée deux fois."
+            },
+            {
+              "who": "Chloé",
+              "en": "Sorry! I was watching a movie with my family.",
+              "fr": "Désolée ! Je regardais un film avec ma famille."
+            },
+            {
+              "who": "Liam",
+              "en": "Was it good?",
+              "fr": "C'était bon ?"
+            },
+            {
+              "who": "Chloé",
+              "en": "Yes, but while we were watching it, the power went out!",
+              "fr": "Oui, mais pendant qu'on le regardait, il y a eu une panne de courant !"
+            },
+            {
+              "who": "Liam",
+              "en": "Really? What did you do?",
+              "fr": "Vraiment ? Qu'est-ce que vous avez fait ?"
+            },
+            {
+              "who": "Chloé",
+              "en": "First, my dad found a flashlight. Then we played cards.",
+              "fr": "D'abord, mon père a trouvé une lampe de poche. Ensuite, on a joué aux cartes."
+            },
+            {
+              "who": "Liam",
+              "en": "And the end of the movie?",
+              "fr": "Et la fin du film ?"
+            },
+            {
+              "who": "Chloé",
+              "en": "Finally, we watched it this morning!",
+              "fr": "Finalement, on l'a regardée ce matin !"
+            }
+          ]
+        },
+        {
+          "type": "fun",
+          "text": "Le sais-tu ? Les contes en anglais commencent souvent par [[Once upon a time]] (il était une fois) et finissent par [[They lived happily ever after]] (ils vécurent heureux pour toujours)."
+        }
+      ],
+      "vocab": [
+        {
+          "en": "first",
+          "fr": "d'abord",
+          "alt": [],
+          "ex": "First, we made a plan."
+        },
+        {
+          "en": "then",
+          "fr": "ensuite, puis",
+          "alt": [],
+          "ex": "Then, we went home."
+        },
+        {
+          "en": "after that",
+          "fr": "après ça",
+          "alt": [],
+          "ex": "After that, we played cards."
+        },
+        {
+          "en": "finally",
+          "fr": "finalement, enfin",
+          "alt": [],
+          "ex": "Finally, the bus arrived."
+        },
+        {
+          "en": "suddenly",
+          "fr": "tout à coup, soudain",
+          "alt": [
+            "all of a sudden"
+          ],
+          "ex": "Suddenly, the lights went out."
+        },
+        {
+          "en": "while",
+          "fr": "pendant que",
+          "alt": [],
+          "ex": "While I was sleeping, it snowed."
+        },
+        {
+          "en": "at that moment",
+          "fr": "à ce moment-là",
+          "alt": [],
+          "ex": "At that moment, the dog started to bark."
+        },
+        {
+          "en": "later",
+          "fr": "plus tard",
+          "alt": [],
+          "ex": "Later, we went to bed."
+        },
+        {
+          "en": "storm",
+          "fr": "tempête, orage",
+          "alt": [],
+          "ex": "There was a big storm last night."
+        },
+        {
+          "en": "power outage",
+          "fr": "panne de courant",
+          "alt": [
+            "blackout",
+            "power failure"
+          ],
+          "ex": "We had a power outage during the storm."
+        },
+        {
+          "en": "flashlight",
+          "fr": "lampe de poche",
+          "alt": [
+            "torch"
+          ],
+          "ex": "Dad found a flashlight in the kitchen."
+        },
+        {
+          "en": "noise",
+          "fr": "bruit",
+          "alt": [],
+          "ex": "What was that noise?"
+        },
+        {
+          "en": "knock",
+          "fr": "frapper (à la porte)",
+          "alt": [],
+          "ex": "Someone was knocking at the door."
+        },
+        {
+          "en": "shout",
+          "fr": "crier",
+          "alt": [
+            "yell"
+          ],
+          "ex": "My sister shouted when she saw the spider."
+        },
+        {
+          "en": "laugh",
+          "fr": "rire",
+          "alt": [],
+          "ex": "Everyone was laughing at his joke."
+        },
+        {
+          "en": "neighbour",
+          "fr": "voisin, voisine",
+          "alt": [],
+          "ex": "Our neighbour has a big dog."
+        },
+        {
+          "en": "dark",
+          "fr": "sombre, noir (sans lumière)",
+          "alt": [],
+          "ex": "The house was completely dark."
+        },
+        {
+          "en": "shine",
+          "fr": "briller",
+          "alt": [],
+          "ex": "The sun was shining."
+        },
+        {
+          "en": "fall asleep",
+          "fr": "s'endormir",
+          "alt": [],
+          "ex": "I fell asleep on the couch."
+        }
+      ],
+      "sentences": [
+        {
+          "en": "I was reading when the lights went out.",
+          "fr": "Je lisais quand les lumières se sont éteintes.",
+          "trap": [
+            "were",
+            "readed"
+          ],
+          "alt": [
+            "When the lights went out I was reading."
+          ]
+        },
+        {
+          "en": "While my dad was cooking, we were watching TV.",
+          "fr": "Pendant que mon père cuisinait, nous regardions la télé.",
+          "trap": [
+            "are",
+            "watch"
+          ],
+          "alt": [
+            "We were watching TV while my dad was cooking."
+          ]
+        },
+        {
+          "en": "Suddenly, someone knocked at the door.",
+          "fr": "Tout à coup, quelqu'un a frappé à la porte.",
+          "trap": [
+            "knocking",
+            "knock"
+          ],
+          "alt": [
+            "Someone suddenly knocked at the door.",
+            "Someone knocked at the door suddenly."
+          ]
+        },
+        {
+          "en": "What were you doing at eight o'clock last night?",
+          "fr": "Que faisais-tu à huit heures hier soir ?",
+          "trap": [
+            "did",
+            "was"
+          ],
+          "alt": []
+        },
+        {
+          "en": "The sun was shining, so we went to the beach.",
+          "fr": "Le soleil brillait, alors nous sommes allés à la plage.",
+          "trap": [
+            "were",
+            "shine"
+          ],
+          "alt": []
+        },
+        {
+          "en": "First we made a fire, and then we cooked hot dogs.",
+          "fr": "D'abord nous avons fait un feu, puis nous avons fait cuire des hot-dogs.",
+          "trap": [
+            "maked",
+            "cook"
+          ],
+          "alt": []
+        },
+        {
+          "en": "She was walking home when it started to rain.",
+          "fr": "Elle rentrait à pied quand il a commencé à pleuvoir.",
+          "trap": [
+            "were",
+            "walk"
+          ],
+          "alt": [
+            "When it started to rain she was walking home."
+          ]
+        },
+        {
+          "en": "I wasn't sleeping when you called me.",
+          "fr": "Je ne dormais pas quand tu m'as appelé.",
+          "trap": [
+            "didn't",
+            "slept"
+          ],
+          "alt": [
+            "When you called me I wasn't sleeping."
+          ]
+        },
+        {
+          "en": "After that, we played cards with our neighbours.",
+          "fr": "Après ça, nous avons joué aux cartes avec nos voisins.",
+          "trap": [
+            "were",
+            "plays"
+          ],
+          "alt": [
+            "We played cards with our neighbours after that."
+          ]
+        },
+        {
+          "en": "Finally, the power came back.",
+          "fr": "Finalement, le courant est revenu.",
+          "trap": [
+            "come",
+            "was"
+          ],
+          "alt": [
+            "The power finally came back."
+          ]
+        },
+        {
+          "en": "Were they laughing when the teacher arrived?",
+          "fr": "Est-ce qu'ils riaient quand l'enseignant est arrivé ?",
+          "trap": [
+            "Did",
+            "laughed"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Ethan fell asleep while he was watching a movie.",
+          "fr": "Ethan s'est endormi pendant qu'il regardait un film.",
+          "trap": [
+            "falled",
+            "watched"
+          ],
+          "alt": [
+            "While he was watching a movie, Ethan fell asleep."
+          ]
+        }
+      ],
+      "grammar": [
+        {
+          "type": "mcq",
+          "q": "At seven o'clock last night, I ___ my homework.",
+          "choices": [
+            "were doing",
+            "am doing",
+            "was doing",
+            "doing"
+          ],
+          "answer": 2,
+          "explain": "Action en cours à un moment précis du passé : I was doing."
+        },
+        {
+          "type": "mcq",
+          "q": "I was taking a shower ___ my friend called.",
+          "choices": [
+            "while",
+            "when",
+            "during"
+          ],
+          "answer": 1,
+          "explain": "L'action courte qui interrompt (called) est introduite par when."
+        },
+        {
+          "type": "mcq",
+          "q": "___ I was cooking, the cat jumped on the table.",
+          "choices": [
+            "During",
+            "Then",
+            "While",
+            "After that"
+          ],
+          "answer": 2,
+          "explain": "While (pendant que) + action longue au passé continu. During est suivi d'un nom, pas d'une phrase."
+        },
+        {
+          "type": "mcq",
+          "q": "They ___ soccer when it started to rain.",
+          "choices": [
+            "was playing",
+            "were playing",
+            "are playing"
+          ],
+          "answer": 1,
+          "explain": "They + were + -ing : they were playing."
+        },
+        {
+          "type": "mcq",
+          "q": "Quel mot annonce la FIN d'une histoire ?",
+          "choices": [
+            "first",
+            "then",
+            "after that",
+            "finally"
+          ],
+          "answer": 3,
+          "explain": "Finally = finalement : on l'utilise pour la dernière étape."
+        },
+        {
+          "type": "mcq",
+          "q": "Quelle phrase est correcte ?",
+          "choices": [
+            "I knew the answer.",
+            "I was knowing the answer.",
+            "I was know the answer."
+          ],
+          "answer": 0,
+          "explain": "Know est un verbe d'état : pas de passé continu. On dit I knew."
+        },
+        {
+          "type": "mcq",
+          "q": "What ___ you doing when I called?",
+          "choices": [
+            "was",
+            "did",
+            "were"
+          ],
+          "answer": 2,
+          "explain": "You + were + -ing : What were you doing?"
+        },
+        {
+          "type": "fill",
+          "q": "While Ana ___ in her room, her brother was playing video games.",
+          "hint": "study, passé continu",
+          "answer": [
+            "was studying"
+          ],
+          "explain": "Ana = she : was + studying."
+        },
+        {
+          "type": "fill",
+          "q": "The children ___ in the park when the storm started.",
+          "hint": "play, passé continu",
+          "answer": [
+            "were playing"
+          ],
+          "explain": "The children = they : were + playing."
+        },
+        {
+          "type": "fill",
+          "q": "I ___ when you called me. I was in the shower!",
+          "hint": "sleep, passé continu, négatif",
+          "answer": [
+            "wasn't sleeping"
+          ],
+          "explain": "Négatif du passé continu avec I : wasn't + sleeping."
+        },
+        {
+          "type": "fill",
+          "q": "We were walking home ___ we saw a fox.",
+          "hint": "quand",
+          "answer": [
+            "when"
+          ],
+          "explain": "When + action courte au passé simple (we saw)."
+        },
+        {
+          "type": "fill",
+          "q": "We watched a movie. ___, we went for ice cream.",
+          "hint": "après ça",
+          "answer": [
+            "After that"
+          ],
+          "explain": "« Après ça » = after that."
+        },
+        {
+          "type": "fill",
+          "q": "The lights went out. ___, someone knocked at the door!",
+          "hint": "tout à coup",
+          "answer": [
+            "Suddenly",
+            "All of a sudden"
+          ],
+          "explain": "« Tout à coup » = suddenly : parfait pour le suspense !"
+        },
+        {
+          "type": "error",
+          "q": "Emma and Zoé was playing hockey at noon.",
+          "wrong": 3,
+          "fix": [
+            "were"
+          ],
+          "explain": "Emma and Zoé = they, donc were playing."
+        },
+        {
+          "type": "error",
+          "q": "While I was cook, my dog ate my sandwich.",
+          "wrong": 3,
+          "fix": [
+            "cooking"
+          ],
+          "explain": "Passé continu = was + verbe en -ing : was cooking."
+        },
+        {
+          "type": "error",
+          "q": "While we were walk home, it started to snow.",
+          "wrong": 3,
+          "fix": [
+            "walking"
+          ],
+          "explain": "Passé continu = were + verbe en -ing : were walking."
+        },
+        {
+          "type": "error",
+          "q": "Finally, the storm stoped and we went outside.",
+          "wrong": 3,
+          "fix": [
+            "stopped"
+          ],
+          "explain": "Stop est court : on double le p → stopped."
+        }
+      ],
+      "reading": {
+        "title": "The Night of the Storm",
+        "text": "Last winter, there was a big storm in Ottawa. At eight o'clock, Amir was doing his homework and his little sister Sofia was watching TV. Their mom was cooking pasta in the kitchen.\n\nSuddenly, the lights went out! The house was completely dark. Sofia shouted, and Amir laughed. First, their mom found a flashlight. Then, she brought some candles to the living room.\n\nWhile they were sitting near the candles, someone knocked at the door. It was Olivia, their neighbour. She didn't have a flashlight, so Amir gave her one.\n\nAfter that, they all played cards and told funny stories. Finally, the power came back at midnight, but Sofia was already sleeping on the couch.",
+        "questions": [
+          {
+            "q": "Que faisait Amir quand les lumières se sont éteintes ?",
+            "choices": [
+              "Il regardait la télé.",
+              "Il faisait ses devoirs.",
+              "Il cuisinait.",
+              "Il dormait."
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Qu'est-ce que la mère a trouvé en premier ?",
+            "choices": [
+              "des bougies",
+              "des cartes",
+              "une lampe de poche",
+              "des pâtes"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Qui a frappé à la porte ?",
+            "choices": [
+              "Olivia, la voisine",
+              "le père",
+              "un ami d'Amir",
+              "Sofia"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Pourquoi Olivia est-elle venue, probablement ?",
+            "choices": [
+              "Elle voulait jouer aux cartes.",
+              "Elle avait faim.",
+              "Elle avait peur de l'orage.",
+              "Elle n'avait pas de lampe de poche."
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Que faisait Sofia quand le courant est revenu ?",
+            "choices": [
+              "Elle regardait la télé.",
+              "Elle jouait aux cartes.",
+              "Elle dormait.",
+              "Elle criait."
+            ],
+            "answer": 2
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+// Catalogue of mini-games. Each game only uses the items of the current station.
+import { memory, rain, flash, bubbles, spell } from "./word-games.js";
+import { builder, hunt, dictationGame, gauntlet } from "./sentence-games.js";
+
+const letters = (s) => /^[a-z' -]+$/i.test(s) && s.replace(/[^a-z]/gi, "").length >= 3 && s.length <= 14;
+
+export const GAMES = [
+  { id: "memory", name: "Paires express", skill: "Vocabulaire", icon: "memory", color: "var(--l6)", desc: "Retourne les cartes et associe chaque mot à sa traduction.", rules: "Trouve les 6 paires anglais–français le plus vite possible, avec le moins d'essais possible.", available: (u) => u.vocab.length >= 6, start: memory },
+  { id: "rain", name: "Pluie de mots", skill: "Vocabulaire · vitesse", icon: "rain", color: "var(--l5)", desc: "Les mots tombent : tape leur traduction avant qu'ils touchent le sol.", rules: "Des mots français tombent du ciel. Tape le mot anglais avant qu'il touche le sol. 3 vies. Ça accélère !", available: (u) => u.vocab.length >= 8, start: rain },
+  { id: "flash", name: "Éclair", skill: "Vocabulaire · réflexes", icon: "flash", color: "var(--l2)", desc: "Vrai ou faux ? 45 secondes pour enchaîner les bonnes réponses.", rules: "Le mot anglais et le mot français vont-ils ensemble ? Réponds Vrai ou Faux (flèches ← → au clavier). Une erreur coûte 3 secondes.", available: (u) => u.vocab.length >= 8, start: flash },
+  { id: "bubbles", name: "Bulles sonores", skill: "Écoute", icon: "bubbles", color: "var(--l9)", audio: true, desc: "Écoute le mot anglais et éclate la bulle qui a le bon sens.", rules: "La voix dit un mot anglais. Éclate la bulle qui porte sa traduction avant qu'elle s'envole. 3 vies.", available: (u) => u.vocab.length >= 4, start: bubbles },
+  { id: "spell", name: "Épelle-le", skill: "Orthographe", icon: "spell", color: "var(--l7)", desc: "Écris le mot lettre par lettre : chaque faute compte.", rules: "Écris le mot anglais lettre par lettre, dans l'ordre. Chaque mauvaise lettre te coûte des points. Au bout de 3 fautes, la lettre est révélée.", available: (u) => u.vocab.filter((v) => letters(v.en)).length >= 4, start: spell },
+  { id: "builder", name: "Le Constructeur", skill: "Phrases", icon: "builder", color: "var(--l4)", desc: "Remets les mots dans l'ordre… et évite les pièges.", rules: "Construis la phrase anglaise avec les tuiles. Attention : certaines tuiles sont des pièges !", available: (u) => u.sentences.length >= 5, start: builder },
+  { id: "hunt", name: "Chasse aux fautes", skill: "Grammaire", icon: "hunt", color: "var(--l1)", desc: "Une faute se cache dans chaque phrase. Trouve-la vite !", rules: "Touche le mot faux le plus vite possible. Plus tu es rapide, plus tu gagnes de points. 3 vies.", available: (u) => u.grammar.filter((g) => g.type === "error").length >= 4, start: hunt },
+  { id: "dictation", name: "Dictée flash", skill: "Écoute · orthographe", icon: "dictation", color: "var(--l8)", audio: true, desc: "Écoute la phrase et écris-la en entier.", rules: "5 phrases. Écoute, puis écris toute la phrase. Chaque mot juste rapporte des points.", available: (u) => u.sentences.length >= 5, start: dictationGame },
+  { id: "gauntlet", name: "Défi grammaire", skill: "Grammaire", icon: "gauntlet", color: "var(--l11)", desc: "10 questions de grammaire d'affilée, avec les explications.", rules: "10 questions de grammaire de la station. Les séries de bonnes réponses rapportent des bonus.", available: (u) => u.grammar.length >= 8, start: gauntlet },
+];

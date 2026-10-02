@@ -1,0 +1,2514 @@
+{
+  "id": 6,
+  "cefr": "B1",
+  "title": "Expériences et avenir",
+  "titleEn": "Experiences & Future",
+  "intro": "Parle de tes projets, compare tout ce qui t'entoure et raconte tes expériences. Tu vas enfin dompter le fameux present perfect !",
+  "boss": {
+    "name": "Professeur Perfect",
+    "taunt": "Have you ever beaten me? Never! J'enseigne le present perfect depuis des siècles, et personne n'a jamais réussi mon examen…",
+    "defeat": "Impossible… tu es plus fort que moi. Tu es… presque parfait !"
+  },
+  "units": [
+    {
+      "id": "6.1",
+      "title": "Le futur",
+      "titleEn": "Tomorrow Lane",
+      "goal": "Parler de l'avenir avec will, be going to et le présent continu, et parler de la météo.",
+      "lesson": [
+        {
+          "type": "p",
+          "text": "En anglais, il n'y a pas un seul futur, mais **trois façons** principales d'en parler. Le choix dépend de **quand** tu as pris ta décision et de **ce que tu sais**."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Forme",
+            "Quand l'utiliser",
+            "Exemple"
+          ],
+          "rows": [
+            [
+              "will + base",
+              "décision prise sur le coup, promesse, prédiction (je pense que…)",
+              "[[I'll help you!]] [[I think it will rain.]]"
+            ],
+            [
+              "be going to + base",
+              "projet déjà décidé, ou prédiction avec une preuve qu'on voit",
+              "[[I'm going to study tonight.]] [[Look! It's going to rain.]]"
+            ],
+            [
+              "présent continu",
+              "rendez-vous ou plan fixé (heure, billet, date)",
+              "[[I'm meeting Emma at four.]] [[We're flying to Toronto on Friday.]]"
+            ]
+          ]
+        },
+        {
+          "type": "rule",
+          "title": "Will : la forme",
+          "text": "**will + verbe de base**, sans **to** et sans **-s** : [[she will go]], [[they will win]]. Contraction : [[I'll]], [[she'll]]. Négatif : [[won't]] (= will not) : [[I won't forget.]]"
+        },
+        {
+          "type": "rule",
+          "title": "When + présent",
+          "text": "Après **when** (quand), on parle du futur… avec le **présent** ! [[When I'm older, I'll be a pilot.]] [[I'll call you when I get home.]]"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Météo",
+            "Français",
+            "Exemple"
+          ],
+          "rows": [
+            [
+              "[[sunny]]",
+              "ensoleillé",
+              "[[It will be sunny.]]"
+            ],
+            [
+              "[[cloudy]]",
+              "nuageux",
+              "[[It's cloudy today.]]"
+            ],
+            [
+              "[[rainy]]",
+              "pluvieux",
+              "[[a rainy day]]"
+            ],
+            [
+              "[[windy]]",
+              "venteux",
+              "[[It's very windy!]]"
+            ],
+            [
+              "[[foggy]]",
+              "brumeux",
+              "[[a foggy morning]]"
+            ],
+            [
+              "[[snowy]]",
+              "enneigé",
+              "[[a snowy weekend]]"
+            ]
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "The phone is ringing! I'll get it.",
+              "fr": "Le téléphone sonne ! Je vais répondre."
+            },
+            {
+              "en": "We're going to visit our cousins next summer.",
+              "fr": "Nous allons visiter nos cousins l'été prochain."
+            },
+            {
+              "en": "I'm meeting Priya at the library at four o'clock.",
+              "fr": "Je retrouve Priya à la bibliothèque à quatre heures."
+            },
+            {
+              "en": "The forecast says it will be windy tomorrow.",
+              "fr": "La météo annonce qu'il va venter demain."
+            },
+            {
+              "en": "She won't come to the party.",
+              "fr": "Elle ne viendra pas au party."
+            }
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "Le grand piège : « Quand je serai grand » ne se dit **pas** [[When I will be older]]. On dit [[When I'm older]] ! Et jamais de **to** après will : [[I will call you]], pas [[I will to call you]]."
+        },
+        {
+          "type": "dialogue",
+          "title": "Les plans de la fin de semaine",
+          "lines": [
+            {
+              "who": "Maya",
+              "en": "What are you doing this weekend, Ethan?",
+              "fr": "Qu'est-ce que tu fais cette fin de semaine, Ethan ?"
+            },
+            {
+              "who": "Ethan",
+              "en": "I'm going to visit my cousins in Toronto. We're leaving on Saturday morning.",
+              "fr": "Je vais visiter mes cousins à Toronto. On part samedi matin."
+            },
+            {
+              "who": "Maya",
+              "en": "Cool! What's the weather going to be like?",
+              "fr": "Cool ! Quel temps va-t-il faire ?"
+            },
+            {
+              "who": "Ethan",
+              "en": "The forecast says it will be sunny but windy.",
+              "fr": "La météo annonce du soleil, mais du vent."
+            },
+            {
+              "who": "Maya",
+              "en": "Lucky you! I think it's going to rain here.",
+              "fr": "Chanceux ! Je pense qu'il va pleuvoir ici."
+            },
+            {
+              "who": "Ethan",
+              "en": "Don't worry, I'll send you photos of the sun!",
+              "fr": "Ne t'inquiète pas, je vais t'envoyer des photos du soleil !"
+            },
+            {
+              "who": "Maya",
+              "en": "Ha ha, thanks. When you come back, I'll make you cookies.",
+              "fr": "Ha ha, merci. Quand tu reviendras, je te ferai des biscuits."
+            }
+          ]
+        },
+        {
+          "type": "fun",
+          "text": "Le sais-tu ? Au Canada, la météo se donne en degrés Celsius. [[It's minus twenty degrees!]] veut dire « Il fait moins vingt degrés ! » Aux États-Unis, on utilise plutôt les degrés Fahrenheit."
+        }
+      ],
+      "vocab": [
+        {
+          "en": "tomorrow",
+          "fr": "demain",
+          "alt": [],
+          "ex": "It will be sunny tomorrow."
+        },
+        {
+          "en": "the day after tomorrow",
+          "fr": "après-demain",
+          "alt": [],
+          "ex": "We're leaving the day after tomorrow."
+        },
+        {
+          "en": "tonight",
+          "fr": "ce soir",
+          "alt": [],
+          "ex": "What are you doing tonight?"
+        },
+        {
+          "en": "next week",
+          "fr": "la semaine prochaine",
+          "alt": [],
+          "ex": "I'm going to start piano lessons next week."
+        },
+        {
+          "en": "soon",
+          "fr": "bientôt",
+          "alt": [],
+          "ex": "Summer will be here soon."
+        },
+        {
+          "en": "probably",
+          "fr": "probablement",
+          "alt": [],
+          "ex": "It will probably snow tonight."
+        },
+        {
+          "en": "maybe",
+          "fr": "peut-être",
+          "alt": [
+            "perhaps"
+          ],
+          "ex": "Maybe we'll go to the beach."
+        },
+        {
+          "en": "weather forecast",
+          "fr": "prévisions météo (la météo)",
+          "alt": [
+            "forecast"
+          ],
+          "ex": "The weather forecast says it will rain."
+        },
+        {
+          "en": "sunny",
+          "fr": "ensoleillé",
+          "alt": [],
+          "ex": "It's going to be sunny all week."
+        },
+        {
+          "en": "cloudy",
+          "fr": "nuageux",
+          "alt": [],
+          "ex": "The sky is cloudy this morning."
+        },
+        {
+          "en": "rainy",
+          "fr": "pluvieux",
+          "alt": [],
+          "ex": "I don't like rainy days."
+        },
+        {
+          "en": "windy",
+          "fr": "venteux",
+          "alt": [],
+          "ex": "It's too windy for a picnic."
+        },
+        {
+          "en": "foggy",
+          "fr": "brumeux",
+          "alt": [],
+          "ex": "Drive slowly, it's foggy."
+        },
+        {
+          "en": "snowy",
+          "fr": "enneigé, de neige",
+          "alt": [],
+          "ex": "We love snowy weekends."
+        },
+        {
+          "en": "degree",
+          "fr": "degré",
+          "alt": [],
+          "ex": "It's minus ten degrees outside."
+        },
+        {
+          "en": "umbrella",
+          "fr": "parapluie",
+          "alt": [],
+          "ex": "Take an umbrella, it's going to rain."
+        },
+        {
+          "en": "thunderstorm",
+          "fr": "orage",
+          "alt": [],
+          "ex": "There will be a thunderstorm tonight."
+        },
+        {
+          "en": "plan",
+          "fr": "projet, plan (nom)",
+          "alt": [],
+          "ex": "What are your plans for the summer?"
+        },
+        {
+          "en": "promise",
+          "fr": "promettre",
+          "alt": [],
+          "ex": "I promise I'll call you."
+        }
+      ],
+      "sentences": [
+        {
+          "en": "It's going to rain this afternoon.",
+          "fr": "Il va pleuvoir cet après-midi.",
+          "trap": [
+            "will",
+            "go"
+          ],
+          "alt": [
+            "This afternoon it's going to rain."
+          ]
+        },
+        {
+          "en": "I think it will be sunny tomorrow.",
+          "fr": "Je pense qu'il fera soleil demain.",
+          "trap": [
+            "sun",
+            "wills"
+          ],
+          "alt": [
+            "I think tomorrow it will be sunny.",
+            "Tomorrow I think it will be sunny."
+          ]
+        },
+        {
+          "en": "We're going to visit our cousins next summer.",
+          "fr": "Nous allons visiter nos cousins l'été prochain.",
+          "trap": [
+            "will",
+            "visiting"
+          ],
+          "alt": [
+            "Next summer we're going to visit our cousins."
+          ]
+        },
+        {
+          "en": "I'm meeting Priya at the library at four o'clock.",
+          "fr": "Je retrouve Priya à la bibliothèque à quatre heures.",
+          "trap": [
+            "meet",
+            "will"
+          ],
+          "alt": [
+            "At four o'clock I'm meeting Priya at the library.",
+            "I'm meeting Priya at four o'clock at the library."
+          ]
+        },
+        {
+          "en": "When I'm older, I'll be a pilot.",
+          "fr": "Quand je serai grand, je serai pilote.",
+          "trap": [
+            "will",
+            "going"
+          ],
+          "alt": [
+            "I'll be a pilot when I'm older."
+          ]
+        },
+        {
+          "en": "Don't worry, I'll help you with your homework.",
+          "fr": "Ne t'inquiète pas, je vais t'aider avec tes devoirs.",
+          "trap": [
+            "will",
+            "helping"
+          ],
+          "alt": [
+            "I'll help you with your homework, don't worry."
+          ]
+        },
+        {
+          "en": "She won't come to the party tomorrow.",
+          "fr": "Elle ne viendra pas au party demain.",
+          "trap": [
+            "comes",
+            "willn't"
+          ],
+          "alt": [
+            "Tomorrow she won't come to the party."
+          ]
+        },
+        {
+          "en": "Are you going to take the bus tonight?",
+          "fr": "Vas-tu prendre l'autobus ce soir ?",
+          "trap": [
+            "taking",
+            "goes"
+          ],
+          "alt": []
+        },
+        {
+          "en": "What are you doing this weekend?",
+          "fr": "Qu'est-ce que tu fais cette fin de semaine ?",
+          "trap": [
+            "does",
+            "did"
+          ],
+          "alt": []
+        },
+        {
+          "en": "The weather forecast says it will be windy.",
+          "fr": "La météo annonce qu'il va venter.",
+          "trap": [
+            "say",
+            "wind"
+          ],
+          "alt": []
+        },
+        {
+          "en": "We're flying to Vancouver on Saturday.",
+          "fr": "Nous prenons l'avion pour Vancouver samedi.",
+          "trap": [
+            "fly",
+            "will"
+          ],
+          "alt": [
+            "On Saturday we're flying to Vancouver."
+          ]
+        },
+        {
+          "en": "I promise I won't forget your birthday.",
+          "fr": "Je te promets que je n'oublierai pas ton anniversaire.",
+          "trap": [
+            "forgot",
+            "forgetting"
+          ],
+          "alt": []
+        }
+      ],
+      "grammar": [
+        {
+          "type": "mcq",
+          "q": "Look at those black clouds! It ___ rain.",
+          "choices": [
+            "is raining to",
+            "is going to",
+            "will to",
+            "goes to"
+          ],
+          "answer": 1,
+          "explain": "Prédiction avec une preuve qu'on voit (les nuages noirs) : be going to."
+        },
+        {
+          "type": "mcq",
+          "q": "When I ___ older, I'll travel around the world.",
+          "choices": [
+            "will be",
+            "would be",
+            "am",
+            "be"
+          ],
+          "answer": 2,
+          "explain": "Après when, on utilise le présent pour parler du futur : When I am older."
+        },
+        {
+          "type": "mcq",
+          "q": "Le téléphone sonne. Tu décides tout de suite de répondre. Que dis-tu ?",
+          "choices": [
+            "I'll answer it!",
+            "I answer it!",
+            "I answered it!"
+          ],
+          "answer": 0,
+          "explain": "Décision prise sur le coup : will → I'll answer it!"
+        },
+        {
+          "type": "mcq",
+          "q": "She ___ to Toronto next week. She bought her ticket yesterday.",
+          "choices": [
+            "will goes",
+            "going",
+            "go",
+            "is going"
+          ],
+          "answer": 3,
+          "explain": "Plan fixé (le billet est acheté) : présent continu → she is going."
+        },
+        {
+          "type": "mcq",
+          "q": "Laquelle est correcte ?",
+          "choices": [
+            "I will to call you.",
+            "I will calling you.",
+            "I will call you.",
+            "I will calls you."
+          ],
+          "answer": 2,
+          "explain": "Will + verbe de base, sans to, sans -ing, sans -s."
+        },
+        {
+          "type": "mcq",
+          "q": "___ you come to my party on Saturday?",
+          "choices": [
+            "Will",
+            "Do",
+            "Are",
+            "Does"
+          ],
+          "answer": 0,
+          "explain": "Question au futur : Will + sujet + base → Will you come?"
+        },
+        {
+          "type": "fill",
+          "q": "Look! That little boy ___ fall!",
+          "hint": "be going to",
+          "answer": [
+            "is going to"
+          ],
+          "explain": "On voit que ça va arriver : is going to + base."
+        },
+        {
+          "type": "fill",
+          "q": "When I ___ sixteen, I'll learn to drive.",
+          "hint": "be",
+          "answer": [
+            "am"
+          ],
+          "explain": "Après when, présent : When I am (I'm) sixteen."
+        },
+        {
+          "type": "fill",
+          "q": "I ___ forget. I promise!",
+          "hint": "will, négatif",
+          "answer": [
+            "won't"
+          ],
+          "explain": "Le négatif de will est won't (will not)."
+        },
+        {
+          "type": "fill",
+          "q": "We ___ our grandparents this Sunday. It's all planned.",
+          "hint": "visit, présent continu",
+          "answer": [
+            "are visiting"
+          ],
+          "explain": "Plan fixé : présent continu → we are visiting."
+        },
+        {
+          "type": "fill",
+          "q": "The forecast says it ___ tomorrow.",
+          "hint": "snow, will",
+          "answer": [
+            "will snow"
+          ],
+          "explain": "Prédiction avec will : will + base → will snow."
+        },
+        {
+          "type": "fill",
+          "q": "What ___ you going to do after school?",
+          "hint": "be",
+          "answer": [
+            "are"
+          ],
+          "explain": "Be going to avec you : are you going to…?"
+        },
+        {
+          "type": "error",
+          "q": "When I'll get home, I'll call you.",
+          "wrong": 1,
+          "fix": [
+            "I"
+          ],
+          "explain": "Après when, présent : When I get home."
+        },
+        {
+          "type": "error",
+          "q": "She will goes to the dentist tomorrow.",
+          "wrong": 2,
+          "fix": [
+            "go"
+          ],
+          "explain": "Will + base, jamais de -s : she will go."
+        },
+        {
+          "type": "error",
+          "q": "Maybe it will snows tomorrow.",
+          "wrong": 3,
+          "fix": [
+            "snow"
+          ],
+          "explain": "Will + base : it will snow."
+        },
+        {
+          "type": "error",
+          "q": "Are you going to playing hockey tonight?",
+          "wrong": 4,
+          "fix": [
+            "play"
+          ],
+          "explain": "Be going to + base : going to play."
+        },
+        {
+          "type": "error",
+          "q": "My mom and I is going to visit the museum next week.",
+          "wrong": 4,
+          "fix": [
+            "are"
+          ],
+          "explain": "My mom and I = we, donc are going to."
+        }
+      ],
+      "reading": {
+        "title": "Weekend Plans",
+        "text": "Hi Grandma!\n\nThe weather forecast says it's going to be sunny and warm this weekend, so we have big plans. On Saturday morning, Dad and I are going to ride our bikes along the Rideau Canal. In the afternoon, I'm meeting Emma at the library. We're going to work on our science project.\n\nOn Sunday, we're having a picnic in Gatineau Park with my cousins. Mom says it will probably be windy, so I'll bring my sweater.\n\nWhen I'm older, I'm going to visit you in Vancouver all by myself! I promise I'll call you on Sunday night.\n\nLove,\nJaden",
+        "questions": [
+          {
+            "q": "Selon la météo, quel temps fera-t-il ?",
+            "choices": [
+              "pluvieux et froid",
+              "ensoleillé et chaud",
+              "neigeux",
+              "brumeux"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Que fera Jaden samedi après-midi ?",
+            "choices": [
+              "du vélo avec son père",
+              "un pique-nique",
+              "appeler sa grand-mère",
+              "travailler avec Emma à la bibliothèque"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Pourquoi Jaden va-t-il apporter un chandail ?",
+            "choices": [
+              "Il va probablement venter.",
+              "Il va pleuvoir.",
+              "Il va neiger.",
+              "Sa mère a froid."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Où habite la grand-mère ?",
+            "choices": [
+              "à Gatineau",
+              "à Ottawa",
+              "à Vancouver",
+              "à Toronto"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Quand Jaden va-t-il appeler sa grand-mère ?",
+            "choices": [
+              "samedi matin",
+              "dimanche soir",
+              "samedi soir",
+              "lundi matin"
+            ],
+            "answer": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "6.2",
+      "title": "Comparer",
+      "titleEn": "Bigger and Better",
+      "goal": "Comparer des personnes et des choses avec les comparatifs, les superlatifs et as … as.",
+      "lesson": [
+        {
+          "type": "p",
+          "text": "Plus grand, le plus rapide, aussi drôle que… Pour comparer en anglais, tout dépend de la **longueur de l'adjectif**."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Adjectif",
+            "Comparatif (plus … que)",
+            "Superlatif (le plus …)"
+          ],
+          "rows": [
+            [
+              "court : tall",
+              "[[taller than]]",
+              "[[the tallest]]"
+            ],
+            [
+              "finit par -e : nice",
+              "[[nicer than]]",
+              "[[the nicest]]"
+            ],
+            [
+              "consonne + y : funny",
+              "[[funnier than]]",
+              "[[the funniest]]"
+            ],
+            [
+              "court C-V-C : big, hot",
+              "[[bigger than]], [[hotter than]]",
+              "[[the biggest]], [[the hottest]]"
+            ],
+            [
+              "long : interesting",
+              "[[more interesting than]]",
+              "[[the most interesting]]"
+            ],
+            [
+              "good",
+              "[[better than]]",
+              "[[the best]]"
+            ],
+            [
+              "bad",
+              "[[worse than]]",
+              "[[the worst]]"
+            ],
+            [
+              "far",
+              "[[farther than]]",
+              "[[the farthest]]"
+            ]
+          ]
+        },
+        {
+          "type": "rule",
+          "title": "Court ou long ?",
+          "text": "Adjectif court (une syllabe, ou deux qui finissent par -y) : **-er / -est**. Adjectif long : **more / the most**. Jamais les deux ensemble ! Pour « aussi … que » : **as + adjectif + as** : [[Léa is as tall as her brother.]] Au négatif : [[My bag isn't as heavy as yours.]]"
+        },
+        {
+          "type": "rule",
+          "title": "Le superlatif : the + in",
+          "text": "Le superlatif prend **the**, et le lieu ou le groupe se dit avec **in** (ou **on** pour une équipe) : [[the tallest in my class]], [[the best player on the team]]. Avec une période : [[the worst day of my life]]."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "My brother is taller than my dad.",
+              "fr": "Mon frère est plus grand que mon père."
+            },
+            {
+              "en": "This book is more interesting than the movie.",
+              "fr": "Ce livre est plus intéressant que le film."
+            },
+            {
+              "en": "Emma is the fastest runner in our school.",
+              "fr": "Emma est la coureuse la plus rapide de notre école."
+            },
+            {
+              "en": "Your idea is better than my idea.",
+              "fr": "Ton idée est meilleure que mon idée."
+            },
+            {
+              "en": "Hockey is as popular as soccer in my class.",
+              "fr": "Le hockey est aussi populaire que le soccer dans ma classe."
+            }
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "Pièges de francophone : on ne dit **jamais** [[more big]] ni [[more better]] : c'est [[bigger]] et [[better]]. Et « que » dans une comparaison, c'est **than**, pas **that** : [[taller than me]]. Astuce : than et « que » ont tous les deux un **n**… presque !"
+        },
+        {
+          "type": "dialogue",
+          "title": "Le nouveau téléphone",
+          "lines": [
+            {
+              "who": "Priya",
+              "en": "Which is better, your new phone or your old one?",
+              "fr": "Lequel est le meilleur, ton nouveau téléphone ou l'ancien ?"
+            },
+            {
+              "who": "Jaden",
+              "en": "The new one is faster, but it's more expensive.",
+              "fr": "Le nouveau est plus rapide, mais il est plus cher."
+            },
+            {
+              "who": "Priya",
+              "en": "Is the camera better?",
+              "fr": "La caméra est-elle meilleure ?"
+            },
+            {
+              "who": "Jaden",
+              "en": "Yes, much better! And it's lighter than my old phone.",
+              "fr": "Oui, beaucoup mieux ! Et il est plus léger que mon ancien téléphone."
+            },
+            {
+              "who": "Priya",
+              "en": "So it's the perfect phone!",
+              "fr": "Alors c'est le téléphone parfait !"
+            },
+            {
+              "who": "Jaden",
+              "en": "Not really. It's the most expensive phone in the store!",
+              "fr": "Pas vraiment. C'est le téléphone le plus cher du magasin !"
+            }
+          ]
+        },
+        {
+          "type": "fun",
+          "text": "Le sais-tu ? Le Canada est le deuxième plus grand pays du monde par la superficie, après la Russie. En anglais : [[Canada is the second largest country in the world.]]"
+        }
+      ],
+      "vocab": [
+        {
+          "en": "better",
+          "fr": "meilleur, mieux (comparatif de good)",
+          "alt": [],
+          "ex": "Your drawing is better than mine."
+        },
+        {
+          "en": "the best",
+          "fr": "le meilleur, la meilleure",
+          "alt": [],
+          "ex": "She is the best player on the team."
+        },
+        {
+          "en": "worse",
+          "fr": "pire (comparatif de bad)",
+          "alt": [],
+          "ex": "The weather is worse today."
+        },
+        {
+          "en": "the worst",
+          "fr": "le pire, la pire",
+          "alt": [],
+          "ex": "That was the worst movie ever."
+        },
+        {
+          "en": "farther",
+          "fr": "plus loin",
+          "alt": [
+            "further"
+          ],
+          "ex": "Toronto is farther than Montreal."
+        },
+        {
+          "en": "than",
+          "fr": "que (dans une comparaison)",
+          "alt": [],
+          "ex": "I'm taller than my sister."
+        },
+        {
+          "en": "as tall as",
+          "fr": "aussi grand que",
+          "alt": [
+            "as big as"
+          ],
+          "ex": "Noah is as tall as his dad."
+        },
+        {
+          "en": "heavy",
+          "fr": "lourd",
+          "alt": [],
+          "ex": "My backpack is so heavy!"
+        },
+        {
+          "en": "fast",
+          "fr": "rapide, vite",
+          "alt": [
+            "quick"
+          ],
+          "ex": "Cheetahs are very fast."
+        },
+        {
+          "en": "slow",
+          "fr": "lent",
+          "alt": [],
+          "ex": "The old bus is very slow."
+        },
+        {
+          "en": "strong",
+          "fr": "fort",
+          "alt": [],
+          "ex": "My grandpa is still very strong."
+        },
+        {
+          "en": "smart",
+          "fr": "intelligent, futé",
+          "alt": [
+            "clever",
+            "intelligent"
+          ],
+          "ex": "Dogs are very smart animals."
+        },
+        {
+          "en": "dangerous",
+          "fr": "dangereux",
+          "alt": [],
+          "ex": "Thin ice is dangerous."
+        },
+        {
+          "en": "interesting",
+          "fr": "intéressant",
+          "alt": [],
+          "ex": "This book is really interesting."
+        },
+        {
+          "en": "famous",
+          "fr": "célèbre",
+          "alt": [],
+          "ex": "He is a famous hockey player."
+        },
+        {
+          "en": "noisy",
+          "fr": "bruyant",
+          "alt": [
+            "loud"
+          ],
+          "ex": "The cafeteria is very noisy."
+        },
+        {
+          "en": "quiet",
+          "fr": "calme, silencieux",
+          "alt": [],
+          "ex": "The library is quiet."
+        },
+        {
+          "en": "safe",
+          "fr": "sécuritaire, en sécurité",
+          "alt": [],
+          "ex": "Is it safe to skate on the canal?"
+        },
+        {
+          "en": "crowded",
+          "fr": "bondé, plein de monde",
+          "alt": [],
+          "ex": "The bus was very crowded."
+        }
+      ],
+      "sentences": [
+        {
+          "en": "My brother is taller than my dad.",
+          "fr": "Mon frère est plus grand que mon père.",
+          "trap": [
+            "that",
+            "more"
+          ],
+          "alt": []
+        },
+        {
+          "en": "This book is more interesting than the movie.",
+          "fr": "Ce livre est plus intéressant que le film.",
+          "trap": [
+            "interestinger",
+            "that"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Ottawa is colder than Vancouver in winter.",
+          "fr": "En hiver, il fait plus froid à Ottawa qu'à Vancouver.",
+          "trap": [
+            "more",
+            "that"
+          ],
+          "alt": [
+            "In winter Ottawa is colder than Vancouver.",
+            "Ottawa is colder in winter than Vancouver."
+          ]
+        },
+        {
+          "en": "Emma is the fastest runner in our school.",
+          "fr": "Emma est la coureuse la plus rapide de notre école.",
+          "trap": [
+            "of",
+            "most"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Your idea is better than my idea.",
+          "fr": "Ton idée est meilleure que mon idée.",
+          "trap": [
+            "gooder",
+            "more"
+          ],
+          "alt": []
+        },
+        {
+          "en": "That was the worst day of my life!",
+          "fr": "C'était la pire journée de ma vie !",
+          "trap": [
+            "baddest",
+            "most"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Montreal is farther from here than Gatineau.",
+          "fr": "Montréal est plus loin d'ici que Gatineau.",
+          "trap": [
+            "more",
+            "that"
+          ],
+          "alt": [
+            "Montreal is farther than Gatineau from here."
+          ]
+        },
+        {
+          "en": "My bag isn't as heavy as your bag.",
+          "fr": "Mon sac n'est pas aussi lourd que ton sac.",
+          "trap": [
+            "than",
+            "more"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Is the library quieter than the park?",
+          "fr": "La bibliothèque est-elle plus calme que le parc ?",
+          "trap": [
+            "more",
+            "that"
+          ],
+          "alt": []
+        },
+        {
+          "en": "This is the most dangerous street in the city.",
+          "fr": "C'est la rue la plus dangereuse de la ville.",
+          "trap": [
+            "more",
+            "dangerousest"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Hockey is as popular as soccer in my class.",
+          "fr": "Le hockey est aussi populaire que le soccer dans ma classe.",
+          "trap": [
+            "than",
+            "like"
+          ],
+          "alt": [
+            "In my class hockey is as popular as soccer."
+          ]
+        },
+        {
+          "en": "Who is the best player on your team?",
+          "fr": "Qui est le meilleur joueur de ton équipe ?",
+          "trap": [
+            "goodest",
+            "most"
+          ],
+          "alt": []
+        }
+      ],
+      "grammar": [
+        {
+          "type": "mcq",
+          "q": "An elephant is ___ than a horse.",
+          "choices": [
+            "more big",
+            "biger",
+            "bigger",
+            "the biggest"
+          ],
+          "answer": 2,
+          "explain": "Big est court (C-V-C) : on double le g et on ajoute -er → bigger."
+        },
+        {
+          "type": "mcq",
+          "q": "My sister is taller ___ me.",
+          "choices": [
+            "than",
+            "that",
+            "as",
+            "of"
+          ],
+          "answer": 0,
+          "explain": "Dans une comparaison, « que » se dit than."
+        },
+        {
+          "type": "mcq",
+          "q": "This is the ___ movie of the year!",
+          "choices": [
+            "goodest",
+            "most good",
+            "better",
+            "best"
+          ],
+          "answer": 3,
+          "explain": "Good est irrégulier : good → better → the best."
+        },
+        {
+          "type": "mcq",
+          "q": "Math is ___ than science for me.",
+          "choices": [
+            "difficulter",
+            "more difficult",
+            "most difficult"
+          ],
+          "answer": 1,
+          "explain": "Difficult est long : more difficult than."
+        },
+        {
+          "type": "mcq",
+          "q": "Léa is as tall ___ her brother.",
+          "choices": [
+            "than",
+            "that",
+            "as",
+            "like"
+          ],
+          "answer": 2,
+          "explain": "Aussi … que = as … as."
+        },
+        {
+          "type": "mcq",
+          "q": "Yesterday's test was bad, but today's test was even ___.",
+          "choices": [
+            "worse",
+            "badder",
+            "worst",
+            "more bad"
+          ],
+          "answer": 0,
+          "explain": "Bad est irrégulier : bad → worse → the worst. Ici on compare deux examens : worse."
+        },
+        {
+          "type": "fill",
+          "q": "My new phone is ___ than my old one.",
+          "hint": "fast",
+          "answer": [
+            "faster"
+          ],
+          "explain": "Adjectif court : fast → faster."
+        },
+        {
+          "type": "fill",
+          "q": "January is usually the ___ month in Ottawa.",
+          "hint": "cold",
+          "answer": [
+            "coldest"
+          ],
+          "explain": "Superlatif d'un adjectif court : the coldest."
+        },
+        {
+          "type": "fill",
+          "q": "This bag is ___ than that one.",
+          "hint": "expensive",
+          "answer": [
+            "more expensive"
+          ],
+          "explain": "Adjectif long : more expensive than."
+        },
+        {
+          "type": "fill",
+          "q": "Who is the ___ person in your family?",
+          "hint": "funny",
+          "answer": [
+            "funniest"
+          ],
+          "explain": "Consonne + y : funny → the funniest."
+        },
+        {
+          "type": "fill",
+          "q": "I live ___ from school than you.",
+          "hint": "far",
+          "answer": [
+            "farther",
+            "further"
+          ],
+          "explain": "Far est irrégulier : farther (ou further)."
+        },
+        {
+          "type": "fill",
+          "q": "The big box is ___ than the small box.",
+          "hint": "heavy",
+          "answer": [
+            "heavier"
+          ],
+          "explain": "Consonne + y : heavy → heavier."
+        },
+        {
+          "type": "error",
+          "q": "My dog is biger than your cat.",
+          "wrong": 3,
+          "fix": [
+            "bigger"
+          ],
+          "explain": "Big : on double le g → bigger."
+        },
+        {
+          "type": "error",
+          "q": "Lucas is taller that his brother.",
+          "wrong": 3,
+          "fix": [
+            "than"
+          ],
+          "explain": "« Que » dans une comparaison = than, pas that."
+        },
+        {
+          "type": "error",
+          "q": "This is the more expensive phone of all.",
+          "wrong": 3,
+          "fix": [
+            "most"
+          ],
+          "explain": "Superlatif d'un adjectif long : the most expensive."
+        },
+        {
+          "type": "error",
+          "q": "Noah is the best player of the team.",
+          "wrong": 5,
+          "fix": [
+            "on",
+            "in"
+          ],
+          "explain": "Avec une équipe, on dit the best player on the team (in est aussi accepté)."
+        },
+        {
+          "type": "error",
+          "q": "This year, my grades are worst than last year.",
+          "wrong": 5,
+          "fix": [
+            "worse"
+          ],
+          "explain": "Pour comparer deux choses : worse than. The worst sert pour le superlatif."
+        },
+        {
+          "type": "error",
+          "q": "My bag is as heavy than yours.",
+          "wrong": 5,
+          "fix": [
+            "as"
+          ],
+          "explain": "Aussi … que = as … as, jamais as … than."
+        }
+      ],
+      "reading": {
+        "title": "The Great Pet Debate",
+        "text": "Liam and Sofia are twins, but they never agree. This week, they are arguing about pets.\n\n\"Dogs are the best pets in the world,\" says Liam. \"They are smarter than cats, and they are more fun. My friend's dog runs faster than any cat!\"\n\n\"That's not true,\" says Sofia. \"Cats are quieter than dogs, and they are cleaner too. Also, a cat isn't as expensive as a dog.\"\n\nTheir mom has an idea. \"What about a fish? A fish is the quietest pet, and it's the cheapest too.\"\n\n\"But a fish is the most boring pet in the world!\" say the twins at the same time. For once, they agree!",
+        "questions": [
+          {
+            "q": "Selon Liam, pourquoi les chiens sont-ils les meilleurs ?",
+            "choices": [
+              "Ils sont plus calmes.",
+              "Ils sont plus intelligents et plus amusants.",
+              "Ils coûtent moins cher.",
+              "Ils sont plus propres."
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Selon Sofia, quel animal coûte moins cher qu'un chien ?",
+            "choices": [
+              "le poisson",
+              "le lapin",
+              "le chat",
+              "l'oiseau"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Quelle idée a la mère ?",
+            "choices": [
+              "un poisson",
+              "un chien",
+              "un chat",
+              "un oiseau"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Pourquoi les jumeaux n'aiment-ils pas cette idée ?",
+            "choices": [
+              "Le poisson coûte trop cher.",
+              "Le poisson est bruyant.",
+              "Ils ont peur des poissons.",
+              "Le poisson est l'animal le plus ennuyant."
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Qu'est-ce qui est surprenant à la fin ?",
+            "choices": [
+              "Ils se disputent encore.",
+              "Ils achètent un chien.",
+              "Les jumeaux sont enfin d'accord.",
+              "La mère se fâche."
+            ],
+            "answer": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "6.3",
+      "title": "As-tu déjà… ?",
+      "titleEn": "Have You Ever?",
+      "goal": "Raconter tes expériences de vie avec le present perfect, ever, never, been et gone.",
+      "lesson": [
+        {
+          "type": "p",
+          "text": "As-tu déjà vu un orignal ? As-tu déjà mangé des sushis ? Pour parler de tes **expériences de vie**, sans dire **quand**, l'anglais utilise le **present perfect**."
+        },
+        {
+          "type": "rule",
+          "title": "La formule",
+          "text": "**have / has + participe passé**. [[I have seen a moose.]] [[She has never eaten sushi.]] Question : [[Have you ever been to Toronto?]] Réponse courte : [[Yes, I have.]] / [[No, I haven't.]] Contractions : [[I've]], [[she's]], [[haven't]], [[hasn't]]."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Base",
+            "Passé",
+            "Participe passé"
+          ],
+          "rows": [
+            [
+              "be",
+              "was / were",
+              "[[been]]"
+            ],
+            [
+              "go",
+              "went",
+              "[[gone]]"
+            ],
+            [
+              "see",
+              "saw",
+              "[[seen]]"
+            ],
+            [
+              "do",
+              "did",
+              "[[done]]"
+            ],
+            [
+              "eat",
+              "ate",
+              "[[eaten]]"
+            ],
+            [
+              "write",
+              "wrote",
+              "[[written]]"
+            ],
+            [
+              "take",
+              "took",
+              "[[taken]]"
+            ],
+            [
+              "break",
+              "broke",
+              "[[broken]]"
+            ],
+            [
+              "fly",
+              "flew",
+              "[[flown]]"
+            ],
+            [
+              "ride",
+              "rode",
+              "[[ridden]]"
+            ],
+            [
+              "swim",
+              "swam",
+              "[[swum]]"
+            ],
+            [
+              "drive",
+              "drove",
+              "[[driven]]"
+            ],
+            [
+              "meet",
+              "met",
+              "[[met]]"
+            ],
+            [
+              "try",
+              "tried",
+              "[[tried]]"
+            ]
+          ]
+        },
+        {
+          "type": "rule",
+          "title": "Ever, never, once, twice",
+          "text": "[[ever]] = déjà (dans une question) : [[Have you ever tried maple taffy?]] [[never]] = jamais, avec un verbe **affirmatif** : [[I have never flown.]] Combien de fois : [[once]] (une fois), [[twice]] (deux fois), [[three times]]."
+        },
+        {
+          "type": "rule",
+          "title": "Been ou gone ?",
+          "text": "[[She has been to Paris.]] = elle y est allée **et elle est revenue**. [[She has gone to Paris.]] = elle est partie là-bas **et elle y est encore**. Pour raconter une expérience, c'est presque toujours **been**."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "Have you ever seen a moose?",
+              "fr": "As-tu déjà vu un orignal ?"
+            },
+            {
+              "en": "I have never eaten sushi.",
+              "fr": "Je n'ai jamais mangé de sushis."
+            },
+            {
+              "en": "My grandparents have been to Mexico twice.",
+              "fr": "Mes grands-parents sont allés au Mexique deux fois."
+            },
+            {
+              "en": "Mom isn't here. She has gone to the store.",
+              "fr": "Maman n'est pas là. Elle est partie au magasin."
+            },
+            {
+              "en": "Has your brother ever broken his arm?",
+              "fr": "Ton frère s'est-il déjà cassé le bras ?"
+            }
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "Pièges de francophone : « Je n'ai jamais… » = [[I have never…]], **pas** [[I haven't never]] (une seule négation !). « Es-tu déjà allé à… ? » = [[Have you ever been to…?]] Et attention au participe : [[I have seen]], jamais [[I have saw]]."
+        },
+        {
+          "type": "dialogue",
+          "title": "Le Carnaval",
+          "lines": [
+            {
+              "who": "Zoé",
+              "en": "Have you ever been to Quebec City?",
+              "fr": "Es-tu déjà allée à Québec ?"
+            },
+            {
+              "who": "Mei",
+              "en": "Yes, I have! I've been there twice.",
+              "fr": "Oui ! J'y suis allée deux fois."
+            },
+            {
+              "who": "Zoé",
+              "en": "Lucky! I've never been there. Have you ever tried maple taffy?",
+              "fr": "Chanceuse ! Je n'y suis jamais allée. As-tu déjà goûté la tire d'érable ?"
+            },
+            {
+              "who": "Mei",
+              "en": "Of course! I ate some at the Winter Carnival last year.",
+              "fr": "Bien sûr ! J'en ai mangé au Carnaval d'hiver l'année passée."
+            },
+            {
+              "who": "Zoé",
+              "en": "Where's your brother? Is he home?",
+              "fr": "Où est ton frère ? Est-il à la maison ?"
+            },
+            {
+              "who": "Mei",
+              "en": "No, he's gone to the library. He has never been to the Carnival!",
+              "fr": "Non, il est parti à la bibliothèque. Lui, il n'est jamais allé au Carnaval !"
+            }
+          ]
+        },
+        {
+          "type": "fun",
+          "text": "Le sais-tu ? La tire d'érable (en anglais [[maple taffy]]) se fait en versant du sirop d'érable bouillant sur de la neige propre. On l'enroule ensuite sur un bâtonnet. Miam !"
+        }
+      ],
+      "vocab": [
+        {
+          "en": "ever",
+          "fr": "déjà (dans une question)",
+          "alt": [],
+          "ex": "Have you ever seen a whale?"
+        },
+        {
+          "en": "never",
+          "fr": "jamais",
+          "alt": [],
+          "ex": "I have never been to Europe."
+        },
+        {
+          "en": "once",
+          "fr": "une fois",
+          "alt": [],
+          "ex": "I have ridden a horse once."
+        },
+        {
+          "en": "twice",
+          "fr": "deux fois",
+          "alt": [],
+          "ex": "She has seen that movie twice."
+        },
+        {
+          "en": "been",
+          "fr": "été (participe passé de be)",
+          "alt": [],
+          "ex": "Have you ever been to Toronto?"
+        },
+        {
+          "en": "gone",
+          "fr": "allé, parti (participe passé de go)",
+          "alt": [],
+          "ex": "Dad has gone to work."
+        },
+        {
+          "en": "seen",
+          "fr": "vu (participe passé de see)",
+          "alt": [],
+          "ex": "I have never seen a bear."
+        },
+        {
+          "en": "done",
+          "fr": "fait (participe passé de do)",
+          "alt": [],
+          "ex": "Have you done your homework?"
+        },
+        {
+          "en": "eaten",
+          "fr": "mangé (participe passé de eat)",
+          "alt": [],
+          "ex": "Have you ever eaten snails?"
+        },
+        {
+          "en": "written",
+          "fr": "écrit (participe passé de write)",
+          "alt": [],
+          "ex": "She has written a story in English."
+        },
+        {
+          "en": "taken",
+          "fr": "pris (participe passé de take)",
+          "alt": [],
+          "ex": "I have never taken the train."
+        },
+        {
+          "en": "broken",
+          "fr": "cassé (participe passé de break)",
+          "alt": [],
+          "ex": "Liam has broken his leg twice."
+        },
+        {
+          "en": "flown",
+          "fr": "pris l'avion (participe passé de fly)",
+          "alt": [],
+          "ex": "Have you ever flown in a helicopter?"
+        },
+        {
+          "en": "ridden",
+          "fr": "monté, fait du cheval ou du vélo (participe passé de ride)",
+          "alt": [],
+          "ex": "Have you ever ridden a horse?"
+        },
+        {
+          "en": "swum",
+          "fr": "nagé (participe passé de swim)",
+          "alt": [],
+          "ex": "I have swum in the ocean."
+        },
+        {
+          "en": "driven",
+          "fr": "conduit (participe passé de drive)",
+          "alt": [],
+          "ex": "My sister has never driven a car."
+        },
+        {
+          "en": "met",
+          "fr": "rencontré (participe passé de meet)",
+          "alt": [],
+          "ex": "Have you ever met a famous person?"
+        },
+        {
+          "en": "tried",
+          "fr": "essayé, goûté (participe passé de try)",
+          "alt": [],
+          "ex": "Have you ever tried maple taffy?"
+        }
+      ],
+      "sentences": [
+        {
+          "en": "Have you ever seen a moose?",
+          "fr": "As-tu déjà vu un orignal ?",
+          "trap": [
+            "saw",
+            "Did"
+          ],
+          "alt": []
+        },
+        {
+          "en": "I have never eaten sushi.",
+          "fr": "Je n'ai jamais mangé de sushis.",
+          "trap": [
+            "ate",
+            "ever"
+          ],
+          "alt": []
+        },
+        {
+          "en": "My grandparents have been to Mexico twice.",
+          "fr": "Mes grands-parents sont allés au Mexique deux fois.",
+          "trap": [
+            "went",
+            "was"
+          ],
+          "alt": []
+        },
+        {
+          "en": "She isn't here. She has gone to the dentist.",
+          "fr": "Elle n'est pas là. Elle est partie chez le dentiste.",
+          "trap": [
+            "went",
+            "have"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Has your brother ever broken his arm?",
+          "fr": "Ton frère s'est-il déjà cassé le bras ?",
+          "trap": [
+            "broke",
+            "Did"
+          ],
+          "alt": []
+        },
+        {
+          "en": "I have flown to Vancouver once.",
+          "fr": "J'ai pris l'avion pour Vancouver une fois.",
+          "trap": [
+            "flew",
+            "flied"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Have they ever ridden a horse?",
+          "fr": "Ont-ils déjà fait du cheval ?",
+          "trap": [
+            "rode",
+            "Do"
+          ],
+          "alt": []
+        },
+        {
+          "en": "I have met a famous hockey player.",
+          "fr": "J'ai rencontré un joueur de hockey célèbre.",
+          "trap": [
+            "meeted",
+            "has"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Zoé has written three stories in English.",
+          "fr": "Zoé a écrit trois histoires en anglais.",
+          "trap": [
+            "wrote",
+            "have"
+          ],
+          "alt": []
+        },
+        {
+          "en": "How many times have you been to Toronto?",
+          "fr": "Combien de fois es-tu allé à Toronto ?",
+          "trap": [
+            "did",
+            "was"
+          ],
+          "alt": []
+        },
+        {
+          "en": "My dad has never driven a big truck.",
+          "fr": "Mon père n'a jamais conduit de gros camion.",
+          "trap": [
+            "drove",
+            "ever"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Have you ever tried maple taffy?",
+          "fr": "As-tu déjà goûté la tire d'érable ?",
+          "trap": [
+            "try",
+            "Did"
+          ],
+          "alt": []
+        }
+      ],
+      "grammar": [
+        {
+          "type": "mcq",
+          "q": "Have you ever ___ a bear?",
+          "choices": [
+            "saw",
+            "seen",
+            "see",
+            "seeing"
+          ],
+          "answer": 1,
+          "explain": "Present perfect = have + participe passé : seen."
+        },
+        {
+          "type": "mcq",
+          "q": "Emma ___ never been to Montreal.",
+          "choices": [
+            "have",
+            "is",
+            "has",
+            "did"
+          ],
+          "answer": 2,
+          "explain": "Avec she (Emma), on utilise has."
+        },
+        {
+          "type": "mcq",
+          "q": "Mom isn't home. She has ___ to the store.",
+          "choices": [
+            "gone",
+            "been",
+            "went",
+            "go"
+          ],
+          "answer": 0,
+          "explain": "Elle n'est pas revenue (isn't home) : has gone."
+        },
+        {
+          "type": "mcq",
+          "q": "I've ___ to Quebec City twice. I loved it!",
+          "choices": [
+            "go",
+            "went",
+            "be",
+            "been"
+          ],
+          "answer": 3,
+          "explain": "Expérience terminée, on est revenu : been."
+        },
+        {
+          "type": "mcq",
+          "q": "« Have you ever eaten poutine? » Réponse courte positive :",
+          "choices": [
+            "Yes, I did.",
+            "Yes, I have.",
+            "Yes, I ate.",
+            "Yes, I am."
+          ],
+          "answer": 1,
+          "explain": "On répond avec le même auxiliaire que la question : Have you…? → Yes, I have."
+        },
+        {
+          "type": "mcq",
+          "q": "Comment dit-on « Je n'ai jamais nagé dans un lac » ?",
+          "choices": [
+            "I have never swam in a lake.",
+            "I haven't never swum in a lake.",
+            "I have never swum in a lake.",
+            "I have never swim in a lake."
+          ],
+          "answer": 2,
+          "explain": "Have + never + participe passé (swum). Une seule négation."
+        },
+        {
+          "type": "fill",
+          "q": "Have you ever ___ a horse?",
+          "hint": "ride",
+          "answer": [
+            "ridden"
+          ],
+          "explain": "Ride → rode → ridden."
+        },
+        {
+          "type": "fill",
+          "q": "My grandma has never ___ a car.",
+          "hint": "drive",
+          "answer": [
+            "driven"
+          ],
+          "explain": "Drive → drove → driven."
+        },
+        {
+          "type": "fill",
+          "q": "Liam has ___ his arm twice!",
+          "hint": "break",
+          "answer": [
+            "broken"
+          ],
+          "explain": "Break → broke → broken."
+        },
+        {
+          "type": "fill",
+          "q": "___ you ever been to Vancouver?",
+          "hint": "auxiliaire",
+          "answer": [
+            "Have"
+          ],
+          "explain": "Question au present perfect avec you : Have you ever…?"
+        },
+        {
+          "type": "fill",
+          "q": "My parents have ___ this movie three times.",
+          "hint": "see",
+          "answer": [
+            "seen"
+          ],
+          "explain": "See → saw → seen."
+        },
+        {
+          "type": "fill",
+          "q": "She has ___ on a plane many times.",
+          "hint": "fly",
+          "answer": [
+            "flown"
+          ],
+          "explain": "Fly → flew → flown."
+        },
+        {
+          "type": "fill",
+          "q": "I have ___ eaten snails. Yuck!",
+          "hint": "jamais",
+          "answer": [
+            "never"
+          ],
+          "explain": "« Jamais » = never, entre have et le participe."
+        },
+        {
+          "type": "error",
+          "q": "Have you ever saw a moose?",
+          "wrong": 3,
+          "fix": [
+            "seen"
+          ],
+          "explain": "Après have, le participe passé : seen, pas saw."
+        },
+        {
+          "type": "error",
+          "q": "My mom and dad has never flown in a helicopter.",
+          "wrong": 4,
+          "fix": [
+            "have"
+          ],
+          "explain": "My mom and dad = they, donc have."
+        },
+        {
+          "type": "error",
+          "q": "Has Lucas and Mei ever ridden a horse?",
+          "wrong": 0,
+          "fix": [
+            "Have"
+          ],
+          "explain": "Lucas and Mei = they, donc Have."
+        },
+        {
+          "type": "error",
+          "q": "Has your uncle ever wrote a book?",
+          "wrong": 4,
+          "fix": [
+            "written"
+          ],
+          "explain": "Write → wrote → written : après has, le participe passé."
+        },
+        {
+          "type": "error",
+          "q": "Where is Félix? He has been to the store.",
+          "wrong": 5,
+          "fix": [
+            "gone"
+          ],
+          "explain": "Félix n'est pas revenu : il est encore au magasin, donc has gone."
+        }
+      ],
+      "reading": {
+        "title": "Karim's Adventures",
+        "text": "Karim is thirteen, but he has already done many exciting things. He has been to six countries, and he has flown on a plane more than ten times. He has seen whales near Tadoussac, in Quebec, and he has swum in the Pacific Ocean.\n\nHe has also tried many kinds of food. He has eaten sushi in Vancouver and poutine in Montreal. But he has never eaten snails, and he says he never will!\n\nKarim's best friend, Ana, has never travelled outside Ontario. \"Have you ever been scared on a plane?\" she asks. \"Never,\" says Karim. \"But I have been scared on a horse! I have ridden a horse only once.\"\n\nRight now, Karim isn't at school. He has gone to Toronto with his dad, and Ana misses him already.",
+        "questions": [
+          {
+            "q": "Dans combien de pays Karim est-il allé ?",
+            "choices": [
+              "trois",
+              "six",
+              "dix",
+              "treize"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Qu'est-ce que Karim n'a jamais mangé ?",
+            "choices": [
+              "des sushis",
+              "de la poutine",
+              "du sirop d'érable",
+              "des escargots"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Où Karim a-t-il vu des baleines ?",
+            "choices": [
+              "près de Tadoussac",
+              "à Vancouver",
+              "à Toronto",
+              "en Ontario"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Qu'est-ce qui a déjà fait peur à Karim ?",
+            "choices": [
+              "l'avion",
+              "une baleine",
+              "un cheval",
+              "les escargots"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Où est Karim en ce moment ?",
+            "choices": [
+              "à l'école",
+              "à Toronto",
+              "à Montréal",
+              "chez Ana"
+            ],
+            "answer": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "6.4",
+      "title": "Depuis",
+      "titleEn": "Since When?",
+      "goal": "Dire depuis quand avec for / since, already, yet, just, et choisir entre present perfect et passé simple.",
+      "lesson": [
+        {
+          "type": "p",
+          "text": "En français, on dit « J'habite ici **depuis** deux ans » au présent. En anglais, c'est **impossible** : une situation qui a commencé dans le passé et qui **continue encore** se met au **present perfect**."
+        },
+        {
+          "type": "rule",
+          "title": "For ou since ?",
+          "text": "**for** + une **durée** : [[for two years]], [[for ten minutes]], [[for ages]]. **since** + un **point de départ** : [[since Monday]], [[since September]], [[since I was six]]. Question : [[How long have you lived here?]] (Depuis combien de temps… ?)"
+        },
+        {
+          "type": "table",
+          "head": [
+            "for (durée)",
+            "since (point de départ)"
+          ],
+          "rows": [
+            [
+              "[[for three days]]",
+              "[[since Tuesday]]"
+            ],
+            [
+              "[[for a week]]",
+              "[[since last week]]"
+            ],
+            [
+              "[[for five years]]",
+              "[[since grade one]]"
+            ],
+            [
+              "[[for a long time]]",
+              "[[since I was born]]"
+            ]
+          ]
+        },
+        {
+          "type": "rule",
+          "title": "Already, yet, just",
+          "text": "[[already]] = déjà (c'est fait, parfois plus tôt que prévu) : [[I've already finished.]] [[yet]] = encore / déjà, à la **fin** d'une question ou d'une négation : [[Have you finished yet?]] [[I haven't finished yet.]] [[just]] = venir de : [[I've just eaten.]] (Je viens de manger.)"
+        },
+        {
+          "type": "rule",
+          "title": "Present perfect ou passé simple ?",
+          "text": "Si tu dis **quand** (yesterday, last year, two days ago, when I was six), c'est le **passé simple** : [[I lost my keys yesterday.]] Si le moment n'est pas précisé ou si ça continue jusqu'à maintenant : **present perfect** : [[I've lost my keys!]] [[I've lived here for two years.]]"
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "I have lived in Ottawa for five years.",
+              "fr": "J'habite à Ottawa depuis cinq ans."
+            },
+            {
+              "en": "She has been sick since Monday.",
+              "fr": "Elle est malade depuis lundi."
+            },
+            {
+              "en": "We moved here when I was six.",
+              "fr": "Nous avons déménagé ici quand j'avais six ans."
+            },
+            {
+              "en": "Have you finished your project yet?",
+              "fr": "As-tu déjà fini ton projet ?"
+            },
+            {
+              "en": "I haven't seen my cousin for ages.",
+              "fr": "Je n'ai pas vu mon cousin depuis une éternité."
+            }
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "LE piège des francophones : « Je suis ici depuis deux ans » ne se dit **jamais** [[I am here since two years]]. On dit [[I have been here for two years]] : present perfect + **for** (car deux ans est une durée). Et jamais de present perfect avec un moment précis : [[I saw him yesterday]], pas [[I have seen him yesterday]]."
+        },
+        {
+          "type": "dialogue",
+          "title": "La nouvelle amie",
+          "lines": [
+            {
+              "who": "Félix",
+              "en": "How long have you lived in Ottawa, Priya?",
+              "fr": "Depuis combien de temps habites-tu à Ottawa, Priya ?"
+            },
+            {
+              "who": "Priya",
+              "en": "I've lived here for three years. We moved here from Toronto.",
+              "fr": "J'habite ici depuis trois ans. On a déménagé de Toronto."
+            },
+            {
+              "who": "Félix",
+              "en": "And how long have you known Emma?",
+              "fr": "Et depuis quand connais-tu Emma ?"
+            },
+            {
+              "who": "Priya",
+              "en": "Since grade five. She's my best friend!",
+              "fr": "Depuis la cinquième année. C'est ma meilleure amie !"
+            },
+            {
+              "who": "Félix",
+              "en": "Have you finished the science project yet?",
+              "fr": "As-tu déjà fini le projet de sciences ?"
+            },
+            {
+              "who": "Priya",
+              "en": "Not yet! I've just started it. And you?",
+              "fr": "Pas encore ! Je viens de le commencer. Et toi ?"
+            },
+            {
+              "who": "Félix",
+              "en": "I've already finished it. I finished it last night!",
+              "fr": "Je l'ai déjà fini. Je l'ai fini hier soir !"
+            }
+          ]
+        }
+      ],
+      "vocab": [
+        {
+          "en": "for two years",
+          "fr": "depuis deux ans (durée)",
+          "alt": [],
+          "ex": "I have lived here for two years."
+        },
+        {
+          "en": "since Monday",
+          "fr": "depuis lundi (point de départ)",
+          "alt": [],
+          "ex": "She has been sick since Monday."
+        },
+        {
+          "en": "how long",
+          "fr": "combien de temps, depuis combien de temps",
+          "alt": [],
+          "ex": "How long have you known Emma?"
+        },
+        {
+          "en": "already",
+          "fr": "déjà (c'est fait)",
+          "alt": [],
+          "ex": "I have already finished my homework."
+        },
+        {
+          "en": "not yet",
+          "fr": "pas encore",
+          "alt": [],
+          "ex": "Have you eaten? Not yet."
+        },
+        {
+          "en": "just",
+          "fr": "venir de (I've just…)",
+          "alt": [],
+          "ex": "I've just arrived."
+        },
+        {
+          "en": "recently",
+          "fr": "récemment",
+          "alt": [
+            "lately"
+          ],
+          "ex": "Have you seen Liam recently?"
+        },
+        {
+          "en": "so far",
+          "fr": "jusqu'à maintenant",
+          "alt": [],
+          "ex": "So far, I've read two books this month."
+        },
+        {
+          "en": "all my life",
+          "fr": "toute ma vie",
+          "alt": [],
+          "ex": "I have lived in Gatineau all my life."
+        },
+        {
+          "en": "a long time",
+          "fr": "longtemps",
+          "alt": [],
+          "ex": "We have known them for a long time."
+        },
+        {
+          "en": "for ages",
+          "fr": "depuis une éternité",
+          "alt": [],
+          "ex": "I haven't seen you for ages!"
+        },
+        {
+          "en": "since then",
+          "fr": "depuis ce temps-là",
+          "alt": [],
+          "ex": "We met in grade one. We've been friends since then."
+        },
+        {
+          "en": "known",
+          "fr": "connu (participe passé de know)",
+          "alt": [],
+          "ex": "I have known Mei since kindergarten."
+        },
+        {
+          "en": "had",
+          "fr": "eu (participe passé de have)",
+          "alt": [],
+          "ex": "We have had this cat for two years."
+        },
+        {
+          "en": "grown",
+          "fr": "grandi, poussé (participe passé de grow)",
+          "alt": [],
+          "ex": "Wow, you have grown a lot!"
+        },
+        {
+          "en": "collect",
+          "fr": "collectionner",
+          "alt": [],
+          "ex": "I have collected hockey cards since I was six."
+        },
+        {
+          "en": "neighbourhood",
+          "fr": "quartier",
+          "alt": [],
+          "ex": "We have lived in this neighbourhood for ten years."
+        },
+        {
+          "en": "best friend",
+          "fr": "meilleur ami, meilleure amie",
+          "alt": [],
+          "ex": "Zoé has been my best friend since grade two."
+        },
+        {
+          "en": "finish",
+          "fr": "finir, terminer",
+          "alt": [],
+          "ex": "Have you finished your project yet?"
+        }
+      ],
+      "sentences": [
+        {
+          "en": "I have lived in Ottawa for five years.",
+          "fr": "J'habite à Ottawa depuis cinq ans.",
+          "trap": [
+            "since",
+            "am"
+          ],
+          "alt": [
+            "For five years I have lived in Ottawa.",
+            "I have lived for five years in Ottawa."
+          ]
+        },
+        {
+          "en": "We have known each other since kindergarten.",
+          "fr": "Nous nous connaissons depuis la maternelle.",
+          "trap": [
+            "for",
+            "know"
+          ],
+          "alt": [
+            "Since kindergarten we have known each other."
+          ]
+        },
+        {
+          "en": "How long have you played the piano?",
+          "fr": "Depuis combien de temps joues-tu du piano ?",
+          "trap": [
+            "since",
+            "do"
+          ],
+          "alt": []
+        },
+        {
+          "en": "She has been sick since Monday.",
+          "fr": "Elle est malade depuis lundi.",
+          "trap": [
+            "for",
+            "is"
+          ],
+          "alt": [
+            "Since Monday she has been sick."
+          ]
+        },
+        {
+          "en": "I have just finished my homework.",
+          "fr": "Je viens de finir mes devoirs.",
+          "trap": [
+            "finish",
+            "yet"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Have you finished your project yet?",
+          "fr": "As-tu déjà fini ton projet ?",
+          "trap": [
+            "Do",
+            "finishing"
+          ],
+          "alt": []
+        },
+        {
+          "en": "My parents bought this house ten years ago.",
+          "fr": "Mes parents ont acheté cette maison il y a dix ans.",
+          "trap": [
+            "have",
+            "since"
+          ],
+          "alt": [
+            "Ten years ago my parents bought this house."
+          ]
+        },
+        {
+          "en": "I haven't seen my cousin for ages.",
+          "fr": "Je n'ai pas vu mon cousin depuis une éternité.",
+          "trap": [
+            "since",
+            "didn't"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Mei has already eaten, so she isn't hungry.",
+          "fr": "Mei a déjà mangé, alors elle n'a pas faim.",
+          "trap": [
+            "yet",
+            "ate"
+          ],
+          "alt": []
+        },
+        {
+          "en": "We moved here when I was six.",
+          "fr": "Nous avons déménagé ici quand j'avais six ans.",
+          "trap": [
+            "have",
+            "since"
+          ],
+          "alt": [
+            "When I was six we moved here."
+          ]
+        },
+        {
+          "en": "I've been on the hockey team since last year.",
+          "fr": "Je fais partie de l'équipe de hockey depuis l'an dernier.",
+          "trap": [
+            "for",
+            "am"
+          ],
+          "alt": [
+            "Since last year I've been on the hockey team."
+          ]
+        },
+        {
+          "en": "How long has Félix had his dog?",
+          "fr": "Depuis combien de temps Félix a-t-il son chien ?",
+          "trap": [
+            "have",
+            "since"
+          ],
+          "alt": []
+        }
+      ],
+      "grammar": [
+        {
+          "type": "mcq",
+          "q": "I ___ here since September.",
+          "choices": [
+            "am",
+            "was",
+            "have been",
+            "be"
+          ],
+          "answer": 2,
+          "explain": "Ça a commencé en septembre et ça continue : present perfect → I have been."
+        },
+        {
+          "type": "mcq",
+          "q": "We have lived in this neighbourhood ___ three years.",
+          "choices": [
+            "for",
+            "since",
+            "during",
+            "ago"
+          ],
+          "answer": 0,
+          "explain": "Three years est une durée : for."
+        },
+        {
+          "type": "mcq",
+          "q": "She has been my best friend ___ grade two.",
+          "choices": [
+            "for",
+            "ago",
+            "during",
+            "since"
+          ],
+          "answer": 3,
+          "explain": "Grade two est un point de départ : since."
+        },
+        {
+          "type": "mcq",
+          "q": "I ___ that movie last weekend.",
+          "choices": [
+            "have seen",
+            "saw",
+            "have saw",
+            "seen"
+          ],
+          "answer": 1,
+          "explain": "Last weekend est un moment précis et fini : passé simple → saw."
+        },
+        {
+          "type": "mcq",
+          "q": "I haven't finished my project ___.",
+          "choices": [
+            "already",
+            "since",
+            "yet",
+            "just"
+          ],
+          "answer": 2,
+          "explain": "À la fin d'une phrase négative, « pas encore » = not … yet."
+        },
+        {
+          "type": "mcq",
+          "q": "Comment dit-on « Je viens de manger » ?",
+          "choices": [
+            "I come to eat.",
+            "I have just eaten.",
+            "I just come of eating.",
+            "I have eaten yet."
+          ],
+          "answer": 1,
+          "explain": "« Venir de » = have just + participe passé."
+        },
+        {
+          "type": "mcq",
+          "q": "___ you move to Canada two years ago?",
+          "choices": [
+            "Have",
+            "Has",
+            "Did",
+            "Do"
+          ],
+          "answer": 2,
+          "explain": "Two years ago = moment précis et fini : passé simple → Did you move…?"
+        },
+        {
+          "type": "fill",
+          "q": "I have known Priya ___ we were five.",
+          "hint": "depuis",
+          "answer": [
+            "since"
+          ],
+          "explain": "« Depuis que nous avions cinq ans » : un point de départ → since."
+        },
+        {
+          "type": "fill",
+          "q": "They have had their dog ___ two years.",
+          "hint": "depuis",
+          "answer": [
+            "for"
+          ],
+          "explain": "Two years est une durée : for."
+        },
+        {
+          "type": "fill",
+          "q": "We ___ in Gatineau since I was born.",
+          "hint": "live",
+          "answer": [
+            "have lived",
+            "have been living"
+          ],
+          "explain": "Ça a commencé à ma naissance et ça continue : present perfect → have lived."
+        },
+        {
+          "type": "fill",
+          "q": "Lucas ___ his phone yesterday.",
+          "hint": "lose",
+          "answer": [
+            "lost"
+          ],
+          "explain": "Yesterday = moment précis : passé simple → lost."
+        },
+        {
+          "type": "fill",
+          "q": "Hurry up! The movie has ___ started!",
+          "hint": "déjà",
+          "answer": [
+            "already"
+          ],
+          "explain": "« Déjà » (c'est fait) dans une phrase affirmative = already."
+        },
+        {
+          "type": "fill",
+          "q": "___ have you lived here?",
+          "hint": "depuis combien de temps",
+          "answer": [
+            "How long"
+          ],
+          "explain": "« Depuis combien de temps » = How long + present perfect."
+        },
+        {
+          "type": "error",
+          "q": "Zoé has been my friend since several years.",
+          "wrong": 5,
+          "fix": [
+            "for"
+          ],
+          "explain": "Several years est une durée : for, pas since."
+        },
+        {
+          "type": "error",
+          "q": "My cousins have live in Toronto since last summer.",
+          "wrong": 3,
+          "fix": [
+            "lived"
+          ],
+          "explain": "Have + participe passé : have lived."
+        },
+        {
+          "type": "error",
+          "q": "We've bought a new car three weeks ago.",
+          "wrong": 0,
+          "fix": [
+            "We"
+          ],
+          "explain": "Avec ago (moment précis), on utilise le passé simple : We bought."
+        },
+        {
+          "type": "error",
+          "q": "I haven't eaten lunch already, so I'm hungry.",
+          "wrong": 4,
+          "fix": [
+            "yet"
+          ],
+          "explain": "Dans une phrase négative, « pas encore » = not … yet."
+        },
+        {
+          "type": "error",
+          "q": "I have known Emma for grade one.",
+          "wrong": 4,
+          "fix": [
+            "since"
+          ],
+          "explain": "Grade one est un point de départ : since."
+        }
+      ],
+      "reading": {
+        "title": "New in the Neighbourhood",
+        "text": "Ana and her family moved to Ottawa from Brazil two years ago. At first, Ana didn't speak English or French. Now she has lived here for two years, and she speaks both languages very well!\n\nAna has made many friends since she arrived. Her best friend is Zoé. They have known each other since grade six, and they have been on the same soccer team for a year.\n\nIn Brazil, Ana never saw snow. But in Canada, she has already learned to skate on the Rideau Canal. She hasn't tried skiing yet, but she wants to try this winter.\n\nAna's grandmother still lives in Brazil. Ana hasn't seen her for a long time, but they talk on the phone every Sunday.",
+        "questions": [
+          {
+            "q": "Quand Ana est-elle arrivée à Ottawa ?",
+            "choices": [
+              "il y a deux ans",
+              "il y a six ans",
+              "l'an dernier",
+              "il y a un mois"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Depuis quand Ana et Zoé se connaissent-elles ?",
+            "choices": [
+              "depuis la maternelle",
+              "depuis la sixième année",
+              "depuis l'hiver dernier",
+              "depuis deux semaines"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Depuis combien de temps jouent-elles dans la même équipe de soccer ?",
+            "choices": [
+              "deux ans",
+              "six mois",
+              "trois ans",
+              "un an"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Qu'est-ce qu'Ana n'a pas encore essayé ?",
+            "choices": [
+              "le patin",
+              "le soccer",
+              "le ski",
+              "le français"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Comment Ana garde-t-elle contact avec sa grand-mère ?",
+            "choices": [
+              "Elle lui écrit des lettres.",
+              "Elle lui parle au téléphone chaque dimanche.",
+              "Elle la visite chaque été.",
+              "Elle lui envoie des courriels."
+            ],
+            "answer": 1
+          }
+        ]
+      }
+    }
+  ]
+}

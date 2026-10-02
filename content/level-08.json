@@ -1,0 +1,427 @@
+{
+  "id": 8,
+  "cefr": "B2",
+  "title": "Raconter autrement",
+  "titleEn": "Telling It Differently",
+  "intro": "Imaginer l'impossible avec if et I wish, raconter à la voix passive, relier tes idées avec who, which et whose, et maîtriser tes premiers phrasal verbs.",
+  "boss": {
+    "name": "Madame Passive",
+    "taunt": "Ici, ce n'est pas toi qui agis : c'est toi qui seras battu ! Si tu étais plus fort, tu gagnerais… mais tu ne l'es pas.",
+    "defeat": "J'ai été… battue ? Par toi ?! C'est écrit à la voix passive, mais ça fait mal quand même."
+  },
+  "units": [
+    {
+      "id": "8.1",
+      "title": "Et si… ?",
+      "titleEn": "If I Were You",
+      "goal": "Imaginer des situations irréelles et donner des conseils avec if + passé, would et I wish.",
+      "lesson": [
+        { "type": "p", "text": "Le **deuxième conditionnel** sert à imaginer : une situation **irréelle** ou **peu probable**, maintenant ou dans le futur. En français : « Si j'avais…, je ferais… »." },
+        { "type": "rule", "title": "La formule", "text": "[[If]] + passé, [[would]] + verbe de base. [[If I had a million dollars, I would buy an island.]] Ici, le passé ne parle **pas** du passé : il montre que c'est imaginaire. [[would]] devient souvent [[I'd]], [[you'd]], [[we'd]]. On peut aussi utiliser [[could]] (pourrais) : [[If I had wings, I could fly.]]" },
+        { "type": "table", "head": ["Si + passé", "Résultat (would + verbe)"], "rows": [
+          ["[[If I had more time,]]", "[[I'd learn Japanese.]]"],
+          ["[[If you lived in Vancouver,]]", "[[you'd see the ocean every day.]]"],
+          ["[[If she knew the answer,]]", "[[she would tell us.]]"],
+          ["[[If we didn't have school,]]", "[[we'd sleep all day.]]"],
+          ["[[If dogs could talk,]]", "[[what would they say?]]"]
+        ] },
+        { "type": "rule", "title": "Was ou were ?", "text": "Après [[if]] et [[wish]], l'anglais soigné utilise **were** avec tous les sujets : [[If I were rich…]], [[If she were here…]]. À l'oral, beaucoup de gens disent [[was]] ([[If I was rich]]), et c'est accepté : dans ce jeu, quand les deux sont possibles, les deux sont acceptés. **Mais dans l'expression figée [[If I were you]] (= à ta place), on dit were.** C'est la forme à connaître pour donner un conseil." },
+        { "type": "rule", "title": "I wish + passé", "text": "[[I wish]] + passé = j'aimerais que ce soit différent **maintenant**. [[I wish I had a dog.]] (je n'en ai pas). [[I wish I were taller.]] (je ne suis pas grand). [[I wish I could swim.]] (je ne sais pas nager). Avec une autre personne : [[My brother wishes he lived in Montreal.]]" },
+        { "type": "tip", "text": "Piège : en français, « Si j'**aurais** » est une faute… et en anglais aussi ! Jamais [[would]] dans la partie [[if]] : [[If I had]], pas *If I would have*. Et après [[I wish]], jamais de présent : [[I wish I knew]], pas *I wish I know*." },
+        { "type": "examples", "items": [
+          { "en": "If I won the lottery, I'd travel around the world.", "fr": "Si je gagnais à la loterie, je ferais le tour du monde." },
+          { "en": "If I were you, I wouldn't eat that.", "fr": "À ta place, je ne mangerais pas ça." },
+          { "en": "What would you do if you were invisible?", "fr": "Que ferais-tu si tu étais invisible ?" },
+          { "en": "I wish I could speak five languages.", "fr": "J'aimerais pouvoir parler cinq langues." },
+          { "en": "If it weren't so cold, we'd go outside.", "fr": "S'il ne faisait pas si froid, on irait dehors." }
+        ] },
+        { "type": "dialogue", "title": "Si j'étais riche…", "lines": [
+          { "who": "Amir", "en": "What would you do if you won a million dollars?", "fr": "Que ferais-tu si tu gagnais un million de dollars ?" },
+          { "who": "Léa", "en": "I'd buy a house for my parents. And you?", "fr": "J'achèterais une maison pour mes parents. Et toi ?" },
+          { "who": "Amir", "en": "If I were rich, I'd travel around the world.", "fr": "Si j'étais riche, je ferais le tour du monde." },
+          { "who": "Léa", "en": "I wish I could come with you!", "fr": "J'aimerais tellement pouvoir venir avec toi !" },
+          { "who": "Amir", "en": "If you saved your money, you could!", "fr": "Si tu économisais ton argent, tu pourrais !" },
+          { "who": "Léa", "en": "If I were you, I wouldn't count on me. I spend everything on books!", "fr": "À ta place, je ne compterais pas sur moi. Je dépense tout en livres !" }
+        ] },
+        { "type": "fun", "text": "Le sais-tu ? Le groupe torontois Barenaked Ladies a une chanson célèbre, « If I Had $1000000 » (un million de dollars), écrite presque entièrement au deuxième conditionnel : [[If I had a million dollars, I'd buy you a house.]]" }
+      ],
+      "vocab": [
+        { "en": "win the lottery", "fr": "gagner à la loterie", "alt": [], "ex": "If I won the lottery, I'd buy a farm." },
+        { "en": "wish", "fr": "souhaiter (I wish = j'aimerais que)", "alt": [], "ex": "I wish it were summer." },
+        { "en": "island", "fr": "île", "alt": [], "ex": "Prince Edward Island is the smallest province in Canada." },
+        { "en": "superpower", "fr": "superpouvoir", "alt": [], "ex": "If you had a superpower, what would it be?" },
+        { "en": "fly", "fr": "voler (dans les airs)", "alt": [], "ex": "I wish I could fly." },
+        { "en": "invisible", "fr": "invisible", "alt": [], "ex": "If I were invisible, I'd visit the teachers' room." },
+        { "en": "travel around the world", "fr": "faire le tour du monde", "alt": ["travel the world"], "ex": "One day, I'll travel around the world." },
+        { "en": "famous", "fr": "célèbre", "alt": ["well-known"], "ex": "If I were famous, I'd help animals." },
+        { "en": "spaceship", "fr": "vaisseau spatial", "alt": ["spacecraft"], "ex": "Imagine a spaceship in your backyard!" },
+        { "en": "time machine", "fr": "machine à voyager dans le temps", "alt": [], "ex": "If I had a time machine, I'd visit the dinosaurs." },
+        { "en": "magic wand", "fr": "baguette magique", "alt": [], "ex": "With a magic wand, I'd clean my room in one second." },
+        { "en": "be able to", "fr": "être capable de", "alt": [], "ex": "I'd like to be able to play the guitar." },
+        { "en": "if I were you", "fr": "à ta place (si j'étais toi)", "alt": [], "ex": "If I were you, I'd say sorry." },
+        { "en": "imagine", "fr": "imaginer", "alt": [], "ex": "Imagine a world without cars." },
+        { "en": "dream", "fr": "rêve", "alt": [], "ex": "My dream is to be a pilot." },
+        { "en": "donate", "fr": "faire un don (donner à une cause)", "alt": ["give"], "ex": "We donate old clothes every spring." },
+        { "en": "own", "fr": "posséder (être propriétaire de)", "alt": [], "ex": "If I owned a restaurant, pizza would be free." },
+        { "en": "afraid of", "fr": "avoir peur de (craindre)", "alt": ["scared of"], "ex": "My cat is afraid of the vacuum cleaner." }
+      ],
+      "sentences": [
+        { "en": "If I won the lottery, I would buy an island.", "fr": "Si je gagnais à la loterie, j'achèterais une île.", "trap": ["will", "win"], "alt": ["I would buy an island if I won the lottery."] },
+        { "en": "If I were you, I would talk to the teacher.", "fr": "À ta place, je parlerais à l'enseignante.", "trap": ["am", "will"], "alt": ["I would talk to the teacher if I were you."] },
+        { "en": "I wish I had a dog.", "fr": "J'aimerais avoir un chien.", "trap": ["have", "would"], "alt": [] },
+        { "en": "What would you do if you saw a ghost?", "fr": "Que ferais-tu si tu voyais un fantôme ?", "trap": ["see", "will"], "alt": [] },
+        { "en": "If she lived closer, she could walk to school.", "fr": "Si elle habitait plus près, elle pourrait aller à l'école à pied.", "trap": ["lives", "can"], "alt": ["She could walk to school if she lived closer."] },
+        { "en": "We wouldn't be late if the bus came on time.", "fr": "Nous ne serions pas en retard si l'autobus arrivait à l'heure.", "trap": ["comes", "won't"], "alt": ["If the bus came on time, we wouldn't be late."] },
+        { "en": "I wish I could fly like a bird.", "fr": "J'aimerais pouvoir voler comme un oiseau.", "trap": ["can", "to"], "alt": [] },
+        { "en": "If I had a superpower, I'd be invisible.", "fr": "Si j'avais un superpouvoir, je serais invisible.", "trap": ["have", "will"], "alt": ["I'd be invisible if I had a superpower."] },
+        { "en": "My little brother wishes he were taller.", "fr": "Mon petit frère aimerait être plus grand.", "trap": ["is", "wish"], "alt": [] },
+        { "en": "If dogs could talk, what would they say?", "fr": "Si les chiens pouvaient parler, que diraient-ils ?", "trap": ["can", "will"], "alt": [] },
+        { "en": "I would donate money to animal shelters if I were rich.", "fr": "Je ferais des dons aux refuges pour animaux si j'étais riche.", "trap": ["will", "am"], "alt": ["If I were rich, I would donate money to animal shelters."] },
+        { "en": "Where would you live if you could choose?", "fr": "Où habiterais-tu si tu pouvais choisir ?", "trap": ["can", "will"], "alt": ["If you could choose, where would you live?"] }
+      ],
+      "grammar": [
+        { "type": "mcq", "q": "If I ___ more time, I would learn the piano.", "choices": ["had", "have", "would have", "will have"], "answer": 0, "explain": "Deuxième conditionnel : if + passé (had), jamais would après if." },
+        { "type": "mcq", "q": "If you lived in Vancouver, you ___ the ocean every day.", "choices": ["will see", "would see", "saw", "see"], "answer": 1, "explain": "Situation imaginaire : would + verbe de base." },
+        { "type": "mcq", "q": "« À ta place, je n'irais pas. » → If I ___ you, I wouldn't go.", "choices": ["am", "would be", "were", "be"], "answer": 2, "explain": "Expression figée pour un conseil : If I were you." },
+        { "type": "mcq", "q": "I can't swim. I wish I ___ swim.", "choices": ["can", "will", "would", "could"], "answer": 3, "explain": "I wish + passé : can devient could." },
+        { "type": "mcq", "q": "Quelle phrase est correcte ?", "choices": ["If I would have a car, I would drive to Montreal.", "If I had a car, I will drive to Montreal.", "If I had a car, I would drive to Montreal.", "If I have a car, I would drive to Montreal."], "answer": 2, "explain": "If + passé (had), would + verbe (would drive)." },
+        { "type": "mcq", "q": "What ___ you do if you found a wallet in the street?", "choices": ["would", "will", "did", "do"], "answer": 0, "explain": "Situation imaginaire (found au passé) → would." },
+        { "type": "mcq", "q": "« If it rains tomorrow, we'll stay home. » Cette phrase parle…", "choices": ["d'une situation imaginaire", "d'une situation possible et probable", "du passé"], "answer": 1, "explain": "If + présent, will = premier conditionnel : c'est probable. Pour l'imaginaire : If it rained, we would…" },
+        { "type": "fill", "q": "If Ethan ___ his homework every day, his teacher would be happy.", "hint": "do", "answer": ["did"], "explain": "Si + passé : did." },
+        { "type": "fill", "q": "If I were rich, I ___ a big house.", "hint": "buy, avec would", "answer": ["would buy"], "explain": "Résultat imaginaire : would + verbe de base." },
+        { "type": "fill", "q": "I wish my best friend ___ in my class.", "hint": "be", "answer": ["were", "was"], "explain": "I wish + passé : were (soigné) ou was (oral), les deux sont acceptés." },
+        { "type": "fill", "q": "If I ___ you, I'd wear a coat. It's freezing!", "hint": "be (conseil)", "answer": ["were"], "explain": "Pour un conseil, l'expression figée est If I were you." },
+        { "type": "fill", "q": "We ___ go to the beach if it weren't raining.", "hint": "pouvoir", "answer": ["could"], "explain": "« Pourrais / pourrions » = could." },
+        { "type": "fill", "q": "I wish I ___ a dog, but my dad is allergic.", "hint": "have", "answer": ["had"], "explain": "I wish + passé : had." },
+        { "type": "error", "q": "If I knew the answer, I will tell you.", "wrong": 6, "fix": ["would"], "explain": "If + passé (knew) → would, pas will." },
+        { "type": "error", "q": "If she has more money, she would buy a new bike.", "wrong": 2, "fix": ["had"], "explain": "Avec would, la partie if est au passé : had." },
+        { "type": "error", "q": "I wish I can swim like you.", "wrong": 3, "fix": ["could"], "explain": "I wish + passé : could." },
+        { "type": "error", "q": "If I was you, I would apologize.", "wrong": 2, "fix": ["were"], "explain": "Pour donner un conseil, l'expression figée est If I were you." },
+        { "type": "error", "q": "I'd be happier if my brother doesn't take my things.", "wrong": 6, "fix": ["didn't"], "explain": "Avec would ('d), la partie if est au passé : didn't." }
+      ],
+      "reading": {
+        "title": "The Magic Wand",
+        "text": "Last Friday, our teacher, Madame Roy, asked the class a strange question: \"What would you do if you had a magic wand for one day?\" Everyone had to write a short paragraph.\n\nSamuel wrote that he would make school start at noon. \"If classes started later, students would be less tired and would learn more,\" he explained. Priya wished she could talk to animals. If she understood her cat, she would finally know why it sits on her homework every night.\n\nEthan's answer surprised everyone. He wrote, \"If I had a magic wand, I wouldn't use it for myself. I would give every family in the world clean water and enough food.\" The class was quiet for a moment.\n\nThen Madame Roy asked a second question: \"And if you didn't have a magic wand, what could you do?\" Ethan thought about it. \"If we organized a bake sale, we could donate the money to a food bank.\"\n\nThe class loved the idea. Next month, they are going to sell cookies and muffins at lunch. Priya says that if her cat helped in the kitchen, the cookies would be terrible!",
+        "questions": [
+          { "q": "What question did Madame Roy ask first?", "choices": ["What would you do with a magic wand for one day?", "What would you buy with a million dollars?", "Where would you like to travel?", "What is your favourite animal?"], "answer": 0 },
+          { "q": "Why would Samuel make school start at noon?", "choices": ["He wants to sleep all day.", "He has hockey practice every morning.", "He thinks students would be less tired and learn more.", "The teacher asked him to."], "answer": 2 },
+          { "q": "What does Priya's cat do every night?", "choices": ["It talks to her.", "It eats cookies.", "It hides her pencils.", "It sits on her homework."], "answer": 3 },
+          { "q": "Why was the class probably quiet after Ethan's answer?", "choices": ["They were bored.", "They were touched by his generous idea.", "They didn't understand his English.", "The teacher told them to be quiet."], "answer": 1 },
+          { "q": "What is the class going to do next month?", "choices": ["Visit a food bank", "Write another paragraph", "Sell cookies and muffins", "Buy a magic wand"], "answer": 2 }
+        ]
+      }
+    },
+    {
+      "id": "8.2",
+      "title": "La voix passive",
+      "titleEn": "It Was Invented!",
+      "goal": "Dire ce qui est fait, a été fait ou sera fait, avec la voix passive et by.",
+      "lesson": [
+        { "type": "p", "text": "Phrase active : [[James Naismith invented basketball.]] Phrase passive : [[Basketball was invented by James Naismith.]] Au passif, ce qui **subit** l'action devient le sujet. Celui qui fait l'action arrive après [[by]] (par)." },
+        { "type": "rule", "title": "La formule", "text": "**be** (au bon temps) + **participe passé**. C'est **be** qui change de temps ; le participe, lui, ne bouge pas. On ajoute [[by]] + la personne seulement si c'est utile." },
+        { "type": "table", "head": ["Temps", "Formule", "Exemple"], "rows": [
+          ["présent", "am / is / are + participe", "[[French is spoken here.]]"],
+          ["passé", "was / were + participe", "[[The windows were broken.]]"],
+          ["présent continu", "is / are being + participe", "[[The road is being repaired.]]"],
+          ["present perfect", "has / have been + participe", "[[My bike has been stolen!]]"],
+          ["futur", "will be + participe", "[[The winners will be announced tomorrow.]]"],
+          ["modal", "can / must / should be + participe", "[[Phones must be turned off.]]"]
+        ] },
+        { "type": "rule", "title": "Quand l'utiliser ?", "text": "Quand l'action est plus importante que celui qui la fait, ou quand on ne sait pas qui l'a faite : [[My phone was stolen.]] C'est très fréquent dans les nouvelles, en science et dans les modes d'emploi. Et le « **on** » français se traduit souvent par un passif : « On parle français ici » = [[French is spoken here.]]" },
+        { "type": "tip", "text": "Pièges : 1) Ne pas oublier **be** : [[The window was broken]], pas *The window broken*. 2) Connaître les participes irréguliers : [[written]], [[built]], [[made]], [[taken]], [[stolen]], [[sold]], [[eaten]], [[shown]], [[caught]]. 3) « Traduit **en** anglais » = [[translated into English]]." },
+        { "type": "examples", "items": [
+          { "en": "This song was written by a fourteen-year-old girl.", "fr": "Cette chanson a été écrite par une fille de quatorze ans." },
+          { "en": "Cheese is made from milk.", "fr": "Le fromage est fait à partir de lait." },
+          { "en": "The school gym is being painted this week.", "fr": "On repeint le gymnase de l'école cette semaine." },
+          { "en": "Has the winner been chosen yet?", "fr": "Est-ce que le gagnant a été choisi ?" },
+          { "en": "The game will be broadcast on the radio.", "fr": "La partie sera diffusée à la radio." },
+          { "en": "This book can be borrowed for three weeks.", "fr": "Ce livre peut être emprunté pendant trois semaines." }
+        ] },
+        { "type": "dialogue", "title": "Au musée des sciences", "lines": [
+          { "who": "Guide", "en": "This machine was built more than a hundred years ago.", "fr": "Cette machine a été construite il y a plus de cent ans." },
+          { "who": "Ana", "en": "Wow! Is it still used today?", "fr": "Wow ! Est-ce qu'on l'utilise encore aujourd'hui ?" },
+          { "who": "Guide", "en": "No, but it has been repaired many times. Now it's only shown to visitors.", "fr": "Non, mais elle a été réparée plusieurs fois. Maintenant, on la montre seulement aux visiteurs." },
+          { "who": "Ana", "en": "Who was it invented by?", "fr": "Par qui a-t-elle été inventée ?" },
+          { "who": "Guide", "en": "Nobody knows. The inventor's name was never written anywhere.", "fr": "Personne ne le sait. Le nom de l'inventeur n'a jamais été écrit nulle part." },
+          { "who": "Ana", "en": "Can photos be taken here?", "fr": "Est-ce qu'on peut prendre des photos ici ?" },
+          { "who": "Guide", "en": "Yes, but the flash must be turned off.", "fr": "Oui, mais le flash doit être éteint." }
+        ] },
+        { "type": "fun", "text": "Le sais-tu ? Le basketball a été inventé en 1891 par James Naismith, un Canadien né à Almonte, en Ontario, tout près d'Ottawa. [[Basketball was invented by a Canadian!]]" }
+      ],
+      "vocab": [
+        { "en": "invent", "fr": "inventer", "alt": [], "ex": "Who invented the telephone?" },
+        { "en": "inventor", "fr": "inventeur, inventrice", "alt": [], "ex": "The young inventor won a prize." },
+        { "en": "discover", "fr": "découvrir (pour la première fois)", "alt": [], "ex": "A new planet was discovered last year." },
+        { "en": "build", "fr": "construire", "alt": [], "ex": "This house was built by my grandpa." },
+        { "en": "design", "fr": "concevoir (dessiner les plans de)", "alt": [], "ex": "This bridge was designed by a team of engineers." },
+        { "en": "publish", "fr": "publier", "alt": [], "ex": "Her first book was published in Montreal." },
+        { "en": "newspaper", "fr": "journal (en papier)", "alt": [], "ex": "My grandma reads the newspaper every morning." },
+        { "en": "headline", "fr": "gros titre (d'un article)", "alt": [], "ex": "The headline was about a lost moose." },
+        { "en": "the news", "fr": "les nouvelles (les informations)", "alt": ["news"], "ex": "Did you watch the news last night?" },
+        { "en": "reporter", "fr": "journaliste (reporter)", "alt": ["journalist"], "ex": "A reporter asked the coach some questions." },
+        { "en": "website", "fr": "site Web", "alt": ["web site"], "ex": "The results are posted on the school website." },
+        { "en": "broadcast", "fr": "diffuser (à la télé, à la radio)", "alt": [], "ex": "The game is broadcast across the country." },
+        { "en": "steal", "fr": "voler (prendre sans permission)", "alt": [], "ex": "Someone stole my lunch!" },
+        { "en": "award", "fr": "prix (récompense)", "alt": ["prize"], "ex": "She received an award for her science project." },
+        { "en": "worldwide", "fr": "partout dans le monde", "alt": ["all over the world", "around the world"], "ex": "This game is played worldwide." },
+        { "en": "wheel", "fr": "roue", "alt": [], "ex": "A bicycle has two wheels." },
+        { "en": "device", "fr": "appareil (électronique)", "alt": [], "ex": "Please turn off all devices." },
+        { "en": "translate", "fr": "traduire", "alt": [], "ex": "This book was translated into French." }
+      ],
+      "sentences": [
+        { "en": "Basketball was invented by a Canadian teacher.", "fr": "Le basketball a été inventé par un enseignant canadien.", "trap": ["is", "invent"], "alt": [] },
+        { "en": "English and French are spoken in Ottawa.", "fr": "On parle anglais et français à Ottawa.", "trap": ["speak", "is"], "alt": ["French and English are spoken in Ottawa.", "In Ottawa, English and French are spoken.", "In Ottawa, French and English are spoken."] },
+        { "en": "My bike was stolen last night.", "fr": "On a volé mon vélo hier soir.", "trap": ["stole", "is"], "alt": ["Last night, my bike was stolen."] },
+        { "en": "The new bridge will be built next year.", "fr": "Le nouveau pont sera construit l'an prochain.", "trap": ["build", "is"], "alt": ["Next year, the new bridge will be built."] },
+        { "en": "The game is being broadcast all over Canada.", "fr": "La partie est diffusée en ce moment partout au Canada.", "trap": ["been", "broadcasting"], "alt": [] },
+        { "en": "Has the winner been announced yet?", "fr": "Est-ce qu'on a annoncé le gagnant ?", "trap": ["being", "announce"], "alt": [] },
+        { "en": "This book was translated into twenty languages.", "fr": "Ce livre a été traduit en vingt langues.", "trap": ["translate", "in"], "alt": [] },
+        { "en": "Phones must be turned off during the movie.", "fr": "Les téléphones doivent être éteints pendant le film.", "trap": ["turn", "being"], "alt": ["During the movie, phones must be turned off."] },
+        { "en": "The story was written by two students from Gatineau.", "fr": "L'histoire a été écrite par deux élèves de Gatineau.", "trap": ["wrote", "writing"], "alt": [] },
+        { "en": "Thousands of photos are posted online every second.", "fr": "Des milliers de photos sont publiées en ligne chaque seconde.", "trap": ["post", "is"], "alt": ["Every second, thousands of photos are posted online."] },
+        { "en": "The award was given to the youngest inventor.", "fr": "Le prix a été remis au plus jeune inventeur.", "trap": ["gave", "give"], "alt": [] },
+        { "en": "Our school's website is updated every Monday.", "fr": "Le site Web de notre école est mis à jour chaque lundi.", "trap": ["update", "are"], "alt": ["Every Monday, our school's website is updated."] }
+      ],
+      "grammar": [
+        { "type": "mcq", "q": "The Mona Lisa ___ by Leonardo da Vinci.", "choices": ["painted", "was painted", "is painting", "has painted"], "answer": 1, "explain": "Le tableau ne peint pas : il a été peint → was painted (be + participe)." },
+        { "type": "mcq", "q": "Our house ___ right now, so we're staying at Grandma's.", "choices": ["is painted", "was painting", "paints", "is being painted"], "answer": 3, "explain": "En ce moment + passif : is being + participe." },
+        { "type": "mcq", "q": "Thousands of new books ___ every year.", "choices": ["are published", "publish", "are publishing", "is published"], "answer": 0, "explain": "Les livres sont publiés : are + participe (books = pluriel)." },
+        { "type": "mcq", "q": "The results ___ tomorrow morning.", "choices": ["will announce", "will been announced", "will be announced", "announced"], "answer": 2, "explain": "Futur passif : will be + participe." },
+        { "type": "mcq", "q": "My wallet ___! Someone took it from my bag.", "choices": ["has stolen", "has been stolen", "has been stole", "is stealing"], "answer": 1, "explain": "Present perfect passif : has been + participe (stolen)." },
+        { "type": "mcq", "q": "« On a construit ce pont il y a cent ans. » Quelle phrase est correcte ?", "choices": ["This bridge was built a hundred years ago.", "This bridge built a hundred years ago.", "This bridge was build a hundred years ago.", "This bridge has built a hundred years ago."], "answer": 0, "explain": "Passé passif : was + participe (built). Le « on » français devient souvent un passif." },
+        { "type": "mcq", "q": "This song was written ___ a fourteen-year-old girl.", "choices": ["from", "by", "of", "with"], "answer": 1, "explain": "L'agent du passif est introduit par by." },
+        { "type": "fill", "q": "The telephone ___ in the nineteenth century.", "hint": "invent", "answer": ["was invented"], "explain": "Passé passif : was + invented." },
+        { "type": "fill", "q": "Cookies ___ in this bakery every morning.", "hint": "make, présent", "answer": ["are made"], "explain": "Présent passif, pluriel : are made." },
+        { "type": "fill", "q": "The windows ___ yet. They're still dirty.", "hint": "not clean, present perfect", "answer": ["haven't been cleaned"], "explain": "Present perfect passif négatif : haven't been + participe." },
+        { "type": "fill", "q": "Your test must ___ in pen.", "hint": "write", "answer": ["be written"], "explain": "Modal + passif : must be + participe (written)." },
+        { "type": "fill", "q": "The new park ___ next summer.", "hint": "build, futur", "answer": ["will be built", "is going to be built"], "explain": "Futur passif : will be built." },
+        { "type": "fill", "q": "A new road ___ near my school right now.", "hint": "build, en ce moment", "answer": ["is being built"], "explain": "Présent continu passif : is being built." },
+        { "type": "error", "q": "The pyramids was built thousands of years ago.", "wrong": 2, "fix": ["were"], "explain": "Pyramids est pluriel : were built." },
+        { "type": "error", "q": "This photo was took by my sister.", "wrong": 3, "fix": ["taken"], "explain": "Au passif, il faut le participe passé : taken (pas took)." },
+        { "type": "error", "q": "The thief was catched by the police.", "wrong": 3, "fix": ["caught"], "explain": "Catch est irrégulier : caught." },
+        { "type": "error", "q": "My homework has been eat by the dog!", "wrong": 4, "fix": ["eaten"], "explain": "Participe passé de eat : eaten." },
+        { "type": "error", "q": "The movie will be show on Friday.", "wrong": 4, "fix": ["shown"], "explain": "Après be, il faut le participe passé : shown." }
+      ],
+      "reading": {
+        "title": "The Smart Garbage Can",
+        "text": "Every spring, a science fair is organized at Mei's school. This year, more than forty projects were presented, and the winners were chosen by a group of real engineers.\n\nMei's project was a smart garbage can. It was designed by Mei and her friend Jaden, and it was built with old toys and a small motor. When something is thrown inside, it is sorted automatically: plastic goes to one side and paper goes to the other.\n\nOn the day of the fair, the gym was filled with visitors. Mei's garbage can was tested many times. Once, a banana peel was put in the plastic section by mistake, and everyone laughed. Jaden fixed the problem in a few minutes.\n\nAt the end of the day, the results were announced. The first prize was won by a boy who built a robot that could water plants. Mei and Jaden came second.\n\nA week later, their invention was mentioned in the local newspaper, and a short video of it has been watched hundreds of times online. Now the smart garbage can is being used in the school cafeteria. Mei hopes that one day, it will be copied by other schools.",
+        "questions": [
+          { "q": "Who chose the winners of the science fair?", "choices": ["The students", "Mei's parents", "A group of real engineers", "The local newspaper"], "answer": 2 },
+          { "q": "What was the smart garbage can built with?", "choices": ["Old toys and a small motor", "Paper and plastic", "Parts of a robot", "Banana peels"], "answer": 0 },
+          { "q": "Why did everyone laugh during a test?", "choices": ["Jaden fell down.", "A banana peel was put in the wrong section.", "The motor made a funny noise.", "The garbage can started to talk."], "answer": 1 },
+          { "q": "Who won the first prize?", "choices": ["Mei and Jaden", "A girl who built a smart garbage can", "A group of engineers", "A boy who built a robot"], "answer": 3 },
+          { "q": "What does the school probably think of Mei's invention?", "choices": ["That it is useless.", "That it is useful, because it is used in the cafeteria now.", "That it is too noisy.", "That it should be sold in stores."], "answer": 1 }
+        ]
+      }
+    },
+    {
+      "id": "8.3",
+      "title": "Qui, que, dont",
+      "titleEn": "The One Who…",
+      "goal": "Relier deux idées avec who, which, that, whose, where et when, et parler des métiers.",
+      "lesson": [
+        { "type": "p", "text": "Les **pronoms relatifs** relient deux phrases en une seule : [[I have a friend. She speaks Spanish.]] → [[I have a friend who speaks Spanish.]]" },
+        { "type": "table", "head": ["Pronom", "Pour…", "Exemple"], "rows": [
+          ["who", "une personne (qui, que)", "[[the nurse who helped me]]"],
+          ["which", "une chose, un animal (qui, que)", "[[the bike which I bought]]"],
+          ["that", "une personne ou une chose (sans virgules)", "[[the movie that we saw]]"],
+          ["whose", "la possession (dont, à qui)", "[[the girl whose dad is a pilot]]"],
+          ["where", "un lieu (où)", "[[the city where I was born]]"],
+          ["when", "un moment (où)", "[[the day when we met]]"]
+        ] },
+        { "type": "rule", "title": "Peut-on enlever le pronom ?", "text": "Si le pronom est **complément** (il y a un autre sujet juste après), on peut l'enlever : [[the book (that) I read]], [[the boy (who) I saw]]. Mais s'il est **sujet** du verbe qui suit, on le garde : [[the man who lives next door]] (jamais *the man lives next door is…*)." },
+        { "type": "rule", "title": "Avec ou sans virgules", "text": "Sans virgules = l'information est **essentielle** pour savoir de qui on parle : [[The cousin who lives in Toronto is a nurse.]] (j'ai plusieurs cousins). Avec virgules = information **en plus** : [[My dad, who is a mechanic, can fix anything.]] Avec des virgules : **jamais [[that]]**, et on ne peut pas enlever le pronom." },
+        { "type": "tip", "text": "Pièges de francophone : 1) « le jour **où** » = [[the day when]], pas *the day where* : [[where]] = un lieu seulement. 2) [[whose]] = possession ([[the boy whose sister…]] = le garçon dont la sœur…). Ne le confonds pas avec [[who's]] (= who is). 3) Pas de pronom en double : [[the book that I read]], jamais *the book that I read it*." },
+        { "type": "examples", "items": [
+          { "en": "A plumber is someone who repairs pipes.", "fr": "Un plombier, c'est quelqu'un qui répare les tuyaux." },
+          { "en": "This is the café where my sister works.", "fr": "C'est le café où travaille ma sœur." },
+          { "en": "I know a boy whose mom is a firefighter.", "fr": "Je connais un garçon dont la mère est pompière." },
+          { "en": "The shoes I bought are too small.", "fr": "Les souliers que j'ai achetés sont trop petits." },
+          { "en": "Ottawa, which is the capital of Canada, is on the Ottawa River.", "fr": "Ottawa, qui est la capitale du Canada, est au bord de la rivière des Outaouais." }
+        ] },
+        { "type": "dialogue", "title": "La journée des carrières", "lines": [
+          { "who": "Olivia", "en": "Who's the woman who's talking to the students?", "fr": "C'est qui, la femme qui parle aux élèves ?" },
+          { "who": "Samuel", "en": "She's an engineer who designs bridges.", "fr": "C'est une ingénieure qui conçoit des ponts." },
+          { "who": "Olivia", "en": "Cool! And the man whose jacket is orange?", "fr": "Cool ! Et l'homme dont la veste est orange ?" },
+          { "who": "Samuel", "en": "He's the electrician who fixed the lights in our gym.", "fr": "C'est l'électricien qui a réparé les lumières de notre gymnase." },
+          { "who": "Olivia", "en": "I'd like a job where I can work outside.", "fr": "J'aimerais un métier où je peux travailler dehors." },
+          { "who": "Samuel", "en": "Then talk to the veterinarian who works on farms.", "fr": "Alors, parle à la vétérinaire qui travaille dans les fermes." },
+          { "who": "Olivia", "en": "Is she the one whose daughter is in our class?", "fr": "C'est elle, celle dont la fille est dans notre classe ?" },
+          { "who": "Samuel", "en": "Yes! It's Sofia, the girl who sits next to you.", "fr": "Oui ! C'est Sofia, la fille qui est assise à côté de toi." }
+        ] },
+        { "type": "fun", "text": "Le sais-tu ? En anglais, la plupart des noms de métiers sont les mêmes au masculin et au féminin : [[a nurse]], [[a doctor]], [[an engineer]], [[a lawyer]]. Pratique !" }
+      ],
+      "vocab": [
+        { "en": "engineer", "fr": "ingénieur, ingénieure", "alt": [], "ex": "My aunt is an engineer who designs roads." },
+        { "en": "electrician", "fr": "électricien, électricienne", "alt": [], "ex": "We called an electrician to fix the lights." },
+        { "en": "plumber", "fr": "plombier, plombière", "alt": [], "ex": "The plumber fixed our kitchen sink." },
+        { "en": "mechanic", "fr": "mécanicien, mécanicienne", "alt": [], "ex": "The mechanic changed our tires." },
+        { "en": "lawyer", "fr": "avocat, avocate (métier)", "alt": [], "ex": "Her mom is a lawyer in Toronto." },
+        { "en": "pharmacist", "fr": "pharmacien, pharmacienne", "alt": [], "ex": "Ask the pharmacist about this medicine." },
+        { "en": "librarian", "fr": "bibliothécaire", "alt": [], "ex": "The librarian helped me find a good book." },
+        { "en": "veterinarian", "fr": "vétérinaire", "alt": ["vet"], "ex": "We took our dog to the veterinarian." },
+        { "en": "firefighter", "fr": "pompier, pompière", "alt": [], "ex": "A firefighter visited our school." },
+        { "en": "farmer", "fr": "agriculteur, agricultrice (fermier)", "alt": [], "ex": "The farmer gets up at five o'clock." },
+        { "en": "cashier", "fr": "caissier, caissière", "alt": [], "ex": "The cashier gave me my change." },
+        { "en": "carpenter", "fr": "menuisier, menuisière (charpentier)", "alt": [], "ex": "A carpenter built our kitchen table." },
+        { "en": "hairdresser", "fr": "coiffeur, coiffeuse", "alt": ["hairstylist"], "ex": "My hairdresser always tells funny stories." },
+        { "en": "dentist", "fr": "dentiste", "alt": [], "ex": "I go to the dentist twice a year." },
+        { "en": "scientist", "fr": "scientifique", "alt": [], "ex": "She wants to be a scientist who studies whales." },
+        { "en": "salary", "fr": "salaire", "alt": ["pay"], "ex": "A good salary is important, but so is a fun job." },
+        { "en": "job interview", "fr": "entrevue d'emploi", "alt": [], "ex": "I'm nervous about my first job interview." },
+        { "en": "boss", "fr": "patron, patronne (chef)", "alt": [], "ex": "My boss is very kind." }
+      ],
+      "sentences": [
+        { "en": "The woman who lives next door is a pharmacist.", "fr": "La femme qui habite à côté est pharmacienne.", "trap": ["which", "whose"], "alt": [] },
+        { "en": "This is the restaurant where my mom works.", "fr": "C'est le restaurant où travaille ma mère.", "trap": ["which", "when"], "alt": [] },
+        { "en": "I have a friend whose dad is a firefighter.", "fr": "J'ai un ami dont le père est pompier.", "trap": ["who", "who's"], "alt": [] },
+        { "en": "The movie we watched last night was really funny.", "fr": "Le film qu'on a regardé hier soir était vraiment drôle.", "trap": ["it", "what"], "alt": [] },
+        { "en": "My uncle, who is a carpenter, built our kitchen table.", "fr": "Mon oncle, qui est menuisier, a fabriqué notre table de cuisine.", "trap": ["that", "which"], "alt": [] },
+        { "en": "Do you remember the day when we met?", "fr": "Te souviens-tu du jour où on s'est rencontrés ?", "trap": ["where", "which"], "alt": [] },
+        { "en": "The plumber that fixed our sink was very nice.", "fr": "Le plombier qui a réparé notre évier était très gentil.", "trap": ["whose", "where"], "alt": [] },
+        { "en": "Is this the book you were talking about?", "fr": "Est-ce que c'est le livre dont tu parlais ?", "trap": ["whose", "of"], "alt": [] },
+        { "en": "Montreal is the city where my grandparents were born.", "fr": "Montréal est la ville où mes grands-parents sont nés.", "trap": ["which", "when"], "alt": [] },
+        { "en": "The dentist I saw yesterday gave me a sticker.", "fr": "La dentiste que j'ai vue hier m'a donné un autocollant.", "trap": ["her", "whose"], "alt": [] },
+        { "en": "Ottawa, which is the capital of Canada, has many museums.", "fr": "Ottawa, qui est la capitale du Canada, a beaucoup de musées.", "trap": ["that", "who"], "alt": [] },
+        { "en": "The girl whose bike was stolen called the police.", "fr": "La fille dont le vélo a été volé a appelé la police.", "trap": ["who", "who's"], "alt": [] }
+      ],
+      "grammar": [
+        { "type": "mcq", "q": "A librarian is a person ___ works in a library.", "choices": ["which", "who", "whose", "where"], "answer": 1, "explain": "Pour une personne, sujet du verbe : who (ou that)." },
+        { "type": "mcq", "q": "That's the boy ___ sister won the contest.", "choices": ["who", "who's", "whose", "which"], "answer": 2, "explain": "Possession (dont la sœur) : whose." },
+        { "type": "mcq", "q": "Gatineau is the city ___ my cousins live.", "choices": ["where", "which", "when", "who"], "answer": 0, "explain": "Un lieu (où) : where." },
+        { "type": "mcq", "q": "My grandma, ___ is eighty, still goes skating.", "choices": ["that", "which", "whose", "who"], "answer": 3, "explain": "Une personne, avec des virgules : who (jamais that avec des virgules)." },
+        { "type": "mcq", "q": "I'll never forget the summer ___ we went to Vancouver.", "choices": ["where", "when", "who", "whose"], "answer": 1, "explain": "Un moment (l'été où) : when, pas where." },
+        { "type": "mcq", "q": "Dans quelle phrase peut-on enlever le pronom relatif ?", "choices": ["The man who lives next door is a lawyer.", "My sister, who is a nurse, works at night.", "The cake that my dad made was delicious."], "answer": 2, "explain": "That est complément (my dad est le sujet de made) : The cake my dad made… Dans les autres, impossible." },
+        { "type": "mcq", "q": "Quelle phrase est correcte ?", "choices": ["The phone that I bought it is broken.", "The phone what I bought is broken.", "The phone who I bought is broken.", "The phone I bought is broken."], "answer": 3, "explain": "Pas de it en double, pas de what, pas de who pour une chose. On peut enlever that." },
+        { "type": "fill", "q": "An electrician is someone ___ repairs electrical problems.", "hint": "qui (une personne)", "answer": ["who", "that"], "explain": "Personne + sujet du verbe : who (ou that)." },
+        { "type": "fill", "q": "Do you know the girl ___ backpack is on the floor?", "hint": "dont (possession)", "answer": ["whose"], "explain": "Possession : whose." },
+        { "type": "fill", "q": "This is the park ___ we play soccer every weekend.", "hint": "où (un lieu)", "answer": ["where"], "explain": "Un lieu : where." },
+        { "type": "fill", "q": "My computer, ___ is ten years old, is really slow.", "hint": "qui (une chose, avec virgules)", "answer": ["which"], "explain": "Une chose avec des virgules : which (jamais that)." },
+        { "type": "fill", "q": "Friday is the day ___ we have gym class.", "hint": "où (un moment)", "answer": ["when", "that", "on which"], "explain": "Un moment : when (ou that). Pas where !" },
+        { "type": "error", "q": "The mechanic which fixed our car was very fast.", "wrong": 2, "fix": ["who", "that"], "explain": "Pour une personne : who ou that, pas which." },
+        { "type": "error", "q": "The firefighter who's truck is red waved at us.", "wrong": 2, "fix": ["whose"], "explain": "Possession : whose. Who's = who is." },
+        { "type": "error", "q": "This is the hospital which I was born.", "wrong": 4, "fix": ["where"], "explain": "Un lieu (où je suis né) : where." },
+        { "type": "error", "q": "My sister, that is a lawyer, lives in Toronto.", "wrong": 2, "fix": ["who"], "explain": "Avec des virgules, jamais that : who." },
+        { "type": "error", "q": "I remember the day where we moved to Ottawa.", "wrong": 4, "fix": ["when", "that"], "explain": "Le jour où = the day when (un moment, pas un lieu)." }
+      ],
+      "reading": {
+        "title": "Career Day",
+        "text": "Every year, Karim's school organizes a career day. Parents who have interesting jobs come to the school and talk about their work.\n\nThe first visitor was Ana's mother, who is a veterinarian. She works in a clinic where people bring their cats, their dogs and even their snakes. She told the students about a parrot that could say hello in three languages.\n\nNext came a firefighter whose son is in grade seven. He showed the students the heavy uniform that firefighters wear, and he let Karim try on the helmet. \"The day when I saved a family's cat from a tree was the best day of my career,\" he said with a smile.\n\nThe last visitor was an engineer who designs bridges. Karim expected her talk to be boring, but it was the most interesting one. She explained that the bridges which cross the Ottawa River must be checked regularly, because ice and snow can damage them.\n\nThat evening, Karim told his parents about the people he met. \"I'm not sure which job I want,\" he said, \"but I know I want a job where I can solve problems.\"",
+        "questions": [
+          { "q": "What does Ana's mother do?", "choices": ["She is a firefighter.", "She is a veterinarian.", "She is an engineer.", "She is a teacher."], "answer": 1 },
+          { "q": "What was special about the parrot?", "choices": ["It lived in a tree.", "It was saved by a firefighter.", "It could say hello in three languages.", "It was afraid of snakes."], "answer": 2 },
+          { "q": "Who let Karim try on a helmet?", "choices": ["The firefighter", "The veterinarian", "The engineer", "Karim's father"], "answer": 0 },
+          { "q": "What did Karim think of the engineer's talk?", "choices": ["It was as boring as he expected.", "It was too short.", "He didn't listen to it.", "It was much better than he expected."], "answer": 3 },
+          { "q": "Why must the bridges be checked regularly?", "choices": ["Because they are very old", "Because ice and snow can damage them", "Because many trucks use them", "Because the river is too deep"], "answer": 1 }
+        ]
+      }
+    },
+    {
+      "id": "8.4",
+      "title": "Phrasal verbs (1)",
+      "titleEn": "Turn It Off!",
+      "goal": "Comprendre et utiliser les phrasal verbs les plus courants, en plaçant bien le pronom.",
+      "lesson": [
+        { "type": "p", "text": "Un **phrasal verb**, c'est un verbe + un petit mot ([[up]], [[off]], [[on]], [[out]], [[down]], [[after]]…). Le sens change complètement : [[give]] = donner, mais [[give up]] = abandonner !" },
+        { "type": "table", "head": ["Phrasal verb", "Sens", "Exemple"], "rows": [
+          ["[[look for]]", "chercher", "[[I'm looking for my keys.]]"],
+          ["[[look after]]", "s'occuper de, garder", "[[She looks after her brother.]]"],
+          ["[[find out]]", "découvrir (une information)", "[[I found out the truth.]]"],
+          ["[[turn on]] / [[turn off]]", "allumer / éteindre", "[[Turn off the lights.]]"],
+          ["[[put on]] / [[take off]]", "mettre / enlever (un vêtement)", "[[Put on your coat.]]"],
+          ["[[run out of]]", "manquer de, ne plus avoir de", "[[We ran out of milk.]]"],
+          ["[[break down]]", "tomber en panne", "[[The car broke down.]]"],
+          ["[[turn down]]", "refuser ; baisser (le volume)", "[[He turned down the offer.]]"],
+          ["[[set off]]", "partir (en voyage)", "[[We set off at dawn.]]"],
+          ["[[carry on]]", "continuer", "[[Carry on, you're doing great!]]"]
+        ] },
+        { "type": "rule", "title": "Séparable : le pronom au milieu !", "text": "Beaucoup de phrasal verbs sont **séparables** : le complément peut aller au milieu **ou** à la fin : [[Turn off the radio.]] = [[Turn the radio off.]] Mais avec un **pronom** ([[it]], [[them]], [[her]], [[me]]…), le pronom va **obligatoirement au milieu** : [[Turn it off.]] — jamais *Turn off it*. Séparables : [[turn on]], [[turn off]], [[turn down]], [[put on]], [[take off]], [[pick up]], [[fill out]], [[give up]]." },
+        { "type": "rule", "title": "Inséparables : le pronom après", "text": "D'autres ne se séparent **jamais** : [[look for]], [[look after]], [[run out of]]. Le complément va toujours à la fin : [[I'm looking for them.]], [[She looks after him.]] Et certains n'ont pas de complément du tout : [[get up]], [[grow up]], [[come back]], [[break down]], [[set off]], [[carry on]]." },
+        { "type": "tip", "text": "Piège n° 1 : *Turn off it* ❌ → [[Turn it off]] ✅. Piège n° 2 : traduire mot à mot. [[Look after]] ne veut pas dire « regarder après », mais « s'occuper de ». Et [[take off]] veut dire « enlever » (un manteau) **ou** « décoller » (un avion)." },
+        { "type": "examples", "items": [
+          { "en": "It's cold. Put your hat on!", "fr": "Il fait froid. Mets ta tuque !" },
+          { "en": "Can you pick me up after school?", "fr": "Peux-tu venir me chercher après l'école ?" },
+          { "en": "My parents grew up in Haiti.", "fr": "Mes parents ont grandi en Haïti." },
+          { "en": "Don't give up! You're almost there.", "fr": "N'abandonne pas ! Tu y es presque." },
+          { "en": "Please fill out this form.", "fr": "Remplis ce formulaire, s'il te plaît." },
+          { "en": "The plane took off on time.", "fr": "L'avion a décollé à l'heure." }
+        ] },
+        { "type": "dialogue", "title": "Un matin pressé", "lines": [
+          { "who": "Mom", "en": "Lucas, get up! The bus comes in ten minutes.", "fr": "Lucas, lève-toi ! L'autobus passe dans dix minutes." },
+          { "who": "Lucas", "en": "Okay, okay… Where are my socks? I'm looking for them everywhere.", "fr": "OK, OK… Où sont mes bas ? Je les cherche partout." },
+          { "who": "Mom", "en": "They're on the floor. Pick them up and put them on!", "fr": "Ils sont par terre. Ramasse-les et mets-les !" },
+          { "who": "Lucas", "en": "Mom, we ran out of milk.", "fr": "Maman, on n'a plus de lait." },
+          { "who": "Mom", "en": "I'll buy some when I come back from work. And turn off the lights before you leave.", "fr": "J'en achèterai en revenant du travail. Et éteins les lumières avant de partir." },
+          { "who": "Lucas", "en": "I already turned them off!", "fr": "Je les ai déjà éteintes !" },
+          { "who": "Mom", "en": "Good. Now run! Don't give up, you can still catch the bus!", "fr": "Bien. Maintenant, cours ! N'abandonne pas, tu peux encore attraper l'autobus !" }
+        ] },
+        { "type": "fun", "text": "Le sais-tu ? Un même phrasal verb peut avoir plusieurs sens : [[pick up]] veut dire « ramasser », « aller chercher quelqu'un » ou même « apprendre sans effort » : [[I picked up some Spanish on vacation.]]" }
+      ],
+      "vocab": [
+        { "en": "get up", "fr": "se lever (du lit)", "alt": [], "ex": "I get up at seven o'clock." },
+        { "en": "give up", "fr": "abandonner (arrêter d'essayer)", "alt": ["quit"], "ex": "Never give up on your dreams." },
+        { "en": "look for", "fr": "chercher", "alt": ["search for"], "ex": "I'm looking for my glasses." },
+        { "en": "look after", "fr": "s'occuper de (garder)", "alt": ["take care of"], "ex": "Can you look after my cat this weekend?" },
+        { "en": "find out", "fr": "apprendre, découvrir (une information)", "alt": [], "ex": "I want to find out the end of the story." },
+        { "en": "turn on", "fr": "allumer (un appareil)", "alt": ["switch on"], "ex": "Turn on the lights, please." },
+        { "en": "turn off", "fr": "éteindre (un appareil)", "alt": ["switch off"], "ex": "Turn it off before you leave." },
+        { "en": "put on", "fr": "mettre (un vêtement)", "alt": [], "ex": "Put on your boots. It's snowing." },
+        { "en": "take off", "fr": "enlever (un vêtement) ; décoller (avion)", "alt": [], "ex": "Take off your shoes at the door." },
+        { "en": "run out of", "fr": "manquer de (ne plus en avoir)", "alt": [], "ex": "We ran out of bread." },
+        { "en": "come back", "fr": "revenir", "alt": ["return", "get back"], "ex": "Come back soon!" },
+        { "en": "pick up", "fr": "ramasser ; aller chercher (quelqu'un)", "alt": [], "ex": "Pick up your toys, please." },
+        { "en": "grow up", "fr": "grandir (devenir adulte)", "alt": [], "ex": "I grew up in Gatineau." },
+        { "en": "break down", "fr": "tomber en panne", "alt": [], "ex": "Our old car broke down again." },
+        { "en": "fill out", "fr": "remplir (un formulaire)", "alt": ["fill in"], "ex": "Fill out this form, please." },
+        { "en": "set off", "fr": "partir (en voyage)", "alt": ["set out"], "ex": "We set off for Montreal at dawn." },
+        { "en": "carry on", "fr": "continuer", "alt": ["continue", "keep going", "go on"], "ex": "Carry on, you're doing great!" },
+        { "en": "turn down", "fr": "refuser (une offre) ; baisser (le volume)", "alt": [], "ex": "Please turn down the music." }
+      ],
+      "sentences": [
+        { "en": "Please turn it off before you go to bed.", "fr": "S'il te plaît, éteins-le avant d'aller te coucher.", "trap": ["on", "them"], "alt": ["Turn it off before you go to bed, please.", "Before you go to bed, please turn it off."] },
+        { "en": "My grandma looks after my little sister on Fridays.", "fr": "Ma grand-mère garde ma petite sœur le vendredi.", "trap": ["for", "look"], "alt": ["On Fridays, my grandma looks after my little sister."] },
+        { "en": "We ran out of gas on the highway.", "fr": "Nous sommes tombés en panne d'essence sur l'autoroute.", "trap": ["run", "off"], "alt": [] },
+        { "en": "Our car broke down in the middle of the night.", "fr": "Notre voiture est tombée en panne au milieu de la nuit.", "trap": ["broken", "up"], "alt": ["In the middle of the night, our car broke down."] },
+        { "en": "Take off your boots before you come in.", "fr": "Enlève tes bottes avant d'entrer.", "trap": ["put", "them"], "alt": ["Take your boots off before you come in.", "Before you come in, take off your boots.", "Before you come in, take your boots off."] },
+        { "en": "I'm looking for my phone. Have you seen it?", "fr": "Je cherche mon téléphone. L'as-tu vu ?", "trap": ["after", "at"], "alt": [] },
+        { "en": "She grew up in a small town near Gatineau.", "fr": "Elle a grandi dans une petite ville près de Gatineau.", "trap": ["growed", "down"], "alt": [] },
+        { "en": "Don't give up! You can do it!", "fr": "N'abandonne pas ! Tu peux le faire !", "trap": ["off", "down"], "alt": [] },
+        { "en": "Can you pick me up after practice?", "fr": "Peux-tu venir me chercher après l'entraînement ?", "trap": ["at", "for"], "alt": [] },
+        { "en": "Fill out this form and give it to the nurse.", "fr": "Remplis ce formulaire et donne-le à l'infirmière.", "trap": ["up", "them"], "alt": ["Fill this form out and give it to the nurse."] },
+        { "en": "We set off early to avoid the traffic.", "fr": "Nous sommes partis tôt pour éviter la circulation.", "trap": ["avoiding", "of"], "alt": [] },
+        { "en": "When did you find out the truth?", "fr": "Quand as-tu appris la vérité ?", "trap": ["found", "on"], "alt": [] }
+      ],
+      "grammar": [
+        { "type": "mcq", "q": "The music is too loud. Can you ___?", "choices": ["turn down it", "turn it down", "turn it up", "down turn it"], "answer": 1, "explain": "Avec un pronom, il va au milieu : turn it down. Turn it up = monter le volume." },
+        { "type": "mcq", "q": "I can't find my keys. Can you help me ___?", "choices": ["look for them", "look them for", "look after them", "look them after"], "answer": 0, "explain": "Chercher = look for (inséparable) : look for them." },
+        { "type": "mcq", "q": "« Il s'occupe de son petit frère. » → He ___ his little brother.", "choices": ["looks for", "looks at", "looks after", "looks up"], "answer": 2, "explain": "S'occuper de = look after." },
+        { "type": "mcq", "q": "It's minus twenty outside. ___ your coat!", "choices": ["Take off", "Turn on", "Pick up", "Put on"], "answer": 3, "explain": "Mettre un vêtement = put on." },
+        { "type": "mcq", "q": "We've ___ milk. Can you buy some?", "choices": ["run out of", "run out", "ran out of", "run off"], "answer": 0, "explain": "Manquer de = run out of. Après we've, le participe est run (pas ran)." },
+        { "type": "mcq", "q": "« Mon père a refusé l'offre. » → My dad ___ the offer.", "choices": ["turned off", "turned down", "put down", "gave up"], "answer": 1, "explain": "Refuser une offre = turn down." },
+        { "type": "mcq", "q": "Quelle phrase est correcte ?", "choices": ["She looked them after all day.", "She looked after all day them.", "She looked after them all day."], "answer": 2, "explain": "Look after est inséparable : le pronom va après, look after them." },
+        { "type": "fill", "q": "Your shirt is on the floor. Please ___.", "hint": "pick up + it", "answer": ["pick it up"], "explain": "Séparable + pronom : pick it up (le pronom au milieu)." },
+        { "type": "fill", "q": "The plane will ___ in ten minutes.", "hint": "décoller", "answer": ["take off"], "explain": "Pour un avion, décoller = take off." },
+        { "type": "fill", "q": "I was so tired that I almost ___ at the end of the race.", "hint": "abandonner, au passé", "answer": ["gave up", "quit"], "explain": "Give up → gave up au passé." },
+        { "type": "fill", "q": "My parents ___ in Haiti, but now they live in Ottawa.", "hint": "grandir, au passé", "answer": ["grew up"], "explain": "Grow up → grew up au passé." },
+        { "type": "fill", "q": "We have to ___ this form before Friday.", "hint": "remplir", "answer": ["fill out", "fill in"], "explain": "Remplir un formulaire = fill out (ou fill in)." },
+        { "type": "fill", "q": "These shoes are too small. ___ and try the blue ones.", "hint": "take off + them", "answer": ["Take them off"], "explain": "Séparable + pronom : take them off." },
+        { "type": "error", "q": "I'm looking after my glasses. Have you seen them?", "wrong": 2, "fix": ["for"], "explain": "Chercher = look for. Look after = s'occuper de." },
+        { "type": "error", "q": "Our car broke up on the highway.", "wrong": 3, "fix": ["down"], "explain": "Tomber en panne = break down." },
+        { "type": "error", "q": "Put off your hat. It's cold outside!", "wrong": 1, "fix": ["on"], "explain": "Mettre un vêtement = put on." },
+        { "type": "error", "q": "We run out of bread yesterday.", "wrong": 1, "fix": ["ran"], "explain": "Yesterday → passé : ran out of." },
+        { "type": "error", "q": "My little brother wants to grow down and be a pilot.", "wrong": 6, "fix": ["up"], "explain": "Grandir = grow up." }
+      ],
+      "reading": {
+        "title": "A Camping Trip to Remember",
+        "text": "Last July, Emma's family set off on a camping trip to Algonquin Park. They got up at five o'clock, packed the car and left the city before sunrise.\n\nTwo hours later, the car broke down on the highway. Emma's dad looked under the car, but he couldn't find out what was wrong. Finally, a tow truck came and picked them up.\n\nThe mechanic fixed the car quickly, so the family carried on to the park. But when they arrived, it was raining. They put on their raincoats and tried to build the tent. The wind was so strong that Emma's little brother, Noah, wanted to give up and go home. \"Don't give up,\" said Emma. \"Let's look for a better place.\" They found a spot under some tall trees and finished the tent.\n\nThat night, they ran out of dry wood, so they couldn't make a fire. They ate cold sandwiches and turned off their flashlights early.\n\nThe next morning, the sun came out. The lake was calm, and a moose was drinking water near their tent. Emma took a photo and smiled. \"We have to come back next year,\" she said.",
+        "questions": [
+          { "q": "What happened on the highway?", "choices": ["The family got lost.", "They ran out of food.", "The car broke down.", "It started to snow."], "answer": 2 },
+          { "q": "Why did Noah want to go home?", "choices": ["He was hungry.", "The wind was very strong.", "He saw a moose.", "He lost his raincoat."], "answer": 1 },
+          { "q": "Why couldn't the family make a fire?", "choices": ["They ran out of dry wood.", "Fires were not allowed in the park.", "They forgot the matches.", "Noah was afraid of fire."], "answer": 0 },
+          { "q": "What did they see the next morning?", "choices": ["A bear near the car", "A tow truck", "A new tent", "A moose drinking near their tent"], "answer": 3 },
+          { "q": "How does Emma feel about the trip at the end?", "choices": ["She regrets it and never wants to camp again.", "She is happy and wants to do it again.", "She is angry at her dad.", "She is scared of the moose."], "answer": 1 }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "level": 10,
+  "units": [
+    {
+      "unit": "10.1",
+      "pron": {
+        "focus": "would've, should've, could've",
+        "ipa": "/əv/",
+        "explain": "Quand on parle vite, [[would have]] devient [[would've]] : « WOU-deuv ». Le [[have]] fond en un tout petit « euv » collé au modal, et le l de [[would]], [[should]] et [[could]] reste muet. Le piège, même pour les anglophones : comme « euv » sonne exactement comme [[of]], beaucoup écrivent « would of »… et c'est **toujours faux** ! À l'écrit, c'est [[would have]] ou [[would've]], point final. À l'oral, n'oublie pas non plus le petit « d » de [[if I'd known]] : c'est lui qui dit que c'est du passé.",
+        "words": [
+          { "en": "would've", "fr": "aurait, aurais (would have)", "hint": "« WOU-deuv » : l muet, « euv » tout petit ; à l'écrit, jamais « would of »" },
+          { "en": "should've", "fr": "aurais dû (should have)", "hint": "« CHOU-deuv » : l muet, accent sur « chou »" },
+          { "en": "could've", "fr": "aurais pu (could have)", "hint": "« KOU-deuv » : l muet, comme [[could]]" },
+          { "en": "wouldn't have", "fr": "n'aurait pas, n'aurais pas", "hint": "« WOU-deun-teuv » : la négation est forte, le have se colle" },
+          { "en": "if I'd known", "fr": "si j'avais su", "hint": "« i-faïd-NÔN » : le k de [[known]] est muet ; garde le petit « d »" },
+          { "en": "I would've come", "fr": "je serais venu, je serais venue", "hint": "« aï-WOU-deuv-KEUM » : accent sur [[would]] et sur [[come]]" },
+          { "en": "you should've told me", "fr": "tu aurais dû me le dire", "hint": "« you-CHOU-deuv-TÔLD-mi » : [[me]] reste léger" },
+          { "en": "we could've won", "fr": "on aurait pu gagner", "hint": "« wi-KOU-deuv-OUEUN » : [[won]] se dit comme [[one]]" },
+          { "en": "I wouldn't have gone", "fr": "je ne serais pas allé, je ne serais pas allée", "hint": "« aï-WOU-deun-teuv-GÂN » : deux coups forts" }
+        ],
+        "pairs": [],
+        "practice": [
+          "If I'd known about the party, I would've come.",
+          "You should've told me; we could've helped you.",
+          "If we had trained harder, we wouldn't have lost."
+        ]
+      },
+      "mission": {
+        "type": "oral",
+        "prompt": "Raconte à voix haute, en cinq à sept phrases, une journée qui a mal tourné (vraie ou inventée). Dis ce qui se serait passé si tu avais agi autrement, ce que tu aurais dû faire, et termine par un regret avec [[If only]].",
+        "model": "Last winter, I missed the bus on the morning of my big science presentation. If I had set my alarm, I wouldn't have been late. I should've gone to bed earlier, too, instead of playing video games! My teacher was nice about it, but if I'd arrived on time, I would've gotten a better mark. If only I had listened to my mom! Now I always check my alarm twice before I go to sleep.",
+        "checklist": [
+          "J'ai utilisé [[if]] + [[had]] + participe, puis [[would have]] + participe",
+          "J'ai dit au moins un regret avec [[should've]] ou [[shouldn't have]]",
+          "J'ai terminé avec [[If only]] ou [[I wish]] + [[had]] + participe",
+          "J'ai dit « WOU-deuv » d'un seul souffle, avec le l muet",
+          "Je n'ai jamais mis [[would]] juste après [[if]]"
+        ]
+      }
+    },
+    {
+      "unit": "10.2",
+      "pron": {
+        "focus": "must've, might've, can't have, needn't have",
+        "ipa": "/əv/",
+        "explain": "Pour faire des déductions sur le passé, le [[have]] se réduit encore en « euv » : [[must've]] (« MEUS-teuv »), [[might've]] (« MAÏ-deuv »). Remarque que le t de [[might]] devient un « d » léger devant la voyelle, comme dans [[water]]. Par contre, la négation reste bien forte : [[can't have]], [[shouldn't have]], [[needn't have]], parce que c'est elle qui porte le sens. Le piège des francophones : dire [[can't]] trop vite, comme [[can]]… et ta déduction dit le contraire ! Truc de détective : « euv » léger pour une hypothèse, négation bien appuyée pour une certitude.",
+        "words": [
+          { "en": "must've", "fr": "a dû (déduction : c'est sûrement ça)", "hint": "« MEUS-teuv » : « meus », jamais « mouste »" },
+          { "en": "might've", "fr": "a peut-être (might have)", "hint": "« MAÏ-deuv » : le t devient un « d » léger, comme dans [[water]]" },
+          { "en": "may have", "fr": "a peut-être (may have)", "hint": "« MÉI-euv » : le h disparaît dans une phrase rapide" },
+          { "en": "could've been", "fr": "aurait pu être", "hint": "« KOU-deuv-bin » : l muet ; [[been]] se dit « bin »" },
+          { "en": "can't have", "fr": "ne peut pas avoir (c'est impossible)", "hint": "« KANT-euv » : négation forte, le t s'entend bien" },
+          { "en": "can't have been", "fr": "ne peut pas avoir été", "hint": "« KANT-euv-bin » : tout l'accent sur [[can't]]" },
+          { "en": "shouldn't have", "fr": "n'aurait pas dû", "hint": "« CHOU-deun-teuv » : l muet, accent sur « chou »" },
+          { "en": "needn't have", "fr": "n'avait pas besoin de (mais l'a fait)", "hint": "« NII-deun-teuv » : accent sur « nii »" },
+          { "en": "didn't need to", "fr": "n'avait pas besoin de (et ne l'a pas fait)", "hint": "« DI-deunt-NII-deu » : [[to]] devient un petit « deu »" }
+        ],
+        "pairs": [],
+        "practice": [
+          "She must've left early, but she can't have forgotten the meeting.",
+          "It might've been the wind, or the cat could've opened the door.",
+          "You needn't have brought a gift, but thank you!"
+        ]
+      },
+      "mission": {
+        "type": "ecrit",
+        "prompt": "La dernière pointe de tarte a disparu du frigo ! Écris un message de cinq à sept phrases au groupe de ta famille avec tes déductions : qui a pu la manger, qui ne peut pas être coupable, et ce que le coupable aurait dû faire.",
+        "model": "Family alert: someone must have eaten the last piece of pie last night! It can't have been Dad, because he was working late. It might have been Liam, since he was the last one in the kitchen. The dog could have climbed on the counter, too, because there were crumbs on the floor. Whoever it was should have left me a note! And Mom, you needn't have bought another pie today: Grandma brought two this morning.",
+        "checklist": [
+          "J'ai utilisé [[must have]] pour une déduction presque sûre",
+          "J'ai utilisé [[can't have]] pour dire que c'est impossible (pas [[mustn't have]])",
+          "J'ai utilisé [[might have]], [[may have]] ou [[could have]] pour une possibilité",
+          "J'ai utilisé [[should have]] ou [[needn't have]] + participe passé",
+          "J'ai écrit [[have]] en entier ou [['ve]], jamais [[of]]"
+        ]
+      }
+    },
+    {
+      "unit": "10.3",
+      "pron": {
+        "focus": "Le rythme des expressions idiomatiques",
+        "ipa": "",
+        "explain": "Une expression idiomatique se dit comme un seul gros mot, avec des coups forts sur les mots-clés et des petits mots avalés : [[a piece of cake]] sonne « eu-PII-seuv-KÉIK ». Le dernier mot-clé est souvent le plus fort, parce que c'est lui qui « fait la chute » : [[once in a blue moon]], [[call it a day]]. Le piège des francophones : traduire dans sa tête et marquer des pauses entre chaque mot… et l'expression perd tout son charme ! Truc : apprends chaque expression comme une petite chanson, avec son rythme.",
+        "words": [
+          { "en": "a piece of cake", "fr": "un jeu d'enfant, du gâteau (très facile)", "hint": "« eu-PII-seuv-KÉIK » : [[of]] devient « euv », collé à [[piece]]" },
+          { "en": "break the ice", "fr": "briser la glace", "hint": "« BRÉIK-thi-AÏS » : devant une voyelle, [[the]] se dit « thi »" },
+          { "en": "under the weather", "fr": "pas dans son assiette, un peu malade", "hint": "« EUN-deur-theu-OUÈ-theur » : deux th doux" },
+          { "en": "once in a blue moon", "fr": "une fois de temps en temps, très rarement", "hint": "« OUEUN-si-neu-BLOU-MOUN » : tout glisse jusqu'à [[blue moon]]" },
+          { "en": "cost an arm and a leg", "fr": "coûter les yeux de la tête", "hint": "« KÂS-teu-NARM-eun-deu-LÈG » : les consonnes glissent sur les voyelles" },
+          { "en": "call it a day", "fr": "arrêter pour aujourd'hui", "hint": "« KÂ-li-deu-DÉI » : le t devient un « d » léger" },
+          { "en": "hit the books", "fr": "se mettre à étudier sérieusement", "hint": "« HIT-theu-BOUKS » : [[the]] minuscule, deux coups forts" },
+          { "en": "spill the beans", "fr": "vendre la mèche", "hint": "« SPIL-theu-BIINZ » : un z sonore à la fin" },
+          { "en": "hit the sack", "fr": "aller se coucher", "hint": "« HIT-theu-SAK » : « sak », bien ouvert" },
+          { "en": "pull someone's leg", "fr": "faire marcher quelqu'un, le taquiner", "hint": "« POUL-seum-weunz-LÈG » : accent fort sur [[pull]] et [[leg]]" }
+        ],
+        "pairs": [],
+        "practice": [
+          "This test is a piece of cake, but I'll still hit the books.",
+          "We only eat out once in a blue moon, because it costs an arm and a leg.",
+          "I'm a bit under the weather, so let's call it a day."
+        ]
+      },
+      "mission": {
+        "type": "oral",
+        "prompt": "Ton ami Amir te demande comment s'est passée ta semaine. Raconte-la-lui à voix haute en cinq à sept phrases, avec au moins quatre expressions idiomatiques bien placées.",
+        "model": "What a week! On Monday, I had to break the ice with my new lab partner, but it was a piece of cake: she loves hockey too. On Wednesday, I was a bit under the weather, so I hit the sack really early. My brother tried to pull my leg by saying the test was cancelled, but I didn't believe him. I hit the books all Thursday night, and the test went really well. On Friday, after a long practice, the coach finally said that we could call it a day.",
+        "checklist": [
+          "J'ai utilisé au moins quatre expressions idiomatiques",
+          "Chaque expression a le bon sens dans ma phrase (pas de traduction mot à mot)",
+          "J'ai gardé les expressions telles quelles : [[a piece of cake]], pas [[a part of cake]]",
+          "J'ai dit chaque expression d'un seul souffle, avec les mots-clés forts"
+        ]
+      }
+    },
+    {
+      "unit": "10.4",
+      "pron": {
+        "focus": "Les suffixes qui déplacent l'accent",
+        "ipa": "",
+        "explain": "Certains suffixes font **sauter** l'accent : avec [[-ity]], [[-ic]] et [[-ion]], l'accent tombe toujours sur la syllabe juste avant le suffixe. [[possible]] (« PÂ-si-beul ») devient [[possibility]] (« pâ-si-BI-li-ti »), [[economy]] devient [[economic]]. D'autres suffixes sont polis et ne touchent à rien : [[-ness]], [[-ment]], [[-ful]] gardent l'accent du mot de départ ([[happy]], [[happiness]]). Le piège des francophones : appuyer sur la fin de tous ces mots, comme en français (« possibili-TÉ »). Truc : « -ity, -ic, -ion » = accent juste avant moi !",
+        "words": [
+          { "en": "possible", "fr": "possible", "hint": "« PÂ-si-beul » : accent au début, « beul » tout petit" },
+          { "en": "possibility", "fr": "une possibilité", "hint": "« pâ-si-BI-li-ti » : accent juste avant -ity" },
+          { "en": "economy", "fr": "l'économie", "hint": "« i-KÂ-neu-mi » : accent sur la 2e syllabe" },
+          { "en": "economic", "fr": "économique (lié à l'économie)", "hint": "« è-keu-NÂ-mik » : accent juste avant -ic" },
+          { "en": "electric", "fr": "électrique", "hint": "« i-LÈK-trik » : accent juste avant -ic" },
+          { "en": "electricity", "fr": "l'électricité", "hint": "« i-lèk-TRI-si-ti » : l'accent saute juste avant -ity" },
+          { "en": "educate", "fr": "éduquer, instruire", "hint": "« È-djeu-kéit » : accent au début ; « dj » comme dans [[juice]]" },
+          { "en": "education", "fr": "l'éducation, les études", "hint": "« è-djeu-KÉI-cheun » : accent juste avant -tion" },
+          { "en": "happy", "fr": "heureux, heureuse", "hint": "« HA-pi » : accent au début, h bien soufflé" },
+          { "en": "happiness", "fr": "le bonheur", "hint": "« HA-pi-neus » : -ness ne déplace rien, l'accent reste au début" }
+        ],
+        "pairs": [],
+        "practice": [
+          "Electricity is essential to a modern economy.",
+          "Education is the key to happiness, and anything is possible."
+        ]
+      },
+      "mission": {
+        "type": "ecrit",
+        "prompt": "Le site de ton école publie des critiques écrites par les élèves. Écris la critique d'un jeu vidéo (réel ou inventé) en cinq à sept phrases, avec au moins six mots fabriqués avec un préfixe ou un suffixe.",
+        "model": "This new puzzle game is absolutely unbelievable! The graphics are colourful, and the music is surprisingly relaxing. However, the instructions are a bit unclear, and I misunderstood the goal of the second level. The difficulty is also uneven: some levels are effortless, while others feel almost impossible. Still, the creativity of the designers is impressive, and the friendship between the two heroes is touching. My only disappointment was the price, which is unreasonable for such a short game.",
+        "checklist": [
+          "J'ai utilisé au moins trois préfixes ([[un-]], [[im-]], [[mis-]], [[dis-]]…)",
+          "J'ai utilisé au moins trois suffixes ([[-ness]], [[-ment]], [[-ity]], [[-ful]], [[-less]], [[-ive]]…)",
+          "J'ai choisi le bon préfixe négatif : [[impossible]], [[unclear]], pas [[unpossible]]",
+          "En relisant à voix haute, j'ai placé l'accent juste avant [[-ity]] : [[creativity]]"
+        ]
+      }
+    }
+  ]
+}

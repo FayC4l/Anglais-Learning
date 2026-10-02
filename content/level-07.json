@@ -1,0 +1,430 @@
+{
+  "id": 7,
+  "cefr": "B1+",
+  "title": "Nuances",
+  "titleEn": "Shades",
+  "intro": "Parler des règles et donner des conseils, imaginer ce qui va arriver avec if, déjouer les faux amis et choisir entre -ing et to : ton anglais devient précis.",
+  "boss": {
+    "name": "Les Jumeaux Faux-Amis",
+    "taunt": "On ressemble à des mots français, mais méfie-toi… Actually, tu vas perdre. Et ça, ce n'est pas une déception, c'est une certitude !",
+    "defeat": "Quoi ?! Tu as vu clair dans notre jeu… On retourne se cacher à la library — euh, à la bibliothèque !"
+  },
+  "units": [
+    {
+      "id": "7.1",
+      "title": "Obligations et conseils",
+      "titleEn": "Rules of the Game",
+      "goal": "Dire ce qui est obligatoire, interdit, conseillé ou possible avec must, have to, should et might.",
+      "lesson": [
+        { "type": "p", "text": "[[must]], [[should]], [[might]], [[may]] et [[could]] sont des **modaux** : des petits verbes spéciaux. **Jamais de -s**, **jamais de to** après, et toujours le verbe de base : [[She must go.]] (et non *she musts to go*)." },
+        { "type": "rule", "title": "Obligation : must ou have to ?", "text": "[[must]] = obligation forte, souvent une règle écrite ou ce que **toi** tu juges nécessaire : [[You must wear a helmet.]] [[have to]] = obligation qui vient de l'extérieur (règlement, horaire). Lui, il se conjugue comme un verbe normal : [[She has to leave.]], [[Do you have to work?]] Au passé, [[must]] n'existe pas : on dit [[had to]] ([[I had to wait.]])." },
+        { "type": "table", "head": ["Forme", "Sens", "Exemple"], "rows": [
+          ["must", "obligation (c'est nécessaire)", "[[You must wear a seat belt.]]"],
+          ["have to / has to", "obligation (règle extérieure)", "[[He has to take his medicine.]]"],
+          ["mustn't", "**interdiction** (tu n'as pas le droit !)", "[[You mustn't swim alone.]]"],
+          ["don't have to / doesn't have to", "**pas obligé** (comme tu veux)", "[[You don't have to come.]]"],
+          ["should / shouldn't", "conseil (tu devrais / tu ne devrais pas)", "[[You should rest.]]"],
+          ["might / may / could", "possibilité (peut-être)", "[[It might rain.]]"]
+        ] },
+        { "type": "rule", "title": "Possibilité : might, may, could", "text": "[[might]], [[may]] et [[could]] = « peut-être » : [[I might be late.]] = Je vais peut-être être en retard. Pour dire « peut-être pas », utilise [[might not]] ou [[may not]] : [[She might not come.]] Attention : [[couldn't]] ne veut **pas** dire « peut-être pas », mais « n'a pas pu / ne pourrait pas »." },
+        { "type": "tip", "text": "LE grand piège : [[mustn't]] ≠ [[don't have to]] ! [[You mustn't come.]] = Tu n'as **pas le droit** de venir. [[You don't have to come.]] = Tu n'es **pas obligé** de venir (mais tu peux !). Truc : « interdit » = [[mustn't]] ; « pas obligé » = [[don't have to]]." },
+        { "type": "p", "text": "Pour parler de santé : « J'ai mal à la tête » = [[I have a headache]], « J'ai de la fièvre » = [[I have a fever]]. Et [[advice]] (des conseils) est **indénombrable** : [[some advice]], [[a piece of advice]], jamais *an advice* ni *advices*." },
+        { "type": "examples", "items": [
+          { "en": "You must wear a seat belt in the car.", "fr": "Tu dois porter ta ceinture de sécurité dans l'auto." },
+          { "en": "We don't have to go to school on Saturday.", "fr": "On n'est pas obligés d'aller à l'école le samedi." },
+          { "en": "You mustn't touch the stove. It's hot!", "fr": "Tu ne dois pas toucher à la cuisinière. Elle est chaude !" },
+          { "en": "You should see a doctor.", "fr": "Tu devrais voir un médecin." },
+          { "en": "I might stay home tomorrow. I have a fever.", "fr": "Je vais peut-être rester à la maison demain. J'ai de la fièvre." },
+          { "en": "Did you have to wait a long time?", "fr": "As-tu dû attendre longtemps ?" }
+        ] },
+        { "type": "dialogue", "title": "Chez l'infirmière de l'école", "lines": [
+          { "who": "Malik", "en": "Excuse me. I have a headache and a sore throat.", "fr": "Excusez-moi. J'ai mal à la tête et mal à la gorge." },
+          { "who": "Nurse", "en": "Let me check. Oh, you have a fever. You should go home and rest.", "fr": "Laisse-moi vérifier. Oh, tu fais de la fièvre. Tu devrais rentrer chez toi et te reposer." },
+          { "who": "Malik", "en": "Do I have to call my mom?", "fr": "Est-ce que je dois appeler ma mère ?" },
+          { "who": "Nurse", "en": "No, you don't have to. I'll call her.", "fr": "Non, tu n'es pas obligé. Je vais l'appeler." },
+          { "who": "Malik", "en": "Can I take some medicine?", "fr": "Est-ce que je peux prendre un médicament ?" },
+          { "who": "Nurse", "en": "No, you mustn't take medicine without your parents' permission.", "fr": "Non, tu n'as pas le droit de prendre de médicament sans la permission de tes parents." },
+          { "who": "Malik", "en": "Okay. I might miss my hockey game tonight…", "fr": "D'accord. Je vais peut-être manquer ma partie de hockey ce soir…" },
+          { "who": "Nurse", "en": "Your health comes first!", "fr": "Ta santé passe en premier !" }
+        ] },
+        { "type": "fun", "text": "Le sais-tu ? Au Canada, porter la ceinture de sécurité en voiture est obligatoire dans toutes les provinces et tous les territoires : [[You must wear a seat belt!]]" }
+      ],
+      "vocab": [
+        { "en": "headache", "fr": "mal de tête", "alt": [], "ex": "I have a terrible headache." },
+        { "en": "sore throat", "fr": "mal de gorge", "alt": [], "ex": "She can't sing today. She has a sore throat." },
+        { "en": "stomach ache", "fr": "mal de ventre", "alt": ["stomachache", "tummy ache"], "ex": "I ate too much candy and now I have a stomach ache." },
+        { "en": "fever", "fr": "fièvre", "alt": [], "ex": "You have a fever. You should stay in bed." },
+        { "en": "cough", "fr": "toux", "alt": [], "ex": "My little brother has a bad cough." },
+        { "en": "flu", "fr": "grippe", "alt": ["the flu"], "ex": "Half of my class has the flu." },
+        { "en": "medicine", "fr": "médicament", "alt": ["medication"], "ex": "Take your medicine after dinner." },
+        { "en": "nurse", "fr": "infirmier, infirmière", "alt": [], "ex": "The nurse gave me a glass of water." },
+        { "en": "appointment", "fr": "rendez-vous (chez le médecin, le dentiste)", "alt": [], "ex": "I have an appointment with the doctor at four o'clock." },
+        { "en": "rest", "fr": "se reposer", "alt": [], "ex": "You should rest this weekend." },
+        { "en": "advice", "fr": "conseils (nom indénombrable)", "alt": [], "ex": "Can you give me some advice?" },
+        { "en": "rule", "fr": "règle (consigne à respecter)", "alt": [], "ex": "The first rule is simple: no running." },
+        { "en": "allowed", "fr": "permis (autorisé)", "alt": ["permitted"], "ex": "Dogs are not allowed in the store." },
+        { "en": "helmet", "fr": "casque (de vélo, de hockey)", "alt": [], "ex": "You must wear a helmet on your bike." },
+        { "en": "seat belt", "fr": "ceinture de sécurité", "alt": ["seatbelt"], "ex": "Put on your seat belt, please." },
+        { "en": "sunscreen", "fr": "crème solaire", "alt": ["sunblock"], "ex": "Don't forget your sunscreen at the beach." },
+        { "en": "lifeguard", "fr": "sauveteur, sauveteuse (à la plage, à la piscine)", "alt": [], "ex": "The lifeguard blew her whistle." },
+        { "en": "healthy", "fr": "sain (bon pour la santé)", "alt": [], "ex": "Fruit is a healthy snack." }
+      ],
+      "sentences": [
+        { "en": "You mustn't swim alone in the lake.", "fr": "Tu n'as pas le droit de nager seul dans le lac.", "trap": ["to", "don't"], "alt": ["You mustn't swim in the lake alone."] },
+        { "en": "We don't have to wear a uniform at our school.", "fr": "Nous ne sommes pas obligés de porter un uniforme à notre école.", "trap": ["mustn't", "doesn't"], "alt": ["At our school, we don't have to wear a uniform."] },
+        { "en": "She has to take her medicine after dinner.", "fr": "Elle doit prendre son médicament après le souper.", "trap": ["have", "takes"], "alt": ["After dinner, she has to take her medicine."] },
+        { "en": "Do I have to bring my helmet tomorrow?", "fr": "Est-ce que je dois apporter mon casque demain ?", "trap": ["Does", "brings"], "alt": [] },
+        { "en": "You should wear sunscreen at the beach.", "fr": "Tu devrais mettre de la crème solaire à la plage.", "trap": ["to", "wears"], "alt": ["At the beach, you should wear sunscreen."] },
+        { "en": "You shouldn't eat so much candy before bed.", "fr": "Tu ne devrais pas manger autant de bonbons avant de te coucher.", "trap": ["don't", "eats"], "alt": [] },
+        { "en": "It might snow tonight, so take your toque.", "fr": "Il va peut-être neiger ce soir, alors prends ta tuque.", "trap": ["snows", "will"], "alt": [] },
+        { "en": "My brother had to stay in bed for three days.", "fr": "Mon frère a dû rester au lit pendant trois jours.", "trap": ["must", "has"], "alt": [] },
+        { "en": "You don't have to finish your plate if you're full.", "fr": "Tu n'es pas obligé de finir ton assiette si tu n'as plus faim.", "trap": ["mustn't", "must"], "alt": ["If you're full, you don't have to finish your plate."] },
+        { "en": "The lifeguard says we mustn't run near the pool.", "fr": "Le sauveteur dit qu'on n'a pas le droit de courir près de la piscine.", "trap": ["to", "runs"], "alt": [] },
+        { "en": "You may feel tired after you take this medicine.", "fr": "Tu te sentiras peut-être fatigué après avoir pris ce médicament.", "trap": ["feels", "to"], "alt": ["After you take this medicine, you may feel tired."] },
+        { "en": "Does your sister have to wear glasses?", "fr": "Est-ce que ta sœur doit porter des lunettes ?", "trap": ["has", "Do"], "alt": [] }
+      ],
+      "grammar": [
+        { "type": "mcq", "q": "The museum is free today. You ___ pay to go in.", "choices": ["mustn't", "don't have to", "have to", "must"], "answer": 1, "explain": "C'est gratuit : tu n'es pas obligé de payer → don't have to. Mustn't voudrait dire que c'est interdit de payer !" },
+        { "type": "mcq", "q": "Be careful! You ___ skate here. The ice is too thin!", "choices": ["don't have to", "might", "have to", "mustn't"], "answer": 3, "explain": "C'est dangereux, donc interdit : mustn't." },
+        { "type": "mcq", "q": "Comment dit-on « Tu n'es pas obligée de venir » ?", "choices": ["You mustn't come.", "You don't must come.", "You don't have to come.", "You haven't to come."], "answer": 2, "explain": "« Pas obligé » = don't have to. You mustn't come = tu n'as pas le droit de venir." },
+        { "type": "mcq", "q": "Yesterday, I ___ wait for the bus for an hour.", "choices": ["had to", "must", "have to", "musted"], "answer": 0, "explain": "Must n'a pas de passé : on utilise had to." },
+        { "type": "mcq", "q": "Take your umbrella. It ___ rain this afternoon.", "choices": ["mustn't", "might", "has to", "doesn't have to"], "answer": 1, "explain": "On n'est pas sûr : c'est une possibilité → might (peut-être)." },
+        { "type": "mcq", "q": "Quelle phrase est correcte ?", "choices": ["You should to rest.", "You shoulds rest.", "You should resting.", "You should rest."], "answer": 3, "explain": "Après un modal : verbe de base, sans to, sans -s, sans -ing." },
+        { "type": "mcq", "q": "I'm not sure yet, but I ___ go to the party. I'm very tired. (possibilité négative)", "choices": ["might not", "mustn't", "couldn't", "don't have to"], "answer": 0, "explain": "« Peut-être pas » = might not. Couldn't veut dire « n'a pas pu »." },
+        { "type": "fill", "q": "Hockey players ___ wear a helmet. It's the rule.", "hint": "devoir (obligation)", "answer": ["must", "have to"], "explain": "Une règle obligatoire : must ou have to, les deux sont corrects ici." },
+        { "type": "fill", "q": "My sister ___ get up early on Sundays. She can stay in bed.", "hint": "ne pas être obligée", "answer": ["doesn't have to", "doesn't need to"], "explain": "Pas obligée → doesn't have to (avec she : does)." },
+        { "type": "fill", "q": "Last year, we ___ wear a uniform at school.", "hint": "devoir, au passé", "answer": ["had to"], "explain": "Au passé, l'obligation se dit had to." },
+        { "type": "fill", "q": "You look tired. You ___ go to bed early tonight.", "hint": "conseil", "answer": ["should"], "explain": "Pour un conseil : should + verbe de base." },
+        { "type": "fill", "q": "___ your dad have to work on Saturdays?", "hint": "auxiliaire de question", "answer": ["Does"], "explain": "Have to se conjugue comme un verbe normal : Does your dad have to…?" },
+        { "type": "fill", "q": "Students ___ use their phones during the test. It's forbidden!", "hint": "interdiction, avec must", "answer": ["mustn't"], "explain": "Interdit → mustn't (must not)." },
+        { "type": "error", "q": "She musts wear glasses to read.", "wrong": 1, "fix": ["must"], "explain": "Un modal ne prend jamais de -s : she must." },
+        { "type": "error", "q": "He have to take his medicine every morning.", "wrong": 1, "fix": ["has"], "explain": "Have to se conjugue : he has to." },
+        { "type": "error", "q": "Did you must wait a long time?", "wrong": 2, "fix": ["have to"], "explain": "Must n'existe pas au passé : Did you have to wait…?" },
+        { "type": "error", "q": "Can you give me an advice?", "wrong": 4, "fix": ["some"], "explain": "Advice est indénombrable : some advice (ou a piece of advice), jamais an advice." },
+        { "type": "error", "q": "I have a fever, so I might stays home tomorrow.", "wrong": 7, "fix": ["stay"], "explain": "Après might : verbe de base, sans -s." }
+      ],
+      "reading": {
+        "title": "The New Pool Rules",
+        "text": "Every summer, Zoé works as a junior lifeguard at the community pool in Ottawa. This year, the pool has some new rules, and Zoé has to explain them to the kids.\n\nFirst, swimmers must take a shower before they go into the water. Children under eight must stay with an adult at all times. Nobody is allowed to run near the pool, because the floor is wet and slippery. You can bring a snack, but you mustn't eat it inside: food is only allowed on the grass outside.\n\nSome things are not obligatory. Swimmers don't have to wear a swimming cap, and they don't have to bring their own towel, because the pool lends towels for free.\n\nOn sunny days, Zoé gives the same advice to everyone: \"You should wear sunscreen, and you should drink lots of water.\" Last week, a boy called Félix didn't listen. He stayed in the sun all afternoon without a hat. In the evening, he had a headache and a fever, and he had to stay in bed the next day.\n\nTomorrow, the weather might be stormy. When there is thunder, the pool has to close. Zoé hopes the storm won't come, because she might lose a day of work.",
+        "questions": [
+          { "q": "What does Zoé do in the summer?", "choices": ["She teaches swimming to adults.", "She works as a junior lifeguard.", "She sells sunscreen at the pool.", "She cleans the showers."], "answer": 1 },
+          { "q": "Which of these is optional at the pool?", "choices": ["Taking a shower before swimming", "Staying with an adult if you are under eight", "Wearing a swimming cap", "Eating your snack next to the water"], "answer": 2 },
+          { "q": "Why don't swimmers need their own towel?", "choices": ["Because the pool lends towels for free.", "Because towels are not allowed.", "Because it is always sunny.", "Because Zoé brings towels for everyone."], "answer": 0 },
+          { "q": "What happened to Félix?", "choices": ["He lost his towel.", "He ran and fell on the wet floor.", "He forgot his swimming cap.", "He got sick after a day in the sun."], "answer": 3 },
+          { "q": "Why is Zoé worried about the storm?", "choices": ["She is scared of thunder.", "She is probably paid only when the pool is open.", "She has to swim in the storm.", "She has no umbrella."], "answer": 1 }
+        ]
+      }
+    },
+    {
+      "id": "7.2",
+      "title": "Si…",
+      "titleEn": "What If?",
+      "goal": "Parler de vérités générales et de conséquences probables avec if, unless, when et as soon as.",
+      "lesson": [
+        { "type": "p", "text": "Pour parler d'une condition, l'anglais a plusieurs « conditionnels ». Ici, les deux premiers : le **zéro** (c'est toujours vrai) et le **premier** (c'est probable, dans le futur)." },
+        { "type": "rule", "title": "Le conditionnel zéro", "text": "[[If]] + présent, présent : pour les vérités générales et les faits scientifiques. [[If you heat ice, it melts.]] Ici, [[if]] veut presque dire [[when]] (chaque fois que)." },
+        { "type": "rule", "title": "Le premier conditionnel", "text": "[[If]] + présent, [[will]] + verbe : pour une situation future probable. [[If it rains tomorrow, we'll stay home.]] **Jamais de will après if** : *If it will rain* ❌. Même règle après [[when]], [[as soon as]], [[unless]], [[before]] et [[after]] quand on parle du futur : [[I'll call you as soon as I get home.]]" },
+        { "type": "table", "head": ["Mot", "Sens", "Exemple"], "rows": [
+          ["if", "si (peut-être)", "[[If I see Maya, I'll tell her.]]"],
+          ["when", "quand (c'est sûr que ça va arriver)", "[[When I get home, I'll eat.]]"],
+          ["unless", "à moins que (= if… not)", "[[Unless you hurry, you'll miss the bus.]]"],
+          ["as soon as", "dès que", "[[As soon as it stops raining, we'll go out.]]"]
+        ] },
+        { "type": "tip", "text": "Piège de francophone : en français, on dit « Quand je **serai** grand… » avec un futur. En anglais, c'est le présent : [[When I'm older]], jamais *When I will be older*. Et [[unless]] contient déjà la négation : [[unless you study]] = si tu n'étudies pas. Ne dis jamais *unless you don't study*." },
+        { "type": "p", "text": "La virgule : quand la phrase commence par [[If]], on met une virgule au milieu : [[If it snows, we'll go skiing.]] Quand [[if]] est au milieu, pas de virgule : [[We'll go skiing if it snows.]] Les deux ordres sont corrects !" },
+        { "type": "examples", "items": [
+          { "en": "If you mix blue and yellow, you get green.", "fr": "Si tu mélanges du bleu et du jaune, tu obtiens du vert." },
+          { "en": "If we recycle more, we'll produce less garbage.", "fr": "Si on recycle plus, on va produire moins de déchets." },
+          { "en": "Plants die if they don't get water.", "fr": "Les plantes meurent si elles ne reçoivent pas d'eau." },
+          { "en": "I won't go unless you come with me.", "fr": "Je n'irai pas à moins que tu viennes avec moi." },
+          { "en": "I'll text you as soon as the bus arrives.", "fr": "Je t'écris dès que l'autobus arrive." }
+        ] },
+        { "type": "dialogue", "title": "Le projet vert", "lines": [
+          { "who": "Priya", "en": "Our school wastes so much paper!", "fr": "Notre école gaspille tellement de papier !" },
+          { "who": "Liam", "en": "If we put a recycling bin in every class, people will use it.", "fr": "Si on met un bac de recyclage dans chaque classe, les gens vont s'en servir." },
+          { "who": "Priya", "en": "Good idea. But they won't recycle unless we explain the rules.", "fr": "Bonne idée. Mais ils ne recycleront pas à moins qu'on explique les règles." },
+          { "who": "Liam", "en": "As soon as the principal says yes, we'll make some posters.", "fr": "Dès que la directrice dit oui, on fera des affiches." },
+          { "who": "Priya", "en": "And if we save energy too, the school will save money.", "fr": "Et si on économise aussi l'énergie, l'école va économiser de l'argent." },
+          { "who": "Liam", "en": "When I see the principal tomorrow, I'll ask her.", "fr": "Quand je verrai la directrice demain, je vais lui demander." }
+        ] },
+        { "type": "fun", "text": "Le sais-tu ? Le fameux bac bleu de recyclage ([[blue box]]) a été lancé en Ontario, à Kitchener, au début des années 1980. Aujourd'hui, on en voit partout au Canada !" }
+      ],
+      "vocab": [
+        { "en": "environment", "fr": "environnement", "alt": [], "ex": "We must protect the environment." },
+        { "en": "recycle", "fr": "recycler", "alt": [], "ex": "If you recycle cans, they become new cans." },
+        { "en": "recycling bin", "fr": "bac de recyclage", "alt": ["blue box"], "ex": "Put the bottles in the recycling bin." },
+        { "en": "green bin", "fr": "bac vert (pour le compost)", "alt": ["compost bin"], "ex": "Banana peels go in the green bin." },
+        { "en": "waste", "fr": "gaspiller", "alt": [], "ex": "Don't waste water when you brush your teeth." },
+        { "en": "save", "fr": "économiser (de l'énergie, de l'eau)", "alt": [], "ex": "If we save energy, we save money." },
+        { "en": "energy", "fr": "énergie", "alt": [], "ex": "Solar energy comes from the sun." },
+        { "en": "plastic bag", "fr": "sac de plastique", "alt": [], "ex": "This store doesn't give plastic bags anymore." },
+        { "en": "reusable", "fr": "réutilisable", "alt": [], "ex": "I always bring a reusable bottle to school." },
+        { "en": "litter", "fr": "déchets jetés par terre", "alt": [], "ex": "There is a lot of litter in the park." },
+        { "en": "climate change", "fr": "changements climatiques", "alt": [], "ex": "Climate change is a big problem for the planet." },
+        { "en": "planet", "fr": "planète", "alt": [], "ex": "Earth is our only planet." },
+        { "en": "melt", "fr": "fondre", "alt": [], "ex": "If you leave your ice cream in the sun, it melts." },
+        { "en": "freeze", "fr": "geler", "alt": [], "ex": "Water freezes at zero degrees Celsius." },
+        { "en": "heat", "fr": "chauffer (rendre chaud)", "alt": ["warm up", "heat up"], "ex": "If you heat chocolate, it melts." },
+        { "en": "tap", "fr": "robinet", "alt": ["faucet"], "ex": "Turn off the tap, please." },
+        { "en": "unless", "fr": "à moins que (si… ne… pas)", "alt": [], "ex": "We'll lose unless we work together." },
+        { "en": "as soon as", "fr": "dès que", "alt": [], "ex": "Call me as soon as you arrive." }
+      ],
+      "sentences": [
+        { "en": "If you heat ice, it melts.", "fr": "Si on chauffe de la glace, elle fond.", "trap": ["heats", "melted"], "alt": [] },
+        { "en": "If it rains tomorrow, we'll stay inside.", "fr": "S'il pleut demain, on va rester à l'intérieur.", "trap": ["will", "rain"], "alt": ["We'll stay inside if it rains tomorrow."] },
+        { "en": "We'll call you as soon as we arrive in Toronto.", "fr": "On t'appellera dès qu'on arrivera à Toronto.", "trap": ["will", "arrived"], "alt": ["As soon as we arrive in Toronto, we'll call you."] },
+        { "en": "You'll miss the bus unless you hurry.", "fr": "Tu vas manquer l'autobus à moins de te dépêcher.", "trap": ["don't", "will"], "alt": ["Unless you hurry, you'll miss the bus."] },
+        { "en": "Plants die if they don't get enough water.", "fr": "Les plantes meurent si elles ne reçoivent pas assez d'eau.", "trap": ["dies", "doesn't"], "alt": [] },
+        { "en": "When I'm older, I'll buy an electric car.", "fr": "Quand je serai plus vieux, je vais acheter une voiture électrique.", "trap": ["will", "be"], "alt": ["I'll buy an electric car when I'm older."] },
+        { "en": "Unless we save energy, the planet will get warmer.", "fr": "À moins qu'on économise l'énergie, la planète va se réchauffer.", "trap": ["don't", "gets"], "alt": ["The planet will get warmer unless we save energy."] },
+        { "en": "What will you do if the bus doesn't come?", "fr": "Que vas-tu faire si l'autobus ne vient pas ?", "trap": ["didn't", "comes"], "alt": [] },
+        { "en": "If you freeze water, it turns into ice.", "fr": "Si on fait geler de l'eau, elle se transforme en glace.", "trap": ["will", "turned"], "alt": [] },
+        { "en": "Bring a reusable bag when you go to the store.", "fr": "Apporte un sac réutilisable quand tu vas au magasin.", "trap": ["will", "goes"], "alt": ["When you go to the store, bring a reusable bag."] },
+        { "en": "I'll recycle these bottles as soon as I finish my homework.", "fr": "Je vais recycler ces bouteilles dès que j'aurai fini mes devoirs.", "trap": ["will", "finished"], "alt": ["As soon as I finish my homework, I'll recycle these bottles."] },
+        { "en": "The ice on the canal melts when the weather gets warm.", "fr": "La glace du canal fond quand le temps se réchauffe.", "trap": ["melted", "get"], "alt": ["When the weather gets warm, the ice on the canal melts."] }
+      ],
+      "grammar": [
+        { "type": "mcq", "q": "If it ___ tomorrow, we'll cancel the picnic.", "choices": ["will rain", "rains", "rained", "rain"], "answer": 1, "explain": "Après if : présent (it rains), jamais will." },
+        { "type": "mcq", "q": "If you mix red and white, you ___ pink.", "choices": ["get", "will got", "getting", "gets"], "answer": 0, "explain": "Vérité générale (conditionnel zéro) : if + présent, présent → you get." },
+        { "type": "mcq", "q": "« Je n'irai pas au parc à moins que tu viennes avec moi. » → I won't go to the park ___ you come with me.", "choices": ["if", "when", "unless", "as soon as"], "answer": 2, "explain": "« À moins que » = unless." },
+        { "type": "mcq", "q": "Comment dit-on « Je t'appellerai dès que j'arriverai » ?", "choices": ["I'll call you as soon as I'll arrive.", "I call you as soon as I arrive.", "I'll call you as soon as I arrive.", "I'll call you as soon I arrive."], "answer": 2, "explain": "Après as soon as : présent (I arrive). La conséquence au futur : I'll call." },
+        { "type": "mcq", "q": "If you put water in the freezer, it ___.", "choices": ["will freezes", "freezes", "freeze", "is freeze"], "answer": 1, "explain": "Fait scientifique : présent, et avec it → freezes." },
+        { "type": "mcq", "q": "Quelle phrase est correcte ?", "choices": ["When I will be sixteen, I'll learn to drive.", "When I am sixteen, I will to learn to drive.", "When I'll be sixteen, I learn to drive.", "When I'm sixteen, I'll learn to drive."], "answer": 3, "explain": "Après when : présent (I'm sixteen). Puis will + verbe de base." },
+        { "type": "mcq", "q": "« Maya arrive à six heures, c'est sûr. Quand elle arrivera, on mangera. » → ___ she arrives, we'll eat.", "choices": ["If", "When", "Unless", "As soon"], "answer": 1, "explain": "C'est sûr qu'elle arrive : when (quand). If voudrait dire qu'elle va peut-être venir." },
+        { "type": "fill", "q": "If Maya ___ the bus, she'll walk to school.", "hint": "miss", "answer": ["misses"], "explain": "Après if : présent, et avec she → misses." },
+        { "type": "fill", "q": "We ___ to the beach if it's sunny tomorrow.", "hint": "go, futur avec will", "answer": ["will go"], "explain": "Premier conditionnel : if + présent, will + verbe." },
+        { "type": "fill", "q": "I'll text you as soon as the movie ___.", "hint": "finish", "answer": ["finishes"], "explain": "Après as soon as : présent, même si on parle du futur." },
+        { "type": "fill", "q": "___ you study, you won't pass the test.", "hint": "à moins que", "answer": ["Unless"], "explain": "Unless = if… not : si tu n'étudies pas." },
+        { "type": "fill", "q": "If you heat chocolate, it ___.", "hint": "melt", "answer": ["melts", "will melt"], "explain": "Fait général : melts (conditionnel zéro). Will melt est aussi accepté." },
+        { "type": "error", "q": "As soon as she arrive, we'll start the movie.", "wrong": 4, "fix": ["arrives"], "explain": "Après as soon as : présent, avec she → arrives." },
+        { "type": "error", "q": "If you mix blue and yellow, you gets green.", "wrong": 7, "fix": ["get"], "explain": "Avec you : pas de -s → you get." },
+        { "type": "error", "q": "I'll phone you when I'll get home.", "wrong": 4, "fix": ["I"], "explain": "Jamais will après when quand on parle du futur : when I get home." },
+        { "type": "error", "q": "If it'll rain tomorrow, we'll stay home.", "wrong": 1, "fix": ["it"], "explain": "Jamais will après if : If it rains… Ici, it'll devient it." },
+        { "type": "error", "q": "If we don't save energy, the planet get warmer.", "wrong": 7, "fix": ["will get", "gets"], "explain": "Conséquence : will get (ou gets, vérité générale). Get seul ne va pas avec the planet." }
+      ],
+      "reading": {
+        "title": "The Green Challenge",
+        "text": "This month, Noah's class is taking part in the Green Challenge. The rules are simple: if a class saves the most energy and produces the least garbage, it wins a trip to a nature park.\n\nOn the first day, Noah looked inside the recycling bin and was shocked. It was full of food! \"If we put food in the recycling bin, the plastic can't be recycled,\" he explained. \"Food goes in the green bin.\" So the class made posters for every bin.\n\nNext, Amir checked the classroom. The lights were on all day, even at lunch, and the tap in the corner was always dripping. \"If nobody uses the lights at lunch, we'll save a lot of energy,\" he said. \"And if we fix that tap, we'll stop wasting water.\"\n\nSome students complained. \"Unless everyone helps, we won't win,\" Noah told them. As soon as they saw the results of the first week, they changed their minds: their class was in second place!\n\nNow the whole class has new habits. When they finish their lunch, they sort everything carefully. Plastic bags are gone, and everyone brings reusable containers. The final results will come out next Friday. If they win, Noah will bring his camera to the park.",
+        "questions": [
+          { "q": "What does the winning class get?", "choices": ["A new recycling bin", "A trip to a nature park", "A camera", "A pizza lunch"], "answer": 1 },
+          { "q": "What problem did Noah find on the first day?", "choices": ["The green bin was broken.", "There were no posters.", "There was food in the recycling bin.", "The lights were off."], "answer": 2 },
+          { "q": "What did Amir notice in the classroom?", "choices": ["The lights were always on and the tap was dripping.", "Someone threw litter on the floor.", "The class had no green bin.", "The posters had mistakes."], "answer": 0 },
+          { "q": "Why did the students change their minds about the challenge?", "choices": ["Their teacher gave them a test.", "Noah promised them a prize.", "They saw that they had a real chance to win.", "The lights stopped working."], "answer": 2 },
+          { "q": "What will happen if the class wins?", "choices": ["Amir will make new posters.", "Noah will bring his camera to the park.", "The school will buy new lights.", "They will stop recycling."], "answer": 1 }
+        ]
+      }
+    },
+    {
+      "id": "7.3",
+      "title": "Les faux amis",
+      "titleEn": "False Friends",
+      "goal": "Éviter les faux amis qui piègent les francophones et choisir le bon mot.",
+      "lesson": [
+        { "type": "p", "text": "Un **faux ami**, c'est un mot anglais qui ressemble à un mot français… mais qui veut dire **autre chose**. Les jumeaux Faux-Amis adorent te piéger !" },
+        { "type": "table", "head": ["Mot anglais", "Veut dire…", "Ne veut PAS dire…", "Pour dire ça :"], "rows": [
+          ["[[actually]]", "en fait, en réalité", "actuellement", "[[currently]], [[now]]"],
+          ["[[eventually]]", "à la longue, finalement (après longtemps)", "éventuellement", "[[maybe]], [[possibly]]"],
+          ["[[library]]", "bibliothèque", "librairie", "[[bookstore]]"],
+          ["[[sensible]]", "raisonnable", "sensible", "[[sensitive]]"],
+          ["[[deception]]", "tromperie", "déception", "[[disappointment]]"],
+          ["[[attend]]", "assister à (être présent)", "attendre", "[[wait for]]"],
+          ["[[assist]]", "aider", "assister à", "[[attend]]"],
+          ["[[pretend]]", "faire semblant", "prétendre (affirmer)", "[[claim]]"],
+          ["[[achieve]]", "réaliser, atteindre (un but)", "achever (finir)", "[[finish]]"],
+          ["[[lecture]]", "conférence, cours magistral", "lecture", "[[reading]]"],
+          ["[[rude]]", "impoli", "rude (dur)", "[[tough]], [[harsh]]"],
+          ["[[resume]]", "reprendre (après une pause)", "résumer", "[[sum up]]"],
+          ["[[journey]]", "voyage, long trajet", "journée", "[[day]]"],
+          ["[[coin]]", "pièce de monnaie", "coin (de rue)", "[[corner]]"],
+          ["[[injury]]", "blessure", "injure", "[[insult]]"]
+        ] },
+        { "type": "rule", "title": "Comment les reconnaître ?", "text": "Quand un mot anglais ressemble à du français, **méfie-toi** et regarde le contexte. [[Actually]] sert surtout à corriger ou à nuancer : [[I thought it was easy. Actually, it was hard.]] [[Eventually]] veut dire que quelque chose arrive **enfin, après beaucoup de temps** : [[He eventually found his keys.]] Pour « actuellement », dis [[currently]] : [[She's currently in Vancouver.]]" },
+        { "type": "tip", "text": "Le piège le plus fréquent : « J'attends l'autobus » = [[I'm waiting for the bus]], et non *I'm attending the bus*. Et « Je suis sensible » = [[I'm sensitive]]. Si tu dis [[I'm sensible]], tu dis « je suis raisonnable » !" },
+        { "type": "examples", "items": [
+          { "en": "Actually, I'm not from Montreal. I'm from Gatineau.", "fr": "En fait, je ne viens pas de Montréal. Je viens de Gatineau." },
+          { "en": "I'm currently reading a great book.", "fr": "Je lis actuellement un super livre." },
+          { "en": "Don't be so sensitive! It was a joke.", "fr": "Ne sois pas si sensible ! C'était une blague." },
+          { "en": "Mei pretended to be sick.", "fr": "Mei a fait semblant d'être malade." },
+          { "en": "She achieved her dream.", "fr": "Elle a réalisé son rêve." },
+          { "en": "What a disappointment!", "fr": "Quelle déception !" }
+        ] },
+        { "type": "dialogue", "title": "La bibliothèque ou la librairie ?", "lines": [
+          { "who": "Félix", "en": "I'm going to the library to buy a book.", "fr": "Je vais à la bibliothèque acheter un livre." },
+          { "who": "Chloé", "en": "Actually, you can't buy books at the library. You borrow them!", "fr": "En fait, on ne peut pas acheter de livres à la bibliothèque. On les emprunte !" },
+          { "who": "Félix", "en": "Oh no! Where can I buy one, then?", "fr": "Oh non ! Où est-ce que je peux en acheter un, alors ?" },
+          { "who": "Chloé", "en": "At the bookstore across the street.", "fr": "À la librairie en face." },
+          { "who": "Félix", "en": "Thanks. I'm currently reading a mystery series, and I want the next one.", "fr": "Merci. Je lis actuellement une série de romans policiers, et je veux le prochain." },
+          { "who": "Chloé", "en": "Be sensible: check the library first. It's free!", "fr": "Sois raisonnable : vérifie d'abord à la bibliothèque. C'est gratuit !" },
+          { "who": "Félix", "en": "You're right. Eventually, I'll read every book in Ottawa!", "fr": "Tu as raison. À la longue, je vais lire tous les livres d'Ottawa !" }
+        ] },
+        { "type": "fun", "text": "Le sais-tu ? L'expression anglaise [[false friends]] est une traduction directe de l'expression française « faux amis », inventée par deux linguistes français en 1928." }
+      ],
+      "vocab": [
+        { "en": "actually", "fr": "en fait (en réalité)", "alt": [], "ex": "Actually, I prefer tea." },
+        { "en": "currently", "fr": "actuellement (en ce moment)", "alt": ["at the moment", "right now"], "ex": "My dad is currently working in Toronto." },
+        { "en": "eventually", "fr": "à la longue, tôt ou tard", "alt": ["sooner or later"], "ex": "Don't worry, you'll eventually understand." },
+        { "en": "library", "fr": "bibliothèque", "alt": [], "ex": "I borrowed this book from the library." },
+        { "en": "bookstore", "fr": "librairie (magasin de livres)", "alt": ["bookshop"], "ex": "I bought a comic book at the bookstore." },
+        { "en": "sensible", "fr": "raisonnable (qui a du bon sens)", "alt": ["reasonable"], "ex": "Wearing a helmet is a sensible choice." },
+        { "en": "sensitive", "fr": "sensible (émotif, délicat)", "alt": [], "ex": "My sister is very sensitive. She cries at every movie." },
+        { "en": "disappointment", "fr": "déception", "alt": [], "ex": "The rainy weekend was a big disappointment." },
+        { "en": "attend", "fr": "assister à (être présent à)", "alt": [], "ex": "All students must attend the meeting." },
+        { "en": "assist", "fr": "aider (mot plus formel)", "alt": ["help"], "ex": "The nurse will assist the doctor." },
+        { "en": "pretend", "fr": "faire semblant", "alt": [], "ex": "Let's pretend we're astronauts!" },
+        { "en": "achieve", "fr": "réaliser, atteindre (un but)", "alt": ["accomplish", "reach"], "ex": "You can achieve your goals if you work hard." },
+        { "en": "coin", "fr": "pièce de monnaie", "alt": [], "ex": "A loonie is a one-dollar coin." },
+        { "en": "lecture", "fr": "conférence (exposé devant un public)", "alt": ["talk"], "ex": "We attended a lecture about space." },
+        { "en": "injury", "fr": "blessure", "alt": [], "ex": "He can't play because of a knee injury." },
+        { "en": "rude", "fr": "impoli", "alt": ["impolite"], "ex": "It's rude to talk with your mouth full." },
+        { "en": "resume", "fr": "reprendre (recommencer après une pause)", "alt": [], "ex": "The game will resume in ten minutes." },
+        { "en": "journey", "fr": "voyage (long trajet)", "alt": ["trip"], "ex": "It was a long journey, but we finally arrived." }
+      ],
+      "sentences": [
+        { "en": "Actually, I don't like chocolate very much.", "fr": "En fait, je n'aime pas tellement le chocolat.", "trap": ["Currently", "likes"], "alt": ["I actually don't like chocolate very much.", "I don't like chocolate very much, actually."] },
+        { "en": "We're waiting for the bus in front of the library.", "fr": "On attend l'autobus devant la bibliothèque.", "trap": ["attending", "bookstore"], "alt": ["In front of the library, we're waiting for the bus."] },
+        { "en": "Liam pretended to be asleep when his mom came in.", "fr": "Liam a fait semblant de dormir quand sa mère est entrée.", "trap": ["pretends", "come"], "alt": ["When his mom came in, Liam pretended to be asleep."] },
+        { "en": "Hundreds of students attended the science lecture.", "fr": "Des centaines d'élèves ont assisté à la conférence scientifique.", "trap": ["assisted", "reading"], "alt": [] },
+        { "en": "My little brother is very sensitive about his height.", "fr": "Mon petit frère est très sensible au sujet de sa taille.", "trap": ["sensible"], "alt": [] },
+        { "en": "Staying home was a sensible decision.", "fr": "Rester à la maison était une décision raisonnable.", "trap": ["sensitive", "Stay"], "alt": [] },
+        { "en": "Losing the final was a big disappointment.", "fr": "Perdre la finale a été une grosse déception.", "trap": ["deception", "Lose"], "alt": [] },
+        { "en": "Eventually, Karim found his phone under the couch.", "fr": "Karim a fini par trouver son téléphone sous le divan.", "trap": ["Possibly", "finds"], "alt": ["Karim eventually found his phone under the couch.", "Karim found his phone under the couch eventually."] },
+        { "en": "Sofia achieved her goal and made the team.", "fr": "Sofia a atteint son objectif et a été choisie dans l'équipe.", "trap": ["finished", "achieve"], "alt": [] },
+        { "en": "Don't be rude to the bus driver.", "fr": "Ne sois pas impoli avec le chauffeur d'autobus.", "trap": ["rough", "Doesn't"], "alt": [] },
+        { "en": "The game will resume after the break.", "fr": "La partie va reprendre après la pause.", "trap": ["summarize", "resumes"], "alt": ["After the break, the game will resume."] },
+        { "en": "I found an old coin in the sand.", "fr": "J'ai trouvé une vieille pièce de monnaie dans le sable.", "trap": ["corner", "founded"], "alt": ["In the sand, I found an old coin."] }
+      ],
+      "grammar": [
+        { "type": "mcq", "q": "« Je lis actuellement un roman. » → I'm ___ reading a novel.", "choices": ["actually", "currently", "eventually"], "answer": 1, "explain": "Actuellement = currently. Actually veut dire « en fait »." },
+        { "type": "mcq", "q": "« Je vais à la librairie acheter un livre. » → I'm going to the ___ to buy a book.", "choices": ["bookstore", "library", "librairy"], "answer": 0, "explain": "Librairie = bookstore. Library = bibliothèque (on emprunte, on n'achète pas)." },
+        { "type": "mcq", "q": "Ana cries at every sad movie. She's very ___.", "choices": ["sensible", "sensational", "sensitive"], "answer": 2, "explain": "Sensible (émotif) = sensitive. Sensible en anglais veut dire « raisonnable »." },
+        { "type": "mcq", "q": "« Elle a assisté au concert. » → She ___ the concert.", "choices": ["assisted", "attended", "waited for"], "answer": 1, "explain": "Assister à (être présent) = attend. Assist veut dire « aider »." },
+        { "type": "mcq", "q": "Our team lost the final. What a ___!", "choices": ["disappointment", "deception", "deceiving"], "answer": 0, "explain": "Déception = disappointment. Deception veut dire « tromperie »." },
+        { "type": "mcq", "q": "« Il a fait semblant de dormir. » → He ___ to be asleep.", "choices": ["achieved", "claimed", "attended", "pretended"], "answer": 3, "explain": "Faire semblant = pretend." },
+        { "type": "mcq", "q": "« J'attends mes amis. » → I'm ___ my friends.", "choices": ["attending", "waiting for", "assisting"], "answer": 1, "explain": "Attendre = wait for. Attend = être présent à un événement." },
+        { "type": "fill", "q": "I thought the test was hard, but ___ it was easy.", "hint": "en fait", "answer": ["actually"], "explain": "En fait = actually." },
+        { "type": "fill", "q": "After three hours of searching, they ___ found the cat.", "hint": "finalement, après longtemps", "answer": ["eventually", "finally"], "explain": "Eventually (ou finally) = finalement, après beaucoup de temps. Pas « éventuellement » !" },
+        { "type": "fill", "q": "Please don't be ___. Say please and thank you.", "hint": "impoli", "answer": ["rude", "impolite"], "explain": "Impoli = rude (ou impolite). En anglais, rude ne veut pas dire « dur »." },
+        { "type": "fill", "q": "Malik fell off his bike, but his ___ isn't serious.", "hint": "blessure", "answer": ["injury"], "explain": "Blessure = injury. Une injure, c'est an insult." },
+        { "type": "fill", "q": "The meeting will ___ after lunch.", "hint": "reprendre", "answer": ["resume", "start again", "begin again"], "explain": "Reprendre après une pause = resume. Résumer, c'est sum up." },
+        { "type": "fill", "q": "I need a two-dollar ___ for the machine.", "hint": "pièce de monnaie", "answer": ["coin"], "explain": "Pièce de monnaie = coin. Un coin de rue, c'est a corner." },
+        { "type": "error", "q": "I'm attending my sister in front of the school.", "wrong": 1, "fix": ["waiting for"], "explain": "Attendre quelqu'un = wait for. Attend = assister à." },
+        { "type": "error", "q": "We borrowed three books from the bookstore.", "wrong": 6, "fix": ["library"], "explain": "On emprunte des livres à la bibliothèque : library. Bookstore = librairie (on achète)." },
+        { "type": "error", "q": "Don't cry! You're too sensible.", "wrong": 4, "fix": ["sensitive"], "explain": "Sensible (émotif) = sensitive. Sensible = raisonnable." },
+        { "type": "error", "q": "This summer, I want to achieve my homework early.", "wrong": 5, "fix": ["finish", "do"], "explain": "Achever (finir) = finish. Achieve = atteindre un but." },
+        { "type": "error", "q": "Losing the game was a big deception for our team.", "wrong": 6, "fix": ["disappointment"], "explain": "Déception = disappointment. Deception = tromperie." }
+      ],
+      "reading": {
+        "title": "Félix in Toronto",
+        "text": "Last summer, Félix spent two weeks with his cousin Olivia in Toronto. His English was good, but the false friends tricked him again and again.\n\nOn the first day, Olivia asked him, \"What do you want to do today?\" Félix answered, \"I want to go to the library to buy a comic book.\" Olivia laughed. \"Actually, you can't buy anything at the library. You mean the bookstore!\"\n\nThe next day, Félix told Olivia's mom that he was very sensible, because sad movies always made him cry. She smiled kindly and explained that he meant \"sensitive\". A sensible person makes good, reasonable choices.\n\nLater that week, they attended a lecture about dinosaurs at a museum. When it was over, Félix said, \"That was a great reading!\" Olivia whispered, \"In English, a reading is something you read. This was a lecture!\"\n\nAt the end of the trip, Félix felt a little disappointment, because he was making so many mistakes. But Olivia told him, \"Don't worry. Everyone learns this way. Eventually, the false friends won't trick you anymore.\"\n\nNow Félix has a notebook of false friends. He reads it every night, and he currently has more than fifty words in it.",
+        "questions": [
+          { "q": "Where did Félix want to buy a comic book on the first day?", "choices": ["At the museum", "At school", "At the library", "At a coin shop"], "answer": 2 },
+          { "q": "What did Félix really mean when he said he was \"sensible\"?", "choices": ["That he was reasonable", "That he cried easily", "That he was very smart", "That he liked science"], "answer": 1 },
+          { "q": "What did Félix and Olivia do at the museum?", "choices": ["They attended a lecture about dinosaurs.", "They bought books.", "They worked as guides.", "They waited all day."], "answer": 0 },
+          { "q": "What does Olivia probably think about Félix's mistakes?", "choices": ["She finds them annoying and stops talking to him.", "She is angry because he is rude.", "She wants him to go back home.", "She thinks they are normal when you learn a language."], "answer": 3 },
+          { "q": "What does Félix do now to fight the false friends?", "choices": ["He only speaks French.", "He reads his notebook of false friends every night.", "He watches sad movies.", "He goes to the library every day."], "answer": 1 }
+        ]
+      }
+    },
+    {
+      "id": "7.4",
+      "title": "Gérondif ou infinitif",
+      "titleEn": "To Do or Doing?",
+      "goal": "Choisir entre verbe + -ing et verbe + to, et changer le sens avec stop, remember, forget et try.",
+      "lesson": [
+        { "type": "p", "text": "Quand deux verbes se suivent, le deuxième prend soit **-ing**, soit **to + verbe**. Ça dépend du **premier** verbe. Il faut les apprendre par cœur, mais il y a des trucs !" },
+        { "type": "table", "head": ["Groupe", "Verbes", "Exemple"], "rows": [
+          ["verbe + -ing", "enjoy, finish, avoid, mind, keep, suggest, practise, can't stand", "[[I enjoy skating.]]"],
+          ["verbe + to", "want, decide, hope, plan, promise, refuse, learn, manage, afford", "[[She decided to stay.]]"],
+          ["préposition + -ing", "interested in, good at, thanks for, before, after, without, instead of", "[[Thanks for helping me.]]"]
+        ] },
+        { "type": "rule", "title": "Après une préposition : toujours -ing", "text": "Après [[in]], [[at]], [[for]], [[about]], [[before]], [[after]], [[without]], [[instead of]]… le verbe prend **-ing** : [[I'm good at drawing.]] [[He left without saying goodbye.]] En français on dit « avant d'aller », mais en anglais : [[before going]], jamais *before to go*." },
+        { "type": "rule", "title": "Les verbes qui changent de sens", "text": "[[stop]] + -ing = arrêter une activité : [[I stopped eating candy.]] / [[stop]] + to = s'arrêter **pour** faire autre chose : [[I stopped to eat.]] — [[remember]] + to = ne pas oublier une tâche : [[Remember to call Grandma!]] / [[remember]] + -ing = se souvenir d'un moment passé : [[I remember meeting her.]] — [[forget]] + to = oublier de faire : [[I forgot to lock the door.]] / [[I'll never forget]] + -ing = ne jamais oublier un souvenir : [[I'll never forget seeing the ocean.]] — [[try]] + to = faire un effort : [[I tried to open the jar.]] / [[try]] + -ing = tester une solution : [[Try adding some salt.]]" },
+        { "type": "tip", "text": "Piège : en français, « j'aime nager » = verbe + infinitif. Mais [[enjoy]] veut **toujours -ing** : [[I enjoy swimming]], jamais *I enjoy to swim*. Même chose pour [[suggest]] : [[He suggested going to the park]], jamais *He suggested to go*. À l'inverse, [[afford]] et [[decide]] veulent **to** : [[I can't afford to buy it.]]" },
+        { "type": "examples", "items": [
+          { "en": "I can't stand waiting in line.", "fr": "Je ne supporte pas de faire la file." },
+          { "en": "We hope to visit Vancouver next summer.", "fr": "Nous espérons visiter Vancouver l'été prochain." },
+          { "en": "Do you mind opening the window?", "fr": "Ça te dérange d'ouvrir la fenêtre ?" },
+          { "en": "She managed to finish the race.", "fr": "Elle a réussi à terminer la course." },
+          { "en": "I'm interested in learning Spanish.", "fr": "Ça m'intéresse d'apprendre l'espagnol." },
+          { "en": "He stopped to tie his shoes.", "fr": "Il s'est arrêté pour attacher ses souliers." }
+        ] },
+        { "type": "dialogue", "title": "Une invitation au chalet", "lines": [
+          { "who": "Mei", "en": "Do you want to come to the cottage with us this summer?", "fr": "Veux-tu venir au chalet avec nous cet été ?" },
+          { "who": "Jaden", "en": "I'd love to! But I can't afford to pay for the trip.", "fr": "J'adorerais ça ! Mais je n'ai pas les moyens de payer le voyage." },
+          { "who": "Mei", "en": "You don't have to pay. My parents suggested inviting you!", "fr": "Tu n'es pas obligé de payer. Ce sont mes parents qui ont proposé de t'inviter !" },
+          { "who": "Jaden", "en": "Wow, thanks! I promise to help with the cooking.", "fr": "Wow, merci ! Je promets d'aider à faire à manger." },
+          { "who": "Mei", "en": "Great. Do you enjoy fishing?", "fr": "Super. Est-ce que tu aimes pêcher ?" },
+          { "who": "Jaden", "en": "I don't know. I've never tried fishing, but I'm interested in learning.", "fr": "Je ne sais pas. Je n'ai jamais essayé la pêche, mais ça m'intéresse d'apprendre." },
+          { "who": "Mei", "en": "Remember to bring your sunscreen. We spend all day outside!", "fr": "N'oublie pas d'apporter ta crème solaire. On passe toute la journée dehors !" },
+          { "who": "Jaden", "en": "Don't worry. I can't stand getting sunburned!", "fr": "Ne t'inquiète pas. Je déteste attraper des coups de soleil !" }
+        ] },
+        { "type": "fun", "text": "Le sais-tu ? Un verbe en -ing peut même servir de **nom** en anglais : c'est le **gérondif** ([[gerund]]). [[Swimming is fun.]] = Nager, c'est amusant. Le français utilise l'infinitif là où l'anglais met souvent -ing." }
+      ],
+      "vocab": [
+        { "en": "enjoy", "fr": "prendre plaisir à (apprécier)", "alt": [], "ex": "I enjoy reading in bed." },
+        { "en": "avoid", "fr": "éviter", "alt": [], "ex": "Try to avoid eating too much sugar." },
+        { "en": "mind", "fr": "voir un inconvénient à (Ça te dérange ?)", "alt": [], "ex": "Do you mind closing the door?" },
+        { "en": "keep", "fr": "continuer à (sans arrêt)", "alt": ["keep on"], "ex": "My dog keeps barking at the mail carrier." },
+        { "en": "suggest", "fr": "suggérer (proposer)", "alt": [], "ex": "I suggest taking the bus." },
+        { "en": "practise", "fr": "s'exercer à (pratiquer)", "alt": ["practice"], "ex": "Liam practises playing the piano every day." },
+        { "en": "can't stand", "fr": "ne pas supporter (détester)", "alt": [], "ex": "I can't stand doing the dishes." },
+        { "en": "decide", "fr": "décider", "alt": [], "ex": "We decided to leave early." },
+        { "en": "hope", "fr": "espérer", "alt": [], "ex": "I hope to see you soon." },
+        { "en": "plan", "fr": "prévoir de (planifier)", "alt": [], "ex": "We plan to go camping in July." },
+        { "en": "promise", "fr": "promettre", "alt": [], "ex": "I promise to be careful." },
+        { "en": "refuse", "fr": "refuser", "alt": [], "ex": "The cat refuses to come inside." },
+        { "en": "manage", "fr": "réussir à (arriver à faire)", "alt": ["succeed"], "ex": "Did you manage to finish your project?" },
+        { "en": "afford", "fr": "avoir les moyens de (payer)", "alt": [], "ex": "We can't afford to buy a new car." },
+        { "en": "remember", "fr": "se souvenir de (se rappeler)", "alt": ["recall"], "ex": "I remember swimming in this lake." },
+        { "en": "forget", "fr": "oublier", "alt": [], "ex": "Don't forget to feed the fish." },
+        { "en": "instead of", "fr": "au lieu de", "alt": [], "ex": "Let's walk instead of taking the bus." },
+        { "en": "be interested in", "fr": "s'intéresser à", "alt": [], "ex": "Are you interested in joining the club?" }
+      ],
+      "sentences": [
+        { "en": "I really enjoy skating on the Rideau Canal.", "fr": "J'aime vraiment patiner sur le canal Rideau.", "trap": ["to", "skate"], "alt": [] },
+        { "en": "Zoé decided to learn the guitar.", "fr": "Zoé a décidé d'apprendre la guitare.", "trap": ["learning", "deciding"], "alt": [] },
+        { "en": "My dad stopped eating sugar last year.", "fr": "Mon père a arrêté de manger du sucre l'an dernier.", "trap": ["to", "eat"], "alt": ["Last year, my dad stopped eating sugar."] },
+        { "en": "Remember to feed the cat before you leave.", "fr": "N'oublie pas de nourrir le chat avant de partir.", "trap": ["feeding", "left"], "alt": ["Before you leave, remember to feed the cat."] },
+        { "en": "We can't afford to buy a new car.", "fr": "Nous n'avons pas les moyens d'acheter une nouvelle voiture.", "trap": ["buying"], "alt": [] },
+        { "en": "Do you mind closing the window?", "fr": "Ça te dérange de fermer la fenêtre ?", "trap": ["to", "close"], "alt": [] },
+        { "en": "Ana is very good at solving puzzles.", "fr": "Ana est très bonne pour résoudre des casse-têtes.", "trap": ["solve", "to"], "alt": [] },
+        { "en": "He left without saying goodbye.", "fr": "Il est parti sans dire au revoir.", "trap": ["say", "to"], "alt": [] },
+        { "en": "I'll never forget seeing the ocean for the first time.", "fr": "Je n'oublierai jamais la première fois que j'ai vu l'océan.", "trap": ["to", "see"], "alt": [] },
+        { "en": "They kept talking during the whole movie.", "fr": "Ils n'ont pas arrêté de parler pendant tout le film.", "trap": ["to", "talk"], "alt": [] },
+        { "en": "Instead of staying inside, let's go for a walk.", "fr": "Au lieu de rester à l'intérieur, allons nous promener.", "trap": ["stay", "to"], "alt": ["Let's go for a walk instead of staying inside."] },
+        { "en": "She promised to call me after school.", "fr": "Elle a promis de m'appeler après l'école.", "trap": ["calling", "promising"], "alt": [] }
+      ],
+      "grammar": [
+        { "type": "mcq", "q": "I enjoy ___ in the snow.", "choices": ["to play", "playing", "play", "played"], "answer": 1, "explain": "Enjoy + -ing, toujours : I enjoy playing." },
+        { "type": "mcq", "q": "We hope ___ Vancouver next summer.", "choices": ["visiting", "visit", "to visit", "visited"], "answer": 2, "explain": "Hope + to : we hope to visit." },
+        { "type": "mcq", "q": "« Je me suis arrêté pour acheter du lait. » → I stopped ___ some milk.", "choices": ["to buy", "buying", "buy", "bought"], "answer": 0, "explain": "S'arrêter POUR faire quelque chose = stop + to. Stopped buying = j'ai arrêté d'acheter." },
+        { "type": "mcq", "q": "« N'oublie pas de fermer la porte ! » → Remember ___ the door!", "choices": ["closing", "close", "to close"], "answer": 2, "explain": "Ne pas oublier une tâche à faire = remember + to." },
+        { "type": "mcq", "q": "Thanks for ___ me with my homework.", "choices": ["help", "to help", "helped", "helping"], "answer": 3, "explain": "Après une préposition (for) : -ing." },
+        { "type": "mcq", "q": "My mom suggested ___ the bus.", "choices": ["to take", "taking", "take", "that take"], "answer": 1, "explain": "Suggest + -ing : suggested taking. Jamais suggest to." },
+        { "type": "fill", "q": "Emma can't stand ___ up early on weekends.", "hint": "get", "answer": ["getting"], "explain": "Can't stand + -ing." },
+        { "type": "fill", "q": "I promise ___ my room tonight.", "hint": "clean", "answer": ["to clean"], "explain": "Promise + to : I promise to clean." },
+        { "type": "fill", "q": "Brush your teeth before ___ to bed.", "hint": "go", "answer": ["going"], "explain": "Après before (préposition) : -ing. Jamais before to go." },
+        { "type": "fill", "q": "Last night I forgot ___ my homework, so I got a zero.", "hint": "do (oublier de le faire)", "answer": ["to do"], "explain": "Oublier de faire une tâche = forget + to." },
+        { "type": "fill", "q": "Liam finally managed ___ his bike.", "hint": "fix", "answer": ["to fix", "to repair"], "explain": "Manage + to : réussir à faire." },
+        { "type": "fill", "q": "Do you remember ___ Grandma's cat when you were little?", "hint": "see (un souvenir)", "answer": ["seeing"], "explain": "Se souvenir d'un moment passé = remember + -ing." },
+        { "type": "fill", "q": "Our coach keeps ___ us to drink water.", "hint": "tell", "answer": ["telling"], "explain": "Keep + -ing : continuer sans arrêt à faire quelque chose." },
+        { "type": "error", "q": "Thanks for help me with my homework.", "wrong": 2, "fix": ["helping"], "explain": "Après une préposition (for) : -ing → thanks for helping." },
+        { "type": "error", "q": "He decided going to bed early.", "wrong": 2, "fix": ["to go"], "explain": "Decide + to : he decided to go." },
+        { "type": "error", "q": "Let's go out instead of stay inside.", "wrong": 5, "fix": ["staying"], "explain": "Après instead of (préposition) : -ing." },
+        { "type": "error", "q": "Ana is really good at draw animals.", "wrong": 5, "fix": ["drawing"], "explain": "Après at (préposition) : -ing → good at drawing." },
+        { "type": "error", "q": "We can't afford going to Europe this year.", "wrong": 3, "fix": ["to go"], "explain": "Afford + to : we can't afford to go." }
+      ],
+      "reading": {
+        "title": "Maya's Big Decision",
+        "text": "Maya loves cycling. Every weekend, she rides her old bike along the Ottawa River. Last spring, her bike kept getting flat tires, so Maya decided to buy a new one. There was just one problem: she couldn't afford to pay for it.\n\nAt first, she asked her parents for help, but they refused to give her the money. Instead, her dad suggested finding a summer job. Maya didn't enjoy hearing that, but she promised to try.\n\nShe started walking her neighbour's dogs every morning. On weekends, she also offered to cut the grass for families on her street. Some days were hard. Maya can't stand getting up early, and one of the dogs kept running after squirrels! But she never stopped working.\n\nEvery evening, she remembered to put her money in a jar, and she avoided spending it on candy. By the end of August, she had enough.\n\nWhen she rode her new bike for the first time, she felt very proud. \"I'll never forget buying this bike with my own money,\" she said. Next summer, she hopes to save money for a helmet camera.",
+        "questions": [
+          { "q": "Why did Maya need a new bike?", "choices": ["Her old bike was stolen.", "Her parents told her to buy one.", "She wanted a faster bike for races.", "Her old bike kept getting flat tires."], "answer": 3 },
+          { "q": "What did Maya's dad suggest?", "choices": ["Finding a summer job", "Borrowing money from a friend", "Selling her old bike", "Asking her grandma"], "answer": 0 },
+          { "q": "What did Maya do every morning?", "choices": ["She cut the grass.", "She delivered newspapers.", "She walked her neighbour's dogs.", "She cleaned her room."], "answer": 2 },
+          { "q": "What can we say about Maya's character?", "choices": ["She gives up easily.", "She is determined and hard-working.", "She is lazy but lucky.", "She doesn't care about money."], "answer": 1 },
+          { "q": "What does Maya hope to do next summer?", "choices": ["Stop working", "Ride to Toronto", "Save money for a helmet camera", "Walk more dogs"], "answer": 2 }
+        ]
+      }
+    }
+  ]
+}

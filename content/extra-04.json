@@ -1,0 +1,134 @@
+{
+  "level": 4,
+  "units": [
+    {
+      "unit": "4.1",
+      "pron": {
+        "focus": "Le son « ng » de -ing",
+        "ipa": "/ŋ/",
+        "explain": "Tu connais déjà ce son ! C'est la fin de « camping » ou de « parking » en français : un son qui vibre dans le nez, avec l'arrière de la langue collé au fond du palais. En anglais, on l'entend à la fin de tous les mots en **-ing** : [[running]], [[swimming]], [[reading]]. Deux pièges : ne pas ajouter un « g » dur à la fin (« sing-gue »), et ne pas le remplacer par un simple « n », sinon [[sing]] (chanter) devient [[sin]] (péché) et [[thing]] (chose) devient [[thin]] (mince). Truc : garde ta bouche ouverte et laisse le son sortir par le nez, comme un bourdon : « nnnggg ».",
+        "words": [
+          { "en": "running", "fr": "en train de courir", "hint": "« REU-ning » : finis dans le nez, comme « parking », sans « g » dur" },
+          { "en": "swimming", "fr": "en train de nager ; la natation", "hint": "« SWI-ming » : accent au début, « ng » dans le nez à la fin" },
+          { "en": "reading", "fr": "en train de lire ; la lecture", "hint": "« RII-ding » : « ii » long, puis « ng » sans « g » dur" },
+          { "en": "playing", "fr": "en train de jouer", "hint": "« PLÉÏ-ing » : « éï » qui glisse, puis « ing »" },
+          { "en": "morning", "fr": "matin", "hint": "« MÔR-ning » : « r » anglais, accent au début, « ng » au bout" },
+          { "en": "sing", "fr": "chanter", "hint": "« sing » : comme la fin de « camping », pas « sine » ni « sing-gue »" },
+          { "en": "thing", "fr": "chose", "hint": "« thing » : « th » soufflé, langue entre les dents, puis « ng » dans le nez" },
+          { "en": "long", "fr": "long, longue", "hint": "« lông » : « ô » ouvert, puis « ng » dans le nez, sans « g » dur" },
+          { "en": "wrong", "fr": "faux, mauvais (pas correct)", "hint": "« rông » : le « w » est muet ! Puis « ng » dans le nez" }
+        ],
+        "pairs": [["sing", "sin"], ["thing", "thin"], ["rang", "ran"], ["wing", "win"], ["bang", "ban"]],
+        "practice": ["This morning, I'm running, swimming and singing.", "Something is wrong with the long song."]
+      },
+      "mission": {
+        "type": "ecrit",
+        "prompt": "C'est samedi matin. Ton ami Amir t'écrit : [[What are you doing?]] Réponds-lui par texto : dis ce que tu fais en ce moment et ce que font deux personnes de ta famille, puis pose-lui la même question.",
+        "model": "Hi, Amir! I'm reading a comic book in my room. My brother is playing a video game, and my parents are cooking breakfast. What are you doing?",
+        "checklist": [
+          "J'ai utilisé [[am]], [[is]] ou [[are]] + verbe en -ing pour ce qui se passe en ce moment",
+          "Je n'ai pas oublié le verbe [[to be]] (« I reading » est incomplet !)",
+          "J'ai bien écrit l'-ing : [[swimming]], [[running]] (consonne doublée), [[writing]] (sans le « e »)",
+          "J'ai relu à voix haute en finissant les -ing dans le nez, sans « g » dur"
+        ]
+      }
+    },
+    {
+      "unit": "4.2",
+      "pron": {
+        "focus": "can (tout petit) ou can't (fort)",
+        "ipa": "/kən/ – /kænt/",
+        "explain": "Voici un piège qui cause beaucoup de malentendus ! Dans une phrase, [[can]] devient tout petit et rapide, presque « keun » : [[I can skate]] se dit « aï-keun-SKÉÏT ». Mais [[can't]] reste **fort**, avec un « a » bien ouvert : « aï-KANNT-SKÉÏT ». Le « t » de [[can't]] s'entend à peine, alors écoute surtout la **force** du mot : si [[can]] est faible, c'est oui ; s'il est fort et long, c'est non ! Une exception : seul à la fin d'une réponse, [[can]] redevient fort : [[Yes, I can!]]",
+        "words": [
+          { "en": "can", "fr": "peux, peut, pouvons… (savoir faire)", "hint": "Dans une phrase : « keun », tout petit. Seul à la fin ([[Yes, I can]]) : « KANN », fort" },
+          { "en": "can't", "fr": "ne peux pas, ne peut pas…", "hint": "« KANNT » : toujours fort, « a » bien ouvert ; le « t » est très léger" },
+          { "en": "I can skate", "fr": "je sais patiner", "hint": "« aï-keun-SKÉÏT » : [[can]] tout petit, la force va sur [[skate]]" },
+          { "en": "I can't skate", "fr": "je ne sais pas patiner", "hint": "« aï-KANNT-SKÉÏT » : [[can't]] aussi fort que [[skate]]" },
+          { "en": "can you swim", "fr": "sais-tu nager ?", "hint": "« keun-yeu-SWIM ↗ » : [[can]] petit, la voix monte à la fin" },
+          { "en": "skating", "fr": "le patinage", "hint": "« SKÉÏ-ting » : « éï » qui glisse, accent au début" },
+          { "en": "skiing", "fr": "le ski", "hint": "« SKII-ing » : deux syllabes, « ii » long, puis « ing »" },
+          { "en": "hockey", "fr": "le hockey", "hint": "« HÂ-ki » : souffle le « h », accent au début" },
+          { "en": "soccer", "fr": "le soccer", "hint": "« SÂ-keur » : accent au début, « r » anglais à la fin" }
+        ],
+        "pairs": [["can", "can't"]],
+        "practice": ["I can skate, but I can't ski.", "Can you play hockey? Yes, I can!", "My sister can swim, but she can't skate."]
+      },
+      "mission": {
+        "type": "oral",
+        "prompt": "Tu t'inscris à un camp de jour sportif à Ottawa. La monitrice anglophone te demande ce que tu sais faire. Dis-lui deux choses que tu sais faire, une chose que tu ne sais pas faire, et un sport que tu adores.",
+        "model": "I can skate and I can swim, but I can't ski. I love playing soccer, and I'm good at hockey!",
+        "checklist": [
+          "Après [[can]] ou [[can't]], j'ai mis le verbe de base, sans [[to]] et sans « s » ([[she can swim]])",
+          "J'ai dit [[can]] tout petit (« keun ») et [[can't]] fort (« KANNT »)",
+          "J'ai utilisé [[love]], [[like]] ou [[enjoy]] + verbe en -ing",
+          "J'ai dit [[good at]] + sport ou + verbe en -ing"
+        ]
+      }
+    },
+    {
+      "unit": "4.3",
+      "pron": {
+        "focus": "Le « a » de cat et le « eu » de cup",
+        "ipa": "/æ/ – /ʌ/",
+        "explain": "Voici deux sons qui n'existent pas tout à fait en français. Le « a » de [[cat]] et de [[map]] se fait avec la bouche **grande ouverte**, la mâchoire bien descendue, un peu comme si tu disais « a » et « è » en même temps. Le son de [[cup]] et de [[bus]], lui, est un « eu » court et détendu, comme quand tu hésites : « euh… ». Le grand piège : dire [[bus]] comme le « bus » français (avec un « u ») ou « bousse » ; en anglais, c'est « beuss » ! Si tu mélanges les deux sons, [[cat]] (chat) devient [[cut]] (couper), et [[bag]] (sac) devient [[bug]] (insecte).",
+        "words": [
+          { "en": "bank", "fr": "banque", "hint": "« bannk » : bouche grande ouverte, jamais nasal comme « banque »" },
+          { "en": "map", "fr": "carte, plan", "hint": "« mapp » : « a » très ouvert, mâchoire descendue" },
+          { "en": "traffic lights", "fr": "feux de circulation", "hint": "« TRA-fik-laïts » : accent sur « TRA », « a » bien ouvert" },
+          { "en": "back", "fr": "en arrière, de retour", "hint": "« bak » : « a » ouvert, entre « a » et « è »" },
+          { "en": "bus", "fr": "autobus", "hint": "« beuss » : jamais le « u » français ! Un « eu » court et détendu" },
+          { "en": "up", "fr": "en haut, vers le haut", "hint": "« eup » : « eu » court, comme dans « euh »" },
+          { "en": "one", "fr": "un, une", "hint": "« weunn » : commence par un « w » ! Pas « onne »" },
+          { "en": "much", "fr": "beaucoup (indénombrable)", "hint": "« meutch » : « eu » court, puis « tch »" },
+          { "en": "fun", "fr": "amusant ; le plaisir", "hint": "« feunn » : « eu » court, surtout pas « fonne »" }
+        ],
+        "pairs": [["cap", "cup"], ["hat", "hut"], ["bag", "bug"], ["cat", "cut"], ["match", "much"], ["ran", "run"]],
+        "practice": ["Turn back at the bank and run to the bus stop.", "The bus stops at the traffic lights, across from the bank."]
+      },
+      "mission": {
+        "type": "ecrit",
+        "prompt": "Une nouvelle élève anglophone, Sofia, veut aller à la bibliothèque après l'école. Écris-lui un petit mot pour lui expliquer le chemin depuis la porte de l'école.",
+        "model": "Go out of the school and turn left. Go straight to the traffic lights, then turn right. The library is next to the bank, across from the bus stop.",
+        "checklist": [
+          "J'ai donné les directions à l'impératif, sans [[you]] ([[Turn left]], [[Go straight]])",
+          "J'ai écrit [[library]] pour la bibliothèque (pas « librairie » !)",
+          "J'ai utilisé au moins une expression de lieu : [[next to]], [[across from]], [[on the corner]]…",
+          "J'ai relu à voix haute avec « a » ouvert dans [[bank]] et « eu » dans [[bus]]"
+        ]
+      }
+    },
+    {
+      "unit": "4.4",
+      "pron": {
+        "focus": "thirTEEN ou THIRty ?",
+        "ipa": "",
+        "explain": "Au magasin, une erreur de prononciation peut te coûter cher : 15 $ ou 50 $, ce n'est pas pareil ! Les nombres en **-teen** (13 à 19) ont l'accent **à la fin**, avec un « ii » long et un « t » bien net : [[fifteen]] = « fif-TIIN ». Les dizaines en **-ty** ont l'accent **au début**, et la fin est toute courte : [[fifty]] = « FIF-ti ». Au Canada, le « t » entre deux voyelles ou après un « r » devient souvent un petit « d » rapide : [[thirty]] sonne comme « THEUR-di ». Truc : si tu n'es pas certain d'avoir bien entendu, demande poliment : [[Sorry, fifteen or fifty?]]",
+        "words": [
+          { "en": "thirteen", "fr": "treize", "hint": "« theur-TIIN » : accent à la fin, « ii » long, « t » net" },
+          { "en": "thirty", "fr": "trente", "hint": "« THEUR-di » : accent au début, fin courte, le « t » devient un petit « d »" },
+          { "en": "fourteen", "fr": "quatorze", "hint": "« fôr-TIIN » : accent à la fin, « ii » long" },
+          { "en": "forty", "fr": "quarante", "hint": "« FÔR-di » : accent au début ; attention, ça s'écrit sans « u » !" },
+          { "en": "fifteen", "fr": "quinze", "hint": "« fif-TIIN » : accent à la fin" },
+          { "en": "fifty", "fr": "cinquante", "hint": "« FIF-ti » : accent au début ; ici le « t » reste un vrai « t »" },
+          { "en": "sixteen", "fr": "seize", "hint": "« siks-TIIN » : accent à la fin" },
+          { "en": "sixty", "fr": "soixante", "hint": "« SIKS-ti » : accent au début, fin courte" },
+          { "en": "eighteen", "fr": "dix-huit", "hint": "« éï-TIIN » : un seul « t », net, accent à la fin" },
+          { "en": "eighty", "fr": "quatre-vingts", "hint": "« ÉÏ-di » : accent au début, le « t » devient un petit « d »" }
+        ],
+        "pairs": [["thirteen", "thirty"], ["fourteen", "forty"], ["fifteen", "fifty"], ["sixteen", "sixty"], ["eighteen", "eighty"]],
+        "practice": ["This toque is fifteen dollars, not fifty.", "The boots are sixty dollars, and the mittens are sixteen."]
+      },
+      "mission": {
+        "type": "oral",
+        "prompt": "Tu magasines au centre commercial avec ton argent de poche. Demande à la vendeuse le prix d'une tuque, réagis au prix qu'elle te donne, puis demande le prix d'une paire de bottes que tu vois plus loin.",
+        "model": "Excuse me, how much is this toque? Fifteen dollars? That's cheap! How much are those boots, please?",
+        "checklist": [
+          "J'ai dit [[How much is]] pour une chose et [[How much are]] pour plusieurs",
+          "J'ai utilisé [[this]] pour une chose près de moi et [[those]] pour plusieurs choses loin de moi",
+          "J'ai mis l'accent au bon endroit dans le prix : « fif-TIIN » ou « FIF-ti »",
+          "J'ai dit [[dollars]] avec un « s » quand il y en a plusieurs"
+        ]
+      }
+    }
+  ]
+}

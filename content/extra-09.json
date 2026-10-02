@@ -1,0 +1,319 @@
+{
+  "level": 9,
+  "units": [
+    {
+      "unit": "9.1",
+      "pron": {
+        "focus": "Le petit 'd qui veut dire had",
+        "ipa": "/əd/ – /d/",
+        "explain": "Au plus-que-parfait, [[had]] se fait minuscule : après un pronom, il devient un simple « d » collé ([[I'd left]], [[she'd gone]]), et après un nom, un petit « eud » rapide ([[the thief had escaped]]). Mais attention : [[I'd]] peut aussi vouloir dire [[I would]] ! Le truc de détective : regarde le verbe qui suit ; un participe passé ([[left]], [[gone]], [[been]]), c'est **had**, un verbe de base ([[leave]], [[go]]), c'est **would**. Le piège des francophones : avaler ce petit « d »… et ton histoire passe au simple passé sans que personne le remarque !",
+        "words": [
+          {
+            "en": "I'd left",
+            "fr": "j'étais parti, j'étais partie",
+            "hint": "« aïd-LÈFT » : le d est minuscule, mais il dit « avant ça »"
+          },
+          {
+            "en": "I'd leave",
+            "fr": "je partirais",
+            "hint": "« aïd-LIIV » : même « aïd », mais verbe de base, donc c'est would"
+          },
+          {
+            "en": "she'd already gone",
+            "fr": "elle était déjà partie",
+            "hint": "« chid-âl-RÈ-di-GÂN » : « chid » très court, deux coups forts ensuite"
+          },
+          {
+            "en": "they'd been waiting",
+            "fr": "ils attendaient depuis un moment",
+            "hint": "« théid-bin-OUÉI-ting » : th doux de mother ; [[been]] se dit « bin », tout petit"
+          },
+          {
+            "en": "the thief had escaped",
+            "fr": "le voleur s'était échappé",
+            "hint": "« theu-THIIF-eud-is-KÉIPT » : après un nom, had devient un « eud » rapide"
+          },
+          {
+            "en": "had had",
+            "fr": "avait eu (plus-que-parfait de have)",
+            "hint": "« heud-HAD » : le premier tout faible, le deuxième bien fort"
+          },
+          {
+            "en": "hadn't",
+            "fr": "n'avait pas, n'avaient pas",
+            "hint": "« HA-deunt » : la négation reste forte, et le h s'entend"
+          },
+          {
+            "en": "by the time we arrived",
+            "fr": "au moment où nous sommes arrivés",
+            "hint": "« baï-theu-TAÏM-wi-eu-RAÏVD » : accent sur « taïm » et « raïvd »"
+          },
+          {
+            "en": "the witness had seen him",
+            "fr": "le témoin l'avait vu",
+            "hint": "« theu-OUIT-neus-eud-SIIN-im » : « eud » tout petit ; le h de him disparaît"
+          }
+        ],
+        "pairs": [],
+        "practice": [
+          "By the time we arrived, the thief had already escaped.",
+          "She'd been waiting for an hour when the police finally came.",
+          "I'd had a long day, so I'd left the party early."
+        ]
+      },
+      "mission": {
+        "type": "ecrit",
+        "prompt": "Écris le début d'une histoire mystère : le gâteau d'anniversaire a disparu ! En six à huit phrases, raconte ce que tu as découvert, avec des indices, un témoin et un suspect. Utilise le plus-que-parfait pour ce qui s'était passé **avant**.",
+        "model": "By the time I got home on Friday, something strange had happened. The chocolate cake that my dad had baked for my sister's birthday had disappeared! Only a few crumbs were left on the plate. My little brother said he had been playing outside all afternoon, but his hands were sticky. The only witness was our neighbour, who had seen someone near the kitchen window. Then I found the best clue: chocolate paw prints that led straight to the dog's bed. Our dog Biscuit had been sleeping there the whole time, or so we thought. Mystery solved!",
+        "checklist": [
+          "J'ai utilisé [[had]] + participe passé pour ce qui s'était passé avant ([[had disappeared]])",
+          "J'ai utilisé au moins une fois [[had been]] + verbe en -ing ([[had been playing]])",
+          "J'ai écrit [[by the time]], [[already]] ou [[before]] pour ordonner les événements",
+          "J'ai placé au moins un mot de détective : [[clue]], [[witness]], [[suspect]]",
+          "Mon histoire a un début, un indice et une fin"
+        ]
+      }
+    },
+    {
+      "unit": "9.2",
+      "pron": {
+        "focus": "Les verbes de discours : accent sur la 2e syllabe",
+        "ipa": "/ɪd/",
+        "explain": "Presque tous les verbes pour rapporter des paroles mettent l'accent sur leur **deuxième** syllabe : [[admit]] (« eud-MIT »), [[deny]], [[complain]], [[insist]], [[remind]], [[suggest]], [[explain]]. La première syllabe devient un petit « eu » ou « i » très rapide. Au passé, après un t ou un d, on ajoute une vraie syllabe « id » : [[admitted]], [[insisted]], [[reminded]]. Mais ailleurs, pas de syllabe en plus : [[complained]] a deux syllabes, pas trois ! Bonus : le verbe [[refuse]] (« ri-FIOUZ ») n'a pas le même accent que le nom [[refuse]] (« RÈ-fious »), un mot soutenu pour… les déchets !",
+        "words": [
+          {
+            "en": "admit",
+            "fr": "admettre, avouer",
+            "hint": "« eud-MIT » : le « ad » devient un petit « eud »"
+          },
+          {
+            "en": "admitted",
+            "fr": "a admis, a avoué",
+            "hint": "« eud-MI-tid » : t + ed, donc une syllabe de plus"
+          },
+          {
+            "en": "deny",
+            "fr": "nier",
+            "hint": "« di-NAÏ » : accent sur « naï » ; rien à voir avec « dénier »"
+          },
+          {
+            "en": "complain",
+            "fr": "se plaindre",
+            "hint": "« keum-PLÉIN » : « pléin » comme dans « pleine »"
+          },
+          {
+            "en": "complained",
+            "fr": "s'est plaint",
+            "hint": "« keum-PLÉIND » : deux syllabes seulement, jamais « com-plai-ned »"
+          },
+          {
+            "en": "insist",
+            "fr": "insister",
+            "hint": "« in-SIST » : « in » comme dans « inutile », sans son nasal"
+          },
+          {
+            "en": "insisted",
+            "fr": "a insisté",
+            "hint": "« in-SIS-tid » : t + ed, donc « tid » à la fin"
+          },
+          {
+            "en": "remind",
+            "fr": "rappeler (à quelqu'un)",
+            "hint": "« ri-MAÏND » : accent sur « maïnd », comme [[mind]]"
+          },
+          {
+            "en": "suggest",
+            "fr": "suggérer, proposer",
+            "hint": "« seu-DJÈST » : « dj » comme dans [[juice]], jamais « sug-jé »"
+          },
+          {
+            "en": "refuse",
+            "fr": "refuser",
+            "hint": "« ri-FIOUZ » : accent à la fin et un z sonore"
+          }
+        ],
+        "pairs": [],
+        "practice": [
+          "She admitted that she had taken my pen, but she denied breaking it.",
+          "My coach insisted on practising, and he refused to cancel the game.",
+          "Mom reminded me to call Grandma, so I complained a little."
+        ]
+      },
+      "mission": {
+        "type": "oral",
+        "prompt": "Ton ami Karim a manqué la réunion de l'équipe de soccer hier. Rapporte-lui à voix haute, en cinq à sept phrases, ce que la coach et les joueurs ont dit, sans jamais citer leurs paroles directement.",
+        "model": "Coach Sofia said that the tournament would start on Saturday morning. She told us to be at the field by eight o'clock, and she warned us not to forget our water bottles. Ethan asked if he could bring his little brother, and she said he could. She also reminded everyone that she had booked the bus the day before. Maya complained that the practices were too long, but the coach refused to change them. Finally, she asked whether you were feeling better!",
+        "checklist": [
+          "J'ai fait reculer les temps : [[will]] → [[would]], passé → [[had]] + participe",
+          "J'ai utilisé [[told us to]] ou [[warned us not to]] pour une consigne",
+          "Mes questions rapportées n'ont pas d'inversion : [[asked if he could]], pas [[asked if could he]]",
+          "J'ai changé les mots de temps : [[yesterday]] → [[the day before]]",
+          "J'ai mis l'accent sur la 2e syllabe : [[complained]], [[reminded]], [[refused]]"
+        ]
+      }
+    },
+    {
+      "unit": "9.3",
+      "pron": {
+        "focus": "Les connecteurs en « th » et en « ough »",
+        "ipa": "/ð/ – /θ/",
+        "explain": "Beaucoup de connecteurs commencent par un « th », et il y en a deux sortes ! Le **th doux** (langue entre les dents, la gorge vibre, comme dans [[mother]]) : [[though]], [[although]], [[therefore]], [[whether]], [[furthermore]]. Le **th soufflé** (langue entre les dents, juste de l'air, comme dans [[three]]) : [[through]], [[thought]], [[thorough]]. Le piège des francophones : remplacer le th par « d », « z » ou « t »… et [[though]] devient [[dough]] (de la pâte), [[through]] devient [[true]] ! Et ne te fie jamais à « ough » : il se dit « ô » dans [[though]], « ou » dans [[through]] et « â » dans [[thought]].",
+        "words": [
+          {
+            "en": "though",
+            "fr": "pourtant, quand même (en fin de phrase)",
+            "hint": "« thô » : th doux, la gorge vibre ; jamais « dô »"
+          },
+          {
+            "en": "although",
+            "fr": "bien que, même si",
+            "hint": "« âl-THÔ » : accent sur la 2e syllabe, th doux"
+          },
+          {
+            "en": "even though",
+            "fr": "même si (plus fort)",
+            "hint": "« II-veun-THÔ » : deux accents, le th reste doux"
+          },
+          {
+            "en": "through",
+            "fr": "à travers, par",
+            "hint": "« throu » : th soufflé, puis r anglais ; jamais « trou »"
+          },
+          {
+            "en": "thought",
+            "fr": "pensé, a pensé (passé de think)",
+            "hint": "« THÂT » : th soufflé ; le « gh » est muet"
+          },
+          {
+            "en": "thorough",
+            "fr": "minutieux, approfondi",
+            "hint": "« THEU-rô » : accent au début ; à ne pas confondre avec [[through]]"
+          },
+          {
+            "en": "therefore",
+            "fr": "par conséquent, donc",
+            "hint": "« THÈR-for » : th doux, accent au début"
+          },
+          {
+            "en": "furthermore",
+            "fr": "de plus, en outre",
+            "hint": "« FEUR-theur-mor » : accent au début, th doux au milieu"
+          },
+          {
+            "en": "whether",
+            "fr": "si (entre deux choix)",
+            "hint": "« OUÈ-theur » : se prononce comme [[weather]] (la météo)"
+          }
+        ],
+        "pairs": [
+          [
+            "though",
+            "dough"
+          ],
+          [
+            "through",
+            "true"
+          ],
+          [
+            "thought",
+            "taught"
+          ]
+        ],
+        "practice": [
+          "Although it was raining, we walked through the park anyway.",
+          "I thought it through, therefore I know whether it will work.",
+          "Even though the test was long, it was thorough and fair."
+        ]
+      },
+      "mission": {
+        "type": "ecrit",
+        "prompt": "Le conseil des élèves se demande s'il faut interdire les devoirs la fin de semaine. Écris un paragraphe argumenté de six à huit phrases : donne ton opinion, un argument de l'autre camp, puis ta conclusion.",
+        "model": "Should students have homework on weekends? In my opinion, weekends should be homework-free. Although homework helps us practise, students also need time to rest, play sports and see their families. Moreover, many teenagers already work hard from Monday to Friday; as a result, they feel exhausted by Saturday. On the other hand, some parents think that free weekends will make students lazy. However, I believe that rested students learn better and pay more attention in class. Therefore, teachers should give homework during the week so that our weekends stay free.",
+        "checklist": [
+          "J'ai donné mon opinion clairement dès le début ([[In my opinion]])",
+          "J'ai présenté un argument de l'autre camp avec [[On the other hand]] ou [[However]]",
+          "J'ai utilisé au moins quatre connecteurs différents ([[although]], [[moreover]], [[therefore]], [[so that]]…)",
+          "Après [[despite]] ou [[in spite of]], j'ai mis un nom ou un verbe en -ing, jamais une phrase complète",
+          "J'ai prononcé le th doux de [[although]] et [[therefore]]"
+        ]
+      }
+    },
+    {
+      "unit": "9.4",
+      "pron": {
+        "focus": "Le rythme des collocations",
+        "ipa": "/ə/",
+        "explain": "Dans [[make a mistake]] ou [[take a break]], les mots importants ([[make]], [[mistake]], [[break]]) sont forts, et les petits mots ([[a]], [[your]], [[of]], [[the]]) deviennent un « eu » minuscule, collé au mot d'avant. Résultat : [[take a break]] sonne comme un seul mot, « téi-keu-BRÉIK ». Le piège des francophones : prononcer chaque mot avec la même force, comme en français… et ça sonne robotique ! Truc : tape dans tes mains seulement sur les syllabes fortes, et laisse les petits mots se faufiler entre les coups.",
+        "words": [
+          {
+            "en": "make a mistake",
+            "fr": "faire une erreur",
+            "hint": "« méi-keu-mi-STÉIK » : [[a]] devient un « eu » collé ; accent sur « stéik »"
+          },
+          {
+            "en": "do your homework",
+            "fr": "faire tes devoirs",
+            "hint": "« dou-yeur-HÔM-weurk » : [[your]] se réduit à « yeur »"
+          },
+          {
+            "en": "take a break",
+            "fr": "prendre une pause",
+            "hint": "« téi-keu-BRÉIK » : trois mots, un seul souffle"
+          },
+          {
+            "en": "have a look",
+            "fr": "jeter un coup d'œil",
+            "hint": "« ha-veu-LOUK » : le v glisse sur le [[a]]"
+          },
+          {
+            "en": "pay attention",
+            "fr": "faire attention, être attentif",
+            "hint": "« péi-eu-TÈN-cheun » : accent sur « tèn »"
+          },
+          {
+            "en": "catch the bus",
+            "fr": "attraper l'autobus",
+            "hint": "« katch-theu-BEUS » : [[the]] tout petit, « theu »"
+          },
+          {
+            "en": "waste time",
+            "fr": "perdre son temps",
+            "hint": "« wéis-TAÏM » : le t de [[waste]] se fond dans [[time]]"
+          },
+          {
+            "en": "keep a secret",
+            "fr": "garder un secret",
+            "hint": "« kii-peu-SII-krit » : accent sur « sii »"
+          },
+          {
+            "en": "break a promise",
+            "fr": "ne pas tenir une promesse",
+            "hint": "« bréi-keu-PRÂ-mis » : accent au début de [[promise]]"
+          },
+          {
+            "en": "save money",
+            "fr": "économiser de l'argent",
+            "hint": "« séiv-MEU-ni » : « meu », jamais « mo-né »"
+          }
+        ],
+        "pairs": [],
+        "practice": [
+          "Take a break, have a look at your notes, then do your homework.",
+          "Pay attention, or you'll make a mistake!",
+          "Don't waste time: catch the bus and save money."
+        ]
+      },
+      "mission": {
+        "type": "oral",
+        "prompt": "Ta cousine Chloé entre au secondaire en septembre et elle est nerveuse. Donne-lui à voix haute six à huit conseils avec des collocations ([[make]], [[do]], [[take]], [[pay]], [[keep]], [[waste]], [[catch]]…).",
+        "model": "Welcome to high school, Chloé! First, make friends early: join a club or a team. Always do your homework the same day, so you don't waste time on the weekend. Pay attention in class and take notes, because tests come fast. If you make a mistake, don't panic: everybody does. Take a break when you feel tired, and never miss the bus: catch it on time! Finally, keep your promises, and you'll make a great impression.",
+        "checklist": [
+          "J'ai utilisé au moins six collocations différentes",
+          "J'ai dit [[make a mistake]] et [[do my homework]], pas l'inverse",
+          "J'ai dit [[take a break]] et [[pay attention]], jamais [[make a pause]] ni [[do attention]]",
+          "J'ai rendu les petits mots ([[a]], [[your]], [[the]]) tout légers"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "level": 6,
+  "units": [
+    {
+      "unit": "6.1",
+      "pron": {
+        "focus": "Les contractions du futur",
+        "ipa": "",
+        "explain": "À l'oral, [[will]] se cache presque toujours dans une contraction : [[I will]] devient [[I'll]] (« aïl »), [[we will]] devient [[we'll]] (« wiil »). Le plus grand piège, c'est [[won't]] (= will not) : il se dit « wôount », avec un « ô » qui glisse vers « ou ». Si tu dis « wannt », on entend [[want]] (vouloir)… et [[I won't go]] (je n'irai pas) devient [[I want to go]] (je veux y aller) : le contraire ! Enfin, [[going to]] se dit très souvent [[gonna]] (« GEU-neu ») à l'oral, mais à l'école, on l'écrit toujours [[going to]].",
+        "words": [
+          { "en": "I'll", "fr": "je vais, je + futur (I will)", "hint": "« aïl » : une seule syllabe, « aï » qui glisse, puis un « l »" },
+          { "en": "you'll", "fr": "tu vas, tu + futur (you will)", "hint": "« youl » : une seule syllabe" },
+          { "en": "she'll", "fr": "elle va, elle + futur (she will)", "hint": "« chiil » : « ii » long, puis un « l »" },
+          { "en": "it'll", "fr": "ça va, il + futur (it will)", "hint": "« I-deul » : deux syllabes, le « t » devient un petit « d »" },
+          { "en": "we'll", "fr": "nous allons, nous + futur (we will)", "hint": "« wiil » : « ii » long ; [[will]] tout seul a un « i » court" },
+          { "en": "they'll", "fr": "ils vont, ils + futur (they will)", "hint": "« théïl » : « th » qui vibre, « éï » qui glisse" },
+          { "en": "won't", "fr": "ne… pas + futur (will not)", "hint": "« wôount » : « ô » qui glisse vers « ou », lèvres arrondies ; pas « wannt » !" },
+          { "en": "want", "fr": "vouloir", "hint": "« wânt » : « â » bien ouvert, lèvres pas arrondies" },
+          { "en": "gonna", "fr": "va, vais (going to, à l'oral seulement)", "hint": "« GEU-neu » : très familier, on le dit mais on ne l'écrit pas à l'école" },
+          { "en": "going to", "fr": "aller + verbe (futur proche)", "hint": "« GÔOU-ing-tou » : la forme complète, pour écrire et parler clairement" }
+        ],
+        "pairs": [["won't", "want"], ["we'll", "will"]],
+        "practice": ["I'll call you tomorrow, but I won't be late.", "It'll snow tonight, so we're gonna build a snowman.", "I want to go, but I won't go alone."]
+      },
+      "mission": {
+        "type": "oral",
+        "prompt": "Ta correspondante Mei, à Vancouver, te demande tes projets pour l'été prochain. Explique-lui ce que tu as déjà prévu, ce que tu penses qu'il va se passer (la météo, par exemple) et une chose que tu ne feras pas.",
+        "model": "Next summer, I'm going to visit my cousins in Toronto. We're leaving on the first of July. I think it'll be hot and sunny, so we'll go to the beach every day. I won't forget my sunscreen! When I'm there, I'll send you lots of photos.",
+        "checklist": [
+          "J'ai utilisé [[going to]] pour un projet déjà décidé",
+          "J'ai utilisé [[will]] ou [['ll]] pour une prédiction ou une décision ([[I think it'll be sunny]])",
+          "J'ai écrit [[When I'm there]], jamais « When I will be there »",
+          "J'ai prononcé [[won't]] « wôount », bien différent de [[want]]"
+        ]
+      }
+    },
+    {
+      "unit": "6.2",
+      "pron": {
+        "focus": "Le son « eur » de bird",
+        "ipa": "/ɜr/",
+        "explain": "Les francophones lisent souvent les lettres une par une : « bird » avec un « i », « work » avec un « o », « learn » avec « éa »… Mais en anglais, **ir**, **er**, **ur**, **ear** et **or** après un « w » donnent presque toujours le même son : un « eu » suivi d'un « r » anglais, « eurr ». Arrondis un peu les lèvres, recule le bout de ta langue sans toucher le palais, et grogne tout doucement : [[bird]] = « beurd », [[work]] = « weurk », [[learn]] = « leurn ». Attention, sinon [[work]] (travailler) devient [[walk]] (marcher), et [[shirt]] (chemise) devient [[short]] (court) !",
+        "words": [
+          { "en": "bird", "fr": "oiseau", "hint": "« beurd » : « eu » + « r » anglais, pas « bird » avec un « i »" },
+          { "en": "first", "fr": "premier, première", "hint": "« feurst » : le « ir » fait « eur »" },
+          { "en": "worse", "fr": "pire (comparatif de bad)", "hint": "« weurss » : le « or » après « w » fait « eur »" },
+          { "en": "worst", "fr": "le pire (superlatif de bad)", "hint": "« weurst » : comme [[worse]], plus un « t »" },
+          { "en": "work", "fr": "travailler ; le travail", "hint": "« weurk » : pas « wôrk » ! Sinon on entend [[walk]]" },
+          { "en": "word", "fr": "mot", "hint": "« weurd » : le « or » fait « eur »" },
+          { "en": "learn", "fr": "apprendre", "hint": "« leurn » : le « ear » fait « eur », pas « léarne »" },
+          { "en": "heard", "fr": "a entendu (passé de hear)", "hint": "« heurd » : rime avec [[bird]], pas avec [[hear]]" },
+          { "en": "shirt", "fr": "chemise ; t-shirt (dans T-shirt)", "hint": "« cheurt » : le « ir » fait « eur »" },
+          { "en": "girl", "fr": "fille", "hint": "« gueurl » : « eur », puis un « l » ; une seule syllabe" }
+        ],
+        "pairs": [["walk", "work"], ["short", "shirt"], ["torn", "turn"], ["four", "fur"], ["born", "burn"], ["heart", "hurt"]],
+        "practice": ["The early bird catches the worm.", "My first word was bird.", "This shirt is worse than that one, but this one is the worst!"]
+      },
+      "mission": {
+        "type": "ecrit",
+        "prompt": "Le journal de l'école organise un débat : l'hiver ou l'été à Ottawa ? Écris un court texte d'opinion qui compare les deux saisons, avec au moins un comparatif et un superlatif.",
+        "model": "In my opinion, winter is better than summer. Summer is hotter, but winter is more fun! Skating on the Rideau Canal is the best activity of the year. The worst thing about winter is the cold wind, but my new coat is warmer than my old one.",
+        "checklist": [
+          "J'ai utilisé -er ou [[more]] + [[than]] pour comparer (jamais « more hot » ni « more big »)",
+          "J'ai utilisé [[the]] + -est ou [[the most]] pour un superlatif",
+          "J'ai utilisé les formes irrégulières : [[better]], [[the best]], [[worse]], [[the worst]]",
+          "J'ai écrit [[than]] (comparaison), pas [[that]]",
+          "J'ai relu à voix haute : « weurss » pour [[worse]], « weurst » pour [[worst]]"
+        ]
+      }
+    },
+    {
+      "unit": "6.3",
+      "pron": {
+        "focus": "Les contractions de have",
+        "ipa": "",
+        "explain": "À l'oral, [[have]] et [[has]] se cachent souvent dans des contractions : [[I have]] devient [[I've]] (« aïv »), [[she has]] devient [[she's]] (« chiiz »). Le « v » de [[I've]] est tout petit, mais ne le saute pas : « I seen » est une faute, il faut dire [[I've seen]] ! Attention, [[she's]] peut vouloir dire **she is** ou **she has** : regarde le mot d'après ([[She's eating]] = she is, [[She's eaten]] = she has). Et voici un secret canadien : [[been]] se dit « binn », avec un « i » court, comme [[bin]] (poubelle), et pas « biine ».",
+        "words": [
+          { "en": "I've", "fr": "j'ai (I have)", "hint": "« aïv » : une seule syllabe, avec un petit « v » qu'on entend à peine" },
+          { "en": "you've", "fr": "tu as (you have)", "hint": "« youv » : une seule syllabe" },
+          { "en": "we've", "fr": "nous avons (we have)", "hint": "« wiiv » : « ii » long, petit « v »" },
+          { "en": "she's been", "fr": "elle est allée, elle a été (she has been)", "hint": "« chiiz-BINN » : ici, [[she's]] = she has ; [[been]] avec un « i » court" },
+          { "en": "haven't", "fr": "n'ai pas, n'avons pas…", "hint": "« HA-veunt » : accent au début, « t » final très léger" },
+          { "en": "hasn't", "fr": "n'a pas", "hint": "« HA-zeunt » : le « s » se dit « z »" },
+          { "en": "have you ever", "fr": "as-tu déjà… ?", "hint": "« hav-yeu-ÈV-eur » : la force va sur « ÈV »" },
+          { "en": "I've never", "fr": "je n'ai jamais", "hint": "« aïv-NÈV-eur » : la force va sur « NÈV »" },
+          { "en": "been", "fr": "été, allé (participe de be)", "hint": "« binn » : au Canada, un « i » court ; pas « biine »" },
+          { "en": "gone", "fr": "allé, parti (participe de go)", "hint": "« gânn » : un « â » ouvert ; [[gone]] = parti et pas encore revenu" }
+        ],
+        "pairs": [],
+        "practice": ["Have you ever been to Vancouver?", "I've never seen a moose, but my sister has.", "She's been to Toronto, but she hasn't been to Montreal."]
+      },
+      "mission": {
+        "type": "oral",
+        "prompt": "Pendant un dîner de famille, tu joues à « As-tu déjà… ? » avec ta cousine anglophone Olivia. Pose-lui deux questions avec [[Have you ever]], et raconte deux de tes propres expériences (une chose que tu as déjà faite, une chose que tu n'as jamais faite).",
+        "model": "Have you ever been to Quebec City? I've been there twice with my family. Have you ever eaten poutine? I've never tried maple taffy, but my brother has. He says it's delicious!",
+        "checklist": [
+          "J'ai posé mes questions avec [[Have you ever]] + participe passé ([[been]], [[eaten]], [[seen]])",
+          "J'ai utilisé [[I've]] ou [[I've never]] pour parler de mes expériences, sans date précise",
+          "J'ai dit [[been]] « binn », avec un « i » court",
+          "J'ai fait entendre le petit « v » de [[I've]]"
+        ]
+      }
+    },
+    {
+      "unit": "6.4",
+      "pron": {
+        "focus": "Les liaisons de l'anglais",
+        "ipa": "",
+        "explain": "Tu connais les liaisons en français : « les_amis ». En anglais, ça arrive **tout le temps** ! Quand un mot finit par une consonne et que le suivant commence par une voyelle, la consonne saute sur le mot suivant : [[pick it up]] se dit « pi-ki-TEUP », comme un seul mot. Dans [[an hour]], le « h » est muet, donc on dit « eu-NAOU-eur ». C'est pour ça que l'anglais parlé semble aller si vite ! Truc pour ton oreille : si tu entends un mot inconnu, c'est peut-être deux ou trois petits mots collés.",
+        "words": [
+          { "en": "for a year", "fr": "depuis un an, pendant un an", "hint": "« feu-reu-YIR » : le « r » de [[for]] se colle au [[a]]" },
+          { "en": "for an hour", "fr": "depuis une heure, pendant une heure", "hint": "« feu-reu-NAOU-eur » : tout se colle, et le « h » de [[hour]] est muet" },
+          { "en": "since April", "fr": "depuis avril", "hint": "« sinn-SÉÏ-preul » : le « s » de [[since]] saute sur [[April]]" },
+          { "en": "an hour", "fr": "une heure", "hint": "« eu-NAOU-eur » : le « h » est muet, le « n » saute sur le mot suivant" },
+          { "en": "turn it on", "fr": "allume-le", "hint": "« teur-ni-TÂNN » : trois mots, un seul souffle ; la force va sur [[on]]" },
+          { "en": "pick it up", "fr": "ramasse-le", "hint": "« pi-ki-TEUP » : la force va sur [[up]]" },
+          { "en": "at all", "fr": "du tout", "hint": "« eu-DÂL » : le « t » saute sur [[all]] et devient un petit « d »" },
+          { "en": "not at all", "fr": "pas du tout", "hint": "« nâ-deu-DÂL » : les « t » deviennent de petits « d », tout est collé" }
+        ],
+        "pairs": [],
+        "practice": ["I've lived in Ottawa for a year.", "We've been here since April.", "I've waited for an hour, and the bus isn't here yet."]
+      },
+      "mission": {
+        "type": "ecrit",
+        "prompt": "Le journal de ton école présente les nouveaux élèves. Écris un petit texte pour te présenter : depuis quand tu habites dans ta ville, depuis combien de temps tu es à l'école, ce que tu as déjà fait et ce que tu n'as pas encore fait.",
+        "model": "Hi! My name is Priya. I was born in Toronto, but I've lived in Ottawa since April. I've been at this school for two months, and I've already made three good friends. I haven't joined a club yet, but I'd like to try the science club. I've played the piano for six years!",
+        "checklist": [
+          "J'ai utilisé le present perfect pour une situation qui dure encore ([[I've lived here since April]])",
+          "J'ai utilisé [[for]] + une durée et [[since]] + un point de départ",
+          "Je n'ai jamais écrit « I am here since » : j'ai mis [[I've been here]]",
+          "J'ai utilisé le passé simple pour une date terminée ([[I was born]])",
+          "J'ai placé [[already]] avant le participe et [[yet]] à la fin de la phrase"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,322 @@
+{
+  "level": 11,
+  "units": [
+    {
+      "unit": "11.1",
+      "pron": {
+        "focus": "L'accent d'insistance qui change le sens",
+        "ipa": "",
+        "explain": "En anglais, on peut changer le sens d'une phrase sans changer un seul mot, juste en appuyant sur un autre mot ! Dans [[I didn't say he stole it]], appuie sur « I » et c'est quelqu'un d'autre qui l'a dit ; sur « say », tu l'as seulement pensé ; sur « he », c'est un autre qui l'a volé ; sur « stole », il l'a peut-être juste emprunté. Le piège des francophones : en français, on insiste avec « c'est moi qui… », alors qu'en anglais la voix suffit (et [[I did do it]] sert aussi à insister). Chaque exemple ci-dessous a une suite qui aide la voix de synthèse à trouver le bon accent, mais si elle insiste trop peu, exagère toi-même : plus fort, plus long, plus haut !",
+        "words": [
+          {
+            "en": "I didn't say he stole it, Emma did",
+            "fr": "ce n'est pas moi qui ai dit qu'il l'avait volé, c'est Emma",
+            "hint": "« AÏ-di-deunt-séi… » : tout le poids sur [[I]], le reste bien plat"
+          },
+          {
+            "en": "I didn't say he stole it, I only thought it",
+            "fr": "je ne l'ai pas dit, je l'ai seulement pensé",
+            "hint": "« aï-di-deunt-SÉI… » : appuie sur [[say]], puis sur [[thought]]"
+          },
+          {
+            "en": "I didn't say he stole it, I said she did",
+            "fr": "je n'ai pas dit que c'était lui, j'ai dit que c'était elle",
+            "hint": "« …séi-HII-stôl-it » : appuie sur [[he]] puis sur [[she]]"
+          },
+          {
+            "en": "I didn't say he stole it, he borrowed it",
+            "fr": "je n'ai pas dit qu'il l'avait volé, il l'a emprunté",
+            "hint": "« …séi-hi-STÔL-it » : appuie sur [[stole]] puis sur [[borrowed]]"
+          },
+          {
+            "en": "I did do my homework",
+            "fr": "je les ai vraiment faits, mes devoirs !",
+            "hint": "« aï-DID-dou-maï-HÔM-weurk » : [[did]] très fort, c'est l'insistance"
+          },
+          {
+            "en": "never have I seen",
+            "fr": "jamais je n'ai vu",
+            "hint": "« NÈ-veur-hav-aï-SIIN » : gros accent sur [[never]]"
+          },
+          {
+            "en": "little did he know",
+            "fr": "il était loin de se douter",
+            "hint": "« LI-deul-did-hi-NÔ » : le t devient un « d » léger ; accent sur [[little]] et [[know]]"
+          },
+          {
+            "en": "what I need is a break",
+            "fr": "ce dont j'ai besoin, c'est une pause",
+            "hint": "« weut-aï-NIID-iz-eu-BRÉIK » : la voix monte sur [[need]], puis tombe sur [[break]]"
+          },
+          {
+            "en": "it was Maya who called",
+            "fr": "c'est Maya qui a appelé",
+            "hint": "« it-weuz-MAÏ-eu-hou-KÂLD » : tout l'accent sur le nom"
+          }
+        ],
+        "pairs": [],
+        "practice": [
+          "I didn't say he stole it.",
+          "Never have I seen such a huge snowman!",
+          "What I really need is a long vacation."
+        ]
+      },
+      "mission": {
+        "type": "oral",
+        "prompt": "Raconte à voix haute, en cinq à sept phrases, la plus belle surprise de ta vie (vraie ou inventée). Utilise au moins deux inversions ([[Never have I…]], [[Little did I know…]], [[Not only…]]) et une phrase clivée ([[What I loved most was…]], [[It was… who…]]).",
+        "model": "Let me tell you about the best surprise of my life. Little did I know, when I walked into the gym, that my whole class was waiting for me. Not only had they decorated the room, but they had also baked my favourite cake. Never have I felt so happy! What I loved most was the funny video they had made. And it was my best friend Zoé who had organized everything. I really do owe her a big thank-you!",
+        "checklist": [
+          "Après [[Never]], [[Little]] ou [[Not only]], j'ai inversé : [[Never have I felt]], pas [[Never I have felt]]",
+          "J'ai fait une phrase clivée avec [[What I…]] ou [[It was… who…]]",
+          "J'ai utilisé [[do]] ou [[did]] d'insistance au moins une fois",
+          "J'ai appuyé fort sur les mots d'insistance ([[never]], [[did]], le nom après [[It was]])"
+        ]
+      }
+    },
+    {
+      "unit": "11.2",
+      "pron": {
+        "focus": "Anglais familier ou soigné à l'oral",
+        "ipa": "",
+        "explain": "Entre amis, les anglophones collent les mots : [[going to]] devient [[gonna]], [[want to]] devient [[wanna]], [[don't know]] devient [[dunno]]. C'est normal et naturel à l'oral, et tu dois les **comprendre** ! Mais attention : à l'écrit soigné (courriel, travail scolaire), on ne les écrit jamais. Autre piège : [[gonna]] ne remplace [[going to]] que pour le futur : [[I'm gonna eat]], oui ; [[I'm gonna the park]], jamais ! Truc : avec tes amis, relaxe ; avec la directrice, articule chaque mot.",
+        "words": [
+          {
+            "en": "gonna",
+            "fr": "va, vais (going to, familier)",
+            "hint": "« GEU-neu » : seulement pour le futur, jamais pour un lieu"
+          },
+          {
+            "en": "going to",
+            "fr": "aller (futur, soigné)",
+            "hint": "« GÔ-ing-tou » : on entend bien les trois syllabes"
+          },
+          {
+            "en": "wanna",
+            "fr": "veux (want to, familier)",
+            "hint": "« OUÂ-neu » : le t disparaît complètement"
+          },
+          {
+            "en": "want to",
+            "fr": "vouloir (soigné)",
+            "hint": "« OUÂNT-tou » : le t s'entend, puis [[to]]"
+          },
+          {
+            "en": "gotta",
+            "fr": "dois (have got to, familier)",
+            "hint": "« GÂ-deu » : le t devient un « d » léger"
+          },
+          {
+            "en": "lemme",
+            "fr": "laisse-moi (let me, familier)",
+            "hint": "« LÈ-mi » ; version soignée : [[let me]], « lèt-MI »"
+          },
+          {
+            "en": "gimme",
+            "fr": "donne-moi (give me, familier)",
+            "hint": "« GUI-mi » ; version soignée : [[give me]], « guiv-MI »"
+          },
+          {
+            "en": "dunno",
+            "fr": "sais pas (I don't know, familier)",
+            "hint": "« deu-NÔ » ; version soignée : [[I don't know]], « aï-dônt-NÔ »"
+          },
+          {
+            "en": "kinda",
+            "fr": "un peu, plutôt (kind of, familier)",
+            "hint": "« KAÏN-deu » ; version soignée : [[kind of]], « KAÏN-deuv »"
+          }
+        ],
+        "pairs": [],
+        "practice": [
+          "I dunno, I kinda wanna stay home tonight.",
+          "I don't know; I kind of want to stay home tonight.",
+          "I'm going to call you later, so don't forget to answer."
+        ]
+      },
+      "mission": {
+        "type": "ecrit",
+        "prompt": "Tu veux être bénévole cet été au camp de jour du centre communautaire de ton quartier. Écris un courriel formel de cinq à huit phrases à la responsable du camp pour demander des renseignements (tâches, horaire, formation). Aucun mot familier !",
+        "model": "Dear Sir or Madam, I am writing to inquire about the volunteer positions at your summer day camp. I am fourteen years old, I speak French and English fluently, and I have experience assisting younger children at my local library. I would be grateful if you could inform me of the requirements and the deadline to apply. I would also like to know whether any training is provided. Please find attached a short description of my experience. Thank you for your time, and I look forward to hearing from you. Sincerely, Léa Gagnon",
+        "checklist": [
+          "J'ai commencé par [[Dear Sir or Madam]] ou [[Dear]] + nom, et terminé par [[Sincerely]]",
+          "J'ai utilisé des verbes soignés ([[inquire]], [[request]], [[assist]], [[inform]], [[require]])",
+          "J'ai écrit [[I would be grateful if you could]] pour faire une demande polie",
+          "J'ai écrit [[I look forward to hearing]] + -ing, pas [[to hear]]",
+          "Aucun [[gonna]], [[wanna]], contraction familière ni émoji"
+        ]
+      }
+    },
+    {
+      "unit": "11.3",
+      "pron": {
+        "focus": "L'accent canadien",
+        "ipa": "/ʌʊ/ – /ɾ/",
+        "explain": "Bonne nouvelle : à Ottawa, tu entends l'anglais canadien tous les jours ! Premier secret : dans [[about]], [[out]] ou [[house]], le son « aou » commence plus haut, presque comme « eou » dit d'un seul coup. Non, les Canadiens ne disent pas « a boot » : ça, c'est une blague des Américains ! Deuxième secret : entre deux voyelles, le t devient un « d » très léger ([[water]], [[city]], [[better]]), et [[sorry]] se dit « SÔ-ri », avec un « ô » bien rond. Attention : selon ton appareil, la voix de l'appli peut avoir un accent américain, alors écoute aussi les gens autour de toi !",
+        "words": [
+          {
+            "en": "about",
+            "fr": "à propos de, environ",
+            "hint": "« eu-BEOUT » : « eou » en un seul son rapide, qui part de « eu » et glisse vers « ou »"
+          },
+          {
+            "en": "out",
+            "fr": "dehors",
+            "hint": "« EOUT » : un seul son qui glisse, très court"
+          },
+          {
+            "en": "house",
+            "fr": "une maison",
+            "hint": "« HEOUS » : h soufflé, puis le même glissement « eou »"
+          },
+          {
+            "en": "sorry",
+            "fr": "désolé, désolée",
+            "hint": "« SÔ-ri » : « ô » rond, le mot préféré des Canadiens !"
+          },
+          {
+            "en": "water",
+            "fr": "de l'eau",
+            "hint": "« OUÂ-deur » : le t devient un « d » léger"
+          },
+          {
+            "en": "better",
+            "fr": "meilleur, mieux",
+            "hint": "« BÈ-deur » : t léger, comme un « d » rapide"
+          },
+          {
+            "en": "little",
+            "fr": "petit, un peu",
+            "hint": "« LI-deul » : le t devient « d », et la fin « deul » est toute petite"
+          },
+          {
+            "en": "city",
+            "fr": "une ville",
+            "hint": "« SI-di » : le t devient un « d » léger"
+          },
+          {
+            "en": "Toronto",
+            "fr": "Toronto",
+            "hint": "« teu-RÂN-tô » ; beaucoup de gens de là-bas disent même « TRÂ-nô » !"
+          },
+          {
+            "en": "eh",
+            "fr": "hein ? (n'est-ce pas ?)",
+            "hint": "« ÉI » : la voix monte, comme une petite question"
+          }
+        ],
+        "pairs": [],
+        "practice": [
+          "Sorry, eh! There's a little water all over the house.",
+          "We drove to Toronto for about a week, and the city was better than I thought."
+        ]
+      },
+      "mission": {
+        "type": "oral",
+        "prompt": "Hugo, ton correspondant de France, arrive à Ottawa demain. Au téléphone, explique-lui à voix haute, en cinq à sept phrases, quatre ou cinq mots canadiens qu'il va entendre partout.",
+        "model": "Hey Hugo, welcome to Ottawa! Here are a few words you'll hear all the time. A loonie is a one-dollar coin, and a toonie is a two-dollar coin. If someone offers you a double-double, it's a coffee with two creams and two sugars. When it's cold, put on your toque: that's a warm winter hat. And if you need the washroom, just ask, no worries. See you tomorrow, eh!",
+        "checklist": [
+          "J'ai expliqué au moins quatre mots canadiens ([[loonie]], [[toonie]], [[double-double]], [[toque]], [[washroom]]…)",
+          "J'ai utilisé des expressions de la vraie vie ([[no worries]], [[eh]], [[awesome]]…)",
+          "J'ai fait glisser le son de [[out]] et [[about]], sans dire « a boot »",
+          "J'ai dit le t léger de [[water]], [[city]] et [[little]]",
+          "Mon [[eh]] montait, comme une petite question"
+        ]
+      }
+    },
+    {
+      "unit": "11.4",
+      "pron": {
+        "focus": "Homophones et presque-homophones",
+        "ipa": "",
+        "explain": "Des **homophones**, ce sont des mots qui se prononcent exactement pareil mais s'écrivent différemment : [[their]], [[there]] et [[they're]] ; [[its]] et [[it's]] ; [[whose]] et [[who's]] ; [[to]], [[too]] et [[two]] (et pour beaucoup de gens, [[your]] et [[you're]]). À l'oral, aucun problème… c'est à l'écrit qu'il faut réfléchir ! Par contre, d'autres paires se ressemblent sans être pareilles : [[lose]] (z) et [[loose]] (s), [[advise]] (z) et [[advice]] (s), [[quiet]] (deux syllabes) et [[quite]] (une seule), [[dessert]] (accent à la fin) et [[desert]] (accent au début). Celles-là, ton oreille doit les séparer ! Même chose pour [[accept]] (« ak ») et [[except]] (« ik »), même si beaucoup de gens les disent presque pareil.",
+        "words": [
+          {
+            "en": "their",
+            "fr": "leur, leurs",
+            "hint": "« thèr » : th doux ; se prononce comme [[there]] et [[they're]]"
+          },
+          {
+            "en": "there",
+            "fr": "là, là-bas (et there is, il y a)",
+            "hint": "« thèr » : identique à [[their]] et [[they're]]"
+          },
+          {
+            "en": "they're",
+            "fr": "ils sont, elles sont (they are)",
+            "hint": "« thèr » : identique à [[their]] et [[there]]"
+          },
+          {
+            "en": "its",
+            "fr": "son, sa, ses (pour une chose ou un animal)",
+            "hint": "« its » : identique à [[it's]] ; pas d'apostrophe pour la possession !"
+          },
+          {
+            "en": "it's",
+            "fr": "c'est, il est (it is, it has)",
+            "hint": "« its » : identique à [[its]]"
+          },
+          {
+            "en": "whose",
+            "fr": "à qui ? dont",
+            "hint": "« houz » : identique à [[who's]]"
+          },
+          {
+            "en": "who's",
+            "fr": "qui est, qui a (who is, who has)",
+            "hint": "« houz » : identique à [[whose]]"
+          },
+          {
+            "en": "to",
+            "fr": "à, vers (et to + verbe)",
+            "hint": "« tou » seul ; dans une phrase, souvent un petit « teu »"
+          },
+          {
+            "en": "too",
+            "fr": "aussi, trop",
+            "hint": "« TOU » : identique à [[two]], mais toujours fort"
+          },
+          {
+            "en": "two",
+            "fr": "deux",
+            "hint": "« TOU » : identique à [[too]] ; le w est muet"
+          }
+        ],
+        "pairs": [
+          [
+            "lose",
+            "loose"
+          ],
+          [
+            "advise",
+            "advice"
+          ],
+          [
+            "quiet",
+            "quite"
+          ],
+          [
+            "dessert",
+            "desert"
+          ]
+        ],
+        "practice": [
+          "They're over there with their new puppy.",
+          "Whose jacket is this, and who's ready to go?",
+          "It's quite quiet in the desert, but there's no dessert."
+        ]
+      },
+      "mission": {
+        "type": "ecrit",
+        "prompt": "Tu organises une sortie de patin sur le canal Rideau avec ta gang. Écris un message de groupe de cinq à sept phrases, sans fautes, avec au moins six mots-pièges de l'unité ([[their/there/they're]], [[its/it's]], [[your/you're]], [[whose/who's]], [[to/too/two]], [[lose/loose]]…).",
+        "model": "Hi everyone! The twins said they're coming to the skating party, and their mom will drive us there. It's on the Rideau Canal, so bring your skates, and please don't lose your mittens again, Félix! Whose turn is it to bring hot chocolate? Who's free at two o'clock? You're going to love it: the canal is famous for its long skating trail. It'll be quite cold, so wear a warm toque, too!",
+        "checklist": [
+          "J'ai bien choisi entre [[their]], [[there]] et [[they're]]",
+          "J'ai écrit [[its]] sans apostrophe pour la possession, et [[it's]] pour [[it is]]",
+          "J'ai bien choisi entre [[whose]] et [[who's]], [[your]] et [[you're]]",
+          "J'ai utilisé [[lose]] (perdre), pas [[loose]] (lâche, trop grand)",
+          "J'ai relu mon message une fois juste pour les homophones"
+        ]
+      }
+    }
+  ]
+}

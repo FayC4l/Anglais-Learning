@@ -1,0 +1,135 @@
+{
+  "level": 5,
+  "units": [
+    {
+      "unit": "5.1",
+      "pron": {
+        "focus": "La terminaison -ed",
+        "ipa": "/t/ – /d/ – /ɪd/",
+        "explain": "Le piège numéro un des francophones, c'est de dire « walk-ède » ou « play-ède » ! En réalité, le **-ed** ajoute rarement une syllabe. Après un son sec (« k », « p », « s », « ch », « sh », « f »), il se dit « t » : [[walked]] = « wâkt », une seule syllabe. Après les autres sons, il se dit « d » : [[played]] = « pléïd ». On ajoute une syllabe « id » **seulement** après un « t » ou un « d » : [[wanted]], [[needed]]. Tu reconnais la logique ? C'est la même que pour le « s » de [[cats]], [[dogs]] et [[horses]] !",
+        "words": [
+          { "en": "walked", "fr": "a marché (passé de walk)", "hint": "« wâkt » : une seule syllabe, le « l » est muet et le -ed se dit « t »" },
+          { "en": "watched", "fr": "a regardé (passé de watch)", "hint": "« wâtcht » : une seule syllabe, finis par « tcht »" },
+          { "en": "liked", "fr": "a aimé (passé de like)", "hint": "« laïkt » : une seule syllabe, -ed = « t »" },
+          { "en": "played", "fr": "a joué (passé de play)", "hint": "« pléïd » : une seule syllabe, -ed = « d »" },
+          { "en": "stayed", "fr": "est resté (passé de stay)", "hint": "« stéïd » : une seule syllabe, -ed = « d »" },
+          { "en": "arrived", "fr": "est arrivé (passé de arrive)", "hint": "« eu-RAÏVD » : deux syllabes, pas trois ! Le -ed = « d »" },
+          { "en": "wanted", "fr": "a voulu (passé de want)", "hint": "« WÂN-tid » : on ajoute « id » parce que [[want]] finit par « t »" },
+          { "en": "needed", "fr": "a eu besoin (passé de need)", "hint": "« NII-did » : on ajoute « id » parce que [[need]] finit par « d »" },
+          { "en": "visited", "fr": "a visité (passé de visit)", "hint": "« VI-zi-tid » : accent au début, « id » à la fin" },
+          { "en": "started", "fr": "a commencé (passé de start)", "hint": "« STÂR-tid » : accent au début, « id » à la fin" }
+        ],
+        "pairs": [["play", "played"], ["walk", "walked"], ["want", "wanted"], ["need", "needed"], ["stay", "stayed"], ["visit", "visited"]],
+        "practice": ["Yesterday, I walked to the park and played soccer.", "We wanted to stay, but we needed to go home.", "She visited Montreal and watched a hockey game."]
+      },
+      "mission": {
+        "type": "oral",
+        "prompt": "Lundi matin, ta prof d'anglais demande à chaque élève de raconter sa fin de semaine. Raconte la tienne en quatre à six phrases, avec des verbes réguliers et [[was]] ou [[were]].",
+        "model": "Last Saturday, I visited my grandma in Gatineau. The weather was cold, so we stayed inside. We watched a movie and played cards. In the afternoon, my cousins arrived, and we cooked spaghetti together. It was a great day!",
+        "checklist": [
+          "J'ai mis tous mes verbes au passé, avec [[-ed]] pour les verbes réguliers",
+          "J'ai utilisé [[was]] avec I, he, she, it et [[were]] avec we, you, they",
+          "J'ai utilisé un mot de temps : [[last Saturday]], [[yesterday]], [[two days ago]]…",
+          "J'ai prononcé [[watched]] et [[played]] en une seule syllabe, et seulement [[wanted]] ou [[visited]] avec « id »"
+        ]
+      }
+    },
+    {
+      "unit": "5.2",
+      "pron": {
+        "focus": "Les passés irréguliers qui piègent l'oreille",
+        "ipa": "/ɑ/ – /ɛ/ – /eɪ/",
+        "explain": "Les verbes irréguliers ne s'écrivent pas comme ils se prononcent, alors ton oreille doit apprendre leur vraie musique. La famille **-ought / -aught** est super simple : le « gh » est muet, et [[bought]], [[brought]], [[thought]] et [[caught]] riment tous avec « hâte » (« bât », « brât », « thât », « kât »). Ne dis surtout pas « bôte » : on entendrait [[boat]] (bateau) ! Autres pièges : [[said]] se dit « sèd » (jamais « séïd »), [[read]] au passé se dit exactement comme [[red]] (rouge), et dans [[knew]], le « k » est muet. Truc : ces mots reviennent tout le temps dans les histoires, alors répète-les comme une petite chanson.",
+        "words": [
+          { "en": "said", "fr": "a dit (passé de say)", "hint": "« sèd » : un « è » court, jamais « séïd »" },
+          { "en": "read", "fr": "a lu (passé de read)", "hint": "« rèd » : au passé, il se dit exactement comme [[red]] (rouge)" },
+          { "en": "ate", "fr": "a mangé (passé de eat)", "hint": "« éït » : comme [[eight]] (huit), le « é » glisse vers « i »" },
+          { "en": "saw", "fr": "a vu (passé de see)", "hint": "« sâ » : un « â » ouvert et c'est tout, le « w » ne s'entend pas" },
+          { "en": "made", "fr": "a fait, a fabriqué (passé de make)", "hint": "« méïd » : « éï » qui glisse, pas « mad »" },
+          { "en": "bought", "fr": "a acheté (passé de buy)", "hint": "« bât » : « gh » muet, rime avec [[thought]] ; pas « bôte » !" },
+          { "en": "brought", "fr": "a apporté (passé de bring)", "hint": "« brât » : « gh » muet, rime avec [[bought]]" },
+          { "en": "thought", "fr": "a pensé (passé de think)", "hint": "« thât » : « th » soufflé, « gh » muet" },
+          { "en": "caught", "fr": "a attrapé (passé de catch)", "hint": "« kât » : « gh » muet, rime avec [[bought]]" },
+          { "en": "knew", "fr": "savait, connaissait (passé de know)", "hint": "« niou » : le « k » est muet, comme dans [[know]]" }
+        ],
+        "pairs": [["bought", "boat"], ["caught", "coat"], ["said", "sad"], ["saw", "so"], ["ate", "at"], ["made", "mad"]],
+        "practice": ["I thought you bought a boat!", "Yesterday, I read a book, ate a sandwich and saw a movie.", "He said he caught the ball, but I knew it wasn't true."]
+      },
+      "mission": {
+        "type": "ecrit",
+        "prompt": "Hier, ta classe est allée en sortie dans un musée d'Ottawa. Écris quelques lignes dans ton journal de bord en anglais pour raconter ce que tu as vu, ce que tu as mangé et ce que tu as acheté.",
+        "model": "Yesterday, my class went to a museum in Ottawa. We saw a huge dinosaur and took a lot of photos. At lunch, I ate a sandwich in the park. Then I bought a little moose toy at the gift shop. I told my mom everything when I got home!",
+        "checklist": [
+          "J'ai utilisé au moins quatre verbes irréguliers au passé ([[went]], [[saw]], [[ate]], [[bought]]…)",
+          "Je n'ai pas ajouté -ed à un verbe irrégulier (jamais « goed », « buyed » ou « eated »)",
+          "J'ai relié mes phrases avec [[then]] ou [[at lunch]]",
+          "J'ai relu à voix haute : « bât » pour [[bought]], « éït » pour [[ate]], « sèd » pour [[said]]"
+        ]
+      }
+    },
+    {
+      "unit": "5.3",
+      "pron": {
+        "focus": "Quand les mots se collent : did you…?",
+        "ipa": "",
+        "explain": "Quand les anglophones parlent vite, les petits mots se collent et changent de son ! Le « d » de [[did]] et le « y » de [[you]] fusionnent en « dj » : [[did you]] devient « di-djeu ». [[What did you]] devient même « WEU-djeu », et dans [[did he]], le « h » disparaît presque : « di-di ». Tu n'es pas obligé de parler comme ça, mais ton oreille doit le reconnaître, sinon tu vas croire que c'est un mot inconnu. Rappelle-toi : à l'écrit, on garde toujours les mots complets ([[What did you do?]]), et après [[did]], le verbe reste à la forme de base !",
+        "words": [
+          { "en": "did you", "fr": "est-ce que tu… ? (passé)", "hint": "« di-djeu » : le « d » et le « y » se collent en « dj »" },
+          { "en": "did he", "fr": "est-ce qu'il… ? (passé)", "hint": "« di-di » : le « h » de [[he]] disparaît presque" },
+          { "en": "didn't", "fr": "n'a pas, ne… pas (passé)", "hint": "« DI-deunt » : accent au début, le « t » final est très léger" },
+          { "en": "didn't you", "fr": "n'as-tu pas… ?", "hint": "« DI-deun-tcheu » : le « t » et le « y » se collent en « tch »" },
+          { "en": "what did you", "fr": "qu'est-ce que tu as… ?", "hint": "« WEU-djeu » : trois mots, mais ça sonne comme deux syllabes !" },
+          { "en": "where did you", "fr": "où est-ce que tu as… ?", "hint": "« WÈR-djeu » : « r » anglais, puis « djeu »" },
+          { "en": "what did you do", "fr": "qu'est-ce que tu as fait ?", "hint": "« WEU-djeu-DOU ↘ » : la force va sur [[do]], la voix descend" },
+          { "en": "did you like it", "fr": "est-ce que tu as aimé ça ?", "hint": "« di-djeu-LAÏ-kitt ↗ » : le « k » de [[like]] se colle à [[it]], la voix monte" }
+        ],
+        "pairs": [],
+        "practice": ["What did you do yesterday?", "Did you like the movie?", "Where did he go after school?"]
+      },
+      "mission": {
+        "type": "oral",
+        "prompt": "Ton ami Karim revient d'une fin de semaine au chalet de son oncle. Pose-lui au moins quatre questions au passé pour savoir ce qu'il a fait.",
+        "model": "Hi, Karim! What did you do last weekend? Did you go to your uncle's cottage? Did you swim in the lake? Did you catch any fish? Who did you meet there?",
+        "checklist": [
+          "J'ai posé mes questions avec [[did]] + verbe de base (jamais « Did you went? »)",
+          "J'ai utilisé au moins une question en « wh » ([[What did you…?]], [[Where did you…?]])",
+          "J'ai collé [[did you]] en « di-djeu » quand je parlais vite",
+          "Ma voix est montée à la fin des questions oui/non et descendue à la fin des questions en « wh »"
+        ]
+      }
+    },
+    {
+      "unit": "5.4",
+      "pron": {
+        "focus": "Le schwa, le son le plus paresseux",
+        "ipa": "/ə/",
+        "explain": "Le son le plus fréquent de l'anglais n'a même pas de lettre à lui : c'est le **schwa**, un petit « eu » tout mou, comme si tu étais très fatigué. Il remplace presque toutes les voyelles des syllabes **sans accent** : [[banana]] se dit « beu-NA-neu », pas « ba-na-na » ! Le piège des francophones, c'est de prononcer chaque voyelle clairement, comme en français. En anglais, seule la syllabe forte est bien claire ; les autres se ratatinent. Truc : dis [[Canada]] en anglais (« KA-neu-deu ») : une syllabe forte, deux syllabes paresseuses, et voilà !",
+        "words": [
+          { "en": "about", "fr": "à propos de ; environ", "hint": "« eu-BAOUT » : le « a » du début devient un petit « eu »" },
+          { "en": "banana", "fr": "banane", "hint": "« beu-NA-neu » : seul le milieu est fort, le début et la fin font « eu »" },
+          { "en": "Canada", "fr": "Canada", "hint": "« KA-neu-deu » : accent au début, puis deux « eu » paresseux" },
+          { "en": "seven", "fr": "sept", "hint": "« SÈ-veun » : la 2e syllabe est toute molle" },
+          { "en": "problem", "fr": "problème", "hint": "« PRÂ-bleum » : accent au début, « bleum » tout mou" },
+          { "en": "together", "fr": "ensemble", "hint": "« teu-GUÈ-theur » : le début et la fin font « eu »" },
+          { "en": "suddenly", "fr": "soudain, tout à coup", "hint": "« SEU-deun-li » : accent au début, le milieu est tout petit" },
+          { "en": "finally", "fr": "finalement, enfin", "hint": "« FAÏ-neu-li » : accent au début, le « a » devient « eu »" },
+          { "en": "the", "fr": "le, la, les", "hint": "« theu » : tout petit et rapide devant une consonne" },
+          { "en": "a", "fr": "un, une", "hint": "« eu » : jamais « é » ni « a » au milieu d'une phrase : [[a banana]] = « eu-beu-NA-neu »" }
+        ],
+        "pairs": [],
+        "practice": ["Suddenly, a banana fell on the table.", "Finally, we arrived in Canada at about seven."]
+      },
+      "mission": {
+        "type": "ecrit",
+        "prompt": "Ta classe prépare un recueil d'histoires vraies (ou presque !). Écris une courte histoire sur une aventure d'hiver : dis ce qui se passait au début, puis ce qui est arrivé tout à coup, et comment ça s'est terminé.",
+        "model": "Last winter, I was skating on the Rideau Canal with my friend Sofia. The sun was shining, and we were laughing. Suddenly, Sofia fell on the ice! First, I helped her get up. Then we drank hot chocolate together. Finally, we went home, tired but happy.",
+        "checklist": [
+          "J'ai utilisé [[was]] / [[were]] + verbe en -ing pour décrire la scène ([[we were laughing]])",
+          "J'ai utilisé le passé simple pour l'action soudaine ([[Sofia fell]])",
+          "J'ai organisé mon histoire avec [[first]], [[then]], [[suddenly]] et [[finally]]",
+          "J'ai relu à voix haute avec des schwas bien paresseux : « SEU-deun-li », « FAÏ-neu-li »"
+        ]
+      }
+    }
+  ]
+}

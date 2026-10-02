@@ -1,0 +1,569 @@
+{
+  "id": 12,
+  "cefr": "C2",
+  "title": "Bilingue",
+  "titleEn": "Fully Bilingual",
+  "intro": "Le dernier sommet : grammaire de haut vol, nuances fines, proverbes et prononciation sans faute. Au bout du chemin, tu seras vraiment bilingue.",
+  "boss": {
+    "name": "L'Ultime Bilingue",
+    "taunt": "Tu te crois bilingue ? It's high time you proved it. Je connais tous les pièges des deux langues… et je ne prononce jamais le k de knife.",
+    "defeat": "Impossible… Tu es vraiment bilingue ! Bon, every cloud has a silver lining : j'ai enfin trouvé un adversaire à ma hauteur."
+  },
+  "units": [
+    {
+      "id": "12.1",
+      "title": "Grammaire de haut vol",
+      "titleEn": "It's High Time",
+      "goal": "Maîtriser les structures avancées : it's time + passé, would rather, had better, as if, should inversé et le subjonctif anglais.",
+      "lesson": [
+        {
+          "type": "p",
+          "text": "Tu connais déjà [[If I were you]] : un verbe au **passé** qui ne parle pas du passé, mais d'une situation **imaginaire** ou **souhaitée**. Les anglophones adorent ce truc ! Voici les structures qui font sonner ton anglais comme celui d'un pro."
+        },
+        {
+          "type": "rule",
+          "title": "It's (high) time + passé",
+          "text": "Pour dire « il est (grand) temps que… », on met un **sujet + verbe au passé**, même si on parle de maintenant : [[It's time we left.]] [[It's high time you cleaned your room!]] Jamais ~~It's time we go~~. Sans sujet, on garde l'infinitif : [[It's time to leave.]]"
+        },
+        {
+          "type": "rule",
+          "title": "would rather et had better",
+          "text": "[[would rather]] (aimer mieux) : avec le **même sujet**, verbe à la base : [[I'd rather stay home.]] [[I would rather walk than take the bus.]] Avec un **autre sujet**, verbe au **passé** : [[I'd rather you didn't tell anyone.]] [[had better]] (ferais mieux de, conseil fort ou avertissement) + base verbale, **sans to** : [[You'd better hurry.]] Ici, le 'd veut dire **had**."
+        },
+        {
+          "type": "table",
+          "head": ["Structure", "Sens", "Exemple"],
+          "rows": [
+            ["as if / as though + passé", "comme si (irréel)", "[[She talks as if she knew everything.]]"],
+            ["If + sujet + were to + base", "si jamais (hypothèse peu probable)", "[[If we were to lose, we would be out.]]"],
+            ["Should + sujet + base", "si jamais (très poli, formel)", "[[Should you need help, call me.]]"],
+            ["provided that + présent", "à condition que", "[[You can go, provided that you are home by ten.]]"],
+            ["in case + présent", "au cas où", "[[Take a sweater in case it gets cold.]]"],
+            ["insist / suggest / recommend that + base", "subjonctif anglais", "[[The coach insisted that he be on time.]]"],
+            ["It is essential / important that + base", "subjonctif anglais", "[[It is essential that she arrive early.]]"]
+          ]
+        },
+        {
+          "type": "rule",
+          "title": "Le subjonctif anglais",
+          "text": "Oui, l'anglais a un subjonctif ! Après [[insist that]], [[suggest that]], [[recommend that]], [[It is essential that]]… on met le verbe à la **base** pour tout le monde : pas de -s, et [[be]] pour tous les sujets. [[The doctor recommended that he drink more water.]] [[Mom insisted that everyone be ready by seven.]] On entend aussi [[should]] + base : [[that he should drink]]."
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "en": "It's high time we went home.", "fr": "Il est grand temps qu'on rentre." },
+            { "en": "I'd rather you didn't use my phone.", "fr": "J'aimerais mieux que tu n'utilises pas mon téléphone." },
+            { "en": "You'd better apologize to your sister.", "fr": "Tu ferais mieux de t'excuser auprès de ta sœur." },
+            { "en": "Should you have any questions, please ask.", "fr": "Si jamais vous avez des questions, n'hésitez pas." },
+            { "en": "Bring a snack in case you get hungry.", "fr": "Apporte une collation au cas où tu aurais faim." }
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "Pièges de francophone : ~~It's time we go~~ → [[It's time we went]]. ~~I'd rather you don't~~ → [[I'd rather you didn't]]. ~~You'd better to go~~ → [[You'd better go]]. ~~in case it will rain~~ → [[in case it rains]] (jamais will après in case, comme après if). Et attention : [[in case]] (au cas où, par précaution) n'est pas [[if]] (si) !"
+        },
+        {
+          "type": "dialogue",
+          "title": "Le grand ménage",
+          "lines": [
+            { "who": "Mom", "en": "Jaden, it's high time you tidied up your room.", "fr": "Jaden, il est grand temps que tu ranges ta chambre." },
+            { "who": "Jaden", "en": "I'd rather do it tomorrow, if that's okay.", "fr": "J'aimerais mieux le faire demain, si ça te va." },
+            { "who": "Mom", "en": "I'd rather you did it now. Grandma is coming tonight.", "fr": "J'aimerais mieux que tu le fasses maintenant. Grand-maman arrive ce soir." },
+            { "who": "Jaden", "en": "You talk as if she were going to inspect my closet!", "fr": "Tu parles comme si elle allait inspecter mon placard !" },
+            { "who": "Mom", "en": "Knowing her, she might. And you'd better hide those dirty socks.", "fr": "La connaissant, c'est possible. Et tu ferais mieux de cacher ces bas sales." },
+            { "who": "Jaden", "en": "Fine. But should she ask, tell her it's always this clean.", "fr": "D'accord. Mais si jamais elle demande, dis-lui que c'est toujours aussi propre." },
+            { "who": "Mom", "en": "Only if you keep it this clean all week!", "fr": "Seulement si tu la gardes aussi propre toute la semaine !" }
+          ]
+        }
+      ],
+      "vocab": [
+        { "en": "it's high time", "fr": "il est grand temps (que)", "alt": [], "ex": "It's high time we left." },
+        { "en": "would rather", "fr": "aimer mieux, préférer (+ base verbale)", "alt": [], "ex": "I would rather read than watch TV." },
+        { "en": "had better", "fr": "faire mieux de (conseil ou avertissement)", "alt": [], "ex": "You had better wear a helmet." },
+        { "en": "as if", "fr": "comme si", "alt": ["as though"], "ex": "He acts as if he were the boss." },
+        { "en": "provided that", "fr": "à condition que", "alt": ["providing that", "provided", "as long as"], "ex": "You can play outside, provided that you finish your homework." },
+        { "en": "in case", "fr": "au cas où", "alt": [], "ex": "Take an umbrella in case it rains." },
+        { "en": "insist", "fr": "insister", "alt": [], "ex": "My mom insisted that I wear a helmet." },
+        { "en": "essential", "fr": "essentiel, indispensable", "alt": ["vital"], "ex": "It is essential that you drink water during the hike." },
+        { "en": "suggest", "fr": "suggérer, proposer", "alt": [], "ex": "I suggest that we leave early." },
+        { "en": "recommend", "fr": "recommander", "alt": [], "ex": "The dentist recommended that I floss every day." },
+        { "en": "otherwise", "fr": "sinon, autrement", "alt": [], "ex": "Hurry up; otherwise we'll miss the bus." },
+        { "en": "supposing", "fr": "en supposant que, et si…", "alt": ["suppose"], "ex": "Supposing it snows, will the game be cancelled?" },
+        { "en": "curfew", "fr": "heure de rentrée (couvre-feu)", "alt": [], "ex": "My curfew is nine o'clock on school nights." },
+        { "en": "chores", "fr": "tâches ménagères", "alt": ["housework"], "ex": "I do my chores every Saturday morning." },
+        { "en": "tidy up", "fr": "ranger", "alt": ["clean up"], "ex": "Please tidy up your room before dinner." },
+        { "en": "allowance", "fr": "argent de poche", "alt": ["pocket money"], "ex": "I save half of my allowance every week." },
+        { "en": "mandatory", "fr": "obligatoire", "alt": ["compulsory"], "ex": "Wearing a helmet is mandatory at the skate park." },
+        { "en": "on time", "fr": "à l'heure", "alt": [], "ex": "Please be on time for the bus." }
+      ],
+      "sentences": [
+        { "en": "It's high time you cleaned your room, Jaden.", "fr": "Il est grand temps que tu nettoies ta chambre, Jaden.", "trap": ["clean", "cleaning"], "alt": ["Jaden, it's high time you cleaned your room."] },
+        { "en": "I'd rather you didn't tell anyone about the surprise.", "fr": "J'aimerais mieux que tu ne parles de la surprise à personne.", "trap": ["don't", "to"], "alt": [] },
+        { "en": "You'd better leave now, or you'll miss the bus.", "fr": "Tu ferais mieux de partir maintenant, sinon tu vas rater l'autobus.", "trap": ["to", "left"], "alt": [] },
+        { "en": "She talks as if she knew everything about hockey.", "fr": "Elle parle comme si elle savait tout sur le hockey.", "trap": ["know", "does"], "alt": [] },
+        { "en": "Should you need any help, please call me.", "fr": "Si jamais tu as besoin d'aide, appelle-moi.", "trap": ["needs", "will"], "alt": ["Please call me should you need any help."] },
+        { "en": "The coach insisted that every player be on time.", "fr": "L'entraîneur a exigé que chaque joueur soit à l'heure.", "trap": ["are", "to"], "alt": [] },
+        { "en": "Take your toque in case it gets cold tonight.", "fr": "Prends ta tuque au cas où il ferait froid ce soir.", "trap": ["will", "getting"], "alt": ["Take your toque tonight in case it gets cold."] },
+        { "en": "You can go to the party provided that you are home by ten.", "fr": "Tu peux aller à la fête à condition d'être à la maison avant dix heures.", "trap": ["will", "were"], "alt": ["Provided that you are home by ten, you can go to the party."] },
+        { "en": "If we were to lose this game, we would be out of the tournament.", "fr": "Si jamais on perdait ce match, on serait éliminés du tournoi.", "trap": ["will", "lost"], "alt": ["We would be out of the tournament if we were to lose this game."] },
+        { "en": "It is essential that she arrive before the doors close.", "fr": "Il est essentiel qu'elle arrive avant la fermeture des portes.", "trap": ["arriving", "to"], "alt": [] },
+        { "en": "I would rather walk than take the bus today.", "fr": "Aujourd'hui, j'aimerais mieux marcher que prendre l'autobus.", "trap": ["to", "taking"], "alt": ["Today I would rather walk than take the bus."] }
+      ],
+      "grammar": [
+        { "type": "mcq", "q": "It's getting late. It's time we ___ home.", "choices": ["go", "going", "went", "will go"], "answer": 2, "explain": "It's time + sujet + verbe au passé : It's time we went." },
+        { "type": "mcq", "q": "I'd rather you ___ my diary.", "choices": ["didn't read", "don't read", "not read", "won't read"], "answer": 0, "explain": "would rather + autre sujet → verbe au passé : I'd rather you didn't read." },
+        { "type": "mcq", "q": "It's freezing! You'd better ___ your coat.", "choices": ["to take", "taking", "took", "take"], "answer": 3, "explain": "had better + base verbale, sans to : You'd better take." },
+        { "type": "mcq", "q": "It is essential that every student ___ a helmet.", "choices": ["wear", "wearing", "wore", "to wear"], "answer": 0, "explain": "Après It is essential that : subjonctif anglais = verbe à la base, sans -s." },
+        { "type": "mcq", "q": "___ you need anything, just ask.", "choices": ["Would", "Should", "Unless", "Had"], "answer": 1, "explain": "Should + sujet + base = If you need… (version polie et formelle)." },
+        { "type": "mcq", "q": "Take some snacks ___ you get hungry on the trip.", "choices": ["unless", "as if", "in case", "provided that"], "answer": 2, "explain": "in case = au cas où, par précaution." },
+        { "type": "fill", "q": "It's high time you ___ to bed.", "hint": "go", "answer": ["went"], "explain": "It's high time + sujet + passé : you went." },
+        { "type": "fill", "q": "I'd rather you ___ me the truth.", "hint": "tell", "answer": ["told"], "explain": "would rather + autre sujet → passé : you told." },
+        { "type": "fill", "q": "We'd ___ hurry, or we'll miss the start of the movie.", "hint": "ferions mieux de", "answer": ["better"], "explain": "We'd better = We had better : nous ferions mieux de." },
+        { "type": "fill", "q": "The doctor recommended that he ___ more water.", "hint": "drink (subjonctif)", "answer": ["drink", "should drink"], "explain": "recommend that + base (subjonctif) : that he drink, sans -s." },
+        { "type": "fill", "q": "You can borrow my bike, ___ that you bring it back tonight.", "hint": "à condition", "answer": ["provided", "providing"], "explain": "provided that = à condition que." },
+        { "type": "fill", "q": "If you ___ to move to Vancouver, would you miss Ottawa?", "hint": "be (hypothèse : were to)", "answer": ["were"], "explain": "If + sujet + were to + base = si jamais (hypothèse peu probable)." },
+        { "type": "fill", "q": "___ you have any questions, please contact the office.", "hint": "if (version formelle inversée)", "answer": ["Should"], "explain": "Should you have… = If you have… en version formelle." },
+        { "type": "error", "q": "It's time we go to bed.", "wrong": 3, "fix": ["went"], "explain": "It's time + sujet + passé : It's time we went to bed." },
+        { "type": "error", "q": "I'd rather you don't eat in my room.", "wrong": 3, "fix": ["didn't"], "explain": "would rather + autre sujet → passé : I'd rather you didn't eat." },
+        { "type": "error", "q": "You'd better apologizing to your sister.", "wrong": 2, "fix": ["apologize"], "explain": "had better + base verbale : You'd better apologize." },
+        { "type": "error", "q": "Should you needed help, call me.", "wrong": 2, "fix": ["need"], "explain": "Should + sujet + verbe à la base : Should you need." },
+        { "type": "error", "q": "If I were to won the contest, I would buy a guitar.", "wrong": 4, "fix": ["win"], "explain": "were to + verbe à la base : were to win." }
+      ],
+      "reading": {
+        "title": "The Great Family Meeting",
+        "text": "Every year, before the family camping trip to Algonquin Park, Olivia's mother calls what she proudly names the Great Family Meeting. This year was no different.\n\n“It's high time we talked about the rules,” she announced, sitting at the kitchen table with a notebook. Olivia's little brother, Félix, groaned as if he had been asked to climb a mountain.\n\nThe first rule was simple. Mom insisted that everyone be ready by seven in the morning on Saturday. “Should anyone oversleep,” she added, “they will carry the heaviest backpack.” Félix suddenly looked very awake.\n\nThe second rule was about screens. “I'd rather you didn't bring your tablets,” Dad said. “We're going camping, not to an arcade.” Olivia wanted to argue, but she knew she had better choose her battles. Instead, she asked if she could bring her camera. Dad agreed, provided that she shared the photos with Grandma.\n\nThen came the food. Félix suggested that they eat only marshmallows for the whole weekend. Everyone laughed except Mom, who wrote down a long list of vegetables. “Bring extra socks too,” she said, “in case it rains. And it always rains.”\n\nFinally, Olivia raised her hand. “I have a rule too. If we were to see a moose, I would be the one who takes the picture.” Félix protested, but the family voted, and Olivia won.\n\nThat night, Olivia lay in bed and smiled. She would never admit it, but she secretly loved the Great Family Meeting. For her, it was the moment when summer really began.",
+        "questions": [
+          { "q": "Why did Félix suddenly look very awake?", "choices": ["He had just drunk a hot chocolate.", "He didn't want to carry the heaviest backpack.", "He was excited about seeing a moose.", "His mother turned on all the lights."], "answer": 1 },
+          { "q": "Under what condition could Olivia bring her camera?", "choices": ["If she left her tablet at home", "If she carried Félix's backpack", "If she shared the photos with her grandmother", "If she woke up first"], "answer": 2 },
+          { "q": "Why does Mom want everyone to bring extra socks?", "choices": ["In case it rains", "Because the tent is cold", "Because Félix always loses his", "Because they will go swimming"], "answer": 0 },
+          { "q": "What does Mom's comment “And it always rains” suggest?", "choices": ["She has never been camping before.", "She hopes it will rain this year.", "The forecast promises sunshine.", "It has rained on many of their past camping trips."], "answer": 3 },
+          { "q": "What does “she had better choose her battles” mean here?", "choices": ["She decided not to argue about everything.", "She wanted to fight with her brother.", "She chose to play a video game instead.", "She refused to go camping."], "answer": 0 },
+          { "q": "How does Olivia really feel about the family meeting?", "choices": ["She finds it boring and useless.", "She is afraid of her parents' rules.", "She wants to cancel it next year.", "She enjoys it, even if she doesn't say so."], "answer": 3 }
+        ]
+      }
+    },
+    {
+      "id": "12.2",
+      "title": "Nuances et connotations",
+      "titleEn": "Shades of Meaning",
+      "goal": "Choisir le mot juste selon sa connotation : positive, neutre ou négative.",
+      "lesson": [
+        {
+          "type": "p",
+          "text": "Deux mots peuvent avoir le même sens de base, mais pas la même « couleur ». Dire de quelqu'un qu'il est [[slim]], c'est un compliment. [[thin]], c'est neutre. [[skinny]], c'est souvent négatif (trop maigre). C'est ce qu'on appelle la **connotation**. Un mot mal choisi, et ton compliment devient une insulte !"
+        },
+        {
+          "type": "table",
+          "head": ["Positif", "Neutre", "Négatif"],
+          "rows": [
+            ["[[slim]] (mince)", "[[thin]]", "[[skinny]] (maigre)"],
+            ["[[determined]] (déterminé)", "—", "[[stubborn]] (têtu)"],
+            ["[[inexpensive]] (abordable)", "—", "[[cheap]] (bon marché, de mauvaise qualité)"],
+            ["[[curious]] (curieux)", "—", "[[nosy]] (fouineux)"],
+            ["[[confident]] (sûr de soi)", "—", "[[arrogant]] (arrogant)"],
+            ["[[thrifty]] (économe)", "—", "[[stingy]] (radin)"],
+            ["[[scent]] (parfum)", "[[smell]]", "[[stink]] (puanteur)"],
+            ["[[famous]] (célèbre)", "[[well-known]]", "[[notorious]] (tristement célèbre)"],
+            ["[[childlike]] (émerveillé comme un enfant)", "—", "[[childish]] (puéril, bébé)"]
+          ]
+        },
+        {
+          "type": "rule",
+          "title": "Des verbes pleins de nuances",
+          "text": "**Regarder** : [[glance]] (jeter un coup d'œil rapide), [[peek]] (regarder en cachette), [[stare]] (fixer longtemps), [[glare]] (fusiller du regard, en colère). **Parler** : [[whisper]] (chuchoter), [[mutter]] (marmonner, souvent mécontent), [[yell]] (crier). **Rire** : [[giggle]] (petit rire aigu, nerveux), [[chuckle]] (petit rire discret, dans sa barbe). **Marcher** : [[stroll]] (flâner), [[stride]] (marcher à grands pas, sûr de soi), [[stumble]] (trébucher)."
+        },
+        {
+          "type": "rule",
+          "title": "Comment choisir ?",
+          "text": "Demande-toi : est-ce que je veux **complimenter**, **décrire** ou **critiquer** ? Pour une grand-mère qui économise intelligemment : [[thrifty]]. Pour quelqu'un qui refuse de partager une seule chip : [[stingy]]. Le contexte décide toujours !"
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "en": "You look so slim in that jacket!", "fr": "Tu as l'air tellement mince dans ce manteau !" },
+            { "en": "Stop being so nosy; it's my diary!", "fr": "Arrête de fouiner comme ça, c'est mon journal intime !" },
+            { "en": "The teacher glared at us when we laughed.", "fr": "Le prof nous a fusillés du regard quand on a ri." },
+            { "en": "My grandpa looks at the stars with childlike wonder.", "fr": "Mon grand-père regarde les étoiles avec un émerveillement d'enfant." },
+            { "en": "We strolled along the river after supper.", "fr": "On a flâné le long de la rivière après le souper." }
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "Pièges de francophone : [[notorious]] ne veut **pas** dire « notoire » au sens neutre : c'est **célèbre pour quelque chose de mal** ! Et [[cheap]] peut vouloir dire « pas cher »… mais aussi « de mauvaise qualité » ou « radin ». Pour un compliment, dis plutôt [[inexpensive]] ou [[affordable]]."
+        },
+        {
+          "type": "dialogue",
+          "title": "La nouvelle boulangerie",
+          "lines": [
+            { "who": "Maya", "en": "Have you tried the new bakery on Elgin Street? It's so inexpensive!", "fr": "As-tu essayé la nouvelle boulangerie de la rue Elgin ? Elle est tellement abordable !" },
+            { "who": "Amir", "en": "Inexpensive? I'd say cheap. My croissant was dry.", "fr": "Abordable ? Moi, je dirais bon marché. Mon croissant était sec." },
+            { "who": "Maya", "en": "Don't be so negative. The owner is really determined; she's there every morning at five.", "fr": "Ne sois pas si négatif. La propriétaire est vraiment déterminée : elle est là tous les matins à cinq heures." },
+            { "who": "Amir", "en": "Determined? She glared at me when I asked for a refund.", "fr": "Déterminée ? Elle m'a fusillé du regard quand j'ai demandé un remboursement." },
+            { "who": "Maya", "en": "Maybe you stared at her kitchen too long. You can be a bit nosy, you know.", "fr": "Peut-être que tu as fixé sa cuisine trop longtemps. Tu peux être un peu fouineux, tu sais." },
+            { "who": "Amir", "en": "I'm not nosy, I'm curious! There's a difference.", "fr": "Je ne suis pas fouineux, je suis curieux ! Il y a une différence." },
+            { "who": "Maya", "en": "Sure. And I'm not stubborn, I'm determined.", "fr": "Bien sûr. Et moi, je ne suis pas têtue, je suis déterminée." }
+          ]
+        }
+      ],
+      "vocab": [
+        { "en": "slim", "fr": "mince (compliment)", "alt": ["slender"], "ex": "She looks slim and healthy." },
+        { "en": "skinny", "fr": "maigre (souvent négatif)", "alt": [], "ex": "That stray cat is so skinny." },
+        { "en": "determined", "fr": "déterminé (positif)", "alt": [], "ex": "Liam is determined to make the team." },
+        { "en": "stubborn", "fr": "têtu", "alt": [], "ex": "My little brother is as stubborn as a mule." },
+        { "en": "inexpensive", "fr": "pas cher, abordable (positif)", "alt": ["affordable"], "ex": "This is an inexpensive but delicious restaurant." },
+        { "en": "cheap", "fr": "bon marché… ou de mauvaise qualité", "alt": [], "ex": "These cheap sunglasses broke after one day." },
+        { "en": "nosy", "fr": "fouineux, trop curieux", "alt": ["nosey"], "ex": "Our nosy neighbour always watches us from her window." },
+        { "en": "thrifty", "fr": "économe (positif)", "alt": [], "ex": "My thrifty grandma never wastes food." },
+        { "en": "stingy", "fr": "radin", "alt": ["cheap"], "ex": "Don't be stingy; share your chips!" },
+        { "en": "scent", "fr": "parfum, odeur agréable", "alt": ["fragrance"], "ex": "I love the scent of fresh bread." },
+        { "en": "stink", "fr": "puanteur, puer", "alt": ["stench"], "ex": "What is that stink in the garage?" },
+        { "en": "notorious", "fr": "tristement célèbre", "alt": ["infamous"], "ex": "This corner is notorious for accidents." },
+        { "en": "childish", "fr": "puéril, bébé (négatif)", "alt": ["immature"], "ex": "Stop being so childish!" },
+        { "en": "childlike", "fr": "plein d'émerveillement, comme un enfant (positif)", "alt": [], "ex": "The old artist had a childlike joy in his eyes." },
+        { "en": "giggle", "fr": "rire nerveusement (petit rire aigu)", "alt": [], "ex": "The kids giggled when the puppy licked their faces." },
+        { "en": "glance", "fr": "jeter un coup d'œil", "alt": [], "ex": "She glanced at the clock." },
+        { "en": "stare", "fr": "fixer (du regard), longtemps", "alt": [], "ex": "It's rude to stare at people." },
+        { "en": "glare", "fr": "lancer un regard furieux", "alt": [], "ex": "The goalie glared at the referee." },
+        { "en": "mutter", "fr": "marmonner", "alt": ["mumble"], "ex": "He muttered something and left." },
+        { "en": "stroll", "fr": "flâner, se balader", "alt": [], "ex": "We strolled through the market on Sunday." }
+      ],
+      "sentences": [
+        { "en": "My grandpa is thrifty, but he is never stingy with his time.", "fr": "Mon grand-père est économe, mais il n'est jamais avare de son temps.", "trap": ["thrift", "stinky"], "alt": [] },
+        { "en": "She glanced at her phone and then stared out the window.", "fr": "Elle a jeté un coup d'œil à son téléphone, puis a fixé la fenêtre.", "trap": ["glance", "stares"], "alt": [] },
+        { "en": "The teacher glared at the students who were giggling in the back.", "fr": "Le prof a fusillé du regard les élèves qui ricanaient au fond.", "trap": ["glaring", "giggle"], "alt": [] },
+        { "en": "Don't be so nosy; it's none of your business.", "fr": "Ne sois pas si fouineux : ce ne sont pas tes affaires.", "trap": ["its", "nose"], "alt": [] },
+        { "en": "We strolled along the Rideau Canal on a warm summer evening.", "fr": "Nous avons flâné le long du canal Rideau par une chaude soirée d'été.", "trap": ["strolling", "walk"], "alt": ["On a warm summer evening we strolled along the Rideau Canal."] },
+        { "en": "This candle has a lovely scent of maple and cinnamon.", "fr": "Cette bougie a un joli parfum d'érable et de cannelle.", "trap": ["stink", "scented"], "alt": ["This candle has a lovely scent of cinnamon and maple."] },
+        { "en": "The town was notorious for its terrible traffic jams.", "fr": "La ville était tristement célèbre pour ses terribles embouteillages.", "trap": ["notoriously", "it's"], "alt": [] },
+        { "en": "My little brother is so childish when he loses a game.", "fr": "Mon petit frère est tellement bébé quand il perd une partie.", "trap": ["childishly", "lose"], "alt": ["When he loses a game, my little brother is so childish."] },
+        { "en": "It's an inexpensive phone, but it doesn't look cheap at all.", "fr": "C'est un téléphone abordable, mais il n'a pas du tout l'air bas de gamme.", "trap": ["looks", "cheaply"], "alt": [] },
+        { "en": "Being determined is great, but being stubborn can be a problem.", "fr": "Être déterminé, c'est super, mais être têtu peut être un problème.", "trap": ["determinate", "stubbornly"], "alt": [] },
+        { "en": "Mei muttered something under her breath and left the room.", "fr": "Mei a marmonné quelque chose entre ses dents et a quitté la pièce.", "trap": ["mutters", "leaved"], "alt": [] }
+      ],
+      "grammar": [
+        { "type": "mcq", "q": "Tu veux faire un compliment à ta tante sur sa nouvelle silhouette : « You look so ___! »", "choices": ["skinny", "stingy", "slim", "notorious"], "answer": 2, "explain": "slim = mince, c'est un compliment. skinny (maigre) est souvent négatif." },
+        { "type": "mcq", "q": "Your friend never gives up and trains every single day. You admire her. She is ___.", "choices": ["determined", "stubborn", "nosy", "childish"], "answer": 0, "explain": "Tu l'admires : il faut le mot positif, determined. stubborn (têtu) est négatif." },
+        { "type": "mcq", "q": "The neighbour always reads other people's mail. Which word best describes him?", "choices": ["curious", "thrifty", "determined", "nosy"], "answer": 3, "explain": "Lire le courrier des autres, c'est fouiner : nosy (négatif). curious est neutre ou positif." },
+        { "type": "mcq", "q": "Ana wouldn't even share one chip with her best friend. She's so ___!", "choices": ["thrifty", "stingy", "inexpensive", "slim"], "answer": 1, "explain": "Refuser de partager, c'est être radin : stingy. thrifty (économe) est un compliment." },
+        { "type": "mcq", "q": "Everyone on our street complains about Rex, the dog who digs up gardens. He is ___ in the neighbourhood.", "choices": ["famous", "childlike", "notorious", "determined"], "answer": 2, "explain": "Tout le monde se plaint : il est célèbre pour quelque chose de mal → notorious." },
+        { "type": "mcq", "q": "Jaden ___ at the answers when the teacher wasn't looking.", "choices": ["peeked", "glared", "strolled", "giggled"], "answer": 0, "explain": "peek = regarder en cachette. Parfait quand le prof ne regarde pas !" },
+        { "type": "fill", "q": "The teacher ___ at us when we talked during the test.", "hint": "lancer un regard furieux (passé)", "answer": ["glared"], "explain": "glare = fusiller du regard, en colère. Au passé : glared." },
+        { "type": "fill", "q": "This soap has a lovely ___ of lavender.", "hint": "parfum, odeur agréable", "answer": ["scent", "fragrance"], "explain": "Une odeur agréable : scent. (stink, c'est une odeur horrible !)" },
+        { "type": "fill", "q": "We ___ through the market, looking at everything.", "hint": "flâner (passé)", "answer": ["strolled", "wandered"], "explain": "stroll = flâner, marcher sans se presser. Au passé : strolled." },
+        { "type": "fill", "q": "Stop being so ___; it's just a board game!", "hint": "puéril (négatif)", "answer": ["childish", "immature"], "explain": "childish = puéril, négatif. childlike (émerveillé) est positif." },
+        { "type": "fill", "q": "He ___ at his watch and ran to the bus.", "hint": "jeter un coup d'œil (passé)", "answer": ["glanced"], "explain": "glance = regarder très vite. Au passé : glanced." },
+        { "type": "fill", "q": "This bike is ___ but solid: a great deal!", "hint": "pas cher (positif)", "answer": ["inexpensive", "affordable"], "explain": "C'est un compliment : inexpensive (ou affordable). cheap ferait penser à de la mauvaise qualité." },
+        { "type": "error", "q": "My grandma saves money and never wastes anything; she is so stingy and smart.", "wrong": 11, "fix": ["thrifty"], "explain": "C'est un compliment (smart) : il faut le mot positif thrifty (économe). stingy veut dire radin." },
+        { "type": "error", "q": "My grandpa looked at the first snow with childish wonder.", "wrong": 8, "fix": ["childlike"], "explain": "L'émerveillement d'enfant, c'est positif : childlike. childish veut dire puéril." },
+        { "type": "error", "q": "This garbage bin has a horrible scent.", "wrong": 6, "fix": ["stink", "smell", "stench", "odour", "odor"], "explain": "scent est une odeur agréable. Pour une poubelle : stink (ou smell)." },
+        { "type": "error", "q": "He glanced at me for ten whole minutes without saying a word.", "wrong": 1, "fix": ["stared"], "explain": "glance = un coup d'œil rapide. Pendant dix minutes, on fixe : stared." }
+      ],
+      "reading": {
+        "title": "Same Cat, Different Words",
+        "text": "Our English teacher gave us a strange assignment: describe the same moment twice, once as a fan and once as a critic. Zoé chose her neighbour's cat, Biscuit. Here is what she wrote.\n\nVersion one: Biscuit is a slim, elegant cat with a curious mind. Every morning, she strolls across our garden as if she owned it. She is determined: when she wants to come inside, she waits patiently at the door until someone opens it. Her owner, an old man with a childlike smile, is thrifty and makes her toys out of old socks. When Biscuit sees me, she glances at me with her bright green eyes, then goes back to her nap in the sun.\n\nVersion two: Biscuit is a skinny, nosy cat who sticks her face into everybody's business. Every morning, she wanders through our garden as if she owned it. She is stubborn: when she wants to come inside, she stares at the door and meows until someone gives up. Her owner is so stingy that he makes her toys out of old socks. When Biscuit sees me, she glares at me with her cold green eyes, then goes back to sleeping all day, the lazy thing.\n\nZoé's teacher wrote one comment at the bottom of the page: “Same cat, same facts, completely different story. Well done.”\n\nZoé smiled when she read it. She had learned something important: choosing a word is like choosing a pair of glasses. The world stays the same, but it changes what everyone else sees. From now on, she decided, she would choose her glasses very carefully, especially when writing about her little brother.",
+        "questions": [
+          { "q": "What was the assignment?", "choices": ["To write a story about a lost cat", "To describe the same moment twice, from two different points of view", "To interview a neighbour", "To write a poem about glasses"], "answer": 1 },
+          { "q": "In version two, which word replaces “determined”?", "choices": ["nosy", "skinny", "stubborn", "lazy"], "answer": 2 },
+          { "q": "How is the owner described in version two?", "choices": ["As stingy", "As thrifty", "As childlike", "As determined"], "answer": 0 },
+          { "q": "What attitude toward Biscuit does version one show?", "choices": ["Fear", "Anger", "Boredom", "Affection and admiration"], "answer": 3 },
+          { "q": "Why does the teacher write “Same cat, same facts”?", "choices": ["Because Zoé copied the same text twice", "Because the facts don't change; only the connotation of the words does", "Because the cat is famous", "Because both versions are too short"], "answer": 1 },
+          { "q": "What does Zoé's last decision suggest?", "choices": ["She will stop writing about her family.", "She will buy new glasses.", "She knows her word choices could make her brother look good or bad.", "She thinks her brother is a cat."], "answer": 2 }
+        ]
+      }
+    },
+    {
+      "id": "12.3",
+      "title": "Phrasal verbs et proverbes",
+      "titleEn": "Actions Speak Louder",
+      "goal": "Utiliser des phrasal verbs avancés et placer le bon proverbe au bon moment.",
+      "lesson": [
+        {
+          "type": "p",
+          "text": "Les anglophones parlent avec des **phrasal verbs** (verbe + petit mot) et des **proverbes** à tout bout de champ. Les connaître, c'est comprendre les vraies conversations, les films et les séries… et répondre du tac au tac !"
+        },
+        {
+          "type": "table",
+          "head": ["Phrasal verb", "Sens", "Exemple"],
+          "rows": [
+            ["come up with", "trouver (une idée)", "[[Who came up with this plan?]]"],
+            ["put up with", "supporter, endurer", "[[I can't put up with this noise.]]"],
+            ["get away with", "s'en tirer sans punition", "[[He cheated and got away with it.]]"],
+            ["look down on", "mépriser", "[[Never look down on anyone.]]"],
+            ["look up to", "admirer (un modèle)", "[[I look up to my big sister.]]"],
+            ["run into", "tomber sur quelqu'un", "[[I ran into my teacher at the mall.]]"],
+            ["come across", "trouver une chose par hasard", "[[I came across an old photo.]]"],
+            ["bring up", "aborder (un sujet)", "[[Don't bring up the test again!]]"],
+            ["cut down on", "consommer moins de", "[[I'm cutting down on sugar.]]"],
+            ["figure out", "comprendre, trouver la solution", "[[I can't figure out this puzzle.]]"],
+            ["turn out", "s'avérer", "[[The test turned out to be easy.]]"],
+            ["end up", "finir par, se retrouver à", "[[We ended up walking home.]]"],
+            ["fall out with", "se brouiller avec", "[[She fell out with her best friend.]]"],
+            ["get over", "se remettre de", "[[He got over his cold.]]"],
+            ["live up to", "être à la hauteur de", "[[The movie didn't live up to the book.]]"],
+            ["make up for", "compenser, se faire pardonner", "[[I'll make up for it.]]"],
+            ["stand out", "se démarquer", "[[Her red coat stands out.]]"]
+          ]
+        },
+        {
+          "type": "rule",
+          "title": "Séparable ou pas ?",
+          "text": "Les phrasal verbs à **trois mots** ne se séparent jamais : [[put up with it]], [[make up for it]]. Certains verbes à deux mots sont **séparables** ([[figure out]], [[bring up]]) : avec un **pronom**, le pronom va obligatoirement **au milieu** : [[figure it out]], jamais ~~figure out it~~. Après [[end up]] et [[make up for]], le verbe prend **-ing** : [[We ended up eating sushi.]] [[I'll make up for being late.]]"
+        },
+        {
+          "type": "table",
+          "head": ["Proverbe anglais", "Équivalent français", "Quand l'utiliser"],
+          "rows": [
+            ["[[Actions speak louder than words.]]", "Les gestes valent mieux que les paroles.", "quelqu'un promet sans agir"],
+            ["[[Better late than never.]]", "Mieux vaut tard que jamais.", "ça arrive en retard, mais ça arrive"],
+            ["[[Every cloud has a silver lining.]]", "À quelque chose malheur est bon.", "un problème cache un avantage"],
+            ["[[The early bird catches the worm.]]", "L'avenir appartient à ceux qui se lèvent tôt.", "il faut s'y prendre tôt"],
+            ["[[Don't count your chickens before they hatch.]]", "Il ne faut pas vendre la peau de l'ours avant de l'avoir tué.", "quelqu'un se vante trop tôt"],
+            ["[[Easier said than done.]]", "C'est plus facile à dire qu'à faire.", "un conseil simple mais difficile à suivre"]
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "en": "My sister came up with a brilliant idea.", "fr": "Ma sœur a eu une idée géniale." },
+            { "en": "I ran into Noah at the library.", "fr": "Je suis tombé sur Noah à la bibliothèque." },
+            { "en": "It took me an hour to figure it out.", "fr": "Ça m'a pris une heure pour comprendre." },
+            { "en": "The trip turned out to be amazing.", "fr": "Le voyage s'est avéré génial." },
+            { "en": "Better late than never!", "fr": "Mieux vaut tard que jamais !" }
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "Pièges de francophone : « supporter » quelqu'un = [[put up with]], pas [[support]] (qui veut dire soutenir, encourager) ! [[look up to]] (admirer) n'est pas [[look up]] (chercher dans le dictionnaire). Et les proverbes ne se traduisent **jamais** mot à mot : on ne dit pas ~~Better late that never~~, ni « sell the bear's skin » : on apprend la version anglaise par cœur."
+        },
+        {
+          "type": "dialogue",
+          "title": "Drame à la récré",
+          "lines": [
+            { "who": "Zoé", "en": "Did you hear? Ethan fell out with Noah over a hockey card.", "fr": "As-tu entendu ? Ethan s'est brouillé avec Noah à cause d'une carte de hockey." },
+            { "who": "Karim", "en": "Seriously? I ran into them yesterday and they seemed fine.", "fr": "Sérieux ? Je suis tombé sur eux hier et ils avaient l'air correct." },
+            { "who": "Zoé", "en": "Well, Ethan says Noah got away with trading him a fake card.", "fr": "Ben, Ethan dit que Noah lui a échangé une fausse carte sans se faire prendre." },
+            { "who": "Karim", "en": "I can't put up with all this drama. They need to figure it out themselves.", "fr": "Je ne supporte pas tout ce drame. Ils doivent régler ça eux-mêmes." },
+            { "who": "Zoé", "en": "Noah promised to make up for it, but he hasn't done anything yet.", "fr": "Noah a promis de se faire pardonner, mais il n'a encore rien fait." },
+            { "who": "Karim", "en": "Actions speak louder than words. Let's see if he brings him a real one.", "fr": "Les gestes valent mieux que les paroles. On verra s'il lui apporte une vraie carte." },
+            { "who": "Zoé", "en": "If he does it next week, well, better late than never!", "fr": "S'il le fait la semaine prochaine, eh bien, mieux vaut tard que jamais !" }
+          ]
+        }
+      ],
+      "vocab": [
+        { "en": "come up with", "fr": "trouver (une idée), inventer", "alt": ["think of"], "ex": "Who came up with this crazy plan?" },
+        { "en": "put up with", "fr": "supporter, endurer", "alt": ["tolerate", "stand"], "ex": "I can't put up with his jokes anymore." },
+        { "en": "get away with", "fr": "s'en tirer sans punition", "alt": [], "ex": "Nobody gets away with cheating in our class." },
+        { "en": "look down on", "fr": "mépriser, regarder de haut", "alt": ["despise"], "ex": "Don't look down on people who make mistakes." },
+        { "en": "look up to", "fr": "admirer (un modèle)", "alt": ["admire"], "ex": "Many kids look up to their older cousins." },
+        { "en": "run into", "fr": "tomber sur (quelqu'un) par hasard", "alt": ["bump into"], "ex": "I ran into my old coach at the mall." },
+        { "en": "bring up", "fr": "aborder (un sujet)", "alt": ["raise", "mention"], "ex": "Please don't bring up my bad grade at dinner." },
+        { "en": "cut down on", "fr": "consommer moins de, réduire", "alt": ["cut back on"], "ex": "I'm trying to cut down on screen time." },
+        { "en": "figure out", "fr": "comprendre, trouver la solution", "alt": ["work out"], "ex": "I finally figured out the answer." },
+        { "en": "end up", "fr": "finir par, se retrouver à", "alt": [], "ex": "We ended up staying until midnight." },
+        { "en": "fall out with", "fr": "se brouiller avec", "alt": [], "ex": "She fell out with her cousin over a silly game." },
+        { "en": "get over", "fr": "se remettre de", "alt": ["recover from"], "ex": "It took me a week to get over the flu." },
+        { "en": "live up to", "fr": "être à la hauteur de", "alt": [], "ex": "The new movie didn't live up to our expectations." },
+        { "en": "make up for", "fr": "compenser, se faire pardonner", "alt": [], "ex": "I'll make up for it by helping you tomorrow." },
+        { "en": "actions speak louder than words", "fr": "les gestes valent mieux que les paroles", "alt": [], "ex": "Don't just say sorry; actions speak louder than words." },
+        { "en": "better late than never", "fr": "mieux vaut tard que jamais", "alt": [], "ex": "You finally finished your project? Better late than never!" },
+        { "en": "every cloud has a silver lining", "fr": "à quelque chose malheur est bon", "alt": [], "ex": "The game was cancelled, but every cloud has a silver lining: no homework tonight!" },
+        { "en": "the early bird catches the worm", "fr": "l'avenir appartient à ceux qui se lèvent tôt", "alt": [], "ex": "The store opens at eight, and the early bird catches the worm." },
+        { "en": "don't count your chickens before they hatch", "fr": "il ne faut pas vendre la peau de l'ours avant de l'avoir tué", "alt": [], "ex": "You haven't won yet; don't count your chickens before they hatch." },
+        { "en": "easier said than done", "fr": "c'est plus facile à dire qu'à faire", "alt": [], "ex": "Just stop being nervous? Easier said than done!" }
+      ],
+      "sentences": [
+        { "en": "Who came up with the idea of a snow fort contest?", "fr": "Qui a eu l'idée d'un concours de forts de neige ?", "trap": ["comes", "by"], "alt": [] },
+        { "en": "I can't put up with this noise any longer.", "fr": "Je ne peux plus supporter ce bruit.", "trap": ["support", "puts"], "alt": [] },
+        { "en": "We ran into our old teacher at the grocery store.", "fr": "Nous sommes tombés sur notre ancienne enseignante à l'épicerie.", "trap": ["runned", "onto"], "alt": ["At the grocery store we ran into our old teacher."] },
+        { "en": "My sister really looks up to her coach.", "fr": "Ma sœur admire vraiment son entraîneuse.", "trap": ["look", "on"], "alt": [] },
+        { "en": "It took me a whole hour to figure it out.", "fr": "Ça m'a pris une heure entière pour trouver la solution.", "trap": ["figured", "understand"], "alt": [] },
+        { "en": "We missed the bus and ended up walking home in the rain.", "fr": "On a raté l'autobus et on a fini par rentrer à pied sous la pluie.", "trap": ["walk", "to"], "alt": [] },
+        { "en": "It took Félix two weeks to get over his cold.", "fr": "Félix a mis deux semaines à se remettre de son rhume.", "trap": ["got", "from"], "alt": [] },
+        { "en": "I'll make up for being late by buying you lunch.", "fr": "Je vais me faire pardonner mon retard en t'offrant le dîner (le repas du midi).", "trap": ["buy", "been"], "alt": ["By buying you lunch, I'll make up for being late."] },
+        { "en": "Actions speak louder than words, so show me you're sorry.", "fr": "Les gestes valent mieux que les paroles, alors montre-moi que tu es désolé.", "trap": ["then", "speaks"], "alt": [] },
+        { "en": "Don't count your chickens before they hatch.", "fr": "Il ne faut pas vendre la peau de l'ours avant de l'avoir tué.", "trap": ["hatched", "chicken"], "alt": [] },
+        { "en": "The early bird catches the worm, so let's leave at dawn.", "fr": "L'avenir appartient à ceux qui se lèvent tôt, alors partons à l'aube.", "trap": ["catch", "lets"], "alt": [] }
+      ],
+      "grammar": [
+        { "type": "mcq", "q": "I can't ___ my brother's loud music anymore!", "choices": ["put up", "support", "put with", "put up with"], "answer": 3, "explain": "Supporter (endurer) = put up with, les trois mots. support veut dire soutenir." },
+        { "type": "mcq", "q": "Quel proverbe convient ? « Liam a promis cent fois de m'aider, mais il n'est jamais venu. »", "choices": ["Better late than never", "Actions speak louder than words", "The early bird catches the worm", "Every cloud has a silver lining"], "answer": 1, "explain": "Il promet sans agir : Actions speak louder than words." },
+        { "type": "mcq", "q": "This puzzle is hard, but I'll ___.", "choices": ["figure it out", "figure out it", "figure out", "out figure it"], "answer": 0, "explain": "Avec un pronom, il se place au milieu : figure it out." },
+        { "type": "mcq", "q": "Quel proverbe convient ? « Notre voyage a été annulé, mais on a découvert un musée génial dans notre propre ville. »", "choices": ["Don't count your chickens before they hatch", "Better late than never", "Every cloud has a silver lining", "Easier said than done"], "answer": 2, "explain": "Un malheur qui cache un avantage : Every cloud has a silver lining." },
+        { "type": "mcq", "q": "Don't ___ people just because they have less money than you.", "choices": ["look up to", "look after", "look for", "look down on"], "answer": 3, "explain": "Mépriser = look down on. look up to veut dire admirer." },
+        { "type": "mcq", "q": "Quel proverbe convient ? « Ta sœur se vante déjà de gagner le concours… qui n'a même pas commencé. »", "choices": ["Every cloud has a silver lining", "Better late than never", "Don't count your chickens before they hatch", "The early bird catches the worm"], "answer": 2, "explain": "Se vanter trop tôt : Don't count your chickens before they hatch." },
+        { "type": "mcq", "q": "I ___ an old photo of my grandparents while cleaning the basement.", "choices": ["came across", "ran into", "came up with", "stood out"], "answer": 0, "explain": "Trouver une chose par hasard : come across. run into, c'est pour croiser une personne." },
+        { "type": "fill", "q": "Who ___ this brilliant idea?", "hint": "come up with (passé)", "answer": ["came up with"], "explain": "come up with = trouver une idée. Au passé : came up with." },
+        { "type": "fill", "q": "Malik ___ his best friend over a silly video game.", "hint": "se brouiller avec (passé)", "answer": ["fell out with"], "explain": "fall out with = se brouiller avec. Au passé : fell out with." },
+        { "type": "fill", "q": "Unfortunately, the sequel didn't ___ our expectations.", "hint": "être à la hauteur de", "answer": ["live up to"], "explain": "live up to = être à la hauteur de." },
+        { "type": "fill", "q": "Dad is trying to ___ sugar.", "hint": "consommer moins de", "answer": ["cut down on", "cut back on"], "explain": "cut down on = réduire sa consommation de." },
+        { "type": "fill", "q": "The quiz ___ to be much easier than we thought.", "hint": "s'avérer (passé)", "answer": ["turned out"], "explain": "turn out = s'avérer. Au passé : turned out." },
+        { "type": "fill", "q": "He cheated on the test and ___ it!", "hint": "s'en tirer sans punition (passé)", "answer": ["got away with"], "explain": "get away with = s'en tirer sans punition. Au passé : got away with." },
+        { "type": "error", "q": "I can't put up for this noise anymore.", "wrong": 4, "fix": ["with"], "explain": "Supporter = put up with." },
+        { "type": "error", "q": "We ran into an old friend at the mall, so we ended up have lunch together.", "wrong": 13, "fix": ["having", "eating"], "explain": "end up + -ing : we ended up having lunch." },
+        { "type": "error", "q": "Better late that never!", "wrong": 2, "fix": ["than"], "explain": "Pour comparer : than. Better late than never." },
+        { "type": "error", "q": "I'm trying to cut down of junk food.", "wrong": 5, "fix": ["on"], "explain": "Le phrasal verb est cut down on." },
+        { "type": "error", "q": "The early bird catch the worm.", "wrong": 3, "fix": ["catches"], "explain": "The early bird = it : le verbe prend un -s → catches." }
+      ],
+      "reading": {
+        "title": "The Science Fair",
+        "text": "Sofia and Samuel had been best friends since kindergarten, so nobody expected them to fall out with each other two weeks before the science fair.\n\nIt started with a simple question: whose project was it, really? Sofia said that the idea of building a solar-powered fan had been hers. Samuel said that an idea was useless if nobody could make it work. Neither of them was willing to give up, and soon they weren't even sitting together at lunch.\n\nTheir teacher, who had seen this kind of thing before, didn't take sides. She simply reminded them that the project would not finish itself. “You can put up with each other for two more weeks,” she said with a smile, “or you can both start from scratch.”\n\nNeither of them wanted to start again. So, for a few days, they worked in silence. Then something unexpected happened. While looking for a missing screw, Sofia came across Samuel's notebook. On the first page, he had written: “Sofia's idea. Make it work!”\n\nShe felt terrible. Samuel had figured out how to make the fan spin, and he had only wanted some credit for that. He had never claimed that the idea was his. He had simply been tired of being ignored.\n\nThe next morning, Sofia brought him a hot chocolate to make up for her behaviour. Samuel looked surprised, then laughed. “Better late than never,” he said.\n\nTheir fan didn't win first prize. It ended up in third place, behind a robot and a volcano. But when they walked out of the gym together, laughing again like old times, they both knew they had won something more important.",
+        "questions": [
+          { "q": "Why did Sofia and Samuel stop talking to each other?", "choices": ["Samuel broke the fan.", "They argued about whose project it really was.", "Sofia wanted to change partners.", "Their teacher separated them."], "answer": 1 },
+          { "q": "What did the teacher do?", "choices": ["She took Sofia's side.", "She cancelled their project.", "She didn't take sides and reminded them to keep working.", "She gave them a new partner."], "answer": 2 },
+          { "q": "What did Sofia find in Samuel's notebook?", "choices": ["A note saying the idea was hers", "A drawing of a robot", "The missing screw", "A list of complaints about her"], "answer": 0 },
+          { "q": "Why did Sofia feel terrible?", "choices": ["She had lost the screw.", "Her fan stopped working.", "She had forgotten her notebook.", "She realized Samuel had never tried to take credit for her idea."], "answer": 3 },
+          { "q": "What does Samuel mean when he says “Better late than never”?", "choices": ["He is angry that Sofia was late for school.", "He accepts her apology, even though it came late.", "He wants another hot chocolate.", "He thinks the fair started too late."], "answer": 1 },
+          { "q": "What is the “something more important” that they won?", "choices": ["A trip to a science museum", "First prize", "A new robot", "Their friendship back"], "answer": 3 }
+        ]
+      }
+    },
+    {
+      "id": "12.4",
+      "title": "Le grand oral",
+      "titleEn": "Say It Right",
+      "goal": "Déjouer les pièges de prononciation de l'anglais et comprendre un long reportage audio.",
+      "lesson": [
+        {
+          "type": "p",
+          "text": "Dernière étape ! En anglais, l'orthographe et la prononciation ne s'entendent pas toujours très bien. Des lettres muettes, des mots qui sonnent pareil, des accents toniques qui changent le sens… Les connaître, c'est parler et écrire comme un vrai bilingue."
+        },
+        {
+          "type": "table",
+          "head": ["Mot", "Lettre muette", "Ça sonne à peu près comme"],
+          "rows": [
+            ["[[knife]]", "k", "« naïf »"],
+            ["[[knight]]", "k, gh", "« naït »"],
+            ["[[island]]", "s", "« aï-leund »"],
+            ["[[Wednesday]]", "d (et un e)", "« WENZ-dé »"],
+            ["[[comb]]", "b", "« kôm »"],
+            ["[[doubt]]", "b", "« daout »"],
+            ["[[listen]]", "t", "« LI-seun »"],
+            ["[[hour]]", "h", "« aou-eur »"],
+            ["[[honest]]", "h", "« O-nest »"],
+            ["[[receipt]]", "p", "« ri-SÎT »"]
+          ]
+        },
+        {
+          "type": "rule",
+          "title": "Les homophones : même son, sens différent",
+          "text": "[[knight]] (chevalier) / [[night]] (nuit). [[weather]] (météo) / [[whether]] (si). [[peace]] (paix) / [[piece]] (morceau). [[right]] (droite, correct) / [[write]] (écrire). [[hear]] (entendre) / [[here]] (ici). [[flour]] (farine) / [[flower]] (fleur). À l'oral, aucun problème ; à l'écrit, c'est le piège parfait !"
+        },
+        {
+          "type": "rule",
+          "title": "L'accent tonique qui change le sens",
+          "text": "Pour beaucoup de mots de deux syllabes, le **nom** a l'accent sur la **première** syllabe et le **verbe** sur la **deuxième** : [[a REcord]] (un disque, un record) / [[to reCORD]] (enregistrer). [[a PREsent]] (un cadeau) / [[to preSENT]] (présenter). [[an OBject]] (un objet) / [[to obJECT]] (s'opposer)."
+        },
+        {
+          "type": "table",
+          "head": ["Mot en -ough", "Ça sonne comme", "Sens"],
+          "rows": [
+            ["[[though]]", "« dzo »", "pourtant"],
+            ["[[through]]", "« srou »", "à travers"],
+            ["[[thought]]", "« sôt »", "pensé, une pensée"],
+            ["[[tough]]", "« teuf »", "dur, coriace"],
+            ["[[enough]]", "« i-NEUF »", "assez"],
+            ["[[cough]]", "« kof »", "toux, tousser"]
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "en": "I waited for an hour.", "fr": "J'ai attendu une heure." },
+            { "en": "I don't know whether the weather will be nice.", "fr": "Je ne sais pas si la météo sera belle." },
+            { "en": "Can I have a piece of cake?", "fr": "Est-ce que je peux avoir un morceau de gâteau ?" },
+            { "en": "We walked through the forest, though it was tough.", "fr": "On a marché à travers la forêt, même si c'était dur." },
+            { "en": "Please keep your receipt.", "fr": "Gardez votre reçu, s'il vous plaît." }
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "Piège de francophone : en anglais, le **h se prononce presque toujours** ([[house]], [[happy]], [[hockey]]) : ne l'avale pas ! Seuls quelques mots ont un h muet : [[hour]], [[honest]], [[honour]], [[heir]]. C'est pour ça qu'on dit [[an hour]] et [[an honest answer]], mais [[a house]]."
+        },
+        {
+          "type": "fun",
+          "text": "Le sais-tu ? Il y a très longtemps, on prononçait vraiment le k de [[knight]] et de [[knife]] ! Le son a disparu, mais l'orthographe est restée. Et [[Wednesday]] vient du vieil anglais : c'était « le jour de Woden », un dieu ancien. Voilà pourquoi il y a un d qu'on n'entend plus."
+        },
+        {
+          "type": "dialogue",
+          "title": "La répétition",
+          "lines": [
+            { "who": "Chloé", "en": "Can you listen to my presentation? I'm giving it on Wednesday.", "fr": "Peux-tu écouter ma présentation ? Je la fais mercredi." },
+            { "who": "Noah", "en": "Sure. But careful: the d in Wednesday is silent.", "fr": "Bien sûr. Mais attention : le d de Wednesday est muet." },
+            { "who": "Chloé", "en": "Seriously? Okay. Knights lived in castles, sometimes on an island.", "fr": "Sérieux ? D'accord. Les chevaliers vivaient dans des châteaux, parfois sur une île." },
+            { "who": "Noah", "en": "Good, but no k in knight and no s in island!", "fr": "Bien, mais pas de k dans knight et pas de s dans island !" },
+            { "who": "Chloé", "en": "This is tough. I thought I knew all this.", "fr": "C'est dur. Je pensais que je savais tout ça." },
+            { "who": "Noah", "en": "Honestly, you're doing great. Just record yourself and listen.", "fr": "Honnêtement, tu te débrouilles super bien. Enregistre-toi et écoute." },
+            { "who": "Chloé", "en": "Good idea. I'll record myself tonight and keep working on it all weekend.", "fr": "Bonne idée. Je vais m'enregistrer ce soir et continuer à travailler toute la fin de semaine." }
+          ]
+        }
+      ],
+      "vocab": [
+        { "en": "knife", "fr": "couteau", "alt": [], "ex": "Please pass me the butter knife." },
+        { "en": "knight", "fr": "chevalier", "alt": [], "ex": "The knight lived in a stone castle." },
+        { "en": "island", "fr": "île", "alt": [], "ex": "We took a boat to the island." },
+        { "en": "Wednesday", "fr": "mercredi", "alt": [], "ex": "We have gym class every Wednesday." },
+        { "en": "comb", "fr": "peigne", "alt": [], "ex": "I can't find my comb." },
+        { "en": "doubt", "fr": "doute, douter", "alt": [], "ex": "I doubt that it will snow today." },
+        { "en": "listen", "fr": "écouter", "alt": [], "ex": "Listen carefully to the instructions." },
+        { "en": "hour", "fr": "heure (soixante minutes)", "alt": [], "ex": "The movie lasted two hours." },
+        { "en": "honest", "fr": "honnête", "alt": [], "ex": "Thank you for your honest answer." },
+        { "en": "receipt", "fr": "reçu (de caisse)", "alt": [], "ex": "Keep the receipt in case you need to return it." },
+        { "en": "weather", "fr": "météo, temps qu'il fait", "alt": [], "ex": "The weather is perfect for skating." },
+        { "en": "whether", "fr": "si (whether… or not)", "alt": [], "ex": "I don't know whether he is coming or not." },
+        { "en": "peace", "fr": "paix", "alt": [], "ex": "I just want some peace and quiet." },
+        { "en": "piece", "fr": "morceau", "alt": [], "ex": "Can I have a piece of pie?" },
+        { "en": "flour", "fr": "farine", "alt": [], "ex": "We need more flour for the pancakes." },
+        { "en": "though", "fr": "pourtant, quand même", "alt": [], "ex": "It was cold. We had fun, though." },
+        { "en": "through", "fr": "à travers", "alt": [], "ex": "The train goes through a long tunnel." },
+        { "en": "tough", "fr": "dur, coriace", "alt": [], "ex": "The final exam was tough." },
+        { "en": "cough", "fr": "toux, tousser", "alt": [], "ex": "My little sister has a bad cough." },
+        { "en": "record", "fr": "enregistrer (verbe, accent sur CORD)", "alt": [], "ex": "Can you record my speech?" }
+      ],
+      "sentences": [
+        { "en": "I wonder whether the weather will be nice on Wednesday.", "fr": "Je me demande si la météo sera belle mercredi.", "trap": ["wether", "Wensday"], "alt": [] },
+        { "en": "Can I have a piece of cake and some peace and quiet?", "fr": "Est-ce que je peux avoir un morceau de gâteau et un peu de tranquillité ?", "trap": ["peice", "peaces"], "alt": ["Can I have some peace and quiet and a piece of cake?"] },
+        { "en": "Honestly, it took me an hour to find my receipt.", "fr": "Honnêtement, ça m'a pris une heure pour trouver mon reçu.", "trap": ["a", "receit"], "alt": ["It took me an hour to find my receipt, honestly."] },
+        { "en": "Listen carefully: the island is only reachable by boat.", "fr": "Écoute bien : on ne peut aller sur l'île qu'en bateau.", "trap": ["lissen", "iland"], "alt": ["Listen carefully: the island is reachable only by boat."] },
+        { "en": "Although it was tough, we walked through the storm.", "fr": "Même si c'était dur, nous avons marché à travers la tempête.", "trap": ["threw", "tought"], "alt": ["We walked through the storm, although it was tough."] },
+        { "en": "I thought I had a cough, but it was only allergies.", "fr": "Je pensais que j'avais une toux, mais c'était seulement des allergies.", "trap": ["taught", "coff"], "alt": [] },
+        { "en": "We need two cups of flour for this recipe.", "fr": "Il nous faut deux tasses de farine pour cette recette.", "trap": ["flower", "cup"], "alt": ["For this recipe we need two cups of flour."] },
+        { "en": "I doubt that he will record the whole concert.", "fr": "Je doute qu'il enregistre tout le concert.", "trap": ["dout", "records"], "alt": [] },
+        { "en": "Can you hear me from over here?", "fr": "M'entends-tu d'ici ?", "trap": ["heard", "ear"], "alt": [] },
+        { "en": "She is honest enough to admit her mistakes.", "fr": "Elle est assez honnête pour admettre ses erreurs.", "trap": ["enought", "honnest"], "alt": [] },
+        { "en": "The knight rode through the night to reach the castle.", "fr": "Le chevalier a chevauché toute la nuit pour atteindre le château.", "trap": ["threw", "nite"], "alt": [] }
+      ],
+      "grammar": [
+        { "type": "mcq", "q": "Dans quel mot le k est-il muet ?", "choices": ["kitchen", "kangaroo", "knife", "kick"], "answer": 2, "explain": "Devant un n, le k est muet : knife se dit « naïf »." },
+        { "type": "mcq", "q": "Quelle lettre est muette dans island ?", "choices": ["i", "s", "l", "d"], "answer": 1, "explain": "island se dit « aï-leund » : le s est muet." },
+        { "type": "mcq", "q": "Quel mot rime avec tough ?", "choices": ["enough", "though", "through", "cough"], "answer": 0, "explain": "tough (« teuf ») rime avec enough (« i-NEUF »). Les autres -ough sonnent tous différemment !" },
+        { "type": "mcq", "q": "Dans « Can you record my speech? », où est l'accent de record ?", "choices": ["Sur la première syllabe : REcord", "Sur la deuxième syllabe : reCORD", "Sur les deux syllabes de façon égale"], "answer": 1, "explain": "Ici, record est un verbe (enregistrer) : l'accent va sur la deuxième syllabe, reCORD." },
+        { "type": "mcq", "q": "Quel mot commence par un h muet ?", "choices": ["house", "happy", "hockey", "honest"], "answer": 3, "explain": "honest se dit « O-nest ». Dans les autres mots, le h se prononce." },
+        { "type": "mcq", "q": "Quelle paire n'est PAS une paire d'homophones ?", "choices": ["knight / night", "though / through", "peace / piece", "weather / whether"], "answer": 1, "explain": "though (« dzo ») et through (« srou ») ne se prononcent pas pareil. Les autres paires, oui !" },
+        { "type": "mcq", "q": "Quel mot a un b muet ?", "choices": ["bubble", "about", "doubt", "baby"], "answer": 2, "explain": "doubt se dit « daout » : le b est muet." },
+        { "type": "fill", "q": "I don't know ___ we'll go skating or not.", "hint": "si (weather ou whether ?)", "answer": ["whether"], "explain": "si = whether. weather, c'est la météo." },
+        { "type": "fill", "q": "The ___ forecast says it will snow tonight.", "hint": "météo (weather ou whether ?)", "answer": ["weather"], "explain": "La météo = the weather." },
+        { "type": "fill", "q": "Can I have a ___ of pizza?", "hint": "morceau (peace ou piece ?)", "answer": ["piece"], "explain": "Un morceau = a piece. peace, c'est la paix." },
+        { "type": "fill", "q": "Keep your ___ in case you want to return the jacket.", "hint": "reçu", "answer": ["receipt"], "explain": "Un reçu = a receipt (le p est muet !)." },
+        { "type": "fill", "q": "We walked ___ the forest to reach the lake.", "hint": "à travers (though, through ou thought ?)", "answer": ["through"], "explain": "À travers = through." },
+        { "type": "fill", "q": "It was raining. We went outside, ___.", "hint": "quand même (though, through ou tough ?)", "answer": ["though"], "explain": "En fin de phrase, though = quand même, pourtant." },
+        { "type": "error", "q": "I have a terrible coff and a sore throat.", "wrong": 4, "fix": ["cough"], "explain": "La toux s'écrit cough, même si ça se prononce « kof »." },
+        { "type": "error", "q": "We waited for a hour at the dentist.", "wrong": 3, "fix": ["an"], "explain": "Le h de hour est muet : le mot commence par un son de voyelle → an hour." },
+        { "type": "error", "q": "Can you right your name on the form?", "wrong": 2, "fix": ["write"], "explain": "Écrire = write. right veut dire droite ou correct." },
+        { "type": "error", "q": "My mom bought a bag of flower to bake a cake.", "wrong": 6, "fix": ["flour"], "explain": "La farine = flour. flower, c'est une fleur !" },
+        { "type": "error", "q": "I can't here you because the music is too loud.", "wrong": 2, "fix": ["hear"], "explain": "Entendre = hear. here veut dire ici." }
+      ],
+      "reading": {
+        "title": "Word Nerds: Episode Twelve",
+        "text": "Maya: Welcome back to Word Nerds, the podcast where two students from Ottawa try to figure out why English is so strange. I'm Maya.\n\nEthan: And I'm Ethan. Today's question comes from a listener in Gatineau named Léa. She writes: “Why is there a b in doubt if nobody pronounces it?”\n\nMaya: Great question, Léa, and the answer is a little surprising. Hundreds of years ago, English borrowed this word from French, and it was spelled without any b at all. Later, some scholars decided that English words should look more like Latin. The Latin word had a b, so they added one. Nobody ever started pronouncing it, though.\n\nEthan: So the b is basically a decoration?\n\nMaya: Pretty much. The same thing happened with receipt, which got its p from Latin. And island got an s because people thought it was related to the word isle. It isn't, by the way.\n\nEthan: Okay, but what about knight? Was the k always silent?\n\nMaya: No! Centuries ago, people really pronounced it. Over time, the sound disappeared, but the spelling stayed the same.\n\nEthan: That's the real problem, isn't it? Pronunciation kept changing, but spelling became fixed once books started being printed.\n\nMaya: Exactly. Printing helped make spelling stable, but people never stopped changing the way they talked. That's why though, through, tough and cough look alike but sound completely different.\n\nEthan: So, Maya, what's the lesson for our listeners?\n\nMaya: Don't trust your eyes. Listen to real speakers, and when in doubt, check a dictionary. And Léa, you were right to doubt that b!\n\nEthan: Thanks for listening, everyone. Next week, we'll find out why Wednesday is so hard to spell.",
+        "questions": [
+          { "q": "Why did scholars add a b to doubt?", "choices": ["To make it easier to pronounce", "Because the French word had a b", "To make it look more like the Latin word", "Because printers made a mistake"], "answer": 2 },
+          { "q": "According to Maya, why does island have an s?", "choices": ["People wrongly thought it was related to isle.", "The s used to be pronounced.", "It was added by printers.", "It comes from the Latin word for water."], "answer": 0 },
+          { "q": "Why do though, through, tough and cough look alike but sound different?", "choices": ["They come from four different languages.", "Scholars invented them as a joke.", "Pronunciation kept changing after spelling became fixed.", "Printers changed their spelling every year."], "answer": 2 },
+          { "q": "What does Maya mean by “you were right to doubt that b”?", "choices": ["Léa should start pronouncing the b.", "Léa was right to suspect that the b has no role in pronunciation.", "Léa made a spelling mistake in her question.", "The b will soon be removed from dictionaries."], "answer": 1 },
+          { "q": "What can we guess about the next episode?", "choices": ["It will be the last episode.", "It will be about French words only.", "Léa will be a guest.", "It will explain the strange spelling of a day of the week."], "answer": 3 },
+          { "q": "What is the main message of the episode?", "choices": ["English spelling often hides history, so don't rely only on how a word looks.", "English spelling is random and has no history.", "Latin is easier than English.", "Silent letters should be pronounced carefully."], "answer": 0 }
+        ]
+      }
+    }
+  ]
+}

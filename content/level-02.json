@@ -1,0 +1,371 @@
+{
+  "id": 2,
+  "cefr": "A1",
+  "title": "Mon monde",
+  "titleEn": "My World",
+  "intro": "Dis comment tu te sens, parle des animaux et de ton corps, décris les gens, et donne la date et l'heure comme un pro.",
+  "boss": {
+    "name": "Le Roi To-Be",
+    "taunt": "I am the King ! You are… petit ! Je règne sur am, is et are, et personne ne m'a jamais détrôné. Essaie donc !",
+    "defeat": "I am… not the King anymore ? Bravo, tu connais to be mieux que moi !"
+  },
+  "units": [
+    {
+      "id": "2.1",
+      "title": "Le verbe to be",
+      "titleEn": "I Am Hungry!",
+      "goal": "Dire comment tu te sens avec to be, à la forme positive, négative et en question.",
+      "lesson": [
+        { "type": "p", "text": "Le verbe [[to be]] (être), c'est le roi de l'anglais. Tu le connais déjà un peu : [[I am]], [[you are]], [[she is]]. Aujourd'hui, tu le maîtrises en entier, avec [[we]] (nous) et [[they]] (ils, elles)." },
+        { "type": "table", "head": ["Sujet", "Positif", "Négatif", "Question"], "rows": [
+          ["I", "[[I am]] / [[I'm]]", "[[I'm not]]", "[[Am I…?]]"],
+          ["you", "[[you are]] / [[you're]]", "[[you aren't]]", "[[Are you…?]]"],
+          ["he / she / it", "[[he is]] / [[he's]]", "[[he isn't]]", "[[Is he…?]]"],
+          ["we", "[[we are]] / [[we're]]", "[[we aren't]]", "[[Are we…?]]"],
+          ["they", "[[they are]] / [[they're]]", "[[they aren't]]", "[[Are they…?]]"]
+        ] },
+        { "type": "rule", "title": "Négation et question", "text": "Pour dire non, ajoute [[not]] après to be : [[She is not sad]] → [[She isn't sad]]. Attention : avec I, c'est toujours [[I'm not]]. Pour poser une question, inverse : [[You are tired]] → [[Are you tired?]] Réponse courte : [[Yes, I am.]] / [[No, I'm not.]] / [[Yes, she is.]] / [[No, he isn't.]]" },
+        { "type": "rule", "title": "Avoir faim = BE hungry", "text": "En anglais, on **est** affamé, on **est** assoiffé : [[I'm hungry]] (j'ai faim), [[I'm thirsty]] (j'ai soif), [[I'm cold]] (j'ai froid), [[I'm hot]] (j'ai chaud), [[I'm scared]] (j'ai peur)." },
+        { "type": "examples", "items": [
+          { "en": "Mom, I'm hungry!", "fr": "Maman, j'ai faim !" },
+          { "en": "We are cold and tired.", "fr": "Nous avons froid et nous sommes fatigués." },
+          { "en": "Are you thirsty? — Yes, I am.", "fr": "As-tu soif ? — Oui." },
+          { "en": "Is he sick? — No, he isn't.", "fr": "Est-il malade ? — Non." },
+          { "en": "They aren't late.", "fr": "Ils ne sont pas en retard." }
+        ] },
+        { "type": "tip", "text": "Trois pièges de francophone ! 1) [[I have hungry]], [[I have cold]] : NON ! C'est [[I'm hungry]], [[I'm cold]]. 2) Pas de contraction à la fin d'une réponse courte : [[Yes, I am.]], jamais « Yes, I'm. » 3) [[I amn't]] n'existe pas : on dit [[I'm not]]." },
+        { "type": "dialogue", "title": "Après la pratique de soccer", "lines": [
+          { "who": "Mom", "en": "Hi, Ethan! Are you tired?", "fr": "Salut, Ethan ! Es-tu fatigué ?" },
+          { "who": "Ethan", "en": "Yes, I am. And I'm hungry!", "fr": "Oui. Et j'ai faim !" },
+          { "who": "Mom", "en": "Is Malik hungry too?", "fr": "Est-ce que Malik a faim aussi ?" },
+          { "who": "Ethan", "en": "No, he isn't. He's thirsty.", "fr": "Non. Il a soif." },
+          { "who": "Mom", "en": "Are you cold?", "fr": "Avez-vous froid ?" },
+          { "who": "Ethan", "en": "No, we aren't cold. We're hot!", "fr": "Non, on n'a pas froid. On a chaud !" }
+        ] },
+        { "type": "fun", "text": "Le sais-tu ? [[to be]] est le verbe le plus utilisé de la langue anglaise. Tu viens d'apprendre le champion !" }
+      ],
+      "vocab": [
+        { "en": "happy", "fr": "content, heureux", "alt": ["glad"], "ex": "We are happy!" },
+        { "en": "sad", "fr": "triste", "alt": [], "ex": "She isn't sad." },
+        { "en": "tired", "fr": "fatigué", "alt": [], "ex": "Are you tired?" },
+        { "en": "hungry", "fr": "affamé (avoir faim)", "alt": [], "ex": "I'm so hungry!" },
+        { "en": "thirsty", "fr": "assoiffé (avoir soif)", "alt": [], "ex": "Are you thirsty?" },
+        { "en": "cold", "fr": "froid (avoir froid)", "alt": [], "ex": "I'm cold." },
+        { "en": "hot", "fr": "chaud (avoir chaud)", "alt": [], "ex": "We're hot!" },
+        { "en": "angry", "fr": "fâché, en colère", "alt": ["mad"], "ex": "Is your brother angry?" },
+        { "en": "scared", "fr": "effrayé (avoir peur)", "alt": ["afraid"], "ex": "I'm not scared!" },
+        { "en": "bored", "fr": "qui s'ennuie (s'ennuyer)", "alt": [], "ex": "My sister is bored." },
+        { "en": "sick", "fr": "malade", "alt": ["ill"], "ex": "Is he sick?" },
+        { "en": "ready", "fr": "prêt", "alt": [], "ex": "We are ready!" },
+        { "en": "late", "fr": "en retard", "alt": [], "ex": "They aren't late." },
+        { "en": "early", "fr": "en avance, tôt", "alt": [], "ex": "You're early, Liam!" },
+        { "en": "we", "fr": "nous", "alt": [], "ex": "We are cold." },
+        { "en": "they", "fr": "ils, elles", "alt": [], "ex": "They are tired." }
+      ],
+      "sentences": [
+        { "en": "Mom, I'm hungry!", "fr": "Maman, j'ai faim !", "trap": ["have"], "alt": [] },
+        { "en": "We are cold and tired.", "fr": "Nous avons froid et nous sommes fatigués.", "trap": ["have"], "alt": [] },
+        { "en": "She isn't sad.", "fr": "Elle n'est pas triste.", "trap": ["aren't"], "alt": [] },
+        { "en": "Are you thirsty?", "fr": "As-tu soif ?", "trap": ["Have"], "alt": [] },
+        { "en": "No, he isn't sick.", "fr": "Non, il n'est pas malade.", "trap": ["aren't"], "alt": [] },
+        { "en": "They aren't late.", "fr": "Ils ne sont pas en retard.", "trap": ["isn't"], "alt": [] },
+        { "en": "I'm not scared!", "fr": "Je n'ai pas peur !", "trap": ["have"], "alt": [] },
+        { "en": "Is your brother angry?", "fr": "Ton frère est-il fâché ?", "trap": ["Are"], "alt": [] },
+        { "en": "We are ready!", "fr": "Nous sommes prêts !", "trap": ["is"], "alt": [] },
+        { "en": "My sister is bored.", "fr": "Ma sœur s'ennuie.", "trap": ["has"], "alt": [] },
+        { "en": "You're early, Liam!", "fr": "Tu es en avance, Liam !", "trap": ["is"], "alt": [] },
+        { "en": "Are they happy?", "fr": "Sont-ils contents ?", "trap": ["Is"], "alt": [] }
+      ],
+      "grammar": [
+        { "type": "mcq", "q": "Comment dit-on « J'ai faim » ?", "choices": ["I have hungry.", "I'm hungry.", "I have hunger."], "answer": 1, "explain": "Avoir faim = be hungry : I'm hungry." },
+        { "type": "mcq", "q": "They ___ tired.", "choices": ["is", "am", "are"], "answer": 2, "explain": "Avec they, c'est are." },
+        { "type": "mcq", "q": "Are you ready? — Yes, ___", "choices": ["I'm.", "I am.", "I are."], "answer": 1, "explain": "Pas de contraction à la fin d'une réponse courte : Yes, I am." },
+        { "type": "mcq", "q": "___ she sick?", "choices": ["Is", "Are", "Am"], "answer": 0, "explain": "Avec she, c'est is. En question, is passe devant : Is she sick?" },
+        { "type": "mcq", "q": "Comment dit-on « Nous n'avons pas froid » ?", "choices": ["We haven't cold.", "We isn't cold.", "We aren't cold."], "answer": 2, "explain": "Avoir froid = be cold. Avec we : we aren't." },
+        { "type": "mcq", "q": "Is he hot? — No, he ___", "choices": ["aren't.", "isn't.", "not."], "answer": 1, "explain": "Avec he : is not = isn't. No, he isn't." },
+        { "type": "mcq", "q": "Comment dit-on « As-tu peur ? » ?", "choices": ["Have you scared?", "Is you scared?", "Are you scared?"], "answer": 2, "explain": "Avoir peur = be scared. Question avec you : Are you scared?" },
+        { "type": "fill", "q": "We ___ late!", "hint": "to be", "answer": ["are"], "explain": "Avec we, c'est are : We are late!" },
+        { "type": "fill", "q": "I ___ thirsty.", "hint": "to be", "answer": ["am"], "explain": "J'ai soif = I am thirsty." },
+        { "type": "fill", "q": "She ___ angry.", "hint": "to be, négatif", "answer": ["isn't"], "explain": "Avec she : is not = isn't." },
+        { "type": "fill", "q": "They ___ ready.", "hint": "to be, négatif", "answer": ["aren't"], "explain": "Avec they : are not = aren't." },
+        { "type": "fill", "q": "I'm ___ hungry.", "hint": "pas", "answer": ["not"], "explain": "Avec I : I'm not. « I amn't » n'existe pas." },
+        { "type": "fill", "q": "___ you cold?", "hint": "to be", "answer": ["Are"], "explain": "Question avec you : Are you cold? (As-tu froid ?)" },
+        { "type": "error", "q": "Mom, I have cold!", "wrong": 2, "fix": ["am"], "explain": "J'ai froid = I am cold. On est froid en anglais !" },
+        { "type": "error", "q": "We is ready.", "wrong": 1, "fix": ["are"], "explain": "Avec we, c'est are." },
+        { "type": "error", "q": "Emma and Zoé is late.", "wrong": 3, "fix": ["are"], "explain": "Emma et Zoé, c'est deux personnes (they) : are." },
+        { "type": "error", "q": "He aren't scared.", "wrong": 1, "fix": ["isn't"], "explain": "Avec he, la négation est isn't." },
+        { "type": "error", "q": "Is they bored?", "wrong": 0, "fix": ["Are"], "explain": "Avec they, c'est are : Are they bored?" }
+      ]
+    },
+    {
+      "id": "2.2",
+      "title": "Animaux et pluriel",
+      "titleEn": "Two Foxes, Three Mice",
+      "goal": "Nommer les animaux et mettre les mots au pluriel, même les irréguliers.",
+      "lesson": [
+        { "type": "p", "text": "Bienvenue dans la forêt canadienne ! Tu vas croiser des [[beavers]] (castors), des [[moose]] (orignaux) et des [[foxes]] (renards). Pour dire « je vois », c'est [[I see]] : [[I see a bear!]]" },
+        { "type": "rule", "title": "Le pluriel normal", "text": "La plupart du temps, on ajoute **-s** : [[dog]] → [[dogs]], [[cat]] → [[cats]]. Après s, x, ch ou sh, on ajoute **-es** : [[fox]] → [[foxes]]. Consonne + y devient **-ies** : [[baby]] → [[babies]], [[family]] → [[families]]. Certains mots en f deviennent **-ves** : [[wolf]] → [[wolves]]." },
+        { "type": "table", "head": ["Un", "Plusieurs", "Le truc"], "rows": [
+          ["[[a mouse]]", "[[mice]]", "change complètement"],
+          ["[[a child]]", "[[children]]", "enfants"],
+          ["[[a man]]", "[[men]]", "hommes"],
+          ["[[a woman]]", "[[women]]", "femmes"],
+          ["[[a sheep]]", "[[sheep]]", "ne change pas"],
+          ["[[a fish]]", "[[fish]]", "ne change pas"],
+          ["[[a moose]]", "[[moose]]", "ne change pas"]
+        ] },
+        { "type": "examples", "items": [
+          { "en": "I have two dogs.", "fr": "J'ai deux chiens." },
+          { "en": "The foxes are hungry.", "fr": "Les renards ont faim." },
+          { "en": "The wolves are angry.", "fr": "Les loups sont fâchés." },
+          { "en": "I see two moose!", "fr": "Je vois deux orignaux !" },
+          { "en": "The children are happy.", "fr": "Les enfants sont contents." }
+        ] },
+        { "type": "tip", "text": "Les francophones ajoutent des s partout ! Mais on ne dit **jamais** « mouses », « childs », « sheeps » ou « mans ». On dit [[mice]], [[children]], [[sheep]], [[men]]. Et au pluriel, le verbe change aussi : [[The dog is]] → [[The dogs are]]." },
+        { "type": "dialogue", "title": "Au parc de la Gatineau", "lines": [
+          { "who": "Maya", "en": "Look! I see a beaver!", "fr": "Regarde ! Je vois un castor !" },
+          { "who": "Liam", "en": "Two beavers! And three ducks!", "fr": "Deux castors ! Et trois canards !" },
+          { "who": "Maya", "en": "Are the ducks cold?", "fr": "Les canards ont-ils froid ?" },
+          { "who": "Liam", "en": "No, they aren't. They're happy.", "fr": "Non. Ils sont contents." },
+          { "who": "Maya", "en": "Wow! I see two moose!", "fr": "Wow ! Je vois deux orignaux !" },
+          { "who": "Liam", "en": "Moose? I'm scared!", "fr": "Des orignaux ? J'ai peur !" }
+        ] },
+        { "type": "fun", "text": "Le sais-tu ? Le castor est un emblème officiel du Canada. Tu le vois même sur la pièce de cinq cents !" }
+      ],
+      "vocab": [
+        { "en": "dog", "fr": "chien", "alt": [], "ex": "I have two dogs." },
+        { "en": "cat", "fr": "chat", "alt": [], "ex": "My cat is white." },
+        { "en": "bird", "fr": "oiseau", "alt": [], "ex": "The birds are happy." },
+        { "en": "horse", "fr": "cheval", "alt": [], "ex": "I see three horses." },
+        { "en": "cow", "fr": "vache", "alt": [], "ex": "The cows are hungry." },
+        { "en": "rabbit", "fr": "lapin", "alt": ["bunny"], "ex": "My rabbits are white." },
+        { "en": "duck", "fr": "canard", "alt": [], "ex": "Are the ducks cold?" },
+        { "en": "bear", "fr": "ours", "alt": [], "ex": "I see a bear!" },
+        { "en": "wolf", "fr": "loup", "alt": [], "ex": "The wolves are angry." },
+        { "en": "fox", "fr": "renard", "alt": [], "ex": "The foxes are hungry." },
+        { "en": "mouse", "fr": "souris", "alt": [], "ex": "I see two mice." },
+        { "en": "sheep", "fr": "mouton", "alt": [], "ex": "Ten sheep are tired." },
+        { "en": "fish", "fr": "poisson", "alt": [], "ex": "I have three fish." },
+        { "en": "beaver", "fr": "castor", "alt": [], "ex": "Is the beaver sad?" },
+        { "en": "moose", "fr": "orignal", "alt": [], "ex": "I see two moose!" },
+        { "en": "child", "fr": "enfant", "alt": ["kid"], "ex": "The children are happy." }
+      ],
+      "sentences": [
+        { "en": "I have two dogs.", "fr": "J'ai deux chiens.", "trap": ["dog", "am"], "alt": [] },
+        { "en": "The foxes are hungry.", "fr": "Les renards ont faim.", "trap": ["foxs", "have"], "alt": [] },
+        { "en": "The wolves are angry.", "fr": "Les loups sont fâchés.", "trap": ["wolfs"], "alt": [] },
+        { "en": "Two mice are hungry.", "fr": "Deux souris ont faim.", "trap": ["mouses"], "alt": [] },
+        { "en": "I have three fish.", "fr": "J'ai trois poissons.", "trap": ["fishs"], "alt": [] },
+        { "en": "The children are happy.", "fr": "Les enfants sont contents.", "trap": ["childs", "is"], "alt": [] },
+        { "en": "Ten sheep are tired.", "fr": "Dix moutons sont fatigués.", "trap": ["sheeps"], "alt": [] },
+        { "en": "Is the beaver sad?", "fr": "Le castor est-il triste ?", "trap": ["Are"], "alt": [] },
+        { "en": "I see two moose!", "fr": "Je vois deux orignaux !", "trap": ["mooses"], "alt": [] },
+        { "en": "My rabbits are white.", "fr": "Mes lapins sont blancs.", "trap": ["whites"], "alt": [] },
+        { "en": "The women are late.", "fr": "Les femmes sont en retard.", "trap": ["womans", "is"], "alt": [] },
+        { "en": "Are the babies cold?", "fr": "Les bébés ont-ils froid ?", "trap": ["babys", "Is"], "alt": [] }
+      ],
+      "grammar": [
+        { "type": "mcq", "q": "one mouse, two ___", "choices": ["mouses", "mice", "mices"], "answer": 1, "explain": "Mouse est irrégulier : one mouse, two mice." },
+        { "type": "mcq", "q": "one child, three ___", "choices": ["childs", "childrens", "children"], "answer": 2, "explain": "Child est irrégulier : children (déjà pluriel, sans s)." },
+        { "type": "mcq", "q": "one wolf, two ___", "choices": ["wolves", "wolfs", "wolfes"], "answer": 0, "explain": "Wolf → wolves : le f devient -ves." },
+        { "type": "mcq", "q": "one baby, two ___", "choices": ["babys", "babyes", "babies"], "answer": 2, "explain": "Consonne + y → -ies : babies." },
+        { "type": "mcq", "q": "one sheep, five ___", "choices": ["sheep", "sheeps", "sheepes"], "answer": 0, "explain": "Sheep ne change pas au pluriel : five sheep." },
+        { "type": "mcq", "q": "The bears ___ hungry.", "choices": ["is", "are", "am"], "answer": 1, "explain": "Bears est au pluriel (they), donc are." },
+        { "type": "fill", "q": "one fox, two ___", "hint": "fox", "answer": ["foxes"], "explain": "Après x, on ajoute -es : foxes." },
+        { "type": "fill", "q": "one woman, two ___", "hint": "woman", "answer": ["women"], "explain": "Woman → women : le a devient e." },
+        { "type": "fill", "q": "one family, two ___", "hint": "family", "answer": ["families"], "explain": "Consonne + y → -ies : families." },
+        { "type": "fill", "q": "one man, three ___", "hint": "man", "answer": ["men"], "explain": "Man → men. Jamais « mans »." },
+        { "type": "fill", "q": "one fish, four ___", "hint": "poisson, au pluriel", "answer": ["fish"], "explain": "Fish ne change pas : four fish." },
+        { "type": "fill", "q": "one moose, two ___", "hint": "orignal, au pluriel", "answer": ["moose"], "explain": "Moose ne change pas au pluriel : two moose." },
+        { "type": "error", "q": "I have two rabbit.", "wrong": 3, "fix": ["rabbits"], "explain": "Deux lapins : on ajoute -s, rabbits." },
+        { "type": "error", "q": "The childs are happy.", "wrong": 1, "fix": ["children"], "explain": "Child → children, jamais « childs »." },
+        { "type": "error", "q": "Three wolfs are hungry.", "wrong": 1, "fix": ["wolves"], "explain": "Wolf → wolves." },
+        { "type": "error", "q": "I see two mouses.", "wrong": 3, "fix": ["mice"], "explain": "Mouse → mice." },
+        { "type": "error", "q": "The ducks is cold.", "wrong": 2, "fix": ["are"], "explain": "Plusieurs canards (they) : are." },
+        { "type": "error", "q": "Ten sheeps are tired.", "wrong": 1, "fix": ["sheep"], "explain": "Sheep ne prend jamais de s." }
+      ]
+    },
+    {
+      "id": "2.3",
+      "title": "Le corps et les descriptions",
+      "titleEn": "Long Hair, Big Feet",
+      "goal": "Nommer les parties du corps et décrire quelqu'un avec have et has.",
+      "lesson": [
+        { "type": "p", "text": "Pour décrire une personne, il te faut son corps : [[head]] (tête), [[eyes]] (yeux), [[nose]] (nez), [[mouth]] (bouche), [[hair]] (cheveux)… et des adjectifs comme [[tall]] (grand), [[long]], [[curly]] (frisé)." },
+        { "type": "table", "head": ["Sujet", "avoir", "Exemple"], "rows": [
+          ["I / you / we / they", "[[have]]", "[[I have brown eyes.]]"],
+          ["he / she / it", "[[has]]", "[[She has blue eyes.]]"]
+        ] },
+        { "type": "rule", "title": "Décrire en anglais", "text": "« Elle a les yeux bleus » se dit [[She has blue eyes.]] Trois secrets : 1) **pas de the** ; 2) l'adjectif **avant** le nom ; 3) **pas de s** sur l'adjectif. Si tu as deux adjectifs, la taille passe avant la couleur : [[long brown hair]]." },
+        { "type": "rule", "title": "Pluriels du corps", "text": "[[foot]] → [[feet]] (pieds) et [[tooth]] → [[teeth]] (dents) sont irréguliers. Et [[hair]] (les cheveux) reste **sans s** : [[She has long hair.]]" },
+        { "type": "examples", "items": [
+          { "en": "She has blue eyes.", "fr": "Elle a les yeux bleus." },
+          { "en": "I have long brown hair.", "fr": "J'ai de longs cheveux bruns." },
+          { "en": "He has big feet.", "fr": "Il a de grands pieds." },
+          { "en": "My brother is tall.", "fr": "Mon frère est grand." },
+          { "en": "Maya has short curly hair.", "fr": "Maya a les cheveux courts et frisés." }
+        ] },
+        { "type": "tip", "text": "Piège ! On ne dit pas « She has the eyes blue » ni « long hairs ». On dit [[She has blue eyes]] et [[long hair]]. Et avec he, she, it : [[has]], jamais « have ». Pour une personne, « grand » = [[tall]] et « petit » = [[short]]. Pour une chose : [[big]] et [[small]]." },
+        { "type": "dialogue", "title": "Qui est-ce ?", "lines": [
+          { "who": "Priya", "en": "Is he your brother?", "fr": "C'est ton frère ?" },
+          { "who": "Samuel", "en": "No. My brother is tall.", "fr": "Non. Mon frère est grand." },
+          { "who": "Priya", "en": "And curly hair?", "fr": "Et les cheveux frisés ?" },
+          { "who": "Samuel", "en": "Yes, he has short curly hair and brown eyes.", "fr": "Oui, il a les cheveux courts et frisés et les yeux bruns." },
+          { "who": "Priya", "en": "And big feet?", "fr": "Et de grands pieds ?" },
+          { "who": "Samuel", "en": "Yes! He has very big feet!", "fr": "Oui ! Il a de très grands pieds !" }
+        ] }
+      ],
+      "vocab": [
+        { "en": "head", "fr": "tête", "alt": [], "ex": "My head is big." },
+        { "en": "eye", "fr": "œil (les yeux)", "alt": [], "ex": "She has blue eyes." },
+        { "en": "nose", "fr": "nez", "alt": [], "ex": "Grandpa has a long nose." },
+        { "en": "mouth", "fr": "bouche", "alt": [], "ex": "Your mouth is big!" },
+        { "en": "hair", "fr": "cheveux", "alt": [], "ex": "I have long hair." },
+        { "en": "hand", "fr": "main", "alt": [], "ex": "We have two hands." },
+        { "en": "leg", "fr": "jambe", "alt": [], "ex": "My legs are tired." },
+        { "en": "foot", "fr": "pied", "alt": [], "ex": "He has big feet." },
+        { "en": "tooth", "fr": "dent", "alt": [], "ex": "My teeth are white." },
+        { "en": "tall", "fr": "grand (une personne)", "alt": [], "ex": "My brother is tall." },
+        { "en": "short", "fr": "court ; petit (une personne)", "alt": [], "ex": "She has short hair." },
+        { "en": "long", "fr": "long", "alt": [], "ex": "I have long hair." },
+        { "en": "curly", "fr": "frisé, bouclé", "alt": [], "ex": "Is your hair curly?" },
+        { "en": "brown", "fr": "brun", "alt": [], "ex": "He has brown eyes." },
+        { "en": "big", "fr": "gros, grand (une chose)", "alt": ["large"], "ex": "He has big feet." },
+        { "en": "small", "fr": "petit (une chose)", "alt": ["little"], "ex": "The dog has a small nose." }
+      ],
+      "sentences": [
+        { "en": "She has blue eyes.", "fr": "Elle a les yeux bleus.", "trap": ["the", "blues"], "alt": [] },
+        { "en": "I have long brown hair.", "fr": "J'ai de longs cheveux bruns.", "trap": ["hairs", "the"], "alt": [] },
+        { "en": "My brother is tall.", "fr": "Mon frère est grand.", "trap": ["has"], "alt": [] },
+        { "en": "He has big feet.", "fr": "Il a de grands pieds.", "trap": ["foots", "have"], "alt": [] },
+        { "en": "Maya has short curly hair.", "fr": "Maya a les cheveux courts et frisés.", "trap": ["hairs", "have"], "alt": [] },
+        { "en": "The dog has a small nose.", "fr": "Le chien a un petit nez.", "trap": ["have"], "alt": [] },
+        { "en": "My teeth are white.", "fr": "Mes dents sont blanches.", "trap": ["tooths", "whites"], "alt": [] },
+        { "en": "We have two hands.", "fr": "Nous avons deux mains.", "trap": ["has"], "alt": [] },
+        { "en": "Your mouth is big!", "fr": "Ta bouche est grande !", "trap": ["has"], "alt": [] },
+        { "en": "Grandpa has a long nose.", "fr": "Grand-papa a un long nez.", "trap": ["have"], "alt": [] },
+        { "en": "My legs are tired.", "fr": "Mes jambes sont fatiguées.", "trap": ["is"], "alt": [] },
+        { "en": "Is your hair curly?", "fr": "Tes cheveux sont-ils frisés ?", "trap": ["Are", "hairs"], "alt": [] }
+      ],
+      "grammar": [
+        { "type": "mcq", "q": "Comment dit-on « Elle a les yeux verts » ?", "choices": ["She has the eyes green.", "She has green eyes.", "She have green eyes."], "answer": 1, "explain": "Pas de the, adjectif avant le nom, et has avec she : She has green eyes." },
+        { "type": "mcq", "q": "He ___ short hair.", "choices": ["have", "is", "has"], "answer": 2, "explain": "Avec he, avoir = has." },
+        { "type": "mcq", "q": "I ___ brown eyes.", "choices": ["have", "has", "am"], "answer": 0, "explain": "Avec I, avoir = have." },
+        { "type": "mcq", "q": "Comment dit-on « des cheveux longs » ?", "choices": ["long hairs", "hair long", "long hair"], "answer": 2, "explain": "Hair (les cheveux) n'a pas de s, et l'adjectif va avant : long hair." },
+        { "type": "mcq", "q": "one foot, two ___", "choices": ["foots", "feet", "feets"], "answer": 1, "explain": "Foot → feet, pluriel irrégulier." },
+        { "type": "mcq", "q": "My sister and I ___ curly hair.", "choices": ["have", "has", "are"], "answer": 0, "explain": "Ma sœur et moi = we, donc have." },
+        { "type": "mcq", "q": "one tooth, ten ___", "choices": ["tooths", "teeths", "teeth"], "answer": 2, "explain": "Tooth → teeth, comme foot → feet." },
+        { "type": "fill", "q": "She ___ a small nose.", "hint": "have", "answer": ["has"], "explain": "Avec she, have devient has." },
+        { "type": "fill", "q": "They ___ big hands.", "hint": "avoir", "answer": ["have"], "explain": "Avec they, avoir = have." },
+        { "type": "fill", "q": "Emma has long ___.", "hint": "cheveux", "answer": ["hair"], "explain": "Les cheveux = hair, sans s." },
+        { "type": "fill", "q": "I have two ___.", "hint": "pied", "answer": ["feet"], "explain": "Foot → feet au pluriel." },
+        { "type": "fill", "q": "My ___ are white.", "hint": "dent", "answer": ["teeth"], "explain": "Tooth → teeth au pluriel." },
+        { "type": "fill", "q": "Noah isn't short. He's ___.", "hint": "grand (de taille)", "answer": ["tall"], "explain": "Pour une personne, grand = tall." },
+        { "type": "error", "q": "She has blues eyes.", "wrong": 2, "fix": ["blue"], "explain": "Pas de s sur les adjectifs : blue eyes." },
+        { "type": "error", "q": "He have curly hair.", "wrong": 1, "fix": ["has"], "explain": "Avec he : has." },
+        { "type": "error", "q": "I have long hairs.", "wrong": 3, "fix": ["hair"], "explain": "Les cheveux = hair, toujours sans s." },
+        { "type": "error", "q": "My foots are cold.", "wrong": 1, "fix": ["feet"], "explain": "Foot → feet." },
+        { "type": "error", "q": "The baby has two tooths.", "wrong": 4, "fix": ["teeth"], "explain": "Tooth → teeth." }
+      ]
+    },
+    {
+      "id": "2.4",
+      "title": "Jours, mois, heure",
+      "titleEn": "What Time Is It?",
+      "goal": "Dire les jours, les mois, les saisons et l'heure, avec on, in et at.",
+      "lesson": [
+        { "type": "p", "text": "Ton agenda en anglais ! Les jours de la semaine, les mois, les saisons et l'heure. Pour demander l'heure : [[What time is it?]]" },
+        { "type": "table", "head": ["Jour", "Day", "Mois", "Month"], "rows": [
+          ["lundi", "[[Monday]]", "janvier", "[[January]]"],
+          ["mardi", "[[Tuesday]]", "février", "[[February]]"],
+          ["mercredi", "[[Wednesday]]", "mars", "[[March]]"],
+          ["jeudi", "[[Thursday]]", "avril", "[[April]]"],
+          ["vendredi", "[[Friday]]", "mai", "[[May]]"],
+          ["samedi", "[[Saturday]]", "juin", "[[June]]"],
+          ["dimanche", "[[Sunday]]", "juillet", "[[July]]"],
+          ["", "", "août", "[[August]]"],
+          ["", "", "septembre", "[[September]]"],
+          ["", "", "octobre", "[[October]]"],
+          ["", "", "novembre", "[[November]]"],
+          ["", "", "décembre", "[[December]]"]
+        ] },
+        { "type": "rule", "title": "Toujours une majuscule !", "text": "En anglais, les jours et les mois prennent **toujours** une majuscule : [[Monday]], [[July]]. Les saisons, non : [[winter]] (hiver), [[spring]] (printemps), [[summer]] (été), [[fall]] (automne). La [[weekend]], c'est la fin de semaine. [[today]] = aujourd'hui, [[birthday]] = anniversaire." },
+        { "type": "rule", "title": "Dire l'heure", "text": "Heure pile : [[It's three o'clock.]] Et demie : [[It's half past seven.]] Et quart : [[It's quarter past ten.]] Moins le quart : [[It's a quarter to nine.]] (Avec ou sans [[a]], c'est correct.) Jamais « three hours » !" },
+        { "type": "table", "head": ["Préposition", "Avec…", "Exemple"], "rows": [
+          ["[[on]]", "les jours, the weekend", "[[on Monday]], [[on the weekend]]"],
+          ["[[in]]", "les mois, les saisons, the morning", "[[in May]], [[in winter]], [[in the morning]]"],
+          ["[[at]]", "l'heure, night", "[[at three o'clock]], [[at night]]"]
+        ] },
+        { "type": "examples", "items": [
+          { "en": "My birthday is in May.", "fr": "Mon anniversaire est en mai." },
+          { "en": "See you on Friday!", "fr": "À vendredi !" },
+          { "en": "It's cold in winter.", "fr": "Il fait froid en hiver." },
+          { "en": "I'm not hungry at night.", "fr": "Je n'ai pas faim la nuit." },
+          { "en": "It's half past seven in the morning.", "fr": "Il est sept heures et demie du matin." }
+        ] },
+        { "type": "tip", "text": "Pièges ! 1) Majuscule aux jours et aux mois : [[Monday]], pas « monday ». 2) « En juillet » = [[in July]], mais « lundi » = [[on Monday]]. 3) « à trois heures » = [[at three o'clock]]. 4) « Il est trois heures » = [[It's three o'clock]], jamais « three hours »." },
+        { "type": "dialogue", "title": "Un rendez-vous", "lines": [
+          { "who": "Olivia", "en": "Hi, Félix! What time is it?", "fr": "Salut, Félix ! Quelle heure est-il ?" },
+          { "who": "Félix", "en": "It's a quarter to four.", "fr": "Il est quatre heures moins le quart." },
+          { "who": "Olivia", "en": "Oh no! I'm late! My hockey practice is at four o'clock.", "fr": "Oh non ! Je suis en retard ! Ma pratique de hockey est à quatre heures." },
+          { "who": "Félix", "en": "Is your practice on Tuesday?", "fr": "Ta pratique, c'est le mardi ?" },
+          { "who": "Olivia", "en": "Yes, on Tuesday and on Saturday. See you on Friday!", "fr": "Oui, le mardi et le samedi. À vendredi !" },
+          { "who": "Félix", "en": "Goodbye, Olivia!", "fr": "Au revoir, Olivia !" }
+        ] },
+        { "type": "fun", "text": "Le sais-tu ? Le canal Rideau, à Ottawa, devient une immense patinoire en hiver. Tu peux y patiner en [[January]] et en [[February]] !" }
+      ],
+      "vocab": [
+        { "en": "Monday", "fr": "lundi", "alt": [], "ex": "See you on Monday!" },
+        { "en": "Tuesday", "fr": "mardi", "alt": [], "ex": "My practice is on Tuesday." },
+        { "en": "Wednesday", "fr": "mercredi", "alt": [], "ex": "Today is Wednesday." },
+        { "en": "Thursday", "fr": "jeudi", "alt": [], "ex": "I'm tired on Thursday." },
+        { "en": "Friday", "fr": "vendredi", "alt": [], "ex": "See you on Friday!" },
+        { "en": "Saturday", "fr": "samedi", "alt": [], "ex": "The day after Friday is Saturday." },
+        { "en": "Sunday", "fr": "dimanche", "alt": [], "ex": "I see my grandma on Sunday." },
+        { "en": "winter", "fr": "hiver", "alt": [], "ex": "It's cold in winter." },
+        { "en": "spring", "fr": "printemps", "alt": [], "ex": "My birthday is in spring." },
+        { "en": "summer", "fr": "été", "alt": [], "ex": "Is it hot in summer?" },
+        { "en": "fall", "fr": "automne", "alt": ["autumn"], "ex": "My birthday is in the fall." },
+        { "en": "o'clock", "fr": "heure(s) pile", "alt": [], "ex": "It's three o'clock." },
+        { "en": "half past", "fr": "et demie (pour l'heure)", "alt": [], "ex": "It's half past seven." },
+        { "en": "quarter", "fr": "quart", "alt": [], "ex": "It's quarter past ten." },
+        { "en": "month", "fr": "mois", "alt": [], "ex": "January is a cold month." },
+        { "en": "weekend", "fr": "fin de semaine", "alt": [], "ex": "See you on the weekend!" }
+      ],
+      "sentences": [
+        { "en": "My birthday is in May.", "fr": "Mon anniversaire est en mai.", "trap": ["on"], "alt": [] },
+        { "en": "It's three o'clock.", "fr": "Il est trois heures.", "trap": ["hours"], "alt": [] },
+        { "en": "I see my grandma on Sunday.", "fr": "Je vois ma grand-maman dimanche.", "trap": ["in"], "alt": ["On Sunday, I see my grandma."] },
+        { "en": "It's cold in winter.", "fr": "Il fait froid en hiver.", "trap": ["on"], "alt": ["In winter, it's cold."] },
+        { "en": "What time is it?", "fr": "Quelle heure est-il ?", "trap": ["hour"], "alt": [] },
+        { "en": "It's half past seven.", "fr": "Il est sept heures et demie.", "trap": ["and"], "alt": [] },
+        { "en": "It's a quarter to nine.", "fr": "Il est neuf heures moins le quart.", "trap": ["less"], "alt": [] },
+        { "en": "Is it hot in summer?", "fr": "Fait-il chaud en été ?", "trap": ["at"], "alt": [] },
+        { "en": "Today is Wednesday.", "fr": "Aujourd'hui, c'est mercredi.", "trap": ["on"], "alt": ["Wednesday is today."] },
+        { "en": "See you on Friday!", "fr": "À vendredi !", "trap": ["in"], "alt": [] },
+        { "en": "It's quarter past ten.", "fr": "Il est dix heures et quart.", "trap": ["and"], "alt": [] },
+        { "en": "I'm not hungry at night.", "fr": "Je n'ai pas faim la nuit.", "trap": ["in", "have"], "alt": ["At night, I'm not hungry."] }
+      ],
+      "grammar": [
+        { "type": "mcq", "q": "My birthday is ___ June.", "choices": ["on", "in", "at"], "answer": 1, "explain": "Avec un mois, on utilise in : in June." },
+        { "type": "mcq", "q": "See you ___ Monday!", "choices": ["in", "at", "on"], "answer": 2, "explain": "Avec un jour, on utilise on : on Monday." },
+        { "type": "mcq", "q": "I see my friends ___ four o'clock.", "choices": ["at", "on", "in"], "answer": 0, "explain": "Avec une heure précise, on utilise at." },
+        { "type": "mcq", "q": "En anglais, les jours et les mois s'écrivent avec…", "choices": ["une minuscule", "une majuscule", "un tiret"], "answer": 1, "explain": "Toujours une majuscule : Monday, July." },
+        { "type": "mcq", "q": "Comment dit-on « six heures et demie » ?", "choices": ["half past six", "six and half", "half past seven"], "answer": 0, "explain": "Et demie = half past : half past six." },
+        { "type": "mcq", "q": "Comment dit-on « neuf heures moins le quart » ?", "choices": ["quarter past nine", "a quarter to nine", "a quarter to eight"], "answer": 1, "explain": "Moins le quart = a quarter to : a quarter to nine." },
+        { "type": "mcq", "q": "It's cold ___ winter.", "choices": ["on", "at", "in"], "answer": 2, "explain": "Avec une saison, on utilise in : in winter." },
+        { "type": "fill", "q": "It's four ___.", "hint": "heures pile", "answer": ["o'clock"], "explain": "Heure pile = o'clock : It's four o'clock." },
+        { "type": "fill", "q": "My birthday is ___ March.", "hint": "en", "answer": ["in"], "explain": "Avec un mois : in March." },
+        { "type": "fill", "q": "See you ___ the weekend!", "hint": "préposition, au Canada", "answer": ["on"], "explain": "Au Canada, on dit on the weekend." },
+        { "type": "fill", "q": "It's half ___ two.", "hint": "et demie", "answer": ["past"], "explain": "Deux heures et demie = half past two." },
+        { "type": "fill", "q": "It's a quarter ___ six.", "hint": "moins le quart", "answer": ["to"], "explain": "Moins le quart = a quarter to : a quarter to six." },
+        { "type": "fill", "q": "The weekend is Saturday and ___.", "hint": "dimanche", "answer": ["Sunday"], "explain": "Dimanche = Sunday, avec une majuscule." },
+        { "type": "error", "q": "My birthday is on July.", "wrong": 3, "fix": ["in"], "explain": "Avec un mois : in July." },
+        { "type": "error", "q": "It's five hours.", "wrong": 2, "fix": ["o'clock"], "explain": "Il est cinq heures = It's five o'clock." },
+        { "type": "error", "q": "See you in Tuesday!", "wrong": 2, "fix": ["on"], "explain": "Avec un jour : on Tuesday." },
+        { "type": "error", "q": "It's cold at winter.", "wrong": 2, "fix": ["in"], "explain": "Avec une saison : in winter." },
+        { "type": "error", "q": "It's half past seven at the morning.", "wrong": 4, "fix": ["in"], "explain": "Le matin = in the morning." }
+      ]
+    }
+  ]
+}

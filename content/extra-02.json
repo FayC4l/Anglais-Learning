@@ -1,0 +1,135 @@
+{
+  "level": 2,
+  "units": [
+    {
+      "unit": "2.1",
+      "pron": {
+        "focus": "Le « r » anglais",
+        "ipa": "/r/",
+        "explain": "Le « r » anglais n'est **ni roulé** (comme en espagnol) **ni raclé dans la gorge** (comme en français) : c'est un son tout doux qui se fait dans la bouche. Recule un peu le bout de ta langue et lève-le vers le haut, **sans toucher le palais**, puis arrondis un peu les lèvres, comme un petit chien qui grogne gentiment : « rrr ». Ta gorge reste tranquille : si tu entends un « r » de gorge dans [[red]], c'est l'accent français qui revient ! Et si le bout de ta langue touche le palais, [[right]] (droite) devient [[light]] (lumière). Au Canada, on entend aussi le « r » à la fin des mots : [[are]], [[tired]], [[bored]].",
+        "words": [
+          { "en": "red", "fr": "rouge", "hint": "« rèd » : langue reculée qui ne touche rien, lèvres un peu arrondies, rien dans la gorge" },
+          { "en": "are", "fr": "es, sommes, êtes, sont (to be)", "hint": "« âr » : un « â » bien ouvert, puis le « r » anglais qu'on entend à la fin" },
+          { "en": "ready", "fr": "prêt, prête", "hint": "« RÈ-di » : accent au début, « r » doux, pas dans la gorge" },
+          { "en": "sorry", "fr": "désolé, désolée", "hint": "« SÔ-ri » : au Canada, le « o » ressemble à celui de « sort » ; accent au début" },
+          { "en": "very", "fr": "très", "hint": "« VÈ-ri » : le « r » est tout doux, la langue ne touche rien" },
+          { "en": "hungry", "fr": "affamé (avoir faim)", "hint": "« HEUN-gri » : souffle le « h », puis « gri » avec un « r » anglais" },
+          { "en": "angry", "fr": "fâché, en colère", "hint": "« ANG-gri » : accent au début, et un « r » doux après le « g »" },
+          { "en": "tired", "fr": "fatigué, fatiguée", "hint": "« TAÏ-eurd » : on entend bien le « r » avant le « d » final" },
+          { "en": "bored", "fr": "qui s'ennuie (je m'ennuie = I'm bored)", "hint": "« bôrd » : un seul son, et le « r » s'entend avant le « d »" },
+          { "en": "scared", "fr": "effrayé (avoir peur)", "hint": "« skèrd » : « è » puis le « r » anglais, en une seule syllabe" }
+        ],
+        "pairs": [["right", "light"], ["read", "lead"], ["rock", "lock"], ["fry", "fly"], ["grass", "glass"], ["berry", "belly"]],
+        "practice": ["Are you ready? Sorry, I'm very tired.", "Ryan is really angry, and Rita is very hungry."]
+      },
+      "mission": {
+        "type": "oral",
+        "prompt": "C'est le début de ta pratique de soccer. Ton coach anglophone te demande : [[Are you ready?]] Réponds-lui poliment que non, tu n'es pas prêt(e), et explique comment tu te sens (au moins deux sentiments).",
+        "model": "Sorry, I'm not ready. I'm very tired, and I'm thirsty.",
+        "checklist": [
+          "J'ai dit [[I'm not]] pour la négation (jamais « I no ready »)",
+          "J'ai dit [[I'm thirsty]] ou [[I'm hungry]], jamais « I have thirst » ou « I have hunger »",
+          "J'ai prononcé le « r » de [[sorry]], [[ready]] et [[tired]] avec la langue, pas avec la gorge",
+          "J'ai relié deux sentiments avec [[and]]"
+        ]
+      }
+    },
+    {
+      "unit": "2.2",
+      "pron": {
+        "focus": "Le pluriel qui s'entend",
+        "ipa": "/s/ – /z/ – /ɪz/",
+        "explain": "En français, le « s » du pluriel est muet (« des chats »), mais en anglais, il faut **l'entendre** ! Il a trois sons. Après un son sec comme « t », « k », « p » ou « f », c'est un « s » sifflé : [[cats]], [[ducks]]. Après les autres sons, c'est un « z » qui bourdonne : [[dogs]], [[cows]], [[birds]] (mets ta main sur ta gorge : ça vibre !). Après un son qui siffle déjà (« s », « x », « ch », « sh »), on ajoute une syllabe « iz » : [[horse]] a une syllabe, mais [[horses]] en a deux !",
+        "words": [
+          { "en": "cats", "fr": "chats", "hint": "« katss » : « s » sifflé, car « t » est un son sec" },
+          { "en": "ducks", "fr": "canards", "hint": "« deukss » : « s » sifflé après le « k »" },
+          { "en": "rabbits", "fr": "lapins", "hint": "« RA-bitss » : accent au début, « s » sifflé à la fin" },
+          { "en": "dogs", "fr": "chiens", "hint": "« dogz » : finis par un « z » qui bourdonne, pas par un « s »" },
+          { "en": "birds", "fr": "oiseaux", "hint": "« beurdz » : « dz » à la fin, comme le bruit d'une abeille" },
+          { "en": "cows", "fr": "vaches", "hint": "« kaouz » : « aou » qui glisse, puis un « z »" },
+          { "en": "horses", "fr": "chevaux", "hint": "« HÔR-siz » : deux syllabes ! Le « iz » s'ajoute après le « s » de [[horse]]" },
+          { "en": "foxes", "fr": "renards", "hint": "« FOK-siz » : deux syllabes, on ajoute « iz » après le « x »" },
+          { "en": "wolves", "fr": "loups", "hint": "« woulvz » : le « f » de [[wolf]] devient « v », puis un « z »" }
+        ],
+        "pairs": [["dog", "dogs"], ["cat", "cats"], ["duck", "ducks"], ["horse", "horses"], ["fox", "foxes"], ["wolf", "wolves"]],
+        "practice": ["Two cats, three dogs and four horses.", "The foxes and the wolves are in the woods."]
+      },
+      "mission": {
+        "type": "ecrit",
+        "prompt": "Tu visites une ferme près d'Ottawa avec ta classe. Écris un petit message à ta cousine Zoé, qui vit à Vancouver, pour lui dire où tu es et quels animaux tu vois (au moins trois sortes, avec leur nombre).",
+        "model": "Hi, Zoé! I'm at a farm near Ottawa. I see three horses, two cows and six ducks!",
+        "checklist": [
+          "J'ai mis le nombre AVANT l'animal ([[three horses]])",
+          "J'ai ajouté un « s » ou « es » au pluriel ([[horses]], [[foxes]]), et j'ai pensé aux pluriels spéciaux ([[sheep]], [[mice]])",
+          "Je n'ai pas mis de « s » quand il y a un seul animal ([[a cow]], [[one cow]])",
+          "J'ai relu à voix haute en faisant entendre la fin de chaque pluriel : « s », « z » ou « iz »"
+        ]
+      }
+    },
+    {
+      "unit": "2.3",
+      "pron": {
+        "focus": "Les voyelles qui glissent",
+        "ipa": "/eɪ/ – /aɪ/ – /oʊ/",
+        "explain": "En français, une voyelle reste toujours pareille du début à la fin : « é », c'est « é ». En anglais, beaucoup de voyelles **glissent** vers une autre, comme une glissade sur la neige ! Le « é » de [[face]] glisse vers « i » (« féïss »), le « a » de [[eyes]] glisse vers « i » (« aïz ») et le « o » de [[nose]] glisse vers « ou » (« nôouz »). Si tu ne glisses pas, ton ami entend [[pen]] (stylo) au lieu de [[pain]] (douleur), ou [[not]] au lieu de [[note]]. Truc : exagère la glissade au début ; ta bouche doit bouger pendant la voyelle !",
+        "words": [
+          { "en": "face", "fr": "visage", "hint": "« féïss » : le « é » glisse vers « i », puis un « s » sifflé" },
+          { "en": "eight", "fr": "huit", "hint": "« éït » : comme « é » + « i » collés, et le « gh » est muet" },
+          { "en": "grey", "fr": "gris", "hint": "« gréï » : le « é » glisse vers « i » à la fin" },
+          { "en": "eyes", "fr": "yeux", "hint": "« aïz » : « a » qui glisse vers « i », puis un « z »" },
+          { "en": "my", "fr": "mon, ma, mes", "hint": "« maï » : jamais « mi » ! Le « a » glisse vers « i »" },
+          { "en": "smile", "fr": "sourire", "hint": "« smaïl » : « aï » qui glisse, et un « l » à la fin" },
+          { "en": "nose", "fr": "nez", "hint": "« nôouz » : le « ô » glisse vers « ou », lèvres qui se ferment un peu, puis un « z »" },
+          { "en": "toes", "fr": "orteils", "hint": "« tôouz » : le « ô » glisse vers « ou », puis un « z »" },
+          { "en": "cold", "fr": "froid, froide ; un rhume", "hint": "« kôould » : « ô » qui glisse vers « ou », puis « ld »" }
+        ],
+        "pairs": [["wait", "wet"], ["pain", "pen"], ["kite", "kit"], ["fine", "fin"], ["note", "not"], ["hope", "hop"]],
+        "practice": ["My nose is cold, and my toes are cold too!", "Kate has grey eyes and a big smile."]
+      },
+      "mission": {
+        "type": "oral",
+        "prompt": "Tu cherches ton amie Maya dans la foule au Festival des tulipes, et un bénévole anglophone veut t'aider. Décris-la en deux ou trois phrases : sa taille, ses cheveux et ses yeux.",
+        "model": "My friend Maya is tall. She has long black hair and big brown eyes.",
+        "checklist": [
+          "J'ai dit [[She has]] (avec un « s »), pas [[She have]]",
+          "J'ai mis l'adjectif AVANT le nom ([[brown eyes]]), sans « s » sur l'adjectif",
+          "Je n'ai pas mis [[the]] devant les cheveux ou les yeux ([[She has blue eyes]])",
+          "J'ai fait glisser les voyelles de [[eyes]] (« aïz ») et de [[my]] (« maï »)"
+        ]
+      }
+    },
+    {
+      "unit": "2.4",
+      "pron": {
+        "focus": "L'accent tonique des mots",
+        "ipa": "",
+        "explain": "En français, toutes les syllabes ont presque la même force, avec un petit accent à la fin. En anglais, chaque mot a **une syllabe championne** : plus forte, plus longue et plus haute que les autres, qui deviennent toutes petites. Dans les indices, cette syllabe est écrite en MAJUSCULES : [[September]] se dit « sèp-TÈM-beur », pas « sèp-tam-BRE ». Si tu mets la force au mauvais endroit, on a du mal à te comprendre, même si tous les sons sont bons ! Truc : tape dans tes mains sur la syllabe championne en disant le mot.",
+        "words": [
+          { "en": "January", "fr": "janvier", "hint": "« DJA-niou-è-ri » : accent au début, et un « dj » comme dans « jean »" },
+          { "en": "February", "fr": "février", "hint": "« FÈB-rou-è-ri » : accent au début (on entend souvent aussi « FÈB-iou-è-ri »)" },
+          { "en": "Wednesday", "fr": "mercredi", "hint": "« WÈNZ-déï » : seulement deux syllabes ! Le premier « d » et le deuxième « e » sont muets" },
+          { "en": "Saturday", "fr": "samedi", "hint": "« SA-teur-déï » : accent au début, le reste est tout petit" },
+          { "en": "September", "fr": "septembre", "hint": "« sèp-TÈM-beur » : accent au milieu" },
+          { "en": "October", "fr": "octobre", "hint": "« ok-TÔ-beur » : accent au milieu, « ô » qui glisse un peu" },
+          { "en": "December", "fr": "décembre", "hint": "« di-SÈM-beur » : accent au milieu, le début est tout petit" },
+          { "en": "afternoon", "fr": "après-midi", "hint": "« af-teur-NOUNE » : accent à la fin, avec un « ou » long" },
+          { "en": "tomorrow", "fr": "demain", "hint": "« teu-MÔ-rôou » : accent au milieu, le début est tout petit" },
+          { "en": "o'clock", "fr": "heure(s) pile (three o'clock = trois heures)", "hint": "« eu-KLOK » : le « o » du début devient un petit « eu », accent sur « KLOK »" }
+        ],
+        "pairs": [],
+        "practice": ["My birthday is in September.", "See you on Saturday afternoon at three o'clock!", "Is it Wednesday tomorrow?"]
+      },
+      "mission": {
+        "type": "ecrit",
+        "prompt": "Tu organises ta fête d'anniversaire. Écris une petite invitation à ton ami Liam : dis-lui le mois de ton anniversaire, puis le jour et l'heure de la fête.",
+        "model": "Hi, Liam! My birthday is in October. My party is on Saturday at two o'clock.",
+        "checklist": [
+          "J'ai mis une majuscule aux jours et aux mois ([[Saturday]], [[October]])",
+          "J'ai utilisé [[in]] + mois, [[on]] + jour et [[at]] + heure",
+          "J'ai écrit l'heure en mots avec [[o'clock]] ([[two o'clock]])",
+          "J'ai relu à voix haute en tapant des mains sur la syllabe forte : « ok-TÔ-beur », « SA-teur-déï »"
+        ]
+      }
+    }
+  ]
+}

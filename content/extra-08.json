@@ -1,0 +1,151 @@
+{
+  "level": 8,
+  "units": [
+    {
+      "unit": "8.1",
+      "pron": {
+        "focus": "Les formes faibles de were et would",
+        "ipa": "/wər/ – /d/",
+        "explain": "Dans une phrase, [[were]] et [[would]] se font tout petits : [[were]] devient un « weur » rapide, et [[would]] fond souvent en un simple « d » collé au sujet : [[I'd]], [[you'd]], [[we'd]]. Le piège des francophones : prononcer [[were]] comme [[where]] (« wèr »), ou oublier le petit « d »… et dire [[I buy]] au lieu de [[I'd buy]] ! Par contre, [[wouldn't]] reste toujours fort, parce que la négation est importante. Truc : [[were]] rime avec [[her]], et [[where]] rime avec [[hair]].",
+        "words": [
+          { "en": "were", "fr": "étais, étions, étaient (passé de be)", "hint": "« weur » : comme le mot « heure » avec un w devant ; jamais « wèr » !" },
+          { "en": "if I were you", "fr": "si j'étais toi (à ta place)", "hint": "« i-faï-weur-YOU » : le verbe se fait tout petit, l'accent va sur le dernier mot" },
+          { "en": "I wish I were taller", "fr": "j'aimerais être plus grand", "hint": "« aï-WICH-aï-weur-TÂ-leur » : « weur » très rapide, sans accent" },
+          { "en": "I'd", "fr": "je + conditionnel (I would)", "hint": "« aïd » : le d est minuscule, mais il change tout" },
+          { "en": "I'd buy a dog", "fr": "j'achèterais un chien", "hint": "« aïd-BAÏ-eu-DÂG » : sans le d, la phrase passe au présent !" },
+          { "en": "you'd love it", "fr": "tu adorerais ça", "hint": "« youd-LEUV-it » : le d se colle au verbe qui suit" },
+          { "en": "what would you do", "fr": "que ferais-tu ?", "hint": "« WEUT-wou-djeu-DOU » : les deux mots du milieu se fondent en « woudjeu »" },
+          { "en": "wouldn't", "fr": "ne… pas (au conditionnel)", "hint": "« WOU-deunt » : la négation reste forte ; le l est muet" },
+          { "en": "I wouldn't worry", "fr": "je ne m'inquiéterais pas", "hint": "« aï-WOU-deunt-WEU-ri » : deux coups forts" }
+        ],
+        "pairs": [],
+        "practice": [
+          "If I were you, I'd ask the coach for help.",
+          "What would you do if you were invisible for a day?",
+          "I wish it were summer, because I'd go swimming every day."
+        ]
+      },
+      "mission": {
+        "type": "oral",
+        "prompt": "Ton ami te pose la question du jour : [[What would you do if you won a million dollars?]] Réponds-lui à voix haute en quatre à six phrases, donne-lui un conseil avec [[If I were you]] et termine par un souhait avec [[I wish]].",
+        "model": "If I won a million dollars, I'd buy a big house with a pool for my whole family. I would also give some money to the animal shelter in my neighbourhood. I wouldn't spend everything at once, though. You want to buy ten video games? If I were you, I'd save some money for university! Honestly, I wish I had more free time, not just more money.",
+        "checklist": [
+          "J'ai utilisé [[if]] + passé, puis [[would]] ou [[I'd]] + verbe de base",
+          "J'ai dit [[If I were you]], et pas [[If I would be you]]",
+          "J'ai ajouté un souhait avec [[I wish]] + passé ([[I wish I had]]…)",
+          "J'ai prononcé [[were]] « weur », pas comme [[where]]",
+          "On entendait bien le petit « d » de [[I'd]]"
+        ]
+      }
+    },
+    {
+      "unit": "8.2",
+      "pron": {
+        "focus": "L'accent qui saute dans les familles de mots",
+        "ipa": "",
+        "explain": "En anglais, quand un mot change de forme, l'accent peut **sauter** d'une syllabe à l'autre ! [[photograph]] appuie sur la première syllabe (« FÔ-teu-graf »), [[photography]] et [[photographer]] sur la deuxième (« feu-TÂ-greu-fi »), et [[photographic]] sur la troisième (« fô-teu-GRA-fik »). Avec les fins -ic et -tion, l'accent se place juste avant ([[scientific]], [[publication]]), mais [[invent]], [[invention]] et [[inventor]] gardent tous l'accent sur « vèn ». Le piège des francophones : dire tous ces mots à plat, en appuyant sur la dernière syllabe comme en français. Truc : tape dans tes mains sur la syllabe forte en répétant chaque famille !",
+        "words": [
+          { "en": "photograph", "fr": "une photo (photographie)", "hint": "« FÔ-teu-graf » : accent sur la première syllabe" },
+          { "en": "photography", "fr": "la photographie (l'art)", "hint": "« feu-TÂ-greu-fi » : l'accent saute sur la deuxième syllabe" },
+          { "en": "photographic", "fr": "photographique", "hint": "« fô-teu-GRA-fik » : la fin -ic attire l'accent juste avant elle" },
+          { "en": "invent", "fr": "inventer", "hint": "« in-VÈNT » : accent sur la deuxième syllabe, sans son nasal" },
+          { "en": "invention", "fr": "une invention", "hint": "« in-VÈN-cheun » : l'accent ne bouge pas" },
+          { "en": "inventor", "fr": "un inventeur, une inventrice", "hint": "« in-VÈN-teur » : toujours sur « vèn »" },
+          { "en": "science", "fr": "la science", "hint": "« SAÏ-euns » : accent au début ; « saï » comme dans « aïe »" },
+          { "en": "scientific", "fr": "scientifique (adjectif)", "hint": "« saï-eun-TI-fik » : la fin -ic attire l'accent juste avant elle" },
+          { "en": "publish", "fr": "publier", "hint": "« PEU-blich » : accent au début" },
+          { "en": "publication", "fr": "une publication", "hint": "« peu-bli-KÉI-cheun » : l'accent saute juste avant « cheun »" }
+        ],
+        "pairs": [],
+        "practice": [
+          "This photograph was taken by a famous photographer.",
+          "The article about the invention was published in a scientific magazine."
+        ]
+      },
+      "mission": {
+        "type": "ecrit",
+        "prompt": "Le journal de ton école te demande un court article sur un projet d'élèves (une murale, un spectacle, une invention…). Écris cinq ou six phrases avec au moins quatre verbes au passif, à des temps différents.",
+        "model": "Our school's new mural was finally finished last Friday. It was designed by Mei and painted by twelve students from grade eight. All the paint was donated by a local hardware store. The mural can be seen from the street, and it has already been photographed hundreds of times! Next month, a short video about the project will be published on the school website. Don't miss it!",
+        "checklist": [
+          "J'ai utilisé [[be]] au bon temps + participe passé ([[was painted]], [[will be published]])",
+          "J'ai écrit au moins quatre verbes au passif, à au moins trois temps différents",
+          "J'ai écrit un passif avec un modal ([[can be seen]], [[must be finished]]…)",
+          "J'ai utilisé [[by]] seulement quand c'est utile de dire qui a fait l'action"
+        ]
+      }
+    },
+    {
+      "unit": "8.3",
+      "pron": {
+        "focus": "L'accent des noms de métiers",
+        "ipa": "",
+        "explain": "Dans les noms de métiers, c'est la fin du mot qui commande l'accent ! Avec la fin « -ian », il tombe juste avant : [[electrician]] (« i-lèk-TRI-cheun »), [[musician]], [[librarian]]. La fin « -eer », elle, garde l'accent pour elle toute seule ([[engineer]] : « èn-dji-NIIR », [[volunteer]]), et « -ist » ne change rien : [[journalist]] garde l'accent de [[journal]], [[scientist]] celui de [[science]]. Le piège des francophones : appuyer sur la fin partout, comme dans « in-gé-NIEUR » ou « é-lec-tri-CIEN ». Truc : « -eer » est une vedette qui veut tout l'accent, alors que « -ian » est timide et le pousse juste devant elle !",
+        "words": [
+          { "en": "electrician", "fr": "un électricien, une électricienne", "hint": "« i-lèk-TRI-cheun » : accent juste avant la fin ; « cheun », pas « sien »" },
+          { "en": "musician", "fr": "un musicien, une musicienne", "hint": "« miou-ZI-cheun » : « miou » au début, comme un chat !" },
+          { "en": "librarian", "fr": "un ou une bibliothécaire", "hint": "« laï-BRÈ-ri-eun » : accent sur « brè » ; et ce n'est pas un libraire !" },
+          { "en": "engineer", "fr": "un ingénieur, une ingénieure", "hint": "« èn-dji-NIIR » : l'accent tombe sur la toute fin" },
+          { "en": "volunteer", "fr": "un ou une bénévole", "hint": "« vâ-leun-TIIR » : accent sur la fin, comme tous les mots en « -eer »" },
+          { "en": "journalist", "fr": "un ou une journaliste", "hint": "« DJEUR-neu-list » : accent au début ; « dj », pas « j »" },
+          { "en": "scientist", "fr": "un ou une scientifique (la personne)", "hint": "« SAÏ-eun-tist » : accent au début, comme pour « la science »" },
+          { "en": "pharmacist", "fr": "un pharmacien, une pharmacienne", "hint": "« FAR-meu-sist » : accent au début ; « ph » se dit f" },
+          { "en": "mechanic", "fr": "un mécanicien, une mécanicienne", "hint": "« meu-KA-nik » : accent sur la deuxième syllabe ; « ch » se dit k" },
+          { "en": "lawyer", "fr": "un avocat, une avocate", "hint": "« LOÏ-eur » : accent au début ; rien à voir avec un loyer !" }
+        ],
+        "pairs": [],
+        "practice": [
+          "My aunt is an engineer who volunteers at the science centre.",
+          "The electrician who fixed our lights is also a talented musician."
+        ]
+      },
+      "mission": {
+        "type": "oral",
+        "prompt": "Jeu de devinettes ! Décris à voix haute trois métiers sans dire leur nom, avec [[who]], [[that]], [[where]] ou [[whose]], puis donne les réponses à la fin.",
+        "model": "Guess my first job: it's a person who fixes cars and trucks. They work in a garage, where it's often very noisy. The second one is someone whose patients are dogs, cats and other animals. The last one is a person who writes articles that people read in the news. Did you guess? A mechanic, a vet and a journalist!",
+        "checklist": [
+          "J'ai utilisé [[who]] pour une personne et [[which]] ou [[that]] pour une chose",
+          "J'ai utilisé [[whose]] pour dire « dont le, dont la »",
+          "J'ai utilisé [[where]] pour un lieu",
+          "J'ai bien placé l'accent des métiers : [[mechanic]], [[engineer]], [[journalist]]…"
+        ]
+      }
+    },
+    {
+      "unit": "8.4",
+      "pron": {
+        "focus": "L'accent des phrasal verbs",
+        "ipa": "",
+        "explain": "Dans un phrasal verb, c'est la petite particule qui prend l'accent : [[give up]] (« gi-VEUP »), [[pick it up]] (« pi-ki-TEUP »). Remarque comme tout se colle : la consonne de la fin glisse sur la voyelle qui suit, comme une liaison en français. Mais quand le phrasal verb devient un **nom**, l'accent saute au début : [[to break down]] (tomber en panne) devient [[a breakdown]] (une panne), [[to set up]] devient [[a setup]]. Le piège des francophones : appuyer sur le verbe et avaler la particule… alors que c'est elle qui porte le sens ! Truc : verbe, accent à la fin ; nom, accent au début.",
+        "words": [
+          { "en": "give up", "fr": "abandonner, lâcher", "hint": "« gi-VEUP » : le v glisse sur la particule, qui prend l'accent" },
+          { "en": "turn it off", "fr": "éteins-le", "hint": "« teur-ni-TÂF » : trois mots collés en un seul, accent à la fin" },
+          { "en": "pick it up", "fr": "ramasse-le", "hint": "« pi-ki-TEUP » : tout collé, accent sur la particule" },
+          { "en": "look after", "fr": "prendre soin de, garder", "hint": "« lou-KAF-teur » : le k glisse, accent sur « kaf »" },
+          { "en": "to break down", "fr": "tomber en panne", "hint": "« bréik-DAOUN » : verbe, donc accent à la fin" },
+          { "en": "a breakdown", "fr": "une panne", "hint": "« BRÉIK-daoun » : nom, donc accent au début" },
+          { "en": "to set up", "fr": "installer, organiser", "hint": "« sè-TEUP » : verbe, donc accent à la fin" },
+          { "en": "a setup", "fr": "une installation, un montage", "hint": "« SÈ-teup » : nom, donc accent au début" },
+          { "en": "to grow up", "fr": "grandir", "hint": "« grô-WEUP » : verbe, donc accent à la fin" },
+          { "en": "a grown-up", "fr": "un adulte, une adulte", "hint": "« GRÔ-neup » : nom, donc accent au début" }
+        ],
+        "pairs": [],
+        "practice": [
+          "Don't give up: pick it up and try again!",
+          "When you grow up, you'll be a grown-up!",
+          "Can you help me set up the game? The setup only takes a minute."
+        ]
+      },
+      "mission": {
+        "type": "ecrit",
+        "prompt": "Tu pars en voyage scolaire, et ton voisin Malik va s'occuper de ton chat Pixel pendant trois jours. Écris-lui une note de cinq ou six phrases avec des phrasal verbs, dont au moins deux avec un pronom ([[pick it up]], [[turn it off]]…).",
+        "model": "Hi Malik, thanks for looking after Pixel while I'm away! The mail arrives every day: please pick it up and put it on the kitchen table. Pixel's food is in the cupboard; if it runs out, there's another bag in the garage. You can turn on the lamp in the living room, but please turn it off before you leave. Don't give up if Pixel hides: he always comes back for his treats. I'll come back on Sunday afternoon!",
+        "checklist": [
+          "J'ai utilisé au moins quatre phrasal verbs ([[look after]], [[pick up]], [[run out]], [[turn off]]…)",
+          "Avec un pronom, je l'ai mis au milieu : [[turn it off]], jamais [[turn off it]]",
+          "Avec [[look after]], le complément va après : [[look after him]]",
+          "J'ai donné des consignes claires et polies ([[please]], [[don't]]…)"
+        ]
+      }
+    }
+  ]
+}
