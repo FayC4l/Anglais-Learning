@@ -13,10 +13,10 @@ for (const file of files) {
   const errors = [];
   const err = (w, m) => errors.push(`${w}: ${m}`);
   let d;
-  try { d = JSON.parse(readFileSync(file, "utf8")); } catch (e) { console.log(`${file}: invalid JSON ${e.message}`); total++; continue; }
+  try { d = JSON.parse(readFileSync(file, "utf8").replace(/^\uFEFF/, "")); } catch (e) { console.log(`${file}: invalid JSON ${e.message}`); total++; continue; }
   const L = d.level;
   if (!Number.isInteger(L) || L < 1 || L > 12) err("file", "level must be 1-12");
-  if (!Array.isArray(d.units) || d.units.length !== 4) err("file", "units must have 4 entries");
+  if (!Array.isArray(d.units) || d.units.length < 4 || d.units.length > 5) err("file", "units must have 5 entries (4 tolerated during the transition)");
   const types = [];
   (d.units || []).forEach((u, i) => {
     const W = `unit ${u?.unit}`;

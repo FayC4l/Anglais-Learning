@@ -4,6 +4,7 @@ import { readFileSync, readdirSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { clean, forms, tiles, tileKey, matches } from "../src/answer.js";
+import { wordCountMismatches } from "../src/fill.js";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 let files = process.argv.slice(2);
@@ -19,7 +20,7 @@ for (const file of files) {
   const warn = (where, msg) => warnings.push(`${where}: ${msg}`);
   let data;
   try {
-    data = JSON.parse(readFileSync(file, "utf8"));
+    data = JSON.parse(readFileSync(file, "utf8").replace(/^\uFEFF/, ""));
   } catch (e) {
     console.log(`\n${file}\n  ERROR invalid JSON: ${e.message}`);
     totalErrors++;
@@ -30,7 +31,8 @@ for (const file of files) {
   if (!Number.isInteger(L) || L < 1 || L > 12) err("level", "id must be an integer 1-12");
   for (const k of ["cefr", "title", "titleEn", "intro"]) if (!str(data[k])) err("level", `missing ${k}`);
   if (!data.boss || !str(data.boss.name) || !str(data.boss.taunt) || !str(data.boss.defeat)) err("level", "boss needs name, taunt, defeat");
-  if (!Array.isArray(data.units) || data.units.length !== 4) err("level", "units must have exactly 4 entries");
+  if (!Array.isArray(data.units) || data.units.length < 4 || data.units.length > 5) err("level", "units must have 5 entries (4 tolerated during the transition)");
+  else if (data.units.length === 4) warn("level", "only 4 units: the bonus station L.5 is missing");
 
   const levelEn = new Map();
   const levelFr = new Map();
@@ -146,6 +148,10 @@ for (const file of files) {
         if (!Array.isArray(g.answer) || !g.answer.length || !g.answer.every(str)) err(W, "answer must be a non-empty array of strings");
         if (g.hint !== undefined && !str(g.hint)) err(W, "hint must be a non-empty string");
         if (Array.isArray(g.answer) && g.hint && g.answer.some((a) => matches(g.hint, a)) && g.hint.split(" ").length < 3) warn(W, "hint equals the answer");
+        if (Array.isArray(g.answer)) wordCountMismatches(g.answer).forEach((a) => warn(W, `answer "${a}" has a different word count than "${g.answer[0]}" (one box per word)`));
+        if (g.lead !== undefined && !str(g.lead)) err(W, "lead must be a non-empty string");
+        if (g.key !== undefined && (!str(g.key) || g.key !== g.key.toUpperCase())) err(W, "key must be an UPPERCASE word");
+        if (g.key && Array.isArray(g.answer) && g.answer.some((a) => !clean(a).split(" ").includes(clean(g.key)))) err(W, "every answer must contain the key word");
       } else if (g.type === "error") {
         const t = g.q.split(" ");
         if (!Number.isInteger(g.wrong) || g.wrong < 0 || g.wrong >= t.length) return err(W, `wrong index out of range (0-${t.length - 1})`);

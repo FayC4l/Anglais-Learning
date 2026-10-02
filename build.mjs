@@ -9,10 +9,10 @@ const contentDir = process.env.CONTENT_DIR || join(root, "content");
 
 const levels = [];
 for (const f of readdirSync(contentDir).filter((f) => /^level-\d\d\.json$/.test(f)).sort()) {
-  const lvl = JSON.parse(readFileSync(join(contentDir, f), "utf8"));
+  const lvl = JSON.parse(readFileSync(join(contentDir, f), "utf8").replace(/^\uFEFF/, ""));
   const extraPath = join(contentDir, f.replace("level-", "extra-"));
   if (existsSync(extraPath)) {
-    const extra = JSON.parse(readFileSync(extraPath, "utf8"));
+    const extra = JSON.parse(readFileSync(extraPath, "utf8").replace(/^\uFEFF/, ""));
     for (const x of extra.units || []) {
       const u = lvl.units.find((u) => u.id === x.unit);
       if (u) {
