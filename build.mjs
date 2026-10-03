@@ -37,7 +37,7 @@ for (const f of readdirSync(contentDir)) {
   m = f.match(/^lexicon-(\d\d)\.json$/);
   if (m) extra.lexicon[Number(m[1])] = readOpt(f).words;
 }
-for (const [k, f] of [["placement", "placement.json"], ["writing", "writing.json"], ["humor", "humor.json"], ["wordform", "wordform.json"], ["c2uoe", "c2-uoe.json"], ["c2papers", "c2-papers.json"]]) extra[k] = readOpt(f);
+for (const [k, f] of [["placement", "placement.json"], ["writing", "writing.json"], ["humor", "humor.json"], ["wordform", "wordform.json"], ["c2uoe", "c2-uoe.json"], ["c2papers", "c2-papers.json"], ["mentor", "mentor.json"]]) extra[k] = readOpt(f);
 
 const dict = buildDictionary(root, levels);
 

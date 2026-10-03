@@ -17,7 +17,7 @@ L'appli d'anglais de toute la famille : du premier « hello » jusqu'au niveau C
 - **Atelier d'écriture** : 96 sujets + 8 sujets C2, correcteur intégré (orthographe, ≈ 80 règles sur les fautes typiques des francophones, mots de liaison, temps verbaux, consignes) et **note sur 20** en 4 critères. Option : correction par Claude (clé API à saisir dans la zone gestion).
 - **Prépa C2 Proficiency** : Reading & Use of English (parties 1 à 7), Listening, Writing, Speaking, examens blancs notés sur la Cambridge English Scale. Textes 100 % originaux.
 - **Tableau de bord** : radar des compétences, niveau estimé, certificats imprimables.
-- **Maurice l'orignal**, prof d'anglais vaniteux et bienveillant : répliques, blague du jour (118 jeux de mots expliqués).
+- **Chikh Fayçal**, le prof d'anglais de l'app (barbe, gilet crème, cravate et thé à la menthe), pince-sans-rire et bienveillant : répliques, blague du jour (118 jeux de mots expliqués).
 - **Zone gestion** (code à 4 chiffres) : difficulté par profil, suivi de toute la famille, correcteur IA, sauvegarde familiale.
 
 ## Jouer
@@ -48,7 +48,8 @@ npm run smoke        # tests navigateur (Playwright + Chrome/Edge installé)
 | `content/lexicon-XX.json` | 150 mots de plus par niveau (entraînement du jour) | idem |
 | `content/placement.json` | 150 questions du test de placement | idem |
 | `content/writing.json` | sujets de rédaction | idem |
-| `content/humor.json` | répliques de Maurice et blagues | idem |
+| `content/humor.json` | répliques de Chikh Fayçal et blagues | idem |
+| `content/mentor.json` | images de Chikh Fayçal (générées par `node tools/mentor-sprites.mjs` depuis `assets/`) | — |
 | `content/wordform.json` | formation des mots | idem |
 | `content/c2-uoe.json`, `content/c2-papers.json` | épreuves C2 Proficiency | idem |
 

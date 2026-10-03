@@ -6,7 +6,7 @@ import { go } from "../router.js";
 import { speak } from "../audio.js";
 import { runQuiz, scoreOf } from "../runner.js";
 import { save, addXp, touchStreak } from "../store.js";
-import { mooseSays, quip } from "../humor.js";
+import { mentorSays, quip } from "../humor.js";
 
 const PERSONS = [
   ["I", "I"], ["you", "you"], ["he", "he / she / it"], ["we", "we"], ["they", "they"],
@@ -148,7 +148,7 @@ function drill(view, base) {
           "div",
           { class: "results" },
           h("h1", { class: "results-title" }, `${good} / ${results.length}`),
-          mooseSays(quip(scoreOf(results) >= 0.8 ? "perfect" : "fail")),
+          mentorSays(quip(scoreOf(results) >= 0.8 ? "perfect" : "fail")),
           h("div", { class: "result-actions" }, h("button", { type: "button", class: "btn btn-primary btn-xl", onClick: () => drill(view, base) }, "Encore"), h("button", { type: "button", class: "btn btn-ghost", onClick: () => go("conjugator", { v: base }) }, "Retour au conjugueur")),
         ),
       );

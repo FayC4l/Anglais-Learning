@@ -8,7 +8,7 @@ import { speakParts, stopSpeaking, ttsReady, sfx } from "../audio.js";
 import { runQuiz, scoreOf } from "../runner.js";
 import { micAvailable, listenOnce } from "../mic.js";
 import { confetti } from "../fx.js";
-import { mooseSays, quip } from "../humor.js";
+import { mentorSays, quip } from "../humor.js";
 
 const U = () => EXTRA.c2uoe || {};
 const P = () => EXTRA.c2papers || {};
@@ -57,7 +57,7 @@ export function c2Screen(view, { tab } = {}) {
       h("div", { class: "topbar" }, h("button", { type: "button", class: "icon-btn", "aria-label": "Retour", html: icon("back"), onClick: () => go("map") }), h("span", { class: "topbar-title" }, "Prépa C2 Proficiency")),
       h("h1", { class: "page-title" }, "Prépa Cambridge C2 Proficiency"),
       h("p", { class: "page-lead" }, "Le C2 Proficiency de Cambridge est le diplôme d'anglais le plus élevé. Il est noté sur la Cambridge English Scale : 200 points pour obtenir le C2 (grade C), 213 pour le grade B, 220 pour le grade A. Entre 180 et 199, on obtient un certificat C1."),
-      !ready ? mooseSays("Attention, ici c'est la montagne la plus haute. Je te conseille d'avoir fini la ligne 9 avant de grimper… mais tu peux jeter un œil.") : null,
+      !ready ? mentorSays("Attention, ici c'est la montagne la plus haute. Je te conseille d'avoir fini la ligne 9 avant de grimper… mais tu peux jeter un œil.", "", "warning") : null,
       mock ? h("div", { class: `c2-mock-last ${grade(mock.scale).cls}` }, h("strong", null, `Dernier examen blanc : ${mock.scale}`), " · ", grade(mock.scale).label) : null,
       h(
         "div",
@@ -388,7 +388,7 @@ function resultPanel(view, partId, pct) {
       h("p", { class: "eyebrow" }, PARTS.find((p) => p.id === partId)?.title || "C2"),
       h("h1", { class: "results-title" }, `${Math.round(pct * 100)} %`),
       h("p", { class: "results-line" }, `Sur cette épreuve, c'est l'équivalent d'environ ${scale} sur l'échelle Cambridge (${grade(scale).label}).`),
-      mooseSays(quip(pct >= 0.75 ? "perfect" : pct >= 0.5 ? "correct" : "fail")),
+      mentorSays(quip(pct >= 0.75 ? "perfect" : pct >= 0.5 ? "correct" : "fail")),
       h("div", { class: "result-actions" }, h("button", { type: "button", class: "btn btn-primary btn-xl", onClick: () => practice(view, partId) }, "Un autre exercice"), h("button", { type: "button", class: "btn btn-ghost", onClick: () => go("c2") }, "Retour à la prépa C2")),
     ),
   );
@@ -437,7 +437,7 @@ async function mockResult(view, kind, plan, scores) {
       h("h1", { class: "results-title" }, g.label),
       h("ul", { class: "history" }, papers.map((p) => h("li", null, h("strong", null, `${p.scale}`), ` · ${p.name} (${Math.round(p.pct * 100)} %)`))),
       !recent ? h("p", { class: "set-help" }, "Astuce : fais une copie C2 dans l'atelier d'écriture pour que l'épreuve de Writing compte dans ton score.") : null,
-      mooseSays(overall >= 200 ? "Niveau C2 ! Mes bois s'inclinent. Inscris-toi à la vraie session, tu es prêt(e)." : overall >= 180 ? "Niveau C1 solide. Encore un effort sur tes points faibles et le C2 est à toi." : "La montagne est haute, mais tu grimpes. Reprends les épreuves une par une."),
+      mentorSays(overall >= 200 ? "Niveau C2 ! Chapeau bas, et moustache aussi. Inscris-toi à la vraie session, tu es prêt(e)." : overall >= 180 ? "Niveau C1 solide. Encore un effort sur tes points faibles et le C2 est à toi." : "La montagne est haute, mais tu grimpes. Reprends les épreuves une par une."),
       badges.length ? h("div", { class: "new-badges" }, badges.map((b) => h("div", { class: "badge-pop" }, h("span", { html: icon("trophy") }), h("strong", null, b.name), h("small", null, b.desc)))) : null,
       h("div", { class: "result-actions" }, h("button", { type: "button", class: "btn btn-primary btn-xl", onClick: () => go("c2") }, "Retour à la prépa C2")),
     ),

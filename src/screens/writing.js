@@ -9,7 +9,7 @@ import { confetti } from "../fx.js";
 import { analyze } from "../writing/analyze.js";
 import { score, CRITERIA_FR, CAT_FR } from "../writing/score.js";
 import { dictionaryReady } from "../writing/spell.js";
-import { quip, mooseSays } from "../humor.js";
+import { quip, mentorSays } from "../humor.js";
 import { currentLevel } from "./daily.js";
 
 const RANGE = (L) => (L <= 2 ? [25, 60] : L <= 4 ? [50, 100] : L <= 6 ? [80, 140] : L <= 8 ? [120, 180] : L <= 10 ? [160, 240] : [220, 320]);
@@ -189,7 +189,7 @@ function report(view, p, text) {
       h("div", { class: "topbar" }, h("button", { type: "button", class: "icon-btn", "aria-label": "Retour", html: icon("back"), onClick: () => back(p) }), h("span", { class: "topbar-title" }, "Correction")),
       h("p", { class: "eyebrow" }, `${p.title} · niveau visé ${p.cefr}`),
       h("div", { class: "w-score" }, ring, h("div", null, bars, h("p", { class: "set-help" }, `Ton texte ressemble à un niveau `, h("strong", null, s.textBand), ` · ${a.words} mots · ${a.issues.length} remarque${a.issues.length > 1 ? "s" : ""}. La langue compte un peu plus que les autres critères, comme aux vrais examens.`))),
-      mooseSays(quip(s.total >= 14 ? "writing_good" : "writing_bad")),
+      mentorSays(quip(s.total >= 14 ? "writing_good" : "writing_bad")),
       h("h2", { class: "section-title" }, "Ton texte corrigé"),
       h("div", { class: "w-legend" }, Object.entries(CAT_FR).map(([k, v]) => (byCat[k] ? h("span", { class: `w-err ${CAT_CLASS[k]}` }, `${v} (${byCat[k].length})`) : null))),
       textBox,
@@ -238,7 +238,7 @@ async function runAi(box, btn, p, text, entry) {
       h("h2", { class: "section-title" }, `Correction IA : ${String(r.total).replace(".", ",")}/20 · ${r.cefr}`),
       h("p", { class: "set-help" }, `Par ${r.model}.`),
       h("div", { class: "w-crit" }, Object.entries(r.scores).map(([k, v]) => h("div", { class: "w-crit-row" }, h("span", null, CRITERIA_FR[k]), h("span", { class: "w-bar ai" }, h("span", { style: { width: `${(v / 5) * 100}%` } })), h("strong", null, `${v}/5`)))),
-      mooseSays(r.comment_fr),
+      mentorSays(r.comment_fr),
       issues.length ? h("div", { class: "w-annotated", html: annotated(text, issues) }) : null,
       r.errors.length ? h("details", { class: "w-all", open: true }, h("summary", null, `Les ${r.errors.length} remarques de l'IA`), r.errors.map((e) => h("div", { class: `w-issue ${CAT_CLASS[e.category] || "g"}` }, h("div", { class: "w-issue-head" }, h("span", { class: "tag" }, CAT_FR[e.category] || e.category), h("strong", null, `« ${e.quote} »`), " → ", h("strong", { class: "w-fix" }, e.correction)), h("p", null, e.explanation_fr)))) : null,
       r.strengths_fr.length ? h("ul", { class: "w-list good" }, r.strengths_fr.map((x) => h("li", null, x))) : null,

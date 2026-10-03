@@ -1,4 +1,4 @@
-/* ===== V2: profiles, placement, gaps, Maurice, boss phases, workshops ===== */
+/* ===== V2: profiles, placement, gaps, Chikh Fayçal, boss phases, workshops ===== */
 
 /* Avatars */
 .avatar.emoji { background: color-mix(in srgb, var(--av, var(--l6)) 22%, var(--card)); border: 2px solid var(--av, var(--l6)); font-size: 1.2rem; line-height: 1; }
@@ -61,14 +61,14 @@
 .gap + .gap { margin-left: 4px; }
 @keyframes nudge { 25% { transform: translateX(-4px); } 75% { transform: translateX(4px); } }
 
-/* Maurice the moose */
-.moose { display: flex; gap: 10px; align-items: flex-end; margin: 6px 0; }
-.moose-face { flex: none; width: 54px; height: 54px; color: #6b4a35; }
-.moose-face svg { width: 100%; height: 100%; }
-.moose-bubble { position: relative; margin: 0; padding: 10px 14px; border-radius: 16px 16px 16px 4px; background: var(--card); border: 2px solid var(--rule); font-size: .95rem; line-height: 1.35; animation: pop .35s var(--spring, ease) both; }
-.moose.sm .moose-face { width: 38px; height: 38px; }
-.moose.sm .moose-bubble { font-size: .88rem; padding: 7px 11px; }
-.feedback .moose-bubble { background: color-mix(in srgb, var(--card) 85%, transparent); }
+/* Chikh Fayçal, the teacher */
+.mentor { display: flex; gap: 10px; align-items: flex-end; margin: 6px 0; }
+.mentor-face { flex: none; width: 64px; height: 64px; color: inherit; }
+.mentor-face svg, .mentor-face .mentor-img { width: 100%; height: 100%; object-fit: contain; display: block; }
+.mentor-bubble { position: relative; margin: 0; padding: 10px 14px; border-radius: 16px 16px 16px 4px; background: var(--card); border: 2px solid var(--rule); font-size: .95rem; line-height: 1.35; animation: pop .35s var(--spring, ease) both; }
+.mentor.sm .mentor-face { width: 46px; height: 46px; }
+.mentor.sm .mentor-bubble { font-size: .88rem; padding: 7px 11px; }
+.feedback .mentor-bubble { background: color-mix(in srgb, var(--card) 85%, transparent); }
 .joke-card { display: grid; gap: 6px; padding: 14px 16px; border-radius: var(--r-md, 12px); background: var(--card); border: 2px dashed var(--l3); margin: 14px 0; }
 .joke-card .joke-en { font-weight: 700; }
 .joke-card details summary { cursor: pointer; color: var(--ink-2); font-size: .9rem; }

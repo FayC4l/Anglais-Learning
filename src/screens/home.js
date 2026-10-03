@@ -9,7 +9,7 @@ import { shake } from "../fx.js";
 import { avatarEl } from "./who.js";
 import { backupCard } from "./backup.js";
 import { dailyCount, currentLevel } from "./daily.js";
-import { jokeOfTheDay, mooseSays, quip } from "../humor.js";
+import { jokeOfTheDay, mentorSays, quip } from "../humor.js";
 import { EXTRA } from "../content.js";
 
 export const TRAIN_SVG = `<svg class="train-svg" viewBox="0 0 32 32" aria-hidden="true"><rect x="7" y="3.5" width="18" height="21.5" rx="6" fill="currentColor"/><rect x="10" y="7.5" width="12" height="7.5" rx="2.2" fill="#fff" opacity=".92"/><circle cx="11.6" cy="20" r="1.9" fill="#FFD23F"/><circle cx="20.4" cy="20" r="1.9" fill="#FFD23F"/><path d="M10.5 25.5l-3 4M21.5 25.5l3 4" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>`;
@@ -77,7 +77,7 @@ export function map(view) {
   );
   const joke = jokeOfTheDay(currentLevel());
   const jokeCard = joke
-    ? h("div", { class: "joke-card" }, h("span", { class: "eyebrow" }, "La blague du jour de Maurice"), h("p", { class: "joke-en" }, joke.en), h("details", null, h("summary", null, "Je ne comprends pas…"), h("p", null, joke.fr)))
+    ? h("div", { class: "joke-card" }, h("span", { class: "eyebrow" }, "La blague du jour de Chikh Fayçal"), h("p", { class: "joke-en" }, joke.en), h("details", null, h("summary", null, "Je ne comprends pas…"), h("p", null, joke.fr)))
     : null;
   const lines = h("div", { class: "lines" });
   for (let L = 1; L <= LINE_COUNT; L++) {
@@ -85,7 +85,7 @@ export function map(view) {
     lines.append(lineEl(L, lvl, next));
   }
 
-  view.append(h("div", { class: "map" }, header, stats, backupCard(), mooseSays(quip("welcome"), "sm"), hero, tools, jokeCard, h("h2", { class: "section-title" }, "Le réseau"), h("p", { class: "section-sub" }, "Chaque ligne est un niveau. Réussis le test de chaque station pour avancer, puis bats le boss au terminus."), lines));
+  view.append(h("div", { class: "map" }, header, stats, backupCard(), mentorSays(quip("welcome"), "sm"), hero, tools, jokeCard, h("h2", { class: "section-title" }, "Le réseau"), h("p", { class: "section-sub" }, "Chaque ligne est un niveau. Réussis le test de chaque station pour avancer, puis bats le boss au terminus."), lines));
 
   // Scroll the next station into view on load.
   requestAnimationFrame(() => {

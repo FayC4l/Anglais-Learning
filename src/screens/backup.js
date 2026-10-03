@@ -2,7 +2,7 @@
 import { h, icon, toast } from "../ui.js";
 import { exportFamily } from "../profiles.js";
 import { backupReminder, markBackedUp, snoozeBackup, daysSinceBackup, autoStatus, resumeAuto, autoSupported } from "../autobackup.js";
-import { mooseSays } from "../humor.js";
+import { mentorSays } from "../humor.js";
 
 /** Offers `obj` as a .json file download. */
 export function downloadJSON(obj, filename) {
@@ -63,7 +63,7 @@ export function backupCard() {
         "div",
         { class: `backup-card ${kind}` },
         kind === "late"
-          ? mooseSays(days == null ? "Ta progression n'est enregistrée que dans ce navigateur. Un clic pour la mettre à l'abri ? Même mes bois ont une copie de sauvegarde." : `Ça fait ${days} jours sans sauvegarde. Si le navigateur fait le ménage, on perd tout… Un petit clic ?`, "sm")
+          ? mentorSays(days == null ? "Ta progression n'est enregistrée que dans ce navigateur. Un clic pour la mettre à l'abri ? Même mes copies corrigées ont une copie." : `Ça fait ${days} jours sans sauvegarde. Si le navigateur fait le ménage, on perd tout… Un petit clic ?`, "sm", "warning")
           : h("p", null, h("strong", null, "Sauvegarde du jour. "), "Un clic et la progression de toute la famille est à l'abri."),
         h(
           "div",

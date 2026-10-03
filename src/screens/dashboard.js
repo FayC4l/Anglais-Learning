@@ -3,7 +3,7 @@ import { h, icon, esc } from "../ui.js";
 import { state } from "../store.js";
 import { go } from "../router.js";
 import { avatarEl } from "./who.js";
-import { MOOSE_SVG } from "../humor.js";
+import { mentorFaceHtml } from "../humor.js";
 
 export const SKILLS = [
   ["vocabulaire", "Vocabulaire"],
@@ -92,12 +92,12 @@ export function printCertificate(band) {
   body{font-family:Georgia,serif;margin:0;display:grid;place-items:center;min-height:100vh;background:#f4efe3;color:#1b1b1b}
   .c{width:min(90vw,820px);padding:48px;border:10px double #8a6b3e;background:#fffdf7;text-align:center}
   h1{font-size:2.4rem;margin:.2em 0;letter-spacing:.04em}.b{font-size:4rem;font-weight:700;color:#8a2b2b;margin:.1em 0}
-  .n{font-size:2rem;margin:.4em 0;font-style:italic}.m{width:90px;height:90px;margin:0 auto;color:#6b4a35}
+  .n{font-size:2rem;margin:.4em 0;font-style:italic}.m{width:110px;height:110px;margin:0 auto}.m img,.m svg{width:100%;height:100%;object-fit:contain}
   .s{margin-top:28px;display:flex;justify-content:space-between;font-size:.95rem}@media print{body{background:#fff}}</style></head>
-  <body><div class="c"><div class="m">${MOOSE_SVG}</div><p>Mission Bilingue certifie que</p><p class="n">${esc(state.player.name)}</p>
+  <body><div class="c"><div class="m">${mentorFaceHtml("love")}</div><p>Mission Bilingue certifie que</p><p class="n">${esc(state.player.name)}</p>
   <p>a atteint en anglais le niveau</p><p class="b">${band}</p><h1>${names[band]}</h1>
   <p>du Cadre européen commun de référence pour les langues (CECR), selon ses résultats dans l'application.</p>
-  <div class="s"><span>Le ${new Date().toLocaleDateString("fr-CA")}</span><span>Maurice, orignal et examinateur en chef</span></div>
+  <div class="s"><span>Le ${new Date().toLocaleDateString("fr-CA")}</span><span>Chikh Fayçal, professeur et examinateur en chef</span></div>
   <p style="font-size:.75rem;color:#777;margin-top:24px">Certificat d'encouragement, sans valeur officielle. Pour un diplôme reconnu : Cambridge C2 Proficiency.</p></div>
   <script>setTimeout(()=>print(),400)<\/script></body></html>`;
   const w = window.open("", "_blank");

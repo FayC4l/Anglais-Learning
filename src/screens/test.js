@@ -6,7 +6,7 @@ import { go } from "../router.js";
 import { runQuiz, scoreOf } from "../runner.js";
 import { unitTest, KIND_LABEL, blankHtml } from "../questions.js";
 import { gapWords } from "../fill.js";
-import { quip, mooseSays } from "../humor.js";
+import { quip, mentorSays } from "../humor.js";
 import { sfx } from "../audio.js";
 import { confetti, stamp } from "../fx.js";
 import { starsHtml } from "./home.js";
@@ -68,7 +68,7 @@ async function showResults(view, { results, unit, L }) {
         : res.redoCleared
           ? h("p", { class: "lives-back" }, `Station revalidée ! Encore ${res.redoLeft} station${res.redoLeft > 1 ? "s" : ""} à refaire pour récupérer tes ${BOSS_LIVES} vies.`)
           : null,
-      mooseSays(quip(res.passed ? (res.stars === 3 ? "perfect" : "correct") : "fail")),
+      mentorSays(quip(res.passed ? (res.stars === 3 ? "perfect" : "correct") : "fail")),
       h("div", { class: "xp-gain" }, h("span", { html: icon("bolt") }), "+", xp, " XP"),
       badges.length ? h("div", { class: "new-badges" }, badges.map((b) => h("div", { class: "badge-pop" }, h("span", { html: icon("trophy") }), h("strong", null, b.name), h("small", null, b.desc)))) : null,
       actions,

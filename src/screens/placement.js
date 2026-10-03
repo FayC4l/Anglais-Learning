@@ -7,7 +7,7 @@ import { renderQuestion, makeQuestion, feedbackDetails, kindsForRef } from "../q
 import { createPlacement, BANDS, BAND_LINE } from "../placement.js";
 import { sfx, ttsReady } from "../audio.js";
 import { confetti, burstAt, shake } from "../fx.js";
-import { quip, mooseSays } from "../humor.js";
+import { quip, mentorSays } from "../humor.js";
 
 export const BAND_INFO = {
   A1: { name: "Découverte", desc: "Tu comprends des mots et des phrases très simples." },
@@ -18,7 +18,7 @@ export const BAND_INFO = {
   C2: { name: "Maîtrise", desc: "Tu joues avec la langue comme un natif cultivé. Objectif : C2 Proficiency !" },
 };
 
-/** First screen of a new profile: Maurice says hello and proposes the placement test. */
+/** First screen of a new profile: Chikh Fayçal says hello and proposes the placement test. */
 export function welcomeScreen(view) {
   const opt = (title, sub, onClick, primary = false) => h("button", { type: "button", class: `welcome-opt ${primary ? "primary" : ""}`, onClick }, h("strong", null, title), h("small", null, sub));
   view.append(
@@ -27,7 +27,7 @@ export function welcomeScreen(view) {
       { class: "welcome" },
       h("p", { class: "eyebrow" }, `Bienvenue, ${state.player.name} !`),
       h("h1", { class: "page-title" }, "D'où pars-tu ?"),
-      mooseSays(`Salut ${state.player.name} ! Moi c'est Maurice, orignal et prof d'anglais. Avant de grimper, je dois savoir où tu en es. Promis, je ne regarde pas tes réponses… enfin, un peu.`),
+      mentorSays(`Salut ${state.player.name} ! Moi c'est Chikh Fayçal, ton prof d'anglais. Avant de grimper, je dois savoir où tu en es. Promis, je ne regarde pas tes réponses… enfin, un peu.`),
       h(
         "div",
         { class: "welcome-opts" },
@@ -132,7 +132,7 @@ export function placementScreen(view, { start = "A2" } = {}) {
         h("p", { class: "results-line" }, info.desc),
         h("p", { class: "results-line" }, h("strong", null, pct), ` % de bonnes réponses sur ${r.asked} questions.`),
         h("div", { class: "band-scale" }, BANDS.map((b) => h("span", { class: `${b === r.band ? "on" : ""} ${BANDS.indexOf(b) < BANDS.indexOf(r.band) ? "past" : ""}` }, b))),
-        mooseSays(r.band === "A1" ? "Tout le monde commence quelque part. Moi, j'ai commencé par confondre « moose » et « mousse ». On va bien s'amuser." : r.band === "C2" ? "C2 ?! Mes bois en tremblent. Tu vas pouvoir t'attaquer directement à la prépa Cambridge." : `Niveau ${r.band}, pas mal du tout ! Je t'ai réservé une place sur la ligne ${r.line}.`),
+        mentorSays(r.band === "A1" ? "Tout le monde commence quelque part. Moi, à ton âge, je croyais que « teacher » se prononçait « tichère ». On va bien s'amuser." : r.band === "C2" ? "C2 ?! Ma moustache en tremble. Tu vas pouvoir t'attaquer directement à la prépa Cambridge." : `Niveau ${r.band}, pas mal du tout ! Je t'ai réservé une place sur la ligne ${r.line}.`),
         h("label", { class: "field-label", for: "start-line" }, "Par où veux-tu commencer ?"),
         choose,
         h("p", { class: "set-help" }, "Les lignes avant ton point de départ sont validées, mais restent ouvertes si tu veux réviser."),

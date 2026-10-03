@@ -34,7 +34,7 @@ const SCHEMA = {
     corrected_text: { type: "string" },
     strengths_fr: { type: "array", items: { type: "string" } },
     improvements_fr: { type: "array", items: { type: "string" } },
-    comment_fr: { type: "string", description: "Un commentaire bienveillant et un brin humoristique de Maurice, l'orignal prof d'anglais" },
+    comment_fr: { type: "string", description: "Un commentaire bienveillant et un brin humoristique de Chikh Fayçal, le prof d'anglais de l'application" },
   },
 };
 

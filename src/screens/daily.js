@@ -10,7 +10,7 @@ import { addCards, answerCard, dueCards, boxCounts, dayNumber } from "../srs.js"
 import { sfx } from "../audio.js";
 import { confetti } from "../fx.js";
 import { reviewList } from "./test.js";
-import { quip, mooseSays } from "../humor.js";
+import { quip, mentorSays } from "../humor.js";
 
 const SESSION = 15;
 const NEW_PER_DAY = 5;
@@ -52,7 +52,7 @@ export function dailyScreen(view) {
         { class: "results" },
         h("div", { class: "topbar" }, h("button", { type: "button", class: "icon-btn", "aria-label": "Retour", html: icon("back"), onClick: () => go("map") }), h("span", { class: "topbar-title" }, "Entraînement du jour")),
         h("h1", { class: "results-title" }, "Rien à réviser aujourd'hui"),
-        mooseSays("Ton cerveau est à jour. Va finir une station : les nouveaux mots arriveront ici demain."),
+        mentorSays("Ton cerveau est à jour. Va finir une station : les nouveaux mots arriveront ici demain."),
         h("button", { type: "button", class: "btn btn-primary btn-xl", onClick: () => go("map") }, "Retour au réseau"),
       ),
     );
@@ -86,7 +86,7 @@ export function dailyScreen(view) {
           h("p", { class: "eyebrow" }, "Entraînement du jour"),
           h("h1", { class: "results-title" }, scoreOf(results) >= 0.8 ? "Mémoire en béton !" : "Séance terminée"),
           h("p", { class: "results-line" }, `${good} bonnes réponses sur ${results.length}. Les cartes réussies reviendront plus tard, les autres demain.`),
-          mooseSays(quip(scoreOf(results) >= 0.8 ? "perfect" : "comeback")),
+          mentorSays(quip(scoreOf(results) >= 0.8 ? "perfect" : "comeback")),
           h(
             "div",
             { class: "boxes", "aria-label": "Tes cartes par boîte" },

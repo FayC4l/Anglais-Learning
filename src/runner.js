@@ -5,7 +5,7 @@ import { renderQuestion, feedbackDetails, KIND_LABEL } from "./questions.js";
 import { recordAnswer, save } from "./store.js";
 import { sfx, speak } from "./audio.js";
 import { floatText, shake, burstAt } from "./fx.js";
-import { quip, mooseSays } from "./humor.js";
+import { quip, mentorSays } from "./humor.js";
 
 const ENCOURAGE_OK = ["Correct !", "Exact !", "Bien joué !", "Parfait !", "Yes!", "Nailed it!", "Bravo !"];
 const ENCOURAGE_KO = ["Pas tout à fait…", "Presque !", "Pas encore…", "Bonne tentative !", "Regarde bien :"];
@@ -135,12 +135,12 @@ export function runQuiz(root, questions, opts = {}) {
     showFeedback(q, ok, given, timedOut, extra.stop);
   }
 
-  /** Maurice comments now and then: always on a long combo or a timeout, sometimes otherwise. */
-  function mooseLine(ok, timedOut) {
-    if (opts.moose === false) return null;
-    if (timedOut) return mooseSays(quip("timeout"), "sm");
-    if (ok && combo > 0 && combo % 5 === 0) return mooseSays(quip("streak"), "sm");
-    if (Math.random() < 0.3) return mooseSays(quip(ok ? "correct" : "wrong"), "sm");
+  /** Chikh Fayçal comments now and then: always on a long combo or a timeout, sometimes otherwise. */
+  function mentorLine(ok, timedOut) {
+    if (opts.mentor === false) return null;
+    if (timedOut) return mentorSays(quip("timeout"), "sm");
+    if (ok && combo > 0 && combo % 5 === 0) return mentorSays(quip("streak"), "sm");
+    if (Math.random() < 0.3) return mentorSays(quip(ok ? "correct" : "wrong"), "sm");
     return null;
   }
 
@@ -153,7 +153,7 @@ export function runQuiz(root, questions, opts = {}) {
     const cont = h("button", { type: "button", class: `btn ${ok ? "btn-go" : "btn-stop"} btn-continue` }, stopAfter ? "Voir le résultat" : "Continuer");
     fb.className = `feedback ${ok ? "is-ok" : "is-ko"}`;
     fb.replaceChildren(
-      h("div", { class: "fb-inner" }, h("div", { class: "fb-head" }, h("span", { class: "fb-icon", html: icon(ok ? "check" : "close") }), h("strong", { class: "fb-title" }, title), hearBtn), mooseLine(ok, timedOut), ok ? (q.explain && q.kind !== "choose_fr" ? h("p", { class: "fb-explain" }, q.explain) : null) : feedbackDetails(q, given), cont),
+      h("div", { class: "fb-inner" }, h("div", { class: "fb-head" }, h("span", { class: "fb-icon", html: icon(ok ? "check" : "close") }), h("strong", { class: "fb-title" }, title), hearBtn), mentorLine(ok, timedOut), ok ? (q.explain && q.kind !== "choose_fr" ? h("p", { class: "fb-explain" }, q.explain) : null) : feedbackDetails(q, given), cont),
     );
     fb.hidden = false;
     let armed = false;

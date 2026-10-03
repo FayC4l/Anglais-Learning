@@ -142,8 +142,8 @@ missions déjà présentes dans le niveau.
 
 ## 6. `content/humor.json` — mascotte et blagues
 
-La mascotte s'appelle **Maurice**, un orignal canadien prof d'anglais, un peu vaniteux, très fier de ses bois,
-pince-sans-rire mais bienveillant. Il parle français avec quelques mots anglais en `[[chips]]`.
+Le prof de l'app s'appelle **Chikh Fayçal** : un prof d'anglais humain, un peu vaniteux, très fier de sa barbe,
+de sa cravate, de ses lunettes de soleil et de son thé à la menthe, pince-sans-rire mais bienveillant. Il parle français avec quelques mots anglais en `[[chips]]`.
 ```json
 {
   "quips": {
