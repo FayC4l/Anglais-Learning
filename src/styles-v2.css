@@ -242,3 +242,18 @@
 .backup-card.ok .ic { color: var(--go); width: 26px; height: 26px; }
 .auto-backup { padding: 10px 14px; border-radius: 12px; background: var(--card-2); display: grid; gap: 6px; }
 .auto-backup p { margin: 0; }
+
+/* Boss lives and stations to redo */
+.redo-tag { font-family: var(--font-mono); font-size: .7rem; font-weight: 700; padding: 2px 8px; border-radius: 99px; background: var(--amber); color: #1b1300; white-space: nowrap; }
+.station.redo .dot { background: var(--amber); border-color: var(--amber); }
+.boss-lives { display: inline-flex; align-items: center; gap: 2px; margin-left: auto; }
+.boss-lives .life .ic, .boss-lives .ic { width: 18px; height: 18px; }
+.boss-lives .life.on .ic { fill: var(--stop); stroke: var(--stop); }
+.boss-lives .life.lost .ic { fill: none; stroke: var(--ink-3); opacity: .5; }
+.boss-lives.big { justify-content: center; gap: 10px; margin: 6px auto; font-size: 1.05rem; }
+.boss-lives.big .ic { width: 28px; height: 28px; }
+.boss-lives.big.last strong { color: var(--stop); }
+.boss-lives.big.last .life.on .ic { animation: pulse 1s infinite; }
+.redo-note { color: var(--ink); background: color-mix(in srgb, var(--amber) 15%, var(--card)); border-radius: 10px; padding: 8px 12px; }
+.boss-lock-msg, .lives-back, .redo-banner { padding: 10px 14px; border-radius: 12px; background: color-mix(in srgb, var(--amber) 14%, var(--card)); border-left: 5px solid var(--amber); margin: 6px 0; text-align: left; }
+.lives-back { border-left-color: var(--go); background: color-mix(in srgb, var(--go) 12%, var(--card)); font-weight: 700; }

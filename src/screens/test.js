@@ -1,7 +1,7 @@
 // The unit test flow and its results screen (also reused by the mistakes notebook).
 import { h, icon, countUp, sleep } from "../ui.js";
 import { unitById, levelById } from "../content.js";
-import { recordTest, diff, checkBadges, unitUnlocked } from "../store.js";
+import { recordTest, diff, checkBadges, unitUnlocked, redoUnits, bossReady, BOSS_LIVES } from "../store.js";
 import { go } from "../router.js";
 import { runQuiz, scoreOf } from "../runner.js";
 import { unitTest, KIND_LABEL, blankHtml } from "../questions.js";
@@ -42,8 +42,12 @@ async function showResults(view, { results, unit, L }) {
   const stars = h("div", { class: "result-stars", html: starsHtml(0) });
   const xp = h("span", { class: "xp-num" }, "0");
   const actions = h("div", { class: "result-actions" });
-  if (res.passed && nextUnit && unitUnlocked(L, U + 1)) actions.append(h("button", { type: "button", class: "btn btn-primary btn-xl", onClick: () => go("unit", { uid: nextUnit.id }) }, `Station suivante : ${nextUnit.titleEn}`));
-  else if (res.passed && !nextUnit) actions.append(h("button", { type: "button", class: "btn btn-primary btn-xl", onClick: () => go("boss", { level: L }) }, `Affronter ${lvl.boss.name}`));
+  const stillRedo = redoUnits(L);
+  if (res.livesRestored) actions.append(h("button", { type: "button", class: "btn btn-primary btn-xl", onClick: () => go("boss", { level: L }) }, `Vies récupérées : affronter ${lvl.boss.name}`));
+  else if (res.redoCleared && stillRedo.length) actions.append(h("button", { type: "button", class: "btn btn-primary btn-xl", onClick: () => go("unit", { uid: stillRedo[0].id, tab: "test" }) }, `Station à refaire suivante : ${stillRedo[0].id}`));
+  else if (res.passed && stillRedo.length) actions.append(h("button", { type: "button", class: "btn btn-primary btn-xl", onClick: () => go("unit", { uid: stillRedo[0].id, tab: "test" }) }, `Station à refaire : ${stillRedo[0].id}`));
+  else if (res.passed && nextUnit && unitUnlocked(L, U + 1)) actions.append(h("button", { type: "button", class: "btn btn-primary btn-xl", onClick: () => go("unit", { uid: nextUnit.id }) }, `Station suivante : ${nextUnit.titleEn}`));
+  else if (res.passed && !nextUnit && bossReady(L)) actions.append(h("button", { type: "button", class: "btn btn-primary btn-xl", onClick: () => go("boss", { level: L }) }, `Affronter ${lvl.boss.name}`));
   const wrongRefs = results.filter((r) => !r.ok).map((r) => r.q.ref);
   if (!res.passed && wrongRefs.length) actions.append(h("button", { type: "button", class: "btn btn-primary btn-xl", onClick: () => go("review", { refs: wrongRefs, title: `Mes erreurs du test ${unit.id}` }) }, "Réviser ces erreurs maintenant"));
   actions.append(h("button", { type: "button", class: `btn ${res.passed ? "btn-ghost" : "btn-ghost"}`, onClick: () => go("test", { uid: unit.id }) }, "Refaire le test"));
@@ -59,6 +63,11 @@ async function showResults(view, { results, unit, L }) {
       ring,
       h("p", { class: "results-line" }, `${good} bonnes réponses sur ${results.length}. `, res.passed ? (res.firstPass ? "Nouvelle station débloquée." : "") : `Il faut ${need} %. C'est normal de ne pas réussir du premier coup : ce test est fait pour être exigeant. Révise tes erreurs, rejoue un peu, puis retente.`),
       stars,
+      res.livesRestored
+        ? h("p", { class: "lives-back" }, `Toutes les stations sont refaites : tes ${BOSS_LIVES} vies sont de retour ! ${lvl.boss.name} t'attend.`)
+        : res.redoCleared
+          ? h("p", { class: "lives-back" }, `Station revalidée ! Encore ${res.redoLeft} station${res.redoLeft > 1 ? "s" : ""} à refaire pour récupérer tes ${BOSS_LIVES} vies.`)
+          : null,
       mooseSays(quip(res.passed ? (res.stars === 3 ? "perfect" : "correct") : "fail")),
       h("div", { class: "xp-gain" }, h("span", { html: icon("bolt") }), "+", xp, " XP"),
       badges.length ? h("div", { class: "new-badges" }, badges.map((b) => h("div", { class: "badge-pop" }, h("span", { html: icon("trophy") }), h("strong", null, b.name), h("small", null, b.desc)))) : null,
@@ -81,7 +90,8 @@ async function showResults(view, { results, unit, L }) {
       sfx.pop();
       await sleep(320);
     }
-    if (res.firstPass) stamp(nextUnit ? "Station ouverte" : "Terminus ouvert", { sub: nextUnit ? nextUnit.titleEn : lvl.boss.name, color: `var(--l${L})`, ms: 1300 });
+    if (res.livesRestored) stamp(`${BOSS_LIVES} vies récupérées`, { sub: lvl.boss.name, color: `var(--l${L})`, ms: 1600 });
+    else if (res.firstPass) stamp(nextUnit ? "Station ouverte" : "Terminus ouvert", { sub: nextUnit ? nextUnit.titleEn : lvl.boss.name, color: `var(--l${L})`, ms: 1300 });
   } else sfx.lose();
   countUp(xp, res.xp, 700);
 }

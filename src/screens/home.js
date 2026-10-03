@@ -1,7 +1,7 @@
 // Onboarding and the transit-line map of the 12 levels.
 import { h, icon, toast, dialog, esc } from "../ui.js";
 import { LEVELS, LINE_COUNT } from "../content.js";
-import { state, levelUnlocked, unitUnlocked, unitState, bossState, bossReady, levelDone, nextStep, rank, streakAlive, wordsLearned, mistakeCount } from "../store.js";
+import { state, levelUnlocked, unitUnlocked, unitState, bossState, bossReady, levelDone, nextStep, rank, streakAlive, wordsLearned, mistakeCount, bossLives, bossLocked, redoUnits, BOSS_LIVES } from "../store.js";
 import { listProfiles } from "../profiles.js";
 import { go } from "../router.js";
 import { sfx } from "../audio.js";
@@ -54,7 +54,7 @@ export function map(view) {
     hero = h(
       "button",
       { type: "button", class: "next-card", style: { "--line": `var(--l${L})`, "--line-ink": `var(--l${L}-ink)` }, onClick: () => (isBoss ? go("boss", { level: L }) : go("unit", { uid: next.unit.id })) },
-      h("span", { class: "next-eyebrow" }, isBoss ? "Terminus · boss" : "Prochain arrêt"),
+      h("span", { class: "next-eyebrow" }, isBoss ? `Terminus · boss · ${bossLives(L)} vie${bossLives(L) > 1 ? "s" : ""}` : unitState(next.unit.id).redo ? `À refaire pour récupérer tes vies (${redoUnits(L).length} restante${redoUnits(L).length > 1 ? "s" : ""})` : "Prochain arrêt"),
       h("span", { class: "next-title" }, isBoss ? next.level.boss.name : next.unit.titleEn),
       h("span", { class: "next-sub" }, isBoss ? `Ligne ${L} · Bats-le pour ouvrir la ligne ${L + 1}` : `Ligne ${L} · ${next.unit.id} ${next.unit.title}`),
       h("span", { class: "next-go" }, "Continuer", h("span", { html: icon("play") })),
@@ -101,7 +101,7 @@ function lineEl(L, lvl, next) {
   if (!lvl) {
     return h("section", { class: "line locked", style }, h("header", { class: "line-head" }, h("span", { class: "bullet" }, L), h("div", { class: "line-name" }, h("h3", null, `Niveau ${L}`), h("p", null, "En construction"))));
   }
-  const passed = lvl.units.filter((u) => unitState(u.id).passed).length;
+  const passed = lvl.units.filter((u) => unitState(u.id).passed && !unitState(u.id).redo).length;
   const head = h(
     "header",
     { class: "line-head" },
@@ -114,13 +114,13 @@ function lineEl(L, lvl, next) {
     const open = unitUnlocked(L, i + 1);
     const st = unitState(u.id);
     const here = next?.type === "unit" && next.unit.id === u.id;
-    const cls = ["station", st.passed ? "done" : open ? "open" : "locked", here ? "here" : ""].join(" ");
+    const cls = ["station", st.redo ? "redo" : st.passed ? "done" : open ? "open" : "locked", here ? "here" : ""].join(" ");
     const btn = h(
       "button",
       { type: "button", class: "station-btn", "aria-label": `${u.id} ${u.title}${open ? "" : " (verrouillée)"}` },
       h("span", { class: "dot" }, open ? null : h("span", { html: icon("lock") })),
       h("span", { class: "st-text" }, h("span", { class: "st-name" }, u.titleEn), h("span", { class: "st-fr" }, `${u.id} · ${u.title}`)),
-      st.passed ? h("span", { class: "stars", html: st.skipped && !st.stars ? '<span class="skipped">validée</span>' : starsHtml(st.stars || 0) }) : null,
+      st.redo ? h("span", { class: "redo-tag" }, "à refaire") : st.passed ? h("span", { class: "stars", html: st.skipped && !st.stars ? '<span class="skipped">validée</span>' : starsHtml(st.stars || 0) }) : null,
     );
     btn.addEventListener("click", () => {
       if (!open) {
@@ -140,17 +140,33 @@ function lineEl(L, lvl, next) {
   const ready = bossReady(L);
   const bs = bossState(L);
   const hereBoss = next?.type === "boss" && next.level.id === L;
+  const locked = bossLocked(L);
+  const lives = bossLives(L);
+  const redo = redoUnits(L);
+  const livesHtml = Array.from({ length: BOSS_LIVES }, (_, i) => `<span class="life ${i < lives ? "on" : "lost"}">${icon("heart")}</span>`).join("");
+  const bossSub = bs.defeated
+    ? bs.flawless ? "Boss vaincu sans perdre un cœur" : "Boss vaincu"
+    : locked
+      ? `Boss bloqué : refais les stations (${lvl.units.length - redo.length}/${lvl.units.length})`
+      : `Terminus · ${lives} vie${lives > 1 ? "s" : ""} pour le battre`;
   const bossBtn = h(
     "button",
     { type: "button", class: "station-btn" },
     h("span", { class: "dot terminal" }, bs.defeated ? h("span", { html: icon("trophy") }) : ready ? null : h("span", { html: icon("lock") })),
-    h("span", { class: "st-text" }, h("span", { class: "st-name" }, lvl.boss.name), h("span", { class: "st-fr" }, bs.defeated ? (bs.flawless ? "Boss vaincu sans perdre un cœur" : "Boss vaincu") : "Terminus · examen du boss")),
+    h("span", { class: "st-text" }, h("span", { class: "st-name" }, lvl.boss.name), h("span", { class: "st-fr" }, bossSub)),
+    !bs.defeated && unlocked ? h("span", { class: "boss-lives", "aria-label": `${lives} vies sur ${BOSS_LIVES}`, html: livesHtml }) : null,
   );
   bossBtn.addEventListener("click", () => {
     if (!unlocked) {
       sfx.wrong();
       shake(bossBtn);
       toast("Cette ligne est encore fermée.");
+      return;
+    }
+    if (locked) {
+      sfx.wrong();
+      shake(bossBtn);
+      toast(`Plus de vies ! Refais les stations « à refaire » de la ligne ${L} pour récupérer tes ${BOSS_LIVES} vies.`);
       return;
     }
     if (!ready && !bs.defeated) return skipChallenge(L, lvl);
@@ -161,7 +177,8 @@ function lineEl(L, lvl, next) {
   list.append(term);
 
   const section = h("section", { class: `line ${unlocked ? "" : "locked"} ${done ? "complete" : ""}`, style, id: `line-${L}` }, head, list);
-  if (unlocked && !done && !ready) {
+  if (locked) section.append(h("p", { class: "line-lock redo-note" }, `Le boss t'a pris tes ${BOSS_LIVES} vies. Réussis à nouveau le test des stations marquées « à refaire » : tes vies reviendront.`));
+  if (unlocked && !done && !ready && !locked) {
     section.append(h("button", { type: "button", class: "skip-link", onClick: () => skipChallenge(L, lvl) }, "Tu connais déjà ce niveau ? Défie le boss directement"));
   }
   if (!unlocked) section.append(h("p", { class: "line-lock" }, `Bats le boss de la ligne ${L - 1} pour ouvrir cette ligne.`));

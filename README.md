@@ -8,6 +8,7 @@ L'appli d'anglais de toute la famille : du premier « hello » jusqu'au niveau C
 - **Sauvegarde quotidienne** : rappel une fois par jour sur la carte (téléchargement en un clic) et, sur ordinateur avec Chrome ou Edge, fichier de sauvegarde mis à jour automatiquement (Profil → Sauvegarde automatique).
 - **Test de placement adaptatif** (A1 → C2) : les questions montent ou descendent selon tes réponses, puis tu commences à la bonne ligne.
 - **12 lignes, 60 stations, 12 boss** : leçon narrée, atelier de prononciation, mots, 9 mini-jeux, mission orale ou écrite, test de 15 questions.
+- **3 vies par boss** : chaque défaite coûte une vie ; sans vie, toutes les stations du niveau sont « à refaire » et les 3 vies reviennent quand leurs tests sont réussis à nouveau.
 - **Boss imprévisibles** : 3 phases (reconnaissance, production, rage), 60 questions réservées par boss, questions générées à l'infini et mémoire anti-répétition (un nouvel essai reprend au plus 20 % des questions du précédent).
 - **Générateurs de questions** : conjugaison (≈ 250 verbes, tous les temps, passif), pluriels, comparatifs, nombres, heure, formation des mots, conditionnels…
 - **Phrases à trous** : une case par mot attendu, avec le nombre de mots affiché.

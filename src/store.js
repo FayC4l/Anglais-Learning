@@ -104,17 +104,27 @@ export function unitUnlocked(L, U) {
 export function bossReady(L) {
   const lvl = LEVELS.find((l) => l.id === L);
   if (!lvl) return false;
-  return lvl.units.every((u) => unitState(u.id).passed);
+  return lvl.units.every((u) => unitState(u.id).passed && !unitState(u.id).redo) && !bossLocked(L);
 }
 
-/** The next thing to do: first unlocked, unpassed unit or boss. */
+// ---------- Boss lives ----------
+// Each level gives 3 lives against its boss. When they are all lost, every station of the level must be
+// passed again ("à refaire"); the 3 lives come back once the last one is done. A beaten boss costs no life.
+
+export const BOSS_LIVES = 3;
+export const bossLives = (L) => (levelDone(L) ? BOSS_LIVES : bossState(L).lives ?? BOSS_LIVES);
+export const bossLocked = (L) => !state.unlockAll && !levelDone(L) && bossLives(L) <= 0;
+/** Stations of a level still to be redone after losing the 3 lives. */
+export const redoUnits = (L) => (LEVELS.find((l) => l.id === L)?.units || []).filter((u) => unitState(u.id).redo);
+
+/** The next thing to do: first unlocked, unpassed (or to-redo) unit, or the boss. */
 export function nextStep() {
   for (const lvl of LEVELS) {
     if (!levelUnlocked(lvl.id)) break;
     if (levelDone(lvl.id)) continue;
     for (let i = 0; i < lvl.units.length; i++) {
       const u = lvl.units[i];
-      if (!unitState(u.id).passed && unitUnlocked(lvl.id, i + 1)) return { type: "unit", level: lvl, unit: u };
+      if ((!unitState(u.id).passed || unitState(u.id).redo) && unitUnlocked(lvl.id, i + 1)) return { type: "unit", level: lvl, unit: u };
     }
     if (bossReady(lvl.id)) return { type: "boss", level: lvl };
   }
@@ -248,12 +258,24 @@ export function recordTest(uid, score) {
     passed: prev.passed || passed,
     attempts: (prev.attempts || 0) + 1,
     skipped: prev.passed ? prev.skipped : false,
+    redo: prev.redo && !passed,
   };
+  // A station redone after losing the boss's lives: when the last one is done, the 3 lives come back.
+  const L = Number(String(uid).split(".")[0]);
+  let redoCleared = false;
+  let livesRestored = false;
+  if (prev.redo && passed) {
+    redoCleared = true;
+    if (!redoUnits(L).length && !levelDone(L)) {
+      state.bosses[L] = { ...bossState(L), lives: BOSS_LIVES };
+      livesRestored = true;
+    }
+  }
   state.stats.tests++;
   addXp(xp);
   touchStreak();
   save();
-  return { passed, stars, firstPass, newBest, xp };
+  return { passed, stars, firstPass, newBest, xp, redoCleared, livesRestored, redoLeft: redoUnits(L).length };
 }
 
 /** Saves a boss result. A victory validates every unit of the level (skip challenge). */
@@ -268,10 +290,23 @@ export function recordBoss(L, { won, score, hearts, maxHearts }) {
         skipped = true;
         state.units[u.id] = { ...unitState(u.id), passed: true, skipped: true, stars: unitState(u.id).stars || 0 };
       }
+      if (unitState(u.id).redo) state.units[u.id] = { ...unitState(u.id), redo: false };
+    }
+  }
+  // Losing costs a life (only while the boss is unbeaten). No life left: every station is to be redone.
+  let lives = prev.defeated ? BOSS_LIVES : prev.lives ?? BOSS_LIVES;
+  let locked = false;
+  if (!won && !prev.defeated) {
+    lives = Math.max(0, lives - 1);
+    if (lives === 0 && lvl) {
+      locked = true;
+      for (const u of lvl.units) state.units[u.id] = { ...unitState(u.id), redo: true };
     }
   }
   const flawless = won && hearts === maxHearts;
   state.bosses[L] = {
+    ...prev,
+    lives,
     defeated: prev.defeated || won,
     best: Math.max(prev.best || 0, score),
     flawless: prev.flawless || flawless,
@@ -284,7 +319,7 @@ export function recordBoss(L, { won, score, hearts, maxHearts }) {
   state.stats.bosses++;
   touchStreak();
   save();
-  return { firstWin, flawless, xp, skipped };
+  return { firstWin, flawless, xp, skipped, livesLeft: lives, locked };
 }
 
 export function recordGame(key, score) {

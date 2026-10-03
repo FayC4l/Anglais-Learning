@@ -62,6 +62,7 @@ export function unitScreen(view, { uid, tab }) {
         h("h1", { class: "unit-name" }, unit.titleEn),
         h("p", { class: "unit-fr" }, unit.title),
         h("p", { class: "unit-goal" }, unit.goal),
+        st.redo ? h("p", { class: "redo-banner" }, h("strong", null, "À refaire. "), "Le boss t'a pris tes vies : réussis à nouveau le test de cette station (étape 5) pour les récupérer.") : null,
         st.passed ? h("div", { class: "unit-stars", html: starsHtml(st.stars || 0) }) : null,
       ),
       steps,

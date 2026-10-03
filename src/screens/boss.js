@@ -1,7 +1,8 @@
 // Boss fight at the end of each line: a cartoon monster drawn on canvas, hearts, HP bar.
 import { h, icon, sleep, countUp, reducedMotion } from "../ui.js";
 import { levelById, EXTRA } from "../content.js";
-import { diff, recordBoss, checkBadges, bossReady, levelUnlocked } from "../store.js";
+import { diff, recordBoss, checkBadges, bossReady, levelUnlocked, bossLives, bossLocked, bossState, BOSS_LIVES } from "../store.js";
+import { toast } from "../ui.js";
 import { go } from "../router.js";
 import { runQuiz, scoreOf } from "../runner.js";
 import { bossExam } from "../questions.js";
@@ -266,7 +267,13 @@ export function bossScreen(view, { level }) {
   const L = Number(level);
   const lvl = levelById(L);
   if (!lvl || !levelUnlocked(L)) return go("map");
+  if (bossLocked(L)) {
+    toast(`Plus de vies contre ce boss : refais d'abord les stations de la ligne ${L}.`);
+    return go("map");
+  }
   const d = diff();
+  const lives = bossLives(L);
+  const defeated = !!bossState(L).defeated;
   const style = { "--line": `var(--l${L})`, "--line-ink": `var(--l${L}-ink)` };
   const canvas = h("canvas", { class: "boss-canvas big", "aria-label": `Le boss ${lvl.boss.name}` });
   const taunt = h("p", { class: "boss-taunt" });
@@ -279,6 +286,14 @@ export function bossScreen(view, { level }) {
       h("div", { class: "topbar" }, h("button", { type: "button", class: "icon-btn", "aria-label": "Retour au réseau", html: icon("back"), onClick: () => go("map") }), h("span", { class: "bullet sm" }, L), h("span", { class: "topbar-title" }, `Terminus de la ligne ${L}`)),
       h("p", { class: "eyebrow" }, "Boss de la ligne"),
       h("h1", { class: "boss-name-xl" }, lvl.boss.name),
+      !defeated
+        ? h(
+            "div",
+            { class: `boss-lives big ${lives === 1 ? "last" : ""}`, "aria-label": `${lives} vies sur ${BOSS_LIVES}` },
+            h("span", { html: Array.from({ length: BOSS_LIVES }, (_, i) => `<span class="life ${i < lives ? "on" : "lost"}">${icon("heart")}</span>`).join("") }),
+            h("strong", null, lives === 1 ? "Dernière vie !" : `${lives} vies`),
+          )
+        : null,
       canvas,
       taunt,
       h(
@@ -288,7 +303,9 @@ export function bossScreen(view, { level }) {
         h("li", null, h("span", { html: icon("bolt") }), "Chaque bonne réponse frappe le boss."),
         h("li", null, h("span", { html: icon("book") }), `Questions sur toute la ligne ${L}${L > 1 ? ", plus des révisions des lignes d'avant" : ""}.`),
         h("li", null, h("span", { html: icon("sparkle") }), "3 phases : reconnaissance, production, puis la rage du boss. Les questions changent à chaque combat."),
-        h("li", null, h("span", { html: icon("refresh") }), "Perdu ? Tu révises tes erreurs et tu reviens. Il n'y a aucune limite d'essais."),
+        defeated
+          ? h("li", null, h("span", { html: icon("refresh") }), "Boss déjà vaincu : rejoue autant que tu veux, sans perdre de vie.")
+          : h("li", null, h("span", { html: icon("refresh") }), `Tu as ${BOSS_LIVES} vies pour le battre : chaque défaite en coûte une. Sans vie, il faudra refaire les stations de la ligne pour les récupérer.`),
       ),
       !ready ? h("p", { class: "boss-warn" }, "Défi direct : tu n'as pas fini les stations de cette ligne. Si tu gagnes, toute la ligne est validée.") : null,
       start,
@@ -425,6 +442,7 @@ function fight(view, L, lvl) {
       await sleep(900);
     }
     monster.stop();
+    const wasDefeated = !!bossState(L).defeated;
     const res = recordBoss(L, { won, score, hearts: Math.max(0, hearts), maxHearts });
     const badges = checkBadges();
     const nextLvl = levelById(L + 1);
@@ -435,9 +453,14 @@ function fight(view, L, lvl) {
         "div",
         { class: `results boss-results ${won ? "won" : "lost"}`, style: { "--line": `var(--l${L})`, "--line-ink": `var(--l${L}-ink)` } },
         h("p", { class: "eyebrow" }, `Terminus de la ligne ${L}`),
-        h("h1", { class: "results-title" }, won ? "Victoire !" : "Le boss a gagné… cette fois."),
+        h("h1", { class: "results-title" }, won ? "Victoire !" : res.locked ? "Plus de vies !" : "Le boss a gagné… cette fois."),
         h("p", { class: "boss-quote" }, h("strong", null, `${lvl.boss.name} : `), won ? lvl.boss.defeat : pickLine(taunts.lose) || "Ha ! Révise tes erreurs et reviens me voir. Je t'attends !"),
         h("p", { class: "results-line" }, `${results.filter((r) => r.ok).length} bonnes réponses sur ${results.length}${won ? "" : ` (le combat s'arrête après ${maxHearts} erreurs)`}.`, won && res.flawless ? " Sans perdre un seul cœur !" : ""),
+        !won && res.locked
+          ? h("p", { class: "boss-lock-msg" }, `Le boss t'a pris tes ${BOSS_LIVES} vies. Les ${lvl.units.length} stations de la ligne ${L} sont marquées « à refaire » : réussis à nouveau leur test et tes ${BOSS_LIVES} vies reviendront.`)
+          : !won && !wasDefeated
+            ? h("div", { class: `boss-lives big ${res.livesLeft === 1 ? "last" : ""}` }, h("span", { html: Array.from({ length: BOSS_LIVES }, (_, i) => `<span class="life ${i < res.livesLeft ? "on" : "lost"}">${icon("heart")}</span>`).join("") }), h("strong", null, res.livesLeft === 1 ? "Il te reste une seule vie : révise bien avant de revenir !" : `Il te reste ${res.livesLeft} vies.`))
+            : null,
         h("div", { class: "xp-gain" }, h("span", { html: icon("bolt") }), "+", xp, " XP"),
         badges.length ? h("div", { class: "new-badges" }, badges.map((b) => h("div", { class: "badge-pop" }, h("span", { html: icon("trophy") }), h("strong", null, b.name), h("small", null, b.desc)))) : null,
         h(
@@ -445,8 +468,9 @@ function fight(view, L, lvl) {
           { class: "result-actions" },
           won && nextLvl ? h("button", { type: "button", class: "btn btn-primary btn-xl", onClick: () => go("map") }, `Ouvrir la ligne ${L + 1} : ${nextLvl.title}`) : null,
           won && !nextLvl ? h("button", { type: "button", class: "btn btn-primary btn-xl", onClick: () => go("profile") }, "Voir mon parcours") : null,
-          !won && wrongRefs.length ? h("button", { type: "button", class: "btn btn-primary btn-xl", onClick: () => go("review", { refs: wrongRefs }) }, "Réviser ces erreurs maintenant") : null,
-          h("button", { type: "button", class: "btn btn-ghost", onClick: () => go("boss", { level: L }) }, won ? "Rejouer le combat" : "Réessayer"),
+          !won && res.locked ? h("button", { type: "button", class: "btn btn-primary btn-xl", onClick: () => go("unit", { uid: lvl.units[0].id, tab: "test" }) }, `Refaire la station ${lvl.units[0].id}`) : null,
+          !won && wrongRefs.length ? h("button", { type: "button", class: `btn ${res.locked ? "btn-ghost" : "btn-primary btn-xl"}`, onClick: () => go("review", { refs: wrongRefs }) }, "Réviser ces erreurs maintenant") : null,
+          won || !res.locked ? h("button", { type: "button", class: "btn btn-ghost", onClick: () => go("boss", { level: L }) }, won ? "Rejouer le combat" : `Réessayer (${res.livesLeft} vie${res.livesLeft > 1 ? "s" : ""})`) : null,
           h("button", { type: "button", class: "btn btn-ghost", onClick: () => go("map") }, "Réseau"),
         ),
         reviewList(results),

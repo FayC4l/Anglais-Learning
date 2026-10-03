@@ -32,7 +32,7 @@ const step = async (label, fn) => {
     await fn();
   } catch (e) {
     const screen = await page.evaluate(() => document.getElementById("view").dataset.screen).catch(() => "?");
-    errors.push(`${label}: ${e.message.split("\n")[0]} [screen ${screen}]`);
+    errors.push(`${label}: ${e.message.split("\n").slice(0, process.env.SMOKE_VERBOSE ? 12 : 1).join(" | ")} [screen ${screen}]`);
     await shot(`fail-${label.replace(/\W+/g, "_")}`);
   }
 };
@@ -210,6 +210,51 @@ await step("daily backup reminder", async () => {
   await page.locator(".who-card", { hasText: "Lina" }).click();
   await page.waitForSelector(".map");
   if (await page.locator(".backup-card").count()) throw new Error("reminder still shown after today's backup");
+});
+
+await step("boss lives: losing the last life sends the stations back", async () => {
+  await page.evaluate(() => {
+    const g = JSON.parse(localStorage.getItem("mission-bilingue:global"));
+    const key = `mission-bilingue:p:${g.activeId}`;
+    const s = JSON.parse(localStorage.getItem(key));
+    for (const u of ["1.1", "1.2", "1.3", "1.4", "1.5"]) s.units[u] = { passed: true, stars: 1, best: 0.8, attempts: 1 };
+    s.bosses = { 1: { lives: 1, attempts: 2 } };
+    s.settings.difficulty = "brutal"; // 2 hearts: the fight ends quickly
+    localStorage.setItem(key, JSON.stringify(s));
+  });
+  await page.reload();
+  await page.locator(".who-card", { hasText: "Lina" }).click();
+  await page.waitForSelector(".map");
+  await page.locator("#line-1 .station.boss .station-btn").click();
+  await page.waitForSelector(".boss-intro .boss-lives.last");
+  await shot("14-boss-last-life");
+  await page.click("text=Combattre");
+  await page.waitForSelector(".arena");
+  for (let i = 0; i < 12; i++) {
+    if (await page.locator(".boss-results").count()) break;
+    if (await page.locator(".feedback:not([hidden]) .btn-continue").count()) {
+      await page.click(".btn-continue");
+      await page.waitForTimeout(900);
+      continue;
+    }
+    if (await page.locator(".q-mount.answered").count()) {
+      await page.waitForTimeout(300);
+      continue;
+    }
+    await answerCurrent("zzz wrong");
+    await page.waitForTimeout(900);
+  }
+  await page.waitForSelector(".boss-results");
+  await page.waitForSelector(".boss-lock-msg");
+  await shot("15-boss-no-lives");
+  await page.click(".result-actions .btn:text-is('Réseau')");
+  await page.waitForSelector(".map");
+  const redo = await page.locator("#line-1 .redo-tag").count();
+  if (redo !== 5) throw new Error(`${redo} stations to redo`);
+  await page.locator("#line-1 .station.boss .station-btn").click();
+  await page.waitForSelector(".toast.show");
+  if ((await page.evaluate(() => document.getElementById("view").dataset.screen)) !== "map") throw new Error("locked boss opened");
+  await shot("16-map-redo");
 });
 
 await ctx.close();
