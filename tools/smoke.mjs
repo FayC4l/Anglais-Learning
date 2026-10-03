@@ -14,11 +14,13 @@ const browser = await chromium.launch({ executablePath: CANDIDATES.find((p) => e
 const errors = [];
 
 // Fake speech synthesis so the audio paths run headless.
-const mockTTS = () => {
-  const voices = [
-    { name: "Mock CA", lang: "en-CA", voiceURI: "mock-en", default: true, localService: true },
-    { name: "Mock FR", lang: "fr-CA", voiceURI: "mock-fr", default: false, localService: true },
-  ];
+const mockTTS = (withVoices) => {
+  const voices = withVoices
+    ? [
+        { name: "Mock CA", lang: "en-CA", voiceURI: "mock-en", default: true, localService: true },
+        { name: "Mock FR", lang: "fr-CA", voiceURI: "mock-fr", default: false, localService: true },
+      ]
+    : [];
   window.__spoken = [];
   const synth = {
     getVoices: () => voices,
@@ -39,7 +41,8 @@ async function run({ name, viewport, scheme, tts, placement = false }) {
   const ctx = await browser.newContext({ viewport, colorScheme: scheme, deviceScaleFactor: 1 });
   const page = await ctx.newPage();
   page.setDefaultTimeout(6000);
-  if (tts) await page.addInitScript(mockTTS);
+  // Always mock speech: with voices (tts) or without any voice (silent device).
+  await page.addInitScript(mockTTS, !!tts);
   page.on("pageerror", (e) => errors.push(`[${name}] pageerror: ${e.message}`));
   page.on("console", (m) => m.type() === "error" && !/fonts\.g|ERR_|net::/.test(m.text()) && errors.push(`[${name}] console: ${m.text()}`));
   await page.goto(`file:///${file.replace(/\\/g, "/").replace(/^\//, "")}`);

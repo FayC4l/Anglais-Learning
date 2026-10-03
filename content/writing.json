@@ -1,0 +1,4349 @@
+{
+  "prompts": [
+    {
+      "id": "w01-1",
+      "level": 1,
+      "type": "description",
+      "title": "Je me présente",
+      "prompt": "Tu arrives dans un nouveau club d'anglais. Écris une petite présentation de toi : ton prénom, ton âge, ta ville, ta couleur préférée et une personne de ta famille.",
+      "words": [
+        25,
+        60
+      ],
+      "require": [
+        {
+          "kind": "tense",
+          "value": "present_simple",
+          "min": 3,
+          "label": "Utilise le présent (I am, I have, my… is) au moins 3 fois"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "red",
+            "blue",
+            "green",
+            "yellow",
+            "black",
+            "white",
+            "orange",
+            "purple",
+            "pink",
+            "brown",
+            "grey"
+          ],
+          "min": 1,
+          "label": "Cite au moins une couleur"
+        },
+        {
+          "kind": "connectors",
+          "min": 1,
+          "label": "Relie tes idées avec and ou but"
+        }
+      ],
+      "model": "Hello! My name is Zoé and I'm eleven years old. I'm from Gatineau. My favourite colour is green. I have a green bag and a green pencil case! I have a brother, Félix. He is eight and he is very funny. Nice to meet you!"
+    },
+    {
+      "id": "w01-2",
+      "level": 1,
+      "type": "message",
+      "title": "Mon sac d'école",
+      "prompt": "Ton correspondant de Vancouver veut savoir ce qu'il y a dans ton sac d'école. Écris-lui un petit message : au moins 4 objets avec leur couleur (a red pen, an orange eraser…). Attention : a devant une consonne, an devant une voyelle !",
+      "ages": [
+        "enfant",
+        "ado"
+      ],
+      "words": [
+        25,
+        60
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "a",
+            "an"
+          ],
+          "min": 2,
+          "label": "Utilise a ET an (a red pen, an orange eraser)"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "red",
+            "blue",
+            "green",
+            "yellow",
+            "black",
+            "white",
+            "orange",
+            "purple",
+            "pink",
+            "brown",
+            "grey"
+          ],
+          "min": 3,
+          "label": "Au moins 3 couleurs différentes"
+        },
+        {
+          "kind": "tense",
+          "value": "present_simple",
+          "min": 2,
+          "label": "Utilise le présent (It's…, I have…) au moins 2 fois"
+        }
+      ],
+      "model": "Hi Noah! This is my school bag. It's blue and it's very big. In my bag, I have a red pen, a yellow pencil and an orange eraser. I have a green ruler, too. I have a book and an English notebook. My pencil case is purple. Bye! Léa"
+    },
+    {
+      "id": "w01-3",
+      "level": 1,
+      "type": "description",
+      "title": "Voici ma famille",
+      "prompt": "Tu montres une photo de famille à un ami. Présente au moins 3 personnes (This is my…) et donne un petit détail sur chacune : son prénom, son âge ou ce qu'elle est.",
+      "words": [
+        25,
+        60
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "mom",
+            "dad",
+            "brother",
+            "sister",
+            "grandma",
+            "grandpa",
+            "parents",
+            "uncle",
+            "aunt",
+            "cousin",
+            "baby"
+          ],
+          "min": 3,
+          "label": "Au moins 3 membres de la famille (mom, brother, aunt…)"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "this"
+          ],
+          "min": 1,
+          "label": "Utilise This is my… pour présenter"
+        },
+        {
+          "kind": "tense",
+          "value": "present_simple",
+          "min": 4,
+          "label": "Utilise le présent (is, are, have) au moins 4 fois"
+        }
+      ],
+      "model": "This is a photo of my family. This is my mom, Ana. She is a doctor. This is my dad, Karim. He is very tall! This is my sister, Maya. She is twelve and she is funny. And this is my baby brother. He is one. I love my family!"
+    },
+    {
+      "id": "w01-4",
+      "level": 1,
+      "type": "email",
+      "title": "Nouveau collègue",
+      "prompt": "Tu commences un nouveau travail dans un bureau à Ottawa. Écris un court courriel à ton équipe pour te présenter : ton nom, ta ville, ta famille, et pose une question à tes collègues.",
+      "ages": [
+        "adulte"
+      ],
+      "words": [
+        25,
+        60
+      ],
+      "require": [
+        {
+          "kind": "tense",
+          "value": "present_simple",
+          "min": 4,
+          "label": "Utilise le présent (I am, I have, I live…) au moins 4 fois"
+        },
+        {
+          "kind": "questions",
+          "min": 1,
+          "label": "Pose au moins une question"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "hello",
+            "hi",
+            "thank",
+            "thanks",
+            "nice"
+          ],
+          "min": 1,
+          "label": "Une formule de politesse (Hello, Nice to meet you, Thank you…)"
+        }
+      ],
+      "model": "Hello everyone!\nMy name is Samuel Martin. I'm your new colleague. I'm from Montreal, but now I live in Ottawa. I have a wife and two children, a boy and a girl. They are seven and ten. I'm very happy to be here! What are your names? Nice to meet you all.\nSamuel"
+    },
+    {
+      "id": "w01-5",
+      "level": 1,
+      "type": "message",
+      "title": "Épelle-moi ça !",
+      "prompt": "Au téléphone, ton ami ne comprend ni ton prénom ni le nom de ton animal. Écris-lui un message où tu épelles les deux noms lettre par lettre (C-H-L-O-É) et où tu dis quel animal tu as (a dog, an owl…).",
+      "ages": [
+        "enfant",
+        "ado"
+      ],
+      "words": [
+        25,
+        60
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "spell"
+          ],
+          "min": 1,
+          "label": "Utilise le verbe spell (How do you spell…?)"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "a",
+            "an",
+            "the"
+          ],
+          "min": 3,
+          "label": "Utilise a, an et the"
+        },
+        {
+          "kind": "questions",
+          "min": 1,
+          "label": "Pose au moins une question"
+        }
+      ],
+      "model": "Hi Ethan! My name is Chloé. How do you spell it? C-H-L-O-E, with an accent on the E. I have a pet. It's a rabbit. The rabbit is white and grey. The name of my rabbit is Pistache: P-I-S-T-A-C-H-E. It's a funny name! Bye!"
+    },
+    {
+      "id": "w01-6",
+      "level": 1,
+      "type": "description",
+      "title": "Mon bureau",
+      "prompt": "Décris ton bureau (à la maison, à l'école ou au travail) : les objets, leur couleur et combien il y en a (two black chairs…). Attention : l'adjectif ne prend jamais de -s en anglais !",
+      "ages": [
+        "ado",
+        "adulte"
+      ],
+      "words": [
+        25,
+        60
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "one",
+            "two",
+            "three",
+            "four",
+            "five",
+            "six",
+            "seven",
+            "eight",
+            "nine",
+            "ten",
+            "eleven",
+            "twelve",
+            "thirteen",
+            "fourteen",
+            "fifteen",
+            "sixteen",
+            "seventeen",
+            "eighteen",
+            "nineteen",
+            "twenty"
+          ],
+          "min": 2,
+          "label": "Au moins 2 nombres écrits en lettres (two, three…)"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "red",
+            "blue",
+            "green",
+            "yellow",
+            "black",
+            "white",
+            "orange",
+            "purple",
+            "pink",
+            "brown",
+            "grey"
+          ],
+          "min": 3,
+          "label": "Au moins 3 couleurs différentes"
+        },
+        {
+          "kind": "tense",
+          "value": "present_simple",
+          "min": 3,
+          "label": "Utilise le présent (It's…, I have…) au moins 3 fois"
+        }
+      ],
+      "model": "This is my desk at home. It's a big white desk. On my desk, I have a black computer, two blue pens and a green plant. I have three yellow notebooks, too. My chair is grey. It's old, but it's nice. Oh, and I have a red cup. It's my coffee cup!"
+    },
+    {
+      "id": "w01-7",
+      "level": 1,
+      "type": "message",
+      "title": "Salut, ça va ?",
+      "prompt": "Ton ami est malade et reste à la maison. Écris-lui un petit message : salue-le, demande-lui comment il va, donne de tes nouvelles et dis au revoir gentiment.",
+      "words": [
+        25,
+        60
+      ],
+      "require": [
+        {
+          "kind": "questions",
+          "min": 2,
+          "label": "Pose au moins 2 questions"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "hello",
+            "hi",
+            "please",
+            "thank",
+            "thanks",
+            "sorry",
+            "goodbye",
+            "bye"
+          ],
+          "min": 2,
+          "label": "Au moins 2 mots de politesse (hi, thank you, bye…)"
+        },
+        {
+          "kind": "tense",
+          "value": "present_simple",
+          "min": 3,
+          "label": "Utilise le présent (I'm, it's, you are…) au moins 3 fois"
+        }
+      ],
+      "model": "Hi Malik! How are you? Are you OK now? I'm fine, thank you. I'm at school. My teacher is nice, but the class is boring without you! I have your book. It's in my bag. See you soon, my friend. Bye! Liam"
+    },
+    {
+      "id": "w01-8",
+      "level": 1,
+      "type": "email",
+      "title": "Inscription au hockey",
+      "prompt": "Tu inscris ton enfant à un club de hockey à Gatineau. Écris un court courriel à l'entraîneur : le nom et l'âge de ton enfant, l'équipement que vous avez (a helmet, a stick…), et pose une question.",
+      "ages": [
+        "adulte"
+      ],
+      "words": [
+        25,
+        60
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "one",
+            "two",
+            "three",
+            "four",
+            "five",
+            "six",
+            "seven",
+            "eight",
+            "nine",
+            "ten",
+            "eleven",
+            "twelve",
+            "thirteen",
+            "fourteen",
+            "fifteen",
+            "sixteen",
+            "seventeen",
+            "eighteen",
+            "nineteen",
+            "twenty"
+          ],
+          "min": 1,
+          "label": "Donne un âge en lettres (nine, ten…)"
+        },
+        {
+          "kind": "questions",
+          "min": 1,
+          "label": "Pose au moins une question"
+        },
+        {
+          "kind": "tense",
+          "value": "present_simple",
+          "min": 3,
+          "label": "Utilise le présent (He is, We have…) au moins 3 fois"
+        }
+      ],
+      "model": "Hello Mr. Tremblay,\nMy name is Sofia Costa. This is an email for my son, Jaden. He is nine years old. He is a good skater! We have a red helmet and a black hockey stick. What day is the hockey class? Thank you very much. Have a nice day!\nSofia Costa"
+    },
+    {
+      "id": "w02-1",
+      "level": 2,
+      "type": "description",
+      "title": "Mon animal",
+      "prompt": "Décris ton animal (vrai ou imaginaire) : son espèce, sa taille, sa couleur, son corps (he has big ears…) et son caractère (lazy, happy, always hungry…).",
+      "ages": [
+        "enfant",
+        "ado"
+      ],
+      "words": [
+        25,
+        60
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "has",
+            "have"
+          ],
+          "min": 1,
+          "label": "Utilise has / have pour décrire le corps"
+        },
+        {
+          "kind": "tense",
+          "value": "present_simple",
+          "min": 4,
+          "label": "Utilise le présent (is, has…) au moins 4 fois"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "big",
+            "small",
+            "long",
+            "short",
+            "happy",
+            "sad",
+            "funny",
+            "tired",
+            "hungry",
+            "scared",
+            "angry",
+            "lazy"
+          ],
+          "min": 3,
+          "label": "Au moins 3 adjectifs différents"
+        }
+      ],
+      "model": "My dog is called Biscuit. He is small and brown. He has big ears, short legs and a long tail. His eyes are black. He is always hungry! He isn't scared of cats, but he is scared of the vacuum. When I'm sad, he is happy to sit with me. He is my best friend."
+    },
+    {
+      "id": "w02-2",
+      "level": 2,
+      "type": "message",
+      "title": "Camping catastrophe",
+      "prompt": "Tu es en camping et rien ne va. Écris un message drôle à un ami : dis comment tu te sens (I'm cold, I'm hungry… et surtout pas « I have cold » !) et comment vont les autres. Utilise aussi des négations (isn't, aren't).",
+      "words": [
+        25,
+        60
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "happy",
+            "sad",
+            "tired",
+            "hungry",
+            "thirsty",
+            "cold",
+            "hot",
+            "angry",
+            "scared",
+            "bored",
+            "sick",
+            "ready",
+            "late"
+          ],
+          "min": 3,
+          "label": "Au moins 3 sentiments ou sensations (cold, hungry, tired…)"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "isn't",
+            "aren't",
+            "not"
+          ],
+          "min": 2,
+          "label": "Au moins 2 négations différentes (isn't, aren't, I'm not)"
+        },
+        {
+          "kind": "tense",
+          "value": "present_simple",
+          "min": 5,
+          "label": "Utilise le verbe be au présent au moins 5 fois"
+        }
+      ],
+      "model": "Hi Emma! I'm at the campground with my family. It's eight o'clock and I'm cold, I'm hungry and I'm very tired. My dad is happy, but my mom isn't happy. The tent is wet! My brothers aren't cold. They are in their sleeping bags with the dog. Are you at home? You are lucky! Bye, Amir"
+    },
+    {
+      "id": "w02-3",
+      "level": 2,
+      "type": "description",
+      "title": "Avis de recherche",
+      "prompt": "Tu dois retrouver ton oncle Sam à l'aéroport de Toronto, mais l'agent ne le connaît pas. Décris-le : sa taille, ses cheveux, ses yeux et un détail amusant. Utilise has et is.",
+      "words": [
+        25,
+        60
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "has"
+          ],
+          "min": 1,
+          "label": "Utilise has (He has short hair…)"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "tall",
+            "short",
+            "long",
+            "curly",
+            "straight",
+            "thin",
+            "blond",
+            "brown",
+            "black",
+            "blue",
+            "green",
+            "big",
+            "small",
+            "grey",
+            "red"
+          ],
+          "min": 4,
+          "label": "Au moins 4 adjectifs de description différents"
+        },
+        {
+          "kind": "tense",
+          "value": "present_simple",
+          "min": 4,
+          "label": "Utilise le présent (is, has) au moins 4 fois"
+        }
+      ],
+      "model": "Hello! This is a description of my uncle Sam. He is tall and thin. He has short grey hair and a big beard. His eyes are blue. He has big glasses and a red backpack. He isn't young: he is sixty. He is very friendly and he is always hungry, so he is probably at the café!"
+    },
+    {
+      "id": "w02-4",
+      "level": 2,
+      "type": "message",
+      "title": "Ma semaine de fou",
+      "prompt": "Un collègue (ou un coéquipier) veut organiser une réunion. Réponds-lui : dis quels jours tu es libre ou occupé(e), à quelle heure (at half past two…), et pose-lui une question.",
+      "ages": [
+        "ado",
+        "adulte"
+      ],
+      "words": [
+        25,
+        60
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "monday",
+            "tuesday",
+            "wednesday",
+            "thursday",
+            "friday",
+            "saturday",
+            "sunday"
+          ],
+          "min": 3,
+          "label": "Au moins 3 jours de la semaine (avec une majuscule !)"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "on",
+            "at",
+            "in"
+          ],
+          "min": 3,
+          "label": "Utilise on, at et in (on Monday, at ten o'clock, in the morning)"
+        },
+        {
+          "kind": "questions",
+          "min": 1,
+          "label": "Pose au moins une question"
+        }
+      ],
+      "model": "Hi Priya,\nThis week is crazy! I'm busy on Monday and Tuesday. On Wednesday, I'm free in the morning, but I'm not free in the afternoon. On Thursday, I'm free at half past two. Is Thursday OK for you? The meeting room is free at three o'clock, too. Thanks!\nKarim"
+    },
+    {
+      "id": "w02-5",
+      "level": 2,
+      "type": "message",
+      "title": "À qui est-ce ?",
+      "prompt": "Après une soirée pyjama, il reste plein d'objets chez toi ! Écris un message au groupe : dis à qui est chaque objet (Maya's toothbrush, the twins' pillows, It's mine…) et pose au moins une question avec Whose.",
+      "ages": [
+        "enfant",
+        "ado"
+      ],
+      "words": [
+        25,
+        60
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "mine",
+            "yours",
+            "his",
+            "hers",
+            "ours",
+            "theirs"
+          ],
+          "min": 2,
+          "label": "Au moins 2 pronoms possessifs différents (mine, yours, theirs…)"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "whose"
+          ],
+          "min": 1,
+          "label": "Pose une question avec Whose"
+        },
+        {
+          "kind": "questions",
+          "min": 1,
+          "label": "Pose au moins une question"
+        }
+      ],
+      "model": "Hi everyone! Thanks for the sleepover! Now my room is a mess. The pink toothbrush is Maya's. The blue socks are Noah's. The twins' pillows are on my bed. Are they theirs? Yes, they are! The green pyjamas aren't mine. Are they yours, Chloé? And whose is this big teddy bear? It isn't my brother's. Bye! Zoé"
+    },
+    {
+      "id": "w02-6",
+      "level": 2,
+      "type": "email",
+      "title": "Invitation d'anniversaire",
+      "prompt": "Invite tes amis (ou ta famille) à ton anniversaire : la date, l'heure, le lieu, qui sera là et comment tu te sens. Attention aux prépositions : on Saturday, at two o'clock, in May.",
+      "words": [
+        25,
+        60
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "january",
+            "february",
+            "march",
+            "april",
+            "may",
+            "june",
+            "july",
+            "august",
+            "september",
+            "october",
+            "november",
+            "december"
+          ],
+          "min": 1,
+          "label": "Écris le mois (avec une majuscule !)"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "on",
+            "at",
+            "in"
+          ],
+          "min": 3,
+          "label": "Utilise on, at et in"
+        },
+        {
+          "kind": "questions",
+          "min": 1,
+          "label": "Pose au moins une question"
+        }
+      ],
+      "model": "Hi Olivia!\nMy birthday is on Saturday, May fourteenth. I'm twelve! The party is at my house at two o'clock. My house is on Maple Street. My cousins are there, too. Are you free? It's in the spring, so the party is in the backyard. I'm very excited! See you soon,\nLucas"
+    },
+    {
+      "id": "w02-7",
+      "level": 2,
+      "type": "description",
+      "title": "Les animaux de mon quartier",
+      "prompt": "Décris les animaux qui vivent autour de chez toi (écureuils, oies, ratons laveurs, souris…) : combien il y en a et comment ils sont. Attention aux pluriels irréguliers (mice, geese, sheep…).",
+      "words": [
+        25,
+        60
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "mice",
+            "geese",
+            "deer",
+            "sheep",
+            "foxes",
+            "wolves",
+            "rabbits",
+            "birds",
+            "squirrels",
+            "ducks",
+            "raccoons",
+            "fish"
+          ],
+          "min": 3,
+          "label": "Au moins 3 noms d'animaux au pluriel (attention : mice, geese…)"
+        },
+        {
+          "kind": "tense",
+          "value": "present_simple",
+          "min": 4,
+          "label": "Utilise le présent (there are, they are, they have…) au moins 4 fois"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "red",
+            "blue",
+            "green",
+            "yellow",
+            "black",
+            "white",
+            "orange",
+            "purple",
+            "pink",
+            "brown",
+            "grey"
+          ],
+          "min": 1,
+          "label": "Cite au moins une couleur"
+        }
+      ],
+      "model": "I live near a forest, so there are a lot of animals. There are five squirrels in my backyard. They are grey and very fast. There are two foxes, too. They have long tails. In the fall, there are geese in the field. At night, the mice in the garage are a problem! My cat isn't interested. She is lazy."
+    },
+    {
+      "id": "w02-8",
+      "level": 2,
+      "type": "email",
+      "title": "Rendez-vous chez le médecin",
+      "prompt": "Tu es malade. Écris à la clinique : décris comment tu te sens (I'm tired, my head is hot… et pas « I have hot » !) et demande un rendez-vous en précisant quand tu es libre.",
+      "ages": [
+        "adulte"
+      ],
+      "words": [
+        25,
+        60
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "tired",
+            "sick",
+            "hot",
+            "cold",
+            "thirsty",
+            "hungry"
+          ],
+          "min": 2,
+          "label": "Au moins 2 états (I'm tired, I'm cold…)"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "monday",
+            "tuesday",
+            "wednesday",
+            "thursday",
+            "friday",
+            "saturday",
+            "sunday"
+          ],
+          "min": 1,
+          "label": "Au moins un jour de la semaine"
+        },
+        {
+          "kind": "questions",
+          "min": 1,
+          "label": "Pose au moins une question"
+        }
+      ],
+      "model": "Hello,\nMy name is Ana Silva. I'm sick. I'm very tired and I'm cold, but my head is hot. My throat is red. I'm not hungry, but I'm always thirsty. Is the doctor free on Tuesday or Wednesday? I'm free in the morning, at nine o'clock or at half past ten. Thank you,\nAna Silva"
+    },
+    {
+      "id": "w03-1",
+      "level": 3,
+      "type": "email",
+      "title": "Ma journée type",
+      "prompt": "Ta nouvelle correspondante de Vancouver veut savoir comment se passe une journée d'école pour toi. Écris-lui un courriel : ce que tu fais le matin, à l'école et le soir, avec des heures. Termine par une question pour elle.",
+      "ages": [
+        "enfant",
+        "ado"
+      ],
+      "words": [
+        50,
+        100
+      ],
+      "require": [
+        {
+          "kind": "tense",
+          "value": "present_simple",
+          "min": 6,
+          "label": "Utilise le présent simple (au moins 6 verbes)"
+        },
+        {
+          "kind": "connectors",
+          "min": 2,
+          "label": "Utilise au moins 2 mots de liaison (and, but, then…)"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "always",
+            "usually",
+            "often",
+            "sometimes",
+            "never"
+          ],
+          "min": 2,
+          "label": "Au moins 2 adverbes de fréquence différents (always, usually, never…)"
+        }
+      ],
+      "model": "Hi Mei!\nHere is my typical school day. I usually wake up at seven o'clock, but I don't get up right away. Then I have breakfast with my brother. We always eat toast with peanut butter. I go to school by bus. School starts at half past eight. After school, I sometimes play soccer with my friends, and then I do my homework. I never go to bed before nine. What about you? What time do you get up?\nWrite soon!\nFélix"
+    },
+    {
+      "id": "w03-2",
+      "level": 3,
+      "type": "description",
+      "title": "La maison de mes rêves",
+      "prompt": "Décris la maison (ou l'appartement) de tes rêves : les pièces, les meubles et où ils sont (next to, under, between…). Ajoute au moins un détail complètement fou !",
+      "words": [
+        50,
+        100
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "there"
+          ],
+          "min": 1,
+          "label": "Utilise there is / there are"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "in",
+            "on",
+            "under",
+            "next",
+            "between",
+            "behind",
+            "above",
+            "front"
+          ],
+          "min": 4,
+          "label": "Au moins 4 prépositions de lieu différentes (in, under, next to, behind…)"
+        },
+        {
+          "kind": "tense",
+          "value": "present_simple",
+          "min": 5,
+          "label": "Utilise le présent simple (au moins 5 verbes)"
+        }
+      ],
+      "model": "My dream house is in the mountains near Vancouver. There are four bedrooms and three bathrooms. In my bedroom, there is a big bed next to the window and a desk under a giant poster. The kitchen is between the living room and the games room. There is a pool table in the games room! Behind the house, there is a hot tub. And on the roof, there is a slide that goes down to the lake. It's perfect!"
+    },
+    {
+      "id": "w03-3",
+      "level": 3,
+      "type": "message",
+      "title": "Le frigo de la famille",
+      "prompt": "Avant d'aller à l'épicerie, tu fais l'inventaire du frigo. Écris une note pour ta famille : ce qu'il y a et ce qu'il n'y a pas (some / any), en quelle quantité (a lot of, a few, too much…), et demande ce qu'il faut acheter (How much…? How many…?).",
+      "ages": [
+        "ado",
+        "adulte"
+      ],
+      "words": [
+        50,
+        100
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "some",
+            "any"
+          ],
+          "min": 2,
+          "label": "Utilise some ET any"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "much",
+            "many",
+            "lot",
+            "few",
+            "little"
+          ],
+          "min": 3,
+          "label": "Au moins 3 mots de quantité différents (much, many, a lot of, a few…)"
+        },
+        {
+          "kind": "questions",
+          "min": 1,
+          "label": "Pose au moins une question avec How much ou How many"
+        }
+      ],
+      "model": "Hi family! Before I go to the grocery store, here is the list. There is some milk, but there isn't any cheese. There are a few eggs, but not many. We have a lot of yogurt, so we don't need any. There isn't any fruit! How many apples do we need? Ten? And how much bread do you want? We have too much ketchup and no mustard. Please write your ideas on the list. Thanks!\nMom"
+    },
+    {
+      "id": "w03-4",
+      "level": 3,
+      "type": "email",
+      "title": "Questions pour un correspondant",
+      "prompt": "Tu as un nouveau correspondant à Toronto. Écris-lui un premier courriel : parle un peu de toi, puis pose-lui au moins 4 questions sur sa vie (Do you…? Does your sister…? Where do you…?).",
+      "ages": [
+        "enfant",
+        "ado"
+      ],
+      "words": [
+        50,
+        100
+      ],
+      "require": [
+        {
+          "kind": "questions",
+          "min": 4,
+          "label": "Pose au moins 4 questions"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "do",
+            "does"
+          ],
+          "min": 2,
+          "label": "Utilise do ET does dans tes questions"
+        },
+        {
+          "kind": "tense",
+          "value": "present_simple",
+          "min": 5,
+          "label": "Utilise le présent simple (au moins 5 verbes)"
+        }
+      ],
+      "model": "Hi Ethan!\nMy name is Léa and I'm your new pen pal. I live in Montreal with my mom and my two cats. I love music and I play the guitar. Now I have some questions for you! Where do you live in Toronto? Do you have any brothers or sisters? Does your school have a band? What do you do on weekends? I don't like homework, so please don't ask about that!\nWrite back soon!\nLéa"
+    },
+    {
+      "id": "w03-5",
+      "level": 3,
+      "type": "message",
+      "title": "Cherche colocataire",
+      "prompt": "Tu cherches un(e) colocataire pour ton appartement. Écris une annonce où tu décris tes habitudes : ce que tu fais souvent, ce que tu ne fais jamais, ce que tu aimes et ce que tu détestes.",
+      "ages": [
+        "adulte"
+      ],
+      "words": [
+        50,
+        100
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "don't",
+            "doesn't"
+          ],
+          "min": 1,
+          "label": "Utilise au moins une négation (don't / doesn't)"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "always",
+            "usually",
+            "often",
+            "sometimes",
+            "never"
+          ],
+          "min": 3,
+          "label": "Au moins 3 adverbes de fréquence différents"
+        },
+        {
+          "kind": "tense",
+          "value": "present_simple",
+          "min": 6,
+          "label": "Utilise le présent simple (au moins 6 verbes)"
+        }
+      ],
+      "model": "Hello! I need a roommate for my apartment in Ottawa. Here is some information about me. I work in a bank, so I usually get up early. I always clean the kitchen after dinner. I often cook, and I sometimes make pizza for everyone! I don't smoke and I don't have pets. I never play loud music after ten o'clock. I hate a messy bathroom. Do you like quiet evenings? Then we are a good match! Call me.\nKarim"
+    },
+    {
+      "id": "w03-6",
+      "level": 3,
+      "type": "message",
+      "title": "Le menu de la cafétéria",
+      "prompt": "La cafétéria de ton école (ou de ton travail) veut changer son menu. Écris un message au comité : ce que tu manges d'habitude, ce que tu aimes ou n'aimes pas, et ce que tu voudrais (I'd like…).",
+      "words": [
+        50,
+        100
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "like",
+            "love",
+            "hate"
+          ],
+          "min": 2,
+          "label": "Exprime tes goûts avec au moins 2 verbes différents (like, love, hate)"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "i'd",
+            "would"
+          ],
+          "min": 1,
+          "label": "Fais une demande polie avec I'd like…"
+        },
+        {
+          "kind": "tense",
+          "value": "present_simple",
+          "min": 5,
+          "label": "Utilise le présent simple (au moins 5 verbes)"
+        }
+      ],
+      "model": "Dear cafeteria committee,\nI eat at the cafeteria every day. I usually have a sandwich and some soup. I love the chicken soup, but I hate the fish sticks. They are too dry! My friends don't like the salads, because there isn't any dressing. Here are my ideas. I'd like more fruit, like bananas and oranges. I'd also like a pasta day every Friday. And please, we need a lot of chocolate milk!\nThank you,\nJaden, grade six"
+    },
+    {
+      "id": "w03-7",
+      "level": 3,
+      "type": "description",
+      "title": "Les jumeaux",
+      "prompt": "Décris deux personnes de ta famille ou deux amis très différents (ou deux animaux !) : ce qu'ils font tous les deux (both), ce que chacun fait (each), ce qu'ils font tous les jours (every day).",
+      "ages": [
+        "enfant",
+        "ado"
+      ],
+      "words": [
+        50,
+        100
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "both",
+            "each",
+            "every",
+            "all",
+            "none"
+          ],
+          "min": 3,
+          "label": "Au moins 3 mots différents parmi both, each, every, all, none"
+        },
+        {
+          "kind": "tense",
+          "value": "present_simple",
+          "min": 6,
+          "label": "Utilise le présent simple (au moins 6 verbes)"
+        },
+        {
+          "kind": "connectors",
+          "min": 2,
+          "label": "Utilise au moins 2 mots de liaison (and, but, so…)"
+        }
+      ],
+      "model": "My cousins Noah and Liam are twins, but they are very different. They both have red hair and they both live in Kingston. Noah gets up early every day and reads in bed. Liam always sleeps until noon! Each twin has a pet. Noah has a calm old cat, and Liam has a crazy puppy. They both love pizza, but none of their friends like their pizza with pineapple and pickles. On weekends, they all play hockey together."
+    },
+    {
+      "id": "w03-8",
+      "level": 3,
+      "type": "email",
+      "title": "Bienvenue au Canada",
+      "prompt": "Un collègue français arrive au Canada en janvier. Écris-lui un courriel : comment est l'hiver ici, ce que les gens font d'habitude en hiver, et les vêtements qu'il faut avoir (a toque, mittens…).",
+      "ages": [
+        "adulte"
+      ],
+      "words": [
+        50,
+        100
+      ],
+      "require": [
+        {
+          "kind": "tense",
+          "value": "present_simple",
+          "min": 6,
+          "label": "Utilise le présent simple (au moins 6 verbes)"
+        },
+        {
+          "kind": "connectors",
+          "min": 2,
+          "label": "Utilise au moins 2 mots de liaison (and, but, so…)"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "always",
+            "usually",
+            "often",
+            "sometimes",
+            "never"
+          ],
+          "min": 2,
+          "label": "Au moins 2 adverbes de fréquence différents"
+        }
+      ],
+      "model": "Hi Thomas,\nWelcome to Ottawa! Winter here is very cold. In January, it is often minus twenty degrees, and it snows a lot. But people don't stay at home! They usually skate on the Rideau Canal, and many families go skiing on weekends. You need some warm clothes: a good coat, boots, mittens and a toque. Do you have any of those? I have an extra toque for you, so don't buy one.\nSee you soon!\nMaya"
+    },
+    {
+      "id": "w04-1",
+      "level": 4,
+      "type": "message",
+      "title": "En direct du chalet",
+      "prompt": "Tu es dans un endroit plein d'action (un chalet, une fête, un parc…). Écris un message à un ami pour lui raconter ce qui se passe autour de toi en ce moment : qui fait quoi ?",
+      "words": [
+        50,
+        100
+      ],
+      "require": [
+        {
+          "kind": "tense",
+          "value": "present_continuous",
+          "min": 5,
+          "label": "Utilise le présent continu (am/is/are + -ing) au moins 5 fois"
+        },
+        {
+          "kind": "connectors",
+          "min": 2,
+          "label": "Utilise au moins 2 mots de liaison (and, but, so…)"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "now",
+            "right",
+            "moment"
+          ],
+          "min": 1,
+          "label": "Dis « en ce moment » (now, right now, at the moment)"
+        }
+      ],
+      "model": "Hi Sofia! I'm at my grandma's cottage right now, and it's total chaos. My uncle is cooking burgers on the barbecue, but he is burning them. My little cousins are swimming in the lake and they are screaming. The dog is chasing a duck! Grandma is sitting on the dock and she is laughing. And me? I'm hiding in the hammock with my phone, and I'm writing to you. What are you doing?\nNoah"
+    },
+    {
+      "id": "w04-2",
+      "level": 4,
+      "type": "description",
+      "title": "Spectacle de talents",
+      "prompt": "Pour le spectacle de talents de l'école, présente-toi : ce que tu sais faire (can), ce que tu ne sais pas faire (can't), ce que tu aimes faire (love / enjoy + -ing) et ce pour quoi tu es doué(e) (good at + -ing).",
+      "ages": [
+        "enfant",
+        "ado"
+      ],
+      "words": [
+        50,
+        100
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "can",
+            "can't"
+          ],
+          "min": 2,
+          "label": "Utilise can ET can't"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "good"
+          ],
+          "min": 1,
+          "label": "Utilise good at + -ing"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "enjoy",
+            "love",
+            "like"
+          ],
+          "min": 2,
+          "label": "Au moins 2 verbes de goût différents (love, enjoy, like + -ing)"
+        }
+      ],
+      "model": "Hi! My name is Malik and I'm in grade seven. I can juggle with three balls, and I can skate backwards. I'm good at telling jokes, too! But I can't sing. When I sing, my dog leaves the room. I can't dance very well, either. I love playing hockey and I enjoy making funny videos with my sister. For the talent show, I can juggle and tell jokes at the same time. Is that a talent? I think so!"
+    },
+    {
+      "id": "w04-3",
+      "level": 4,
+      "type": "message",
+      "title": "Comment venir chez moi",
+      "prompt": "Un ami (ou un nouveau collègue) vient chez toi pour la première fois, depuis l'arrêt d'autobus. Écris-lui le chemin : au moins 4 instructions à l'impératif (Turn left, Walk straight…) et des repères (next to, across from, on the corner).",
+      "words": [
+        50,
+        100
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "turn",
+            "go",
+            "walk",
+            "cross",
+            "take",
+            "get"
+          ],
+          "min": 3,
+          "label": "Au moins 3 verbes différents à l'impératif (turn, walk, cross…)"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "left",
+            "right",
+            "straight"
+          ],
+          "min": 3,
+          "label": "Utilise left, right et straight"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "next",
+            "across",
+            "corner",
+            "between",
+            "behind",
+            "front"
+          ],
+          "min": 2,
+          "label": "Au moins 2 repères différents (next to, across from, on the corner…)"
+        }
+      ],
+      "model": "Hi Ethan! Here are the directions to my house. Get off the bus at Bank Street. Walk straight for two blocks. At the traffic lights, turn left. You can see a big library on the corner. Don't go past the library! Turn right on Elm Street. My house is the blue one, across from the park, next to a small bakery. Don't knock, because the baby is sleeping. Just send me a message. See you soon!\nEmma"
+    },
+    {
+      "id": "w04-4",
+      "level": 4,
+      "type": "message",
+      "title": "Au centre commercial",
+      "prompt": "Tu es au centre commercial et tu cherches un manteau d'hiver. Écris à ton/ta partenaire (ou à un ami) pour demander son avis : décris 2 ou 3 articles (this, these, those), leur prix et le problème de taille.",
+      "ages": [
+        "ado",
+        "adulte"
+      ],
+      "words": [
+        50,
+        100
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "this",
+            "that",
+            "these",
+            "those"
+          ],
+          "min": 3,
+          "label": "Utilise au moins 3 démonstratifs différents (this, these, those…)"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "dollars",
+            "price",
+            "expensive",
+            "cheap",
+            "size",
+            "sale"
+          ],
+          "min": 2,
+          "label": "Parle du prix ou de la taille (dollars, expensive, size…)"
+        },
+        {
+          "kind": "questions",
+          "min": 2,
+          "label": "Pose au moins 2 questions"
+        }
+      ],
+      "model": "Hi Ana! I'm at the mall and I'm looking for a winter coat. This black coat is really warm, but it's too expensive: three hundred dollars! These grey coats are cheap, but they aren't big enough. I can't find my size. And look at those boots in the window! They are on sale for eighty dollars. Do you like them? Is the black coat OK, or is it too long for me? Call me quickly!\nKarim"
+    },
+    {
+      "id": "w04-5",
+      "level": 4,
+      "type": "email",
+      "title": "Le nouveau stagiaire",
+      "prompt": "Ta patronne veut des nouvelles du stagiaire (ou de la stagiaire) de ton équipe. Écris-lui un courriel : comment il/elle travaille (quickly, carefully, well…) et ce qu'il/elle fait cette semaine.",
+      "ages": [
+        "adulte"
+      ],
+      "words": [
+        50,
+        100
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "quickly",
+            "carefully",
+            "well",
+            "hard",
+            "fast",
+            "slowly",
+            "quietly",
+            "politely",
+            "easily",
+            "badly"
+          ],
+          "min": 3,
+          "label": "Au moins 3 adverbes de manière différents (carefully, fast, well…)"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "too",
+            "enough",
+            "very",
+            "really"
+          ],
+          "min": 2,
+          "label": "Utilise very, really, too ou enough (au moins 2)"
+        },
+        {
+          "kind": "tense",
+          "value": "present_continuous",
+          "min": 2,
+          "label": "Utilise le présent continu au moins 2 fois (this week, she is…)"
+        }
+      ],
+      "model": "Hi Mrs. Wong,\nHere is some news about Priya, our new intern. She works really hard and she learns fast. She speaks politely to our clients and she writes her reports carefully. She is very good at spreadsheets, too! This week, she is organizing the files and she is helping Liam with the website. There is one small problem: she types too quickly and she sometimes makes mistakes. But she is improving every day.\nBest regards,\nFélix"
+    },
+    {
+      "id": "w04-6",
+      "level": 4,
+      "type": "description",
+      "title": "Photo de vacances",
+      "prompt": "Décris une photo (vraie ou imaginaire) de ta famille en vacances : où vous êtes, ce que chacun porte et ce que chacun fait. Le plus drôle sera le mieux !",
+      "ages": [
+        "enfant",
+        "ado"
+      ],
+      "words": [
+        50,
+        100
+      ],
+      "require": [
+        {
+          "kind": "tense",
+          "value": "present_continuous",
+          "min": 5,
+          "label": "Utilise le présent continu (is wearing, are playing…) au moins 5 fois"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "wearing",
+            "shirt",
+            "shorts",
+            "hat",
+            "toque",
+            "dress",
+            "jacket",
+            "sunglasses",
+            "pants",
+            "shoes",
+            "sandals",
+            "swimsuit"
+          ],
+          "min": 2,
+          "label": "Décris au moins 2 vêtements (wearing a hat…)"
+        },
+        {
+          "kind": "tense",
+          "value": "present_simple",
+          "min": 2,
+          "label": "Utilise aussi le présent simple (I love…, It is…) au moins 2 fois"
+        }
+      ],
+      "model": "In this photo, my family is at the beach in Prince Edward Island. My dad is wearing a funny hat and big sunglasses. He is reading a book, but he is sleeping, too! My mom is swimming. My little sister is building a sandcastle, and the seagulls are stealing her chips. My brother is wearing red shorts and he is playing volleyball. I'm not in the photo, because I'm taking it! I love this picture."
+    },
+    {
+      "id": "w04-7",
+      "level": 4,
+      "type": "message",
+      "title": "Vente de garage",
+      "prompt": "Tu organises une vente de garage. Écris une annonce pour le groupe du quartier : ce que tu vends (this lamp, these skates…), les prix, et ce que les gens peuvent faire (You can pay…, You can come…).",
+      "ages": [
+        "adulte"
+      ],
+      "words": [
+        50,
+        100
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "dollars",
+            "dollar",
+            "cents",
+            "loonie",
+            "toonie"
+          ],
+          "min": 1,
+          "label": "Donne des prix (dollars, cents…)"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "can"
+          ],
+          "min": 1,
+          "label": "Utilise can"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "this",
+            "these",
+            "that",
+            "those"
+          ],
+          "min": 2,
+          "label": "Utilise au moins 2 démonstratifs différents (this, these, those…)"
+        }
+      ],
+      "model": "Garage sale this Saturday!\nHi neighbours! We are moving, so we are selling a lot of things. We have kids' clothes, books, toys and a bike. The books are only one dollar each. Do you need a lamp? This lamp is fifteen dollars. These hockey skates are twenty dollars, and those ski boots are only ten. You can come from nine o'clock to two o'clock. You can pay cash or by e-transfer. See you on Saturday!\nThe Nguyen family, Oak Street"
+    },
+    {
+      "id": "w04-8",
+      "level": 4,
+      "type": "email",
+      "title": "Désolé, je suis débordé !",
+      "prompt": "Un ami t'invite à sortir vendredi, mais tu ne peux pas. Explique ce que tu fais d'habitude le vendredi (présent simple) et pourquoi cette semaine est différente (présent continu). Propose une autre date.",
+      "words": [
+        50,
+        100
+      ],
+      "require": [
+        {
+          "kind": "tense",
+          "value": "present_simple",
+          "min": 3,
+          "label": "Utilise le présent simple pour tes habitudes (au moins 3 verbes)"
+        },
+        {
+          "kind": "tense",
+          "value": "present_continuous",
+          "min": 3,
+          "label": "Utilise le présent continu pour cette semaine (au moins 3 verbes)"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "can't",
+            "can"
+          ],
+          "min": 1,
+          "label": "Utilise can't pour refuser poliment"
+        }
+      ],
+      "model": "Hi Olivia,\nThanks for the invitation! Usually, I'm free on Friday nights. I go to the movies or I play video games with my brother. But this week is different. My parents are painting the kitchen, so I'm helping them. My grandparents are staying with us, too, and I'm sleeping on the sofa! I'm also studying for a big math test. So I can't come on Friday, sorry. Can we go next weekend?\nLove,\nChloé"
+    },
+    {
+      "id": "w05-1",
+      "level": 5,
+      "type": "story",
+      "title": "La pire journée de ma vie",
+      "prompt": "Raconte une journée (vraie ou inventée) où tout est allé de travers, du réveil jusqu'au soir. Utilise des mots pour enchaîner les étapes (first, then, after that, finally) et termine par une chute drôle.",
+      "words": [
+        80,
+        140
+      ],
+      "require": [
+        {
+          "kind": "tense",
+          "value": "past_simple",
+          "min": 8,
+          "label": "Utilise le passé simple anglais (au moins 8 verbes : woke up, ran, didn't…)"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "first",
+            "then",
+            "after",
+            "next",
+            "finally",
+            "suddenly",
+            "later"
+          ],
+          "min": 3,
+          "label": "Au moins 3 mots de séquence différents (first, then, after that, finally…)"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "yesterday",
+            "ago",
+            "last"
+          ],
+          "min": 1,
+          "label": "Un repère dans le passé (yesterday, last Monday, two days ago)"
+        }
+      ],
+      "model": "Last Monday was a terrible day. First, my alarm didn't ring, so I woke up at eight o'clock. I jumped out of bed and I put on my shirt inside out. Then I ran to the bus stop, but the bus left without me. After that, it started to rain and I didn't have an umbrella. When I got to school, my teacher looked at me and smiled. \"Noah, it's a PD day. There's no school today!\" I walked home in the rain. Finally, I made some hot chocolate and went back to bed. It was the best part of the day!"
+    },
+    {
+      "id": "w05-2",
+      "level": 5,
+      "type": "email",
+      "title": "Mes vacances",
+      "prompt": "Écris à un ami pour lui raconter tes dernières vacances : où tu es allé(e), avec qui, ce que tu as fait et mangé, et un petit problème. Pose-lui au moins 2 questions sur ses vacances (Did you…? What did you…?).",
+      "words": [
+        80,
+        140
+      ],
+      "require": [
+        {
+          "kind": "tense",
+          "value": "past_simple",
+          "min": 8,
+          "label": "Utilise le passé simple anglais (au moins 8 verbes)"
+        },
+        {
+          "kind": "questions",
+          "min": 2,
+          "label": "Pose au moins 2 questions"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "did",
+            "didn't"
+          ],
+          "min": 2,
+          "label": "Utilise did ET didn't"
+        }
+      ],
+      "model": "Hi Amir!\nLast week, my family and I went to Quebec City. We stayed in a small hotel near the old town. On the first day, we visited the Château Frontenac and we took a lot of photos. The next day, we ate crêpes with maple syrup for breakfast. Delicious! There was one problem: my little brother lost his shoe in the river. We didn't find it, so he wore my sandals all day! What did you do during the holidays? Did you go to the cottage?\nWrite soon!\nLéa"
+    },
+    {
+      "id": "w05-3",
+      "level": 5,
+      "type": "story",
+      "title": "Le mystère du gâteau disparu",
+      "prompt": "Hier, le gâteau d'anniversaire a disparu de la cuisine ! Raconte : ce que chaque personne faisait au moment de la disparition (past continuous), ce que tu as découvert, et qui était le coupable.",
+      "ages": [
+        "enfant",
+        "ado"
+      ],
+      "words": [
+        80,
+        140
+      ],
+      "require": [
+        {
+          "kind": "tense",
+          "value": "past_continuous",
+          "min": 3,
+          "label": "Utilise le passé continu (was/were + -ing) au moins 3 fois"
+        },
+        {
+          "kind": "tense",
+          "value": "past_simple",
+          "min": 6,
+          "label": "Utilise le passé simple anglais (au moins 6 verbes)"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "when",
+            "while"
+          ],
+          "min": 2,
+          "label": "Utilise when ET while"
+        }
+      ],
+      "model": "Yesterday was my mom's birthday, and we had a beautiful chocolate cake. At four o'clock, the cake disappeared! While my dad was washing the dishes, my sister was reading in the living room. My grandpa was sleeping on the sofa, of course. And what was I doing? I was decorating the table. Suddenly, I heard a noise in the kitchen. When I opened the door, I saw chocolate on the floor. There were small footprints everywhere! I followed them to the backyard. Our dog Max was lying under a tree with a very happy face."
+    },
+    {
+      "id": "w05-4",
+      "level": 5,
+      "type": "email",
+      "title": "Ma valise a disparu",
+      "prompt": "La semaine dernière, la compagnie aérienne a perdu ta valise. Écris-lui un courriel : raconte ce qui s'est passé à l'arrivée, ce que tu as fait, ce que tu n'as pas pu récupérer, et ce que tu demandes maintenant.",
+      "ages": [
+        "adulte"
+      ],
+      "words": [
+        80,
+        140
+      ],
+      "require": [
+        {
+          "kind": "tense",
+          "value": "past_simple",
+          "min": 8,
+          "label": "Utilise le passé simple anglais (au moins 8 verbes)"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "didn't",
+            "wasn't",
+            "weren't"
+          ],
+          "min": 2,
+          "label": "Au moins 2 formes négatives différentes (didn't, wasn't…)"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "ago",
+            "last",
+            "yesterday"
+          ],
+          "min": 1,
+          "label": "Un repère dans le passé (last Friday, two days ago…)"
+        }
+      ],
+      "model": "Dear Sir or Madam,\nLast Friday, I flew from Toronto to Halifax with your airline. The plane left two hours late, but that wasn't the real problem. When I arrived in Halifax, I waited for my suitcase for an hour. It didn't come. I went to the information desk and I filled out a form. The agent was very nice, but she didn't know where my suitcase was. Now, five days later, I still don't have my clothes or my son's birthday present. Please find my suitcase quickly, or pay for my new things.\nSincerely,\nSamuel Roy"
+    },
+    {
+      "id": "w05-5",
+      "level": 5,
+      "type": "description",
+      "title": "C'était mieux avant ?",
+      "prompt": "Interroge un grand-parent (ou imagine sa réponse) : comment était sa vie quand il/elle avait ton âge ? Raconte ce qu'il/elle faisait souvent (used to, would), ce qu'il/elle ne faisait pas (didn't use to), et compare avec aujourd'hui.",
+      "words": [
+        80,
+        140
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "used"
+          ],
+          "min": 1,
+          "label": "Utilise used to pour les habitudes passées"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "didn't"
+          ],
+          "min": 1,
+          "label": "Une phrase avec didn't use to"
+        },
+        {
+          "kind": "tense",
+          "value": "present_simple",
+          "min": 2,
+          "label": "Compare avec aujourd'hui : au moins 2 verbes au présent simple"
+        }
+      ],
+      "model": "When my grandma Rose was a child in Sudbury, life was very different. She used to walk two kilometres to school, even in winter. She didn't use to have a television at home, so she used to listen to the radio with her brothers. On Saturdays, her family would go to the lake and fish all day. There were no cellphones, of course! If she wanted to talk to a friend, she knocked on the door. Today, Grandma has a tablet and she sends me funny videos every morning. She says life is easier now, but she misses the quiet evenings."
+    },
+    {
+      "id": "w05-6",
+      "level": 5,
+      "type": "review",
+      "title": "Le spectacle de l'école",
+      "prompt": "Écris une critique du dernier spectacle, film ou match que tu as vu : ce qui s'est passé, ce que tu as aimé, ce que tu n'as pas aimé, et ta note sur cinq.",
+      "ages": [
+        "enfant",
+        "ado"
+      ],
+      "words": [
+        80,
+        140
+      ],
+      "require": [
+        {
+          "kind": "tense",
+          "value": "past_simple",
+          "min": 6,
+          "label": "Utilise le passé simple anglais (au moins 6 verbes)"
+        },
+        {
+          "kind": "connectors",
+          "min": 3,
+          "label": "Utilise au moins 3 mots de liaison différents (and, but, because…)"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "liked",
+            "loved",
+            "enjoyed",
+            "hated",
+            "boring",
+            "funny",
+            "exciting",
+            "great"
+          ],
+          "min": 2,
+          "label": "Donne ton avis avec au moins 2 mots (loved, boring, funny…)"
+        }
+      ],
+      "model": "Last Thursday, I went to our school's winter show with my parents. The grade six students performed a play about a penguin who wanted to fly. The story was simple, but it was very funny. I loved the costumes, especially the penguin's orange feet! The music was great, too, because the school band played live. But the show was too long. It started at seven and finished at half past nine, and my little brother fell asleep. Also, one actor forgot his lines, but the audience clapped anyway. I give it four stars out of five!"
+    },
+    {
+      "id": "w05-7",
+      "level": 5,
+      "type": "story",
+      "title": "Une rencontre inattendue",
+      "prompt": "Raconte une rencontre inattendue (un animal sauvage, une personne célèbre, un vieil ami…). Que faisais-tu quand c'est arrivé ? Comment as-tu réagi ? Comment l'histoire s'est-elle terminée ?",
+      "words": [
+        80,
+        140
+      ],
+      "require": [
+        {
+          "kind": "tense",
+          "value": "past_continuous",
+          "min": 2,
+          "label": "Utilise le passé continu au moins 2 fois (I was walking…)"
+        },
+        {
+          "kind": "tense",
+          "value": "past_simple",
+          "min": 7,
+          "label": "Utilise le passé simple anglais (au moins 7 verbes)"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "suddenly",
+            "when",
+            "while"
+          ],
+          "min": 2,
+          "label": "Au moins 2 mots parmi suddenly, when, while"
+        }
+      ],
+      "model": "Two summers ago, I was hiking in Algonquin Park with my uncle. While we were walking quietly along a lake, my uncle was telling me a boring story about his job. Suddenly, he stopped. A huge moose was standing in the water, very close to us! It was eating plants and it didn't see us. We didn't move. My heart was beating very fast. I slowly took out my phone and took three photos. Then the moose looked up, made a strange noise and walked into the forest. My uncle never finished his boring story. I still have the photos!"
+    },
+    {
+      "id": "w05-8",
+      "level": 5,
+      "type": "email",
+      "title": "Ma première semaine au travail",
+      "prompt": "Tu as commencé un nouveau travail lundi dernier. Écris à un ami : ce qui s'est bien passé, ce qui s'est mal passé, les gens que tu as rencontrés. Pose-lui une question sur sa semaine.",
+      "ages": [
+        "adulte"
+      ],
+      "words": [
+        80,
+        140
+      ],
+      "require": [
+        {
+          "kind": "tense",
+          "value": "past_simple",
+          "min": 8,
+          "label": "Utilise le passé simple anglais (au moins 8 verbes)"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "first",
+            "then",
+            "after",
+            "next",
+            "finally",
+            "suddenly",
+            "later"
+          ],
+          "min": 2,
+          "label": "Au moins 2 mots de séquence différents (first, then, after that…)"
+        },
+        {
+          "kind": "questions",
+          "min": 1,
+          "label": "Pose au moins une question"
+        }
+      ],
+      "model": "Hi Jaden,\nGuess what? Last Monday, I started my new job at the hospital! On the first day, I met my boss, Dr. Patel. She was very kind and she showed me the whole building. Then I got my uniform, but it was two sizes too big! On Tuesday, I helped a nurse with the patients, and I learned a lot. Wednesday was hard, because I got lost three times. After that, my colleague Mei drew a map for me. On Friday, we all went out for lunch together. I think I'm going to like it here. How was your week?\nAna"
+    },
+    {
+      "id": "w06-1",
+      "level": 6,
+      "type": "email",
+      "title": "Le programme du week-end",
+      "prompt": "Un ami vient passer la fin de semaine chez toi. Écris-lui le programme : ce qui est déjà organisé (We're playing…, My mom is picking you up…), ce que vous allez faire (going to) et tes prédictions pour la météo (It will…).",
+      "words": [
+        80,
+        140
+      ],
+      "require": [
+        {
+          "kind": "tense",
+          "value": "future",
+          "min": 4,
+          "label": "Utilise le futur (will, going to) au moins 4 fois"
+        },
+        {
+          "kind": "tense",
+          "value": "present_continuous",
+          "min": 2,
+          "label": "Utilise le présent continu pour ce qui est déjà organisé (au moins 2 fois)"
+        },
+        {
+          "kind": "questions",
+          "min": 1,
+          "label": "Pose au moins une question"
+        }
+      ],
+      "model": "Hi Lucas!\nI can't wait for the weekend! Here is the plan. Your train arrives at six on Friday, so my mom is picking you up at the station. On Saturday morning, we're playing in a hockey tournament. I hope we'll win! In the afternoon, we're going to build a snow fort in the park. On Sunday, my dad is going to make his famous pancakes. The forecast says it will snow a lot, so bring your warmest boots. I think it'll be the best weekend ever! Do you want to see a movie on Saturday night?\nSee you soon,\nMaya"
+    },
+    {
+      "id": "w06-2",
+      "level": 6,
+      "type": "description",
+      "title": "Ville ou campagne ?",
+      "prompt": "Compare deux endroits que tu connais bien (ta ville et celle de tes grands-parents, la ville et la campagne…) : lequel est plus grand, plus calme, plus cher, plus sympathique ? Dis où tu voudrais vivre plus tard.",
+      "ages": [
+        "ado",
+        "adulte"
+      ],
+      "words": [
+        80,
+        140
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "than",
+            "more",
+            "most",
+            "better",
+            "best",
+            "worse",
+            "worst",
+            "less"
+          ],
+          "min": 3,
+          "label": "Au moins 3 mots de comparaison différents (than, more, better, the best…)"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "best",
+            "worst",
+            "most",
+            "least",
+            "biggest",
+            "smallest",
+            "nicest",
+            "longest",
+            "friendliest",
+            "funniest",
+            "spiciest",
+            "warmest",
+            "busiest",
+            "cheapest",
+            "quietest"
+          ],
+          "min": 2,
+          "label": "Au moins 2 superlatifs différents (the best, the worst, the friendliest…)"
+        },
+        {
+          "kind": "connectors",
+          "min": 3,
+          "label": "Utilise au moins 3 mots de liaison différents (but, so, because…)"
+        }
+      ],
+      "model": "I grew up in a small village near Rimouski, but now I live in Montreal. The two places are very different. Montreal is much bigger and busier than my village, of course. There are more restaurants, more shows and more jobs. But life in the city is more expensive, and the traffic is the worst thing about it! My village is quieter and the air is cleaner. People are friendlier, too, because everyone knows your name. For me, the best place is somewhere in between. In the future, I'm going to buy a house in a small town near the city. Then I'll have the best of both worlds!"
+    },
+    {
+      "id": "w06-3",
+      "level": 6,
+      "type": "email",
+      "title": "Le club Aventure",
+      "prompt": "Tu veux entrer dans le club Aventure de ton école. Écris au responsable : 3 choses que tu as déjà faites (I've been…, I've seen…), 2 choses que tu n'as jamais faites, et pose-lui une question avec Have you ever…?",
+      "ages": [
+        "enfant",
+        "ado"
+      ],
+      "words": [
+        80,
+        140
+      ],
+      "require": [
+        {
+          "kind": "tense",
+          "value": "present_perfect",
+          "min": 5,
+          "label": "Utilise le present perfect au moins 5 fois (I've climbed, I've never…)"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "never",
+            "ever"
+          ],
+          "min": 2,
+          "label": "Utilise never ET ever"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "been"
+          ],
+          "min": 1,
+          "label": "Utilise been (I've been to…)"
+        }
+      ],
+      "model": "Hi Mr. Kowalski,\nI would like to join the Adventure Club. Here are my experiences. I've been camping in Algonquin Park three times, and I've slept in a tent in the rain. I've also climbed a mountain in the Rockies with my aunt. I've seen a black bear, but it was far away, luckily! I've never gone canoeing, and I've never been to the Arctic. Have you ever seen the northern lights? That's my dream! I'm brave and I always listen to instructions. I hope I can join!\nThank you,\nJaden"
+    },
+    {
+      "id": "w06-4",
+      "level": 6,
+      "type": "email",
+      "title": "Nouvelles d'Halifax",
+      "prompt": "Tu as déménagé dans une nouvelle ville il y a quelques mois. Écris à ton ancienne voisine : depuis combien de temps tu es là (for / since), ce que tu as déjà fait (already, just) et ce que tu n'as pas encore fait (yet).",
+      "ages": [
+        "adulte"
+      ],
+      "words": [
+        80,
+        140
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "for",
+            "since"
+          ],
+          "min": 2,
+          "label": "Utilise for ET since"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "already",
+            "yet",
+            "just"
+          ],
+          "min": 2,
+          "label": "Au moins 2 mots parmi already, yet, just"
+        },
+        {
+          "kind": "tense",
+          "value": "present_perfect",
+          "min": 4,
+          "label": "Utilise le present perfect au moins 4 fois"
+        }
+      ],
+      "model": "Dear Mrs. Leblanc,\nHow are you? I've lived in Halifax for four months now, and I've already fallen in love with the ocean! I've worked at the library since March. My colleagues are very friendly, and I've just joined their bowling team. I'm terrible at bowling, but it's fun. I've already tried lobster and I've visited the Citadel twice. But I haven't found a good bakery yet. Nothing is as good as Mr. Dubois's croissants! Have you met the new neighbours yet? I miss our chats on the balcony.\nHugs,\nOlivia"
+    },
+    {
+      "id": "w06-5",
+      "level": 6,
+      "type": "letter",
+      "title": "Lettre à moi dans 20 ans",
+      "prompt": "Écris une lettre à la personne que tu seras dans vingt ans : ce que tu vas faire bientôt (going to), ce que tu penses qu'elle sera devenue (You'll be…), et compare sa vie avec ta vie actuelle (taller, busier, better at…).",
+      "ages": [
+        "enfant",
+        "ado"
+      ],
+      "words": [
+        80,
+        140
+      ],
+      "require": [
+        {
+          "kind": "tense",
+          "value": "future",
+          "min": 5,
+          "label": "Utilise le futur (will, going to) au moins 5 fois"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "than",
+            "more",
+            "most",
+            "better",
+            "best",
+            "worse",
+            "worst",
+            "less"
+          ],
+          "min": 2,
+          "label": "Au moins 2 mots de comparaison (than, more, better…)"
+        },
+        {
+          "kind": "connectors",
+          "min": 2,
+          "label": "Utilise au moins 2 mots de liaison différents"
+        }
+      ],
+      "model": "Dear Future Me,\nHello from the past! Right now, you are eleven, and you are writing this letter in your bedroom. In twenty years, I think you'll be a vet, because you love animals more than anything. You'll probably live in Vancouver, near the ocean. Will you have a dog? I hope so! Next year, you're going to start high school, so you'll be busier than now. I'm sure you'll be taller than Dad, and maybe you'll be better at math than me! Please don't forget your old friends. And don't worry if life is harder than you think.\nLove,\nMe"
+    },
+    {
+      "id": "w06-6",
+      "level": 6,
+      "type": "review",
+      "title": "Le meilleur brunch du quartier",
+      "prompt": "Écris un avis en ligne sur un restaurant ou un café de ton quartier : compare-le aux autres, dis ce que tu y as déjà goûté, et si tu vas y retourner.",
+      "ages": [
+        "adulte"
+      ],
+      "words": [
+        80,
+        140
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "best",
+            "worst",
+            "most",
+            "least",
+            "biggest",
+            "smallest",
+            "nicest",
+            "longest",
+            "friendliest",
+            "funniest",
+            "spiciest",
+            "warmest",
+            "busiest",
+            "cheapest",
+            "quietest"
+          ],
+          "min": 2,
+          "label": "Au moins 2 superlatifs différents (the best, the longest…)"
+        },
+        {
+          "kind": "tense",
+          "value": "present_perfect",
+          "min": 2,
+          "label": "Utilise le present perfect au moins 2 fois (I've tried…)"
+        },
+        {
+          "kind": "tense",
+          "value": "future",
+          "min": 1,
+          "label": "Dis si tu vas y retourner (I'll…, I'm going to…)"
+        }
+      ],
+      "model": "Chez Mimi: five stars!\nI've eaten at a lot of brunch places in Ottawa, but Chez Mimi is the best one in the neighbourhood. The portions are bigger than at other cafés, and the prices are lower. I've tried the blueberry pancakes and the vegetarian omelette, and both were delicious. The coffee is stronger than at the big chains, which I love. The only problem is the line: on Sunday mornings, it's the longest line in town! Go early, or you'll wait for thirty minutes. The staff are the friendliest people I've ever met. I'll definitely go back next weekend."
+    },
+    {
+      "id": "w06-7",
+      "level": 6,
+      "type": "message",
+      "title": "La réunion de famille",
+      "prompt": "Tu écris à ta tante pour vérifier les détails de la grande réunion de famille. Utilise des question tags pour confirmer (It's on Saturday, isn't it?) et réagis à ce qu'elle aime ou n'aime pas (So do I / Neither do I).",
+      "words": [
+        80,
+        140
+      ],
+      "require": [
+        {
+          "kind": "questions",
+          "min": 3,
+          "label": "Au moins 3 questions (les question tags comptent !)"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "isn't",
+            "aren't",
+            "don't",
+            "doesn't",
+            "won't",
+            "haven't",
+            "didn't",
+            "will"
+          ],
+          "min": 3,
+          "label": "Au moins 3 question tags différents (…, isn't it? …, haven't you?)"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "so",
+            "neither",
+            "too",
+            "either"
+          ],
+          "min": 1,
+          "label": "Réagis avec So do I, Neither do I ou Me too"
+        }
+      ],
+      "model": "Hi Aunt Sara!\nI'm so excited about the family reunion! It's on Saturday, isn't it? And it starts at noon, doesn't it? Grandpa is making his famous chili. You've tasted it before, haven't you? It's the spiciest chili in Canada! Mom says you don't like spicy food. Neither do I, so I'm going to bring a big salad. The cousins from Winnipeg are coming, too, aren't they? I haven't seen them since last summer. You won't forget the board games, will you? Last year was the funniest reunion ever.\nSee you on Saturday!\nZoé"
+    },
+    {
+      "id": "w06-8",
+      "level": 6,
+      "type": "email",
+      "title": "Quel téléphone choisir ?",
+      "prompt": "Tu dois choisir entre deux téléphones (ou deux forfaits). Écris à ton parent (ou à ton ado) : compare le prix, la batterie et l'appareil photo (cheaper than, as good as…), puis annonce ton choix.",
+      "ages": [
+        "ado",
+        "adulte"
+      ],
+      "words": [
+        80,
+        140
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "than",
+            "as"
+          ],
+          "min": 2,
+          "label": "Compare avec than ET as … as"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "than",
+            "more",
+            "most",
+            "better",
+            "best",
+            "worse",
+            "worst",
+            "less"
+          ],
+          "min": 3,
+          "label": "Au moins 3 mots de comparaison différents (than, better, less…)"
+        },
+        {
+          "kind": "tense",
+          "value": "future",
+          "min": 2,
+          "label": "Annonce ton choix au futur (I'm going to…, I'll…) au moins 2 fois"
+        }
+      ],
+      "model": "Hi Dad,\nI've compared the two phones, and here's what I found. The Zento X is cheaper than the Pixa Pro: it's only four hundred dollars, and the Pixa is six hundred. But the Pixa has a better camera and its battery lasts longer. The Zento's screen is as big as the Pixa's, and it's lighter, too. Honestly, the Zento isn't as fast as the Pixa, but it's fast enough for me, and it's less fragile. I'm going to choose the Zento, and I'll pay for half of it with my birthday money. Is that OK? I promise I'll take care of it!\nThanks,\nEthan"
+    },
+    {
+      "id": "w07-1",
+      "level": 7,
+      "type": "email",
+      "title": "Conseils au nouvel élève",
+      "prompt": "Un nouvel élève arrive dans ton école. Écris-lui un courriel de bienvenue : ce qu'il doit faire (must, have to), ce qui est interdit (mustn't), ce qu'il n'est pas obligé de faire (don't have to) et tes meilleurs conseils (should, could).",
+      "ages": [
+        "enfant",
+        "ado"
+      ],
+      "words": [
+        120,
+        180
+      ],
+      "require": [
+        {
+          "kind": "tense",
+          "value": "modal",
+          "min": 6,
+          "label": "Utilise au moins 6 modaux (must, have to, should, could…)"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "mustn't",
+            "don't"
+          ],
+          "min": 2,
+          "label": "Distingue mustn't (interdit) et don't have to (pas obligé)"
+        },
+        {
+          "kind": "paragraphs",
+          "min": 3,
+          "label": "Organise ton texte en au moins 3 paragraphes"
+        }
+      ],
+      "model": "Hi Samir,\n\nWelcome to Riverside Middle School! I know the first week can be scary, so here are some tips from someone who survived it.\n\nFirst, the rules. You must wear running shoes in the gym, and you have to be in class before the bell at eight thirty. You mustn't use your phone in class, or the teacher will take it until the end of the day. Believe me, I know! But you don't have to bring a lunch every day, because the cafeteria is pretty good, especially on pizza Fridays.\n\nNow, my advice. You should join a club in September, because it's the best way to make friends. You could try the robotics club, or you might like the drama club. And you should never sit on the third chair in the library. It's broken!\n\nSee you in the halls,\nPriya"
+    },
+    {
+      "id": "w07-2",
+      "level": 7,
+      "type": "article",
+      "title": "Petits gestes, grands effets",
+      "prompt": "Le journal de l'école (ou du quartier) prépare un numéro sur l'environnement. Écris un article : ce qui arrivera si on ne change rien, ce qui arrivera si chacun fait un petit effort, et 2 idées concrètes. Attention : pas de will après if !",
+      "words": [
+        120,
+        180
+      ],
+      "require": [
+        {
+          "kind": "tense",
+          "value": "future",
+          "min": 4,
+          "label": "Utilise le futur (will) au moins 4 fois dans tes conséquences"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "if",
+            "unless",
+            "when"
+          ],
+          "min": 3,
+          "label": "Utilise if, unless et when"
+        },
+        {
+          "kind": "paragraphs",
+          "min": 3,
+          "label": "Organise ton texte en au moins 3 paragraphes"
+        }
+      ],
+      "model": "Small Changes, Big Results\n\nEvery week, our neighbourhood fills hundreds of garbage bags with plastic. If we don't change our habits, our parks and rivers will soon be full of waste. Unless we act now, the problem will only get worse.\n\nThe good news is that small changes really work. If every family brings reusable bags to the grocery store, we will save thousands of plastic bags every year. When you buy a drink, you can bring your own bottle. If you forget it, ask for a glass instead of a plastic cup.\n\nHere are two easy ideas for our school. First, we could organize a clean-up day in the spring. Second, the cafeteria should stop selling water in plastic bottles. If we work together, our neighbourhood will be cleaner, and we'll feel proud of it.\n\nBy Maya Singh, grade eight"
+    },
+    {
+      "id": "w07-3",
+      "level": 7,
+      "type": "email",
+      "title": "Conseils pour mieux dormir",
+      "prompt": "Ton ami(e) dort mal et est stressé(e) par le travail. Écris-lui un courriel de conseils : ce qu'il/elle devrait faire (should), ce qu'il/elle pourrait essayer (could, try + -ing), ce qu'il/elle doit éviter (avoid + -ing) et quand consulter.",
+      "ages": [
+        "adulte"
+      ],
+      "words": [
+        120,
+        180
+      ],
+      "require": [
+        {
+          "kind": "tense",
+          "value": "modal",
+          "min": 5,
+          "label": "Utilise au moins 5 modaux (should, could, must, might…)"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "avoid",
+            "stop",
+            "try",
+            "keep",
+            "start"
+          ],
+          "min": 2,
+          "label": "Au moins 2 verbes suivis de -ing ou de to (avoid drinking, try going…)"
+        },
+        {
+          "kind": "paragraphs",
+          "min": 3,
+          "label": "Organise ton texte en au moins 3 paragraphes"
+        }
+      ],
+      "model": "Hi Karim,\n\nI'm sorry to hear that you're not sleeping well. Work has been crazy for you lately, hasn't it? I'm not a doctor, but here are a few ideas that helped me last year.\n\nFirst, you should avoid drinking coffee after lunch. I know you love your double-double, but caffeine can keep you awake for hours. You could also try going for a walk after dinner, because fresh air really helps. And you must stop checking your work emails in bed! Your phone should stay in the kitchen at night.\n\nIf you still can't sleep after two weeks, you should see your doctor. You might need to take a few days off, too. Remember, nobody can work well when they're exhausted.\n\nTake care of yourself, and let me know how it goes!\nNadia"
+    },
+    {
+      "id": "w07-4",
+      "level": 7,
+      "type": "story",
+      "title": "Le jour où j'ai demandé une « librairie »",
+      "prompt": "Raconte une erreur embarrassante (vraie ou inventée) causée par un faux ami (library / librairie, deception / déception, attend / attendre…). Explique ce qui s'est passé, ce que le mot veut vraiment dire, et donne un conseil aux autres francophones.",
+      "words": [
+        120,
+        180
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "actually",
+            "eventually",
+            "library",
+            "bookstore",
+            "sensible",
+            "sensitive",
+            "disappointment",
+            "attend",
+            "pretend",
+            "journey",
+            "currently",
+            "injury",
+            "lecture",
+            "resume",
+            "deception"
+          ],
+          "min": 3,
+          "label": "Au moins 3 faux amis bien utilisés (actually, library, bookstore…)"
+        },
+        {
+          "kind": "tense",
+          "value": "past_simple",
+          "min": 5,
+          "label": "Utilise le passé simple anglais (au moins 5 verbes)"
+        },
+        {
+          "kind": "paragraphs",
+          "min": 3,
+          "label": "Organise ton texte en au moins 3 paragraphes"
+        }
+      ],
+      "model": "The Day I Asked for a \"Librairie\"\n\nLast summer, I was visiting my cousins in Toronto. One afternoon, I wanted to buy a novel, so I asked a man in the street, \"Excuse me, where is the library?\" He kindly showed me the way. Twenty minutes later, I was standing in front of a huge building full of books, but nothing was for sale! Actually, a library is a place where you borrow books. If you want to buy them, you have to go to a bookstore.\n\nI felt a little silly, but the story got worse. When I told my cousin about my \"deception\", she looked worried. In English, that word means tricking someone! The right word was \"disappointment\".\n\nSo here is my advice: you must be careful with English words that look French. Eventually, you'll learn them all, but until then, check a good dictionary."
+    },
+    {
+      "id": "w07-5",
+      "level": 7,
+      "type": "email",
+      "title": "Le grand voyage en Gaspésie",
+      "prompt": "Tu organises un voyage en famille ou entre amis. Écris un courriel aux participants : ce que vous ferez (will), ce que tu as décidé ou espères faire (decide to, hope to, suggest + -ing…), et ce que chacun doit prévoir.",
+      "ages": [
+        "ado",
+        "adulte"
+      ],
+      "words": [
+        120,
+        180
+      ],
+      "require": [
+        {
+          "kind": "tense",
+          "value": "future",
+          "min": 4,
+          "label": "Utilise le futur (will, going to) au moins 4 fois"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "decided",
+            "hope",
+            "plan",
+            "promise",
+            "want",
+            "managed",
+            "enjoy",
+            "mind",
+            "suggest",
+            "remember"
+          ],
+          "min": 3,
+          "label": "Au moins 3 verbes différents suivis de to ou de -ing (decide to, enjoy -ing, suggest -ing…)"
+        },
+        {
+          "kind": "paragraphs",
+          "min": 3,
+          "label": "Organise ton texte en au moins 3 paragraphes"
+        }
+      ],
+      "model": "Hi everyone,\n\nOnly one week until our trip to the Gaspé Peninsula! I'm so excited that I can't stop checking the weather. We'll leave Montreal at six on Saturday morning, and by the evening, we'll be in Percé.\n\nHere's the plan. I've decided to book a whale-watching tour for Sunday morning. I hope to see a humpback whale, but I can't promise anything! On Monday, I suggest taking the boat to Bonaventure Island to see the gannets. There are thousands of them, so it will be noisy! I'll print all our tickets before Friday, so you don't have to worry about them.\n\nPlease remember to pack warm clothes. Even in July, it can be cold near the ocean. And if anyone minds sleeping in a tent, tell me now! I really enjoy organizing trips, but I don't enjoy surprises.\n\nSee you soon,\nFélix"
+    },
+    {
+      "id": "w07-6",
+      "level": 7,
+      "type": "message",
+      "title": "Instructions pour garder mon chien",
+      "prompt": "Ton ami va garder ton chien pendant tes vacances. Écris-lui un message avec des instructions : ce qu'il doit faire, ce qui arrive si… (If she barks, it means…), et ce qu'il ne doit surtout pas faire.",
+      "ages": [
+        "enfant",
+        "ado"
+      ],
+      "words": [
+        120,
+        180
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "if",
+            "unless",
+            "when"
+          ],
+          "min": 3,
+          "label": "Utilise if, unless et when"
+        },
+        {
+          "kind": "tense",
+          "value": "modal",
+          "min": 4,
+          "label": "Utilise au moins 4 modaux (have to, must, mustn't, can…)"
+        },
+        {
+          "kind": "paragraphs",
+          "min": 3,
+          "label": "Organise ton texte en au moins 3 paragraphes"
+        }
+      ],
+      "model": "Hi Liam,\n\nThank you so much for looking after Pepper while I'm away! She's a sweet dog, but she has some strange habits, so please read this carefully.\n\nYou have to feed her twice a day, at seven in the morning and at five in the evening. If she sits by the door and whines, it means she needs to go out. Don't panic if she hides under the bed during a storm. She always does that. When she brings you her blue ball, you must throw it. If you don't, she will follow you everywhere until you do!\n\nYou mustn't give her chocolate or grapes, because they can make dogs very sick. And unless you want a very muddy dog, don't walk her near the pond.\n\nThanks again! I'll bring you back some maple candy.\nEmma"
+    },
+    {
+      "id": "w07-7",
+      "level": 7,
+      "type": "essay",
+      "title": "Un téléphone à 10 ans ?",
+      "prompt": "Rédige un court essai : les enfants de 10 ans devraient-ils avoir un téléphone intelligent ? Présente les avantages, puis les inconvénients, et donne ton opinion en conclusion.",
+      "ages": [
+        "ado",
+        "adulte"
+      ],
+      "words": [
+        120,
+        180
+      ],
+      "require": [
+        {
+          "kind": "tense",
+          "value": "modal",
+          "min": 5,
+          "label": "Utilise au moins 5 modaux (can, might, should, could…)"
+        },
+        {
+          "kind": "connectors",
+          "min": 4,
+          "label": "Utilise au moins 4 mots de liaison différents (but, because, also, on the other hand…)"
+        },
+        {
+          "kind": "paragraphs",
+          "min": 4,
+          "label": "Organise ton texte en au moins 4 paragraphes"
+        }
+      ],
+      "model": "Should Ten-Year-Olds Have a Smartphone?\n\nToday, many children get their first phone before they start high school. Some parents think it is necessary, but others are worried.\n\nOn the one hand, a phone can be very useful. Children who take the bus alone can call their parents if there is a problem. They might also use educational apps to practise math or learn a language. Besides, if all their friends have a phone, a child without one may feel left out.\n\nOn the other hand, smartphones can be addictive. Many kids stop playing outside because they prefer watching videos. They could also see things online that are not suitable for their age. Parents should not underestimate these dangers.\n\nIn my opinion, ten-year-olds don't need a smartphone. A simple phone for calls and messages is enough. They can wait until they are older and more responsible."
+    },
+    {
+      "id": "w07-8",
+      "level": 7,
+      "type": "email",
+      "title": "Postuler pour un emploi d'été",
+      "prompt": "Tu postules pour un emploi d'été (camp de jour, piscine, épicerie…). Écris un courriel au responsable : pourquoi tu veux ce poste (I hope to…), ce que tu aimes faire (I enjoy + -ing), ce que tu sais faire (I can…) et tes disponibilités.",
+      "ages": [
+        "ado",
+        "adulte"
+      ],
+      "words": [
+        120,
+        180
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "enjoy",
+            "hope",
+            "love",
+            "decided",
+            "learned",
+            "managed",
+            "practise",
+            "want"
+          ],
+          "min": 3,
+          "label": "Au moins 3 verbes différents suivis de to ou de -ing (enjoy -ing, hope to…)"
+        },
+        {
+          "kind": "tense",
+          "value": "modal",
+          "min": 3,
+          "label": "Utilise au moins 3 modaux (can, could, should…)"
+        },
+        {
+          "kind": "paragraphs",
+          "min": 3,
+          "label": "Organise ton texte en au moins 3 paragraphes"
+        }
+      ],
+      "model": "Dear Ms. Fortin,\n\nI am writing to apply for the job of day camp counsellor at your community centre. I saw your ad on the centre's website, and I would really love to work with you this summer.\n\nI am sixteen and I have a lot of experience with children. I often babysit my neighbours' kids, and last summer I helped at a soccer camp in my town. I enjoy organizing games and I'm good at calming down kids who are upset. I also have my first aid certificate, so I can react quickly if someone gets hurt. I could also help with swimming lessons, because I am a strong swimmer. I hope to study education at university, so this job would be perfect for me.\n\nI am available from the end of June until the end of August, and I can work on weekends if necessary. I have attached my resume. Thank you for considering my application.\n\nSincerely,\nAna Moreau"
+    },
+    {
+      "id": "w08-1",
+      "level": 8,
+      "type": "article",
+      "title": "Si j'étais maire",
+      "prompt": "Si tu étais maire de ta ville (ou directeur de ton école) pendant une semaine, que changerais-tu ? Écris un article avec 3 idées et explique ce qui se passerait (If I were…, I would…).",
+      "words": [
+        120,
+        180
+      ],
+      "require": [
+        {
+          "kind": "tense",
+          "value": "conditional",
+          "min": 5,
+          "label": "Utilise le conditionnel (would, could) au moins 5 fois"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "if"
+          ],
+          "min": 1,
+          "label": "Utilise if + prétérit (If I were…, If every street had…)"
+        },
+        {
+          "kind": "paragraphs",
+          "min": 3,
+          "label": "Organise ton texte en au moins 3 paragraphes"
+        }
+      ],
+      "model": "If I Were Mayor for a Week\n\nIf I were the mayor of Gatineau for a week, I would make three big changes. Some people might laugh at my ideas, but I think they would make our city a happier place.\n\nFirst, I would turn one street downtown into a pedestrian zone every Sunday. Families could walk, cycle and eat outside without worrying about cars. If the weather were nice, we would also organize free concerts there.\n\nSecond, I would build more skating rinks in the parks. If every neighbourhood had its own rink, kids would spend less time on screens in winter. Third, I would open the libraries until midnight on Fridays. Imagine board games, movies and hot chocolate surrounded by books!\n\nOf course, these ideas would cost money. But if I were mayor, I would ask the citizens to vote on them first."
+    },
+    {
+      "id": "w08-2",
+      "level": 8,
+      "type": "article",
+      "title": "De l'arbre à la crêpe",
+      "prompt": "Le journal de l'école demande un article sur un produit de chez nous : comment il est fabriqué, où il est produit, par qui. Exemple : le sirop d'érable, le fromage, le pain… Utilise la voix passive (is collected, was invented by…).",
+      "words": [
+        120,
+        180
+      ],
+      "require": [
+        {
+          "kind": "tense",
+          "value": "passive",
+          "min": 5,
+          "label": "Utilise la voix passive au moins 5 fois (is made, are collected…)"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "by"
+          ],
+          "min": 1,
+          "label": "Utilise by pour dire qui fait l'action"
+        },
+        {
+          "kind": "paragraphs",
+          "min": 3,
+          "label": "Organise ton texte en au moins 3 paragraphes"
+        }
+      ],
+      "model": "From Tree to Pancake\n\nMaple syrup is loved by millions of Canadians, but do you know how it is made? Most of the world's maple syrup is produced in Quebec, and the basic idea has not changed in centuries.\n\nThe sap is collected in early spring, when the nights are still freezing but the days are warmer. Small holes are drilled into maple trees, and the sap is carried through plastic tubes to a sugar shack. There, it is boiled for hours until most of the water disappears. About forty litres of sap are needed to make just one litre of syrup! Finally, the syrup is filtered and poured into bottles or cans.\n\nMaple sugar was first made by Indigenous peoples long before Europeans arrived. Today, the tradition is celebrated every spring, when families visit sugar shacks to eat pancakes and maple taffy on snow."
+    },
+    {
+      "id": "w08-3",
+      "level": 8,
+      "type": "description",
+      "title": "Le métier de mes rêves",
+      "prompt": "Pour l'orientation scolaire, décris le métier de tes rêves : une personne qui…, un endroit où…, le moment où…, quelqu'un dont… Utilise des pronoms relatifs (who, which, where, whose, when).",
+      "ages": [
+        "enfant",
+        "ado"
+      ],
+      "words": [
+        120,
+        180
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "who",
+            "which",
+            "that",
+            "where",
+            "whose",
+            "when"
+          ],
+          "min": 5,
+          "label": "Au moins 5 pronoms relatifs différents (who, which, that, where, whose, when)"
+        },
+        {
+          "kind": "tense",
+          "value": "conditional",
+          "min": 1,
+          "label": "Termine avec une phrase au conditionnel (If I became…, I would…)"
+        },
+        {
+          "kind": "paragraphs",
+          "min": 3,
+          "label": "Organise ton texte en au moins 3 paragraphes"
+        }
+      ],
+      "model": "My Dream Job: Wildlife Vet\n\nA wildlife vet is a doctor who takes care of wild animals. It's the job that I've wanted to do since I was eight, when I found an injured owl in my grandparents' backyard.\n\nWildlife vets work in places where animals need help: rescue centres, national parks and sometimes zoos. They treat animals which have been hurt by cars, fences or pollution. The best part of the job is the day when a healthy animal returns to the wild. My aunt, whose friend works at a rescue centre near Montreal, says it's the most rewarding moment of all.\n\nOf course, it isn't an easy job. You need to study for many years, and the animals that you treat can bite or scratch! But if I became a wildlife vet, I would be the happiest person in the world."
+    },
+    {
+      "id": "w08-4",
+      "level": 8,
+      "type": "email",
+      "title": "Si seulement…",
+      "prompt": "Ton ami(e) te demande de tes nouvelles. Réponds-lui en te plaignant gentiment de ton quotidien (trajets, voisins, travail) avec I wish… + prétérit, et imagine ce que tu ferais si les choses étaient différentes.",
+      "ages": [
+        "adulte"
+      ],
+      "words": [
+        120,
+        180
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "wish"
+          ],
+          "min": 1,
+          "label": "Utilise I wish + prétérit (I wish I had…)"
+        },
+        {
+          "kind": "tense",
+          "value": "conditional",
+          "min": 3,
+          "label": "Utilise le conditionnel (would) au moins 3 fois"
+        },
+        {
+          "kind": "paragraphs",
+          "min": 3,
+          "label": "Organise ton texte en au moins 3 paragraphes"
+        }
+      ],
+      "model": "Hi Malik,\n\nThanks for your message! You asked how I'm doing, so here is my honest answer: I'm surviving, but only just.\n\nI wish my office weren't so far from home. Every morning, I spend an hour and a half on two buses, and they are always packed. If I had a car, I would save so much time, but parking downtown costs a fortune. I also wish my upstairs neighbours didn't practise the drums at eleven o'clock at night! If they were quieter, I would sleep much better and I wouldn't be so grumpy at work.\n\nMost of all, I wish you still lived in Toronto. If you were here, we would go for our Sunday brunch like in the old days. Any chance you could visit this summer?\n\nTake care,\nSofia"
+    },
+    {
+      "id": "w08-5",
+      "level": 8,
+      "type": "story",
+      "title": "La pire préparation du monde",
+      "prompt": "Raconte une journée où tu as voulu « faire faire » plein de choses avant un grand événement (I had my hair cut, I got my bike repaired…) et où rien ne s'est passé comme prévu. Utilise aussi au moins un pronom réfléchi (myself, herself…).",
+      "words": [
+        120,
+        180
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "had",
+            "got",
+            "get"
+          ],
+          "min": 2,
+          "label": "Utilise have / get something done au moins 2 fois (I had my hair cut…)"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "myself",
+            "yourself",
+            "himself",
+            "herself",
+            "ourselves",
+            "themselves"
+          ],
+          "min": 1,
+          "label": "Un pronom réfléchi (myself, themselves…)"
+        },
+        {
+          "kind": "tense",
+          "value": "past_simple",
+          "min": 6,
+          "label": "Utilise le passé simple anglais (au moins 6 verbes)"
+        },
+        {
+          "kind": "paragraphs",
+          "min": 3,
+          "label": "Organise ton texte en au moins 3 paragraphes"
+        }
+      ],
+      "model": "The Worst Makeover Ever\n\nLast Saturday, I decided to get everything done before my cousin's wedding. It was a big mistake.\n\nIn the morning, I had my hair cut at a new salon downtown. The hairdresser talked about her cat the whole time, and when I looked in the mirror, half of my hair was gone! Then I took my suit to the dry cleaner's to get it cleaned. When I picked it up, it was two sizes smaller. Finally, I had my bike repaired, because I wanted to ride to the wedding. Unfortunately, the mechanic forgot to tighten the brakes, and I almost crashed into a mailbox.\n\nIn the end, I took a taxi, borrowed my dad's old suit and put on a hat to hide my hair. Everybody laughed, but I laughed too. Next time, I'll do everything myself!"
+    },
+    {
+      "id": "w08-6",
+      "level": 8,
+      "type": "review",
+      "title": "Critique d'une appli",
+      "prompt": "Écris la critique d'une application, d'un jeu ou d'un service que tu utilises : par qui il a été créé ou recommandé (passif), ce qu'il offre (relatives : which, that…), et ce que tu changerais si tu pouvais (If I designed…, I would…).",
+      "ages": [
+        "ado",
+        "adulte"
+      ],
+      "words": [
+        120,
+        180
+      ],
+      "require": [
+        {
+          "kind": "tense",
+          "value": "passive",
+          "min": 3,
+          "label": "Utilise la voix passive au moins 3 fois"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "who",
+            "which",
+            "that",
+            "where",
+            "whose",
+            "when"
+          ],
+          "min": 2,
+          "label": "Au moins 2 pronoms relatifs différents (which, who, that…)"
+        },
+        {
+          "kind": "tense",
+          "value": "conditional",
+          "min": 2,
+          "label": "Utilise le conditionnel (would) au moins 2 fois"
+        },
+        {
+          "kind": "paragraphs",
+          "min": 3,
+          "label": "Organise ton texte en au moins 3 paragraphes"
+        }
+      ],
+      "model": "StudyBuddy: Helpful, but Not Perfect\n\nStudyBuddy is a homework app which our school started using in September. It was created by a small local company, and it was recommended to us by our math teacher.\n\nThe app, which is free, lets you take a photo of a problem and explains each step. The explanations are written clearly, and difficult words are translated into French. I also like the timer, which reminds me to take breaks.\n\nHowever, some answers are given too quickly, so it's tempting to copy them without thinking. If I designed the app, I would hide the final answer until you tried the problem yourself. I would also add a dark mode, because my eyes hurt at night.\n\nOverall, I'd give it four stars. It's a great tool for students who really want to learn."
+    },
+    {
+      "id": "w08-7",
+      "level": 8,
+      "type": "letter",
+      "title": "Plus d'eau chaude !",
+      "prompt": "Le chauffe-eau de ton appartement est en panne depuis une semaine. Écris une lettre à ton propriétaire : ce qui s'est passé (break down, run out of…), ce qui n'a pas été fait (passif), et ce que tu feras s'il ne réagit pas.",
+      "ages": [
+        "adulte"
+      ],
+      "words": [
+        120,
+        180
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "down",
+            "out",
+            "off",
+            "up",
+            "back",
+            "away",
+            "on"
+          ],
+          "min": 3,
+          "label": "Au moins 3 verbes à particule différents (break down, run out of, call back…)"
+        },
+        {
+          "kind": "tense",
+          "value": "passive",
+          "min": 3,
+          "label": "Utilise la voix passive au moins 3 fois"
+        },
+        {
+          "kind": "paragraphs",
+          "min": 4,
+          "label": "Organise ton texte en au moins 4 paragraphes"
+        }
+      ],
+      "model": "Dear Mr. Petrov,\n\nI am writing about the water heater in apartment six, which broke down last Monday. I called your office the same day, and I was told that a technician would be sent within two days.\n\nUnfortunately, nobody has come to fix it. For a week, my family has had to heat water on the stove to wash. We have also run out of patience, especially since the problem was reported three times. Yesterday, a message was left on your voicemail, but nobody called me back.\n\nIf the heater were repaired this week, I would forget the whole story. However, if nothing is done by Friday, I will contact the city's housing services. I would appreciate it if you could get back to me as soon as possible.\n\nYours sincerely,\nAmir Haddad"
+    },
+    {
+      "id": "w08-8",
+      "level": 8,
+      "type": "message",
+      "title": "Le club recrute !",
+      "prompt": "Ton club (robotique, théâtre, soccer…) cherche de nouveaux membres. Écris une annonce : ce qu'on fait au club, les gens qui y sont (who, whose), l'endroit où vous vous retrouvez (where), et ce qui se passerait si plus de jeunes s'inscrivaient. Ajoute quelques verbes à particule (sign up, find out…).",
+      "ages": [
+        "enfant",
+        "ado"
+      ],
+      "words": [
+        120,
+        180
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "who",
+            "which",
+            "that",
+            "where",
+            "whose",
+            "when"
+          ],
+          "min": 4,
+          "label": "Au moins 4 pronoms relatifs différents (who, which, where, whose…)"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "down",
+            "out",
+            "off",
+            "up",
+            "back",
+            "away",
+            "on"
+          ],
+          "min": 3,
+          "label": "Au moins 3 verbes à particule différents (sign up, find out, put off…)"
+        },
+        {
+          "kind": "paragraphs",
+          "min": 3,
+          "label": "Organise ton texte en au moins 3 paragraphes"
+        }
+      ],
+      "model": "Join the Robotics Club!\n\nAre you someone who loves building things? Do you enjoy solving problems with friends? Then the Robotics Club is the place where you belong!\n\nWe meet every Tuesday after school in room twelve, which is next to the science lab. Our coach is Ms. Chen, a computer engineer whose robots have won several competitions. Don't worry if you've never built a robot before. The older members, who started just like you, will help you. You'll learn how to put together motors, sensors and wheels, and how to program them on a laptop.\n\nThis year, we are setting up a team for the regional competition in March. If more students signed up, we could build two robots instead of one! So don't put it off: come along next Tuesday and find out what we do. Snacks are provided!"
+    },
+    {
+      "id": "w09-1",
+      "level": 9,
+      "type": "story",
+      "title": "L'affaire du vélo rouge",
+      "prompt": "Écris une histoire policière (légère !) : un vélo a disparu devant la bibliothèque. Raconte l'enquête avec les temps du récit (past simple, past continuous, past perfect), des témoins et des indices, puis la solution.",
+      "words": [
+        160,
+        240
+      ],
+      "require": [
+        {
+          "kind": "tense",
+          "value": "past_perfect",
+          "min": 4,
+          "label": "Utilise le past perfect au moins 4 fois (had locked, had seen…)"
+        },
+        {
+          "kind": "tense",
+          "value": "past_continuous",
+          "min": 2,
+          "label": "Utilise le passé continu au moins 2 fois (was waiting…)"
+        },
+        {
+          "kind": "paragraphs",
+          "min": 4,
+          "label": "Organise ton texte en au moins 4 paragraphes"
+        }
+      ],
+      "model": "The Case of the Red Bike\n\nIt was a rainy Thursday afternoon when Félix came out of the library and stopped dead. His bright red bike, which he had locked to the rack only an hour earlier, had vanished. All that was left was a cut lock lying in a puddle.\n\nFélix looked around. A woman was waiting at the bus stop, and two teenagers were sharing an umbrella across the street. He asked them if they had seen anything. The woman said she had only arrived five minutes before. One of the teenagers, however, remembered that a man in a yellow raincoat had been walking around the bike rack for a long time.\n\nFélix went back inside and spoke to the librarian. She had noticed the same man earlier, because he had asked to borrow a pair of scissors \"for a school project\". She checked the security camera, and there he was: yellow raincoat, big scissors, red bike.\n\nThe next morning, the police found the bike behind a garage on Elm Street. The thief had painted it blue, but he had forgotten one detail: Félix's name was still written under the seat."
+    },
+    {
+      "id": "w09-2",
+      "level": 9,
+      "type": "article",
+      "title": "Entrevue avec mon grand-père",
+      "prompt": "Tu as interviewé un grand-parent (ou un voisin âgé) sur son enfance pour un projet d'école. Écris un article où tu rapportes ses paroles au discours indirect (He told me that…, I asked him whether…, He admitted that…).",
+      "words": [
+        160,
+        240
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "said",
+            "told",
+            "asked",
+            "explained",
+            "admitted",
+            "denied",
+            "warned",
+            "suggested",
+            "complained",
+            "refused",
+            "reminded",
+            "insisted",
+            "promised",
+            "added",
+            "remembered",
+            "replied"
+          ],
+          "min": 5,
+          "label": "Au moins 5 verbes de discours rapporté différents (said, told, explained, asked, admitted…)"
+        },
+        {
+          "kind": "tense",
+          "value": "past_perfect",
+          "min": 2,
+          "label": "Utilise le past perfect au moins 2 fois (concordance des temps)"
+        },
+        {
+          "kind": "paragraphs",
+          "min": 4,
+          "label": "Organise ton texte en au moins 4 paragraphes"
+        }
+      ],
+      "model": "Growing Up on a Farm: An Interview with My Grandfather\n\nLast weekend, I interviewed my grandfather, Lucien, about his childhood in Saskatchewan. I wanted to know how different life had been for kids sixty years ago.\n\nFirst, I asked him what his typical day had looked like. He told me that he used to get up at five every morning to feed the chickens before school. He explained that the school was so small that children of all ages shared the same classroom. When I asked whether he had liked school, he admitted that he had preferred working outside with his father.\n\nThen I asked him about winters. He said they had been much colder than today and that the snow had sometimes covered the fences completely. He remembered that his family had once been stuck at home for a whole week.\n\nFinally, I asked him if he missed those days. He laughed and said that he didn't miss the cold, but that he missed the silence. He told me to put my phone away more often and to listen to the wind. I promised him I would try."
+    },
+    {
+      "id": "w09-3",
+      "level": 9,
+      "type": "essay",
+      "title": "L'uniforme scolaire : pour ou contre ?",
+      "prompt": "Le conseil d'élèves propose d'imposer l'uniforme. Rédige un essai argumenté : les arguments pour, les arguments contre, puis ton opinion. Utilise des connecteurs logiques variés (however, although, moreover, therefore, despite…).",
+      "ages": [
+        "ado",
+        "adulte"
+      ],
+      "words": [
+        160,
+        240
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "however",
+            "although",
+            "whereas",
+            "therefore",
+            "moreover",
+            "despite",
+            "nevertheless",
+            "furthermore",
+            "consequently",
+            "meanwhile",
+            "unless",
+            "besides"
+          ],
+          "min": 4,
+          "label": "Au moins 4 connecteurs avancés différents (however, although, moreover, despite…)"
+        },
+        {
+          "kind": "connectors",
+          "min": 6,
+          "label": "Utilise au moins 6 mots de liaison différents"
+        },
+        {
+          "kind": "paragraphs",
+          "min": 4,
+          "label": "Organise ton texte en au moins 4 paragraphes"
+        }
+      ],
+      "model": "Should Students Wear School Uniforms?\n\nIn Canada, most public schools do not require uniforms, whereas many private schools do. Recently, our student council suggested introducing them. Although the idea is controversial, it deserves a serious discussion.\n\nSupporters of uniforms argue that they reduce peer pressure. When everyone wears the same clothes, nobody is judged for not having expensive brands. Moreover, parents save time every morning, and they may even save money, since they no longer need to buy so many trendy outfits.\n\nHowever, many students feel that uniforms limit their freedom of expression. Clothes are a way to show your personality, especially for teenagers. Furthermore, uniforms are not always cheap, and they are often uncomfortable, despite what the companies claim. As a result, some families might actually spend more, not less.\n\nIn my opinion, a strict uniform is not the best solution. Nevertheless, a simple dress code, such as a ban on offensive slogans, could solve most of the problems without taking away our individuality. Therefore, I believe our school should choose a dress code rather than a uniform."
+    },
+    {
+      "id": "w09-4",
+      "level": 9,
+      "type": "email",
+      "title": "Plainte au fournisseur Internet",
+      "prompt": "Depuis deux semaines, ton Internet ne fonctionne plus et tu as appelé trois fois le service client. Écris un courriel formel : rapporte ce que chaque agent t'a dit (discours indirect), ce qui s'était passé avant, et ce que tu demandes.",
+      "ages": [
+        "adulte"
+      ],
+      "words": [
+        160,
+        240
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "said",
+            "told",
+            "asked",
+            "explained",
+            "admitted",
+            "denied",
+            "warned",
+            "suggested",
+            "complained",
+            "refused",
+            "reminded",
+            "insisted",
+            "promised",
+            "added",
+            "remembered",
+            "replied"
+          ],
+          "min": 4,
+          "label": "Au moins 4 verbes de discours rapporté différents (told, said, asked, promised…)"
+        },
+        {
+          "kind": "tense",
+          "value": "past_perfect",
+          "min": 2,
+          "label": "Utilise le past perfect au moins 2 fois"
+        },
+        {
+          "kind": "paragraphs",
+          "min": 4,
+          "label": "Organise ton texte en au moins 4 paragraphes"
+        }
+      ],
+      "model": "Dear Customer Service Team,\n\nI am writing to complain about the way my internet problem has been handled over the past two weeks.\n\nOn March third, my connection stopped working completely. I called your help line, and the first agent told me that there was a problem in my area and that it would be fixed within a day. Two days later, nothing had changed, so I called again. This time, the agent said there was no problem in my area and asked me whether I had restarted my modem. I explained that I had already restarted it several times.\n\nThe third agent promised that a technician would come on Saturday morning. I cancelled my plans and waited at home all day, but nobody came. When I called back, I was told that the appointment had never been booked.\n\nAs a result, I have been without internet for fourteen days, although I work from home. I would therefore like a full refund for this month and a confirmed appointment with a technician this week. I look forward to your prompt reply.\n\nSincerely,\nPriya Raman"
+    },
+    {
+      "id": "w09-5",
+      "level": 9,
+      "type": "email",
+      "title": "Demande d'informations touristiques",
+      "prompt": "Tu prépares un voyage à Vancouver (en famille ou avec ta classe). Écris à l'office de tourisme : présente ton groupe avec des propositions participiales (Having never visited…, Not knowing…) et pose des questions indirectes polies (Could you tell me…? I was wondering whether…).",
+      "words": [
+        160,
+        240
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "could",
+            "wondering",
+            "wonder",
+            "know",
+            "tell"
+          ],
+          "min": 3,
+          "label": "Au moins 3 formules de questions indirectes (Could you tell me…, I was wondering…, Do you know…)"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "having",
+            "knowing",
+            "being",
+            "hoping",
+            "given"
+          ],
+          "min": 2,
+          "label": "Au moins 2 propositions participiales (Having…, Not knowing…, Being…)"
+        },
+        {
+          "kind": "questions",
+          "min": 2,
+          "label": "Pose au moins 2 questions"
+        },
+        {
+          "kind": "paragraphs",
+          "min": 4,
+          "label": "Organise ton texte en au moins 4 paragraphes"
+        }
+      ],
+      "model": "Dear Sir or Madam,\n\nI am a grade nine teacher from Sherbrooke, Quebec, and I am organizing a five-day trip to Vancouver for my class next May. Having never visited the city myself, I would be very grateful for your advice.\n\nFirst, could you tell me which neighbourhoods are the safest and most convenient for a large group? We are hoping to stay near public transit, since we will not have a bus. I was also wondering whether any museums offer discounts for school groups.\n\nSecondly, many of my students are passionate about nature. Not knowing the region well, I am not sure which activities are best in spring. Do you know if it is possible to go whale watching at that time of year? And would you happen to know how long it takes to walk to Stanley Park from downtown?\n\nFinally, being on a tight budget, we would like to find some free activities. Any suggestions would be greatly appreciated.\n\nThank you in advance for your help.\n\nBest regards,\nMaude Gagnon"
+    },
+    {
+      "id": "w09-6",
+      "level": 9,
+      "type": "review",
+      "title": "Critique de roman",
+      "prompt": "Écris la critique d'un roman (ou d'une série) que tu connais bien : résume le début de l'intrigue sans dévoiler la fin (temps du récit), donne ton avis nuancé avec des connecteurs, et dis à qui tu le recommandes.",
+      "words": [
+        160,
+        240
+      ],
+      "require": [
+        {
+          "kind": "tense",
+          "value": "past_perfect",
+          "min": 2,
+          "label": "Utilise le past perfect au moins 2 fois"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "however",
+            "although",
+            "whereas",
+            "therefore",
+            "moreover",
+            "despite",
+            "nevertheless",
+            "furthermore",
+            "consequently",
+            "meanwhile",
+            "unless",
+            "besides"
+          ],
+          "min": 2,
+          "label": "Au moins 2 connecteurs avancés différents (however, although, moreover…)"
+        },
+        {
+          "kind": "paragraphs",
+          "min": 4,
+          "label": "Organise ton texte en au moins 4 paragraphes"
+        }
+      ],
+      "model": "Anne of Green Gables: Still Charming After a Century\n\nI had always thought that Anne of Green Gables was a book for little kids, so I was surprised by how much I enjoyed it this summer.\n\nThe story takes place on Prince Edward Island, where Matthew and Marilla Cuthbert, an elderly brother and sister, have decided to adopt a boy to help on their farm. However, when Matthew arrives at the train station, he finds an eleven-year-old girl with red hair and a lot to say. Someone had made a mistake! Marilla wants to send Anne back, but the girl's imagination and honesty slowly win her over.\n\nWhat I loved most was Anne's personality. Although she makes one mistake after another, she never gives up, and her dramatic speeches made me laugh out loud. Moreover, the descriptions of the island are so vivid that I now want to visit it. On the other hand, some chapters are a little slow, and the old-fashioned vocabulary can be hard to follow.\n\nDespite these small flaws, I highly recommend this novel to anyone who has ever felt different. It is a perfect book for a rainy weekend, whether you are twelve or fifty."
+    },
+    {
+      "id": "w09-7",
+      "level": 9,
+      "type": "story",
+      "title": "La fête surprise ratée",
+      "prompt": "Raconte la fête surprise que tu as organisée pour un ami… et comment le secret a été découvert. Utilise le past perfect (I had invited…) et le discours indirect (He asked me why…, She told me that…).",
+      "ages": [
+        "enfant",
+        "ado"
+      ],
+      "words": [
+        160,
+        240
+      ],
+      "require": [
+        {
+          "kind": "tense",
+          "value": "past_perfect",
+          "min": 3,
+          "label": "Utilise le past perfect au moins 3 fois"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "said",
+            "told",
+            "asked",
+            "explained",
+            "admitted",
+            "denied",
+            "warned",
+            "suggested",
+            "complained",
+            "refused",
+            "reminded",
+            "insisted",
+            "promised",
+            "added",
+            "remembered",
+            "replied"
+          ],
+          "min": 3,
+          "label": "Au moins 3 verbes de discours rapporté différents (told, asked, explained…)"
+        },
+        {
+          "kind": "paragraphs",
+          "min": 4,
+          "label": "Organise ton texte en au moins 4 paragraphes"
+        }
+      ],
+      "model": "The Surprise That Wasn't\n\nFor weeks, I had been planning a surprise party for my best friend Jaden's thirteenth birthday. I had invited everyone from our class, my mom had baked a huge chocolate cake, and we had decorated the basement with balloons. Everything was ready.\n\nOn the big day, I told Jaden that we were going to my place to work on our science project. He looked a bit suspicious and asked me why I was wearing my best shirt for a science project. I said that I had spilled juice on all my other shirts. I was quite proud of my answer.\n\nWhen we arrived, the house was completely dark. Then, just as I opened the door, my little brother Noah ran up to us and shouted, \"Jaden! Everybody is hiding in the basement! It's a surprise!\" There was a long silence. Somewhere downstairs, someone laughed.\n\nLater, Noah explained that nobody had told him it was a secret. Jaden said it was the best party ever, and he admitted that he had guessed everything the day before anyway, because Maya had asked him what his favourite cake was. So much for secrets!"
+    },
+    {
+      "id": "w09-8",
+      "level": 9,
+      "type": "report",
+      "title": "Rapport sur le sondage du quartier",
+      "prompt": "Ton comité de quartier a fait un sondage sur la circulation et les parcs. Rédige un rapport pour la ville : introduction, résultats, recommandations, conclusion. Utilise des connecteurs et des collocations (make a decision, take action, pay attention…).",
+      "ages": [
+        "adulte"
+      ],
+      "words": [
+        160,
+        240
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "make",
+            "made",
+            "take",
+            "took",
+            "taken",
+            "pay",
+            "paid",
+            "do",
+            "save",
+            "waste"
+          ],
+          "min": 3,
+          "label": "Au moins 3 verbes de collocation différents (make a decision, take action, pay attention…)"
+        },
+        {
+          "kind": "connectors",
+          "min": 6,
+          "label": "Utilise au moins 6 mots de liaison différents"
+        },
+        {
+          "kind": "paragraphs",
+          "min": 4,
+          "label": "Organise ton texte en au moins 4 paragraphes"
+        }
+      ],
+      "model": "Report on the Maplewood Neighbourhood Survey\n\nIntroduction\nThe aim of this report is to summarize the results of our survey on traffic and green spaces, and to make recommendations to the city council. More than one hundred residents took part in the survey in October.\n\nMain findings\nMost residents said that they felt unsafe crossing Park Avenue, especially in the morning. Several parents complained that drivers did not pay attention to the school zone. Moreover, many people mentioned that the small park on Birch Street had been neglected for years: the benches are broken and the playground is old. On the other hand, residents were very positive about the community garden. Although it was only created last spring, it has already become a popular meeting place.\n\nRecommendations\nFirst, the city should take action quickly by adding a pedestrian crossing near the school. Second, we suggest renovating the Birch Street park, since this would make a real difference for young families. Finally, the council should consider creating a second community garden.\n\nConclusion\nIn short, residents care deeply about safety and green spaces. We hope the council will make a decision before next spring."
+    },
+    {
+      "id": "w10-1",
+      "level": 10,
+      "type": "story",
+      "title": "Le jour où j'ai raté l'autobus",
+      "prompt": "Raconte un moment où un petit détail a tout changé dans ta vie (vrai ou inventé). Imagine ce qui se serait passé si les choses avaient été différentes (If I hadn't…, I would have…) et exprime un regret ou un soulagement (If only…, I wish I had…).",
+      "words": [
+        160,
+        240
+      ],
+      "require": [
+        {
+          "kind": "tense",
+          "value": "conditional",
+          "min": 4,
+          "label": "Utilise le conditionnel passé (would have…) au moins 4 fois"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "if",
+            "only",
+            "wish"
+          ],
+          "min": 3,
+          "label": "Utilise if, if only et I wish"
+        },
+        {
+          "kind": "tense",
+          "value": "past_perfect",
+          "min": 3,
+          "label": "Utilise le past perfect au moins 3 fois (If I had…)"
+        },
+        {
+          "kind": "paragraphs",
+          "min": 4,
+          "label": "Organise ton texte en au moins 4 paragraphes"
+        }
+      ],
+      "model": "The Day I Missed the Bus\n\nThree years ago, on a cold Tuesday in February, I missed the school bus by about ten seconds. At the time, it felt like a disaster. Looking back, it was one of the luckiest moments of my life.\n\nSince I had no other choice, I decided to walk to school through the park. Halfway there, I heard someone calling for help. An elderly man had slipped on the ice and couldn't get up. I called nine-one-one and stayed with him until the paramedics arrived. If I had caught the bus, nobody would have found him for a long time, because the park was empty that morning.\n\nA week later, the man, Mr. Okafor, came to my school to thank me. He turned out to be a retired science teacher, and he offered to help me prepare for the science fair. If he hadn't coached me, I would never have won first prize, and I probably wouldn't be dreaming of becoming an engineer today.\n\nI used to wish I hadn't been so slow that morning. Now I think the opposite. If only I had known then what a difference those ten seconds would make!"
+    },
+    {
+      "id": "w10-2",
+      "level": 10,
+      "type": "article",
+      "title": "Mystère dans la cuisine",
+      "prompt": "Ce matin, ta cuisine est sens dessus dessous : fenêtre ouverte, pain disparu, traces de pattes… Écris un article pour le journal de l'école où tu fais des hypothèses sur ce qui a dû se passer (must have, can't have, might have) avant de résoudre le mystère.",
+      "ages": [
+        "enfant",
+        "ado"
+      ],
+      "words": [
+        160,
+        240
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "must",
+            "might",
+            "could",
+            "can't",
+            "may",
+            "couldn't"
+          ],
+          "min": 3,
+          "label": "Au moins 3 modaux différents pour tes hypothèses (must have, can't have, might have…)"
+        },
+        {
+          "kind": "tense",
+          "value": "modal",
+          "min": 5,
+          "label": "Fais au moins 5 hypothèses avec un modal"
+        },
+        {
+          "kind": "paragraphs",
+          "min": 4,
+          "label": "Organise ton texte en au moins 4 paragraphes"
+        }
+      ],
+      "model": "Mystery in the Kitchen\n\nWhen I came downstairs this morning, our kitchen looked as if a tornado had passed through it. The window was wide open, a loaf of bread had disappeared, and there were muddy footprints all over the counter.\n\nMy first suspect was my brother Liam, who is always hungry. However, he can't have done it, because he was at a sleepover last night. My parents can't have done it either: they went to bed early, and besides, they never climb on the counter.\n\nThe footprints were small, with five long toes, almost like tiny hands. It might have been a squirrel, but squirrels don't usually like bread that much. Then I noticed that the garbage can had been knocked over and that the lid of the compost bin was missing. Only one animal in our neighbourhood is clever enough to do that. It must have been a raccoon!\n\nMy mom thinks I should have closed the window before going to bed. She's probably right. The raccoon must have smelled the bread from the backyard and decided to have a midnight snack. Tonight, I'll keep the window shut and set up my phone to film the kitchen. Case closed… I hope."
+    },
+    {
+      "id": "w10-3",
+      "level": 10,
+      "type": "email",
+      "title": "Une semaine de fou au bureau",
+      "prompt": "Ta collègue est en vacances. Écris-lui un courriel pour raconter la semaine catastrophique (mais qui finit bien) que tu viens de vivre au travail. Utilise au moins 4 expressions idiomatiques de façon naturelle (a piece of cake, under the weather, the last straw, call it a day…).",
+      "ages": [
+        "adulte"
+      ],
+      "words": [
+        160,
+        240
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "weather",
+            "straw",
+            "cake",
+            "corners",
+            "bush",
+            "sack",
+            "fence",
+            "court",
+            "beans",
+            "rocket",
+            "blessing",
+            "moon",
+            "books",
+            "ice"
+          ],
+          "min": 4,
+          "label": "Au moins 4 expressions idiomatiques différentes (under the weather, the last straw, a piece of cake…)"
+        },
+        {
+          "kind": "tense",
+          "value": "past_simple",
+          "min": 6,
+          "label": "Utilise le passé simple anglais (au moins 6 verbes)"
+        },
+        {
+          "kind": "paragraphs",
+          "min": 4,
+          "label": "Organise ton texte en au moins 4 paragraphes"
+        }
+      ],
+      "model": "Hi Jasmine,\n\nI hope your vacation in Nova Scotia is going well, because things here have been crazy. Let me tell you about my week.\n\nOn Monday, our boss announced that the Bergeron project had to be finished by Friday instead of next month. He said it would be a piece of cake. It wasn't. To make things worse, half the team was under the weather, so Daniel and I had to hit the books and learn the new software in two days.\n\nOn Wednesday, the client called. Instead of beating around the bush, she told us directly that she hated the design. That was almost the last straw. Daniel wanted to cut corners and just change the colours, but I refused. We stayed until midnight and redesigned everything from scratch.\n\nOn Friday, we presented the new version. To our surprise, the client loved it and asked us to work on two more projects. In the end, her criticism was a blessing in disguise. At six o'clock, we finally called it a day and went out for pizza.\n\nNow the ball is in your court: when you come back, you're in charge of the next project! I'm going to hit the sack early tonight.\n\nCheers,\nOmar"
+    },
+    {
+      "id": "w10-4",
+      "level": 10,
+      "type": "essay",
+      "title": "Jeux vidéo : perte de temps ou outil ?",
+      "prompt": "Rédige un essai : les jeux vidéo sont-ils une perte de temps ou un outil utile ? Présente les deux côtés et conclus. Enrichis ton vocabulaire avec des mots construits (préfixes et suffixes : unhealthy, creativity, harmless, enjoyable…).",
+      "ages": [
+        "ado",
+        "adulte"
+      ],
+      "words": [
+        160,
+        240
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "entertainment",
+            "creativity",
+            "enjoyable",
+            "effective",
+            "harmless",
+            "overuse",
+            "unhealthy",
+            "addictive",
+            "relationships",
+            "reasonable",
+            "responsible",
+            "improvement",
+            "useful",
+            "useless",
+            "development",
+            "dangerous",
+            "unlimited"
+          ],
+          "min": 4,
+          "label": "Au moins 4 mots construits avec un préfixe ou un suffixe (unhealthy, creativity, harmless…)"
+        },
+        {
+          "kind": "connectors",
+          "min": 6,
+          "label": "Utilise au moins 6 mots de liaison différents"
+        },
+        {
+          "kind": "paragraphs",
+          "min": 4,
+          "label": "Organise ton texte en au moins 4 paragraphes"
+        }
+      ],
+      "model": "Video Games: A Waste of Time or a Useful Tool?\n\nVideo games are one of the most popular forms of entertainment in the world, yet many parents still see them as a complete waste of time. In my view, the reality is more complicated.\n\nTo begin with, many games encourage creativity and problem-solving. Building games allow players to design entire cities, while strategy games require careful planning and patience. Moreover, online games can strengthen friendships, since teenagers often play and chat with classmates. Some teachers even use educational games because they make learning more enjoyable and effective.\n\nNevertheless, games are not completely harmless. Overuse can lead to an unhealthy lifestyle: players who spend hours in front of a screen move less and often sleep badly. Some games are also designed to be addictive, with rewards that keep players coming back. As a result, homework and family relationships may suffer.\n\nIn conclusion, video games are neither good nor bad in themselves. What matters is how they are used. With reasonable limits and responsible choices, they can be a source of fun and even improvement. Without such limits, however, they can easily become a problem."
+    },
+    {
+      "id": "w10-5",
+      "level": 10,
+      "type": "letter",
+      "title": "Lettre d'excuses",
+      "prompt": "Tu as complètement oublié le dîner de départ à la retraite de ta mentore au travail. Écris-lui une lettre d'excuses : ce qui s'est passé, ce que tu aurais dû faire (should have / shouldn't have), ce qui serait différent si… (conditionnels mixtes), et comment tu vas te rattraper.",
+      "ages": [
+        "adulte"
+      ],
+      "words": [
+        160,
+        240
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "should",
+            "shouldn't"
+          ],
+          "min": 2,
+          "label": "Utilise should have ET shouldn't have"
+        },
+        {
+          "kind": "tense",
+          "value": "conditional",
+          "min": 3,
+          "label": "Utilise le conditionnel (would have, wouldn't be…) au moins 3 fois"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "if"
+          ],
+          "min": 1,
+          "label": "Utilise au moins une phrase avec if + past perfect"
+        },
+        {
+          "kind": "paragraphs",
+          "min": 4,
+          "label": "Organise ton texte en au moins 4 paragraphes"
+        }
+      ],
+      "model": "Dear Hélène,\n\nI owe you a huge apology. Last Friday, I completely missed your farewell lunch, and I have felt terrible about it all weekend.\n\nI have no excuse, but here is what happened. That morning, a client called with an urgent problem, and I spent three hours on the phone. By the time I looked at the clock, it was half past two and everyone had already left the restaurant. I should have written the lunch in my calendar, and I definitely shouldn't have answered that call without checking the time. If I had been more organized, I would have been there to give my speech and to thank you for everything.\n\nYou have been my mentor since my very first day at the company. If you hadn't trained me so patiently, I wouldn't be doing this job today. That is why missing your lunch hurts so much.\n\nI would love to make it up to you. Could I take you out for dinner next week, at the restaurant of your choice? This time, I promise to switch off my phone.\n\nWith my sincere apologies and gratitude,\nMarc"
+    },
+    {
+      "id": "w10-6",
+      "level": 10,
+      "type": "message",
+      "title": "Message à l'équipe après la finale",
+      "prompt": "Ton équipe (hockey, soccer, robotique…) a perdu la finale de justesse. Écris un message à ton équipe : ce qui aurait pu se passer autrement (If we had…, we would have…), ce que vous auriez dû faire (should have, could have), et pourquoi tu es quand même fier/fière.",
+      "ages": [
+        "enfant",
+        "ado"
+      ],
+      "words": [
+        160,
+        240
+      ],
+      "require": [
+        {
+          "kind": "tense",
+          "value": "conditional",
+          "min": 3,
+          "label": "Utilise le conditionnel passé (would have…) au moins 3 fois"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "should",
+            "could",
+            "might"
+          ],
+          "min": 2,
+          "label": "Au moins 2 modaux différents au passé (should have, could have…)"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "if",
+            "wish"
+          ],
+          "min": 2,
+          "label": "Utilise if ET I wish"
+        },
+        {
+          "kind": "paragraphs",
+          "min": 4,
+          "label": "Organise ton texte en au moins 4 paragraphes"
+        }
+      ],
+      "model": "Hey team,\n\nI know we're all pretty disappointed after yesterday's final. Losing three to two in overtime is hard to swallow, especially after such an amazing season. I couldn't sleep last night, so I've been thinking about the game.\n\nHonestly, if we had played the first period like we played the third, we would have won easily. We were too nervous at the start, and the other team scored two quick goals. I also wish I hadn't taken that penalty in the second period. If I had stayed calm, they wouldn't have had a power play, and maybe their second goal would never have happened. Sorry, guys.\n\nWe could have passed the puck more, and we should have listened to Coach when she told us to keep it simple. But here's the thing: at the beginning of the season, nobody thought we would even make the playoffs. If you had told me in September that we'd play in the final, I wouldn't have believed you!\n\nSo let's hold our heads up. We've already proved that we're a great team. Next year, that trophy is ours.\n\nSee you at practice,\nZoé"
+    },
+    {
+      "id": "w10-7",
+      "level": 10,
+      "type": "article",
+      "title": "Pourquoi faire du bénévolat ?",
+      "prompt": "Écris un article pour le bulletin de ton quartier sur ton expérience de bénévole (banque alimentaire, résidence pour aînés, club sportif…). Utilise des quantifieurs précis (a few / few, a little / little, neither, none, the whole…) et des expressions comme the elderly, the unemployed.",
+      "ages": [
+        "adulte"
+      ],
+      "words": [
+        160,
+        240
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "few",
+            "little",
+            "either",
+            "neither",
+            "none",
+            "whole",
+            "all",
+            "both"
+          ],
+          "min": 4,
+          "label": "Au moins 4 quantifieurs différents (a few, little, neither, the whole…)"
+        },
+        {
+          "kind": "connectors",
+          "min": 5,
+          "label": "Utilise au moins 5 mots de liaison différents"
+        },
+        {
+          "kind": "paragraphs",
+          "min": 4,
+          "label": "Organise ton texte en au moins 4 paragraphes"
+        }
+      ],
+      "model": "Why Volunteering Matters\n\nWhen I retired last year, a few friends warned me that I would get bored. They were wrong. Thanks to volunteering, I have hardly had a free afternoon since.\n\nEvery Tuesday, I help at the local food bank. Few people realize how many families in our town depend on it. Some of them have little money left after paying rent, and many are working parents, not only the unemployed. On Thursdays, I visit the elderly at a care home near my house. Neither of the two residents I see regularly has family nearby, so a little conversation means a lot to them.\n\nVolunteering is not only about helping others, however. It has changed my whole life. I have met people from all backgrounds, learned to cook for a hundred people and discovered talents I never knew I had. Most importantly, I feel useful.\n\nIf you have even a little free time, I encourage you to try it. You don't need any special skills: a smile and a pair of hands will do. None of us can solve every problem alone, but together we can make a real difference."
+    },
+    {
+      "id": "w10-8",
+      "level": 10,
+      "type": "email",
+      "title": "Ce que j'aurais aimé savoir",
+      "prompt": "Un(e) ami(e) commence l'école secondaire (ou un nouvel emploi) la semaine prochaine. Écris-lui un courriel : ce que tu aurais aimé savoir à tes débuts (I wish I had known…), les erreurs que tu aurais pu éviter (If I had…, I would have…), et tes conseils.",
+      "words": [
+        160,
+        240
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "wish",
+            "only"
+          ],
+          "min": 2,
+          "label": "Utilise I wish ET If only + past perfect"
+        },
+        {
+          "kind": "tense",
+          "value": "conditional",
+          "min": 3,
+          "label": "Utilise le conditionnel passé (would have…) au moins 3 fois"
+        },
+        {
+          "kind": "paragraphs",
+          "min": 4,
+          "label": "Organise ton texte en au moins 4 paragraphes"
+        }
+      ],
+      "model": "Hi Ethan,\n\nI can't believe you're starting high school next week! Two years ago, I was in your shoes, and I made quite a few mistakes. So here's the advice I wish someone had given me.\n\nFirst, get organized from day one. I wish I had used an agenda in grade nine. I forgot two major assignments in the first month, and if I had written them down, I wouldn't have lost so many marks. Trust me, it's not rocket science, but it makes a huge difference.\n\nSecond, don't be shy. During my first weeks, I ate lunch alone because I was too nervous to talk to anyone. If only I had joined a club sooner! When I finally signed up for the improv team in November, I made friends right away. If I hadn't been so scared, I would have enjoyed those first months much more.\n\nFinally, ask for help. I would have saved myself a lot of stress if I had talked to my teachers earlier. They might seem strict, but most of them are really kind if you talk to them after class. You should never be afraid to say you don't understand.\n\nGood luck, and remember: everyone feels lost at first!\n\nCheers,\nMaya"
+    },
+    {
+      "id": "w11-1",
+      "level": 11,
+      "type": "letter",
+      "title": "Réclamation à l'hôtel",
+      "prompt": "Tu as séjourné dans un hôtel qui ne ressemblait pas du tout à sa publicité. Écris une lettre formelle à la direction : présente les faits, utilise un registre soutenu (I am writing to…, I would be grateful if…), insiste avec au moins 2 inversions (Not only was…, Never have I…), et formule ta demande.",
+      "ages": [
+        "adulte"
+      ],
+      "words": [
+        220,
+        320
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "never",
+            "only",
+            "hardly",
+            "rarely",
+            "seldom",
+            "sooner",
+            "little"
+          ],
+          "min": 2,
+          "label": "Au moins 2 inversions pour insister (Not only was…, Never have I…)"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "request",
+            "require",
+            "requires",
+            "assist",
+            "inform",
+            "informed",
+            "purchase",
+            "receive",
+            "receiving",
+            "grateful",
+            "regret",
+            "reimburse",
+            "assured",
+            "therefore",
+            "furthermore",
+            "sincerely",
+            "unable",
+            "attend"
+          ],
+          "min": 4,
+          "label": "Au moins 4 mots du registre formel différents (inform, assist, grateful, therefore…)"
+        },
+        {
+          "kind": "paragraphs",
+          "min": 5,
+          "label": "Organise ton texte en au moins 5 paragraphes"
+        }
+      ],
+      "model": "Dear Sir or Madam,\n\nI am writing to express my deep dissatisfaction with my recent stay at the Lakeview Resort, where my family spent four nights in July.\n\nYour website describes the resort as a peaceful retreat with spotless rooms and a private beach. Unfortunately, our experience could not have been more different. Not only was our room next to a noisy construction site, but the air conditioning also failed on the very first night. When I informed the reception staff, I was assured that a technician would assist us the following morning. No technician ever came. Never have I been treated with such indifference by a hotel.\n\nFurthermore, the so-called private beach was closed for the entire week, a fact that nobody mentioned when we made our reservation. What disappointed my children most was that the swimming pool, the main reason we had chosen your resort, was also out of service.\n\nI fully understand that unexpected problems do occur. However, I would have expected to be informed in advance and offered an alternative. Under the circumstances, I believe that a partial refund is entirely justified. I would therefore be grateful if you could reimburse half of the total amount, namely six hundred dollars.\n\nI look forward to receiving your reply within two weeks. Should I not hear from you by then, I will have no choice but to share my experience on travel review websites.\n\nYours faithfully,\nCatherine Lavoie"
+    },
+    {
+      "id": "w11-2",
+      "level": 11,
+      "type": "article",
+      "title": "Parler comme un Canadien",
+      "prompt": "Écris un article pour le magazine de l'école : un guide amusant de l'anglais canadien pour les nouveaux élèves venus d'ailleurs (toque, washroom, loonie, double-double, eh…). Explique chaque mot avec un exemple et termine par une phrase emphatique (What you really need to know is…).",
+      "ages": [
+        "enfant",
+        "ado"
+      ],
+      "words": [
+        220,
+        320
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "toque",
+            "washroom",
+            "loonie",
+            "toonie",
+            "double-double",
+            "eh",
+            "keener",
+            "pop"
+          ],
+          "min": 4,
+          "label": "Au moins 4 mots d'anglais canadien différents, expliqués"
+        },
+        {
+          "kind": "connectors",
+          "min": 5,
+          "label": "Utilise au moins 5 mots de liaison différents"
+        },
+        {
+          "kind": "paragraphs",
+          "min": 4,
+          "label": "Organise ton texte en au moins 4 paragraphes"
+        }
+      ],
+      "model": "Talk Like a Canadian: A Survival Guide for New Students\n\nWelcome to our school! Whether you have just arrived from Paris, Mumbai or Mexico City, you have probably noticed that Canadians speak English in their own special way. Don't panic. Here is everything you need to survive your first winter, linguistically speaking.\n\nLet's start with the basics. If you need the toilet, ask for the washroom: here, that word is far more common than \"restroom\" or \"loo\". When the temperature drops below zero, you will need a toque, which is a warm knitted hat. And if a teacher calls you a keener, take it as a compliment… mostly. It means you are extremely enthusiastic about school.\n\nMoney can be confusing, too. A one-dollar coin is called a loonie, because there is a loon on it, and a two-dollar coin is a toonie. If your friend offers to buy you a pop, they mean a soft drink. And if someone in a coffee shop orders a double-double, they want a coffee with two creams and two sugars.\n\nFinally, there is the famous little word \"eh\". Canadians sometimes add it at the end of a sentence to ask for agreement: \"Nice day, eh?\" Use it with care, though. Overdo it and you will sound like a tourist!\n\nWhat you really need to know, however, is that Canadians are generally patient with newcomers. So don't be afraid to ask questions, eh?"
+    },
+    {
+      "id": "w11-3",
+      "level": 11,
+      "type": "essay",
+      "title": "Le télétravail, l'avenir ?",
+      "prompt": "Rédige un essai : le télétravail est-il l'avenir du travail ? Présente les deux points de vue avec un langage prudent et académique (It is widely believed that…, tends to, arguably, is likely to…) et des nominalisations (the elimination of…, the creation of…), puis conclus.",
+      "ages": [
+        "adulte"
+      ],
+      "words": [
+        220,
+        320
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "arguably",
+            "tends",
+            "tend",
+            "likely",
+            "unlikely",
+            "appears",
+            "seems",
+            "widely",
+            "believed",
+            "thought",
+            "suggests",
+            "may"
+          ],
+          "min": 4,
+          "label": "Au moins 4 marques de prudence différentes (arguably, tends to, is likely to, it appears that…)"
+        },
+        {
+          "kind": "connectors",
+          "min": 6,
+          "label": "Utilise au moins 6 mots de liaison différents (however, moreover, therefore…)"
+        },
+        {
+          "kind": "paragraphs",
+          "min": 5,
+          "label": "Organise ton texte en au moins 5 paragraphes"
+        }
+      ],
+      "model": "Is Remote Work the Future of Work?\n\nSince the pandemic, remote work has moved from the margins to the mainstream. It is widely believed that this change is permanent; however, the reality appears to be more nuanced.\n\nThe advantages of working from home are considerable. The elimination of daily commuting is arguably the most obvious benefit, both for employees, who gain time and money, and for the environment. Moreover, many workers report an improvement in concentration once they are freed from the interruptions of an open-plan office. Parents, in particular, tend to appreciate the flexibility it offers.\n\nNevertheless, remote work is not without its drawbacks. The absence of face-to-face contact seems to weaken team spirit, and young employees are likely to suffer most, since they learn a great deal by observing experienced colleagues. Furthermore, the boundary between professional and private life tends to disappear when the kitchen table becomes an office. For some, this leads to longer hours rather than greater freedom.\n\nIt is therefore unlikely that the traditional office will vanish altogether. A more probable outcome is the generalization of hybrid models, in which employees divide their time between home and the workplace. Such arrangements may combine the autonomy of remote work with the social benefits of the office.\n\nIn conclusion, remote work is here to stay, but probably not in its most extreme form. The real challenge for employers will be the creation of a balance that serves both productivity and well-being."
+    },
+    {
+      "id": "w11-4",
+      "level": 11,
+      "type": "email",
+      "title": "Deux registres, un message",
+      "prompt": "Tu ne peux plus participer à une conférence où tu devais présenter un projet. Écris deux messages : d'abord un courriel formel à l'organisatrice (I am writing to inform you…, I would be grateful if…), puis un texto décontracté à ton coéquipier (gonna, no worries, awesome…). Les deux registres doivent être bien distincts !",
+      "words": [
+        220,
+        320
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "request",
+            "require",
+            "requires",
+            "assist",
+            "inform",
+            "informed",
+            "purchase",
+            "receive",
+            "receiving",
+            "grateful",
+            "regret",
+            "reimburse",
+            "assured",
+            "therefore",
+            "furthermore",
+            "sincerely",
+            "unable",
+            "attend"
+          ],
+          "min": 3,
+          "label": "Au moins 3 mots du registre formel différents dans le courriel (inform, unable, grateful…)"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "gonna",
+            "wanna",
+            "gotta",
+            "worries",
+            "awesome",
+            "legit",
+            "hey",
+            "stuff"
+          ],
+          "min": 2,
+          "label": "Au moins 2 marques du registre familier dans le texto (gonna, no worries, awesome…)"
+        },
+        {
+          "kind": "paragraphs",
+          "min": 4,
+          "label": "Organise ton texte en au moins 4 paragraphes"
+        }
+      ],
+      "model": "Email to the organizer:\n\nDear Ms. Thompson,\n\nI am writing to inform you that, unfortunately, I will be unable to attend the regional youth leadership conference on Saturday, November eighth. A family matter requires my presence in Montreal that weekend, and it cannot be postponed.\n\nI sincerely regret any inconvenience this may cause, particularly as I was scheduled to present the results of our school's recycling project. With your permission, my classmate Noah Patel would be delighted to present in my place, as he contributed to every stage of the project. I have attached our slides and speaking notes so that the transition is as smooth as possible. I would be grateful if you could confirm whether this arrangement is acceptable.\n\nPlease do not hesitate to contact me should you require any further information. Thank you for your understanding, and I look forward to participating in future events.\n\nYours sincerely,\nLéa Fortin\n\nText to Noah:\n\nHey Noah! Bad news: I can't make it to the conference on Saturday. Family stuff in Montreal, ugh. So… you're gonna have to do our presentation alone. Sorry!! I already asked Ms. Thompson if it's OK. You know the project better than me anyway, so no worries, you'll be awesome. Wanna practise together on Thursday after school? I'll bring snacks. My bad for the last-minute drama. Seriously, you're a lifesaver. I owe you big time!"
+    },
+    {
+      "id": "w11-5",
+      "level": 11,
+      "type": "proposal",
+      "title": "Une bibliothèque d'outils",
+      "prompt": "Rédige une proposition formelle pour le conseil municipal : créer une « bibliothèque d'outils » (ou un jardin communautaire, une piste cyclable…) dans ton quartier. Parties : objectif, contexte, mise en œuvre, avantages, recommandations. Registre formel, voix passive et nominalisations.",
+      "ages": [
+        "adulte"
+      ],
+      "words": [
+        220,
+        320
+      ],
+      "require": [
+        {
+          "kind": "tense",
+          "value": "passive",
+          "min": 4,
+          "label": "Utilise la voix passive au moins 4 fois (would be stocked, is recommended…)"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "propose",
+            "proposed",
+            "recommend",
+            "recommended",
+            "implementation",
+            "establishment",
+            "consequently",
+            "furthermore",
+            "therefore"
+          ],
+          "min": 3,
+          "label": "Au moins 3 mots de proposition formelle différents (recommend, implementation, furthermore…)"
+        },
+        {
+          "kind": "paragraphs",
+          "min": 5,
+          "label": "Organise ton texte en au moins 5 paragraphes"
+        }
+      ],
+      "model": "Proposal: A Community Tool Library\n\nPurpose\nThe aim of this proposal is to recommend the establishment of a tool library in the basement of the Riverside Community Centre. Residents would be able to borrow tools, just as they borrow books, instead of purchasing equipment they rarely use.\n\nBackground\nMany household tools, such as drills and ladders, are used only a few times a year. Meanwhile, many residents, particularly students and young families, cannot afford expensive equipment for occasional repairs. An informal survey conducted at our spring fair showed strong interest in such a service.\n\nProposed implementation\nThe library would initially be stocked through donations, which could be collected during a launch weekend in May. Tools would be lent for up to one week, and members would be asked to pay a modest annual fee of twenty dollars. The service could be run by volunteers on Saturday mornings and Wednesday evenings.\n\nBenefits\nThe project would not only reduce household spending but also limit waste, as fewer tools would end up in landfills. Furthermore, it would encourage contact between neighbours, since experienced members could offer short repair workshops.\n\nRecommendations\nIt is therefore recommended that the council approve a start-up budget of three thousand dollars for shelving, insurance and a tracking system. A review of the project should be carried out after one year.\n\nWe would be pleased to present this proposal in person at the next council meeting."
+    },
+    {
+      "id": "w11-6",
+      "level": 11,
+      "type": "story",
+      "title": "Le mot dans le casier",
+      "prompt": "Écris une histoire à suspense (pas effrayante !) qui commence par « Little did I know that this ordinary Monday would change everything. » Utilise au moins 3 inversions ou phrases emphatiques (Hardly had I…, No sooner… than, Only then did I…, It was… who…).",
+      "ages": [
+        "enfant",
+        "ado"
+      ],
+      "words": [
+        220,
+        320
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "never",
+            "only",
+            "hardly",
+            "rarely",
+            "seldom",
+            "sooner",
+            "little"
+          ],
+          "min": 3,
+          "label": "Au moins 3 inversions différentes (Little did I know, Hardly had I…, Only then did I…)"
+        },
+        {
+          "kind": "tense",
+          "value": "past_perfect",
+          "min": 3,
+          "label": "Utilise le past perfect au moins 3 fois"
+        },
+        {
+          "kind": "paragraphs",
+          "min": 4,
+          "label": "Organise ton texte en au moins 4 paragraphes"
+        }
+      ],
+      "model": "The Note in the Locker\n\nLittle did I know that this ordinary Monday would change everything. It started like any other day: I was late, my toast was burnt and it was raining.\n\nWhen I opened my locker, a folded note fell at my feet. Written in purple ink, it said: \"The answer is in the place where stories sleep. Come alone at lunch.\" Hardly had I finished reading it when the bell rang, and I spent the entire math class staring at the clock.\n\nAt noon, I rushed to the library. After all, where else do stories sleep? The room was almost empty. Then I noticed that someone had left a book on the librarian's desk, open at a page about famous explorers. In the margin, someone had drawn a tiny arrow pointing at the window. No sooner had I looked outside than I saw it: a huge banner hanging from the gym roof that read \"HAPPY BIRTHDAY, AMIR!\"\n\nIt was my best friend Chloé who had organized the whole treasure hunt. She had been planning it for weeks with half the class, who were now hiding behind the bookshelves, trying not to laugh. Only then did I remember that it was actually my birthday. I had been so busy studying for exams that I had completely forgotten.\n\nNever have I been so happy to be fooled."
+    },
+    {
+      "id": "w11-7",
+      "level": 11,
+      "type": "report",
+      "title": "Bilan du pique-nique annuel",
+      "prompt": "Tu as organisé le pique-nique annuel de ton entreprise (ou de ton école). Rédige un rapport formel pour la direction : déroulement, problèmes, retours des participants, recommandations. Attention aux mots qui piègent (affect / effect, fewer / less, advice / advise, accept / except).",
+      "ages": [
+        "adulte"
+      ],
+      "words": [
+        220,
+        320
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "affect",
+            "affected",
+            "effect",
+            "fewer",
+            "less",
+            "advice",
+            "advise",
+            "principal",
+            "principle",
+            "accept",
+            "except",
+            "practice",
+            "practise"
+          ],
+          "min": 3,
+          "label": "Au moins 3 mots « pièges » bien utilisés (effect, fewer, advise…)"
+        },
+        {
+          "kind": "tense",
+          "value": "passive",
+          "min": 4,
+          "label": "Utilise la voix passive au moins 4 fois"
+        },
+        {
+          "kind": "paragraphs",
+          "min": 5,
+          "label": "Organise ton texte en au moins 5 paragraphes"
+        }
+      ],
+      "model": "Report on the Annual Staff Picnic\n\nIntroduction\nThe purpose of this report is to evaluate the staff picnic held at Lakeside Park on June twentieth and to advise management on how future events could be improved.\n\nOverview\nThe event was attended by approximately one hundred and forty employees and their families, which represents fewer participants than last year. This decrease appears to have been caused by the date, which coincided with the end of the school year. Nevertheless, the atmosphere was excellent, and the barbecue, the children's games and the talent show were particularly appreciated.\n\nProblems encountered\nTwo issues should be noted. Firstly, the weather had a significant effect on the afternoon: a storm forced everyone inside the pavilion, which was far too small. Secondly, less food was ordered than necessary, and the vegetarian options ran out within the first hour. This clearly affected the experience of several guests.\n\nFeedback\nA short survey was sent to all participants. Most respondents rated the event as good or very good, although many suggested that the activities be better adapted to teenagers.\n\nRecommendations\nIn light of these findings, it is recommended that next year's picnic be held in early June and that a covered venue be reserved as a backup. In addition, catering orders should be based on registration numbers, with a generous margin. Finally, it would be wise to accept suggestions from employees when planning activities, as this would encourage greater participation."
+    },
+    {
+      "id": "w11-8",
+      "level": 11,
+      "type": "letter",
+      "title": "Lettre de motivation",
+      "prompt": "Tu poses ta candidature pour un programme d'échange à l'étranger (ou un poste de bénévole international). Écris une lettre de motivation formelle : qui tu es, pourquoi ce programme, ce que tu apporterais. Utilise au moins une phrase clivée (What I value most is…, It was… that…) et le registre formel.",
+      "ages": [
+        "ado",
+        "adulte"
+      ],
+      "words": [
+        220,
+        320
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "request",
+            "require",
+            "requires",
+            "assist",
+            "inform",
+            "informed",
+            "purchase",
+            "receive",
+            "receiving",
+            "grateful",
+            "regret",
+            "reimburse",
+            "assured",
+            "therefore",
+            "furthermore",
+            "sincerely",
+            "unable",
+            "attend"
+          ],
+          "min": 3,
+          "label": "Au moins 3 mots du registre formel différents (assist, grateful, furthermore…)"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "what"
+          ],
+          "min": 1,
+          "label": "Au moins une phrase clivée (What I value most is…, It was … that…)"
+        },
+        {
+          "kind": "paragraphs",
+          "min": 5,
+          "label": "Organise ton texte en au moins 5 paragraphes"
+        }
+      ],
+      "model": "Dear Selection Committee,\n\nI am writing to apply for your Youth Exchange Program in Japan, which I discovered through my school's international office. As a grade eleven student with a strong interest in languages and cultures, I believe this program would be an extraordinary opportunity for me.\n\nGrowing up in a bilingual family in Moncton, I have always been fascinated by the way language shapes our view of the world. It was during a Japanese film festival two years ago that I first became curious about Japan. Since then, I have taken weekly Japanese lessons, and I am currently able to hold simple conversations.\n\nWhat I would bring to the program is, above all, adaptability. I volunteer at our local newcomer centre, where I assist recently arrived families with everyday tasks such as completing forms. This experience has taught me patience and the importance of listening. Furthermore, I am an active member of the student council, which has strengthened my organizational and communication skills.\n\nWhat I value most, however, is the chance to share my own culture as well. Should I be selected, I would be delighted to present Acadian traditions to my host family and classmates, and I would do my utmost to act as a responsible ambassador for my school and my country.\n\nThank you for considering my application. I would be grateful for the opportunity to discuss it further in an interview, and I look forward to hearing from you.\n\nYours faithfully,\nÉmilie Cormier"
+    },
+    {
+      "id": "w12-1",
+      "level": 12,
+      "type": "essay",
+      "title": "Bannir les voitures du centre-ville ?",
+      "prompt": "Rédige un essai argumentatif de niveau C2 : faut-il interdire les voitures dans les centres-villes ? Pèse le pour et le contre avec finesse, utilise des connecteurs de haut niveau (albeit, nonetheless, provided that, hence…) et des collocations C2 (pose a threat, bear in mind, strike a balance, draw a conclusion).",
+      "ages": [
+        "adulte"
+      ],
+      "words": [
+        220,
+        320
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "albeit",
+            "nonetheless",
+            "hence",
+            "thus",
+            "whereby",
+            "notwithstanding",
+            "conversely",
+            "undoubtedly",
+            "undeniably",
+            "arguably",
+            "ultimately",
+            "provided"
+          ],
+          "min": 3,
+          "label": "Au moins 3 connecteurs de niveau C2 différents (albeit, nonetheless, provided that, hence…)"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "pose",
+            "poses",
+            "bear",
+            "borne",
+            "draw",
+            "drawn",
+            "strike",
+            "struck",
+            "terms",
+            "allowances",
+            "raise",
+            "raises"
+          ],
+          "min": 2,
+          "label": "Au moins 2 collocations C2 différentes (pose a threat, bear in mind, strike a balance…)"
+        },
+        {
+          "kind": "connectors",
+          "min": 8,
+          "label": "Utilise au moins 8 mots de liaison différents"
+        },
+        {
+          "kind": "paragraphs",
+          "min": 5,
+          "label": "Organise ton texte en au moins 5 paragraphes"
+        }
+      ],
+      "model": "Should Cars Be Banned from City Centres?\n\nFew urban debates are as heated as the one surrounding the private car. For some, it embodies freedom; for others, it poses a threat to public health and quality of life. Although an outright ban is appealing in theory, I would argue that a gradual approach is both fairer and more effective.\n\nThe case against cars in city centres is compelling. Traffic congestion wastes time, emissions degrade air quality, and streets designed for vehicles leave little room for pedestrians, cyclists or children at play. Cities that have pedestrianized their historic cores often report livelier streets and thriving local businesses, albeit after an initial period of resistance from merchants.\n\nNonetheless, it must be borne in mind that not everyone can simply switch to cycling or public transit. Elderly residents, people with disabilities and tradespeople who carry heavy equipment depend on vehicles, and a sudden ban would hit them hardest. Moreover, in many Canadian cities, public transit is neither frequent nor extensive enough to absorb a sudden surge in demand, particularly in winter.\n\nA sensible compromise would therefore be to strike a balance: restrict access progressively, provided that reliable alternatives are put in place first. Expanding bus networks, creating protected bike lanes and offering exemptions for those who genuinely need a car would make the transition far more acceptable.\n\nIt is high time cities stopped treating the car as untouchable. Yet if we are to draw any conclusion from past reforms, it is that change imposed too quickly tends to provoke a backlash. Hence the need for ambition tempered by pragmatism."
+    },
+    {
+      "id": "w12-2",
+      "level": 12,
+      "type": "article",
+      "title": "Choisis bien tes mots",
+      "prompt": "Écris un article pour un blogue sur l'anglais : comment le choix d'un mot change le jugement qu'on porte sur quelqu'un (slim / skinny, determined / stubborn, curious / nosy, thrifty / stingy…). Donne au moins 4 paires d'exemples et une conclusion pour les francophones.",
+      "words": [
+        220,
+        320
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "slim",
+            "skinny",
+            "thin",
+            "determined",
+            "stubborn",
+            "curious",
+            "nosy",
+            "confident",
+            "arrogant",
+            "thrifty",
+            "stingy",
+            "inexpensive",
+            "cheap",
+            "childlike",
+            "childish",
+            "famous",
+            "notorious"
+          ],
+          "min": 8,
+          "label": "Au moins 8 mots de la liste des nuances (4 paires : slim / skinny, thrifty / stingy…)"
+        },
+        {
+          "kind": "connectors",
+          "min": 6,
+          "label": "Utilise au moins 6 mots de liaison différents (whereas, similarly, yet…)"
+        },
+        {
+          "kind": "paragraphs",
+          "min": 4,
+          "label": "Organise ton texte en au moins 4 paragraphes"
+        }
+      ],
+      "model": "Choose Your Words Carefully\n\nImagine two people describing the same classmate. One says she is determined; the other calls her stubborn. Neither is lying, yet the first sounds like a compliment and the second like a complaint. Welcome to the fascinating world of connotation.\n\nMany English words share a basic meaning but carry very different emotional baggage. Slim and skinny both describe someone who is not heavy, but whereas slim sounds elegant, skinny often suggests that something is wrong. Similarly, a curious neighbour is pleasantly interested in the world; a nosy one is interfering in your business. The same goes for money: if you are thrifty, you manage your budget wisely, but if you are stingy, you refuse to share even when you could easily afford to.\n\nSometimes the difference is subtle enough to cause real misunderstandings. Telling a friend that her new jacket looks inexpensive is a tactful observation; telling her it looks cheap may end the friendship. Calling an adult childlike praises their sense of wonder, whereas calling them childish criticizes their immaturity. And while a famous scientist is admired, a notorious one is known for all the wrong reasons.\n\nFor French speakers, this is a particular trap, as bilingual dictionaries rarely mention these shades of meaning. The best strategy is to read widely and notice how native speakers use each word. After all, the right word does not merely describe a person; it reveals what you think of them. So the next time you are tempted to call someone arrogant, ask yourself whether confident might be fairer."
+    },
+    {
+      "id": "w12-3",
+      "level": 12,
+      "type": "letter",
+      "title": "Lettre au conseil d'établissement",
+      "prompt": "Tu es parent d'élève. Écris une lettre formelle au conseil d'établissement : les devoirs prennent trop de place dans la vie des familles. Propose des solutions avec des structures de haut vol (It's high time…, would rather + prétérit, propose / insist that he be…, provided that…, Should you…).",
+      "ages": [
+        "adulte"
+      ],
+      "words": [
+        220,
+        320
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "time",
+            "rather",
+            "insist",
+            "propose",
+            "recommend",
+            "provided",
+            "should"
+          ],
+          "min": 4,
+          "label": "Au moins 4 structures de haut vol différentes (It's high time…, would rather…, insist that…, provided that…, Should you…)"
+        },
+        {
+          "kind": "connectors",
+          "min": 6,
+          "label": "Utilise au moins 6 mots de liaison différents"
+        },
+        {
+          "kind": "paragraphs",
+          "min": 5,
+          "label": "Organise ton texte en au moins 5 paragraphes"
+        }
+      ],
+      "model": "Dear Members of the School Council,\n\nI am writing on behalf of a group of parents whose children are in grade six at Pine Ridge Elementary. While we greatly appreciate the dedication of the teaching staff, we feel it is high time the school reconsidered its homework policy.\n\nOver the past term, many of our children have been spending up to two hours a night on assignments. Family dinners are rushed, extracurricular activities have been abandoned and, perhaps most worryingly, several children have begun to dread going to school altogether. Moreover, the benefits of extensive homework at the elementary level are, to say the least, open to debate.\n\nWe are not, however, calling for homework to be abolished. Most of us would rather our children read for pleasure every evening than completed worksheets they barely understand. We therefore propose that daily homework be limited to thirty minutes, provided that reading is encouraged as an alternative. We would also insist that no assignments be given over the holidays, so that families can genuinely rest together.\n\nShould the council require further input, we would be happy to organize a meeting with interested parents and teachers. We are convinced that a balanced approach would benefit not only the students but also the teachers, who would spend less time correcting and more time teaching.\n\nWe trust that you will give this matter the attention it deserves, and we look forward to your response.\n\nYours faithfully,\nNadia Benali, on behalf of the Grade Six Parents' Committee"
+    },
+    {
+      "id": "w12-4",
+      "level": 12,
+      "type": "story",
+      "title": "Une histoire, un proverbe",
+      "prompt": "Écris une histoire (vraie ou inventée) qui illustre un proverbe anglais (Don't count your chickens before they hatch, Every cloud has a silver lining…). Utilise au moins 5 phrasal verbs de haut niveau (come up with, put up with, end up, turn out, get over…) et termine par le proverbe.",
+      "ages": [
+        "enfant",
+        "ado"
+      ],
+      "words": [
+        220,
+        320
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "up",
+            "out",
+            "over",
+            "across",
+            "away",
+            "down",
+            "forward"
+          ],
+          "min": 5,
+          "label": "Au moins 5 phrasal verbs avec des particules différentes (come up with, turn out, get over, come across…)"
+        },
+        {
+          "kind": "tense",
+          "value": "past_simple",
+          "min": 8,
+          "label": "Utilise le passé simple anglais (au moins 8 verbes)"
+        },
+        {
+          "kind": "paragraphs",
+          "min": 4,
+          "label": "Organise ton texte en au moins 4 paragraphes"
+        }
+      ],
+      "model": "The Science Fair Disaster\n\nAll year, Karim had been looking forward to the regional science fair. He and his best friend Sofia had come up with what they believed was a brilliant idea: a solar-powered lunch box that kept food warm without electricity. For weeks, they put up with burnt fingers, melted plastic and Karim's little brother, who kept asking whether he could eat the experiments.\n\nThe night before the fair, everything seemed perfect. Karim was so confident that he told everyone they were going to win. His grandmother simply smiled and said, \"Don't count your chickens before they hatch.\"\n\nThe next morning, it turned out she was right. The sky was grey, rain was pouring down, and the gym where the fair took place had no windows. Without sunlight, their lunch box was just an ordinary box. When the judges came across their table, the soup inside was stone cold. Karim wanted to run away and hide.\n\nInstead, Sofia came up with a plan. She grabbed a desk lamp, plugged it in and calmly explained how the system would work on a sunny day. The judges were impressed by her quick thinking, and the team ended up with an honourable mention.\n\nIt took Karim a few days to get over his disappointment, but he learned his lesson. The following year, he didn't brag about anything until the results were announced. As his grandmother likes to say, don't count your chickens before they hatch."
+    },
+    {
+      "id": "w12-5",
+      "level": 12,
+      "type": "essay",
+      "title": "L'IA en classe : alliée ou menace ?",
+      "prompt": "Rédige un essai argumentatif : l'intelligence artificielle est-elle une alliée ou une menace pour l'école ? Nuance ta position, utilise des connecteurs C2 (conversely, albeit, undoubtedly…), des collocations C2 (pose a threat, bear in mind, strike a balance…) et des ellipses (I suspect so, to do so, neither…).",
+      "ages": [
+        "ado",
+        "adulte"
+      ],
+      "words": [
+        220,
+        320
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "albeit",
+            "nonetheless",
+            "hence",
+            "thus",
+            "whereby",
+            "notwithstanding",
+            "conversely",
+            "undoubtedly",
+            "undeniably",
+            "arguably",
+            "ultimately",
+            "provided"
+          ],
+          "min": 3,
+          "label": "Au moins 3 connecteurs de niveau C2 différents (conversely, albeit, undoubtedly…)"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "pose",
+            "poses",
+            "bear",
+            "borne",
+            "draw",
+            "drawn",
+            "strike",
+            "struck",
+            "terms",
+            "allowances",
+            "raise",
+            "raises"
+          ],
+          "min": 2,
+          "label": "Au moins 2 collocations C2 différentes (pose a threat, bear in mind, strike a balance…)"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "so",
+            "neither"
+          ],
+          "min": 2,
+          "label": "Utilise l'ellipse ou la substitution (I suspect so, do so, neither…)"
+        },
+        {
+          "kind": "paragraphs",
+          "min": 5,
+          "label": "Organise ton texte en au moins 5 paragraphes"
+        }
+      ],
+      "model": "Artificial Intelligence in the Classroom: Friend or Foe?\n\nWhen chatbots capable of writing essays in seconds became widely available, many teachers reacted with alarm. Some schools banned them outright; others chose to embrace them. Both reactions are understandable, but neither, in my view, addresses the real question: what is school actually for?\n\nIf the purpose of education is merely to produce correct answers, then AI undoubtedly poses a serious threat. A student who outsources every assignment learns nothing, and teachers can no longer be certain whose work they are marking. Bear in mind, too, that these tools sometimes produce confident but entirely false information, which inexperienced users are unlikely to detect.\n\nConversely, if school exists to teach young people how to think, AI could arguably become a valuable ally. Used wisely, it can explain a concept in several different ways, generate practice questions or give instant feedback on a first draft. Students who would never dare to ask a question in class might well do so in front of a screen, albeit only if they remain the authors of their own ideas.\n\nThe challenge, then, is to strike a balance. Rather than pretending the technology does not exist, schools should teach students to use it critically: to check sources, to question answers and to acknowledge their use of it. Assessment will also have to evolve, with more oral presentations and in-class writing.\n\nWill teachers manage to adapt quickly enough? I suspect so, provided that they are given the time and training they need. One conclusion can already be drawn: banning AI is no longer an option; teaching with it is."
+    },
+    {
+      "id": "w12-6",
+      "level": 12,
+      "type": "review",
+      "title": "Critique d'un spectacle de cirque",
+      "prompt": "Tu as assisté à un spectacle (cirque, concert, pièce de théâtre). Écris une critique nuancée pour un site culturel : alterne compliments et réserves, choisis des verbes précis (giggle, stumble, stride, glance, mutter…), utilise as if / as though, et termine par une recommandation.",
+      "words": [
+        220,
+        320
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "giggle",
+            "giggling",
+            "chuckle",
+            "chuckled",
+            "glance",
+            "glancing",
+            "stare",
+            "glare",
+            "whisper",
+            "whispered",
+            "mutter",
+            "muttered",
+            "stroll",
+            "stride",
+            "stumble",
+            "stumbles",
+            "peek"
+          ],
+          "min": 4,
+          "label": "Au moins 4 verbes précis différents (giggle, stumble, whisper, glance…)"
+        },
+        {
+          "kind": "words",
+          "value": [
+            "though",
+            "if"
+          ],
+          "min": 2,
+          "label": "Utilise as if ET as though"
+        },
+        {
+          "kind": "connectors",
+          "min": 6,
+          "label": "Utilise au moins 6 mots de liaison différents"
+        },
+        {
+          "kind": "paragraphs",
+          "min": 4,
+          "label": "Organise ton texte en au moins 4 paragraphes"
+        }
+      ],
+      "model": "Gravity, Optional: A Review\n\nIt is not every day that a circus show makes an entire audience gasp, giggle and hold its breath within the space of five minutes. Yet that is exactly what the young troupe behind Gravity, Optional achieved at our community theatre last Saturday, albeit not without a few wobbles.\n\nThe opening number is simply breathtaking. Six acrobats stride onto a bare stage and, within seconds, climb on top of one another as though gravity were merely a suggestion. A juggler then stumbles across the stage, apparently on the verge of collapse, before catching seven clubs behind his back without even glancing at them. The children in the front row were giggling uncontrollably, while their parents chuckled at the clever wordplay hidden in the narration.\n\nHowever, the second half is noticeably weaker. A long aerial routine, though technically flawless, drags on for far too long, and the recorded music is so loud that the narrator's whispered jokes are lost entirely. At one point, a toddler behind me muttered, \"Is it finished?\", which rather summed up the mood. Fortunately, the finale recaptures the magic: the entire cast floats above the audience on silk ribbons, as if the theatre ceiling had suddenly vanished.\n\nOverall, Gravity, Optional is an ambitious, joyful and occasionally self-indulgent show. Trim twenty minutes and it would be close to perfect. Even so, families looking for an unforgettable evening should not hesitate. Just be prepared to stare upward with your mouth wide open, as if you were five years old again."
+    },
+    {
+      "id": "w12-7",
+      "level": 12,
+      "type": "essay",
+      "title": "Le bilinguisme officiel : atout ou fardeau ?",
+      "prompt": "Rédige un essai de niveau C2 : le bilinguisme officiel du Canada est-il un atout ou un fardeau ? Présente les avantages, les critiques légitimes, puis une position nuancée. Soigne la cohésion (connecteurs C2, substitution, ellipse).",
+      "ages": [
+        "adulte"
+      ],
+      "words": [
+        220,
+        320
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "albeit",
+            "nonetheless",
+            "hence",
+            "thus",
+            "whereby",
+            "notwithstanding",
+            "conversely",
+            "undoubtedly",
+            "undeniably",
+            "arguably",
+            "ultimately",
+            "provided"
+          ],
+          "min": 3,
+          "label": "Au moins 3 connecteurs de niveau C2 différents (nonetheless, albeit, ultimately…)"
+        },
+        {
+          "kind": "connectors",
+          "min": 8,
+          "label": "Utilise au moins 8 mots de liaison différents"
+        },
+        {
+          "kind": "paragraphs",
+          "min": 5,
+          "label": "Organise ton texte en au moins 5 paragraphes"
+        }
+      ],
+      "model": "Is Official Bilingualism Worth the Effort?\n\nSince the Official Languages Act was passed in nineteen sixty-nine, Canada has defined itself as a country with two official languages. More than half a century later, the policy still provokes debate. Some regard it as a cornerstone of national identity; others dismiss it as a costly symbol with little relevance to their daily lives. Both views, I would argue, miss part of the picture.\n\nThe benefits of bilingualism are difficult to overstate. On a practical level, it guarantees that French-speaking and English-speaking Canadians can deal with their federal government in their own language, which is hardly a trivial matter in a democracy. Bilingual individuals, moreover, enjoy wider career prospects, particularly in the public service, tourism and international trade. There is also a cultural dimension: a second language opens the door to literature, music and humour that would otherwise remain inaccessible.\n\nNonetheless, critics raise legitimate concerns. In many regions, French is rarely heard, and immersion programs are not always available, let alone well funded. Bilingual services undeniably come at a cost, and some argue that this money would be better spent elsewhere. Others point out that Indigenous languages, which predate both English and French, receive comparatively little recognition.\n\nThese objections deserve to be taken seriously, but they are arguments for improving the policy rather than abandoning it. Bilingualism need not come at the expense of other languages; on the contrary, a society that values two languages is arguably better placed to value many.\n\nUltimately, bilingualism is less a burden than an investment, albeit one whose returns are not always immediately visible. As any learner knows, the effort is considerable. So, in the end, are the rewards."
+    },
+    {
+      "id": "w12-8",
+      "level": 12,
+      "type": "article",
+      "title": "L'orthographe anglaise te veut du mal",
+      "prompt": "Écris un article humoristique pour le blogue de la famille : les pièges de prononciation de l'anglais pour les francophones (lettres muettes, homophones, mots en -ough). Garde un ton léger mais nuancé, utilise des ellipses (I'm afraid so, Perhaps not) et glisse au moins un proverbe.",
+      "words": [
+        220,
+        320
+      ],
+      "require": [
+        {
+          "kind": "words",
+          "value": [
+            "knife",
+            "knight",
+            "island",
+            "wednesday",
+            "comb",
+            "doubt",
+            "listen",
+            "hour",
+            "honest",
+            "receipt",
+            "though",
+            "through",
+            "tough",
+            "thought",
+            "cough",
+            "weather",
+            "whether",
+            "flour",
+            "flower"
+          ],
+          "min": 6,
+          "label": "Au moins 6 mots pièges différents (knife, island, weather / whether, though…)"
+        },
+        {
+          "kind": "connectors",
+          "min": 6,
+          "label": "Utilise au moins 6 mots de liaison différents"
+        },
+        {
+          "kind": "paragraphs",
+          "min": 4,
+          "label": "Organise ton texte en au moins 4 paragraphes"
+        }
+      ],
+      "model": "Why English Spelling Is Out to Get You\n\nEvery French speaker learning English eventually reaches the same moment of despair. You have mastered the grammar, you have memorized hundreds of phrasal verbs, and then someone asks you to read the word \"Wednesday\" aloud. Is the first d silent? I'm afraid so. And the second e? That one too.\n\nSilent letters are the first trap. The k in knife and knight has been quiet for centuries, the b in doubt and comb never says a word, and the s in island seems to have been added purely to annoy learners. Even the h at the start of hour and honest stays silent, whereas in hotel and happy it is perfectly audible. Is there a logical rule? Not really.\n\nThen come the homophones. Weather and whether sound identical, as do flour and flower, which explains why my first attempt at writing a cake recipe in English involved a bouquet. Fortunately, context usually saves the day, or so I hope.\n\nBut the true villain is the combination -ough. Though, through, tough, thought and cough each rhyme with something different. Native speakers rarely notice, of course; they learned these words long before they could question them.\n\nSo what is a learner to do? Listen carefully, read aloud as often as possible and accept that some mistakes are inevitable. As the proverb goes, practice makes perfect, or at least slightly less embarrassing. Will you ever pronounce receipt correctly on the first try? Perhaps not. But every cloud has a silver lining: with English, you will never be bored."
+    }
+  ]
+}

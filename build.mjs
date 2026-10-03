@@ -38,6 +38,47 @@ for (const f of readdirSync(contentDir)) {
 }
 for (const [k, f] of [["placement", "placement.json"], ["writing", "writing.json"], ["humor", "humor.json"], ["wordform", "wordform.json"], ["c2uoe", "c2-uoe.json"], ["c2papers", "c2-papers.json"]]) extra[k] = readOpt(f);
 
+// Spelling dictionary for the writing corrector (SCOWL word lists via the wordlist-english package, see
+// THIRD_PARTY.md): three frequency tiers, each sorted and prefix-coded ("3ple" = 3 letters of the previous word + "ple").
+function encodeTier(words) {
+  let prev = "";
+  return words
+    .map((w) => {
+      let p = 0;
+      while (p < 35 && p < prev.length && p < w.length && prev[p] === w[p]) p++;
+      prev = w;
+      return p.toString(36) + w.slice(p);
+    })
+    .join(",");
+}
+function buildDictionary() {
+  const dir = join(root, "node_modules", "wordlist-english");
+  if (!existsSync(dir)) return "";
+  const read = (s, n) => JSON.parse(readFileSync(join(dir, `${s}-words-${n}.json`), "utf8"));
+  const tiers = [[10, 20], [35, 40], [50]];
+  const seen = new Set();
+  const out = tiers.map((sizes) => {
+    const set = new Set();
+    for (const s of ["english", "american", "canadian", "british"]) for (const n of sizes) for (const w of read(s, n)) {
+      const x = w.toLowerCase();
+      if (/^[a-z]+$/.test(x) && !seen.has(x)) set.add(x);
+    }
+    set.forEach((x) => seen.add(x));
+    return set;
+  });
+  // Every word of the course content is known too (tier 2).
+  const contentWords = JSON.stringify(levels).match(/\b[A-Za-z]{2,}\b/g) || [];
+  for (const w of contentWords) {
+    const x = w.toLowerCase();
+    if (!seen.has(x)) {
+      out[1].add(x);
+      seen.add(x);
+    }
+  }
+  return out.map((s) => encodeTier([...s].sort())).join("|");
+}
+const dict = buildDictionary();
+
 const js = await build({
   entryPoints: [join(root, "src/main.js")],
   bundle: true,
@@ -50,11 +91,12 @@ const js = await build({
 const css = ["src/styles.css", "src/styles-v2.css"].filter((p) => existsSync(join(root, p))).map((p) => readFileSync(join(root, p), "utf8")).join("\n");
 const data = JSON.stringify(levels).replace(/</g, "\\u003c");
 const extraData = JSON.stringify(extra).replace(/</g, "\\u003c");
+const dictData = JSON.stringify(dict);
 const fonts =
   '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=JetBrains+Mono:wght@500;700&display=swap">';
 
 const body = `<div id="app"><main id="view"><noscript><p>Mission Bilingue a besoin de JavaScript.</p></noscript></main></div>
-<script>window.__CONTENT__=${data};window.__EXTRA__=${extraData};</script>
+<script>window.__CONTENT__=${data};window.__EXTRA__=${extraData};window.__DICT__=${dictData};</script>
 <script>${js.outputFiles[0].text}</script>`;
 
 const page = `<title>Mission Bilingue</title>

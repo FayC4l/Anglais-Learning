@@ -109,3 +109,31 @@
 .band-badge.sm { width: 56px; height: 56px; font-size: 1.3rem; box-shadow: 0 4px 0 rgba(0,0,0,.25); }
 .history { list-style: none; padding: 0; display: grid; gap: 6px; }
 .history li { padding: 8px 12px; border-radius: 10px; background: var(--card); border: 1px solid var(--rule); }
+
+/* Daily training boxes */
+.boxes { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; align-items: end; height: 150px; margin: 10px 0; }
+.box-col { display: grid; justify-items: center; gap: 2px; height: 100%; grid-template-rows: 1fr auto auto; }
+.box-bar { align-self: end; width: 70%; height: max(6px, var(--h)); background: linear-gradient(to top, var(--l5), color-mix(in srgb, var(--l5) 50%, var(--card))); border-radius: 8px 8px 2px 2px; }
+.box-col small { color: var(--ink-2); font-size: .72rem; font-family: var(--font-mono); }
+
+/* Conjugator */
+.conjugator { display: grid; gap: 12px; }
+.conj-search .field { flex: 1 1 220px; }
+.conj-verb { display: flex; align-items: center; gap: 10px; font-size: 2rem; margin: 6px 0 0; }
+.conj-fr { color: var(--ink-2); display: flex; gap: 8px; align-items: center; margin: 0; }
+.tag { font-family: var(--font-mono); font-size: .72rem; padding: 2px 8px; border-radius: 99px; background: var(--amber-bg, var(--paper-2)); color: var(--ink); }
+.tag.ok { background: var(--go-bg, var(--paper-2)); }
+.conj-forms { display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 8px; margin: 6px 0; }
+.conj-forms div { display: grid; padding: 8px 10px; border-radius: 10px; background: var(--card); border: 1px solid var(--rule); }
+.conj-forms small { font-size: .72rem; color: var(--ink-2); font-family: var(--font-mono); }
+.conj-modes { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { padding: 6px 14px; border-radius: 99px; border: 2px solid var(--rule); background: var(--card); color: var(--ink); font: inherit; font-weight: 700; cursor: pointer; }
+.chip.on { background: var(--ink); color: var(--card); border-color: var(--ink); }
+.conj-tables { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px; }
+.conj-table { padding: 10px 12px; border-radius: 12px; background: var(--card); border: 1px solid var(--rule); }
+.conj-table h3 { font-size: .95rem; margin: 0 0 6px; }
+.conj-table h3 small { color: var(--ink-3); font-weight: 400; }
+.conj-table table { width: 100%; border-collapse: collapse; }
+.conj-table th { text-align: left; font-size: .75rem; color: var(--ink-3); font-weight: 400; padding: 2px 6px 2px 0; white-space: nowrap; width: 1%; }
+.conj-cell { border: none; background: none; color: var(--ink); font: inherit; text-align: left; padding: 2px 0; cursor: pointer; }
+.conj-cell:hover { color: var(--l6); text-decoration: underline; }

@@ -1,1 +1,1 @@
-{"name":"mission-bilingue","private":true,"type":"module","dependencies":{"esbuild":"0.28.2","playwright-core":"1.63.0"}}
+{"name":"mission-bilingue","private":true,"type":"module","dependencies":{"esbuild":"0.28.2","playwright-core":"1.63.0"},"devDependencies":{"wordlist-english":"^1.2.1"}}

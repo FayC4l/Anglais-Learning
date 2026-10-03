@@ -1,6 +1,7 @@
 // A station, as a guided path: 1 Leçon → 2 Son → 3 Mots → 4 Pratique → 5 Test.
 import { h, icon, rich, shuffle, toast, dialog } from "../ui.js";
-import { unitById, levelById } from "../content.js";
+import { unitById, levelById, vocabRefs } from "../content.js";
+import { addCards } from "../srs.js";
 import { state, save, unitState, diff, unitUnlocked, STEPS, stepDone, markStep, missingPrep, pathOf, PRACTICE_GOAL, addXp, touchStreak } from "../store.js";
 import { go } from "../router.js";
 import { speak, speakParts, mixedParts, stopSpeaking, ttsReady, coachReady, sfx } from "../audio.js";
@@ -78,6 +79,11 @@ export function unitScreen(view, { uid, tab }) {
     body.className = `unit-body body-${id}`;
     const next = (from) => {
       markStep(uid, from);
+      // Studied words join the spaced-repetition deck.
+      if (from === "words") {
+        addCards(state.srs, vocabRefs(unit));
+        save();
+      }
       const i = STEPS.findIndex((s) => s.id === from);
       show(STEPS[i + 1].id, { scroll: true });
     };
