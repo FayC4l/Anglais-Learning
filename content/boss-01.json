@@ -1,0 +1,86 @@
+{
+  "level": 1,
+  "taunts": {
+    "phase2": [
+      "Hello again ! Tu crois que c'est fini ? Je ne fais que dire bonjour, my friend.",
+      "Oh, tu connais tes couleurs ? Attention, moi aussi je peux voir rouge… R-E-D !",
+      "Nice to meet you… mais je ne vais pas te laisser gagner aussi facilement !"
+    ],
+    "phase3": [
+      "Sorry ? SORRY ? Non, pas de pardon ! Phase finale, champion !",
+      "Grrr ! Je suis rouge de colère ! Red, red, RED !",
+      "Ça suffit ! Je vais t'épeler ta défaite : D-É-F-A-I-T-E !"
+    ],
+    "lose": [
+      "Goodbye, my friend ! Reviens quand tu sauras compter jusqu'à twenty sans trembler.",
+      "Ha ! Je suis sûr que tu as pensé « I have ten years ». Avoue !",
+      "Thank you for playing ! You're welcome pour la leçon… Hello, hello, à la prochaine !"
+    ]
+  },
+  "questions": [
+    { "unit": "1.1", "type": "mcq", "q": "Quelle phrase est correcte pour dire « Je m'appelle Karim » ?", "choices": ["I call me Karim.", "My name is Karim.", "Me name is Karim.", "I name is Karim."], "answer": 1, "explain": "« Je m'appelle » se dit My name is… (mon nom est…). [[I call me]] est une traduction mot à mot qui n'existe pas." },
+    { "unit": "1.1", "type": "mcq", "q": "Ton voisin te demande « How are you? ». Tu réponds :", "choices": ["I go well, thank you.", "My name is fine.", "I'm fine, thank you."], "answer": 2, "explain": "« Je vais bien » = I'm fine. On ne dit pas [[I go well]] : c'est du français déguisé en anglais !" },
+    { "unit": "1.1", "type": "mcq", "q": "Il est tard, ta grand-maman va dormir. Tu lui dis :", "choices": ["Good night, Grandma!", "Good morning, Grandma!", "Hello, Grandma!"], "answer": 0, "explain": "Good night se dit le soir, quand quelqu'un va se coucher. Good morning, c'est pour le matin." },
+    { "unit": "1.1", "type": "mcq", "q": "Tu veux dire « Non, merci » poliment au serveur. Tu dis :", "choices": ["No, please.", "No, sorry you.", "Yes, thank you.", "No, thank you."], "answer": 3, "explain": "« Non, merci » = No, thank you. Please veut dire « s'il te plaît », pas « merci »." },
+    { "unit": "1.1", "type": "fill", "q": "Hello, Mei! ___ are you? — I'm fine, thank you!", "hint": "comment", "answer": ["How"], "explain": "« Comment vas-tu ? » = How are you? Le mot how veut dire « comment »." },
+    { "unit": "1.1", "type": "fill", "q": "Nice to meet ___, Samuel!", "hint": "toi", "answer": ["you"], "explain": "« Enchanté de te rencontrer » = Nice to meet you. Ici « te / toi » se dit you." },
+    { "unit": "1.1", "type": "fill", "q": "Good ___, Dad! — Good morning, Zoé!", "hint": "matin", "answer": ["morning"], "explain": "« Bonjour » le matin = Good morning. Papa répond avec la même formule." },
+    { "unit": "1.1", "type": "fill", "q": "— Thank you, Grandpa! — You're ___!", "hint": "de rien", "answer": ["welcome"], "explain": "Pour répondre à thank you, on dit You're welcome (de rien)." },
+    { "unit": "1.1", "type": "error", "q": "Goodbye! Nice to meet your!", "wrong": 4, "fix": ["you"], "explain": "On dit Nice to meet you. Your veut dire « ton, ta » et doit être suivi d'un nom." },
+    { "unit": "1.1", "type": "error", "q": "How are you? — I'm fine, thanks you.", "wrong": 6, "fix": ["thank"], "explain": "On dit thank you (sans s). Thanks tout seul existe, mais jamais [[thanks you]]." },
+    { "unit": "1.1", "type": "error", "q": "Hi, Ana! You is my friend.", "wrong": 3, "fix": ["are"], "explain": "Avec you, le verbe to be est toujours are : you are, jamais [[you is]]." },
+
+    { "unit": "1.2", "type": "mcq", "q": "Comment dit-on « Mon grand-papa a vingt ans » ? (Oui, c'est un grand-papa très jeune !)", "choices": ["My grandpa has twenty years.", "My grandpa have twenty years.", "My grandpa is twenty.", "My grandpa is twenty year."], "answer": 2, "explain": "En anglais, on EST son âge : is twenty. Pas de has, et si on ajoute years, il faut years old." },
+    { "unit": "1.2", "type": "mcq", "q": "Quel nombre vient juste avant « twenty » ?", "choices": ["nineteen", "nine", "eighteen"], "answer": 0, "explain": "19 = nineteen, puis 20 = twenty. Nine, c'est 9." },
+    { "unit": "1.2", "type": "mcq", "q": "Sept plus huit, ça fait…", "choices": ["thirteen", "fifty", "fifteen", "eighteen"], "answer": 2, "explain": "7 + 8 = 15 = fifteen. Attention : fifty (50) se termine par -ty, pas -teen." },
+    { "unit": "1.2", "type": "fill", "q": "How ___ is your dad?", "hint": "quel âge", "answer": ["old"], "explain": "« Quel âge a ton papa ? » = How old is your dad? On utilise how old." },
+    { "unit": "1.2", "type": "fill", "q": "Olivia is fourteen ___ old.", "hint": "ans", "answer": ["years"], "explain": "Fourteen years old : years prend un s (plusieurs années) et old vient à la fin." },
+    { "unit": "1.2", "type": "fill", "q": "I'm ___ years old.", "hint": "dix-huit", "answer": ["eighteen"], "explain": "18 = eighteen. Attention à l'orthographe : un seul t au milieu (eigh-teen)." },
+    { "unit": "1.2", "type": "fill", "q": "How ___ pens? — Twenty!", "hint": "combien", "answer": ["many"], "explain": "« Combien de stylos ? » = How many pens? How many + un nom au pluriel." },
+    { "unit": "1.2", "type": "fill", "q": "Twelve plus eight is ___.", "hint": "vingt", "answer": ["twenty"], "explain": "12 + 8 = 20 = twenty." },
+    { "unit": "1.2", "type": "error", "q": "My uncle has twenty years old.", "wrong": 2, "fix": ["is"], "explain": "Pour l'âge, on utilise to be : My uncle is twenty years old. Jamais has." },
+    { "unit": "1.2", "type": "error", "q": "How many friend? — Three!", "wrong": 2, "fix": ["friends"], "explain": "Après how many, le nom est au pluriel : How many friends?" },
+    { "unit": "1.2", "type": "error", "q": "Ethan is nineteen year old.", "wrong": 3, "fix": ["years"], "explain": "Plusieurs années = years avec un s : nineteen years old." },
+    { "unit": "1.2", "type": "error", "q": "How old are Noah? — He is ten.", "wrong": 2, "fix": ["is"], "explain": "Noah = une seule personne (he), donc is : How old is Noah?" },
+
+    { "unit": "1.3", "type": "mcq", "q": "Comment dit-on « deux règles roses » ?", "choices": ["two pinks rulers", "two pink rulers", "two rulers pink", "two pink ruler"], "answer": 1, "explain": "La couleur va avant le nom et ne prend jamais de s. C'est le nom qui prend le s : two pink rulers." },
+    { "unit": "1.3", "type": "mcq", "q": "I have ___ eraser and ___ ruler.", "choices": ["a / an", "an / an", "an / a"], "answer": 2, "explain": "Eraser commence par un son de voyelle : an eraser. Ruler commence par une consonne : a ruler." },
+    { "unit": "1.3", "type": "mcq", "q": "Quelle phrase est correcte ?", "choices": ["My bags are blacks.", "My bags is black.", "My bag are black.", "My bags are black."], "answer": 3, "explain": "Plusieurs sacs : bags are. Et la couleur ne prend jamais de s : black." },
+    { "unit": "1.3", "type": "mcq", "q": "Comment demande-t-on « De quelle couleur est ta chaise ? »", "choices": ["What colour is your chair?", "What is colour your chair?", "What colour your chair is?"], "answer": 0, "explain": "L'ordre est What colour + is + your chair? Le verbe is vient juste après What colour." },
+    { "unit": "1.3", "type": "fill", "q": "It's ___ eraser, not a pen!", "hint": "un / une", "answer": ["an"], "explain": "Eraser commence par un son de voyelle (e), donc an eraser." },
+    { "unit": "1.3", "type": "fill", "q": "I have four ___ pencils.", "hint": "verts", "answer": ["green"], "explain": "La couleur se place avant le nom et reste sans s : four green pencils." },
+    { "unit": "1.3", "type": "fill", "q": "Is it ___ yellow desk?", "hint": "un / une", "answer": ["a"], "explain": "Yellow commence par un son de consonne (y), donc a yellow desk. Ce qui compte, c'est le mot juste après a / an." },
+    { "unit": "1.3", "type": "fill", "q": "I have eleven blue ___.", "hint": "stylos", "answer": ["pens"], "explain": "Eleven = plusieurs, donc le nom prend un s : pens. La couleur blue, elle, ne change pas." },
+    { "unit": "1.3", "type": "fill", "q": "Grandpa, ___ colour is your bag?", "hint": "quelle", "answer": ["what"], "explain": "« De quelle couleur ? » = What colour? On commence la question par what." },
+    { "unit": "1.3", "type": "error", "q": "It's a orange ruler.", "wrong": 1, "fix": ["an"], "explain": "Orange commence par un son de voyelle : an orange ruler." },
+    { "unit": "1.3", "type": "error", "q": "I have two pinks erasers.", "wrong": 3, "fix": ["pink"], "explain": "La couleur ne prend jamais de s, même au pluriel : two pink erasers." },
+    { "unit": "1.3", "type": "error", "q": "Is it an black pen?", "wrong": 2, "fix": ["a"], "explain": "Black commence par une consonne (b), donc a black pen." },
+    { "unit": "1.3", "type": "error", "q": "My desk are white.", "wrong": 2, "fix": ["is"], "explain": "Un seul bureau (my desk) : is. Are, c'est pour le pluriel (my desks are)." },
+
+    { "unit": "1.4", "type": "mcq", "q": "La fille de ton oncle, c'est ta…", "choices": ["aunt", "cousin", "sister", "daughter"], "answer": 1, "explain": "L'enfant de ton oncle ou de ta tante, c'est ton cousin ou ta cousine : cousin (même mot pour les deux)." },
+    { "unit": "1.4", "type": "mcq", "q": "Léa est la maman de Noah. Pour Léa, Noah est son…", "choices": ["brother", "dad", "son"], "answer": 2, "explain": "Un garçon, pour sa maman, c'est son fils : son. Une fille serait daughter." },
+    { "unit": "1.4", "type": "mcq", "q": "Comment dit-on « Est-ce que c'est ta tante ? »", "choices": ["Is this you aunt?", "Is this your aunt?", "This is your aunt?", "Is this your uncle?"], "answer": 1, "explain": "La question commence par Is this…? et « ta » = your (pas you). Uncle, c'est l'oncle." },
+    { "unit": "1.4", "type": "mcq", "q": "Comment dit-on « J'ai deux frères et une sœur » ?", "choices": ["I have two brothers and a sister.", "I am two brothers and a sister.", "I have two brother and a sister."], "answer": 0, "explain": "Pour la famille qu'on a, on utilise have (pas am), et brothers prend un s au pluriel." },
+    { "unit": "1.4", "type": "fill", "q": "This is my aunt Mei. ___ is eighteen.", "hint": "elle", "answer": ["She"], "explain": "Une femme ou une fille = she. Mei est une tante, donc she." },
+    { "unit": "1.4", "type": "fill", "q": "Is this ___ grandma, Jaden?", "hint": "ta", "answer": ["your"], "explain": "« Ta grand-maman » = your grandma. You veut dire « tu », your veut dire « ton, ta »." },
+    { "unit": "1.4", "type": "fill", "q": "I ___ a baby brother.", "hint": "avoir", "answer": ["have"], "explain": "« J'ai un petit frère bébé » : pour ce qu'on a, I have." },
+    { "unit": "1.4", "type": "fill", "q": "Hello, Aunt Sofia! ___ is my cousin Liam.", "hint": "voici (ceci)", "answer": ["This"], "explain": "Pour présenter quelqu'un, on dit This is… (voici…)." },
+    { "unit": "1.4", "type": "fill", "q": "Is ___ your cousin? — No, she is my aunt!", "hint": "elle", "answer": ["she"], "explain": "On parle d'une femme : she. La réponse (she is my aunt) le confirme." },
+    { "unit": "1.4", "type": "error", "q": "Mei is my sister. He is seven.", "wrong": 4, "fix": ["She"], "explain": "Mei est une fille (ma sœur), donc she, pas he." },
+    { "unit": "1.4", "type": "error", "q": "I am a sister and two brothers.", "wrong": 1, "fix": ["have"], "explain": "Pour la famille qu'on a, on dit I have. I am a sister voudrait dire « je suis une sœur » !" },
+    { "unit": "1.4", "type": "error", "q": "Hi, Olivia! Is this you baby sister?", "wrong": 4, "fix": ["your"], "explain": "« Ta petite sœur » = your baby sister. You = tu, your = ton, ta." },
+
+    { "unit": "1.5", "type": "mcq", "q": "Comment demande-t-on « Comment s'écrit ton nom ? » (pour le faire épeler)", "choices": ["How are you spell your name?", "How do you spell your name?", "How you spell your name?"], "answer": 1, "explain": "La question toute faite est How do you spell…? (comment épelles-tu…?). Il faut do, pas are." },
+    { "unit": "1.5", "type": "mcq", "q": "En anglais, quelle lettre se prononce comme le « i » français ?", "choices": ["I", "Y", "A", "E"], "answer": 3, "explain": "Piège classique : la lettre E se dit « i » en anglais, et la lettre I se dit « aï »." },
+    { "unit": "1.5", "type": "mcq", "q": "En anglais, G se dit « dji ». Et quelle lettre se dit « djé » ?", "choices": ["J", "G", "Y"], "answer": 0, "explain": "G et J sont inversés par rapport au français : G = « dji », J = « djé »." },
+    { "unit": "1.5", "type": "mcq", "q": "Comment s'appelle la lettre W en anglais ?", "choices": ["« double-vé »", "« wé »", "« double-you »"], "answer": 2, "explain": "En anglais, W se dit « double-you » (double U), pas « double-vé » comme en français." },
+    { "unit": "1.5", "type": "mcq", "q": "Mister Hello épelle un mot : « pi – i – èn ». C'est quel mot ?", "choices": ["pin", "pen", "pan"], "answer": 1, "explain": "« i » est le nom de la lettre E en anglais : P-E-N = pen (stylo)." },
+    { "unit": "1.5", "type": "fill", "q": "I have a pen and a pencil. ___ pen is blue.", "hint": "le", "answer": ["The"], "explain": "On a déjà parlé du stylo, on sait lequel : on dit the pen." },
+    { "unit": "1.5", "type": "fill", "q": "— How do you ___ Malik? — M-A-L-I-K.", "hint": "épeler", "answer": ["spell"], "explain": "« Épeler » = spell : How do you spell…?" },
+    { "unit": "1.5", "type": "fill", "q": "I have ___ uncle and two aunts.", "hint": "un", "answer": ["an"], "explain": "Uncle commence par un son de voyelle (« eu »), donc an uncle." },
+    { "unit": "1.5", "type": "fill", "q": "— My name is Priya. — Nice to meet you! How do you spell ___?", "hint": "ça (le nom)", "answer": ["it"], "explain": "« Comment ça s'épelle ? » = How do you spell it? It remplace le nom dont on parle." },
+    { "unit": "1.5", "type": "fill", "q": "— How do you spell eight? — ___-I-G-H-T.", "hint": "la première lettre", "answer": ["E"], "explain": "Eight commence par la lettre E (qui se dit « i »), même si le son « ei » fait penser à la lettre A." },
+    { "unit": "1.5", "type": "error", "q": "How are you spell your name?", "wrong": 1, "fix": ["do"], "explain": "La question pour épeler est How do you spell…? Avec spell, on utilise do, pas are." },
+    { "unit": "1.5", "type": "error", "q": "I have a uncle and an aunt.", "wrong": 2, "fix": ["an"], "explain": "Uncle commence par un son de voyelle : an uncle, comme an aunt." }
+  ]
+}

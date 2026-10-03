@@ -1,0 +1,2019 @@
+{
+  "questions": [
+    {
+      "id": "p001",
+      "band": "A1",
+      "type": "mcq",
+      "q": "I ___ ten years old.",
+      "choices": [
+        "have",
+        "am",
+        "is",
+        "are"
+      ],
+      "answer": 1,
+      "explain": "Pour l'âge, l'anglais utilise to be : I am ten (jamais « I have ten years »)."
+    },
+    {
+      "id": "p002",
+      "band": "A1",
+      "type": "mcq",
+      "q": "My sister ___ a cat.",
+      "choices": [
+        "have",
+        "is",
+        "are",
+        "has"
+      ],
+      "answer": 3,
+      "explain": "Avec he / she / it, have devient has : my sister has."
+    },
+    {
+      "id": "p003",
+      "band": "A1",
+      "type": "mcq",
+      "q": "They ___ my friends.",
+      "choices": [
+        "are",
+        "is",
+        "am",
+        "be"
+      ],
+      "answer": 0,
+      "explain": "They va avec are : they are."
+    },
+    {
+      "id": "p004",
+      "band": "A1",
+      "type": "mcq",
+      "q": "I have two ___.",
+      "choices": [
+        "childs",
+        "childrens",
+        "children",
+        "child"
+      ],
+      "answer": 2,
+      "explain": "Child a un pluriel irrégulier : children (sans -s)."
+    },
+    {
+      "id": "p005",
+      "band": "A1",
+      "type": "mcq",
+      "q": "This is ___ apple.",
+      "choices": [
+        "a",
+        "two",
+        "an",
+        "many"
+      ],
+      "answer": 2,
+      "explain": "Devant un son voyelle (apple), on dit an."
+    },
+    {
+      "id": "p006",
+      "band": "A1",
+      "type": "mcq",
+      "q": "« J'ai froid » in English is:",
+      "choices": [
+        "I am cold.",
+        "I have cold.",
+        "I cold.",
+        "I'm having cold."
+      ],
+      "answer": 0,
+      "explain": "Froid, faim, chaud… se disent avec to be : I am cold."
+    },
+    {
+      "id": "p007",
+      "band": "A1",
+      "type": "mcq",
+      "q": "She has ___ eyes.",
+      "choices": [
+        "blues",
+        "a blue",
+        "the blues",
+        "blue"
+      ],
+      "answer": 3,
+      "explain": "L'adjectif ne prend jamais de -s et il n'y a pas d'article : blue eyes."
+    },
+    {
+      "id": "p008",
+      "band": "A1",
+      "type": "mcq",
+      "q": "___ you happy?",
+      "choices": [
+        "Is",
+        "Are",
+        "Do",
+        "Am"
+      ],
+      "answer": 1,
+      "explain": "Question avec to be : on inverse, et you va avec are → Are you…?"
+    },
+    {
+      "id": "p009",
+      "band": "A1",
+      "type": "mcq",
+      "q": "My mom's brother is my ___.",
+      "choices": [
+        "cousin",
+        "aunt",
+        "grandpa",
+        "uncle"
+      ],
+      "answer": 3,
+      "explain": "Le frère de ta mère, c'est ton oncle : uncle."
+    },
+    {
+      "id": "p010",
+      "band": "A1",
+      "type": "mcq",
+      "q": "My birthday is ___ May.",
+      "choices": [
+        "on",
+        "in",
+        "at",
+        "to"
+      ],
+      "answer": 1,
+      "explain": "Avec un mois, on utilise in : in May."
+    },
+    {
+      "id": "p011",
+      "band": "A1",
+      "type": "mcq",
+      "q": "He ___ my brother. He is my cousin.",
+      "choices": [
+        "aren't",
+        "not",
+        "isn't",
+        "don't"
+      ],
+      "answer": 2,
+      "explain": "Négation de to be avec he : is not → isn't."
+    },
+    {
+      "id": "p012",
+      "band": "A1",
+      "type": "mcq",
+      "q": "Choose the correct sentence.",
+      "choices": [
+        "It's a red car.",
+        "It's a car red.",
+        "It's a reds car.",
+        "It's red a car."
+      ],
+      "answer": 0,
+      "explain": "En anglais, l'adjectif se place AVANT le nom et reste invariable : a red car."
+    },
+    {
+      "id": "p013",
+      "band": "A1",
+      "type": "fill",
+      "q": "We ___ from Ottawa.",
+      "hint": "be",
+      "answer": [
+        "are"
+      ],
+      "explain": "We va avec are : we are (we're)."
+    },
+    {
+      "id": "p014",
+      "band": "A1",
+      "type": "fill",
+      "q": "I have three ___.",
+      "hint": "box",
+      "answer": [
+        "boxes"
+      ],
+      "explain": "Après x, s, ch, sh, on ajoute -es : boxes."
+    },
+    {
+      "id": "p015",
+      "band": "A1",
+      "type": "fill",
+      "q": "Emma ___ a big family.",
+      "hint": "have",
+      "answer": [
+        "has"
+      ],
+      "explain": "Emma = she, donc have devient has."
+    },
+    {
+      "id": "p016",
+      "band": "A1",
+      "type": "fill",
+      "q": "My ___ are cold.",
+      "hint": "foot",
+      "answer": [
+        "feet"
+      ],
+      "explain": "Foot a un pluriel irrégulier : feet."
+    },
+    {
+      "id": "p017",
+      "band": "A1",
+      "type": "fill",
+      "q": "___ is your name?",
+      "hint": "Quel / Comment",
+      "answer": [
+        "What"
+      ],
+      "explain": "« Comment tu t'appelles ? » = What is your name? (What's your name?)."
+    },
+    {
+      "id": "p018",
+      "band": "A1",
+      "type": "fill",
+      "q": "I ___ not tired.",
+      "hint": "be",
+      "answer": [
+        "am"
+      ],
+      "explain": "Avec I, to be donne am : I am not (I'm not)."
+    },
+    {
+      "id": "p019",
+      "band": "A1",
+      "type": "fill",
+      "q": "My party is ___ Saturday.",
+      "hint": "préposition (samedi)",
+      "answer": [
+        "on"
+      ],
+      "explain": "Devant un jour de la semaine, on met on : on Saturday (en français, pas de préposition !)."
+    },
+    {
+      "id": "p020",
+      "band": "A1",
+      "type": "reading",
+      "text": "Hi! My name is Maya. I am eleven years old. I live in Gatineau with my mom, my dad and my little brother, Félix. Félix is five. We have a dog. His name is Max. He is big and brown. My favourite colour is green. My bag is green and my bike is green too!",
+      "q": "Who is Félix?",
+      "choices": [
+        "Maya's brother",
+        "Maya's dad",
+        "Maya's dog",
+        "Maya's friend"
+      ],
+      "answer": 0,
+      "explain": "Le texte dit « my little brother, Félix » : Félix est son petit frère. Le chien s'appelle Max."
+    },
+    {
+      "id": "p021",
+      "band": "A1",
+      "type": "reading",
+      "text": "Sam is twelve years old. Today is Monday, and Sam is tired and hungry. His lunch is at home, on the kitchen table! His friend Noah has two sandwiches. \"Here, Sam, this sandwich is for you,\" says Noah. Now Sam is happy.",
+      "q": "Why is Sam hungry?",
+      "choices": [
+        "He is sick.",
+        "Noah has his lunch.",
+        "His lunch is at home.",
+        "It is Sunday."
+      ],
+      "answer": 2,
+      "explain": "Son dîner (repas du midi) est resté sur la table de la cuisine : « His lunch is at home »."
+    },
+    {
+      "id": "p022",
+      "band": "A1",
+      "type": "reading",
+      "text": "In Ottawa, winter is very cold. The days are short and the snow is white and deep. Children wear hats, scarves and gloves. Summer is hot and sunny. But my favourite season is autumn: the leaves are red, orange and yellow, and the air is fresh.",
+      "q": "What is the writer's favourite season?",
+      "choices": [
+        "Winter",
+        "Autumn",
+        "Spring",
+        "Summer"
+      ],
+      "answer": 1,
+      "explain": "« My favourite season is autumn » : l'automne. L'hiver et l'été sont décrits, mais ce ne sont pas ses préférés."
+    },
+    {
+      "id": "p023",
+      "band": "A1",
+      "type": "listening",
+      "say": "Hello! I'm Liam. I'm nine years old, and I have two sisters.",
+      "q": "How old is Liam?",
+      "choices": [
+        "Two",
+        "Five",
+        "Nineteen",
+        "Nine"
+      ],
+      "answer": 3,
+      "explain": "Liam dit « I'm nine years old » : il a neuf ans. Two, c'est le nombre de ses sœurs."
+    },
+    {
+      "id": "p024",
+      "band": "A1",
+      "type": "listening",
+      "say": "My cat is black and white. Her name is Snow, and she is very small.",
+      "q": "What colour is the cat?",
+      "choices": [
+        "All white",
+        "Brown",
+        "Black and white",
+        "Orange"
+      ],
+      "answer": 2,
+      "explain": "Le chat est « black and white ». Son nom (Snow = neige) est un piège !"
+    },
+    {
+      "id": "p025",
+      "band": "A1",
+      "type": "listening",
+      "say": "It's Tuesday today. My brother is sick, so he is at home.",
+      "q": "Where is the brother?",
+      "choices": [
+        "At school",
+        "At home",
+        "At the park",
+        "At the hospital"
+      ],
+      "answer": 1,
+      "explain": "« He is at home » : il est malade, donc il est à la maison."
+    },
+    {
+      "id": "p026",
+      "band": "A2",
+      "type": "mcq",
+      "q": "Listen! The baby ___.",
+      "choices": [
+        "cries",
+        "cry",
+        "is crying",
+        "crying"
+      ],
+      "answer": 2,
+      "explain": "Listen! montre que l'action se passe maintenant : présent continu is crying."
+    },
+    {
+      "id": "p027",
+      "band": "A2",
+      "type": "mcq",
+      "q": "My dad usually ___ coffee in the morning.",
+      "choices": [
+        "drinks",
+        "is drinking",
+        "drink",
+        "drinking"
+      ],
+      "answer": 0,
+      "explain": "Habitude (usually) → présent simple, avec -s pour he : drinks."
+    },
+    {
+      "id": "p028",
+      "band": "A2",
+      "type": "mcq",
+      "q": "___ she like hockey?",
+      "choices": [
+        "Do",
+        "Does",
+        "Is",
+        "Has"
+      ],
+      "answer": 1,
+      "explain": "Question au présent simple avec she : Does + verbe de base."
+    },
+    {
+      "id": "p029",
+      "band": "A2",
+      "type": "mcq",
+      "q": "We ___ to the beach last summer.",
+      "choices": [
+        "go",
+        "goed",
+        "are going",
+        "went"
+      ],
+      "answer": 3,
+      "explain": "Last summer → passé simple. Go est irrégulier : went."
+    },
+    {
+      "id": "p030",
+      "band": "A2",
+      "type": "mcq",
+      "q": "Did you ___ the movie yesterday?",
+      "choices": [
+        "saw",
+        "seen",
+        "seeing",
+        "see"
+      ],
+      "answer": 3,
+      "explain": "Après did, le verbe reste à la base : Did you see…?"
+    },
+    {
+      "id": "p031",
+      "band": "A2",
+      "type": "mcq",
+      "q": "My brother is ___ than me.",
+      "choices": [
+        "more tall",
+        "taller",
+        "tallest",
+        "more taller"
+      ],
+      "answer": 1,
+      "explain": "Adjectif court → -er + than : taller than (jamais « more tall »)."
+    },
+    {
+      "id": "p032",
+      "band": "A2",
+      "type": "mcq",
+      "q": "There isn't ___ milk in the fridge.",
+      "choices": [
+        "any",
+        "some",
+        "many",
+        "a"
+      ],
+      "answer": 0,
+      "explain": "Dans une phrase négative, on utilise any. Milk est indénombrable, donc pas many ni a."
+    },
+    {
+      "id": "p033",
+      "band": "A2",
+      "type": "mcq",
+      "q": "How ___ apples do you want?",
+      "choices": [
+        "much",
+        "any",
+        "many",
+        "lot"
+      ],
+      "answer": 2,
+      "explain": "Apples est dénombrable (pluriel) → How many."
+    },
+    {
+      "id": "p034",
+      "band": "A2",
+      "type": "mcq",
+      "q": "Ana can ___ very well.",
+      "choices": [
+        "swim",
+        "swims",
+        "to swim",
+        "swimming"
+      ],
+      "answer": 0,
+      "explain": "Après can : verbe de base, sans -s et sans to."
+    },
+    {
+      "id": "p035",
+      "band": "A2",
+      "type": "mcq",
+      "q": "Excuse me, where is the ___? I want to borrow a book.",
+      "choices": [
+        "bookstore",
+        "pharmacy",
+        "library",
+        "bakery"
+      ],
+      "answer": 2,
+      "explain": "Pour emprunter un livre, on va à la bibliothèque = library (faux ami : une librairie = bookstore)."
+    },
+    {
+      "id": "p036",
+      "band": "A2",
+      "type": "mcq",
+      "q": "Look at ___ shoes over there!",
+      "choices": [
+        "this",
+        "these",
+        "that",
+        "those"
+      ],
+      "answer": 3,
+      "explain": "Pluriel + loin (over there) → those. These = près de moi."
+    },
+    {
+      "id": "p037",
+      "band": "A2",
+      "type": "mcq",
+      "q": "I like Sofia. I play with ___ every day.",
+      "choices": [
+        "she",
+        "her",
+        "hers",
+        "him"
+      ],
+      "answer": 1,
+      "explain": "Après une préposition (with), on utilise le pronom complément : her."
+    },
+    {
+      "id": "p038",
+      "band": "A2",
+      "type": "fill",
+      "q": "She ___ TV right now.",
+      "hint": "watch",
+      "answer": [
+        "is watching"
+      ],
+      "explain": "Right now → présent continu : is watching (she's watching)."
+    },
+    {
+      "id": "p039",
+      "band": "A2",
+      "type": "fill",
+      "q": "He ___ his homework yesterday.",
+      "hint": "do",
+      "answer": [
+        "did"
+      ],
+      "explain": "Yesterday → passé simple. Do est irrégulier : did."
+    },
+    {
+      "id": "p040",
+      "band": "A2",
+      "type": "fill",
+      "q": "I ___ like broccoli.",
+      "hint": "ne pas (présent)",
+      "answer": [
+        "don't"
+      ],
+      "explain": "Négation au présent simple avec I : don't + verbe de base."
+    },
+    {
+      "id": "p041",
+      "band": "A2",
+      "type": "fill",
+      "q": "This is the ___ day of my life!",
+      "hint": "happy",
+      "answer": [
+        "happiest"
+      ],
+      "explain": "Superlatif : the + -est ; le y devient i : happiest."
+    },
+    {
+      "id": "p042",
+      "band": "A2",
+      "type": "fill",
+      "q": "There ___ three bedrooms in our apartment.",
+      "hint": "be",
+      "answer": [
+        "are"
+      ],
+      "explain": "Three bedrooms est pluriel → there are."
+    },
+    {
+      "id": "p043",
+      "band": "A2",
+      "type": "fill",
+      "q": "My cousin ___ in Toronto. He loves it there.",
+      "hint": "live",
+      "answer": [
+        "lives"
+      ],
+      "explain": "Fait permanent au présent simple, avec he → -s : lives."
+    },
+    {
+      "id": "p044",
+      "band": "A2",
+      "type": "fill",
+      "q": "She ___ to the party last night because she was sick.",
+      "hint": "not go",
+      "answer": [
+        "didn't go"
+      ],
+      "explain": "Négation au passé : didn't + verbe de base (jamais « didn't went »)."
+    },
+    {
+      "id": "p045",
+      "band": "A2",
+      "type": "reading",
+      "text": "Hi Karim! I'm writing from Vancouver. We arrived on Saturday. The weather is rainy, but the city is beautiful. Yesterday we visited a big park and saw some raccoons. Today my parents are shopping, and I'm sitting in a café with my sister. Tomorrow we're going to the mountains. See you next week! Léa",
+      "q": "What is Léa doing now?",
+      "choices": [
+        "She's visiting a park.",
+        "She's sitting in a café.",
+        "She's shopping.",
+        "She's going to the mountains."
+      ],
+      "answer": 1,
+      "explain": "« Today… I'm sitting in a café » : c'est ce qu'elle fait maintenant. Le parc, c'était hier ; ses parents magasinent ; la montagne, c'est demain."
+    },
+    {
+      "id": "p046",
+      "band": "A2",
+      "type": "reading",
+      "text": "Riverside Pool is open Monday to Friday, from seven in the morning to nine at night. On weekends, it opens at ten and closes at six. Children under eight must swim with an adult. Please bring your own towel. No food near the pool, please.",
+      "q": "Mei is seven. What does she need to swim here?",
+      "choices": [
+        "A ticket for children",
+        "Her own food",
+        "A weekend pass",
+        "An adult with her"
+      ],
+      "answer": 3,
+      "explain": "Les enfants de moins de huit ans doivent nager avec un adulte. Mei a sept ans, donc elle a besoin d'un adulte."
+    },
+    {
+      "id": "p047",
+      "band": "A2",
+      "type": "reading",
+      "text": "Ethan usually takes the bus to school, but this week he is walking because the school bus isn't working. He doesn't mind. He walks with his friend Jaden, and they talk about video games. The walk takes twenty minutes, but the bus only takes ten.",
+      "q": "Which sentence is true?",
+      "choices": [
+        "Ethan always walks to school.",
+        "The walk is shorter than the bus ride.",
+        "Ethan is walking because the bus isn't working.",
+        "Ethan walks to school alone."
+      ],
+      "answer": 2,
+      "explain": "Ethan prend d'habitude l'autobus, mais cette semaine il marche parce que l'autobus scolaire ne fonctionne pas. Il marche avec Jaden, et la marche est plus longue."
+    },
+    {
+      "id": "p048",
+      "band": "A2",
+      "type": "listening",
+      "say": "I usually go to school by bus, but today it's raining, so my dad is driving me.",
+      "q": "How is the speaker going to school today?",
+      "choices": [
+        "By car",
+        "By bus",
+        "On foot",
+        "By bike"
+      ],
+      "answer": 0,
+      "explain": "« Usually by bus » = d'habitude, mais aujourd'hui « my dad is driving me » : en voiture."
+    },
+    {
+      "id": "p049",
+      "band": "A2",
+      "type": "listening",
+      "say": "Can I have two cheese sandwiches and an orange juice, please? Oh, and no tomatoes, thank you.",
+      "q": "What does the speaker NOT want?",
+      "choices": [
+        "Cheese",
+        "Juice",
+        "Bread",
+        "Tomatoes"
+      ],
+      "answer": 3,
+      "explain": "« No tomatoes » : pas de tomates."
+    },
+    {
+      "id": "p050",
+      "band": "A2",
+      "type": "listening",
+      "say": "The shoes are sixty dollars, but the boots are cheaper. They're only forty-five dollars.",
+      "q": "How much are the boots?",
+      "choices": [
+        "Sixty dollars",
+        "Fifty-five dollars",
+        "Forty-five dollars",
+        "Fifteen dollars"
+      ],
+      "answer": 2,
+      "explain": "Les bottes sont moins chères (cheaper) : forty-five dollars. Sixty, c'est le prix des souliers."
+    },
+    {
+      "id": "p051",
+      "band": "B1",
+      "type": "mcq",
+      "q": "We ___ this car for ten years, and it still works perfectly.",
+      "choices": [
+        "have",
+        "had",
+        "are having",
+        "have had"
+      ],
+      "answer": 3,
+      "explain": "Depuis + action qui continue → present perfect : have had (pas « we have this car for ten years »)."
+    },
+    {
+      "id": "p052",
+      "band": "B1",
+      "type": "mcq",
+      "q": "Sorry, I haven't finished my homework ___.",
+      "choices": [
+        "already",
+        "yet",
+        "since",
+        "still"
+      ],
+      "answer": 1,
+      "explain": "Dans une phrase négative au present perfect, « pas encore » = yet, en fin de phrase."
+    },
+    {
+      "id": "p053",
+      "band": "B1",
+      "type": "mcq",
+      "q": "If it ___ tomorrow, we'll stay home.",
+      "choices": [
+        "will rain",
+        "rained",
+        "rains",
+        "would rain"
+      ],
+      "answer": 2,
+      "explain": "1er conditionnel : if + présent, will dans l'autre partie. Jamais will après if."
+    },
+    {
+      "id": "p054",
+      "band": "B1",
+      "type": "mcq",
+      "q": "If I ___ a million dollars, I would buy a house by the lake.",
+      "choices": [
+        "had",
+        "have",
+        "would have",
+        "will have"
+      ],
+      "answer": 0,
+      "explain": "2e conditionnel (situation imaginaire) : if + prétérit, would + verbe."
+    },
+    {
+      "id": "p055",
+      "band": "B1",
+      "type": "mcq",
+      "q": "I'll call you when I ___ home.",
+      "choices": [
+        "get",
+        "will get",
+        "got",
+        "would get"
+      ],
+      "answer": 0,
+      "explain": "Après when (futur), on met le présent : when I get home (piège : « quand je serai »)."
+    },
+    {
+      "id": "p056",
+      "band": "B1",
+      "type": "mcq",
+      "q": "You ___ pay to visit the museum on Sundays — it's free.",
+      "choices": [
+        "mustn't",
+        "can't",
+        "don't have to",
+        "shouldn't"
+      ],
+      "answer": 2,
+      "explain": "Don't have to = pas obligé. Mustn't = interdit, ce qui n'a pas de sens ici."
+    },
+    {
+      "id": "p057",
+      "band": "B1",
+      "type": "mcq",
+      "q": "I really enjoy ___ in the snow.",
+      "choices": [
+        "to walk",
+        "walking",
+        "walk",
+        "to walking"
+      ],
+      "answer": 1,
+      "explain": "Enjoy est suivi de la forme en -ing : enjoy walking."
+    },
+    {
+      "id": "p058",
+      "band": "B1",
+      "type": "mcq",
+      "q": "We decided ___ a new computer.",
+      "choices": [
+        "buying",
+        "buy",
+        "for buy",
+        "to buy"
+      ],
+      "answer": 3,
+      "explain": "Decide est suivi de to + verbe : decided to buy."
+    },
+    {
+      "id": "p059",
+      "band": "B1",
+      "type": "mcq",
+      "q": "She has been a teacher ___ twenty years.",
+      "choices": [
+        "since",
+        "for",
+        "during",
+        "from"
+      ],
+      "answer": 1,
+      "explain": "For + durée (twenty years) ; since + point de départ (since two thousand ten)."
+    },
+    {
+      "id": "p060",
+      "band": "B1",
+      "type": "mcq",
+      "q": "Montreal is ___ city I have ever visited.",
+      "choices": [
+        "the more beautiful",
+        "most beautiful",
+        "the beautifulest",
+        "the most beautiful"
+      ],
+      "answer": 3,
+      "explain": "Superlatif d'un adjectif long : the most + adjectif."
+    },
+    {
+      "id": "p061",
+      "band": "B1",
+      "type": "mcq",
+      "q": "I'm so ___! I studied all week, but I failed the test.",
+      "choices": [
+        "disappointed",
+        "deceived",
+        "disappointing",
+        "boring"
+      ],
+      "answer": 0,
+      "explain": "Déçu = disappointed (-ed = ce qu'on ressent). Deceived = trompé : faux ami !"
+    },
+    {
+      "id": "p062",
+      "band": "B1",
+      "type": "mcq",
+      "q": "We were watching a movie when the power ___ out.",
+      "choices": [
+        "was going",
+        "goes",
+        "went",
+        "has gone"
+      ],
+      "answer": 2,
+      "explain": "Action longue au past continuous, interrompue par une action courte au passé simple : went."
+    },
+    {
+      "id": "p063",
+      "band": "B1",
+      "type": "fill",
+      "q": "She ___ to Paris three times.",
+      "hint": "be",
+      "answer": [
+        "has been"
+      ],
+      "explain": "Expérience (three times) sans moment précis → present perfect : has been."
+    },
+    {
+      "id": "p064",
+      "band": "B1",
+      "type": "fill",
+      "q": "When I was little, I ___ to be afraid of the dark.",
+      "hint": "use",
+      "answer": [
+        "used"
+      ],
+      "explain": "Used to + verbe = habitude ou état passé qui n'existe plus."
+    },
+    {
+      "id": "p065",
+      "band": "B1",
+      "type": "fill",
+      "q": "Don't worry, I ___ you with your bags.",
+      "hint": "help (futur : décision prise sur le moment)",
+      "answer": [
+        "will help"
+      ],
+      "explain": "Décision spontanée au moment où l'on parle → will : I'll help."
+    },
+    {
+      "id": "p066",
+      "band": "B1",
+      "type": "fill",
+      "q": "My phone stopped ___ this morning.",
+      "hint": "work",
+      "answer": [
+        "working"
+      ],
+      "explain": "Stop + -ing = arrêter de faire quelque chose : stopped working."
+    },
+    {
+      "id": "p067",
+      "band": "B1",
+      "type": "fill",
+      "q": "When I arrived, my friends ___ for me at the door.",
+      "hint": "wait (action en cours)",
+      "answer": [
+        "were waiting"
+      ],
+      "explain": "Action en cours à un moment du passé → past continuous : were waiting."
+    },
+    {
+      "id": "p068",
+      "band": "B1",
+      "type": "fill",
+      "q": "We ___ each other since kindergarten.",
+      "hint": "know",
+      "answer": [
+        "have known"
+      ],
+      "explain": "Since + action qui dure encore → present perfect : have known (piège : « on se connaît depuis »)."
+    },
+    {
+      "id": "p069",
+      "band": "B1",
+      "type": "fill",
+      "q": "If I ___ you, I'd apologize to her.",
+      "hint": "be",
+      "answer": [
+        "were",
+        "was"
+      ],
+      "explain": "2e conditionnel pour un conseil : If I were you (was est accepté à l'oral)."
+    },
+    {
+      "id": "p070",
+      "band": "B1",
+      "type": "reading",
+      "text": "Last year I decided to try something new: I joined a climbing club. At first, I was terrified. My arms were shaking and I couldn't reach the top of even the easiest wall. But the instructors were patient, and the other members gave me lots of advice. I've been climbing for a year now, and I've already climbed outdoors twice. I'm not the best climber in the club, but I've never felt so strong.",
+      "q": "How does the writer feel about climbing now?",
+      "choices": [
+        "Still terrified of it",
+        "Bored because it's too easy",
+        "Proud of the progress made",
+        "Sad not to be the best"
+      ],
+      "answer": 2,
+      "explain": "Au début, la personne avait peur, mais maintenant elle dit « I've never felt so strong » : elle est fière de ses progrès."
+    },
+    {
+      "id": "p071",
+      "band": "B1",
+      "type": "reading",
+      "text": "Dear parents, the school trip to the science centre will take place on Thursday. Students should arrive at school by eight o'clock, as the bus leaves at a quarter past eight. Please give your child a packed lunch and a water bottle, because there is no cafeteria at the centre. If your child has not returned the permission form yet, they will not be able to take part in the trip. Thank you! The Grade Six team",
+      "q": "What will happen if a student doesn't return the form?",
+      "choices": [
+        "The student won't be able to go on the trip.",
+        "The student will have to eat at the cafeteria.",
+        "The student must arrive earlier.",
+        "The parents will have to drive the student."
+      ],
+      "answer": 0,
+      "explain": "« They will not be able to take part » : sans le formulaire, l'élève ne pourra pas participer à la sortie."
+    },
+    {
+      "id": "p072",
+      "band": "B1",
+      "type": "reading",
+      "text": "Priya has worked at the same bakery since she finished high school. She loves the early mornings, even though she has to get up at four. What she doesn't enjoy is the summer: the kitchen gets so hot that she sometimes feels sick. This year, the owner has promised to install air conditioning before July. If he keeps his promise, Priya says she will stay for many more years.",
+      "q": "What is Priya's main problem at work?",
+      "choices": [
+        "Getting up early",
+        "Her boss",
+        "Her salary",
+        "The heat in summer"
+      ],
+      "answer": 3,
+      "explain": "Elle aime se lever tôt ; ce qu'elle n'aime pas, c'est la chaleur de la cuisine en été."
+    },
+    {
+      "id": "p073",
+      "band": "B1",
+      "type": "listening",
+      "say": "I was going to take the train to Toronto, but all the tickets were sold out, so I've decided to drive instead.",
+      "q": "How will the speaker travel?",
+      "choices": [
+        "By train",
+        "By car",
+        "By plane",
+        "By bus"
+      ],
+      "answer": 1,
+      "explain": "« I was going to take the train » = c'était le plan, mais les billets étaient épuisés : « I've decided to drive »."
+    },
+    {
+      "id": "p074",
+      "band": "B1",
+      "type": "listening",
+      "say": "If you're not busy on Saturday, would you like to come skating with us on the canal? We're meeting at the bridge at ten.",
+      "q": "What is the speaker doing?",
+      "choices": [
+        "Inviting someone",
+        "Complaining",
+        "Apologizing",
+        "Giving directions"
+      ],
+      "answer": 0,
+      "explain": "« Would you like to come…? » sert à inviter quelqu'un."
+    },
+    {
+      "id": "p075",
+      "band": "B1",
+      "type": "listening",
+      "say": "I've been learning the guitar for six months. I can play a few songs now, but I still haven't learned to sing at the same time.",
+      "q": "What can't the speaker do yet?",
+      "choices": [
+        "Play any songs",
+        "Read music",
+        "Tune a guitar",
+        "Sing while playing"
+      ],
+      "answer": 3,
+      "explain": "« I still haven't learned to sing at the same time » : chanter en jouant, ce n'est pas encore possible."
+    },
+    {
+      "id": "p076",
+      "band": "B2",
+      "type": "mcq",
+      "q": "The new bridge ___ by the end of next year.",
+      "choices": [
+        "will have been built",
+        "will build",
+        "is building",
+        "has built"
+      ],
+      "answer": 0,
+      "explain": "Le pont ne construit pas : il sera construit → passif ; by the end of → futur antérieur : will have been built."
+    },
+    {
+      "id": "p077",
+      "band": "B2",
+      "type": "mcq",
+      "q": "She told me she ___ the report the day before.",
+      "choices": [
+        "has finished",
+        "finishes",
+        "had finished",
+        "will finish"
+      ],
+      "answer": 2,
+      "explain": "Discours rapporté : le passé recule au past perfect (had finished), surtout avec « the day before »."
+    },
+    {
+      "id": "p078",
+      "band": "B2",
+      "type": "mcq",
+      "q": "If we had left earlier, we ___ the train.",
+      "choices": [
+        "wouldn't miss",
+        "won't miss",
+        "didn't miss",
+        "wouldn't have missed"
+      ],
+      "answer": 3,
+      "explain": "3e conditionnel (passé irréel) : if + past perfect, would have + participe."
+    },
+    {
+      "id": "p079",
+      "band": "B2",
+      "type": "mcq",
+      "q": "The woman ___ car was stolen called the police.",
+      "choices": [
+        "who",
+        "whose",
+        "which",
+        "that's"
+      ],
+      "answer": 1,
+      "explain": "Whose = dont le / dont la (possession) : la femme dont l'auto a été volée."
+    },
+    {
+      "id": "p080",
+      "band": "B2",
+      "type": "mcq",
+      "q": "Can you ___ my cat while I'm on vacation?",
+      "choices": [
+        "look for",
+        "look after",
+        "look up",
+        "look out"
+      ],
+      "answer": 1,
+      "explain": "Look after = s'occuper de. Look for = chercher."
+    },
+    {
+      "id": "p081",
+      "band": "B2",
+      "type": "mcq",
+      "q": "My car ___ on the highway, so I had to call a tow truck.",
+      "choices": [
+        "broke up",
+        "broke out",
+        "broke off",
+        "broke down"
+      ],
+      "answer": 3,
+      "explain": "Break down = tomber en panne. Break up = rompre ; break out = éclater (incendie, guerre)."
+    },
+    {
+      "id": "p082",
+      "band": "B2",
+      "type": "mcq",
+      "q": "He asked me where ___.",
+      "choices": [
+        "did I live",
+        "do I live",
+        "I lived",
+        "I do live"
+      ],
+      "answer": 2,
+      "explain": "Question rapportée : ordre sujet + verbe, sans inversion ni do : where I lived."
+    },
+    {
+      "id": "p083",
+      "band": "B2",
+      "type": "mcq",
+      "q": "I'm not used to ___ up so early.",
+      "choices": [
+        "getting",
+        "get",
+        "got",
+        "be getting"
+      ],
+      "answer": 0,
+      "explain": "Be used to (être habitué à) : to est une préposition → -ing."
+    },
+    {
+      "id": "p084",
+      "band": "B2",
+      "type": "mcq",
+      "q": "Could you ___ me a favour?",
+      "choices": [
+        "make",
+        "give",
+        "do",
+        "take"
+      ],
+      "answer": 2,
+      "explain": "Collocation fixe : do someone a favour (rendre service)."
+    },
+    {
+      "id": "p085",
+      "band": "B2",
+      "type": "mcq",
+      "q": "Despite ___ tired, she kept running.",
+      "choices": [
+        "being",
+        "she was",
+        "to be",
+        "of being"
+      ],
+      "answer": 0,
+      "explain": "Despite + nom ou -ing : despite being (jamais « despite of »)."
+    },
+    {
+      "id": "p086",
+      "band": "B2",
+      "type": "mcq",
+      "q": "My computer was making strange noises, so I ___ by a technician.",
+      "choices": [
+        "repaired it",
+        "had it repaired",
+        "had repaired it",
+        "have it repaired"
+      ],
+      "answer": 1,
+      "explain": "Faire faire quelque chose par quelqu'un : have + objet + participe → had it repaired."
+    },
+    {
+      "id": "p087",
+      "band": "B2",
+      "type": "mcq",
+      "q": "He ___ me not to touch the stove.",
+      "choices": [
+        "said",
+        "suggested",
+        "explained",
+        "warned"
+      ],
+      "answer": 3,
+      "explain": "Warn someone not to + verbe = avertir quelqu'un de ne pas faire. Said, suggested et explained ne se construisent pas avec « me not to »."
+    },
+    {
+      "id": "p088",
+      "band": "B2",
+      "type": "fill",
+      "q": "This castle ___ in the twelfth century.",
+      "hint": "build",
+      "answer": [
+        "was built"
+      ],
+      "explain": "Le château a été construit (il ne construit pas) → passif au passé : was built."
+    },
+    {
+      "id": "p089",
+      "band": "B2",
+      "type": "fill",
+      "q": "He said he ___ call me the next day.",
+      "hint": "will (discours rapporté)",
+      "answer": [
+        "would"
+      ],
+      "explain": "Au discours rapporté, will recule en would."
+    },
+    {
+      "id": "p090",
+      "band": "B2",
+      "type": "fill",
+      "q": "If I ___ about the party, I would have come.",
+      "hint": "know",
+      "answer": [
+        "had known"
+      ],
+      "explain": "3e conditionnel : if + past perfect (had known)."
+    },
+    {
+      "id": "p091",
+      "band": "B2",
+      "type": "fill",
+      "q": "I'm looking forward to ___ you next week.",
+      "hint": "see",
+      "answer": [
+        "seeing"
+      ],
+      "explain": "Look forward to : to est une préposition → seeing."
+    },
+    {
+      "id": "p092",
+      "band": "B2",
+      "type": "fill",
+      "q": "We've run ___ of milk. Can you buy some?",
+      "hint": "particule",
+      "answer": [
+        "out"
+      ],
+      "explain": "Run out of = ne plus avoir de, être à court de."
+    },
+    {
+      "id": "p093",
+      "band": "B2",
+      "type": "fill",
+      "q": "The man ___ lives next door is a firefighter.",
+      "hint": "pronom relatif",
+      "answer": [
+        "who",
+        "that"
+      ],
+      "explain": "Pour une personne sujet du verbe : who (ou that)."
+    },
+    {
+      "id": "p094",
+      "band": "B2",
+      "type": "fill",
+      "q": "By the time we got to the cinema, the movie ___.",
+      "hint": "start",
+      "answer": [
+        "had started"
+      ],
+      "explain": "Action terminée avant une autre action passée (by the time) → past perfect : had started."
+    },
+    {
+      "id": "p095",
+      "band": "B2",
+      "type": "reading",
+      "text": "When the city announced that the old parking lot behind the library would be turned into a community garden, not everyone was pleased. Shop owners worried that customers would have nowhere to park, and several hundred residents signed a petition against the project. Two years later, the garden has become one of the busiest spots in the neighbourhood. Local schools use it for science lessons, and the shops that were most opposed have reported more visitors, many of whom now arrive on foot or by bike. Some parking problems remain, but few people would now want the lot back.",
+      "q": "What is the main point of the text?",
+      "choices": [
+        "The garden has caused serious parking problems.",
+        "Shop owners have lost customers since the garden opened.",
+        "Local schools asked the city to build the garden.",
+        "A project that was criticized turned out to be a success."
+      ],
+      "answer": 3,
+      "explain": "Le projet était critiqué au départ, mais il est devenu populaire et même les commerces ont plus de visiteurs."
+    },
+    {
+      "id": "p096",
+      "band": "B2",
+      "type": "reading",
+      "text": "I ordered a blue mountain bike from your website on the third of May and was told it would be delivered within a week. It finally arrived three weeks later, and it was red. When I called customer service, I was put on hold for forty minutes before being told that the blue model had been discontinued. Nobody had bothered to inform me. I have decided to keep the bike, as my son actually prefers red, but I believe I am entitled to a refund of the delivery charge.",
+      "q": "What does the writer want?",
+      "choices": [
+        "A blue bike",
+        "The delivery cost back",
+        "A full refund for the bike",
+        "A new red bike"
+      ],
+      "answer": 1,
+      "explain": "La personne garde le vélo, mais demande « a refund of the delivery charge » : le remboursement des frais de livraison."
+    },
+    {
+      "id": "p097",
+      "band": "B2",
+      "type": "reading",
+      "text": "Olivia had been practising for the competition for months, so when her fingers froze halfway through the piece, she couldn't believe it. For a few seconds the hall was completely silent. Then she took a deep breath, went back to the beginning of the line and played until the end. She didn't win a prize. However, as she was leaving, an old man stopped her and said that her recovery had been the bravest thing he had seen all day. On the bus home, Olivia found herself smiling.",
+      "q": "Why was Olivia smiling on the way home?",
+      "choices": [
+        "Someone had praised the way she handled her mistake.",
+        "She had won the competition.",
+        "She had played without any mistakes.",
+        "She was glad the competition was over."
+      ],
+      "answer": 0,
+      "explain": "Elle n'a rien gagné et elle s'est trompée, mais un homme l'a félicitée pour son courage : c'est ce qui la fait sourire (inférence)."
+    },
+    {
+      "id": "p098",
+      "band": "B2",
+      "type": "listening",
+      "say": "If I'd known the restaurant was going to be this busy, I would have booked a table. Now we'll have to wait at least an hour.",
+      "q": "What does the speaker regret?",
+      "choices": [
+        "Choosing this restaurant",
+        "Arriving too early",
+        "Not reserving a table",
+        "Ordering too much food"
+      ],
+      "answer": 2,
+      "explain": "3e conditionnel = regret : « I would have booked a table » → elle n'a pas réservé."
+    },
+    {
+      "id": "p099",
+      "band": "B2",
+      "type": "listening",
+      "say": "The meeting that was supposed to take place on Monday has been put off until Thursday, because half the team is away.",
+      "q": "What has happened to the meeting?",
+      "choices": [
+        "It has been cancelled.",
+        "It has been moved to a later day.",
+        "It has been moved to an earlier day.",
+        "It is happening on Monday as planned."
+      ],
+      "answer": 1,
+      "explain": "Put off = reporter (repousser à plus tard) : de lundi à jeudi."
+    },
+    {
+      "id": "p100",
+      "band": "B2",
+      "type": "listening",
+      "say": "My sister asked me whether I could pick up her kids from school, but I told her I was working late, so our neighbour offered to do it.",
+      "q": "Who will pick up the children?",
+      "choices": [
+        "The neighbour",
+        "The speaker",
+        "The speaker's sister",
+        "The children's father"
+      ],
+      "answer": 0,
+      "explain": "La personne qui parle travaille tard ; c'est la voisine qui a proposé : « our neighbour offered to do it »."
+    },
+    {
+      "id": "p101",
+      "band": "C1",
+      "type": "mcq",
+      "q": "Never ___ such a beautiful sunset.",
+      "choices": [
+        "I have seen",
+        "have I seen",
+        "I saw",
+        "did I saw"
+      ],
+      "answer": 1,
+      "explain": "Après un adverbe négatif en tête (Never), on inverse : Never have I seen."
+    },
+    {
+      "id": "p102",
+      "band": "C1",
+      "type": "mcq",
+      "q": "Not only ___ late, but he also forgot the tickets.",
+      "choices": [
+        "he arrived",
+        "he did arrive",
+        "arrived he",
+        "did he arrive"
+      ],
+      "answer": 3,
+      "explain": "Not only en tête → inversion avec l'auxiliaire : did he arrive."
+    },
+    {
+      "id": "p103",
+      "band": "C1",
+      "type": "mcq",
+      "q": "If I had studied medicine, I ___ a doctor now.",
+      "choices": [
+        "would be",
+        "would have been",
+        "will be",
+        "had been"
+      ],
+      "answer": 0,
+      "explain": "Conditionnel mixte : condition passée (had studied), résultat présent (now) → would be."
+    },
+    {
+      "id": "p104",
+      "band": "C1",
+      "type": "mcq",
+      "q": "___ I need right now is a long vacation.",
+      "choices": [
+        "That",
+        "Which",
+        "What",
+        "It"
+      ],
+      "answer": 2,
+      "explain": "Phrase clivée : What I need is… = Ce dont j'ai besoin, c'est…"
+    },
+    {
+      "id": "p105",
+      "band": "C1",
+      "type": "mcq",
+      "q": "You ___ have bought milk — we already had three cartons!",
+      "choices": [
+        "mustn't",
+        "couldn't",
+        "needn't",
+        "wouldn't"
+      ],
+      "answer": 2,
+      "explain": "Needn't have + participe = tu l'as fait, mais ce n'était pas nécessaire."
+    },
+    {
+      "id": "p106",
+      "band": "C1",
+      "type": "mcq",
+      "q": "She ___ have left already — her coat is still here.",
+      "choices": [
+        "can't",
+        "mustn't",
+        "needn't",
+        "shouldn't"
+      ],
+      "answer": 0,
+      "explain": "Déduction négative sur le passé : can't have + participe = c'est impossible qu'elle soit partie."
+    },
+    {
+      "id": "p107",
+      "band": "C1",
+      "type": "mcq",
+      "q": "No sooner had we sat down ___ the phone rang.",
+      "choices": [
+        "when",
+        "then",
+        "that",
+        "than"
+      ],
+      "answer": 3,
+      "explain": "Structure fixe : No sooner… than (Hardly… when)."
+    },
+    {
+      "id": "p108",
+      "band": "C1",
+      "type": "mcq",
+      "q": "I'm feeling a bit ___ today, so I think I'll stay home.",
+      "choices": [
+        "over the moon",
+        "under the weather",
+        "on the fence",
+        "in hot water"
+      ],
+      "answer": 1,
+      "explain": "Under the weather = pas dans son assiette, un peu malade. Over the moon = ravi."
+    },
+    {
+      "id": "p109",
+      "band": "C1",
+      "type": "mcq",
+      "q": "The museum's collection is ___: nobody could ever put a price on it.",
+      "choices": [
+        "worthless",
+        "unvaluable",
+        "pricey",
+        "priceless"
+      ],
+      "answer": 3,
+      "explain": "Priceless = inestimable (sans prix tellement c'est précieux). Worthless = sans valeur : le contraire ! « Unvaluable » n'existe pas."
+    },
+    {
+      "id": "p110",
+      "band": "C1",
+      "type": "mcq",
+      "q": "The plan was very expensive; ___, it was the only realistic option.",
+      "choices": [
+        "despite",
+        "nevertheless",
+        "although",
+        "whereas"
+      ],
+      "answer": 1,
+      "explain": "Après un point-virgule, il faut un adverbe de liaison : nevertheless (néanmoins). Despite et although ne s'emploient pas ainsi."
+    },
+    {
+      "id": "p111",
+      "band": "C1",
+      "type": "mcq",
+      "q": "You ___ me you were coming! I would have made dinner.",
+      "choices": [
+        "should tell",
+        "must have told",
+        "should have told",
+        "had to tell"
+      ],
+      "answer": 2,
+      "explain": "Reproche sur le passé : should have + participe (tu aurais dû me le dire)."
+    },
+    {
+      "id": "p112",
+      "band": "C1",
+      "type": "mcq",
+      "q": "It was only when I got home ___ I realized my wallet was missing.",
+      "choices": [
+        "that",
+        "when",
+        "than",
+        "what"
+      ],
+      "answer": 0,
+      "explain": "Phrase clivée : It was only when… that… (Ce n'est qu'en rentrant que…)."
+    },
+    {
+      "id": "p113",
+      "band": "C1",
+      "type": "fill",
+      "q": "If she ___ the bus this morning, she'd be here by now.",
+      "hint": "not miss",
+      "answer": [
+        "hadn't missed"
+      ],
+      "explain": "Conditionnel mixte : condition passée (past perfect hadn't missed), conséquence présente (she'd be here now)."
+    },
+    {
+      "id": "p114",
+      "band": "C1",
+      "type": "fill",
+      "q": "Only then ___ I understand what she meant.",
+      "hint": "do",
+      "answer": [
+        "did"
+      ],
+      "explain": "Only then en tête → inversion : did I understand."
+    },
+    {
+      "id": "p115",
+      "band": "C1",
+      "type": "fill",
+      "q": "The ___ of the new highway took four years.",
+      "hint": "CONSTRUCT",
+      "answer": [
+        "construction"
+      ],
+      "explain": "Après the… of, il faut un nom : construct → construction."
+    },
+    {
+      "id": "p116",
+      "band": "C1",
+      "type": "fill",
+      "q": "His story was so ___ that nobody believed it.",
+      "hint": "BELIEVE",
+      "answer": [
+        "unbelievable"
+      ],
+      "explain": "Adjectif négatif : un- + believe + -able → unbelievable."
+    },
+    {
+      "id": "p117",
+      "band": "C1",
+      "type": "fill",
+      "q": "He ___ have taken your phone; he was with me all day.",
+      "hint": "pouvoir (impossibilité)",
+      "answer": [
+        "can't",
+        "couldn't"
+      ],
+      "explain": "Déduction : il était avec moi, donc c'est impossible → can't / couldn't have taken."
+    },
+    {
+      "id": "p118",
+      "band": "C1",
+      "type": "fill",
+      "q": "Rarely ___ such a talented young player.",
+      "hint": "we / see (present perfect)",
+      "answer": [
+        "have we seen"
+      ],
+      "explain": "Rarely en tête → inversion de l'auxiliaire : have we seen."
+    },
+    {
+      "id": "p119",
+      "band": "C1",
+      "type": "fill",
+      "q": "Stop beating around the ___ and tell me what happened!",
+      "hint": "buisson",
+      "answer": [
+        "bush"
+      ],
+      "explain": "Beat around the bush = tourner autour du pot."
+    },
+    {
+      "id": "p120",
+      "band": "C1",
+      "type": "reading",
+      "text": "Our new \"smart\" fridge arrived on Tuesday with a forty-page manual and an app that needs updating every morning. It now reminds me when I'm running low on milk, which would be more useful if it didn't also remind me at three in the morning. On Friday, it refused to open until I had accepted its new terms and conditions. My grandmother's fridge, which ran for thirty years without once asking for my password, is starting to look like a masterpiece of engineering.",
+      "q": "What is the writer's attitude towards the smart fridge?",
+      "choices": [
+        "Ironically critical",
+        "Genuinely enthusiastic",
+        "Neutral and factual",
+        "Afraid of the technology"
+      ],
+      "answer": 0,
+      "explain": "Le ton est ironique : les « avantages » du frigo intelligent sont présentés comme des défauts, et le vieux frigo devient un « chef-d'œuvre »."
+    },
+    {
+      "id": "p121",
+      "band": "C1",
+      "type": "reading",
+      "text": "Most people assume that creativity is a gift: you either have it or you don't. Some researchers, however, describe a far less romantic picture. In their view, the most celebrated creators were not those who produced brilliant work on their first attempt, but those who simply produced the most, much of it mediocre. Their masterpieces, in other words, were survivors of countless forgettable efforts that nobody remembers today.",
+      "q": "What does the text imply about becoming creative?",
+      "choices": [
+        "It depends mainly on natural talent.",
+        "It is impossible to study scientifically.",
+        "It requires producing a lot of work, including weak work.",
+        "Only the first attempt really matters."
+      ],
+      "answer": 2,
+      "explain": "Le texte suggère que les chefs-d'œuvre naissent de la quantité : beaucoup d'essais, souvent médiocres, plutôt que d'un don."
+    },
+    {
+      "id": "p122",
+      "band": "C1",
+      "type": "reading",
+      "text": "When Malik's father finally agreed to let him repaint his bedroom, he added only one condition: \"Any colour you like, as long as I never have to see it.\" Malik chose a deep orange. For a week, his father walked past the open door with his eyes fixed firmly on the ceiling. Then, one evening, Malik found him sitting on the bed, coffee in hand, studying the walls. \"It's growing on me,\" he admitted, \"but don't tell your mother I said so.\"",
+      "q": "What can we infer about Malik's father at the end?",
+      "choices": [
+        "He wants Malik to repaint the room.",
+        "He has started to like the colour, though reluctantly.",
+        "He is angry that Malik chose orange.",
+        "He has never noticed the new colour."
+      ],
+      "answer": 1,
+      "explain": "« It's growing on me » = je commence à l'aimer ; il ne veut pas que ça se sache : il change d'avis à contrecœur."
+    },
+    {
+      "id": "p123",
+      "band": "C1",
+      "type": "listening",
+      "say": "Had I known how long the renovation would take, I'd never have agreed to it. Still, I have to admit the kitchen looks fantastic now.",
+      "q": "How does the speaker feel about the renovation?",
+      "choices": [
+        "Completely satisfied with the whole process",
+        "Angry about the final result",
+        "Excited to start another one",
+        "Regretful about the process but pleased with the result"
+      ],
+      "answer": 3,
+      "explain": "« Had I known… I'd never have agreed » exprime un regret, mais « the kitchen looks fantastic » montre la satisfaction du résultat."
+    },
+    {
+      "id": "p124",
+      "band": "C1",
+      "type": "listening",
+      "say": "It wasn't the price that put me off the apartment, it was the noise from the street. I barely slept a wink the night I stayed there.",
+      "q": "Why didn't the speaker take the apartment?",
+      "choices": [
+        "It was too expensive.",
+        "It was too small.",
+        "It was too noisy.",
+        "It was too far from work."
+      ],
+      "answer": 2,
+      "explain": "Phrase clivée : « It wasn't the price…, it was the noise » → c'est le bruit qui l'a découragé."
+    },
+    {
+      "id": "p125",
+      "band": "C1",
+      "type": "listening",
+      "say": "Frankly, the report raises more questions than it answers. I'd hold off on making any decisions until we've seen the full figures.",
+      "q": "What does the speaker recommend?",
+      "choices": [
+        "Making a decision immediately",
+        "Waiting for more information",
+        "Rejecting the report completely",
+        "Writing a new report"
+      ],
+      "answer": 1,
+      "explain": "Hold off on = attendre avant de faire : il conseille d'attendre les chiffres complets."
+    },
+    {
+      "id": "p126",
+      "band": "C2",
+      "type": "mcq",
+      "q": "The committee insisted that the new rule ___ immediately.",
+      "choices": [
+        "is applied",
+        "will be applied",
+        "be applied",
+        "was applying"
+      ],
+      "answer": 2,
+      "explain": "Subjonctif mandatif après insist that : verbe de base, quel que soit le temps → be applied."
+    },
+    {
+      "id": "p127",
+      "band": "C2",
+      "type": "mcq",
+      "q": "It's high time we ___ a decision.",
+      "choices": [
+        "made",
+        "make",
+        "will make",
+        "are making"
+      ],
+      "answer": 0,
+      "explain": "It's high time + prétérit (sens présent) : il est grand temps que nous prenions une décision."
+    },
+    {
+      "id": "p128",
+      "band": "C2",
+      "type": "mcq",
+      "q": "___ you need any further information, please do not hesitate to contact us.",
+      "choices": [
+        "Would",
+        "Should",
+        "Had",
+        "Were"
+      ],
+      "answer": 1,
+      "explain": "Should en tête = If you should need… (registre formel, sans if)."
+    },
+    {
+      "id": "p129",
+      "band": "C2",
+      "type": "mcq",
+      "q": "___ the company to close, hundreds of jobs would be lost.",
+      "choices": [
+        "Should",
+        "Had",
+        "If",
+        "Were"
+      ],
+      "answer": 3,
+      "explain": "Were + sujet + to + verbe = hypothèse formelle (If the company were to close)."
+    },
+    {
+      "id": "p130",
+      "band": "C2",
+      "type": "mcq",
+      "q": "My uncle is so ___ that he reuses tea bags three times and never buys anyone a gift.",
+      "choices": [
+        "thrifty",
+        "economical",
+        "frugal",
+        "stingy"
+      ],
+      "answer": 3,
+      "explain": "Stingy (radin) est négatif. Thrifty, economical et frugal sont positifs ou neutres : ils ne cadrent pas avec « never buys anyone a gift »."
+    },
+    {
+      "id": "p131",
+      "band": "C2",
+      "type": "mcq",
+      "q": "The critic was ___ for his cruel reviews, which had ruined several careers.",
+      "choices": [
+        "renowned",
+        "notorious",
+        "celebrated",
+        "acclaimed"
+      ],
+      "answer": 1,
+      "explain": "Notorious = célèbre pour quelque chose de négatif. Renowned, celebrated et acclaimed sont élogieux."
+    },
+    {
+      "id": "p132",
+      "band": "C2",
+      "type": "mcq",
+      "q": "She ___ out of the room without a word, slamming the door behind her.",
+      "choices": [
+        "stormed",
+        "strolled",
+        "wandered",
+        "drifted"
+      ],
+      "answer": 0,
+      "explain": "Storm out = sortir furieux. Stroll, wander et drift évoquent une marche lente et calme."
+    },
+    {
+      "id": "p133",
+      "band": "C2",
+      "type": "mcq",
+      "q": "The invasive beetle ___ a serious threat to the province's forests.",
+      "choices": [
+        "makes",
+        "puts",
+        "poses",
+        "does"
+      ],
+      "answer": 2,
+      "explain": "Collocation : pose a threat (représenter une menace)."
+    },
+    {
+      "id": "p134",
+      "band": "C2",
+      "type": "mcq",
+      "q": "We must ___ allowances for the fact that he's new to the job.",
+      "choices": [
+        "make",
+        "do",
+        "give",
+        "take"
+      ],
+      "answer": 0,
+      "explain": "Collocation figée : make allowances for (tenir compte de, être indulgent)."
+    },
+    {
+      "id": "p135",
+      "band": "C2",
+      "type": "mcq",
+      "q": "He's a man who, ___ his faults, has always been loyal to his friends.",
+      "choices": [
+        "in spite",
+        "despite of",
+        "for all",
+        "notwithstanding of"
+      ],
+      "answer": 2,
+      "explain": "For all = malgré (for all his faults). « In spite » exige of ; « despite of » et « notwithstanding of » sont fautifs."
+    },
+    {
+      "id": "p136",
+      "band": "C2",
+      "type": "mcq",
+      "q": "I'd rather you ___ tell Grandma about the broken vase just yet.",
+      "choices": [
+        "don't",
+        "won't",
+        "not",
+        "didn't"
+      ],
+      "answer": 3,
+      "explain": "Would rather + sujet + prétérit (sens présent ou futur) : I'd rather you didn't."
+    },
+    {
+      "id": "p137",
+      "band": "C2",
+      "type": "mcq",
+      "q": "So ___ was the storm that the ferry was cancelled.",
+      "choices": [
+        "violently",
+        "violent",
+        "violence",
+        "much violent"
+      ],
+      "answer": 1,
+      "explain": "Inversion emphatique : So + adjectif + be + sujet (So violent was the storm that…)."
+    },
+    {
+      "id": "p138",
+      "band": "C2",
+      "type": "fill",
+      "q": "The board demanded that he ___ immediately.",
+      "hint": "resign (subjonctif)",
+      "answer": [
+        "resign"
+      ],
+      "explain": "Subjonctif mandatif après demand that : forme de base, sans -s ni passé → resign."
+    },
+    {
+      "id": "p139",
+      "band": "C2",
+      "type": "fill",
+      "q": "It's about time you ___ your room.",
+      "hint": "tidy",
+      "answer": [
+        "tidied"
+      ],
+      "explain": "It's (about) time + prétérit à sens présent : tidied."
+    },
+    {
+      "id": "p140",
+      "band": "C2",
+      "type": "fill",
+      "q": "She is widely ___ to be one of the finest violinists of her generation.",
+      "hint": "consider",
+      "answer": [
+        "considered"
+      ],
+      "explain": "Structure impersonnelle passive : be considered to be (on la considère comme…)."
+    },
+    {
+      "id": "p141",
+      "band": "C2",
+      "type": "fill",
+      "q": "It took her years to come to ___ with the loss of her childhood home.",
+      "hint": "accepter (expression)",
+      "answer": [
+        "terms"
+      ],
+      "explain": "Come to terms with = accepter, faire la paix avec (une situation difficile)."
+    },
+    {
+      "id": "p142",
+      "band": "C2",
+      "type": "fill",
+      "q": "___ it not for your help, I would never have finished on time.",
+      "hint": "be",
+      "answer": [
+        "Were"
+      ],
+      "explain": "Were it not for… = If it weren't for… (sans votre aide), avec inversion formelle."
+    },
+    {
+      "id": "p143",
+      "band": "C2",
+      "type": "fill",
+      "q": "The evidence is ___ conclusive; more research is needed.",
+      "hint": "loin d'être",
+      "answer": [
+        "far from",
+        "anything but"
+      ],
+      "explain": "Far from (ou anything but) + adjectif = loin d'être, pas du tout."
+    },
+    {
+      "id": "p144",
+      "band": "C2",
+      "type": "fill",
+      "q": "The plan was criticized for its ___: it simply couldn't work in real life.",
+      "hint": "PRACTICAL",
+      "answer": [
+        "impracticality",
+        "impracticability"
+      ],
+      "explain": "Nom négatif : im- + practical + -ity → impracticality (le caractère irréaliste du plan)."
+    },
+    {
+      "id": "p145",
+      "band": "C2",
+      "type": "reading",
+      "text": "Every generation, it seems, is convinced that childhood was better in its own day. My grandfather, who walked \"five kilometres to school in the snow\", never mentions that the school was on the way to the candy store. My father insists that children used to play outside until dark, though he also admits, when pressed, that this was largely because the house had one television and his older sisters controlled it. Nostalgia, I suspect, is less a record of the past than a flattering portrait of ourselves, painted long after the sitters have left.",
+      "q": "What is the writer's main point?",
+      "choices": [
+        "Childhood used to be harder than it is today.",
+        "Our memories of the past tend to be selective and flattering.",
+        "Older relatives often lie on purpose about their youth.",
+        "Television has ruined modern childhood."
+      ],
+      "answer": 1,
+      "explain": "Les anecdotes montrent qu'on embellit le passé ; la dernière phrase l'affirme : la nostalgie est un portrait flatteur de nous-mêmes."
+    },
+    {
+      "id": "p146",
+      "band": "C2",
+      "type": "reading",
+      "text": "Daniel worked in our department for two years. He was always punctual, and his desk was, without exception, the tidiest in the office. He got along well with his colleagues and was a regular presence at our social events. I have no doubt that he will bring these same qualities to whatever position he takes on next.",
+      "q": "What does this reference letter most likely imply?",
+      "choices": [
+        "Daniel was an outstanding employee in every respect.",
+        "Daniel was often late and disorganized.",
+        "The writer hopes Daniel will come back.",
+        "The writer is avoiding any comment on the quality of Daniel's work."
+      ],
+      "answer": 3,
+      "explain": "La lettre ne vante que des détails (ponctualité, bureau rangé, fêtes) et ne dit rien de son travail : c'est un éloge volontairement faible (damning with faint praise)."
+    },
+    {
+      "id": "p147",
+      "band": "C2",
+      "type": "reading",
+      "text": "The mayor's speech was, by any measure, a triumph of form over content. It was delivered with impeccable timing, sprinkled with well-chosen anecdotes and greeted with warm applause. What it contained, once the applause had faded, was rather harder to identify. Reporters leaving the hall compared notes and found they had all written down the same three phrases, \"a bright future\", \"working together\" and \"the right path\", and nothing that resembled a plan. Asked afterwards when the promised new library would open, the mayor's office said only that it remained \"a priority\".",
+      "q": "What does the writer suggest about the speech?",
+      "choices": [
+        "It was poorly delivered but full of useful details.",
+        "It announced when the new library would open.",
+        "It was skilfully performed but said very little.",
+        "It was badly received by the audience."
+      ],
+      "answer": 2,
+      "explain": "« A triumph of form over content » : la forme était excellente, mais le fond presque vide, et aucune date n'a été donnée."
+    },
+    {
+      "id": "p148",
+      "band": "C2",
+      "type": "listening",
+      "say": "I wouldn't go so far as to say the film was a disaster, but I can't say I'd rush to see it again.",
+      "q": "What is the speaker's opinion of the film?",
+      "choices": [
+        "Unimpressed, though not entirely negative",
+        "Very enthusiastic",
+        "Absolutely furious",
+        "Eager to watch it again"
+      ],
+      "answer": 0,
+      "explain": "« I wouldn't go so far as to say… a disaster » nuance la critique, mais « I can't say I'd rush to see it again » montre qu'il n'a pas été convaincu."
+    },
+    {
+      "id": "p149",
+      "band": "C2",
+      "type": "listening",
+      "say": "Far be it from me to tell you how to run your business, but if I were you, I'd have a word with your supplier before the holidays.",
+      "q": "What is the speaker doing?",
+      "choices": [
+        "Refusing to give any opinion",
+        "Complaining about the supplier",
+        "Praising the listener's management",
+        "Tactfully giving advice"
+      ],
+      "answer": 3,
+      "explain": "« Far be it from me to… » est une précaution polie avant de donner quand même un conseil (if I were you…)."
+    },
+    {
+      "id": "p150",
+      "band": "C2",
+      "type": "listening",
+      "say": "She's not one to blow her own trumpet, so you'd never guess she'd been offered a place on the national team.",
+      "q": "What do we learn about the woman?",
+      "choices": [
+        "She plays the trumpet.",
+        "She turned down a place on the team.",
+        "She is modest about her achievements.",
+        "She often boasts about her success."
+      ],
+      "answer": 2,
+      "explain": "Blow one's own trumpet = se vanter ; « not one to » = elle n'est pas du genre à le faire : elle est modeste."
+    }
+  ]
+}

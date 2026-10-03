@@ -1,0 +1,86 @@
+{
+  "level": 4,
+  "taunts": {
+    "phase2": [
+      "I can skate, I can ski… et maintenant, I can be angry !",
+      "Un point pour toi ? Bof. Moi, je cours fast… pas « fastly », hein !",
+      "Phase deux ! Right now, I am winning. Et toi, tu es en train de transpirer."
+    ],
+    "phase3": [
+      "Assez ! Je m'entraîne really hard… pas hardly, HARD !",
+      "Turn left, turn right… tu ne m'échapperas pas, champion !",
+      "Je suis le capitaine ! I can't lose ! Je ne PEUX pas perdre !"
+    ],
+    "lose": [
+      "Ha ! You can't beat me… not yet ! Va t'entraîner, et reviens.",
+      "Tu joues bien, mais moi, je joue well. Très well. Le plus well !",
+      "Retourne au vestiaire, recrue. And don't run : marche, et révise tes -ing !"
+    ]
+  },
+  "questions": [
+    { "unit": "4.1", "type": "mcq", "q": "Shh! Grandpa ___ to the hockey game on the radio.", "choices": ["listens", "is listen", "listening", "is listening"], "answer": 3, "explain": "Shh! montre que ça se passe maintenant : présent continu, is + listening." },
+    { "unit": "4.1", "type": "mcq", "q": "Quelle forme en -ing est bien écrite ?", "choices": ["swiming", "writeing", "sitting", "danceing"], "answer": 2, "explain": "Sit est court et finit par voyelle + consonne : on double le t (sitting). Swim → swimming, write → writing, dance → dancing." },
+    { "unit": "4.1", "type": "mcq", "q": "My cat usually ___ on my bed, but today it ___ on the couch.", "choices": ["is sleeping / sleeps", "sleeps / sleeps", "sleeps / is sleeping"], "answer": 2, "explain": "Usually = habitude → présent simple (sleeps). Today = en ce moment → présent continu (is sleeping)." },
+    { "unit": "4.1", "type": "mcq", "q": "Right now, the moose ___ a pancake.", "choices": ["is wanting", "wants", "want"], "answer": 1, "explain": "Want ne prend jamais -ing, même en ce moment. The moose (un seul) = it, donc wants." },
+    { "unit": "4.1", "type": "fill", "q": "Look! Mister Hello ___ on the table!", "hint": "dance", "answer": ["is dancing"], "explain": "Look! = maintenant : is + verbe en -ing. Dance perd son e muet : dancing." },
+    { "unit": "4.1", "type": "fill", "q": "Shh! I ___ a story to my little brother.", "hint": "read", "answer": ["am reading"], "explain": "C'est en train de se passer : I am + reading (I'm reading)." },
+    { "unit": "4.1", "type": "fill", "q": "My parents ___ for us at the corner.", "hint": "wait", "answer": ["are waiting"], "explain": "My parents = they : are + waiting. Et on garde le petit mot : wait for." },
+    { "unit": "4.1", "type": "fill", "q": "___ your dog sitting on my coat?!", "hint": "be", "answer": ["Is"], "explain": "Question au présent continu : Is + sujet (your dog) + verbe en -ing." },
+    { "unit": "4.1", "type": "fill", "q": "Ana usually ___ to school, but today she's taking the bus.", "hint": "walk", "answer": ["walks"], "explain": "Usually = habitude, donc présent simple : Ana (she) walks." },
+    { "unit": "4.1", "type": "error", "q": "The dog is siting on my homework.", "wrong": 3, "fix": ["sitting"], "explain": "Sit finit par voyelle + consonne : on double le t, sitting." },
+    { "unit": "4.1", "type": "error", "q": "We are waiting the bus.", "wrong": 2, "fix": ["waiting for"], "explain": "On attend quelque chose = wait for : We are waiting for the bus." },
+    { "unit": "4.1", "type": "error", "q": "Listen! Grandma is sing in the shower.", "wrong": 3, "fix": ["singing"], "explain": "Au présent continu, il faut be + verbe en -ing : is singing." },
+
+    { "unit": "4.2", "type": "mcq", "q": "Comment dit-on « Mon chien sait attraper la balle » ?", "choices": ["My dog can catches the ball.", "My dog can catch the ball.", "My dog can to catch the ball.", "My dog knows catch the ball."], "answer": 1, "explain": "Savoir faire = can + verbe de base : can catch. Pas de -s, pas de to, et pas de know." },
+    { "unit": "4.2", "type": "mcq", "q": "My uncle enjoys ___ hockey on TV.", "choices": ["watch", "to watch", "watching"], "answer": 2, "explain": "Après enjoy, toujours le verbe en -ing : enjoys watching. Jamais « enjoy to »." },
+    { "unit": "4.2", "type": "mcq", "q": "___ the moose skate? — No, it can't. But it can ski!", "choices": ["Does", "Can", "Is"], "answer": 1, "explain": "La réponse (it can't) montre que la question se pose avec can : Can the moose skate?" },
+    { "unit": "4.2", "type": "mcq", "q": "Quelle phrase est correcte ?", "choices": ["He can throw very well.", "He cans throw very well.", "He can throws very well.", "He can to throw very well."], "answer": 0, "explain": "Can ne change jamais (pas de -s) et le verbe qui suit reste à la base, sans to : He can throw." },
+    { "unit": "4.2", "type": "fill", "q": "Our baby ___ ride a bike. She's two!", "hint": "ne pas pouvoir", "answer": ["can't"], "explain": "« Ne sait pas » = can't (cannot) + verbe de base." },
+    { "unit": "4.2", "type": "fill", "q": "Félix hates ___ at soccer.", "hint": "lose", "answer": ["losing"], "explain": "Après hate, on met le verbe en -ing. Lose perd son e muet : losing." },
+    { "unit": "4.2", "type": "fill", "q": "— Can your parents skate? — Yes, they ___.", "hint": "pouvoir", "answer": ["can"], "explain": "Réponse courte avec can : Yes, they can. On ne répète pas le verbe." },
+    { "unit": "4.2", "type": "fill", "q": "My grandma is good ___ climbing. She's seventy!", "hint": "préposition", "answer": ["at"], "explain": "« Être bon en » = be good at, jamais good in." },
+    { "unit": "4.2", "type": "fill", "q": "Our ___ never wins, but we enjoy every game.", "hint": "équipe", "answer": ["team"], "explain": "« Équipe » = team." },
+    { "unit": "4.2", "type": "error", "q": "The moose cans skate on the Rideau Canal.", "wrong": 2, "fix": ["can"], "explain": "Can ne prend jamais de -s, même avec he, she, it : The moose can skate." },
+    { "unit": "4.2", "type": "error", "q": "We enjoy swim in summer.", "wrong": 2, "fix": ["swimming"], "explain": "Après enjoy, le verbe prend -ing : enjoy swimming (on double le m)." },
+    { "unit": "4.2", "type": "error", "q": "Priya is good in throwing the ball.", "wrong": 3, "fix": ["at"], "explain": "On dit good at + verbe en -ing : good at throwing." },
+
+    { "unit": "4.3", "type": "mcq", "q": "Tu veux acheter un livre tout neuf. Tu vas à la…", "choices": ["library", "bookstore", "post office"], "answer": 1, "explain": "Pour acheter un livre : bookstore (librairie). La library, c'est la bibliothèque, où on emprunte." },
+    { "unit": "4.3", "type": "mcq", "q": "Comment dit-on « Ne tourne pas à gauche ! » ?", "choices": ["No turn left!", "Not turn left!", "Don't turning left!", "Don't turn left!"], "answer": 3, "explain": "Impératif négatif = Don't + verbe de base : Don't turn left!" },
+    { "unit": "4.3", "type": "mcq", "q": "« L'épicerie est près de la banque. » The grocery store is ___ the bank.", "choices": ["near of", "near", "next of", "far"], "answer": 1, "explain": "« Près de » = near, sans of. Far veut dire « loin »." },
+    { "unit": "4.3", "type": "mcq", "q": "Tu proposes à ton ami d'aller à la bibliothèque. Tu dis :", "choices": ["Let's go to the library!", "Let's going to the library!", "Let go to the library!", "We go to the library!"], "answer": 0, "explain": "Pour proposer : Let's + verbe de base (Let's go). We go est juste une affirmation." },
+    { "unit": "4.3", "type": "fill", "q": "Excuse me! How ___ I get to the bank?", "hint": "auxiliaire", "answer": ["do"], "explain": "La question toute faite est How do I get to…? (I va avec do)." },
+    { "unit": "4.3", "type": "fill", "q": "___ go straight! Turn left at the traffic lights.", "hint": "ne… pas", "answer": ["Don't"], "explain": "Impératif négatif : Don't + verbe de base." },
+    { "unit": "4.3", "type": "fill", "q": "The post office is ___ from the park.", "hint": "en face de", "answer": ["across"], "explain": "« En face de » = across from. Le from est déjà dans la phrase." },
+    { "unit": "4.3", "type": "fill", "q": "Go straight and ___ the street at the corner.", "hint": "traverser", "answer": ["cross"], "explain": "« Traverser la rue » = cross the street. Impératif : verbe de base." },
+    { "unit": "4.3", "type": "fill", "q": "Excuse me, ___ is the grocery store? — It's on Bank Street.", "hint": "où", "answer": ["where"], "explain": "On demande un lieu : Where is…?" },
+    { "unit": "4.3", "type": "error", "q": "No run in the hospital!", "wrong": 0, "fix": ["Don't"], "explain": "« Ne cours pas » = Don't run, jamais [[No run]]." },
+    { "unit": "4.3", "type": "error", "q": "Let's going to the bookstore!", "wrong": 1, "fix": ["go"], "explain": "Après Let's, le verbe reste à la base : Let's go." },
+    { "unit": "4.3", "type": "error", "q": "Mom buys a new book at the library.", "wrong": 7, "fix": ["bookstore"], "explain": "On achète un livre à la librairie = bookstore. La library (bibliothèque) prête les livres." },
+
+    { "unit": "4.4", "type": "mcq", "q": "Look at ___ dress over there!", "choices": ["this", "these", "that", "those"], "answer": 2, "explain": "Over there = loin, et dress est au singulier : that dress." },
+    { "unit": "4.4", "type": "mcq", "q": "Comment dit-on « Je les essaie » (des bottes) ?", "choices": ["I them try on.", "I try on they.", "I try it on.", "I try them on."], "answer": 3, "explain": "Le pronom complément se place après le verbe : I try them on. Them = les (plusieurs)." },
+    { "unit": "4.4", "type": "mcq", "q": "I love this coat! I want ___.", "choices": ["it", "them", "him", "its"], "answer": 0, "explain": "This coat = une chose au singulier : it. Them, c'est pour plusieurs choses." },
+    { "unit": "4.4", "type": "mcq", "q": "« Ce manteau coûte quatre-vingt-dix dollars. » This coat is ___ dollars.", "choices": ["nineteen", "nine", "ninety"], "answer": 2, "explain": "90 = ninety. Nineteen, c'est 19, et nine, c'est 9." },
+    { "unit": "4.4", "type": "fill", "q": "How much ___ those boots?", "hint": "être", "answer": ["are"], "explain": "Boots est au pluriel : How much are…?" },
+    { "unit": "4.4", "type": "fill", "q": "My neighbour Karim is very nice. I help ___ every Saturday.", "hint": "le (lui)", "answer": ["him"], "explain": "Karim = he. Après le verbe, he devient him : I help him." },
+    { "unit": "4.4", "type": "fill", "q": "___ shoes over there are cheap.", "hint": "ces (là-bas)", "answer": ["Those"], "explain": "Pluriel + loin (over there) = those." },
+    { "unit": "4.4", "type": "fill", "q": "Excuse me, can you help ___? My sister and I need a size eight.", "hint": "nous", "answer": ["us"], "explain": "« Nous » après un verbe = us. We devient us." },
+    { "unit": "4.4", "type": "fill", "q": "These pants are ___. A hundred dollars!", "hint": "cher", "answer": ["expensive"], "explain": "« Cher » (prix élevé) = expensive. Le contraire, c'est cheap." },
+    { "unit": "4.4", "type": "error", "q": "Look at this mittens!", "wrong": 2, "fix": ["these", "those"], "explain": "Mittens est au pluriel : these (ou those) mittens, jamais this." },
+    { "unit": "4.4", "type": "error", "q": "Where is Grandpa? I can't see he.", "wrong": 6, "fix": ["him"], "explain": "Après un verbe, on utilise le pronom complément : see him, pas see he." },
+    { "unit": "4.4", "type": "error", "q": "That shoes are cheap.", "wrong": 0, "fix": ["Those"], "explain": "Shoes est au pluriel : Those shoes (loin) ou These shoes (près)." },
+
+    { "unit": "4.5", "type": "mcq", "q": "Captain Can skates ___.", "choices": ["good", "well", "goodly"], "answer": 1, "explain": "Pour dire comment on fait une action, on utilise l'adverbe : well. Good est un adjectif (a good skater)." },
+    { "unit": "4.5", "type": "mcq", "q": "Malik works ___. He's always tired in the evening.", "choices": ["hard", "hardly", "hardy"], "answer": 0, "explain": "Hard (adverbe) = fort, dur. Hardly veut dire « à peine » : ce serait le contraire !" },
+    { "unit": "4.5", "type": "mcq", "q": "I can't buy that coat. I don't have ___.", "choices": ["money enough", "too money", "enough money"], "answer": 2, "explain": "Enough se place avant un nom : enough money." },
+    { "unit": "4.5", "type": "mcq", "q": "My little brother can't play on the big team. He isn't ___.", "choices": ["enough old", "old enough", "too old"], "answer": 1, "explain": "Enough se place après un adjectif : old enough. Too old voudrait dire « trop vieux »." },
+    { "unit": "4.5", "type": "fill", "q": "Please cross the street ___.", "hint": "careful", "answer": ["carefully"], "explain": "Pour dire comment on traverse, on utilise l'adverbe : careful + -ly = carefully." },
+    { "unit": "4.5", "type": "fill", "q": "It's ___ cold to swim today.", "hint": "trop", "answer": ["too"], "explain": "« Trop » devant un adjectif = too : too cold." },
+    { "unit": "4.5", "type": "fill", "q": "Our dog runs very ___.", "hint": "rapidement", "answer": ["fast", "quickly"], "explain": "Fast est à la fois adjectif et adverbe : runs fast (jamais « fastly »). Quickly marche aussi." },
+    { "unit": "4.5", "type": "fill", "q": "My sister sings really ___. We love it!", "hint": "bien", "answer": ["well"], "explain": "« Bien » (manière de faire) = well, l'adverbe de good." },
+    { "unit": "4.5", "type": "error", "q": "Captain Can plays hockey very good.", "wrong": 5, "fix": ["well"], "explain": "Pour décrire comment on joue, il faut l'adverbe : plays very well." },
+    { "unit": "4.5", "type": "error", "q": "Noah works hardly every day. He's very tired.", "wrong": 2, "fix": ["hard"], "explain": "Hardly = à peine. Pour « travailler fort », on dit work hard." },
+    { "unit": "4.5", "type": "error", "q": "Read the question careful.", "wrong": 3, "fix": ["carefully"], "explain": "On décrit comment on lit : il faut l'adverbe carefully." },
+    { "unit": "4.5", "type": "error", "q": "My dad runs very quick.", "wrong": 4, "fix": ["quickly", "fast"], "explain": "Après un verbe d'action, on utilise l'adverbe : runs quickly (ou runs fast)." }
+  ]
+}

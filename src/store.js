@@ -1,7 +1,6 @@
-// Player progress: persistence, unlocking rules, XP, streaks, badges, save codes.
+// Progress of the active profile: persistence, unlocking rules, XP, streaks, badges, save codes.
 import { LEVELS } from "./content.js";
-
-const KEY = "mission-bilingue:v1";
+import { readJSON, writeJSON, profileKey } from "./storage.js";
 
 export const DIFFICULTY = {
   normal: { label: "Normal", pass: 0.7, time: 1.4, hearts: 4, replays: 3, desc: "70 % pour réussir, plus de temps, 4 cœurs contre les boss." },
@@ -11,11 +10,11 @@ export const DIFFICULTY = {
 
 export const RANKS = ["Touriste", "Débutant", "Explorateur", "Voyageur", "Aventurier", "Conteur", "Navigateur", "Stratège", "Orateur", "Débatteur", "Virtuose", "Maestro", "Bilingue"];
 
-function fresh() {
+export function fresh() {
   return {
-    v: 1,
-    player: { name: "", createdAt: new Date().toISOString() },
-    settings: { sound: true, voice: "", rate: 0.95, difficulty: "hard", pin: "" },
+    v: 2,
+    player: { id: "", name: "", avatar: "fox", age: "ado", createdAt: new Date().toISOString() },
+    settings: { sound: true, voice: "", rate: 0.95, difficulty: "hard" },
     units: {}, // "3.2": { best, stars, passed, attempts, skipped }
     bosses: {}, // "3": { defeated, best, flawless, attempts, at }
     games: {}, // "3.2:rain": best score
@@ -29,37 +28,57 @@ function fresh() {
     path: {}, // "3.2": { lesson, pron, words, practice } — the guided steps of a station
     badges: {},
     unlockAll: false,
+    seen: {}, // "boss3" / "unit3.2": { last: [ids], count: { id: n } } — anti-repeat memory
+    srs: {}, // card id: { box, due } — spaced repetition
+    skills: {}, // skill: { n, ok }
+    writing: [], // essays: { id, prompt, text, score, at }
+    placement: null, // { band, line, at }
+    c2: {}, // part id: { best, attempts }
   };
 }
 
-function merge(base, saved) {
+export function merge(base, saved) {
   const out = { ...base, ...saved };
   for (const k of ["player", "settings", "stats", "streak"]) out[k] = { ...base[k], ...(saved?.[k] || {}) };
+  delete out.settings.pin; // moved to the family settings in v2
+  out.v = 2;
   return out;
 }
 
-function load() {
-  try {
-    const raw = localStorage.getItem(KEY);
-    if (raw) return merge(fresh(), JSON.parse(raw));
-  } catch {
-    /* storage blocked: play without saving */
-  }
-  return fresh();
+export const state = fresh();
+const listeners = new Set();
+let saveTimer = null;
+let boundKey = null;
+
+/** Replaces the whole state in place (other modules keep their reference). */
+export function replaceState(next) {
+  for (const k of Object.keys(state)) delete state[k];
+  Object.assign(state, next);
 }
 
-export const state = load();
-const listeners = new Set();
-let saveTimer;
+/** Loads the progress of a profile into `state`; later saves go to that profile. */
+export function bindProfile(id) {
+  flushSave();
+  boundKey = profileKey(id);
+  const saved = readJSON(boundKey);
+  replaceState(saved ? merge(fresh(), saved) : fresh());
+  state.player.id = id;
+}
+
+/** Writes a pending save immediately. */
+export function flushSave() {
+  if (saveTimer) {
+    clearTimeout(saveTimer);
+    saveTimer = null;
+    if (boundKey) writeJSON(boundKey, state);
+  }
+}
 
 export function save() {
   clearTimeout(saveTimer);
   saveTimer = setTimeout(() => {
-    try {
-      localStorage.setItem(KEY, JSON.stringify(state));
-    } catch {
-      /* ignore */
-    }
+    saveTimer = null;
+    if (boundKey) writeJSON(boundKey, state);
   }, 150);
   listeners.forEach((fn) => fn(state));
 }
@@ -173,13 +192,18 @@ export function addXp(n) {
 }
 
 /** Records one answer for stats, mistakes notebook and learned words. */
-export function recordAnswer(ref, ok, ms = 0) {
+export function recordAnswer(ref, ok, ms = 0, skill = "") {
   state.stats.answers++;
   if (ok) state.stats.correct++;
   state.stats.ms += Math.min(ms, 120000);
+  if (skill) {
+    const s = (state.skills[skill] ||= { n: 0, ok: 0 });
+    s.n++;
+    if (ok) s.ok++;
+  }
   if (!ref) return;
   if (ok) {
-    if (ref.includes(":v")) state.words[ref] = 1;
+    if (/^\d+\.\d+:v\d+$|^lex\d+:\d+$/.test(ref)) state.words[ref] = 1;
     const m = state.mistakes[ref];
     if (m) {
       m.n -= 1;
@@ -279,7 +303,7 @@ export function recordGame(key, score) {
 export const BADGES = [
   { id: "first-test", name: "Premier billet", desc: "Réussir ton premier test d'étape.", test: (s) => Object.values(s.units).some((u) => u.passed && !u.skipped) },
   { id: "three-stars", name: "Sans faute", desc: "Obtenir 3 étoiles à un test.", test: (s) => Object.values(s.units).some((u) => u.stars >= 3) },
-  { id: "first-boss", name: "Chasseur de boss", desc: "Battre ton premier boss.", test: (s) => Object.values(s.bosses).some((b) => b.defeated) },
+  { id: "first-boss", name: "Chasseur de boss", desc: "Battre ton premier boss.", test: (s) => Object.values(s.bosses).some((b) => b.defeated && !b.placed) },
   { id: "flawless", name: "Intouchable", desc: "Battre un boss sans perdre un seul cœur.", test: (s) => Object.values(s.bosses).some((b) => b.flawless) },
   { id: "skipper", name: "Raccourci", desc: "Sauter un niveau en battant son boss directement.", test: (s) => Object.values(s.bosses).some((b) => b.skipped) },
   { id: "streak-3", name: "Ça chauffe", desc: "Jouer 3 jours de suite.", test: (s) => s.streak.count >= 3 },
@@ -289,8 +313,13 @@ export const BADGES = [
   { id: "words-500", name: "Dictionnaire vivant", desc: "Réussir 500 mots différents.", test: (s) => Object.keys(s.words).length >= 500 },
   { id: "fixer", name: "Rien ne m'échappe", desc: "Corriger 25 erreurs dans ton carnet.", test: (s) => s.fixed >= 25 },
   { id: "gamer", name: "Touche-à-tout", desc: "Jouer aux 9 mini-jeux.", test: (s) => new Set(Object.keys(s.games).map((k) => k.split(":")[1])).size >= 9 },
-  { id: "halfway", name: "Mi-parcours", desc: "Terminer le niveau 6.", test: (s) => !!s.bosses[6]?.defeated },
+  { id: "halfway", name: "Mi-parcours", desc: "Terminer le niveau 6.", test: (s) => !!s.bosses[6]?.defeated && !s.bosses[6]?.placed },
   { id: "bilingual", name: "Bilingue", desc: "Battre le boss final du niveau 12.", test: (s) => !!s.bosses[12]?.defeated },
+  { id: "placed", name: "Radiographié", desc: "Passer le test de placement.", test: (s) => !!s.placement },
+  { id: "writer", name: "Plume en herbe", desc: "Faire corriger ta première rédaction.", test: (s) => s.writing.length >= 1 },
+  { id: "writer-15", name: "Plume d'or", desc: "Obtenir 15/20 ou plus à une rédaction.", test: (s) => s.writing.some((w) => w.score >= 15) },
+  { id: "srs-100", name: "Mémoire d'éléphant", desc: "Réviser 100 cartes dans l'entraînement du jour.", test: (s) => (s.stats.srs || 0) >= 100 },
+  { id: "c2-mock", name: "Candidat C2", desc: "Terminer un examen blanc C2.", test: (s) => !!s.c2?.mock },
 ];
 
 /** Grants newly earned badges; returns them. */
@@ -327,12 +356,12 @@ function sum(str) {
 
 export function exportCode() {
   const json = JSON.stringify(state);
-  return `MB1.${sum(json)}.${toB64(json)}`;
+  return `MB2.${sum(json)}.${toB64(json)}`;
 }
 
-/** Restores progress from a save code; throws a French message on failure. */
-export function importCode(code) {
-  const m = String(code || "").trim().match(/^MB1\.([a-z0-9]+)\.([A-Za-z0-9+/=]+)$/);
+/** Decodes a save code (MB1 or MB2) into a state object; throws a French message on failure. */
+export function decodeCode(code) {
+  const m = String(code || "").replace(/\s+/g, "").match(/^MB[12]\.([a-z0-9]+)\.([A-Za-z0-9+/=]+)$/);
   if (!m) throw new Error("Ce code ne ressemble pas à un code de sauvegarde Mission Bilingue.");
   let json;
   try {
@@ -341,17 +370,40 @@ export function importCode(code) {
     throw new Error("Le code est abîmé : copie-le en entier, sans espace.");
   }
   if (sum(json) !== m[1]) throw new Error("Le code est incomplet ou modifié : copie-le en entier.");
-  const data = JSON.parse(json);
-  const next = merge(fresh(), data);
-  for (const k of Object.keys(state)) delete state[k];
-  Object.assign(state, next);
+  return merge(fresh(), JSON.parse(json));
+}
+
+/** Restores the active profile's progress from a save code (the profile keeps its identity). */
+export function importCode(code) {
+  const next = decodeCode(code);
+  const id = state.player.id;
+  replaceState(next);
+  state.player.id = id;
   save();
+  flushSave();
 }
 
 export function resetAll() {
   const keepSettings = { ...state.settings };
-  for (const k of Object.keys(state)) delete state[k];
-  Object.assign(state, fresh());
-  state.settings = { ...state.settings, sound: keepSettings.sound, voice: keepSettings.voice, rate: keepSettings.rate };
+  const keepPlayer = { ...state.player };
+  replaceState(fresh());
+  state.player = { ...state.player, id: keepPlayer.id, name: keepPlayer.name, avatar: keepPlayer.avatar, age: keepPlayer.age };
+  state.settings = { ...state.settings, sound: keepSettings.sound, voice: keepSettings.voice, rate: keepSettings.rate, difficulty: keepSettings.difficulty };
+  save();
+}
+
+// ---------- Placement ----------
+
+/** Starts the course at `line`: earlier lines are validated (marked "placed", no stars). */
+export function applyPlacement(result) {
+  const line = Math.max(1, Math.min(12, result.line || 1));
+  const at = new Date().toISOString();
+  for (const lvl of LEVELS) {
+    if (lvl.id >= line) continue;
+    if (!bossState(lvl.id).defeated) state.bosses[lvl.id] = { ...bossState(lvl.id), defeated: true, placed: true, at };
+    for (const u of lvl.units) if (!unitState(u.id).passed) state.units[u.id] = { ...unitState(u.id), passed: true, skipped: true, placed: true, stars: 0 };
+  }
+  state.placement = { band: result.band, line, at, asked: result.asked, correct: result.correct };
+  touchStreak();
   save();
 }

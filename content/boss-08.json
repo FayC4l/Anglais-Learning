@@ -1,0 +1,86 @@
+{
+  "level": 8,
+  "taunts": {
+    "phase2": [
+      "Tu as été remarqué… et tu seras bientôt éliminé. Tout est dit à la voix passive, très cher !",
+      "Phase deux : les règles seront changées, les pièges seront posés, et toi, tu seras battu.",
+      "Si j'étais toi, je ne serais pas si fier. Deuxième conditionnel offert par la maison !"
+    ],
+    "phase3": [
+      "Assez ! Mes questions ont été aiguisées, et ma patience a été épuisée !",
+      "Tu me fais perdre mon calme… pardon : mon calme a été perdu. Moi, je ne fais jamais rien moi-même !",
+      "Je n'abandonnerai pas ! Give up ? Jamais. Ce phrasal verb n'a pas été inventé pour moi."
+    ],
+    "lose": [
+      "Tu as été battu… par moi. Ta défaite sera racontée dans tous les journaux !",
+      "Si tu étais un peu plus attentif, tu gagnerais. Mais bon, on ne se refait pas !",
+      "Ta revanche est acceptée. Elle sera organisée par moi, évidemment. Reviens quand tu veux !"
+    ]
+  },
+  "questions": [
+    { "unit": "8.1", "type": "mcq", "q": "If my boss ___ me work from home, I'd save two hours a day.", "choices": ["lets", "would let", "let", "has let"], "answer": 2, "explain": "Deuxième conditionnel : if + passé. Le passé de let est let (verbe irrégulier). Jamais would dans la partie if." },
+    { "unit": "8.1", "type": "mcq", "q": "Comment dit-on « À ta place, je ne mettrais pas d'ananas sur cette pizza » ?", "choices": ["If I were you, I wouldn't put pineapple on that pizza.", "If I was you, I won't put pineapple on that pizza.", "If I would be you, I wouldn't put pineapple on that pizza.", "If I am you, I wouldn't put pineapple on that pizza."], "answer": 0, "explain": "« À ta place » = If I were you (expression figée), puis would + verbe. Jamais would après if, et won't ne va pas avec une situation imaginaire." },
+    { "unit": "8.1", "type": "mcq", "q": "Our apartment is tiny. I wish we ___ a bigger kitchen.", "choices": ["have", "had", "would have", "will have"], "answer": 1, "explain": "I wish + passé = j'aimerais que ce soit différent maintenant : I wish we had." },
+    { "unit": "8.1", "type": "mcq", "q": "What ___ if your phone suddenly started speaking French?", "choices": ["will you do", "did you do", "you would do", "would you do"], "answer": 3, "explain": "Situation imaginaire (if + passé) : would + verbe. Dans une question, would passe avant le sujet : would you do." },
+    { "unit": "8.1", "type": "fill", "q": "If my grandparents ___ closer, we would visit them every Sunday.", "hint": "live", "answer": ["lived"], "explain": "Ils n'habitent pas près : c'est imaginaire, donc if + passé : if they lived." },
+    { "unit": "8.1", "type": "fill", "q": "If I ___ how to cook, I wouldn't eat cereal for supper every night.", "hint": "know", "answer": ["knew"], "explain": "Deuxième conditionnel : if + passé. Know est irrégulier : knew." },
+    { "unit": "8.1", "type": "fill", "lead": "It's a pity my brother isn't here.", "key": "WISH", "q": "I ___ here.", "answer": ["wish my brother were", "wish my brother was"], "explain": "Regret au présent : I wish + passé. Avec be, on dit were (soigné) ou was (oral)." },
+    { "unit": "8.1", "type": "fill", "q": "We ___ the house if it weren't so expensive.", "hint": "buy", "answer": ["would buy", "could buy"], "explain": "La maison est chère, donc c'est imaginaire : would (ou could) + verbe de base dans la partie résultat." },
+    { "unit": "8.1", "type": "fill", "q": "If you ___ a million dollars, would you quit your job?", "hint": "win", "answer": ["won"], "explain": "Situation peu probable : if + passé. Win est irrégulier : won." },
+    { "unit": "8.1", "type": "error", "q": "If we lived in Florida, we will go to the beach every day.", "wrong": 6, "fix": ["would", "could"], "explain": "If + passé (lived) = situation imaginaire, donc would dans le résultat, pas will." },
+    { "unit": "8.1", "type": "error", "q": "I wish my neighbour doesn't play the drums at midnight.", "wrong": 4, "fix": ["didn't", "wouldn't"], "explain": "Après I wish, jamais de présent : I wish he didn't play (ou wouldn't play)." },
+    { "unit": "8.1", "type": "error", "q": "If I were a cat, I would sleeps all day.", "wrong": 7, "fix": ["sleep"], "explain": "Après would, toujours le verbe de base, sans -s : would sleep." },
+    { "unit": "8.1", "type": "error", "q": "What would you do if you see a bear on the trail?", "wrong": 6, "fix": ["saw"], "explain": "Avec would dans la question, la partie if doit être au passé : if you saw." },
+
+    { "unit": "8.2", "type": "mcq", "q": "Maple syrup ___ from the sap of maple trees.", "choices": ["makes", "is making", "made", "is made"], "answer": 3, "explain": "Le sirop ne fabrique rien : il est fabriqué. Fait général : passif présent, is made." },
+    { "unit": "8.2", "type": "mcq", "q": "Sorry about the noise: our kitchen ___ this week.", "choices": ["is renovating", "is being renovated", "has renovated", "renovates"], "answer": 1, "explain": "La cuisine subit l'action, en ce moment : passif du présent continu, is being + participe." },
+    { "unit": "8.2", "type": "mcq", "q": "The winner's name ___ until the very end of the show.", "choices": ["won't reveal", "isn't revealing", "won't be revealed", "didn't reveal"], "answer": 2, "explain": "Le nom ne révèle rien, il est révélé : passif futur, won't be + participe." },
+    { "unit": "8.2", "type": "mcq", "q": "Comment dit-on « On a annulé le match à cause de la pluie » ?", "choices": ["The game was cancelled because of the rain.", "The game cancelled because of the rain.", "The game has cancelled because of the rain.", "One cancelled the game because of the rain."], "answer": 0, "explain": "Le « on » français se traduit souvent par un passif : was + participe. Sans be, la phrase est fausse." },
+    { "unit": "8.2", "type": "fill", "lead": "Someone has stolen my lunch from the office fridge!", "q": "My lunch ___ from the office fridge!", "hint": "passif, present perfect", "answer": ["has been stolen"], "explain": "Present perfect passif : has been + participe passé. Steal → stolen." },
+    { "unit": "8.2", "type": "fill", "q": "These shoes ___ in Quebec by a small family company.", "hint": "make, passif présent", "answer": ["are made"], "explain": "Les chaussures (pluriel) sont fabriquées : are + participe passé made." },
+    { "unit": "8.2", "type": "fill", "q": "Hurry up! The doors ___ in five minutes.", "hint": "close, passif futur", "answer": ["will be closed"], "explain": "Passif au futur : will be + participe passé." },
+    { "unit": "8.2", "type": "fill", "q": "Our flight ___ because of the snowstorm, so we slept at the airport.", "hint": "cancel, passif passé", "answer": ["was cancelled", "was canceled"], "explain": "Passif au passé : was + participe. En anglais canadien, on double le l : cancelled." },
+    { "unit": "8.2", "type": "fill", "q": "Library books ___ within three weeks, or you'll pay a fine.", "hint": "must return, passif", "answer": ["must be returned"], "explain": "Passif avec un modal : modal + be + participe passé : must be returned." },
+    { "unit": "8.2", "type": "error", "q": "The new arena was build in only eighteen months.", "wrong": 4, "fix": ["built"], "explain": "Le passif demande le participe passé : build → built." },
+    { "unit": "8.2", "type": "error", "q": "The cookies were ate before the guests even arrived.", "wrong": 3, "fix": ["eaten"], "explain": "Passif = be + participe passé. Ate est le passé simple ; le participe est eaten." },
+    { "unit": "8.2", "type": "error", "q": "This novel was translated in twelve languages.", "wrong": 4, "fix": ["into"], "explain": "« Traduit en » = translated into, pas in." },
+    { "unit": "8.2", "type": "error", "q": "Your package will delivered tomorrow between noon and four.", "wrong": 3, "fix": ["be delivered"], "explain": "Passif futur : will + be + participe. Il manque be : will be delivered." },
+
+    { "unit": "8.3", "type": "mcq", "q": "I finally met the neighbour ___ dog barks all night.", "choices": ["who", "who's", "which", "whose"], "answer": 3, "explain": "Le chien du voisin = possession : whose (dont). Who's = who is." },
+    { "unit": "8.3", "type": "mcq", "q": "Is there a store near here ___ I can buy a phone charger?", "choices": ["where", "which", "when", "who"], "answer": 0, "explain": "On parle d'un lieu (un magasin où je peux acheter) : where." },
+    { "unit": "8.3", "type": "mcq", "q": "My laptop, ___ I bought only last year, already needs a new battery.", "choices": ["that", "which", "what", "who"], "answer": 1, "explain": "Avec des virgules (information en plus), jamais that : pour une chose, on utilise which." },
+    { "unit": "8.3", "type": "mcq", "q": "Dans quelle phrase le pronom relatif peut-il disparaître ?", "choices": ["The man who called you is my boss.", "The pharmacist who works downtown is my aunt.", "The song that you hummed all morning is stuck in my head.", "My aunt, who lives in Moncton, is a vet."], "answer": 2, "explain": "On peut enlever le pronom quand il est complément (un autre sujet suit : you hummed). Pas quand il est sujet, ni avec des virgules." },
+    { "unit": "8.3", "type": "fill", "q": "The engineer ___ designed this bridge was only twenty-six.", "hint": "pronom relatif (personne, sujet)", "answer": ["who", "that"], "explain": "Pour une personne qui fait l'action : who (ou that, car il n'y a pas de virgules)." },
+    { "unit": "8.3", "type": "fill", "q": "I'll never forget the night ___ the power went out during my birthday party.", "hint": "pronom relatif (moment)", "answer": ["when", "that"], "explain": "« La nuit où » = the night when. Where est réservé aux lieux." },
+    { "unit": "8.3", "type": "fill", "q": "Do you know anyone ___ car has winter tires? Mine is still in the garage.", "hint": "dont (possession)", "answer": ["whose"], "explain": "La voiture de quelqu'un = possession : whose car." },
+    { "unit": "8.3", "type": "fill", "q": "The village ___ my grandfather grew up has only one street.", "hint": "où (lieu)", "answer": ["where"], "explain": "Pour un lieu, on utilise where : the village where he grew up." },
+    { "unit": "8.3", "type": "fill", "lead": "My cousin is a hairdresser. She works in a salon in Gatineau.", "q": "My cousin, ___ a hairdresser, works in a salon in Gatineau.", "answer": ["who is"], "explain": "Information en plus, entre virgules, sur une personne : who + is. Jamais that avec des virgules." },
+    { "unit": "8.3", "type": "error", "q": "Do you remember the year where it snowed in May?", "wrong": 5, "fix": ["when", "that"], "explain": "« L'année où » parle d'un moment : the year when. Where = un lieu seulement." },
+    { "unit": "8.3", "type": "error", "q": "My boss, that never smiles, laughed at my joke today.", "wrong": 2, "fix": ["who"], "explain": "Entre virgules, jamais that. Pour une personne : who." },
+    { "unit": "8.3", "type": "error", "q": "A veterinarian is a doctor who take care of animals.", "wrong": 6, "fix": ["takes"], "explain": "Who remplace a doctor (singulier) : le verbe prend -s, who takes." },
+    { "unit": "8.3", "type": "error", "q": "The phone what I bought last week is already broken.", "wrong": 2, "fix": ["that", "which"], "explain": "« Que » relatif après un nom de chose = that ou which. What ne s'emploie jamais après un nom." },
+
+    { "unit": "8.4", "type": "mcq", "q": "These boots are soaking wet. ___ before you walk on the carpet!", "choices": ["Take off them", "Take it off", "Take them off", "Take off it"], "answer": 2, "explain": "Boots est pluriel, donc them. Avec un pronom, il va obligatoirement au milieu : take them off." },
+    { "unit": "8.4", "type": "mcq", "q": "« Ma tante garde nos chats quand on part en vacances. » → My aunt ___ our cats when we go on vacation.", "choices": ["looks for", "looks at", "looks up", "looks after"], "answer": 3, "explain": "S'occuper de, garder = look after. Look for = chercher." },
+    { "unit": "8.4", "type": "mcq", "q": "We ___ at five yesterday morning and reached Quebec City before nine.", "choices": ["set off", "setted off", "broke down", "turned down"], "answer": 0, "explain": "Partir en voyage = set off. Set est irrégulier : son passé est set (jamais setted)." },
+    { "unit": "8.4", "type": "mcq", "q": "Mom ___ the truth when she saw the cookie crumbs on my pillow.", "choices": ["looked for", "found out", "gave up", "picked up"], "answer": 1, "explain": "Découvrir une information = find out (passé : found out)." },
+    { "unit": "8.4", "type": "fill", "q": "The heater ___ in the middle of January, so we slept in our coats.", "hint": "tomber en panne, passé", "answer": ["broke down"], "explain": "Tomber en panne = break down. Au passé : broke down." },
+    { "unit": "8.4", "type": "fill", "q": "Halfway through the marathon, Amir wanted to ___, but he finished it.", "hint": "abandonner", "answer": ["give up"], "explain": "Abandonner = give up. Après wanted to, verbe de base." },
+    { "unit": "8.4", "type": "fill", "q": "We ___ coffee, so the whole office is grumpy today.", "hint": "manquer de, present perfect", "answer": ["have run out of"], "explain": "Ne plus avoir de = run out of (inséparable). Present perfect : have run out of (run est le participe)." },
+    { "unit": "8.4", "type": "fill", "q": "Your headphones are on the floor again. Please ___!", "hint": "pick up + pronom", "answer": ["pick them up"], "explain": "Headphones est pluriel : them. Avec un pronom, il se place au milieu : pick them up." },
+    { "unit": "8.4", "type": "fill", "q": "The landlord offered Ana a cheaper apartment, but she ___ because it had no windows.", "hint": "refuser, passé + pronom", "answer": ["turned it down"], "explain": "Refuser une offre = turn down. Avec le pronom it, il va au milieu : turned it down." },
+    { "unit": "8.4", "type": "error", "q": "The plane took up an hour late because of the fog.", "wrong": 3, "fix": ["off"], "explain": "Pour un avion, décoller = take off (passé : took off)." },
+    { "unit": "8.4", "type": "error", "q": "Who looks for your hamster when you're on vacation?", "wrong": 2, "fix": ["after"], "explain": "Garder, s'occuper de = look after. Look for veut dire « chercher » (j'espère que le hamster n'est pas perdu !)." },
+    { "unit": "8.4", "type": "error", "q": "Can you pick me down at the station at six?", "wrong": 4, "fix": ["up"], "explain": "Aller chercher quelqu'un = pick up : pick me up." },
+    { "unit": "8.4", "type": "error", "q": "We've ran out of printer paper again.", "wrong": 1, "fix": ["run"], "explain": "Après have, il faut le participe passé : run (run, ran, run). We've run out of." },
+
+    { "unit": "8.5", "type": "mcq", "q": "I don't cut my own hair. I ___ every six weeks at the salon.", "choices": ["have cut my hair", "cut my hair myself", "have my hair cut", "have my hair cutting"], "answer": 2, "explain": "Faire faire quelque chose par quelqu'un : have + objet + participe passé : have my hair cut." },
+    { "unit": "8.5", "type": "mcq", "q": "Liam and Zoé text ___ every night, even though they live on the same street.", "choices": ["each other", "themselves", "theirselves", "them"], "answer": 0, "explain": "Liam écrit à Zoé et Zoé écrit à Liam : c'est réciproque, donc each other. Themselves = chacun à soi-même." },
+    { "unit": "8.5", "type": "mcq", "q": "« Ma petite sœur s'est habillée toute seule ce matin ! » → My little sister got dressed ___ this morning!", "choices": ["by her", "by herself", "by himself", "with herself"], "answer": 1, "explain": "« Tout seul, sans aide » = by + pronom réfléchi : by herself (pour une fille)." },
+    { "unit": "8.5", "type": "fill", "lead": "A mechanic is fixing our car this week.", "key": "HAVING", "q": "We ___ this week.", "answer": ["are having our car fixed"], "explain": "Faire réparer : have + objet + participe passé. Au présent continu : we are having our car fixed." },
+    { "unit": "8.5", "type": "fill", "q": "Be careful with that knife! You'll cut ___.", "hint": "pronom réfléchi", "answer": ["yourself"], "explain": "Tu te couperais toi-même : pronom réfléchi de you au singulier = yourself." },
+    { "unit": "8.5", "type": "fill", "q": "We didn't paint the living room ourselves; we ___ by a professional.", "hint": "get + participe, passé", "answer": ["got it painted"], "explain": "Get something done = faire faire : got + it + participe passé (painted)." },
+    { "unit": "8.5", "type": "error", "q": "My parents built this cabin themself, without any help.", "wrong": 5, "fix": ["themselves"], "explain": "Pronom réfléchi pluriel de they : themselves. Themself n'est pas correct ici." },
+    { "unit": "8.5", "type": "error", "q": "I need to get my passport renew before the trip.", "wrong": 6, "fix": ["renewed"], "explain": "Get + objet + participe passé : get my passport renewed." }
+  ]
+}

@@ -314,6 +314,74 @@
           "J'ai rendu les petits mots ([[a]], [[your]], [[the]]) tout légers"
         ]
       }
+    },
+    {
+      "unit": "9.5",
+      "pron": {
+        "focus": "La mélodie des questions polies",
+        "ipa": "",
+        "explain": "Une question directe avec [[where]] ou [[what]] **descend** à la fin : [[Where is the station?]]. Mais [[Could you tell me where the station is?]] est au fond une question oui/non : ta voix **monte doucement** à la fin, et c'est ce qui la rend aimable. Dite d'un ton plat et descendant, la formule polie sonne comme un ordre impatient ! Les petits mots du début sont faibles et collés : [[could you]] devient « keu-djeu », [[do you]] devient « deu-yeu ». Honnêtement, la voix de synthèse ne fait pas toujours la bonne mélodie : exerce-toi avec ta propre voix.",
+        "words": [
+          {
+            "en": "excuse me",
+            "fr": "excusez-moi",
+            "hint": "« ix-KIOUZ-mi » : un z doux, et la voix monte pour attirer l'attention"
+          },
+          {
+            "en": "could you tell me",
+            "fr": "pourrais-tu me dire",
+            "hint": "« keu-djeu-TÈL-mi » : could you se colle en « keudjeu »"
+          },
+          {
+            "en": "do you know",
+            "fr": "sais-tu",
+            "hint": "« deu-yeu-NÔ » : do you tout petits, accent sur KNOW (k muet)"
+          },
+          {
+            "en": "do you happen to know",
+            "fr": "saurais-tu par hasard",
+            "hint": "« deu-yeu-HA-peun-teu-NÔ » : accent sur HAP et sur KNOW"
+          },
+          {
+            "en": "would you mind",
+            "fr": "ça te dérangerait",
+            "hint": "« weu-djeu-MAÏND » : le l de would est muet"
+          },
+          {
+            "en": "I was wondering",
+            "fr": "je me demandais",
+            "hint": "« aï-weuz-WEUN-deu-ring » : was devient un petit « weuz »"
+          },
+          {
+            "en": "where the station is",
+            "fr": "où est la gare",
+            "hint": "« wèr-dzeu-STÉ-cheun-iz » : is reste à la fin, la voix monte"
+          },
+          {
+            "en": "thank you so much",
+            "fr": "merci beaucoup",
+            "hint": "« THANK-iou-sô-MEUTCH » : ici la voix descend, chaleureuse"
+          }
+        ],
+        "pairs": [],
+        "practice": [
+          "Excuse me, could you tell me where the nearest washroom is?",
+          "I was wondering if you would mind helping me with my bag.",
+          "Do you happen to know what time the ticket office opens?"
+        ]
+      },
+      "mission": {
+        "type": "ecrit",
+        "prompt": "Ta famille prépare une fin de semaine à Québec. Écris un courriel poli de cinq à huit phrases à l'office de tourisme : au moins quatre questions indirectes et une proposition participiale.",
+        "model": "Hello! Having visited your website, my family and I have decided to spend a weekend in Quebec City next month. I was wondering if you could send us a map of the old town. Could you also tell me which museums are open on Sunday mornings? We would like to know how much a family ticket for the ferry costs. Do you happen to know whether there is a skating rink near the Château Frontenac? Thank you in advance for your help. Best regards, Noah Tremblay",
+        "checklist": [
+          "Mes questions indirectes ont l'ordre sujet + verbe : [[whether there is a rink]], pas [[whether is there a rink]]",
+          "J'ai enlevé do / does / did : [[how much a ticket costs]]",
+          "J'ai utilisé [[if]] ou [[whether]] pour une question oui/non",
+          "Après [[I was wondering if…]], j'ai mis un point, pas un point d'interrogation",
+          "Ma participiale ([[Having visited…]]) a le même sujet que la phrase principale"
+        ]
+      }
     }
   ]
 }

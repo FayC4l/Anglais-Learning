@@ -83,7 +83,9 @@ const validators = {
     const count = { mcq: 0, fill: 0, error: 0 };
     const perUnit = {};
     const lvl = existsSync(levelFile(L)) ? readJson(levelFile(L)) : null;
-    const unitQ = new Set((lvl?.units || []).flatMap((u) => [...(u.grammar || []).map((g) => clean(g.q)), ...(u.sentences || []).map((s) => clean(s.en))]));
+    // A question is a duplicate when its stem AND its answers match (generic stems like "Quelle phrase est correcte ?" are fine).
+    const qKey = (g) => clean([g.q, ...(g.choices || []), ...[].concat(g.answer ?? []), ...(g.fix || [])].join(" | "));
+    const unitQ = new Set((lvl?.units || []).flatMap((u) => [...(u.grammar || []).map(qKey), ...(u.sentences || []).map((s) => clean(s.en))]));
     const seen = new Set();
     qs.forEach((g, i) => {
       const W = `q${i} (${g?.type}) "${g?.q}"`;
@@ -91,9 +93,9 @@ const validators = {
       perUnit[g?.unit] = (perUnit[g?.unit] || 0) + 1;
       if (g?.type in count) count[g.type]++;
       checkExercise(g, W, err, warn);
-      const k = clean(g?.q);
+      const k = qKey(g || {});
       if (seen.has(k)) err(W, "duplicate question"); seen.add(k);
-      if (unitQ.has(k)) err(W, "reuses a sentence of the level's units");
+      if (unitQ.has(k) || unitQ.has(clean(g?.q))) err(W, "reuses a sentence of the level's units");
     });
     if (count.mcq < 18) err("questions", `needs >= 18 mcq (has ${count.mcq})`);
     if (count.fill < 22) err("questions", `needs >= 22 fill (has ${count.fill})`);

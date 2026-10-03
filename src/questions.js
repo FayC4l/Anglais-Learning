@@ -1,6 +1,8 @@
 // Question kinds: generation from content items, rendering, answer checking, and test assembly.
 import { h, esc, icon, shuffle, sample, pick, plain, $ } from "./ui.js";
 import { matches, tiles, tileKey, diffWords, clean } from "./answer.js";
+import { gapWords, joinBoxes } from "./fill.js";
+import { regen } from "./engine/generators.js";
 import { resolveRef, unitById, levelById, levelVocab, vocabRefs, sentenceRefs, grammarRefs, readingRefs } from "./content.js";
 import { speak, stopSpeaking, ttsReady, sfx } from "./audio.js";
 import { diff } from "./store.js";
@@ -29,10 +31,18 @@ function timeFor(kind, extra = 0) {
   return Math.round((BASE_TIME[kind] + extra) * diff().time);
 }
 
+/** Skill measured by each kind (for the dashboard). Generators may override it (e.g. "conjugaison"). */
+export const KIND_SKILL = { type_en: "vocabulaire", choose_fr: "vocabulaire", listen_type: "ecoute", listen_choose: "ecoute", build: "grammaire", dictation: "ecoute", mcq: "grammaire", fill: "grammaire", error: "grammaire", reading: "lecture", listening: "ecoute" };
+
 /** Which kinds can be made from a reference. */
 export function kindsForRef(ref) {
+  if (String(ref).startsWith("gen:")) {
+    const q = regen(ref);
+    return q ? [q.kind] : [];
+  }
   const r = resolveRef(ref);
   if (!r) return [];
+  if (r.kind) return [r.kind];
   if (r.type === "vocab") return ["type_en", "choose_fr", "listen_type", "listen_choose"];
   if (r.type === "sentence") return ["build", "dictation"];
   if (r.type === "grammar") return [r.item.type];
@@ -42,11 +52,15 @@ export function kindsForRef(ref) {
 
 /** Builds a question object of the given kind from a content reference. */
 export function makeQuestion(kind, ref) {
+  if (String(ref).startsWith("gen:")) {
+    const g = regen(ref);
+    return g ? { ...g, time: timeFor(g.kind, g.extraTime || 0) } : null;
+  }
   const r = resolveRef(ref);
   if (!r) return null;
   const { item, unit } = r;
   const L = Number(unit.id.split(".")[0]);
-  const base = { kind, ref, unitId: unit.id, level: L, explain: plain(item.explain || "") };
+  const base = { kind, ref, unitId: unit.id, level: L, skill: KIND_SKILL[kind], explain: plain(item.explain || "") };
   switch (kind) {
     case "type_en":
       return { ...base, accept: [item.en, ...(item.alt || [])], expected: item.en, time: timeFor(kind, item.en.length > 12 ? 8 : 0), fr: item.fr, say: item.en };
@@ -77,8 +91,10 @@ export function makeQuestion(kind, ref) {
       const order = shuffle(item.choices.map((_, i) => i));
       return { ...base, q: item.q, choices: order.map((i) => item.choices[i]), answer: order.indexOf(item.answer), expected: item.choices[item.answer], time: timeFor(kind, item.q.length > 90 ? 10 : 0) };
     }
-    case "fill":
-      return { ...base, q: item.q, hint: item.hint, accept: item.answer, expected: item.answer[0], time: timeFor(kind) };
+    case "fill": {
+      const n = gapWords(item.answer[0]).length;
+      return { ...base, q: item.q, hint: item.hint, lead: item.lead, key: item.key, accept: item.answer, expected: item.answer[0], time: timeFor(kind, (n - 1) * 6 + (item.lead ? 15 : 0)) };
+    }
     case "error": {
       const tokens = item.q.split(" ");
       return { ...base, tokens, wrong: item.wrong, accept: item.fix, expected: `${tokens[item.wrong].replace(/[.,!?;:]+$/, "")} → ${item.fix[0]}`, time: timeFor(kind) };
@@ -408,14 +424,42 @@ export function renderQuestion(q, mount, { onAnswer, replays = diff().replays, a
     }
     case "fill": {
       const [before, after] = q.q.split("___");
-      const input = h("input", { class: "inline-input", type: "text", autocomplete: "off", autocapitalize: "off", autocorrect: "off", spellcheck: "false", enterkeyhint: "done", "aria-label": "Mot manquant", id: "answer-input", size: 8 });
-      input.addEventListener("input", () => {
-        input.size = Math.max(6, input.value.length + 1);
-        sfx.type();
+      const words = gapWords(q.expected);
+      const n = Math.max(1, words.length);
+      // One box per expected word: the learner sees how many words the gap needs.
+      const boxes = words.map((w, i) =>
+        h("input", { class: "gap-box", type: "text", autocomplete: "off", autocapitalize: "off", autocorrect: "off", spellcheck: "false", enterkeyhint: i === n - 1 ? "done" : "next", "aria-label": n > 1 ? `Mot ${i + 1} sur ${n}` : "Mot manquant", id: i === 0 ? "answer-input" : null, size: Math.max(4, Math.min(14, w.length + 1)) }),
+      );
+      const value = () => joinBoxes(boxes.map((b) => b.value));
+      boxes.forEach((b, i) => {
+        b.addEventListener("input", () => {
+          sfx.type();
+          // A space typed at the end of a box jumps to the next box.
+          if (/\s$/.test(b.value) && i < n - 1) {
+            b.value = b.value.trimEnd();
+            boxes[i + 1].focus();
+          }
+          b.size = Math.max(4, Math.min(24, b.value.length + 1));
+        });
+        b.addEventListener("keydown", (e) => {
+          if (e.key === "Backspace" && !b.value && i > 0) {
+            e.preventDefault();
+            boxes[i - 1].focus();
+          }
+        });
       });
-      const sentence = h("div", { class: "q-prompt sentence" }, before, input, after);
-      card.append(head("Complète la phrase"), sentence, q.hint ? h("div", { class: "q-hint" }, "Indice : ", h("strong", null, q.hint)) : null, submitRow(input, (v) => finish(matches(v, q.accept), v)));
-      setTimeout(() => input.focus(), 60);
+      const gap = h("span", { class: `gap-group n${n}` }, boxes);
+      const sentence = h("div", { class: "q-prompt sentence" }, before, gap, after);
+      const proxy = { get value() { return value(); }, focus: () => (boxes.find((b) => !b.value) || boxes[0]).focus(), classList: gap.classList, addEventListener: (type, fn) => boxes.forEach((b) => b.addEventListener(type, fn)) };
+      card.append(
+        head(q.key ? "Transforme la phrase" : "Complète la phrase"),
+        q.lead ? h("div", { class: "q-lead" }, q.lead) : null,
+        q.key ? h("div", { class: "q-key" }, "Mot imposé : ", h("strong", null, q.key)) : null,
+        sentence,
+        h("div", { class: "q-hint" }, h("span", { class: "gap-count" }, `${n} mot${n > 1 ? "s" : ""}`), q.hint ? [" · Indice : ", h("strong", null, q.hint)] : null),
+        submitRow(proxy, (v) => finish(matches(v, q.accept), v)),
+      );
+      setTimeout(() => boxes[0].focus(), 60);
       break;
     }
     case "error": {
@@ -479,9 +523,9 @@ export function renderQuestion(q, mount, { onAnswer, replays = diff().replays, a
   };
 }
 
-/** Sentence with ___ rendered as a visible gap. */
-export function blankHtml(text) {
-  return esc(text).replace(/___/g, '<span class="gap"></span>');
+/** Sentence with ___ rendered as a visible gap (one mark per expected word). */
+export function blankHtml(text, n = 1) {
+  return esc(text).replace(/___/g, Array.from({ length: Math.max(1, n) }, () => '<span class="gap"></span>').join(" "));
 }
 
 /** Feedback details for a wrong answer: expected answer, diff for dictation, explanation. */

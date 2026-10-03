@@ -27,12 +27,27 @@
         },
         {
           "type": "table",
-          "head": ["Phrase", "Ce qui s'est passé"],
+          "head": [
+            "Phrase",
+            "Ce qui s'est passé"
+          ],
           "rows": [
-            ["[[When I arrived, the bus left.]]", "J'arrive, **puis** le bus part : je le vois partir."],
-            ["[[When I arrived, the bus had left.]]", "Le bus part **d'abord** : quand j'arrive, il n'est plus là."],
-            ["[[By the time we got there, the cake had disappeared.]]", "Le gâteau disparaît **avant** notre arrivée."],
-            ["[[It was the first time I had seen a moose.]]", "Après [[It was the first time]], on met le past perfect."]
+            [
+              "[[When I arrived, the bus left.]]",
+              "J'arrive, **puis** le bus part : je le vois partir."
+            ],
+            [
+              "[[When I arrived, the bus had left.]]",
+              "Le bus part **d'abord** : quand j'arrive, il n'est plus là."
+            ],
+            [
+              "[[By the time we got there, the cake had disappeared.]]",
+              "Le gâteau disparaît **avant** notre arrivée."
+            ],
+            [
+              "[[It was the first time I had seen a moose.]]",
+              "Après [[It was the first time]], on met le past perfect."
+            ]
           ]
         },
         {
@@ -43,11 +58,26 @@
         {
           "type": "examples",
           "items": [
-            { "en": "By the time the police arrived, the thief had already left.", "fr": "Le temps que la police arrive, le voleur était déjà parti." },
-            { "en": "I realized that I had left my keys at school.", "fr": "Je me suis rendu compte que j'avais oublié mes clés à l'école." },
-            { "en": "Had you ever seen the suspect before that night?", "fr": "Avais-tu déjà vu le suspect avant cette nuit-là ?" },
-            { "en": "They had been investigating the case for months.", "fr": "Ils enquêtaient sur l'affaire depuis des mois." },
-            { "en": "The ground was wet because it had been raining all night.", "fr": "Le sol était mouillé parce qu'il avait plu toute la nuit." }
+            {
+              "en": "By the time the police arrived, the thief had already left.",
+              "fr": "Le temps que la police arrive, le voleur était déjà parti."
+            },
+            {
+              "en": "I realized that I had left my keys at school.",
+              "fr": "Je me suis rendu compte que j'avais oublié mes clés à l'école."
+            },
+            {
+              "en": "Had you ever seen the suspect before that night?",
+              "fr": "Avais-tu déjà vu le suspect avant cette nuit-là ?"
+            },
+            {
+              "en": "They had been investigating the case for months.",
+              "fr": "Ils enquêtaient sur l'affaire depuis des mois."
+            },
+            {
+              "en": "The ground was wet because it had been raining all night.",
+              "fr": "Le sol était mouillé parce qu'il avait plu toute la nuit."
+            }
           ]
         },
         {
@@ -62,13 +92,41 @@
           "type": "dialogue",
           "title": "L'affaire du gâteau disparu",
           "lines": [
-            { "who": "Priya", "en": "Ethan, you were the first person in the gym this morning, right?", "fr": "Ethan, tu étais la première personne dans le gymnase ce matin, c'est ça ?" },
-            { "who": "Ethan", "en": "Yes, but when I got there, someone had already taken the cake.", "fr": "Oui, mais quand je suis arrivé, quelqu'un avait déjà pris le gâteau." },
-            { "who": "Priya", "en": "Had you noticed anything strange before that?", "fr": "Avais-tu remarqué quelque chose de bizarre avant ça ?" },
-            { "who": "Ethan", "en": "Well, the back door had been unlocked all night.", "fr": "Eh bien, la porte arrière était restée déverrouillée toute la nuit." },
-            { "who": "Priya", "en": "Interesting. Did you find any other clues?", "fr": "Intéressant. As-tu trouvé d'autres indices ?" },
-            { "who": "Ethan", "en": "Small footprints with chocolate on them. Someone had been eating the cake on the stairs!", "fr": "Des petites empreintes de pas pleines de chocolat. Quelqu'un avait mangé le gâteau dans l'escalier !" },
-            { "who": "Priya", "en": "Chocolate footprints? That's our best clue. Let's follow them!", "fr": "Des empreintes au chocolat ? C'est notre meilleur indice. Suivons-les !" }
+            {
+              "who": "Priya",
+              "en": "Ethan, you were the first person in the gym this morning, right?",
+              "fr": "Ethan, tu étais la première personne dans le gymnase ce matin, c'est ça ?"
+            },
+            {
+              "who": "Ethan",
+              "en": "Yes, but when I got there, someone had already taken the cake.",
+              "fr": "Oui, mais quand je suis arrivé, quelqu'un avait déjà pris le gâteau."
+            },
+            {
+              "who": "Priya",
+              "en": "Had you noticed anything strange before that?",
+              "fr": "Avais-tu remarqué quelque chose de bizarre avant ça ?"
+            },
+            {
+              "who": "Ethan",
+              "en": "Well, the back door had been unlocked all night.",
+              "fr": "Eh bien, la porte arrière était restée déverrouillée toute la nuit."
+            },
+            {
+              "who": "Priya",
+              "en": "Interesting. Did you find any other clues?",
+              "fr": "Intéressant. As-tu trouvé d'autres indices ?"
+            },
+            {
+              "who": "Ethan",
+              "en": "Small footprints with chocolate on them. Someone had been eating the cake on the stairs!",
+              "fr": "Des petites empreintes de pas pleines de chocolat. Quelqu'un avait mangé le gâteau dans l'escalier !"
+            },
+            {
+              "who": "Priya",
+              "en": "Chocolate footprints? That's our best clue. Let's follow them!",
+              "fr": "Des empreintes au chocolat ? C'est notre meilleur indice. Suivons-les !"
+            }
           ]
         },
         {
@@ -77,71 +135,494 @@
         }
       ],
       "vocab": [
-        { "en": "witness", "fr": "témoin", "alt": [], "ex": "The only witness was a little boy with a dog." },
-        { "en": "clue", "fr": "indice", "alt": [], "ex": "The detective found an important clue under the sofa." },
-        { "en": "suspect", "fr": "suspect, suspecte (personne soupçonnée)", "alt": [], "ex": "The police questioned the main suspect." },
-        { "en": "evidence", "fr": "preuves (dans une enquête)", "alt": ["proof"], "ex": "They didn't have any evidence against him." },
-        { "en": "case", "fr": "affaire (enquête)", "alt": [], "ex": "The detective solved the case in two days." },
-        { "en": "footprint", "fr": "empreinte de pas", "alt": [], "ex": "There was a footprint in the snow near the window." },
-        { "en": "fingerprint", "fr": "empreinte digitale", "alt": [], "ex": "They found the thief's fingerprints on the glass." },
-        { "en": "footsteps", "fr": "bruits de pas", "alt": [], "ex": "I heard footsteps in the hallway." },
-        { "en": "thief", "fr": "voleur, voleuse", "alt": [], "ex": "The thief had escaped through the window." },
-        { "en": "steal", "fr": "voler (dérober quelque chose)", "alt": [], "ex": "Someone had stolen my bike." },
-        { "en": "hide", "fr": "cacher", "alt": [], "ex": "Where had she hidden the key?" },
-        { "en": "solve", "fr": "résoudre (un mystère, un problème)", "alt": [], "ex": "She solved the mystery in one afternoon." },
-        { "en": "investigate", "fr": "enquêter", "alt": [], "ex": "Two detectives are investigating the theft." },
-        { "en": "guilty", "fr": "coupable", "alt": [], "ex": "Everyone thought he was guilty, but he wasn't." },
-        { "en": "notice", "fr": "remarquer", "alt": [], "ex": "Did you notice anything strange?" },
-        { "en": "realize", "fr": "se rendre compte", "alt": [], "ex": "I realized that I had forgotten my lunch." },
-        { "en": "missing", "fr": "disparu, manquant", "alt": [], "ex": "My grandma's ring was missing." },
-        { "en": "unlocked", "fr": "déverrouillé (pas barré à clé)", "alt": [], "ex": "The back door had been unlocked all night." },
-        { "en": "torn", "fr": "déchiré", "alt": ["ripped"], "ex": "The old map was torn in half." },
-        { "en": "by the time", "fr": "le temps que, au moment où (déjà)", "alt": [], "ex": "By the time we arrived, the cake had disappeared." }
+        {
+          "en": "witness",
+          "fr": "témoin",
+          "alt": [],
+          "ex": "The only witness was a little boy with a dog."
+        },
+        {
+          "en": "clue",
+          "fr": "indice",
+          "alt": [],
+          "ex": "The detective found an important clue under the sofa."
+        },
+        {
+          "en": "suspect",
+          "fr": "suspect, suspecte (personne soupçonnée)",
+          "alt": [],
+          "ex": "The police questioned the main suspect."
+        },
+        {
+          "en": "evidence",
+          "fr": "preuves (dans une enquête)",
+          "alt": [
+            "proof"
+          ],
+          "ex": "They didn't have any evidence against him."
+        },
+        {
+          "en": "case",
+          "fr": "affaire (enquête)",
+          "alt": [],
+          "ex": "The detective solved the case in two days."
+        },
+        {
+          "en": "footprint",
+          "fr": "empreinte de pas",
+          "alt": [],
+          "ex": "There was a footprint in the snow near the window."
+        },
+        {
+          "en": "fingerprint",
+          "fr": "empreinte digitale",
+          "alt": [],
+          "ex": "They found the thief's fingerprints on the glass."
+        },
+        {
+          "en": "footsteps",
+          "fr": "bruits de pas",
+          "alt": [],
+          "ex": "I heard footsteps in the hallway."
+        },
+        {
+          "en": "thief",
+          "fr": "voleur, voleuse",
+          "alt": [],
+          "ex": "The thief had escaped through the window."
+        },
+        {
+          "en": "steal",
+          "fr": "voler (dérober quelque chose)",
+          "alt": [],
+          "ex": "Someone had stolen my bike."
+        },
+        {
+          "en": "hide",
+          "fr": "cacher",
+          "alt": [],
+          "ex": "Where had she hidden the key?"
+        },
+        {
+          "en": "solve",
+          "fr": "résoudre (un mystère, un problème)",
+          "alt": [],
+          "ex": "She solved the mystery in one afternoon."
+        },
+        {
+          "en": "investigate",
+          "fr": "enquêter",
+          "alt": [],
+          "ex": "Two detectives are investigating the theft."
+        },
+        {
+          "en": "guilty",
+          "fr": "coupable",
+          "alt": [],
+          "ex": "Everyone thought he was guilty, but he wasn't."
+        },
+        {
+          "en": "notice",
+          "fr": "remarquer",
+          "alt": [],
+          "ex": "Did you notice anything strange?"
+        },
+        {
+          "en": "realize",
+          "fr": "se rendre compte",
+          "alt": [],
+          "ex": "I realized that I had forgotten my lunch."
+        },
+        {
+          "en": "missing",
+          "fr": "disparu, manquant",
+          "alt": [],
+          "ex": "My grandma's ring was missing."
+        },
+        {
+          "en": "unlocked",
+          "fr": "déverrouillé (pas barré à clé)",
+          "alt": [],
+          "ex": "The back door had been unlocked all night."
+        },
+        {
+          "en": "torn",
+          "fr": "déchiré",
+          "alt": [
+            "ripped"
+          ],
+          "ex": "The old map was torn in half."
+        },
+        {
+          "en": "by the time",
+          "fr": "le temps que, au moment où (déjà)",
+          "alt": [],
+          "ex": "By the time we arrived, the cake had disappeared."
+        }
       ],
       "sentences": [
-        { "en": "I realized that I had left my backpack on the bus.", "fr": "Je me suis rendu compte que j'avais oublié mon sac à dos dans l'autobus.", "trap": ["has", "leaved"], "alt": [] },
-        { "en": "By the time we got to the party, the cake had disappeared.", "fr": "Le temps qu'on arrive à la fête, le gâteau avait disparu.", "trap": ["has", "was"], "alt": ["The cake had disappeared by the time we got to the party."] },
-        { "en": "Had you ever seen the suspect before that night?", "fr": "Avais-tu déjà vu le suspect avant cette nuit-là ?", "trap": ["Have", "Did"], "alt": [] },
-        { "en": "She had been waiting for an hour when the bus finally came.", "fr": "Elle attendait depuis une heure quand l'autobus est enfin arrivé.", "trap": ["since", "was"], "alt": [] },
-        { "en": "The witness hadn't noticed anything strange that evening.", "fr": "Le témoin n'avait rien remarqué de bizarre ce soir-là.", "trap": ["didn't", "haven't"], "alt": [] },
-        { "en": "When I came out of the library, someone had stolen my bike.", "fr": "Quand je suis sorti de la bibliothèque, quelqu'un avait volé mon vélo.", "trap": ["has", "stealed"], "alt": [] },
-        { "en": "The detective found a footprint that the thief had left near the window.", "fr": "La détective a trouvé une empreinte de pas que le voleur avait laissée près de la fenêtre.", "trap": ["has", "leaved"], "alt": [] },
-        { "en": "Nobody knew who had taken the last piece of cake.", "fr": "Personne ne savait qui avait pris le dernier morceau de gâteau.", "trap": ["has", "taked"], "alt": [] },
-        { "en": "They had been investigating the case for months before they found a clue.", "fr": "Ils enquêtaient sur l'affaire depuis des mois avant de trouver un indice.", "trap": ["since", "were"], "alt": [] },
-        { "en": "After the guests had gone home, Mom noticed that her ring was missing.", "fr": "Après le départ des invités, maman a remarqué que sa bague avait disparu.", "trap": ["have", "is"], "alt": ["Mom noticed that her ring was missing after the guests had gone home."] },
-        { "en": "I hadn't finished my homework, so I couldn't go skating.", "fr": "Je n'avais pas fini mes devoirs, alors je ne pouvais pas aller patiner.", "trap": ["didn't", "haven't"], "alt": [] },
-        { "en": "Why had the back door been unlocked all night?", "fr": "Pourquoi la porte arrière était-elle restée déverrouillée toute la nuit ?", "trap": ["has", "did"], "alt": [] }
+        {
+          "en": "I realized that I had left my backpack on the bus.",
+          "fr": "Je me suis rendu compte que j'avais oublié mon sac à dos dans l'autobus.",
+          "trap": [
+            "has",
+            "leaved"
+          ],
+          "alt": []
+        },
+        {
+          "en": "By the time we got to the party, the cake had disappeared.",
+          "fr": "Le temps qu'on arrive à la fête, le gâteau avait disparu.",
+          "trap": [
+            "has",
+            "was"
+          ],
+          "alt": [
+            "The cake had disappeared by the time we got to the party."
+          ]
+        },
+        {
+          "en": "Had you ever seen the suspect before that night?",
+          "fr": "Avais-tu déjà vu le suspect avant cette nuit-là ?",
+          "trap": [
+            "Have",
+            "Did"
+          ],
+          "alt": []
+        },
+        {
+          "en": "She had been waiting for an hour when the bus finally came.",
+          "fr": "Elle attendait depuis une heure quand l'autobus est enfin arrivé.",
+          "trap": [
+            "since",
+            "was"
+          ],
+          "alt": []
+        },
+        {
+          "en": "The witness hadn't noticed anything strange that evening.",
+          "fr": "Le témoin n'avait rien remarqué de bizarre ce soir-là.",
+          "trap": [
+            "didn't",
+            "haven't"
+          ],
+          "alt": []
+        },
+        {
+          "en": "When I came out of the library, someone had stolen my bike.",
+          "fr": "Quand je suis sorti de la bibliothèque, quelqu'un avait volé mon vélo.",
+          "trap": [
+            "has",
+            "stealed"
+          ],
+          "alt": []
+        },
+        {
+          "en": "The detective found a footprint that the thief had left near the window.",
+          "fr": "La détective a trouvé une empreinte de pas que le voleur avait laissée près de la fenêtre.",
+          "trap": [
+            "has",
+            "leaved"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Nobody knew who had taken the last piece of cake.",
+          "fr": "Personne ne savait qui avait pris le dernier morceau de gâteau.",
+          "trap": [
+            "has",
+            "taked"
+          ],
+          "alt": []
+        },
+        {
+          "en": "They had been investigating the case for months before they found a clue.",
+          "fr": "Ils enquêtaient sur l'affaire depuis des mois avant de trouver un indice.",
+          "trap": [
+            "since",
+            "were"
+          ],
+          "alt": []
+        },
+        {
+          "en": "After the guests had gone home, Mom noticed that her ring was missing.",
+          "fr": "Après le départ des invités, maman a remarqué que sa bague avait disparu.",
+          "trap": [
+            "have",
+            "is"
+          ],
+          "alt": [
+            "Mom noticed that her ring was missing after the guests had gone home."
+          ]
+        },
+        {
+          "en": "I hadn't finished my homework, so I couldn't go skating.",
+          "fr": "Je n'avais pas fini mes devoirs, alors je ne pouvais pas aller patiner.",
+          "trap": [
+            "didn't",
+            "haven't"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Why had the back door been unlocked all night?",
+          "fr": "Pourquoi la porte arrière était-elle restée déverrouillée toute la nuit ?",
+          "trap": [
+            "has",
+            "did"
+          ],
+          "alt": []
+        }
       ],
       "grammar": [
-        { "type": "mcq", "q": "When we got to the theatre, the movie ___, so we missed the beginning.", "choices": ["had already started", "has already started", "already starts", "was already start"], "answer": 0, "explain": "Le film a commencé AVANT notre arrivée : past perfect, had + participe passé." },
-        { "type": "mcq", "q": "She ___ for two hours when her mom finally called.", "choices": ["was waiting", "waited since", "had been waiting", "has been waiting"], "answer": 2, "explain": "« Elle attendait depuis deux heures » à un moment du passé : had been + -ing, avec for." },
-        { "type": "mcq", "q": "By the time I woke up, my brother ___ all the pancakes.", "choices": ["ate", "has eaten", "eats", "had eaten"], "answer": 3, "explain": "By the time + passé → l'autre action était déjà finie : had eaten." },
-        { "type": "mcq", "q": "Quelle phrase veut dire que le bus était déjà parti quand je suis arrivé ?", "choices": ["When I arrived, the bus left.", "When I arrived, the bus had left.", "When I arrived, the bus was leaving.", "When I arrived, the bus leaves."], "answer": 1, "explain": "Had left = le bus est parti avant mon arrivée. Left tout seul = il part juste après." },
-        { "type": "mcq", "q": "___ you ever met her before the party?", "choices": ["Had", "Have", "Did", "Were"], "answer": 0, "explain": "« Avant la fête » est un moment passé : on remonte plus loin avec had + participe (met)." },
-        { "type": "mcq", "q": "Quel est le participe passé de steal ?", "choices": ["stealed", "stole", "stolen", "stealen"], "answer": 2, "explain": "steal → stole → stolen : Someone had stolen my bike." },
-        { "type": "fill", "q": "By the time we reached the station, the train ___.", "hint": "leave", "answer": ["had left", "had already left"], "explain": "Le train est parti avant notre arrivée : had left." },
-        { "type": "fill", "q": "Liam was exhausted because he ___ all afternoon.", "hint": "run, forme continue", "answer": ["had been running"], "explain": "Une action qui a duré avant un moment du passé : had been + -ing." },
-        { "type": "fill", "q": "It was the first time I ___ a real moose.", "hint": "see", "answer": ["had seen", "had ever seen"], "explain": "Après It was the first time, on utilise le past perfect : had seen." },
-        { "type": "fill", "q": "___ she already gone home when you called?", "hint": "have", "answer": ["Had"], "explain": "Question au past perfect : Had + sujet + participe passé." },
-        { "type": "fill", "q": "By the time she was ten, Maya ___ in four different cities.", "hint": "live", "answer": ["had lived"], "explain": "Avant ses dix ans, c'était déjà fait : had lived." },
-        { "type": "fill", "q": "When I opened the fridge, I realized that someone ___ my sandwich.", "hint": "eat", "answer": ["had eaten", "had already eaten"], "explain": "Quelqu'un l'a mangé AVANT que j'ouvre le frigo : had eaten." },
-        { "type": "fill", "q": "The ground was wet because it ___ all night.", "hint": "rain, forme continue", "answer": ["had been raining"], "explain": "La pluie a duré toute la nuit avant ce moment : had been raining." },
-        { "type": "error", "q": "When I got home, my sister has already eaten dinner.", "wrong": 6, "fix": ["had"], "explain": "L'histoire est au passé (got) : on remonte avec had, pas has." },
-        { "type": "error", "q": "They had been waiting since two hours when the door finally opened.", "wrong": 4, "fix": ["for"], "explain": "Une durée (two hours) → for. Since s'emploie avec un point de départ." },
-        { "type": "error", "q": "I had never saw such a strange footprint before.", "wrong": 3, "fix": ["seen"], "explain": "Après had, il faut le participe passé : seen, pas saw." },
-        { "type": "error", "q": "By the time the police arrived, the thief had already ran away.", "wrong": 10, "fix": ["run"], "explain": "run → ran → run : après had, c'est le participe run." },
-        { "type": "error", "q": "Had you finish your homework before the movie started?", "wrong": 2, "fix": ["finished"], "explain": "Had + participe passé : finished." }
+        {
+          "type": "mcq",
+          "q": "When we got to the theatre, the movie ___, so we missed the beginning.",
+          "choices": [
+            "had already started",
+            "has already started",
+            "already starts",
+            "was already start"
+          ],
+          "answer": 0,
+          "explain": "Le film a commencé AVANT notre arrivée : past perfect, had + participe passé."
+        },
+        {
+          "type": "mcq",
+          "q": "She ___ for two hours when her mom finally called.",
+          "choices": [
+            "was waiting",
+            "waited since",
+            "had been waiting",
+            "has been waiting"
+          ],
+          "answer": 2,
+          "explain": "« Elle attendait depuis deux heures » à un moment du passé : had been + -ing, avec for."
+        },
+        {
+          "type": "mcq",
+          "q": "By the time I woke up, my brother ___ all the pancakes.",
+          "choices": [
+            "ate",
+            "has eaten",
+            "eats",
+            "had eaten"
+          ],
+          "answer": 3,
+          "explain": "By the time + passé → l'autre action était déjà finie : had eaten."
+        },
+        {
+          "type": "mcq",
+          "q": "Quelle phrase veut dire que le bus était déjà parti quand je suis arrivé ?",
+          "choices": [
+            "When I arrived, the bus left.",
+            "When I arrived, the bus had left.",
+            "When I arrived, the bus was leaving.",
+            "When I arrived, the bus leaves."
+          ],
+          "answer": 1,
+          "explain": "Had left = le bus est parti avant mon arrivée. Left tout seul = il part juste après."
+        },
+        {
+          "type": "mcq",
+          "q": "___ you ever met her before the party?",
+          "choices": [
+            "Had",
+            "Have",
+            "Did",
+            "Were"
+          ],
+          "answer": 0,
+          "explain": "« Avant la fête » est un moment passé : on remonte plus loin avec had + participe (met)."
+        },
+        {
+          "type": "mcq",
+          "q": "Quel est le participe passé de steal ?",
+          "choices": [
+            "stealed",
+            "stole",
+            "stolen",
+            "stealen"
+          ],
+          "answer": 2,
+          "explain": "steal → stole → stolen : Someone had stolen my bike."
+        },
+        {
+          "type": "fill",
+          "q": "By the time we reached the station, the train ___.",
+          "hint": "leave",
+          "answer": [
+            "had left",
+            "had already left"
+          ],
+          "explain": "Le train est parti avant notre arrivée : had left."
+        },
+        {
+          "type": "fill",
+          "q": "Liam was exhausted because he ___ all afternoon.",
+          "hint": "run, forme continue",
+          "answer": [
+            "had been running"
+          ],
+          "explain": "Une action qui a duré avant un moment du passé : had been + -ing."
+        },
+        {
+          "type": "fill",
+          "q": "It was the first time I ___ a real moose.",
+          "hint": "see",
+          "answer": [
+            "had seen",
+            "had ever seen"
+          ],
+          "explain": "Après It was the first time, on utilise le past perfect : had seen."
+        },
+        {
+          "type": "fill",
+          "q": "___ she already gone home when you called?",
+          "hint": "have",
+          "answer": [
+            "Had"
+          ],
+          "explain": "Question au past perfect : Had + sujet + participe passé."
+        },
+        {
+          "type": "fill",
+          "q": "By the time she was ten, Maya ___ in four different cities.",
+          "hint": "live",
+          "answer": [
+            "had lived"
+          ],
+          "explain": "Avant ses dix ans, c'était déjà fait : had lived."
+        },
+        {
+          "type": "fill",
+          "q": "When I opened the fridge, I realized that someone ___ my sandwich.",
+          "hint": "eat",
+          "answer": [
+            "had eaten",
+            "had already eaten"
+          ],
+          "explain": "Quelqu'un l'a mangé AVANT que j'ouvre le frigo : had eaten."
+        },
+        {
+          "type": "fill",
+          "q": "The ground was wet because it ___ all night.",
+          "hint": "rain, forme continue",
+          "answer": [
+            "had been raining"
+          ],
+          "explain": "La pluie a duré toute la nuit avant ce moment : had been raining."
+        },
+        {
+          "type": "error",
+          "q": "When I got home, my sister has already eaten dinner.",
+          "wrong": 6,
+          "fix": [
+            "had"
+          ],
+          "explain": "L'histoire est au passé (got) : on remonte avec had, pas has."
+        },
+        {
+          "type": "error",
+          "q": "They had been waiting since two hours when the door finally opened.",
+          "wrong": 4,
+          "fix": [
+            "for"
+          ],
+          "explain": "Une durée (two hours) → for. Since s'emploie avec un point de départ."
+        },
+        {
+          "type": "error",
+          "q": "I had never saw such a strange footprint before.",
+          "wrong": 3,
+          "fix": [
+            "seen"
+          ],
+          "explain": "Après had, il faut le participe passé : seen, pas saw."
+        },
+        {
+          "type": "error",
+          "q": "By the time the police arrived, the thief had already ran away.",
+          "wrong": 10,
+          "fix": [
+            "run"
+          ],
+          "explain": "run → ran → run : après had, c'est le participe run."
+        },
+        {
+          "type": "error",
+          "q": "Had you finish your homework before the movie started?",
+          "wrong": 2,
+          "fix": [
+            "finished"
+          ],
+          "explain": "Had + participe passé : finished."
+        }
       ],
       "reading": {
         "title": "The Case of the Missing Medal",
         "text": "On the morning of the big swim meet, Malik opened his locker and froze. His gold medal was missing. He had brought it to the pool the day before to show his teammates, and he was sure that he had locked the door before he left.\n\nMalik decided to investigate. He looked for clues and soon noticed a small wet footprint near the lockers. It was much too small to be his. Then he spoke to the only witness, the caretaker, Gilles. Gilles had been cleaning the hallway all evening, and he hadn't seen any suspects. However, he remembered hearing quick footsteps and a little laugh just before closing time.\n\nMalik thought about it. Who had small feet, had been at the pool that evening, and loved to laugh? Suddenly, he realized what had happened. His little sister, Zoé, had come with their dad to pick him up after practice. While Malik was in the shower, she had found the locker key in his jacket.\n\nMalik called home right away. His dad answered and started to laugh. Zoé had been wearing the medal since breakfast and pretending to be an Olympic champion. She wasn't really guilty of anything bad. She had only wanted to feel like her big brother for a day.\n\nThat afternoon, Malik swam faster than ever and won a second medal. When he got home, he gave it to Zoé. The case was solved, and everybody was happy.",
         "questions": [
-          { "q": "Why did Malik think that the footprint wasn't his?", "choices": ["It was wet.", "It was too small.", "It was near the door.", "It was full of chocolate."], "answer": 1 },
-          { "q": "What had Gilles been doing all evening?", "choices": ["Swimming in the pool", "Looking for the medal", "Cleaning the hallway", "Talking to Malik's dad"], "answer": 2 },
-          { "q": "How had Zoé opened the locker?", "choices": ["She had broken the door.", "She had asked Gilles for help.", "The locker had been unlocked all night.", "She had used the key from Malik's jacket."], "answer": 3 },
-          { "q": "Why did Malik suspect his sister?", "choices": ["Gilles had seen her take the medal.", "The clues matched her: small feet, a laugh, and being at the pool.", "She had told him about her plan.", "She had won a medal the year before."], "answer": 1 },
-          { "q": "What kind of person is Zoé, probably?", "choices": ["A dangerous thief", "A swimmer on Malik's team", "A playful little sister who admires her brother", "A shy girl who never laughs"], "answer": 2 },
-          { "q": "How did the story end?", "choices": ["Malik won another medal and gave it to his sister.", "Malik was angry at Zoé.", "Zoé gave the medal to Gilles.", "The family called the police."], "answer": 0 }
+          {
+            "q": "Why did Malik think that the footprint wasn't his?",
+            "choices": [
+              "It was wet.",
+              "It was too small.",
+              "It was near the door.",
+              "It was full of chocolate."
+            ],
+            "answer": 1
+          },
+          {
+            "q": "What had Gilles been doing all evening?",
+            "choices": [
+              "Swimming in the pool",
+              "Looking for the medal",
+              "Cleaning the hallway",
+              "Talking to Malik's dad"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "How had Zoé opened the locker?",
+            "choices": [
+              "She had broken the door.",
+              "She had asked Gilles for help.",
+              "The locker had been unlocked all night.",
+              "She had used the key from Malik's jacket."
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Why did Malik suspect his sister?",
+            "choices": [
+              "Gilles had seen her take the medal.",
+              "The clues matched her: small feet, a laugh, and being at the pool.",
+              "She had told him about her plan.",
+              "She had won a medal the year before."
+            ],
+            "answer": 1
+          },
+          {
+            "q": "What kind of person is Zoé, probably?",
+            "choices": [
+              "A dangerous thief",
+              "A swimmer on Malik's team",
+              "A playful little sister who admires her brother",
+              "A shy girl who never laughs"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "How did the story end?",
+            "choices": [
+              "Malik won another medal and gave it to his sister.",
+              "Malik was angry at Zoé.",
+              "Zoé gave the medal to Gilles.",
+              "The family called the police."
+            ],
+            "answer": 0
+          }
         ]
       }
     },
@@ -157,15 +638,39 @@
         },
         {
           "type": "table",
-          "head": ["Paroles exactes", "Discours rapporté"],
+          "head": [
+            "Paroles exactes",
+            "Discours rapporté"
+          ],
           "rows": [
-            ["[[I am tired.]]", "[[She said she was tired.]]"],
-            ["[[I'm playing.]]", "[[He said he was playing.]]"],
-            ["[[I lost my phone.]]", "[[She said she had lost her phone.]]"],
-            ["[[I have finished.]]", "[[He said he had finished.]]"],
-            ["[[I will help you.]]", "[[She said she would help me.]]"],
-            ["[[I can swim.]]", "[[He said he could swim.]]"],
-            ["[[I must go.]]", "[[She said she had to go.]]"]
+            [
+              "[[I am tired.]]",
+              "[[She said she was tired.]]"
+            ],
+            [
+              "[[I'm playing.]]",
+              "[[He said he was playing.]]"
+            ],
+            [
+              "[[I lost my phone.]]",
+              "[[She said she had lost her phone.]]"
+            ],
+            [
+              "[[I have finished.]]",
+              "[[He said he had finished.]]"
+            ],
+            [
+              "[[I will help you.]]",
+              "[[She said she would help me.]]"
+            ],
+            [
+              "[[I can swim.]]",
+              "[[He said he could swim.]]"
+            ],
+            [
+              "[[I must go.]]",
+              "[[She said she had to go.]]"
+            ]
           ]
         },
         {
@@ -185,23 +690,56 @@
         },
         {
           "type": "table",
-          "head": ["Dans les paroles", "Dans le récit"],
+          "head": [
+            "Dans les paroles",
+            "Dans le récit"
+          ],
           "rows": [
-            ["now", "then"],
-            ["today / tonight", "that day / that night"],
-            ["tomorrow", "[[the next day]] / [[the following day]]"],
-            ["yesterday", "[[the day before]] / [[the previous day]]"],
-            ["last week", "the week before / the previous week"],
-            ["here / this", "there / that"]
+            [
+              "now",
+              "then"
+            ],
+            [
+              "today / tonight",
+              "that day / that night"
+            ],
+            [
+              "tomorrow",
+              "[[the next day]] / [[the following day]]"
+            ],
+            [
+              "yesterday",
+              "[[the day before]] / [[the previous day]]"
+            ],
+            [
+              "last week",
+              "the week before / the previous week"
+            ],
+            [
+              "here / this",
+              "there / that"
+            ]
           ]
         },
         {
           "type": "examples",
           "items": [
-            { "en": "The coach told us not to skate near the river.", "fr": "L'entraîneur nous a dit de ne pas patiner près de la rivière." },
-            { "en": "My mom asked me where I had put her keys.", "fr": "Ma mère m'a demandé où j'avais mis ses clés." },
-            { "en": "Amir admitted that he had eaten the last cookie.", "fr": "Amir a avoué qu'il avait mangé le dernier biscuit." },
-            { "en": "She asked me whether I was coming to the game.", "fr": "Elle m'a demandé si je venais au match." }
+            {
+              "en": "The coach told us not to skate near the river.",
+              "fr": "L'entraîneur nous a dit de ne pas patiner près de la rivière."
+            },
+            {
+              "en": "My mom asked me where I had put her keys.",
+              "fr": "Ma mère m'a demandé où j'avais mis ses clés."
+            },
+            {
+              "en": "Amir admitted that he had eaten the last cookie.",
+              "fr": "Amir a avoué qu'il avait mangé le dernier biscuit."
+            },
+            {
+              "en": "She asked me whether I was coming to the game.",
+              "fr": "Elle m'a demandé si je venais au match."
+            }
           ]
         },
         {
@@ -212,81 +750,530 @@
           "type": "dialogue",
           "title": "La réunion manquée",
           "lines": [
-            { "who": "Zoé", "en": "What did the coach say? I missed the meeting.", "fr": "Qu'est-ce que l'entraîneuse a dit ? J'ai manqué la réunion." },
-            { "who": "Liam", "en": "She told us that the game had been moved to Saturday.", "fr": "Elle nous a dit que le match avait été déplacé à samedi." },
-            { "who": "Zoé", "en": "Seriously? Did she say why?", "fr": "Sérieux ? A-t-elle dit pourquoi ?" },
-            { "who": "Liam", "en": "She explained that the other team's bus had broken down.", "fr": "Elle a expliqué que l'autobus de l'autre équipe était tombé en panne." },
-            { "who": "Zoé", "en": "Oh no! Did anyone complain?", "fr": "Oh non ! Quelqu'un s'est plaint ?" },
-            { "who": "Liam", "en": "Malik did, of course. And she reminded us not to forget our water bottles this time.", "fr": "Malik, évidemment. Et elle nous a rappelé de ne pas oublier nos gourdes cette fois." },
-            { "who": "Zoé", "en": "Did she ask about me?", "fr": "Est-ce qu'elle a demandé de mes nouvelles ?" },
-            { "who": "Liam", "en": "Yes, she asked if you were feeling better.", "fr": "Oui, elle a demandé si tu allais mieux." }
+            {
+              "who": "Zoé",
+              "en": "What did the coach say? I missed the meeting.",
+              "fr": "Qu'est-ce que l'entraîneuse a dit ? J'ai manqué la réunion."
+            },
+            {
+              "who": "Liam",
+              "en": "She told us that the game had been moved to Saturday.",
+              "fr": "Elle nous a dit que le match avait été déplacé à samedi."
+            },
+            {
+              "who": "Zoé",
+              "en": "Seriously? Did she say why?",
+              "fr": "Sérieux ? A-t-elle dit pourquoi ?"
+            },
+            {
+              "who": "Liam",
+              "en": "She explained that the other team's bus had broken down.",
+              "fr": "Elle a expliqué que l'autobus de l'autre équipe était tombé en panne."
+            },
+            {
+              "who": "Zoé",
+              "en": "Oh no! Did anyone complain?",
+              "fr": "Oh non ! Quelqu'un s'est plaint ?"
+            },
+            {
+              "who": "Liam",
+              "en": "Malik did, of course. And she reminded us not to forget our water bottles this time.",
+              "fr": "Malik, évidemment. Et elle nous a rappelé de ne pas oublier nos gourdes cette fois."
+            },
+            {
+              "who": "Zoé",
+              "en": "Did she ask about me?",
+              "fr": "Est-ce qu'elle a demandé de mes nouvelles ?"
+            },
+            {
+              "who": "Liam",
+              "en": "Yes, she asked if you were feeling better.",
+              "fr": "Oui, elle a demandé si tu allais mieux."
+            }
           ]
         }
       ],
       "vocab": [
-        { "en": "admit", "fr": "avouer, admettre", "alt": [], "ex": "Félix admitted that he had eaten the last cookie." },
-        { "en": "deny", "fr": "nier", "alt": [], "ex": "She denied taking my charger." },
-        { "en": "warn", "fr": "avertir, mettre en garde", "alt": [], "ex": "The coach warned us not to skate on the thin ice." },
-        { "en": "suggest", "fr": "suggérer, proposer", "alt": [], "ex": "Mei suggested going to the beach." },
-        { "en": "complain", "fr": "se plaindre", "alt": [], "ex": "My brother always complains about his homework." },
-        { "en": "refuse", "fr": "refuser", "alt": [], "ex": "The cat refused to come down from the tree." },
-        { "en": "remind", "fr": "rappeler (à quelqu'un de faire quelque chose)", "alt": [], "ex": "Remind me to call Grandma tonight." },
-        { "en": "insist", "fr": "insister", "alt": [], "ex": "He insisted on paying for my ice cream." },
-        { "en": "apologize", "fr": "s'excuser", "alt": [], "ex": "Noah apologized for being late." },
-        { "en": "whether", "fr": "si (entre deux possibilités)", "alt": ["if"], "ex": "She asked me whether I was coming." },
-        { "en": "wonder", "fr": "se demander", "alt": [], "ex": "I wonder where my keys are." },
-        { "en": "reply", "fr": "répondre (à un message, à une question)", "alt": ["answer", "respond"], "ex": "He didn't reply to my text." },
-        { "en": "claim", "fr": "affirmer (sans preuve)", "alt": [], "ex": "Jaden claims that he saw a bear in his backyard." },
-        { "en": "point out", "fr": "faire remarquer, souligner", "alt": [], "ex": "Sofia pointed out that the store was closed." },
-        { "en": "boast", "fr": "se vanter", "alt": ["brag"], "ex": "He boasted that he had scored three goals." },
-        { "en": "gossip", "fr": "potins, commérages", "alt": [], "ex": "Don't believe all the gossip you hear." },
-        { "en": "the day before", "fr": "la veille", "alt": ["the previous day"], "ex": "She said that she had seen him the day before." },
-        { "en": "the next day", "fr": "le lendemain", "alt": ["the following day"], "ex": "He promised that he would call the next day." }
+        {
+          "en": "admit",
+          "fr": "avouer, admettre",
+          "alt": [],
+          "ex": "Félix admitted that he had eaten the last cookie."
+        },
+        {
+          "en": "deny",
+          "fr": "nier",
+          "alt": [],
+          "ex": "She denied taking my charger."
+        },
+        {
+          "en": "warn",
+          "fr": "avertir, mettre en garde",
+          "alt": [],
+          "ex": "The coach warned us not to skate on the thin ice."
+        },
+        {
+          "en": "suggest",
+          "fr": "suggérer, proposer",
+          "alt": [],
+          "ex": "Mei suggested going to the beach."
+        },
+        {
+          "en": "complain",
+          "fr": "se plaindre",
+          "alt": [],
+          "ex": "My brother always complains about his homework."
+        },
+        {
+          "en": "refuse",
+          "fr": "refuser",
+          "alt": [],
+          "ex": "The cat refused to come down from the tree."
+        },
+        {
+          "en": "remind",
+          "fr": "rappeler (à quelqu'un de faire quelque chose)",
+          "alt": [],
+          "ex": "Remind me to call Grandma tonight."
+        },
+        {
+          "en": "insist",
+          "fr": "insister",
+          "alt": [],
+          "ex": "He insisted on paying for my ice cream."
+        },
+        {
+          "en": "apologize",
+          "fr": "s'excuser",
+          "alt": [],
+          "ex": "Noah apologized for being late."
+        },
+        {
+          "en": "whether",
+          "fr": "si (entre deux possibilités)",
+          "alt": [
+            "if"
+          ],
+          "ex": "She asked me whether I was coming."
+        },
+        {
+          "en": "wonder",
+          "fr": "se demander",
+          "alt": [],
+          "ex": "I wonder where my keys are."
+        },
+        {
+          "en": "reply",
+          "fr": "répondre (à un message, à une question)",
+          "alt": [
+            "answer",
+            "respond"
+          ],
+          "ex": "He didn't reply to my text."
+        },
+        {
+          "en": "claim",
+          "fr": "affirmer (sans preuve)",
+          "alt": [],
+          "ex": "Jaden claims that he saw a bear in his backyard."
+        },
+        {
+          "en": "point out",
+          "fr": "faire remarquer, souligner",
+          "alt": [],
+          "ex": "Sofia pointed out that the store was closed."
+        },
+        {
+          "en": "boast",
+          "fr": "se vanter",
+          "alt": [
+            "brag"
+          ],
+          "ex": "He boasted that he had scored three goals."
+        },
+        {
+          "en": "gossip",
+          "fr": "potins, commérages",
+          "alt": [],
+          "ex": "Don't believe all the gossip you hear."
+        },
+        {
+          "en": "the day before",
+          "fr": "la veille",
+          "alt": [
+            "the previous day"
+          ],
+          "ex": "She said that she had seen him the day before."
+        },
+        {
+          "en": "the next day",
+          "fr": "le lendemain",
+          "alt": [
+            "the following day"
+          ],
+          "ex": "He promised that he would call the next day."
+        }
       ],
       "sentences": [
-        { "en": "She told me that she was too tired to go out.", "fr": "Elle m'a dit qu'elle était trop fatiguée pour sortir.", "trap": ["said", "says"], "alt": [] },
-        { "en": "My mom asked me where I had put her keys.", "fr": "Ma mère m'a demandé où j'avais mis ses clés.", "trap": ["did", "said"], "alt": [] },
-        { "en": "The coach told us not to skate near the river.", "fr": "L'entraîneur nous a dit de ne pas patiner près de la rivière.", "trap": ["don't", "said"], "alt": [] },
-        { "en": "He asked me if I wanted to come to his party.", "fr": "Il m'a demandé si je voulais venir à sa fête.", "trap": ["do", "did"], "alt": [] },
-        { "en": "Amir admitted that he had eaten the last cookie.", "fr": "Amir a avoué qu'il avait mangé le dernier biscuit.", "trap": ["has", "eat"], "alt": [] },
-        { "en": "Maya suggested going to the museum on Saturday.", "fr": "Maya a proposé d'aller au musée samedi.", "trap": ["go", "me"], "alt": [] },
-        { "en": "The teacher reminded us to bring our permission forms.", "fr": "L'enseignante nous a rappelé d'apporter nos formulaires d'autorisation.", "trap": ["remembered", "bringing"], "alt": [] },
-        { "en": "Karim denied breaking the vase, but nobody believed him.", "fr": "Karim a nié avoir cassé le vase, mais personne ne l'a cru.", "trap": ["to", "broke"], "alt": [] },
-        { "en": "She said that she would call me the next day.", "fr": "Elle a dit qu'elle m'appellerait le lendemain.", "trap": ["will", "told"], "alt": [] },
-        { "en": "Olivia wanted to know whether the library was open on Sunday.", "fr": "Olivia voulait savoir si la bibliothèque était ouverte le dimanche.", "trap": ["does", "did"], "alt": [] },
-        { "en": "He apologized for being late and promised it wouldn't happen again.", "fr": "Il s'est excusé d'être en retard et a promis que ça n'arriverait plus.", "trap": ["to", "of"], "alt": [] },
-        { "en": "My little brother complained that nobody ever listened to him.", "fr": "Mon petit frère s'est plaint que personne ne l'écoutait jamais.", "trap": ["listen", "about"], "alt": [] }
+        {
+          "en": "She told me that she was too tired to go out.",
+          "fr": "Elle m'a dit qu'elle était trop fatiguée pour sortir.",
+          "trap": [
+            "said",
+            "says"
+          ],
+          "alt": []
+        },
+        {
+          "en": "My mom asked me where I had put her keys.",
+          "fr": "Ma mère m'a demandé où j'avais mis ses clés.",
+          "trap": [
+            "did",
+            "said"
+          ],
+          "alt": []
+        },
+        {
+          "en": "The coach told us not to skate near the river.",
+          "fr": "L'entraîneur nous a dit de ne pas patiner près de la rivière.",
+          "trap": [
+            "don't",
+            "said"
+          ],
+          "alt": []
+        },
+        {
+          "en": "He asked me if I wanted to come to his party.",
+          "fr": "Il m'a demandé si je voulais venir à sa fête.",
+          "trap": [
+            "do",
+            "did"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Amir admitted that he had eaten the last cookie.",
+          "fr": "Amir a avoué qu'il avait mangé le dernier biscuit.",
+          "trap": [
+            "has",
+            "eat"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Maya suggested going to the museum on Saturday.",
+          "fr": "Maya a proposé d'aller au musée samedi.",
+          "trap": [
+            "go",
+            "me"
+          ],
+          "alt": []
+        },
+        {
+          "en": "The teacher reminded us to bring our permission forms.",
+          "fr": "L'enseignante nous a rappelé d'apporter nos formulaires d'autorisation.",
+          "trap": [
+            "remembered",
+            "bringing"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Karim denied breaking the vase, but nobody believed him.",
+          "fr": "Karim a nié avoir cassé le vase, mais personne ne l'a cru.",
+          "trap": [
+            "to",
+            "broke"
+          ],
+          "alt": []
+        },
+        {
+          "en": "She said that she would call me the next day.",
+          "fr": "Elle a dit qu'elle m'appellerait le lendemain.",
+          "trap": [
+            "will",
+            "told"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Olivia wanted to know whether the library was open on Sunday.",
+          "fr": "Olivia voulait savoir si la bibliothèque était ouverte le dimanche.",
+          "trap": [
+            "does",
+            "did"
+          ],
+          "alt": []
+        },
+        {
+          "en": "He apologized for being late and promised it wouldn't happen again.",
+          "fr": "Il s'est excusé d'être en retard et a promis que ça n'arriverait plus.",
+          "trap": [
+            "to",
+            "of"
+          ],
+          "alt": []
+        },
+        {
+          "en": "My little brother complained that nobody ever listened to him.",
+          "fr": "Mon petit frère s'est plaint que personne ne l'écoutait jamais.",
+          "trap": [
+            "listen",
+            "about"
+          ],
+          "alt": []
+        }
       ],
       "grammar": [
-        { "type": "mcq", "q": "Emma ___ me that she had lost her phone.", "choices": ["said", "told", "told to", "said me"], "answer": 1, "explain": "Avec la personne (me) juste après, on utilise tell : She told me…" },
-        { "type": "mcq", "q": "He asked me where ___.", "choices": ["did I live", "do I live", "I lived", "lived I"], "answer": 2, "explain": "Question rapportée : pas d'inversion, pas de did. Sujet + verbe : where I lived." },
-        { "type": "mcq", "q": "Last month, Lucas said: \"I will help you tomorrow.\" → Last month, Lucas said that he would help me ___.", "choices": ["tomorrow", "the day before", "yesterday", "the next day"], "answer": 3, "explain": "La scène est passée depuis longtemps : tomorrow devient the next day (ou the following day)." },
-        { "type": "mcq", "q": "Mei suggested ___ a movie after school.", "choices": ["watching", "to watch", "us to watch", "watch"], "answer": 0, "explain": "Suggest + -ing. Jamais suggest to ni suggest someone to." },
-        { "type": "mcq", "q": "She asked me ___ I could help her with her project.", "choices": ["that", "whether", "what", "did"], "answer": 1, "explain": "Question oui/non rapportée → whether (ou if)." },
-        { "type": "mcq", "q": "Félix warned us ___ the dog.", "choices": ["to not touching", "don't touch", "not to touch", "to don't touch"], "answer": 2, "explain": "Warn someone not to + verbe : not se place avant to." },
-        { "type": "fill", "q": "The coach asked us if we ___ ready, and we all shouted yes.", "hint": "be", "answer": ["were"], "explain": "Après asked, on recule le temps : are → were." },
-        { "type": "fill", "q": "Last week, Ana said that she ___ come to my party that night.", "hint": "can't", "answer": ["couldn't"], "explain": "La soirée est passée : can't recule en couldn't." },
-        { "type": "fill", "q": "Last Monday, Noah said: \"I have finished my project.\" → Noah told me that he ___ his project.", "hint": "finish", "answer": ["had finished", "had already finished"], "explain": "« I have finished » rapporté au passé devient had finished." },
-        { "type": "fill", "q": "My parents told me ___ my phone at the dinner table.", "hint": "not / use", "answer": ["not to use"], "explain": "Interdiction rapportée : told me not to + verbe." },
-        { "type": "fill", "q": "Sofia said that she had seen the movie ___.", "hint": "la veille", "answer": ["the day before", "the previous day"], "explain": "Yesterday devient the day before (ou the previous day) dans un récit." },
-        { "type": "fill", "q": "He refused ___ me his password.", "hint": "tell", "answer": ["to tell"], "explain": "Refuse + to + verbe." },
-        { "type": "fill", "q": "Jaden insisted ___ for everyone's pizza.", "hint": "pay", "answer": ["on paying"], "explain": "Insist on + -ing." },
-        { "type": "error", "q": "He said me that he was hungry.", "wrong": 1, "fix": ["told", "said to"], "explain": "On ne dit jamais said me : He told me (ou He said to me)." },
-        { "type": "error", "q": "She asked me that I was ready.", "wrong": 3, "fix": ["if", "whether"], "explain": "Pour une question oui/non rapportée : if ou whether, pas that." },
-        { "type": "error", "q": "The teacher told us don't run in the hallway.", "wrong": 4, "fix": ["not to"], "explain": "Ordre négatif rapporté : told us not to run." },
-        { "type": "error", "q": "Last year, Priya told me she will move to Vancouver the next month.", "wrong": 6, "fix": ["would"], "explain": "Dans un récit passé (the next month), will recule en would." },
-        { "type": "error", "q": "Mom reminded me to taking out the garbage.", "wrong": 4, "fix": ["take"], "explain": "Remind someone to + verbe de base : to take." }
+        {
+          "type": "mcq",
+          "q": "Emma ___ me that she had lost her phone.",
+          "choices": [
+            "said",
+            "told",
+            "told to",
+            "said me"
+          ],
+          "answer": 1,
+          "explain": "Avec la personne (me) juste après, on utilise tell : She told me…"
+        },
+        {
+          "type": "mcq",
+          "q": "He asked me where ___.",
+          "choices": [
+            "did I live",
+            "do I live",
+            "I lived",
+            "lived I"
+          ],
+          "answer": 2,
+          "explain": "Question rapportée : pas d'inversion, pas de did. Sujet + verbe : where I lived."
+        },
+        {
+          "type": "mcq",
+          "q": "Last month, Lucas said: \"I will help you tomorrow.\" → Last month, Lucas said that he would help me ___.",
+          "choices": [
+            "tomorrow",
+            "the day before",
+            "yesterday",
+            "the next day"
+          ],
+          "answer": 3,
+          "explain": "La scène est passée depuis longtemps : tomorrow devient the next day (ou the following day)."
+        },
+        {
+          "type": "mcq",
+          "q": "Mei suggested ___ a movie after school.",
+          "choices": [
+            "watching",
+            "to watch",
+            "us to watch",
+            "watch"
+          ],
+          "answer": 0,
+          "explain": "Suggest + -ing. Jamais suggest to ni suggest someone to."
+        },
+        {
+          "type": "mcq",
+          "q": "She asked me ___ I could help her with her project.",
+          "choices": [
+            "that",
+            "whether",
+            "what",
+            "did"
+          ],
+          "answer": 1,
+          "explain": "Question oui/non rapportée → whether (ou if)."
+        },
+        {
+          "type": "mcq",
+          "q": "Félix warned us ___ the dog.",
+          "choices": [
+            "to not touching",
+            "don't touch",
+            "not to touch",
+            "to don't touch"
+          ],
+          "answer": 2,
+          "explain": "Warn someone not to + verbe : not se place avant to."
+        },
+        {
+          "type": "fill",
+          "q": "The coach asked us if we ___ ready, and we all shouted yes.",
+          "hint": "be",
+          "answer": [
+            "were"
+          ],
+          "explain": "Après asked, on recule le temps : are → were."
+        },
+        {
+          "type": "fill",
+          "q": "Last week, Ana said that she ___ come to my party that night.",
+          "hint": "can't",
+          "answer": [
+            "couldn't"
+          ],
+          "explain": "La soirée est passée : can't recule en couldn't."
+        },
+        {
+          "type": "fill",
+          "q": "Last Monday, Noah said: \"I have finished my project.\" → Noah told me that he ___ his project.",
+          "hint": "finish",
+          "answer": [
+            "had finished",
+            "had already finished"
+          ],
+          "explain": "« I have finished » rapporté au passé devient had finished."
+        },
+        {
+          "type": "fill",
+          "q": "My parents told me ___ my phone at the dinner table.",
+          "hint": "not / use",
+          "answer": [
+            "not to use"
+          ],
+          "explain": "Interdiction rapportée : told me not to + verbe."
+        },
+        {
+          "type": "fill",
+          "q": "Sofia said that she had seen the movie ___.",
+          "hint": "la veille",
+          "answer": [
+            "the day before",
+            "the previous day"
+          ],
+          "explain": "Yesterday devient the day before (ou the previous day) dans un récit."
+        },
+        {
+          "type": "fill",
+          "q": "He refused ___ me his password.",
+          "hint": "tell",
+          "answer": [
+            "to tell"
+          ],
+          "explain": "Refuse + to + verbe."
+        },
+        {
+          "type": "fill",
+          "q": "Jaden insisted ___ for everyone's pizza.",
+          "hint": "pay",
+          "answer": [
+            "on paying"
+          ],
+          "explain": "Insist on + -ing."
+        },
+        {
+          "type": "error",
+          "q": "He said me that he was hungry.",
+          "wrong": 1,
+          "fix": [
+            "told",
+            "said to"
+          ],
+          "explain": "On ne dit jamais said me : He told me (ou He said to me)."
+        },
+        {
+          "type": "error",
+          "q": "She asked me that I was ready.",
+          "wrong": 3,
+          "fix": [
+            "if",
+            "whether"
+          ],
+          "explain": "Pour une question oui/non rapportée : if ou whether, pas that."
+        },
+        {
+          "type": "error",
+          "q": "The teacher told us don't run in the hallway.",
+          "wrong": 4,
+          "fix": [
+            "not to"
+          ],
+          "explain": "Ordre négatif rapporté : told us not to run."
+        },
+        {
+          "type": "error",
+          "q": "Last year, Priya told me she will move to Vancouver the next month.",
+          "wrong": 6,
+          "fix": [
+            "would"
+          ],
+          "explain": "Dans un récit passé (the next month), will recule en would."
+        },
+        {
+          "type": "error",
+          "q": "Mom reminded me to taking out the garbage.",
+          "wrong": 4,
+          "fix": [
+            "take"
+          ],
+          "explain": "Remind someone to + verbe de base : to take."
+        }
       ],
       "reading": {
         "title": "Interview with a Legend",
         "text": "Last week, Léa interviewed Madame Gagnon, the oldest teacher at her school, for the student newspaper. Madame Gagnon was going to retire at the end of the year, and everybody wanted to know her secrets.\n\nFirst, Léa asked her how she had become a teacher. Madame Gagnon replied that she had started her career in a tiny village school before she moved to Ottawa. She admitted that she had been terrified on her first day. In fact, she had forgotten all her students' names by lunchtime!\n\nThen Léa asked whether teaching had changed a lot. The teacher pointed out that her students now used tablets instead of chalkboards, but she insisted that kids hadn't really changed. They still laughed at the same jokes, she said, and they still complained about homework.\n\nLéa wondered what her favourite memory was. Madame Gagnon smiled and explained that one winter, her whole class had built a giant snow castle in the schoolyard. The principal had warned them not to make it too high, but they had refused to stop. It had become so big that the town newspaper had published a picture of it.\n\nAt the end, Madame Gagnon reminded Léa to study hard, and she suggested that every student should read at least one book a month. She told her that a good book was the best friend you could have.\n\nThe next day, Léa wrote her article. It became the most popular article of the year.",
         "questions": [
-          { "q": "What did Madame Gagnon admit about her first day?", "choices": ["She had been late.", "She had been very scared.", "She had lost her keys.", "She had taught in Ottawa."], "answer": 1 },
-          { "q": "According to Madame Gagnon, what hasn't really changed?", "choices": ["The tablets", "The chalkboards", "The principal", "The kids"], "answer": 3 },
-          { "q": "What had the principal told the class?", "choices": ["To build the castle higher", "Not to make the castle too high", "To send a picture to the newspaper", "Not to play in the snow"], "answer": 1 },
-          { "q": "What did Madame Gagnon suggest?", "choices": ["That every student should read a book a month", "That students should write for the newspaper", "That kids should use more tablets", "That Léa should become a teacher"], "answer": 0 },
-          { "q": "What does the snow castle story show about Madame Gagnon's class?", "choices": ["They were afraid of the principal.", "They didn't like winter.", "They were determined and worked well together.", "They were very lazy."], "answer": 2 },
-          { "q": "Why was the article probably so popular?", "choices": ["Because it was very short", "Because many students knew and liked Madame Gagnon", "Because it had a picture of the principal", "Because Léa was the principal's daughter"], "answer": 1 }
+          {
+            "q": "What did Madame Gagnon admit about her first day?",
+            "choices": [
+              "She had been late.",
+              "She had been very scared.",
+              "She had lost her keys.",
+              "She had taught in Ottawa."
+            ],
+            "answer": 1
+          },
+          {
+            "q": "According to Madame Gagnon, what hasn't really changed?",
+            "choices": [
+              "The tablets",
+              "The chalkboards",
+              "The principal",
+              "The kids"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "What had the principal told the class?",
+            "choices": [
+              "To build the castle higher",
+              "Not to make the castle too high",
+              "To send a picture to the newspaper",
+              "Not to play in the snow"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "What did Madame Gagnon suggest?",
+            "choices": [
+              "That every student should read a book a month",
+              "That students should write for the newspaper",
+              "That kids should use more tablets",
+              "That Léa should become a teacher"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "What does the snow castle story show about Madame Gagnon's class?",
+            "choices": [
+              "They were afraid of the principal.",
+              "They didn't like winter.",
+              "They were determined and worked well together.",
+              "They were very lazy."
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Why was the article probably so popular?",
+            "choices": [
+              "Because it was very short",
+              "Because many students knew and liked Madame Gagnon",
+              "Because it had a picture of the principal",
+              "Because Léa was the principal's daughter"
+            ],
+            "answer": 1
+          }
         ]
       }
     },
@@ -307,18 +1294,62 @@
         },
         {
           "type": "table",
-          "head": ["Connecteur", "Sens", "Suivi de…"],
+          "head": [
+            "Connecteur",
+            "Sens",
+            "Suivi de…"
+          ],
           "rows": [
-            ["[[although]] / [[even though]]", "bien que / même si (c'est vrai)", "sujet + verbe"],
-            ["[[despite]] / [[in spite of]]", "malgré", "nom ou -ing"],
-            ["[[however]]", "cependant", "nouvelle phrase + virgule"],
-            ["[[whereas]]", "alors que (contraste)", "sujet + verbe"],
-            ["[[on the other hand]]", "d'un autre côté", "nouvelle phrase + virgule"],
-            ["[[moreover]]", "de plus", "nouvelle phrase + virgule"],
-            ["[[therefore]] / [[as a result]]", "par conséquent", "nouvelle phrase + virgule"],
-            ["[[unless]]", "à moins que (= if… not)", "sujet + verbe au présent"],
-            ["[[in order to]]", "afin de", "verbe de base"],
-            ["[[so that]]", "pour que", "sujet + can / could / would"]
+            [
+              "[[although]] / [[even though]]",
+              "bien que / même si (c'est vrai)",
+              "sujet + verbe"
+            ],
+            [
+              "[[despite]] / [[in spite of]]",
+              "malgré",
+              "nom ou -ing"
+            ],
+            [
+              "[[however]]",
+              "cependant",
+              "nouvelle phrase + virgule"
+            ],
+            [
+              "[[whereas]]",
+              "alors que (contraste)",
+              "sujet + verbe"
+            ],
+            [
+              "[[on the other hand]]",
+              "d'un autre côté",
+              "nouvelle phrase + virgule"
+            ],
+            [
+              "[[moreover]]",
+              "de plus",
+              "nouvelle phrase + virgule"
+            ],
+            [
+              "[[therefore]] / [[as a result]]",
+              "par conséquent",
+              "nouvelle phrase + virgule"
+            ],
+            [
+              "[[unless]]",
+              "à moins que (= if… not)",
+              "sujet + verbe au présent"
+            ],
+            [
+              "[[in order to]]",
+              "afin de",
+              "verbe de base"
+            ],
+            [
+              "[[so that]]",
+              "pour que",
+              "sujet + can / could / would"
+            ]
           ]
         },
         {
@@ -329,10 +1360,22 @@
         {
           "type": "examples",
           "items": [
-            { "en": "Despite the cold weather, hundreds of people skated on the canal.", "fr": "Malgré le froid, des centaines de personnes ont patiné sur le canal." },
-            { "en": "My sister loves winter, whereas I prefer summer.", "fr": "Ma sœur adore l'hiver, alors que moi, je préfère l'été." },
-            { "en": "You won't get into the game unless you buy a ticket.", "fr": "Tu n'entreras pas au match à moins d'acheter un billet." },
-            { "en": "The roads were icy. As a result, all the buses were cancelled.", "fr": "Les routes étaient glacées. Résultat : tous les autobus ont été annulés." }
+            {
+              "en": "Despite the cold weather, hundreds of people skated on the canal.",
+              "fr": "Malgré le froid, des centaines de personnes ont patiné sur le canal."
+            },
+            {
+              "en": "My sister loves winter, whereas I prefer summer.",
+              "fr": "Ma sœur adore l'hiver, alors que moi, je préfère l'été."
+            },
+            {
+              "en": "You won't get into the game unless you buy a ticket.",
+              "fr": "Tu n'entreras pas au match à moins d'acheter un billet."
+            },
+            {
+              "en": "The roads were icy. As a result, all the buses were cancelled.",
+              "fr": "Les routes étaient glacées. Résultat : tous les autobus ont été annulés."
+            }
           ]
         },
         {
@@ -343,78 +1386,548 @@
           "type": "dialogue",
           "title": "Pratique de débat",
           "lines": [
-            { "who": "Maya", "en": "I think we should ban phones at school. They're a huge distraction.", "fr": "Je pense qu'on devrait interdire les téléphones à l'école. Ils nous distraient énormément." },
-            { "who": "Karim", "en": "I see your point. However, phones can be useful for research.", "fr": "Je comprends ton point de vue. Cependant, les téléphones peuvent être utiles pour faire de la recherche." },
-            { "who": "Maya", "en": "True, but students often play games in class even though it's against the rules.", "fr": "C'est vrai, mais les élèves jouent souvent à des jeux en classe, même si c'est interdit." },
-            { "who": "Karim", "en": "On the other hand, some students need their phones in order to contact their parents.", "fr": "D'un autre côté, certains élèves ont besoin de leur téléphone afin de joindre leurs parents." },
-            { "who": "Maya", "en": "Okay, phones could stay in lockers so that students can use them at lunch.", "fr": "D'accord, les téléphones pourraient rester dans les casiers pour que les élèves puissent s'en servir au dîner." },
-            { "who": "Karim", "en": "That sounds fair. Despite our different points of view, I think we've found a solution!", "fr": "Ça me semble juste. Malgré nos points de vue différents, je pense qu'on a trouvé une solution !" }
+            {
+              "who": "Maya",
+              "en": "I think we should ban phones at school. They're a huge distraction.",
+              "fr": "Je pense qu'on devrait interdire les téléphones à l'école. Ils nous distraient énormément."
+            },
+            {
+              "who": "Karim",
+              "en": "I see your point. However, phones can be useful for research.",
+              "fr": "Je comprends ton point de vue. Cependant, les téléphones peuvent être utiles pour faire de la recherche."
+            },
+            {
+              "who": "Maya",
+              "en": "True, but students often play games in class even though it's against the rules.",
+              "fr": "C'est vrai, mais les élèves jouent souvent à des jeux en classe, même si c'est interdit."
+            },
+            {
+              "who": "Karim",
+              "en": "On the other hand, some students need their phones in order to contact their parents.",
+              "fr": "D'un autre côté, certains élèves ont besoin de leur téléphone afin de joindre leurs parents."
+            },
+            {
+              "who": "Maya",
+              "en": "Okay, phones could stay in lockers so that students can use them at lunch.",
+              "fr": "D'accord, les téléphones pourraient rester dans les casiers pour que les élèves puissent s'en servir au dîner."
+            },
+            {
+              "who": "Karim",
+              "en": "That sounds fair. Despite our different points of view, I think we've found a solution!",
+              "fr": "Ça me semble juste. Malgré nos points de vue différents, je pense qu'on a trouvé une solution !"
+            }
           ]
         }
       ],
       "vocab": [
-        { "en": "however", "fr": "cependant, toutefois", "alt": ["nevertheless"], "ex": "It was cold. However, we went outside." },
-        { "en": "although", "fr": "bien que", "alt": ["though"], "ex": "Although she was sick, she came to the show." },
-        { "en": "even though", "fr": "même si (et c'est vrai)", "alt": [], "ex": "He kept playing even though his ankle hurt." },
-        { "en": "despite", "fr": "malgré", "alt": ["in spite of"], "ex": "Despite the rain, the game continued." },
-        { "en": "whereas", "fr": "alors que (pour opposer deux choses)", "alt": ["while"], "ex": "I love math, whereas my brother hates it." },
-        { "en": "on the other hand", "fr": "d'un autre côté, par contre", "alt": [], "ex": "On the other hand, the tickets are expensive." },
-        { "en": "moreover", "fr": "de plus, en outre", "alt": ["furthermore", "in addition", "what's more"], "ex": "The park is beautiful. Moreover, it's free." },
-        { "en": "therefore", "fr": "par conséquent, donc", "alt": ["consequently"], "ex": "He was sick and therefore missed the game." },
-        { "en": "as a result", "fr": "résultat : (à cause de ça)", "alt": [], "ex": "It snowed all night. As a result, school was closed." },
-        { "en": "unless", "fr": "à moins que", "alt": [], "ex": "We'll go skating unless it's too cold." },
-        { "en": "in order to", "fr": "afin de", "alt": ["so as to"], "ex": "She left early in order to catch the bus." },
-        { "en": "so that", "fr": "pour que, afin que", "alt": [], "ex": "Speak louder so that everyone can hear you." },
-        { "en": "point of view", "fr": "point de vue", "alt": ["viewpoint"], "ex": "I understand your point of view." },
-        { "en": "drawback", "fr": "inconvénient", "alt": ["disadvantage", "downside"], "ex": "The only drawback is the price." },
-        { "en": "convince", "fr": "convaincre", "alt": ["persuade"], "ex": "She convinced me to join the team." },
-        { "en": "fair", "fr": "juste, équitable", "alt": [], "ex": "It's not fair! I always do the dishes." },
-        { "en": "debate", "fr": "débat", "alt": [], "ex": "Our class held a debate about homework." },
-        { "en": "disagree", "fr": "ne pas être d'accord", "alt": [], "ex": "I'm sorry, but I disagree with you." }
+        {
+          "en": "however",
+          "fr": "cependant, toutefois",
+          "alt": [
+            "nevertheless"
+          ],
+          "ex": "It was cold. However, we went outside."
+        },
+        {
+          "en": "although",
+          "fr": "bien que",
+          "alt": [
+            "though"
+          ],
+          "ex": "Although she was sick, she came to the show."
+        },
+        {
+          "en": "even though",
+          "fr": "même si (et c'est vrai)",
+          "alt": [],
+          "ex": "He kept playing even though his ankle hurt."
+        },
+        {
+          "en": "despite",
+          "fr": "malgré",
+          "alt": [
+            "in spite of"
+          ],
+          "ex": "Despite the rain, the game continued."
+        },
+        {
+          "en": "whereas",
+          "fr": "alors que (pour opposer deux choses)",
+          "alt": [
+            "while"
+          ],
+          "ex": "I love math, whereas my brother hates it."
+        },
+        {
+          "en": "on the other hand",
+          "fr": "d'un autre côté, par contre",
+          "alt": [],
+          "ex": "On the other hand, the tickets are expensive."
+        },
+        {
+          "en": "moreover",
+          "fr": "de plus, en outre",
+          "alt": [
+            "furthermore",
+            "in addition",
+            "what's more"
+          ],
+          "ex": "The park is beautiful. Moreover, it's free."
+        },
+        {
+          "en": "therefore",
+          "fr": "par conséquent, donc",
+          "alt": [
+            "consequently"
+          ],
+          "ex": "He was sick and therefore missed the game."
+        },
+        {
+          "en": "as a result",
+          "fr": "résultat : (à cause de ça)",
+          "alt": [],
+          "ex": "It snowed all night. As a result, school was closed."
+        },
+        {
+          "en": "unless",
+          "fr": "à moins que",
+          "alt": [],
+          "ex": "We'll go skating unless it's too cold."
+        },
+        {
+          "en": "in order to",
+          "fr": "afin de",
+          "alt": [
+            "so as to"
+          ],
+          "ex": "She left early in order to catch the bus."
+        },
+        {
+          "en": "so that",
+          "fr": "pour que, afin que",
+          "alt": [],
+          "ex": "Speak louder so that everyone can hear you."
+        },
+        {
+          "en": "point of view",
+          "fr": "point de vue",
+          "alt": [
+            "viewpoint"
+          ],
+          "ex": "I understand your point of view."
+        },
+        {
+          "en": "drawback",
+          "fr": "inconvénient",
+          "alt": [
+            "disadvantage",
+            "downside"
+          ],
+          "ex": "The only drawback is the price."
+        },
+        {
+          "en": "convince",
+          "fr": "convaincre",
+          "alt": [
+            "persuade"
+          ],
+          "ex": "She convinced me to join the team."
+        },
+        {
+          "en": "fair",
+          "fr": "juste, équitable",
+          "alt": [],
+          "ex": "It's not fair! I always do the dishes."
+        },
+        {
+          "en": "debate",
+          "fr": "débat",
+          "alt": [],
+          "ex": "Our class held a debate about homework."
+        },
+        {
+          "en": "disagree",
+          "fr": "ne pas être d'accord",
+          "alt": [],
+          "ex": "I'm sorry, but I disagree with you."
+        }
       ],
       "sentences": [
-        { "en": "Although it was raining, we decided to play soccer outside.", "fr": "Bien qu'il pleuve, on a décidé de jouer au soccer dehors.", "trap": ["Despite", "of"], "alt": ["We decided to play soccer outside although it was raining."] },
-        { "en": "Despite the cold weather, hundreds of people skated on the canal.", "fr": "Malgré le froid, des centaines de personnes ont patiné sur le canal.", "trap": ["Although", "spite"], "alt": ["Hundreds of people skated on the canal despite the cold weather."] },
-        { "en": "She kept playing even though her ankle hurt.", "fr": "Elle a continué de jouer même si elle avait mal à la cheville.", "trap": ["despite", "of"], "alt": ["Even though her ankle hurt she kept playing."] },
-        { "en": "You won't get into the game unless you buy a ticket.", "fr": "Tu n'entreras pas au match à moins d'acheter un billet.", "trap": ["don't", "will"], "alt": ["Unless you buy a ticket you won't get into the game."] },
-        { "en": "We left early in order to catch the first bus.", "fr": "On est partis tôt afin de prendre le premier autobus.", "trap": ["for", "that"], "alt": ["In order to catch the first bus we left early."] },
-        { "en": "I'm saving my money so that I can buy a new bike.", "fr": "J'économise mon argent pour pouvoir m'acheter un nouveau vélo.", "trap": ["for", "to"], "alt": [] },
-        { "en": "My sister loves winter, whereas I prefer summer.", "fr": "Ma sœur adore l'hiver, alors que moi, je préfère l'été.", "trap": ["despite", "spite"], "alt": ["Whereas I prefer summer, my sister loves winter."] },
-        { "en": "The roads were icy, and as a result, all the buses were cancelled.", "fr": "Les routes étaient glacées et, par conséquent, tous les autobus ont été annulés.", "trap": ["despite", "however"], "alt": [] },
-        { "en": "Moreover, the new park would give kids a safe place to play.", "fr": "De plus, le nouveau parc donnerait aux enfants un endroit sécuritaire pour jouer.", "trap": ["Despite", "Although"], "alt": [] },
-        { "en": "In spite of being tired, Ethan finished his science project.", "fr": "Malgré sa fatigue, Ethan a terminé son projet de sciences.", "trap": ["was", "though"], "alt": ["Ethan finished his science project in spite of being tired."] },
-        { "en": "On the other hand, a later start would make mornings less stressful.", "fr": "D'un autre côté, si l'école commençait plus tard, les matins seraient moins stressants.", "trap": ["Despite", "making"], "alt": [] }
+        {
+          "en": "Although it was raining, we decided to play soccer outside.",
+          "fr": "Bien qu'il pleuve, on a décidé de jouer au soccer dehors.",
+          "trap": [
+            "Despite",
+            "of"
+          ],
+          "alt": [
+            "We decided to play soccer outside although it was raining."
+          ]
+        },
+        {
+          "en": "Despite the cold weather, hundreds of people skated on the canal.",
+          "fr": "Malgré le froid, des centaines de personnes ont patiné sur le canal.",
+          "trap": [
+            "Although",
+            "spite"
+          ],
+          "alt": [
+            "Hundreds of people skated on the canal despite the cold weather."
+          ]
+        },
+        {
+          "en": "She kept playing even though her ankle hurt.",
+          "fr": "Elle a continué de jouer même si elle avait mal à la cheville.",
+          "trap": [
+            "despite",
+            "of"
+          ],
+          "alt": [
+            "Even though her ankle hurt she kept playing."
+          ]
+        },
+        {
+          "en": "You won't get into the game unless you buy a ticket.",
+          "fr": "Tu n'entreras pas au match à moins d'acheter un billet.",
+          "trap": [
+            "don't",
+            "will"
+          ],
+          "alt": [
+            "Unless you buy a ticket you won't get into the game."
+          ]
+        },
+        {
+          "en": "We left early in order to catch the first bus.",
+          "fr": "On est partis tôt afin de prendre le premier autobus.",
+          "trap": [
+            "for",
+            "that"
+          ],
+          "alt": [
+            "In order to catch the first bus we left early."
+          ]
+        },
+        {
+          "en": "I'm saving my money so that I can buy a new bike.",
+          "fr": "J'économise mon argent pour pouvoir m'acheter un nouveau vélo.",
+          "trap": [
+            "for",
+            "to"
+          ],
+          "alt": []
+        },
+        {
+          "en": "My sister loves winter, whereas I prefer summer.",
+          "fr": "Ma sœur adore l'hiver, alors que moi, je préfère l'été.",
+          "trap": [
+            "despite",
+            "spite"
+          ],
+          "alt": [
+            "Whereas I prefer summer, my sister loves winter."
+          ]
+        },
+        {
+          "en": "The roads were icy, and as a result, all the buses were cancelled.",
+          "fr": "Les routes étaient glacées et, par conséquent, tous les autobus ont été annulés.",
+          "trap": [
+            "despite",
+            "however"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Moreover, the new park would give kids a safe place to play.",
+          "fr": "De plus, le nouveau parc donnerait aux enfants un endroit sécuritaire pour jouer.",
+          "trap": [
+            "Despite",
+            "Although"
+          ],
+          "alt": []
+        },
+        {
+          "en": "In spite of being tired, Ethan finished his science project.",
+          "fr": "Malgré sa fatigue, Ethan a terminé son projet de sciences.",
+          "trap": [
+            "was",
+            "though"
+          ],
+          "alt": [
+            "Ethan finished his science project in spite of being tired."
+          ]
+        },
+        {
+          "en": "On the other hand, a later start would make mornings less stressful.",
+          "fr": "D'un autre côté, si l'école commençait plus tard, les matins seraient moins stressants.",
+          "trap": [
+            "Despite",
+            "making"
+          ],
+          "alt": []
+        }
       ],
       "grammar": [
-        { "type": "mcq", "q": "___ the rain, the game wasn't cancelled.", "choices": ["Although", "Despite", "Despite of", "Even though"], "answer": 1, "explain": "Devant un nom (the rain) : despite, sans of. Although veut une phrase complète." },
-        { "type": "mcq", "q": "I'll go to the party ___ I have too much homework.", "choices": ["whereas", "despite", "therefore", "unless"], "answer": 3, "explain": "Unless = à moins que : j'irai, sauf si j'ai trop de devoirs." },
-        { "type": "mcq", "q": "We whispered ___ we wouldn't wake the baby.", "choices": ["so that", "in order to", "despite", "whereas"], "answer": 0, "explain": "Un but suivi d'un sujet + would : so that. In order to est suivi d'un verbe." },
-        { "type": "mcq", "q": "Hockey is very popular in Canada, ___ soccer is the favourite sport in Brazil.", "choices": ["therefore", "whereas", "in order to", "despite"], "answer": 1, "explain": "Whereas oppose deux faits : ici le Canada et le Brésil." },
-        { "type": "mcq", "q": "Laquelle de ces phrases est correcte ?", "choices": ["Despite of the snow, we went out.", "Despite it snowed, we went out.", "Although the snow, we went out.", "In spite of the snow, we went out."], "answer": 3, "explain": "In spite of + nom. Despite of n'existe pas, et although veut un sujet + verbe." },
-        { "type": "mcq", "q": "C'est vrai que j'étais fatigué : « ___ I was really tired, I stayed up to watch the end of the game. »", "choices": ["Even if", "Even though", "Despite", "Unless"], "answer": 1, "explain": "Fait réel → even though. Even if sert pour une hypothèse." },
-        { "type": "fill", "q": "___ the traffic, we arrived on time.", "hint": "malgré", "answer": ["Despite", "In spite of"], "explain": "Malgré + nom : despite ou in spite of." },
-        { "type": "fill", "q": "She took the bus ___ save time.", "hint": "afin de", "answer": ["in order to", "so as to", "to"], "explain": "But + verbe de base : in order to save time." },
-        { "type": "fill", "q": "You can't join the team ___ you come to every practice.", "hint": "à moins que", "answer": ["unless"], "explain": "Unless = if… not : tu ne peux pas entrer dans l'équipe si tu ne viens pas à chaque pratique." },
-        { "type": "fill", "q": "The museum was closed. ___, we went to the park instead.", "hint": "par conséquent", "answer": ["Therefore", "As a result", "Consequently"], "explain": "Une conséquence en début de phrase : Therefore, (ou As a result,)." },
-        { "type": "fill", "q": "It was a great movie. ___, the ending was a bit sad.", "hint": "cependant", "answer": ["However", "Nevertheless"], "explain": "Une opposition en début de phrase, avec une virgule : However," },
-        { "type": "fill", "q": "___ he had practised for weeks, he forgot his lines on stage.", "hint": "même si (c'est vrai)", "answer": ["Even though", "Although", "Though"], "explain": "Fait réel + phrase complète : even though (ou although)." },
-        { "type": "fill", "q": "I'll lend you my bike ___ you can get to school faster.", "hint": "pour que", "answer": ["so that", "so"], "explain": "But + sujet + can : so that." },
-        { "type": "error", "q": "Although the cold, we went skating on the canal.", "wrong": 0, "fix": ["Despite", "In spite of"], "explain": "Devant un nom (the cold), il faut despite ou in spite of." },
-        { "type": "error", "q": "However it was late, we kept talking.", "wrong": 0, "fix": ["Although", "Even though", "Though"], "explain": "Pour relier deux idées dans une même phrase : although, pas however." },
-        { "type": "error", "q": "I wore a warm hat so that I don't get cold.", "wrong": 8, "fix": ["wouldn't", "didn't"], "explain": "Après un verbe au passé (wore), so that + wouldn't." },
-        { "type": "error", "q": "She went to the library in order to finding a book about whales.", "wrong": 8, "fix": ["find"], "explain": "In order to + verbe de base : to find." },
-        { "type": "error", "q": "Despite he trained every day, he lost the race.", "wrong": 0, "fix": ["Although", "Even though", "Though"], "explain": "Devant sujet + verbe (he trained) : although ou even though, pas despite." }
+        {
+          "type": "mcq",
+          "q": "___ the rain, the game wasn't cancelled.",
+          "choices": [
+            "Although",
+            "Despite",
+            "Despite of",
+            "Even though"
+          ],
+          "answer": 1,
+          "explain": "Devant un nom (the rain) : despite, sans of. Although veut une phrase complète."
+        },
+        {
+          "type": "mcq",
+          "q": "I'll go to the party ___ I have too much homework.",
+          "choices": [
+            "whereas",
+            "despite",
+            "therefore",
+            "unless"
+          ],
+          "answer": 3,
+          "explain": "Unless = à moins que : j'irai, sauf si j'ai trop de devoirs."
+        },
+        {
+          "type": "mcq",
+          "q": "We whispered ___ we wouldn't wake the baby.",
+          "choices": [
+            "so that",
+            "in order to",
+            "despite",
+            "whereas"
+          ],
+          "answer": 0,
+          "explain": "Un but suivi d'un sujet + would : so that. In order to est suivi d'un verbe."
+        },
+        {
+          "type": "mcq",
+          "q": "Hockey is very popular in Canada, ___ soccer is the favourite sport in Brazil.",
+          "choices": [
+            "therefore",
+            "whereas",
+            "in order to",
+            "despite"
+          ],
+          "answer": 1,
+          "explain": "Whereas oppose deux faits : ici le Canada et le Brésil."
+        },
+        {
+          "type": "mcq",
+          "q": "Laquelle de ces phrases est correcte ?",
+          "choices": [
+            "Despite of the snow, we went out.",
+            "Despite it snowed, we went out.",
+            "Although the snow, we went out.",
+            "In spite of the snow, we went out."
+          ],
+          "answer": 3,
+          "explain": "In spite of + nom. Despite of n'existe pas, et although veut un sujet + verbe."
+        },
+        {
+          "type": "mcq",
+          "q": "C'est vrai que j'étais fatigué : « ___ I was really tired, I stayed up to watch the end of the game. »",
+          "choices": [
+            "Even if",
+            "Even though",
+            "Despite",
+            "Unless"
+          ],
+          "answer": 1,
+          "explain": "Fait réel → even though. Even if sert pour une hypothèse."
+        },
+        {
+          "type": "fill",
+          "q": "___ the traffic, we arrived on time.",
+          "hint": "malgré",
+          "answer": [
+            "Despite",
+            "In spite of"
+          ],
+          "explain": "Malgré + nom : despite ou in spite of."
+        },
+        {
+          "type": "fill",
+          "q": "She took the bus ___ save time.",
+          "hint": "afin de",
+          "answer": [
+            "in order to",
+            "so as to",
+            "to"
+          ],
+          "explain": "But + verbe de base : in order to save time."
+        },
+        {
+          "type": "fill",
+          "q": "You can't join the team ___ you come to every practice.",
+          "hint": "à moins que",
+          "answer": [
+            "unless"
+          ],
+          "explain": "Unless = if… not : tu ne peux pas entrer dans l'équipe si tu ne viens pas à chaque pratique."
+        },
+        {
+          "type": "fill",
+          "q": "The museum was closed. ___, we went to the park instead.",
+          "hint": "par conséquent",
+          "answer": [
+            "Therefore",
+            "As a result",
+            "Consequently"
+          ],
+          "explain": "Une conséquence en début de phrase : Therefore, (ou As a result,)."
+        },
+        {
+          "type": "fill",
+          "q": "It was a great movie. ___, the ending was a bit sad.",
+          "hint": "cependant",
+          "answer": [
+            "However",
+            "Nevertheless"
+          ],
+          "explain": "Une opposition en début de phrase, avec une virgule : However,"
+        },
+        {
+          "type": "fill",
+          "q": "___ he had practised for weeks, he forgot his lines on stage.",
+          "hint": "même si (c'est vrai)",
+          "answer": [
+            "Even though",
+            "Although",
+            "Though"
+          ],
+          "explain": "Fait réel + phrase complète : even though (ou although)."
+        },
+        {
+          "type": "fill",
+          "q": "I'll lend you my bike ___ you can get to school faster.",
+          "hint": "pour que",
+          "answer": [
+            "so that",
+            "so"
+          ],
+          "explain": "But + sujet + can : so that."
+        },
+        {
+          "type": "error",
+          "q": "Although the cold, we went skating on the canal.",
+          "wrong": 0,
+          "fix": [
+            "Despite",
+            "In spite of"
+          ],
+          "explain": "Devant un nom (the cold), il faut despite ou in spite of."
+        },
+        {
+          "type": "error",
+          "q": "However it was late, we kept talking.",
+          "wrong": 0,
+          "fix": [
+            "Although",
+            "Even though",
+            "Though"
+          ],
+          "explain": "Pour relier deux idées dans une même phrase : although, pas however."
+        },
+        {
+          "type": "error",
+          "q": "I wore a warm hat so that I don't get cold.",
+          "wrong": 8,
+          "fix": [
+            "wouldn't",
+            "didn't"
+          ],
+          "explain": "Après un verbe au passé (wore), so that + wouldn't."
+        },
+        {
+          "type": "error",
+          "q": "She went to the library in order to finding a book about whales.",
+          "wrong": 8,
+          "fix": [
+            "find"
+          ],
+          "explain": "In order to + verbe de base : to find."
+        },
+        {
+          "type": "error",
+          "q": "Despite he trained every day, he lost the race.",
+          "wrong": 0,
+          "fix": [
+            "Although",
+            "Even though",
+            "Though"
+          ],
+          "explain": "Devant sujet + verbe (he trained) : although ou even though, pas despite."
+        }
       ],
       "reading": {
         "title": "Should School Start Later?",
         "text": "Should our school day start an hour later? Last week, our class held a debate on this question, and the room was divided.\n\nPriya's team argued in favour of a later start. Although most students go to bed at a reasonable time, many of them still feel exhausted in the morning. Teenagers' bodies naturally want to fall asleep later than adults' bodies, so getting up at six o'clock is a real struggle. Moreover, tired students find it hard to pay attention. As a result, the first class of the day is often the least productive. A later start would therefore help everyone learn better.\n\nSamuel's team disagreed. They pointed out that a later start would also mean a later finish. Students who play sports or take music lessons would have less time in the afternoon. Some parents, on the other hand, drop their kids off on their way to work, and a later start might cause them serious problems. Samuel also argued that, unless students put their phones away at night, an extra hour of sleep would change nothing.\n\nIn the end, the class voted. Despite Samuel's strong arguments, Priya's team won by just a few votes. However, everyone agreed on one thing: both sides had made fair points. Our teacher suggested writing a letter to the principal in order to share our ideas, so that the whole school could discuss them.\n\nWhether the school will change its schedule is still a mystery. But one thing is sure: we have never disagreed so politely!",
         "questions": [
-          { "q": "What was the debate about?", "choices": ["Banning phones at school", "Starting the school day later", "Adding more sports", "Writing letters to the principal"], "answer": 1 },
-          { "q": "According to Priya's team, why is the first class often the least productive?", "choices": ["The teacher is often late.", "The classroom is too cold.", "Students are tired and find it hard to concentrate.", "Students are on their phones."], "answer": 2 },
-          { "q": "What problem did Samuel's team mention?", "choices": ["Students would have less time after school.", "Buses would cost more.", "Teachers would need more sleep.", "Students would forget their homework."], "answer": 0 },
-          { "q": "What did Samuel say about phones?", "choices": ["Phones should be allowed in class.", "Phones help students wake up.", "Parents should take their kids' phones.", "An extra hour would be useless unless students stopped using phones at night."], "answer": 3 },
-          { "q": "Which statement best describes the result of the vote?", "choices": ["Priya's team won easily.", "The vote was very close.", "Nobody voted.", "Samuel's team won."], "answer": 1 },
-          { "q": "How does the writer feel about the debate?", "choices": ["Bored", "Proud of how respectful it was", "Angry at Samuel", "Disappointed with the result"], "answer": 1 }
+          {
+            "q": "What was the debate about?",
+            "choices": [
+              "Banning phones at school",
+              "Starting the school day later",
+              "Adding more sports",
+              "Writing letters to the principal"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "According to Priya's team, why is the first class often the least productive?",
+            "choices": [
+              "The teacher is often late.",
+              "The classroom is too cold.",
+              "Students are tired and find it hard to concentrate.",
+              "Students are on their phones."
+            ],
+            "answer": 2
+          },
+          {
+            "q": "What problem did Samuel's team mention?",
+            "choices": [
+              "Students would have less time after school.",
+              "Buses would cost more.",
+              "Teachers would need more sleep.",
+              "Students would forget their homework."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "What did Samuel say about phones?",
+            "choices": [
+              "Phones should be allowed in class.",
+              "Phones help students wake up.",
+              "Parents should take their kids' phones.",
+              "An extra hour would be useless unless students stopped using phones at night."
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Which statement best describes the result of the vote?",
+            "choices": [
+              "Priya's team won easily.",
+              "The vote was very close.",
+              "Nobody voted.",
+              "Samuel's team won."
+            ],
+            "answer": 1
+          },
+          {
+            "q": "How does the writer feel about the debate?",
+            "choices": [
+              "Bored",
+              "Proud of how respectful it was",
+              "Angry at Samuel",
+              "Disappointed with the result"
+            ],
+            "answer": 1
+          }
         ]
       }
     },
@@ -435,16 +1948,43 @@
         },
         {
           "type": "table",
-          "head": ["Verbe", "Collocations"],
+          "head": [
+            "Verbe",
+            "Collocations"
+          ],
           "rows": [
-            ["[[take]]", "a picture, a break, a test, your time, a shower, notes"],
-            ["[[have]]", "fun, a party, a good time, lunch, a test"],
-            ["[[pay]]", "attention, a visit, a compliment"],
-            ["[[keep]]", "a secret, a promise, calm, in touch"],
-            ["[[catch]]", "a cold, the bus, a ball"],
-            ["[[break]]", "a promise, a record, the rules"],
-            ["[[save]]", "time, money, energy"],
-            ["[[waste]]", "time, money, energy"]
+            [
+              "[[take]]",
+              "a picture, a break, a test, your time, a shower, notes"
+            ],
+            [
+              "[[have]]",
+              "fun, a party, a good time, lunch, a test"
+            ],
+            [
+              "[[pay]]",
+              "attention, a visit, a compliment"
+            ],
+            [
+              "[[keep]]",
+              "a secret, a promise, calm, in touch"
+            ],
+            [
+              "[[catch]]",
+              "a cold, the bus, a ball"
+            ],
+            [
+              "[[break]]",
+              "a promise, a record, the rules"
+            ],
+            [
+              "[[save]]",
+              "time, money, energy"
+            ],
+            [
+              "[[waste]]",
+              "time, money, energy"
+            ]
           ]
         },
         {
@@ -459,90 +1999,1182 @@
         {
           "type": "examples",
           "items": [
-            { "en": "Don't worry, everyone makes mistakes.", "fr": "Ne t'inquiète pas, tout le monde fait des erreurs." },
-            { "en": "Could you do me a favour?", "fr": "Peux-tu me rendre service ?" },
-            { "en": "Please pay attention to the instructions.", "fr": "Fais attention aux consignes, s'il te plaît." },
-            { "en": "She broke the school record for the long jump.", "fr": "Elle a battu le record de l'école au saut en longueur." },
-            { "en": "We had so much fun at the sugar shack.", "fr": "On s'est tellement amusés à la cabane à sucre." }
+            {
+              "en": "Don't worry, everyone makes mistakes.",
+              "fr": "Ne t'inquiète pas, tout le monde fait des erreurs."
+            },
+            {
+              "en": "Could you do me a favour?",
+              "fr": "Peux-tu me rendre service ?"
+            },
+            {
+              "en": "Please pay attention to the instructions.",
+              "fr": "Fais attention aux consignes, s'il te plaît."
+            },
+            {
+              "en": "She broke the school record for the long jump.",
+              "fr": "Elle a battu le record de l'école au saut en longueur."
+            },
+            {
+              "en": "We had so much fun at the sugar shack.",
+              "fr": "On s'est tellement amusés à la cabane à sucre."
+            }
           ]
         },
         {
           "type": "dialogue",
           "title": "Le samedi chargé",
           "lines": [
-            { "who": "Sofia", "en": "Do you want to come to the park? We're going to take pictures of the leaves.", "fr": "Veux-tu venir au parc ? On va prendre des photos des feuilles." },
-            { "who": "Félix", "en": "I can't. I have to do the dishes and make my bed first.", "fr": "Je ne peux pas. Je dois faire la vaisselle et faire mon lit d'abord." },
-            { "who": "Sofia", "en": "Come on, it'll only take ten minutes. I'll wait for you.", "fr": "Allez, ça va seulement prendre dix minutes. Je vais t'attendre." },
-            { "who": "Félix", "en": "Okay, but I need to take a break at three. I have a test on Monday.", "fr": "D'accord, mais je dois prendre une pause à trois heures. J'ai un examen lundi." },
-            { "who": "Sofia", "en": "No problem. And bring a jacket so you don't catch a cold!", "fr": "Pas de problème. Et apporte une veste pour ne pas attraper un rhume !" },
-            { "who": "Félix", "en": "Thanks for the advice! See you soon. Let's have fun!", "fr": "Merci du conseil ! À tantôt. On va s'amuser !" }
+            {
+              "who": "Sofia",
+              "en": "Do you want to come to the park? We're going to take pictures of the leaves.",
+              "fr": "Veux-tu venir au parc ? On va prendre des photos des feuilles."
+            },
+            {
+              "who": "Félix",
+              "en": "I can't. I have to do the dishes and make my bed first.",
+              "fr": "Je ne peux pas. Je dois faire la vaisselle et faire mon lit d'abord."
+            },
+            {
+              "who": "Sofia",
+              "en": "Come on, it'll only take ten minutes. I'll wait for you.",
+              "fr": "Allez, ça va seulement prendre dix minutes. Je vais t'attendre."
+            },
+            {
+              "who": "Félix",
+              "en": "Okay, but I need to take a break at three. I have a test on Monday.",
+              "fr": "D'accord, mais je dois prendre une pause à trois heures. J'ai un examen lundi."
+            },
+            {
+              "who": "Sofia",
+              "en": "No problem. And bring a jacket so you don't catch a cold!",
+              "fr": "Pas de problème. Et apporte une veste pour ne pas attraper un rhume !"
+            },
+            {
+              "who": "Félix",
+              "en": "Thanks for the advice! See you soon. Let's have fun!",
+              "fr": "Merci du conseil ! À tantôt. On va s'amuser !"
+            }
           ]
         }
       ],
       "vocab": [
-        { "en": "make a mistake", "fr": "faire une erreur", "alt": [], "ex": "Everyone makes mistakes sometimes." },
-        { "en": "make a decision", "fr": "prendre une décision", "alt": [], "ex": "I need to make a decision before Friday." },
-        { "en": "make an effort", "fr": "faire un effort", "alt": [], "ex": "Try to make an effort in French class." },
-        { "en": "make noise", "fr": "faire du bruit", "alt": ["make a noise"], "ex": "Please don't make noise; the baby is sleeping." },
-        { "en": "do the dishes", "fr": "faire la vaisselle", "alt": ["wash the dishes"], "ex": "It's your turn to do the dishes." },
-        { "en": "do someone a favour", "fr": "rendre service à quelqu'un", "alt": ["do somebody a favour"], "ex": "Can you do me a favour and feed my cat?" },
-        { "en": "do your best", "fr": "faire de ton mieux", "alt": [], "ex": "Just do your best on the test." },
-        { "en": "take a picture", "fr": "prendre une photo", "alt": ["take a photo"], "ex": "Let's take a picture in front of the canal." },
-        { "en": "take a break", "fr": "prendre une pause", "alt": [], "ex": "We worked for two hours, then we took a break." },
-        { "en": "take a test", "fr": "passer un examen", "alt": ["write a test", "take an exam", "write an exam"], "ex": "We're taking a math test tomorrow." },
-        { "en": "pay attention", "fr": "faire attention (écouter)", "alt": [], "ex": "Pay attention, because this is important." },
-        { "en": "have fun", "fr": "s'amuser", "alt": ["have a good time"], "ex": "Have fun at the party!" },
-        { "en": "keep a secret", "fr": "garder un secret", "alt": [], "ex": "Can you keep a secret?" },
-        { "en": "keep a promise", "fr": "tenir une promesse", "alt": ["keep your promise"], "ex": "He always keeps his promises." },
-        { "en": "break a promise", "fr": "ne pas tenir une promesse", "alt": ["break your promise"], "ex": "Never break a promise to a friend." },
-        { "en": "break a record", "fr": "battre un record", "alt": [], "ex": "She broke the school record." },
-        { "en": "catch a cold", "fr": "attraper un rhume", "alt": [], "ex": "Wear a toque or you'll catch a cold." },
-        { "en": "save time", "fr": "gagner du temps", "alt": [], "ex": "Take the highway to save time." },
-        { "en": "waste time", "fr": "perdre du temps", "alt": [], "ex": "Don't waste time on silly videos." }
+        {
+          "en": "make a mistake",
+          "fr": "faire une erreur",
+          "alt": [],
+          "ex": "Everyone makes mistakes sometimes."
+        },
+        {
+          "en": "make a decision",
+          "fr": "prendre une décision",
+          "alt": [],
+          "ex": "I need to make a decision before Friday."
+        },
+        {
+          "en": "make an effort",
+          "fr": "faire un effort",
+          "alt": [],
+          "ex": "Try to make an effort in French class."
+        },
+        {
+          "en": "make noise",
+          "fr": "faire du bruit",
+          "alt": [
+            "make a noise"
+          ],
+          "ex": "Please don't make noise; the baby is sleeping."
+        },
+        {
+          "en": "do the dishes",
+          "fr": "faire la vaisselle",
+          "alt": [
+            "wash the dishes"
+          ],
+          "ex": "It's your turn to do the dishes."
+        },
+        {
+          "en": "do someone a favour",
+          "fr": "rendre service à quelqu'un",
+          "alt": [
+            "do somebody a favour"
+          ],
+          "ex": "Can you do me a favour and feed my cat?"
+        },
+        {
+          "en": "do your best",
+          "fr": "faire de ton mieux",
+          "alt": [],
+          "ex": "Just do your best on the test."
+        },
+        {
+          "en": "take a picture",
+          "fr": "prendre une photo",
+          "alt": [
+            "take a photo"
+          ],
+          "ex": "Let's take a picture in front of the canal."
+        },
+        {
+          "en": "take a break",
+          "fr": "prendre une pause",
+          "alt": [],
+          "ex": "We worked for two hours, then we took a break."
+        },
+        {
+          "en": "take a test",
+          "fr": "passer un examen",
+          "alt": [
+            "write a test",
+            "take an exam",
+            "write an exam"
+          ],
+          "ex": "We're taking a math test tomorrow."
+        },
+        {
+          "en": "pay attention",
+          "fr": "faire attention (écouter)",
+          "alt": [],
+          "ex": "Pay attention, because this is important."
+        },
+        {
+          "en": "have fun",
+          "fr": "s'amuser",
+          "alt": [
+            "have a good time"
+          ],
+          "ex": "Have fun at the party!"
+        },
+        {
+          "en": "keep a secret",
+          "fr": "garder un secret",
+          "alt": [],
+          "ex": "Can you keep a secret?"
+        },
+        {
+          "en": "keep a promise",
+          "fr": "tenir une promesse",
+          "alt": [
+            "keep your promise"
+          ],
+          "ex": "He always keeps his promises."
+        },
+        {
+          "en": "break a promise",
+          "fr": "ne pas tenir une promesse",
+          "alt": [
+            "break your promise"
+          ],
+          "ex": "Never break a promise to a friend."
+        },
+        {
+          "en": "break a record",
+          "fr": "battre un record",
+          "alt": [],
+          "ex": "She broke the school record."
+        },
+        {
+          "en": "catch a cold",
+          "fr": "attraper un rhume",
+          "alt": [],
+          "ex": "Wear a toque or you'll catch a cold."
+        },
+        {
+          "en": "save time",
+          "fr": "gagner du temps",
+          "alt": [],
+          "ex": "Take the highway to save time."
+        },
+        {
+          "en": "waste time",
+          "fr": "perdre du temps",
+          "alt": [],
+          "ex": "Don't waste time on silly videos."
+        }
       ],
       "sentences": [
-        { "en": "Don't worry, everyone makes mistakes when they learn a new language.", "fr": "Ne t'inquiète pas, tout le monde fait des erreurs en apprenant une nouvelle langue.", "trap": ["does", "do"], "alt": [] },
-        { "en": "Could you do me a favour and feed my cat this weekend?", "fr": "Pourrais-tu me rendre service et nourrir mon chat cette fin de semaine ?", "trap": ["make", "for"], "alt": [] },
-        { "en": "Please pay attention, because this will be on the test.", "fr": "Faites attention, s'il vous plaît, parce que ce sera dans l'examen.", "trap": ["make", "do"], "alt": ["Pay attention please, because this will be on the test."] },
-        { "en": "We had so much fun at the sugar shack last weekend.", "fr": "On s'est tellement amusés à la cabane à sucre la fin de semaine dernière.", "trap": ["made", "did"], "alt": ["Last weekend we had so much fun at the sugar shack."] },
-        { "en": "My grandpa took a picture of us in front of Parliament Hill.", "fr": "Mon grand-père nous a pris en photo devant la colline du Parlement.", "trap": ["made", "did"], "alt": [] },
-        { "en": "I wasted the whole afternoon playing video games.", "fr": "J'ai perdu tout l'après-midi à jouer à des jeux vidéo.", "trap": ["lost", "to"], "alt": [] },
-        { "en": "She broke the school record for the long jump.", "fr": "Elle a battu le record de l'école au saut en longueur.", "trap": ["made", "won"], "alt": [] },
-        { "en": "If you take the highway, you'll save at least twenty minutes.", "fr": "Si tu prends l'autoroute, tu vas gagner au moins vingt minutes.", "trap": ["win", "earn"], "alt": ["You'll save at least twenty minutes if you take the highway."] },
-        { "en": "I have to make a decision before the end of the week.", "fr": "Je dois prendre une décision avant la fin de la semaine.", "trap": ["do", "did"], "alt": [] },
-        { "en": "Liam caught a terrible cold during the camping trip.", "fr": "Liam a attrapé un gros rhume pendant le voyage de camping.", "trap": ["took", "catched"], "alt": [] },
-        { "en": "You promised, so you have to keep your promise.", "fr": "Tu as promis, alors tu dois tenir ta promesse.", "trap": ["hold", "do"], "alt": [] },
-        { "en": "Take your time and do your best on the test.", "fr": "Prends ton temps et fais de ton mieux à l'examen.", "trap": ["make", "pass"], "alt": ["Do your best on the test and take your time."] }
+        {
+          "en": "Don't worry, everyone makes mistakes when they learn a new language.",
+          "fr": "Ne t'inquiète pas, tout le monde fait des erreurs en apprenant une nouvelle langue.",
+          "trap": [
+            "does",
+            "do"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Could you do me a favour and feed my cat this weekend?",
+          "fr": "Pourrais-tu me rendre service et nourrir mon chat cette fin de semaine ?",
+          "trap": [
+            "make",
+            "for"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Please pay attention, because this will be on the test.",
+          "fr": "Faites attention, s'il vous plaît, parce que ce sera dans l'examen.",
+          "trap": [
+            "make",
+            "do"
+          ],
+          "alt": [
+            "Pay attention please, because this will be on the test."
+          ]
+        },
+        {
+          "en": "We had so much fun at the sugar shack last weekend.",
+          "fr": "On s'est tellement amusés à la cabane à sucre la fin de semaine dernière.",
+          "trap": [
+            "made",
+            "did"
+          ],
+          "alt": [
+            "Last weekend we had so much fun at the sugar shack."
+          ]
+        },
+        {
+          "en": "My grandpa took a picture of us in front of Parliament Hill.",
+          "fr": "Mon grand-père nous a pris en photo devant la colline du Parlement.",
+          "trap": [
+            "made",
+            "did"
+          ],
+          "alt": []
+        },
+        {
+          "en": "I wasted the whole afternoon playing video games.",
+          "fr": "J'ai perdu tout l'après-midi à jouer à des jeux vidéo.",
+          "trap": [
+            "lost",
+            "to"
+          ],
+          "alt": []
+        },
+        {
+          "en": "She broke the school record for the long jump.",
+          "fr": "Elle a battu le record de l'école au saut en longueur.",
+          "trap": [
+            "made",
+            "won"
+          ],
+          "alt": []
+        },
+        {
+          "en": "If you take the highway, you'll save at least twenty minutes.",
+          "fr": "Si tu prends l'autoroute, tu vas gagner au moins vingt minutes.",
+          "trap": [
+            "win",
+            "earn"
+          ],
+          "alt": [
+            "You'll save at least twenty minutes if you take the highway."
+          ]
+        },
+        {
+          "en": "I have to make a decision before the end of the week.",
+          "fr": "Je dois prendre une décision avant la fin de la semaine.",
+          "trap": [
+            "do",
+            "did"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Liam caught a terrible cold during the camping trip.",
+          "fr": "Liam a attrapé un gros rhume pendant le voyage de camping.",
+          "trap": [
+            "took",
+            "catched"
+          ],
+          "alt": []
+        },
+        {
+          "en": "You promised, so you have to keep your promise.",
+          "fr": "Tu as promis, alors tu dois tenir ta promesse.",
+          "trap": [
+            "hold",
+            "do"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Take your time and do your best on the test.",
+          "fr": "Prends ton temps et fais de ton mieux à l'examen.",
+          "trap": [
+            "make",
+            "pass"
+          ],
+          "alt": [
+            "Do your best on the test and take your time."
+          ]
+        }
       ],
       "grammar": [
-        { "type": "mcq", "q": "I'm sorry, I ___ a big mistake.", "choices": ["did", "made", "took", "had"], "answer": 1, "explain": "Une erreur, on la « fabrique » : make a mistake." },
-        { "type": "mcq", "q": "Quelle est la bonne traduction de « Fais attention ! » ?", "choices": ["Make attention!", "Do attention!", "Take attention!", "Pay attention!"], "answer": 3, "explain": "En anglais, on « paie » son attention : pay attention." },
-        { "type": "mcq", "q": "We ___ a party for Mei's birthday last Saturday.", "choices": ["had", "made", "did", "took"], "answer": 0, "explain": "Faire une fête = have a party." },
-        { "type": "mcq", "q": "The bus is leaving! Run, or you won't ___ it!", "choices": ["keep", "save", "catch", "pay"], "answer": 2, "explain": "Attraper l'autobus = catch the bus." },
-        { "type": "mcq", "q": "Taking the shortcut ___ us ten minutes.", "choices": ["won", "saved", "gained", "kept"], "answer": 1, "explain": "Gagner du temps = save time." },
-        { "type": "mcq", "q": "Can you keep a ___? Don't tell anyone!", "choices": ["promise", "record", "secret", "noise"], "answer": 2, "explain": "Ne le dire à personne = keep a secret." },
-        { "type": "fill", "q": "Stop ___ noise! The baby is sleeping.", "hint": "make", "answer": ["making"], "explain": "Faire du bruit = make noise ; après stop, on met -ing." },
-        { "type": "fill", "q": "It's your turn to ___ the dishes tonight.", "hint": "faire", "answer": ["do", "wash"], "explain": "Faire la vaisselle = do the dishes (une tâche → do)." },
-        { "type": "fill", "q": "My cousin ___ a lot of money selling lemonade last summer.", "hint": "gagner (de l'argent), au passé", "answer": ["made", "earned"], "explain": "Gagner de l'argent = make money (ou earn money)." },
-        { "type": "fill", "q": "Don't ___ your time on that boring video.", "hint": "perdre", "answer": ["waste"], "explain": "Perdre son temps = waste your time, jamais lose." },
-        { "type": "fill", "q": "He ___ his promise and never came to my game.", "hint": "ne pas tenir, au passé", "answer": ["broke"], "explain": "Ne pas tenir une promesse = break a promise → broke." },
-        { "type": "fill", "q": "I'm nervous because I have to ___ a big math test tomorrow.", "hint": "passer (un examen)", "answer": ["take", "write", "do"], "explain": "Passer un examen = take (ou write) a test. Pass veut dire réussir !" },
-        { "type": "error", "q": "Can you make a photo of us?", "wrong": 2, "fix": ["take"], "explain": "Une photo, on la « prend » : take a photo." },
-        { "type": "error", "q": "I always do my bed before breakfast.", "wrong": 2, "fix": ["make"], "explain": "Faire son lit = make your bed." },
-        { "type": "error", "q": "We made a lot of fun at the water park.", "wrong": 1, "fix": ["had"], "explain": "S'amuser = have fun → had a lot of fun." },
-        { "type": "error", "q": "Please make attention to the instructions.", "wrong": 1, "fix": ["pay"], "explain": "Faire attention = pay attention." },
-        { "type": "error", "q": "Mom asked me to make the laundry.", "wrong": 4, "fix": ["do"], "explain": "Une tâche ménagère → do : do the laundry." },
-        { "type": "error", "q": "Don't lose your time on things you can't change.", "wrong": 1, "fix": ["waste"], "explain": "Perdre son temps = waste your time." }
+        {
+          "type": "mcq",
+          "q": "I'm sorry, I ___ a big mistake.",
+          "choices": [
+            "did",
+            "made",
+            "took",
+            "had"
+          ],
+          "answer": 1,
+          "explain": "Une erreur, on la « fabrique » : make a mistake."
+        },
+        {
+          "type": "mcq",
+          "q": "Quelle est la bonne traduction de « Fais attention ! » ?",
+          "choices": [
+            "Make attention!",
+            "Do attention!",
+            "Take attention!",
+            "Pay attention!"
+          ],
+          "answer": 3,
+          "explain": "En anglais, on « paie » son attention : pay attention."
+        },
+        {
+          "type": "mcq",
+          "q": "We ___ a party for Mei's birthday last Saturday.",
+          "choices": [
+            "had",
+            "made",
+            "did",
+            "took"
+          ],
+          "answer": 0,
+          "explain": "Faire une fête = have a party."
+        },
+        {
+          "type": "mcq",
+          "q": "The bus is leaving! Run, or you won't ___ it!",
+          "choices": [
+            "keep",
+            "save",
+            "catch",
+            "pay"
+          ],
+          "answer": 2,
+          "explain": "Attraper l'autobus = catch the bus."
+        },
+        {
+          "type": "mcq",
+          "q": "Taking the shortcut ___ us ten minutes.",
+          "choices": [
+            "won",
+            "saved",
+            "gained",
+            "kept"
+          ],
+          "answer": 1,
+          "explain": "Gagner du temps = save time."
+        },
+        {
+          "type": "mcq",
+          "q": "Can you keep a ___? Don't tell anyone!",
+          "choices": [
+            "promise",
+            "record",
+            "secret",
+            "noise"
+          ],
+          "answer": 2,
+          "explain": "Ne le dire à personne = keep a secret."
+        },
+        {
+          "type": "fill",
+          "q": "Stop ___ noise! The baby is sleeping.",
+          "hint": "make",
+          "answer": [
+            "making"
+          ],
+          "explain": "Faire du bruit = make noise ; après stop, on met -ing."
+        },
+        {
+          "type": "fill",
+          "q": "It's your turn to ___ the dishes tonight.",
+          "hint": "faire",
+          "answer": [
+            "do",
+            "wash"
+          ],
+          "explain": "Faire la vaisselle = do the dishes (une tâche → do)."
+        },
+        {
+          "type": "fill",
+          "q": "My cousin ___ a lot of money selling lemonade last summer.",
+          "hint": "gagner (de l'argent), au passé",
+          "answer": [
+            "made",
+            "earned"
+          ],
+          "explain": "Gagner de l'argent = make money (ou earn money)."
+        },
+        {
+          "type": "fill",
+          "q": "Don't ___ your time on that boring video.",
+          "hint": "perdre",
+          "answer": [
+            "waste"
+          ],
+          "explain": "Perdre son temps = waste your time, jamais lose."
+        },
+        {
+          "type": "fill",
+          "q": "He ___ his promise and never came to my game.",
+          "hint": "ne pas tenir, au passé",
+          "answer": [
+            "broke"
+          ],
+          "explain": "Ne pas tenir une promesse = break a promise → broke."
+        },
+        {
+          "type": "fill",
+          "q": "I'm nervous because I have to ___ a big math test tomorrow.",
+          "hint": "passer (un examen)",
+          "answer": [
+            "take",
+            "write",
+            "do"
+          ],
+          "explain": "Passer un examen = take (ou write) a test. Pass veut dire réussir !"
+        },
+        {
+          "type": "error",
+          "q": "Can you make a photo of us?",
+          "wrong": 2,
+          "fix": [
+            "take"
+          ],
+          "explain": "Une photo, on la « prend » : take a photo."
+        },
+        {
+          "type": "error",
+          "q": "I always do my bed before breakfast.",
+          "wrong": 2,
+          "fix": [
+            "make"
+          ],
+          "explain": "Faire son lit = make your bed."
+        },
+        {
+          "type": "error",
+          "q": "We made a lot of fun at the water park.",
+          "wrong": 1,
+          "fix": [
+            "had"
+          ],
+          "explain": "S'amuser = have fun → had a lot of fun."
+        },
+        {
+          "type": "error",
+          "q": "Please make attention to the instructions.",
+          "wrong": 1,
+          "fix": [
+            "pay"
+          ],
+          "explain": "Faire attention = pay attention."
+        },
+        {
+          "type": "error",
+          "q": "Mom asked me to make the laundry.",
+          "wrong": 4,
+          "fix": [
+            "do"
+          ],
+          "explain": "Une tâche ménagère → do : do the laundry."
+        },
+        {
+          "type": "error",
+          "q": "Don't lose your time on things you can't change.",
+          "wrong": 1,
+          "fix": [
+            "waste"
+          ],
+          "explain": "Perdre son temps = waste your time."
+        }
       ],
       "reading": {
         "title": "Félix's Busy Saturday",
         "text": "On Friday night, Félix made a big decision: this Saturday, he wouldn't waste a single minute. He wrote a long list of things to do, and he promised himself that he would do his best.\n\nFirst, he made his bed and did the dishes before his parents even woke up. Then he got ready to go to the arena, where he had to take a skating test at nine o'clock. Unfortunately, he hadn't paid attention to the time, and he missed his bus. He ran to the next stop and caught another one just in time. Although he was nervous, he passed the test easily.\n\nIn the afternoon, his best friend Amir asked him to do him a favour. Amir's family was having a garage sale and needed help. The two boys made signs, carried boxes and talked to customers. They made a lot of money for the family, had a lot of fun, and took dozens of funny pictures.\n\nBy the evening, Félix was exhausted. He had caught a cold in the rain that morning, and his nose was running. Earlier that week, he had promised to play a board game with his little sister, and he didn't want to break his promise. So he made an effort, played two games with her, and even let her win.\n\nBefore he fell asleep, Félix looked at his list. Every item had a check mark next to it. \"What a waste of a Saturday,\" he joked to his mom. She laughed. \"You didn't waste a second!\"",
         "questions": [
-          { "q": "What had Félix decided on Friday night?", "choices": ["To sleep all day on Saturday", "Not to waste any time on Saturday", "To break a skating record", "To have a party"], "answer": 1 },
-          { "q": "Why did Félix miss his bus?", "choices": ["He had a cold.", "He was helping Amir.", "He hadn't paid attention to the time.", "He had forgotten his skates."], "answer": 2 },
-          { "q": "How did Félix help Amir?", "choices": ["He did his homework.", "He helped at his family's garage sale.", "He took his dog for a walk.", "He made a cake."], "answer": 1 },
-          { "q": "Why did Félix play with his sister even though he was tired?", "choices": ["He had promised her, and he didn't want to break his promise.", "He wanted to win.", "His mom told him to.", "He was bored."], "answer": 0 },
-          { "q": "When Félix says \"What a waste of a Saturday,\" what does he really mean?", "choices": ["He is serious: he did nothing all day.", "He is angry at his sister.", "He is sad about his skating test.", "He is joking: he did a lot that day."], "answer": 3 }
+          {
+            "q": "What had Félix decided on Friday night?",
+            "choices": [
+              "To sleep all day on Saturday",
+              "Not to waste any time on Saturday",
+              "To break a skating record",
+              "To have a party"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Why did Félix miss his bus?",
+            "choices": [
+              "He had a cold.",
+              "He was helping Amir.",
+              "He hadn't paid attention to the time.",
+              "He had forgotten his skates."
+            ],
+            "answer": 2
+          },
+          {
+            "q": "How did Félix help Amir?",
+            "choices": [
+              "He did his homework.",
+              "He helped at his family's garage sale.",
+              "He took his dog for a walk.",
+              "He made a cake."
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Why did Félix play with his sister even though he was tired?",
+            "choices": [
+              "He had promised her, and he didn't want to break his promise.",
+              "He wanted to win.",
+              "His mom told him to.",
+              "He was bored."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "When Félix says \"What a waste of a Saturday,\" what does he really mean?",
+            "choices": [
+              "He is serious: he did nothing all day.",
+              "He is angry at his sister.",
+              "He is sad about his skating test.",
+              "He is joking: he did a lot that day."
+            ],
+            "answer": 3
+          }
+        ]
+      }
+    },
+    {
+      "id": "9.5",
+      "title": "Poser autrement",
+      "titleEn": "Could You Tell Me?",
+      "goal": "Poser des questions polies et indirectes, et raconter plus élégamment avec les propositions participiales.",
+      "lesson": [
+        {
+          "type": "p",
+          "text": "Deux façons de **poser autrement** : les **questions indirectes**, pour demander poliment (à un inconnu dans la rue, à la réception d'un hôtel, à ta patronne), et les **propositions participiales**, pour raconter de façon plus compacte et plus élégante. Les deux rapportent des points à l'examen Cambridge !"
+        },
+        {
+          "type": "rule",
+          "title": "Les questions indirectes",
+          "text": "On commence par une formule polie ([[Could you tell me…]], [[Do you know…]], [[Do you happen to know…]], [[I was wondering…]], [[I'd like to know…]]), puis on met le mot interrogatif + **sujet + verbe**, comme dans une phrase normale. **Plus d'inversion, plus de do / does / did** : [[Where is the station?]] → [[Could you tell me where the station is?]] ; [[What time does it open?]] → [[Do you know what time it opens?]] (le **-s** revient !). Question oui/non → [[if]] ou [[whether]] : [[Is it free?]] → [[Do you know if it's free?]] Contrairement au discours rapporté, **pas de recul des temps** : le présent reste au présent. Encore plus poli : [[Would you mind]] + -ing ([[Would you mind telling me…?]])."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Question directe",
+            "Question indirecte"
+          ],
+          "rows": [
+            [
+              "[[Where is the washroom?]]",
+              "[[Could you tell me where the washroom is?]]"
+            ],
+            [
+              "[[What time does the train leave?]]",
+              "[[Do you know what time the train leaves?]]"
+            ],
+            [
+              "[[How much do these tickets cost?]]",
+              "[[Can you tell me how much these tickets cost?]]"
+            ],
+            [
+              "[[Did the parcel arrive?]]",
+              "[[I'd like to know if the parcel arrived.]]"
+            ],
+            [
+              "[[Is this seat taken?]]",
+              "[[Do you happen to know whether this seat is taken?]]"
+            ],
+            [
+              "[[Who broke the window?]]",
+              "[[Do you know who broke the window?]]"
+            ]
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "Piège n° 1 : [[Could you tell me where is the station?]] ✗ → [[where the station is]] ✓. Piège n° 2 : [[Do you know what time does it open?]] ✗ → [[what time it opens]] ✓. Piège n° 3 : la ponctuation suit la **formule de départ** : [[Could you tell me…?]] garde son point d'interrogation, mais [[I wonder where she is.]] et [[I was wondering if you could help me.]] finissent par un **point**. Cas spécial : quand [[who]] ou [[what]] est **le sujet** (qui / qu'est-ce qui), l'ordre ne bouge pas : [[Who called?]] → [[Do you know who called?]]"
+        },
+        {
+          "type": "rule",
+          "title": "Les propositions participiales",
+          "text": "Elles remplacent une proposition entière par un participe. **1.** Verbe en [[-ing]] : deux actions en même temps, ou une cause : [[Walking home, I saw a moose.]] (= pendant que je marchais) ; [[Feeling sick, she stayed in bed.]] (= comme elle se sentait malade). **2.** [[Having]] + participe passé : une action **terminée avant** l'autre : [[Having finished my homework, I went skating.]] **3.** Participe passé seul : sens **passif** : [[Written in French, the letter was hard for him to read.]] (= comme elle était écrite en français). **4.** Négation : [[Not]] se place **devant** : [[Not knowing what to do, I called my mom.]]"
+        },
+        {
+          "type": "rule",
+          "title": "La règle d'or : le même sujet !",
+          "text": "Le sujet caché du participe doit être **le sujet de la phrase principale**. [[Walking into the kitchen, I smelled pancakes.]] ✓ (c'est moi qui entre). Mais [[Walking into the kitchen, the smell of pancakes surprised me.]] ✗ : l'odeur entre dans la cuisine ?! Même chose pour [[Having eaten all the cookies, the jar was empty.]] ✗ : le pot a mangé les biscuits ? Dis plutôt : [[Having eaten all the cookies, Liam hid the empty jar.]]"
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "Could you tell me where the nearest washroom is?",
+              "fr": "Pourrais-tu me dire où sont les toilettes les plus proches ?"
+            },
+            {
+              "en": "Do you happen to know what time the museum closes?",
+              "fr": "Saurais-tu par hasard à quelle heure ferme le musée ?"
+            },
+            {
+              "en": "I was wondering if you would mind watering my plants this weekend.",
+              "fr": "Je me demandais si ça te dérangerait d'arroser mes plantes cette fin de semaine."
+            },
+            {
+              "en": "Having missed the last bus, we had to walk home.",
+              "fr": "Comme nous avions raté le dernier autobus, nous avons dû rentrer à pied."
+            },
+            {
+              "en": "Not wanting to wake the baby, Dad whispered.",
+              "fr": "Ne voulant pas réveiller le bébé, papa a chuchoté."
+            },
+            {
+              "en": "Built more than a century ago, the old bridge is still in use.",
+              "fr": "Construit il y a plus d'un siècle, le vieux pont est toujours utilisé."
+            }
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "Piège de francophone : « **En** marchant » ne se traduit **jamais** par [[In walking]] ! On dit [[Walking…]] ou [[While walking…]]. « **Après avoir** fini » → [[Having finished…]] ou [[After finishing…]], jamais [[After to finish]]. Et la négation, c'est [[Not knowing]], pas [[Don't knowing]]."
+        },
+        {
+          "type": "dialogue",
+          "title": "Perdu au marché By",
+          "lines": [
+            {
+              "who": "Félix",
+              "en": "Excuse me, could you tell me where the ByWard Market is?",
+              "fr": "Excusez-moi, pourriez-vous me dire où se trouve le marché By ?"
+            },
+            {
+              "who": "Jaden",
+              "en": "You're standing right in front of it! Are you looking for something special?",
+              "fr": "Vous êtes juste devant ! Vous cherchez quelque chose de spécial ?"
+            },
+            {
+              "who": "Félix",
+              "en": "Yes. Do you happen to know where I can buy real maple taffy?",
+              "fr": "Oui. Sauriez-vous par hasard où je peux acheter de la vraie tire d'érable ?"
+            },
+            {
+              "who": "Jaden",
+              "en": "There's a stand just around the corner, but I'm not sure whether it's open today.",
+              "fr": "Il y a un kiosque juste au coin, mais je ne suis pas sûr qu'il soit ouvert aujourd'hui."
+            },
+            {
+              "who": "Félix",
+              "en": "I was wondering if you could show me. Not knowing the area, I've been walking in circles for an hour.",
+              "fr": "Je me demandais si vous pourriez me montrer. Comme je ne connais pas le coin, je tourne en rond depuis une heure."
+            },
+            {
+              "who": "Jaden",
+              "en": "No problem, follow me! Do you know how much you want to buy?",
+              "fr": "Pas de problème, suivez-moi ! Savez-vous combien vous voulez en acheter ?"
+            },
+            {
+              "who": "Félix",
+              "en": "Enough for my whole family, so probably too much.",
+              "fr": "Assez pour toute ma famille, donc sûrement trop."
+            },
+            {
+              "who": "Jaden",
+              "en": "Having tasted it myself, I can tell you: there's no such thing as too much.",
+              "fr": "L'ayant goûtée moi-même, je peux vous le dire : il n'y en a jamais trop."
+            }
+          ]
+        },
+        {
+          "type": "fun",
+          "text": "Le sais-tu ? En 2009, l'Ontario a adopté une loi sur les excuses, l'[[Apology Act]] : dire [[sorry]] après un accident ne peut pas être utilisé devant un tribunal comme un aveu de responsabilité. Les Canadiens peuvent donc rester polis… sans risque !"
+        }
+      ],
+      "vocab": [
+        {
+          "en": "could you tell me",
+          "fr": "pourrais-tu me dire… ? (question polie)",
+          "alt": [],
+          "ex": "Could you tell me where the elevator is?"
+        },
+        {
+          "en": "do you happen to know",
+          "fr": "saurais-tu par hasard… ?",
+          "alt": [],
+          "ex": "Do you happen to know when the next bus comes?"
+        },
+        {
+          "en": "I was wondering if",
+          "fr": "je me demandais si… (demande très polie)",
+          "alt": [],
+          "ex": "I was wondering if you could lend me your bike."
+        },
+        {
+          "en": "would you mind",
+          "fr": "ça te dérangerait de… ? (+ -ing)",
+          "alt": [],
+          "ex": "Would you mind closing the window?"
+        },
+        {
+          "en": "directions",
+          "fr": "indications (pour trouver son chemin)",
+          "alt": [],
+          "ex": "A kind woman gave us directions to the museum."
+        },
+        {
+          "en": "passer-by",
+          "fr": "passant, passante",
+          "alt": [],
+          "ex": "A passer-by helped me pick up my groceries."
+        },
+        {
+          "en": "platform",
+          "fr": "quai (de gare, de métro)",
+          "alt": [],
+          "ex": "The train to Montreal leaves from platform three."
+        },
+        {
+          "en": "ticket office",
+          "fr": "guichet, billetterie",
+          "alt": [],
+          "ex": "The ticket office opens at nine o'clock."
+        },
+        {
+          "en": "lost and found",
+          "fr": "objets trouvés",
+          "alt": [],
+          "ex": "I finally found my toque at the lost and found."
+        },
+        {
+          "en": "schedule",
+          "fr": "horaire",
+          "alt": [
+            "timetable"
+          ],
+          "ex": "Do you know if the bus schedule has changed?"
+        },
+        {
+          "en": "opening hours",
+          "fr": "heures d'ouverture",
+          "alt": [],
+          "ex": "Could you tell me what the opening hours are?"
+        },
+        {
+          "en": "nearby",
+          "fr": "tout près, à proximité",
+          "alt": [],
+          "ex": "Is there a pharmacy nearby?"
+        },
+        {
+          "en": "downtown",
+          "fr": "centre-ville",
+          "alt": [],
+          "ex": "We took the bus downtown."
+        },
+        {
+          "en": "convenience store",
+          "fr": "dépanneur",
+          "alt": [],
+          "ex": "I bought some milk at the convenience store."
+        },
+        {
+          "en": "out of order",
+          "fr": "en panne, hors service",
+          "alt": [],
+          "ex": "The elevator is out of order again."
+        },
+        {
+          "en": "crowded",
+          "fr": "bondé, plein de monde",
+          "alt": [],
+          "ex": "The market was so crowded that we couldn't move."
+        },
+        {
+          "en": "exhausted",
+          "fr": "épuisé",
+          "alt": [],
+          "ex": "Having walked all day, we were exhausted."
+        },
+        {
+          "en": "confused",
+          "fr": "confus, perdu (qui ne comprend plus rien)",
+          "alt": [],
+          "ex": "Feeling confused, I asked a passer-by for help."
+        },
+        {
+          "en": "unaware",
+          "fr": "pas au courant (de), qui ignore",
+          "alt": [],
+          "ex": "Unaware that the store had closed, we waited outside for an hour."
+        }
+      ],
+      "sentences": [
+        {
+          "en": "Could you tell me where the nearest convenience store is?",
+          "fr": "Pourrais-tu me dire où se trouve le dépanneur le plus proche ?",
+          "trap": [
+            "does",
+            "are"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Do you know what time the museum opens on Sundays?",
+          "fr": "Sais-tu à quelle heure le musée ouvre le dimanche ?",
+          "trap": [
+            "does",
+            "open"
+          ],
+          "alt": []
+        },
+        {
+          "en": "I was wondering if you could help me with my suitcase.",
+          "fr": "Je me demandais si tu pouvais m'aider avec ma valise.",
+          "trap": [
+            "did",
+            "do"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Do you know who left this umbrella on the bus?",
+          "fr": "Sais-tu qui a laissé ce parapluie dans l'autobus ?",
+          "trap": [
+            "did",
+            "leaves"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Can you tell me how much these tickets cost?",
+          "fr": "Peux-tu me dire combien coûtent ces billets ?",
+          "trap": [
+            "do",
+            "costs"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Do you happen to know whether the ticket office is still open?",
+          "fr": "Saurais-tu par hasard si le guichet est encore ouvert ?",
+          "trap": [
+            "does",
+            "are"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Having finished her homework, Maya went skating on the Rideau Canal.",
+          "fr": "Après avoir fini ses devoirs, Maya est allée patiner sur le canal Rideau.",
+          "trap": [
+            "finishing",
+            "has"
+          ],
+          "alt": [
+            "Maya went skating on the Rideau Canal, having finished her homework."
+          ]
+        },
+        {
+          "en": "Not knowing what to say, Ethan just smiled.",
+          "fr": "Ne sachant pas quoi dire, Ethan a simplement souri.",
+          "trap": [
+            "Don't",
+            "said"
+          ],
+          "alt": [
+            "Ethan just smiled, not knowing what to say."
+          ]
+        },
+        {
+          "en": "Written in English and French, the sign was easy for everyone to read.",
+          "fr": "Écrite en anglais et en français, l'affiche était facile à lire pour tout le monde.",
+          "trap": [
+            "Writing",
+            "wrote"
+          ],
+          "alt": [
+            "The sign, written in English and French, was easy for everyone to read."
+          ]
+        },
+        {
+          "en": "Walking through the crowded market, we heard someone calling our names.",
+          "fr": "En marchant dans le marché bondé, nous avons entendu quelqu'un crier nos noms.",
+          "trap": [
+            "In",
+            "walked"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Feeling exhausted after the long trip, Amir went straight to bed.",
+          "fr": "Épuisé après le long voyage, Amir est allé directement se coucher.",
+          "trap": [
+            "Felt",
+            "Feel"
+          ],
+          "alt": []
+        },
+        {
+          "en": "I'd like to know why the elevator is always out of order.",
+          "fr": "J'aimerais savoir pourquoi l'ascenseur est toujours en panne.",
+          "trap": [
+            "does",
+            "being"
+          ],
+          "alt": []
+        }
+      ],
+      "grammar": [
+        {
+          "type": "mcq",
+          "q": "Excuse me, could you tell me where ___?",
+          "choices": [
+            "is the platform",
+            "the platform is",
+            "does the platform",
+            "the platform are"
+          ],
+          "answer": 1,
+          "explain": "Question indirecte : sujet + verbe, sans inversion. On dit where the platform is."
+        },
+        {
+          "type": "mcq",
+          "q": "Do you know what time ___?",
+          "choices": [
+            "does the bus leave",
+            "the bus leave",
+            "leaves the bus",
+            "the bus leaves"
+          ],
+          "answer": 3,
+          "explain": "Le does disparaît, mais le -s de la 3e personne revient : the bus leaves."
+        },
+        {
+          "type": "mcq",
+          "q": "___ my homework, I went outside to play basketball.",
+          "choices": [
+            "Finished",
+            "Having finished",
+            "Having finish",
+            "After finish"
+          ],
+          "answer": 1,
+          "explain": "Action terminée avant l'autre : Having + participe passé (finished)."
+        },
+        {
+          "type": "mcq",
+          "q": "___ what to do, I called my grandma.",
+          "choices": [
+            "Don't knowing",
+            "No knowing",
+            "Not knowing",
+            "Knowing not"
+          ],
+          "answer": 2,
+          "explain": "La négation d'une participiale : Not se place devant le verbe en -ing."
+        },
+        {
+          "type": "mcq",
+          "q": "Quelle phrase est correcte ?",
+          "choices": [
+            "Walking into the kitchen, the smell of pancakes surprised me.",
+            "Walking into the kitchen, I smelled pancakes.",
+            "Walking into the kitchen, the pancakes were ready.",
+            "Walking into the kitchen, it smelled of pancakes."
+          ],
+          "answer": 1,
+          "explain": "Le sujet de la principale doit faire l'action du participe : c'est moi qui entre, donc I smelled…"
+        },
+        {
+          "type": "mcq",
+          "q": "I was wondering ___ you could lend me your bike this weekend.",
+          "choices": [
+            "if",
+            "that",
+            "do",
+            "what"
+          ],
+          "answer": 0,
+          "explain": "Demande oui/non indirecte : I was wondering if (ou whether) + sujet + verbe."
+        },
+        {
+          "type": "fill",
+          "lead": "Where is the lost and found?",
+          "q": "Could you tell me where ___?",
+          "hint": "the lost and found / be",
+          "answer": [
+            "the lost and found is"
+          ],
+          "explain": "Dans une question indirecte, le verbe passe après le sujet : where the lost and found is."
+        },
+        {
+          "type": "fill",
+          "lead": "What time does the pool close?",
+          "q": "Do you know what time the pool ___?",
+          "hint": "close",
+          "answer": [
+            "closes"
+          ],
+          "explain": "Plus de does dans la question indirecte, donc le -s revient sur le verbe : the pool closes."
+        },
+        {
+          "type": "fill",
+          "lead": "Did the parcel arrive?",
+          "q": "I'd like to know ___ the parcel arrived.",
+          "hint": "si",
+          "answer": [
+            "if",
+            "whether"
+          ],
+          "explain": "Question oui/non rendue indirecte : if ou whether, et le did disparaît (arrived)."
+        },
+        {
+          "type": "fill",
+          "lead": "How old is your dog?",
+          "q": "Can I ask you how old ___?",
+          "hint": "your dog / be",
+          "answer": [
+            "your dog is"
+          ],
+          "explain": "Sujet + verbe après how old : how old your dog is."
+        },
+        {
+          "type": "fill",
+          "q": "___ the whole pizza, Liam felt a little sick.",
+          "hint": "having / eat",
+          "answer": [
+            "Having eaten"
+          ],
+          "explain": "Il a mangé la pizza AVANT d'être malade : Having + participe passé (eaten)."
+        },
+        {
+          "type": "fill",
+          "q": "___ in a hurry, the email was full of mistakes.",
+          "hint": "write",
+          "answer": [
+            "Written"
+          ],
+          "explain": "Le courriel a été écrit (sens passif) : participe passé seul, Written."
+        },
+        {
+          "type": "fill",
+          "q": "___ the answer, Zoé stayed quiet.",
+          "hint": "not / know",
+          "answer": [
+            "Not knowing"
+          ],
+          "explain": "Comme elle ne savait pas : Not + -ing, avec not devant."
+        },
+        {
+          "type": "error",
+          "q": "Do you know what time the store open?",
+          "wrong": 7,
+          "fix": [
+            "opens"
+          ],
+          "explain": "Sans does, le verbe reprend le -s de la 3e personne : the store opens."
+        },
+        {
+          "type": "error",
+          "q": "I wonder that the library is open today.",
+          "wrong": 2,
+          "fix": [
+            "if",
+            "whether"
+          ],
+          "explain": "Pour une question oui/non indirecte : if ou whether, jamais that."
+        },
+        {
+          "type": "error",
+          "q": "Don't knowing anyone at the party, Léa felt shy.",
+          "wrong": 0,
+          "fix": [
+            "Not"
+          ],
+          "explain": "On nie une participiale avec Not : Not knowing anyone…"
+        },
+        {
+          "type": "error",
+          "q": "Having finish the race, the runners drank lots of water.",
+          "wrong": 1,
+          "fix": [
+            "finished"
+          ],
+          "explain": "Having + participe passé : Having finished."
+        },
+        {
+          "type": "error",
+          "q": "In waiting for the bus, I read a whole chapter.",
+          "wrong": 0,
+          "fix": [
+            "While"
+          ],
+          "explain": "« En attendant » ne se traduit pas par In waiting : on dit While waiting (ou simplement Waiting)."
+        }
+      ],
+      "reading": {
+        "title": "The Most Polite Tourist in Ottawa",
+        "text": "Having lived in a small village all his life, Grandpa Samuel had never visited a big city. So when his granddaughter Chloé invited him to Ottawa, he prepared carefully. Not wanting to sound rude, he practised polite questions in English for weeks.\n\nOn his first morning, Grandpa went downtown alone. Feeling a little confused by all the traffic, he stopped a passer-by. \"Excuse me, could you tell me where the Parliament buildings are?\" he asked. The woman smiled and gave him clear directions. Encouraged, he kept going.\n\nAt a convenience store, he asked the cashier whether the buses were running on time. At the museum, he wanted to know what time the guided tour started. At a bakery, he even asked the baker if she would mind sharing her recipe for butter tarts. Everyone seemed charmed by his perfect manners.\n\nThere was just one problem. Busy chatting with half the city, Grandpa forgot to check the time. When he finally looked at his watch, it was already six o'clock, and Chloé had been waiting for him at home for over an hour.\n\nExhausted but delighted, he arrived with a box of butter tarts, three maps and a long list of new friends. \"I'm so sorry I'm late,\" he said. \"But do you know how many kind people live in this city?\"\n\nChloé laughed. \"Grandpa, next time, could you please tell me where you're going before you leave?\"",
+        "questions": [
+          {
+            "q": "Why did Grandpa Samuel practise his English questions before the trip?",
+            "choices": [
+              "Because he had an English exam",
+              "Because he didn't want to sound rude",
+              "Because Chloé had asked him to",
+              "Because he wanted to find a job in Ottawa"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "What did Grandpa want to know at the museum?",
+            "choices": [
+              "Whether the buses were on time",
+              "Where the Parliament buildings were",
+              "What time the guided tour started",
+              "How much a ticket cost"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Why did Grandpa get home so late?",
+            "choices": [
+              "He had been so busy talking to people that he forgot the time.",
+              "He had missed the last bus.",
+              "He had got lost near the Rideau Canal.",
+              "The museum tour had finished very late."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "What can we guess about the people Grandpa met?",
+            "choices": [
+              "They were in a hurry.",
+              "They didn't understand his English.",
+              "They were friendly and happy to help him.",
+              "They were all tourists too."
+            ],
+            "answer": 2
+          },
+          {
+            "q": "What is Chloé really asking for at the end?",
+            "choices": [
+              "She wants Grandpa to stop asking questions.",
+              "She wants to know how many people live in Ottawa.",
+              "She wants him to buy more butter tarts.",
+              "She would like him to tell her his plans next time."
+            ],
+            "answer": 3
+          }
         ]
       }
     }

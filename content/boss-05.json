@@ -1,0 +1,86 @@
+{
+  "level": 5,
+  "taunts": {
+    "phase2": [
+      "Bouhouhou… Tu as gagné une manche ? Hier, moi, j'étais invincible. I WAS !",
+      "Je hante tes verbes irréguliers : goed, buyed, eated… Bouh !",
+      "Avant, je perdais parfois. I used to lose… mais ça, c'est fini !"
+    ],
+    "phase3": [
+      "BOUUUH ! Tu réveilles le passé… et le passé est très, très fâché !",
+      "Assez ! Je vais te hanter avec mille « Did you went ? » !",
+      "While you were winning, I was preparing my revenge ! Booouh !"
+    ],
+    "lose": [
+      "Bouhouhou… Tu as perdu. It happened. Et maintenant, c'est déjà du passé !",
+      "Reviens quand tu ne diras plus « I didn't saw ». Je t'attendrai… pour l'éternité.",
+      "You used to be good… Hi hi hi ! Va réviser, petit vivant."
+    ]
+  },
+  "questions": [
+    { "unit": "5.1", "type": "mcq", "q": "Comment dit-on « Mon chien est né il y a deux ans » ?", "choices": ["My dog is born two years ago.", "My dog was born two years ago.", "My dog was born there are two years.", "My dog born two years ago."], "answer": 1, "explain": "« Être né » est au passé : was born. « Il y a deux ans » = two years ago (la durée puis ago)." },
+    { "unit": "5.1", "type": "mcq", "q": "Quelle forme du passé est bien écrite ?", "choices": ["stoped", "hurryed", "planned", "tryed"], "answer": 2, "explain": "Plan est court (consonne + voyelle + consonne) : on double le n, planned. Les autres : stopped, hurried, tried." },
+    { "unit": "5.1", "type": "mcq", "q": "___ the twins at hockey practice last weekend?", "choices": ["Was", "Were", "Did"], "answer": 1, "explain": "The twins = they, donc were. Avec to be, pas de did dans la question." },
+    { "unit": "5.1", "type": "mcq", "q": "Comment dit-on « Hier soir, un orignal était dans notre cuisine » ?", "choices": ["Yesterday night, a moose was in our kitchen.", "Last night, a moose were in our kitchen.", "The last night, a moose was in our kitchen.", "Last night, a moose was in our kitchen."], "answer": 3, "explain": "« Hier soir » = last night (jamais [[yesterday night]], et sans the). A moose = un seul, donc was." },
+    { "unit": "5.1", "type": "fill", "q": "My aunt ___ to Halifax three years ago.", "hint": "move", "answer": ["moved"], "explain": "Move finit par -e : on ajoute seulement -d, moved." },
+    { "unit": "5.1", "type": "fill", "q": "We ___ because we were late.", "hint": "hurry", "answer": ["hurried"], "explain": "Hurry finit par consonne + y : le y devient -ied, hurried." },
+    { "unit": "5.1", "type": "fill", "q": "Oops! Dad ___ the birthday cake on the floor.", "hint": "drop", "answer": ["dropped"], "explain": "Drop est court et finit par voyelle + consonne : on double le p, dropped." },
+    { "unit": "5.1", "type": "fill", "q": "My grandparents ___ born in Italy.", "hint": "be", "answer": ["were"], "explain": "« Être né » = be born au passé. My grandparents = they, donc were born." },
+    { "unit": "5.1", "type": "fill", "q": "What ___ at the party last night? Everybody is talking about it!", "hint": "happen", "answer": ["happened"], "explain": "Action finie hier soir : passé simple, happen + -ed = happened." },
+    { "unit": "5.1", "type": "error", "q": "We travelled to Halifax yesterday night.", "wrong": 4, "fix": ["last"], "explain": "« Hier soir » = last night, jamais [[yesterday night]]." },
+    { "unit": "5.1", "type": "error", "q": "My sister planed a surprise party for Mom.", "wrong": 2, "fix": ["planned"], "explain": "Plan + -ed : on double le n, planned. « Planed » serait un autre verbe (raboter)." },
+    { "unit": "5.1", "type": "error", "q": "The moose were very hungry, so it tried our poutine.", "wrong": 2, "fix": ["was"], "explain": "It montre qu'il y a un seul orignal : The moose was." },
+
+    { "unit": "5.2", "type": "mcq", "q": "Grandma ___ me a funny story about Grandpa.", "choices": ["said", "told", "telled", "say"], "answer": 1, "explain": "Quand on dit à qui (me) juste après, c'est tell → told. Said ne se met jamais devant une personne." },
+    { "unit": "5.2", "type": "mcq", "q": "Yesterday, I ___ a cake and ___ my homework.", "choices": ["made / made", "did / made", "made / did"], "answer": 2, "explain": "On fabrique ou cuisine avec make (made a cake), on fait ses devoirs avec do (did my homework)." },
+    { "unit": "5.2", "type": "mcq", "q": "Comment dit-on « Je pensais que c'était une blague » ?", "choices": ["I thought it was a joke.", "I taught it was a joke.", "I thinked it was a joke."], "answer": 0, "explain": "Think → thought (pensé). Taught veut dire « enseigné », et « thinked » n'existe pas." },
+    { "unit": "5.2", "type": "mcq", "q": "The moose ___ all the pancakes and ___ all the maple syrup!", "choices": ["eated / drinked", "ate / drunk", "ate / drank"], "answer": 2, "explain": "Eat → ate et drink → drank au passé simple. Drunk, c'est une autre forme, pas le passé simple." },
+    { "unit": "5.2", "type": "fill", "q": "Last Saturday, we ___ three moose near the lake.", "hint": "see", "answer": ["saw"], "explain": "See est irrégulier : saw au passé." },
+    { "unit": "5.2", "type": "fill", "q": "After an hour, Malik ___ the keys under the couch.", "hint": "find", "answer": ["found"], "explain": "Find est irrégulier : found au passé." },
+    { "unit": "5.2", "type": "fill", "q": "My cousin ___ me her old skates.", "hint": "give", "answer": ["gave"], "explain": "Give est irrégulier : gave au passé (jamais « gived »)." },
+    { "unit": "5.2", "type": "fill", "q": "We ___ the bus to the museum.", "hint": "take", "answer": ["took"], "explain": "Take est irrégulier : took au passé." },
+    { "unit": "5.2", "type": "fill", "q": "I ___ a new phone for my birthday!", "hint": "get (recevoir)", "answer": ["got"], "explain": "Get (recevoir) est irrégulier : got au passé." },
+    { "unit": "5.2", "type": "error", "q": "Mom sayed no to the puppy.", "wrong": 1, "fix": ["said"], "explain": "Say est irrégulier : said, pas « sayed »." },
+    { "unit": "5.2", "type": "error", "q": "He said us the answer.", "wrong": 1, "fix": ["told"], "explain": "Avec une personne juste après le verbe, on utilise tell : He told us the answer." },
+    { "unit": "5.2", "type": "error", "q": "The ghost writed a letter to his old house.", "wrong": 2, "fix": ["wrote"], "explain": "Write est irrégulier : wrote au passé." },
+
+    { "unit": "5.3", "type": "mcq", "q": "Why ___ Jaden come to practice yesterday?", "choices": ["didn't", "doesn't", "wasn't"], "answer": 0, "explain": "Yesterday = passé, et come est un verbe d'action : Why didn't + base verbale." },
+    { "unit": "5.3", "type": "mcq", "q": "Did you forget your lunch again? — Yes, ___", "choices": ["I was.", "I do.", "I did.", "I didn't."], "answer": 2, "explain": "On répond avec le même assistant que la question : Did…? → Yes, I did." },
+    { "unit": "5.3", "type": "mcq", "q": "___ you scared during the storm?", "choices": ["Did", "Were", "Was"], "answer": 1, "explain": "Scared s'utilise avec to be : au passé, Were you scared? Jamais « Did you be »." },
+    { "unit": "5.3", "type": "mcq", "q": "Last winter, my brother ___ his toque to bed every night.", "choices": ["weared", "wore", "worn", "wear"], "answer": 1, "explain": "Wear est irrégulier : wore au passé simple." },
+    { "unit": "5.3", "type": "fill", "q": "We ___ to Vancouver. We took the train.", "hint": "fly, à la forme négative", "answer": ["didn't fly"], "explain": "Négatif au passé : didn't + base verbale. Donc didn't fly, jamais « didn't flew »." },
+    { "unit": "5.3", "type": "fill", "q": "How much ___ you pay for that toque?", "hint": "auxiliaire", "answer": ["did"], "explain": "Question au passé : How much did you pay…? Le verbe pay reste à la base." },
+    { "unit": "5.3", "type": "fill", "q": "Our team ___ the final! We're the champions!", "hint": "win", "answer": ["won"], "explain": "Win est irrégulier : won au passé." },
+    { "unit": "5.3", "type": "fill", "q": "I ___ for twelve hours. I was so tired!", "hint": "sleep", "answer": ["slept"], "explain": "Sleep est irrégulier : slept au passé." },
+    { "unit": "5.3", "type": "fill", "q": "Did your sister ___ the vase?", "hint": "break", "answer": ["break"], "explain": "Après did, le verbe reste à la base : break, pas broke." },
+    { "unit": "5.3", "type": "error", "q": "Did the moose ate your pancakes?", "wrong": 3, "fix": ["eat"], "explain": "Un seul passé par phrase : Did + base verbale, donc eat." },
+    { "unit": "5.3", "type": "error", "q": "I didn't forgot your birthday!", "wrong": 2, "fix": ["forget"], "explain": "Après didn't, le verbe reste à la base : I didn't forget." },
+    { "unit": "5.3", "type": "error", "q": "Where did you met your neighbours?", "wrong": 3, "fix": ["meet"], "explain": "Le passé est déjà dans did : Where did you meet…?" },
+
+    { "unit": "5.4", "type": "mcq", "q": "I ___ a shower when the ghost knocked at the door.", "choices": ["was taking", "took", "were taking", "am taking"], "answer": 0, "explain": "La douche est l'action longue (le décor) : passé continu, I was taking. Le fantôme frappe : action courte au passé simple." },
+    { "unit": "5.4", "type": "mcq", "q": "___ we were skating on the canal, Dad fell.", "choices": ["When", "While", "Suddenly"], "answer": 1, "explain": "While (pendant que) introduit l'action longue au passé continu : While we were skating." },
+    { "unit": "5.4", "type": "mcq", "q": "Mom was cooking dinner ___ the power outage started.", "choices": ["while", "then", "when"], "answer": 2, "explain": "When introduit l'action courte qui interrompt : when the power outage started." },
+    { "unit": "5.4", "type": "mcq", "q": "Quelle phrase est correcte ?", "choices": ["I was wanting a pancake.", "I was want a pancake.", "I wanted a pancake.", "I wanting a pancake."], "answer": 2, "explain": "Want est un verbe d'état : jamais au passé continu. On dit simplement I wanted." },
+    { "unit": "5.4", "type": "fill", "q": "What ___ you doing at ten o'clock last night?", "hint": "be", "answer": ["were"], "explain": "Passé continu, question avec you : What were you doing…?" },
+    { "unit": "5.4", "type": "fill", "q": "The dog ___ when the neighbour knocked.", "hint": "sleep", "answer": ["was sleeping"], "explain": "Le chien dormait (action longue) quand on a frappé : was sleeping." },
+    { "unit": "5.4", "type": "fill", "q": "While my parents ___ TV, I ate all the cookies.", "hint": "watch", "answer": ["were watching"], "explain": "Après while, l'action longue au passé continu. My parents = they : were watching." },
+    { "unit": "5.4", "type": "fill", "q": "We looked for the cat for three hours. ___, we found it in the fridge!", "hint": "finalement", "answer": ["Finally"], "explain": "Finally annonce la fin de l'histoire (finalement). Pauvre chat !" },
+    { "unit": "5.4", "type": "fill", "q": "I was opening the door. ___, the ghost shouted \"Boo!\"", "hint": "à ce moment-là (3 mots)", "answer": ["At that moment"], "explain": "« À ce moment-là » = at that moment." },
+    { "unit": "5.4", "type": "error", "q": "Sofia was read when the lights went out.", "wrong": 2, "fix": ["reading"], "explain": "Passé continu = was + verbe en -ing : was reading." },
+    { "unit": "5.4", "type": "error", "q": "They was playing cards when the storm began.", "wrong": 1, "fix": ["were"], "explain": "They va avec were : They were playing." },
+    { "unit": "5.4", "type": "error", "q": "We were sleeping when the fire alarm start.", "wrong": 7, "fix": ["started"], "explain": "L'action courte qui interrompt est au passé simple : started." },
+
+    { "unit": "5.5", "type": "mcq", "q": "Comment dit-on « Mon grand-papa avait l'habitude de patiner sur le canal Rideau » ?", "choices": ["My grandpa was used to skate on the Rideau Canal.", "My grandpa used to skate on the Rideau Canal.", "My grandpa uses to skate on the Rideau Canal.", "My grandpa would skated on the Rideau Canal."], "answer": 1, "explain": "Habitude finie = used to + verbe de base. « Was used to » veut dire « était habitué à »." },
+    { "unit": "5.5", "type": "mcq", "q": "My parents ___ in Toronto before I was born.", "choices": ["would live", "are used to live", "used to live", "use to live"], "answer": 2, "explain": "Live est un verbe d'état : would ne marche pas. On utilise used to live." },
+    { "unit": "5.5", "type": "mcq", "q": "Lucas moved from Montreal to Iqaluit. At first, he ___ the long, dark winters.", "choices": ["didn't use to", "wasn't used to", "used to"], "answer": 1, "explain": "Être habitué à + nom = be used to. Au début, il n'y était pas habitué : wasn't used to the long winters." },
+    { "unit": "5.5", "type": "mcq", "q": "Did your dad ___ hockey when he was young?", "choices": ["used to play", "use to play", "use to playing"], "answer": 1, "explain": "Après did, le d disparaît : Did… use to + verbe de base." },
+    { "unit": "5.5", "type": "fill", "q": "Every summer, my grandma ___ long letters to her cousin in France.", "hint": "write, avec would", "answer": ["would write"], "explain": "Pour une action répétée du passé, would + verbe de base : would write." },
+    { "unit": "5.5", "type": "fill", "q": "When I was little, I ___ scared of dogs. Now I have three!", "hint": "be (habitude passée)", "answer": ["used to be"], "explain": "État passé qui n'est plus vrai : used to be. Would ne marche pas avec be." },
+    { "unit": "5.5", "type": "fill", "q": "Ethan ___ eat vegetables, but now he's a chef!", "hint": "ne pas avoir l'habitude de", "answer": ["didn't use to"], "explain": "Négatif : didn't use to + verbe de base (sans d après didn't)." },
+    { "unit": "5.5", "type": "fill", "q": "Priya works at night, so she's used to ___ during the day.", "hint": "sleep", "answer": ["sleeping"], "explain": "Be used to (être habitué à) + verbe en -ing : used to sleeping." },
+    { "unit": "5.5", "type": "error", "q": "My mom use to play the guitar in a band.", "wrong": 2, "fix": ["used"], "explain": "À l'affirmatif, c'est used to (avec un d), pour tous les sujets." },
+    { "unit": "5.5", "type": "error", "q": "Did your grandparents used to have a farm?", "wrong": 3, "fix": ["use"], "explain": "Après did, le d disparaît : Did your grandparents use to have…?" },
+    { "unit": "5.5", "type": "error", "q": "My cousin from Iqaluit is used to live in the cold.", "wrong": 7, "fix": ["living"], "explain": "Be used to (être habitué à) est suivi d'un nom ou d'un verbe en -ing : is used to living." },
+    { "unit": "5.5", "type": "error", "q": "My dad used to having long hair.", "wrong": 4, "fix": ["have"], "explain": "Used to (habitude passée) + verbe de base : used to have." }
+  ]
+}

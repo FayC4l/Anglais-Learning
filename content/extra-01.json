@@ -8,17 +8,77 @@
         "ipa": "/h/",
         "explain": "En français, le « h » ne se prononce jamais (« un hôtel »), mais en anglais, il s'entend presque toujours ! C'est un petit souffle chaud, comme quand tu réchauffes tes mains en plein hiver à Ottawa : « hhha ». Mets ta main devant ta bouche : sur [[hello]] et sur [[hockey]], tu dois sentir de l'air chaud. Attention, le piège marche dans les deux sens : sans souffle, [[hand]] (main) devient [[and]] (et), mais avec un souffle en trop, [[eat]] (manger) devient [[heat]] (chaleur) !",
         "words": [
-          { "en": "hello", "fr": "bonjour, salut", "hint": "« hè-LÔ » : souffle le « h », accent sur la fin" },
-          { "en": "hi", "fr": "salut", "hint": "« haï » : un petit souffle, puis « aï »" },
-          { "en": "how", "fr": "comment", "hint": "« haou » : souffle d'abord, comme dans [[How are you?]]" },
-          { "en": "happy", "fr": "content, heureux", "hint": "« HA-pi » : souffle sur « HA », accent au début" },
-          { "en": "hockey", "fr": "hockey", "hint": "« HO-ki » : en français on dit « ockey », en anglais on souffle !" },
-          { "en": "he", "fr": "il", "hint": "« hii » : souffle, puis un « i » bien long" },
-          { "en": "house", "fr": "maison", "hint": "« haouss » : souffle, puis « aou » et un « s » bien sifflé" },
-          { "en": "hand", "fr": "main", "hint": "« hannd » : sans le souffle, ça devient [[and]] (et) !" }
+          {
+            "en": "hello",
+            "fr": "bonjour, salut",
+            "hint": "« hè-LÔ » : souffle le « h », accent sur la fin"
+          },
+          {
+            "en": "hi",
+            "fr": "salut",
+            "hint": "« haï » : un petit souffle, puis « aï »"
+          },
+          {
+            "en": "how",
+            "fr": "comment",
+            "hint": "« haou » : souffle d'abord, comme dans [[How are you?]]"
+          },
+          {
+            "en": "happy",
+            "fr": "content, heureux",
+            "hint": "« HA-pi » : souffle sur « HA », accent au début"
+          },
+          {
+            "en": "hockey",
+            "fr": "hockey",
+            "hint": "« HO-ki » : en français on dit « ockey », en anglais on souffle !"
+          },
+          {
+            "en": "he",
+            "fr": "il",
+            "hint": "« hii » : souffle, puis un « i » bien long"
+          },
+          {
+            "en": "house",
+            "fr": "maison",
+            "hint": "« haouss » : souffle, puis « aou » et un « s » bien sifflé"
+          },
+          {
+            "en": "hand",
+            "fr": "main",
+            "hint": "« hannd » : sans le souffle, ça devient [[and]] (et) !"
+          }
         ],
-        "pairs": [["hand", "and"], ["heat", "eat"], ["hat", "at"], ["hold", "old"], ["hear", "ear"], ["hi", "I"]],
-        "practice": ["Hi, Emma! Hello, Amir! How are you?", "Henry has a hat, and Ana has an apple."]
+        "pairs": [
+          [
+            "hand",
+            "and"
+          ],
+          [
+            "heat",
+            "eat"
+          ],
+          [
+            "hat",
+            "at"
+          ],
+          [
+            "hold",
+            "old"
+          ],
+          [
+            "hear",
+            "ear"
+          ],
+          [
+            "hi",
+            "I"
+          ]
+        ],
+        "practice": [
+          "Hi, Emma! Hello, Amir! How are you?",
+          "Henry has a hat, and Ana has an apple."
+        ]
       },
       "mission": {
         "type": "ecrit",
@@ -40,17 +100,77 @@
         "ipa": "/θ/",
         "explain": "Le « th » de [[three]] n'existe pas en français, alors on le remplace souvent par un « t » ou un « s »… et ton ami entend [[tree]] (un arbre) au lieu de [[three]] (trois) ! Pour le réussir, glisse le bout de ta langue entre tes dents du haut et du bas (juste un peu, pas besoin de tirer la langue !), puis souffle doucement. Ta gorge ne vibre pas : c'est le bruit d'un serpent qui zozote. Entraîne-toi devant un miroir : si tu vois le bout de ta langue, c'est gagné !",
         "words": [
-          { "en": "three", "fr": "trois", "hint": "« thrii » : langue entre les dents, souffle, puis « rii » (pas « trii » !)" },
-          { "en": "thirteen", "fr": "treize", "hint": "« theur-TIIN » : « th » soufflé au début, accent sur la fin" },
-          { "en": "thank you", "fr": "merci", "hint": "« THANNK-you » : langue entre les dents pour le « th », pas « tannk-you »" },
-          { "en": "think", "fr": "penser, croire", "hint": "« thinnk » : souffle sur le « th », puis un « i » court" },
-          { "en": "birthday", "fr": "anniversaire", "hint": "« BEURTH-déï » : n'oublie pas le « th » caché au milieu !" },
-          { "en": "math", "fr": "mathématiques", "hint": "« math » : comme « les maths », mais finis en soufflant, langue entre les dents" },
-          { "en": "mouth", "fr": "bouche", "hint": "« maouth » : finis avec la langue entre les dents (pas « maouss » !)" },
-          { "en": "both", "fr": "les deux", "hint": "« bôth » : finis en soufflant (pas « bôte » !)" }
+          {
+            "en": "three",
+            "fr": "trois",
+            "hint": "« thrii » : langue entre les dents, souffle, puis « rii » (pas « trii » !)"
+          },
+          {
+            "en": "thirteen",
+            "fr": "treize",
+            "hint": "« theur-TIIN » : « th » soufflé au début, accent sur la fin"
+          },
+          {
+            "en": "thank you",
+            "fr": "merci",
+            "hint": "« THANNK-you » : langue entre les dents pour le « th », pas « tannk-you »"
+          },
+          {
+            "en": "think",
+            "fr": "penser, croire",
+            "hint": "« thinnk » : souffle sur le « th », puis un « i » court"
+          },
+          {
+            "en": "birthday",
+            "fr": "anniversaire",
+            "hint": "« BEURTH-déï » : n'oublie pas le « th » caché au milieu !"
+          },
+          {
+            "en": "math",
+            "fr": "mathématiques",
+            "hint": "« math » : comme « les maths », mais finis en soufflant, langue entre les dents"
+          },
+          {
+            "en": "mouth",
+            "fr": "bouche",
+            "hint": "« maouth » : finis avec la langue entre les dents (pas « maouss » !)"
+          },
+          {
+            "en": "both",
+            "fr": "les deux",
+            "hint": "« bôth » : finis en soufflant (pas « bôte » !)"
+          }
         ],
-        "pairs": [["three", "tree"], ["thank", "tank"], ["think", "sink"], ["thin", "tin"], ["math", "mat"], ["path", "pass"]],
-        "practice": ["I think three is my lucky number.", "Happy birthday! Are you thirteen today?"]
+        "pairs": [
+          [
+            "three",
+            "tree"
+          ],
+          [
+            "thank",
+            "tank"
+          ],
+          [
+            "think",
+            "sink"
+          ],
+          [
+            "thin",
+            "tin"
+          ],
+          [
+            "math",
+            "mat"
+          ],
+          [
+            "path",
+            "pass"
+          ]
+        ],
+        "practice": [
+          "I think three is my lucky number.",
+          "Happy birthday! Are you thirteen today?"
+        ]
       },
       "mission": {
         "type": "oral",
@@ -71,18 +191,83 @@
         "ipa": "/ɪ/ – /iː/",
         "explain": "En anglais, il y a deux « i », et ils changent le sens des mots : [[ship]] (bateau) n'est pas [[sheep]] (mouton) ! Le « i » long de [[green]] est tendu et étiré : fais un grand sourire, comme pour une photo, « griiine ». Le « i » court de [[big]] est rapide et détendu, la bouche moins souriante : c'est le « i » de « vite » ou de « petite » quand tu parles avec l'accent d'ici. Le piège du francophone, c'est de tout dire avec le même « i » : écoute bien la différence entre [[sit]] (s'asseoir) et [[seat]] (siège) !",
         "words": [
-          { "en": "big", "fr": "gros, grand", "hint": "« bigue » : « i » court et détendu, comme dans « vite »" },
-          { "en": "sit", "fr": "s'asseoir", "hint": "« sitt » : « i » court, bouche détendue" },
-          { "en": "six", "fr": "six", "hint": "« siks » : « i » court, et un « k » caché (pas « sisse » !)" },
-          { "en": "it", "fr": "ça, il ou elle (pour une chose)", "hint": "« itt » : un « i » court et détendu, puis un « t » net" },
-          { "en": "green", "fr": "vert", "hint": "« griine » : « ii » long, avec un grand sourire" },
-          { "en": "see", "fr": "voir", "hint": "« sii » : « ii » long et tendu" },
-          { "en": "teacher", "fr": "enseignant, enseignante", "hint": "« TII-tcheur » : « ii » long, accent au début" },
-          { "en": "please", "fr": "s'il te plaît, s'il vous plaît", "hint": "« pliiz » : « ii » long, et finis par un « z »" },
-          { "en": "sixteen", "fr": "seize", "hint": "« siks-TIIN » : les deux « i » dans un seul mot, court puis long et accentué !" }
+          {
+            "en": "big",
+            "fr": "gros, grand",
+            "hint": "« bigue » : « i » court et détendu, comme dans « vite »"
+          },
+          {
+            "en": "sit",
+            "fr": "s'asseoir",
+            "hint": "« sitt » : « i » court, bouche détendue"
+          },
+          {
+            "en": "six",
+            "fr": "six",
+            "hint": "« siks » : « i » court, et un « k » caché (pas « sisse » !)"
+          },
+          {
+            "en": "it",
+            "fr": "ça, il ou elle (pour une chose)",
+            "hint": "« itt » : un « i » court et détendu, puis un « t » net"
+          },
+          {
+            "en": "green",
+            "fr": "vert",
+            "hint": "« griine » : « ii » long, avec un grand sourire"
+          },
+          {
+            "en": "see",
+            "fr": "voir",
+            "hint": "« sii » : « ii » long et tendu"
+          },
+          {
+            "en": "teacher",
+            "fr": "enseignant, enseignante",
+            "hint": "« TII-tcheur » : « ii » long, accent au début"
+          },
+          {
+            "en": "please",
+            "fr": "s'il te plaît, s'il vous plaît",
+            "hint": "« pliiz » : « ii » long, et finis par un « z »"
+          },
+          {
+            "en": "sixteen",
+            "fr": "seize",
+            "hint": "« siks-TIIN » : les deux « i » dans un seul mot, court puis long et accentué !"
+          }
         ],
-        "pairs": [["ship", "sheep"], ["sit", "seat"], ["it", "eat"], ["fill", "feel"], ["hit", "heat"], ["bin", "bean"]],
-        "practice": ["It's a big green bin.", "Please sit in this seat.", "Six sheep sleep on a big ship."]
+        "pairs": [
+          [
+            "ship",
+            "sheep"
+          ],
+          [
+            "sit",
+            "seat"
+          ],
+          [
+            "it",
+            "eat"
+          ],
+          [
+            "fill",
+            "feel"
+          ],
+          [
+            "hit",
+            "heat"
+          ],
+          [
+            "bin",
+            "bean"
+          ]
+        ],
+        "practice": [
+          "It's a big green bin.",
+          "Please sit in this seat.",
+          "Six sheep sleep on a big ship."
+        ]
       },
       "mission": {
         "type": "ecrit",
@@ -103,17 +288,73 @@
         "ipa": "/ð/",
         "explain": "Le « th » de [[mother]] et de [[this]] est le cousin du « th » de [[three]] : même position, le bout de la langue entre les dents, mais cette fois ta voix vibre. Pose ta main sur ta gorge : sur [[three]], rien ne bouge ; sur [[this]], ça vibre comme un téléphone ! Le piège le plus courant ici, c'est de dire « dis » et « moder » avec un « d » (ou « zis » avec un « z ») : on entend alors [[day]] (jour) au lieu de [[they]] (ils). Bonne nouvelle : tu vas dire [[the]], [[this]] et [[that]] des milliers de fois, alors tu vas devenir un pro très vite !",
         "words": [
-          { "en": "mother", "fr": "mère", "hint": "« MEU-theur » : « th » qui vibre, langue entre les dents" },
-          { "en": "father", "fr": "père", "hint": "« FÂ-theur » : « â » bien ouvert, puis « th » qui vibre" },
-          { "en": "brother", "fr": "frère", "hint": "« BREU-theur » : pas « bro-deur » !" },
-          { "en": "this", "fr": "ce, cette, ceci", "hint": "« thiss » : « i » court, et ta gorge vibre" },
-          { "en": "that", "fr": "ce… là, cela", "hint": "« thatt » : bouche bien ouverte sur le « a »" },
-          { "en": "the", "fr": "le, la, les", "hint": "« theu » : tout petit et rapide (« thi » devant une voyelle : [[the apple]])" },
-          { "en": "they", "fr": "ils, elles", "hint": "« théï » : « th » qui vibre, puis « é » qui glisse vers « i »" },
-          { "en": "there", "fr": "là, là-bas", "hint": "« thèr » : « th » qui vibre, et un « r » anglais à la fin" }
+          {
+            "en": "mother",
+            "fr": "mère",
+            "hint": "« MEU-theur » : « th » qui vibre, langue entre les dents"
+          },
+          {
+            "en": "father",
+            "fr": "père",
+            "hint": "« FÂ-theur » : « â » bien ouvert, puis « th » qui vibre"
+          },
+          {
+            "en": "brother",
+            "fr": "frère",
+            "hint": "« BREU-theur » : pas « bro-deur » !"
+          },
+          {
+            "en": "this",
+            "fr": "ce, cette, ceci",
+            "hint": "« thiss » : « i » court, et ta gorge vibre"
+          },
+          {
+            "en": "that",
+            "fr": "ce… là, cela",
+            "hint": "« thatt » : bouche bien ouverte sur le « a »"
+          },
+          {
+            "en": "the",
+            "fr": "le, la, les",
+            "hint": "« theu » : tout petit et rapide (« thi » devant une voyelle : [[the apple]])"
+          },
+          {
+            "en": "they",
+            "fr": "ils, elles",
+            "hint": "« théï » : « th » qui vibre, puis « é » qui glisse vers « i »"
+          },
+          {
+            "en": "there",
+            "fr": "là, là-bas",
+            "hint": "« thèr » : « th » qui vibre, et un « r » anglais à la fin"
+          }
         ],
-        "pairs": [["they", "day"], ["then", "den"], ["there", "dare"], ["though", "dough"], ["breathe", "breeze"]],
-        "practice": ["This is my mother, and that is my father.", "The other brother is over there."]
+        "pairs": [
+          [
+            "they",
+            "day"
+          ],
+          [
+            "then",
+            "den"
+          ],
+          [
+            "there",
+            "dare"
+          ],
+          [
+            "though",
+            "dough"
+          ],
+          [
+            "breathe",
+            "breeze"
+          ]
+        ],
+        "practice": [
+          "This is my mother, and that is my father.",
+          "The other brother is over there."
+        ]
       },
       "mission": {
         "type": "oral",
@@ -124,6 +365,103 @@
           "J'ai dit [[this]] avec la langue entre les dents et la gorge qui vibre (pas « dis »)",
           "J'ai utilisé [[he]] pour un garçon ou un homme, et [[she]] pour une fille ou une femme",
           "J'ai dit l'âge avec [[He's]] ou [[She's]] + le nombre (jamais [[has]])"
+        ]
+      }
+    },
+    {
+      "unit": "1.5",
+      "pron": {
+        "focus": "Le nom des lettres",
+        "ipa": "/eɪ/ – /iː/ – /aɪ/",
+        "explain": "Les lettres anglaises ont le même dessin qu'en français, mais pas le même nom ! Trois voyelles piègent tout le monde : [[A]] se dit « éï », [[E]] se dit « ii » et [[I]] se dit « aï ». Pour [[G]] et [[J]], c'est presque l'inverse du français. Le truc pour t'en souvenir : [[J]] rime avec [[A]] (« djéï », « éï ») et [[G]] rime avec [[E]] (« djii », « ii »). Et au Canada, la dernière lettre se dit [[zed]] !",
+        "words": [
+          {
+            "en": "A",
+            "fr": "la lettre A",
+            "hint": "« éï » : un « é » qui glisse vers « i », jamais « a » !"
+          },
+          {
+            "en": "E",
+            "fr": "la lettre E",
+            "hint": "« ii » : un « i » long et souriant, jamais « eu » !"
+          },
+          {
+            "en": "I",
+            "fr": "la lettre I (et le mot « je »)",
+            "hint": "« aï » : comme dans hi"
+          },
+          {
+            "en": "G",
+            "fr": "la lettre G",
+            "hint": "« djii » : rime avec E"
+          },
+          {
+            "en": "J",
+            "fr": "la lettre J",
+            "hint": "« djéï » : rime avec A"
+          },
+          {
+            "en": "R",
+            "fr": "la lettre R",
+            "hint": "« âr » : « â » bien ouvert, puis le « r » anglais"
+          },
+          {
+            "en": "Y",
+            "fr": "la lettre Y",
+            "hint": "« waï » : exactement comme le mot why (pourquoi)"
+          },
+          {
+            "en": "W",
+            "fr": "la lettre W",
+            "hint": "« DEU-beul-iou » : un « double U », pas un « double V » ! Accent au début"
+          },
+          {
+            "en": "H",
+            "fr": "la lettre H",
+            "hint": "« éïtch » : commence comme A, finit par « tch »"
+          },
+          {
+            "en": "zed",
+            "fr": "la lettre Z (au Canada)",
+            "hint": "« zèd » : aux États-Unis, on dit plutôt « zii »"
+          }
+        ],
+        "pairs": [
+          [
+            "E",
+            "I"
+          ],
+          [
+            "G",
+            "J"
+          ],
+          [
+            "A",
+            "E"
+          ],
+          [
+            "A",
+            "R"
+          ],
+          [
+            "I",
+            "Y"
+          ]
+        ],
+        "practice": [
+          "How do you spell your name?",
+          "Jade is J, A, D, E. Gigi is G, I, G, I."
+        ]
+      },
+      "mission": {
+        "type": "oral",
+        "prompt": "Tu appelles la bibliothèque pour réserver un livre. Le bibliothécaire anglophone te demande ton nom, puis : [[How do you spell your last name?]] Donne ton prénom et ton nom, puis épelle ton nom de famille lettre par lettre.",
+        "model": "My name is Félix Gagnon. My last name is G, A, G, N, O, N.",
+        "checklist": [
+          "J'ai dit [[My name is]] + mon prénom et mon nom",
+          "J'ai épelé lettre par lettre avec les noms anglais (« djii » pour G, pas « jé »)",
+          "J'ai bien dit A « éï », E « ii » et I « aï »",
+          "Si une lettre revient deux fois de suite, j'ai dit [[double]] (par exemple [[double L]])"
         ]
       }
     }

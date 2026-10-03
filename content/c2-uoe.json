@@ -1,0 +1,328 @@
+{
+  "part1": [
+    {
+      "id": "u1-01",
+      "title": "The Hidden Value of Boredom",
+      "text": "For most of us, boredom is something to be avoided at all {1}. The moment a queue {2} to move, we reach for our phones, and every idle second is promptly filled. Yet a growing number of psychologists argue that we may be doing ourselves a {3} disservice. Their research suggests that letting the mind wander, far from being a waste of time, can {4} rise to some of our most original ideas. When we are not absorbed in a particular task, the brain seems free to {5} connections between memories and impressions that would otherwise remain unrelated. Ironically, the very productivity experts who have long paid {6} service to the value of rest are often the first to cram every hour of the day with appointments. The researchers are careful to stress that what matters is the quality of our daydreaming rather than its sheer quantity. Still, their findings {7} an intriguing question: if we never allow ourselves to be bored, what might we be missing? Perhaps the next time we find ourselves with nothing to do, we should {8} the urge to fill the silence and simply see where our thoughts lead us.",
+      "gaps": [
+        { "choices": ["prices", "costs", "expenses", "charges"], "answer": 1, "explain": "« At all costs » (à tout prix) est une expression figée, toujours avec costs au pluriel ; prices, expenses ou charges ne s'emploient jamais dans cette locution." },
+        { "choices": ["neglects", "omits", "fails", "lacks"], "answer": 2, "explain": "« Fail to do » = ne pas se produire, ne pas réussir à (une file qui n'avance pas). Neglect et omit supposent un oubli humain volontaire, et lack se construit avec un nom, jamais avec to + verbe." },
+        { "choices": ["grim", "grave", "stern", "sombre"], "answer": 1, "explain": "« A grave disservice » (un tort sérieux) est la collocation. Grim, stern et sombre décrivent une humeur ou une atmosphère, pas la gravité d'un tort." },
+        { "choices": ["bring", "make", "lead", "give"], "answer": 3, "explain": "« Give rise to » = donner naissance à, engendrer. Lead se construit directement avec to (lead to), sans rise ; bring et make ne forment pas d'expression avec rise to." },
+        { "choices": ["forge", "mould", "found", "cast"], "answer": 0, "explain": "« Forge connections » = créer des liens solides. Mould = façonner une matière, found = fonder une institution, cast = lancer ou couler ; aucun ne se combine avec connections." },
+        { "choices": ["mouth", "tongue", "lip", "word"], "answer": 2, "explain": "« Pay lip service to » = défendre une idée en paroles sans l'appliquer. C'est la seule forme figée : mouth, tongue ou word service n'existent pas." },
+        { "choices": ["lift", "raise", "rise", "arouse"], "answer": 1, "explain": "On dit « raise a question » (soulever une question). Rise est intransitif (pas de complément), lift = soulever physiquement, arouse s'emploie pour des sentiments (arouse suspicion)." },
+        { "choices": ["refuse", "reject", "resist", "deny"], "answer": 2, "explain": "« Resist the urge to » = résister à l'envie de. Refuse et reject portent sur une offre ou une idée, et deny ne s'emploie pas avec urge." }
+      ]
+    },
+    {
+      "id": "u1-02",
+      "title": "Bees on the Rooftops",
+      "text": "In cities around the world, beekeeping has {1} something of a renaissance. Hives now sit on the roofs of hotels, office towers and even concert halls, and their owners speak of the hobby with almost evangelical {2}. On the {3} of it, the trend seems an unqualified good: if pollinators are struggling, surely more bees can only help. Ecologists, however, urge caution. Honeybees are, after all, domesticated animals, kept in large numbers and competing with wild species for nectar and pollen, which in many cities are already in short {4}. Where green space is scarce, a sudden influx of hives may put native bees at a distinct {5}. None of this is to suggest that urban beekeepers act in bad {6}; most are genuinely motivated by concern for the environment. But good intentions are no {7} for careful planning. Planting wildflowers, leaving patches of lawn unmown and avoiding pesticides may do far more for pollinators than yet another box of bees. In the end, the most effective way to help nature may simply be to give it the space it needs to {8} for itself.",
+      "gaps": [
+        { "choices": ["relished", "enjoyed", "savoured", "delighted"], "answer": 1, "explain": "« Enjoy a renaissance / a revival » = connaître un renouveau. Relish et savour = savourer un plaisir concret, et delight se construit avec in : aucun n'accompagne renaissance." },
+        { "choices": ["zest", "appetite", "zeal", "keenness"], "answer": 2, "explain": "« Evangelical zeal » (un zèle de missionnaire) est la collocation. Zest (entrain), appetite (appétit) et keenness (empressement) ne se combinent pas avec evangelical." },
+        { "choices": ["front", "face", "look", "skin"], "answer": 1, "explain": "« On the face of it » = à première vue, en apparence : expression figée. Les autres noms ne forment pas cette locution." },
+        { "choices": ["store", "stock", "supply", "provision"], "answer": 2, "explain": "« In short supply » = rare, insuffisant. On ne dit jamais in short stock, store ou provision." },
+        { "choices": ["drawback", "disadvantage", "handicap", "setback"], "answer": 1, "explain": "« Put someone at a disadvantage » = désavantager quelqu'un. Drawback (inconvénient) et setback (revers) ne s'emploient pas après at a, et handicap ne forme pas cette expression." },
+        { "choices": ["belief", "trust", "will", "faith"], "answer": 3, "explain": "« Act in bad faith » = agir de mauvaise foi. Bad will n'existe pas (on dit ill will), pas plus que bad trust ou bad belief." },
+        { "choices": ["surrogate", "substitute", "proxy", "stand-in"], "answer": 1, "explain": "« Be no substitute for » = ne pas pouvoir remplacer. Surrogate, proxy et stand-in désignent des personnes qui en remplacent une autre et ne forment pas cette expression." },
+        { "choices": ["ward", "fend", "stave", "parry"], "answer": 1, "explain": "« Fend for oneself » = se débrouiller seul. Ward off et stave off (repousser) exigent off, et parry = parer un coup : aucun ne se construit avec for itself." }
+      ]
+    },
+    {
+      "id": "u1-03",
+      "title": "Every Map Tells a Story",
+      "text": "Every map, however neutral it may appear, is a kind of argument. To draw one is to decide what to include and, {1} importantly, what to leave out. Early cartographers often filled the blank spaces at the edges of the known world with sea monsters and imaginary islands, partly for decoration and partly, one suspects, as a way of saving {2}. Modern maps may look more objective, but they are no less the {3} of deliberate choices. Because the earth is round and paper is flat, every projection must distort shape, area or distance to some {4}. A projection that preserves the outlines of the continents will inevitably blow the size of regions near the poles out of all {5}, making some countries appear far larger than they really are. Few people who glance at a world map on a classroom wall {6} such matters a second thought, yet the images we absorb in childhood can {7} a lasting influence on how we picture the planet. Learning to read a map critically, then, is far from a mere academic exercise: it brings to {8} the decisions that lie behind the apparent neutrality of the page.",
+      "gaps": [
+        { "choices": ["equally", "likewise", "similarly", "alike"], "answer": 0, "explain": "« Equally importantly » = et, tout aussi important. Likewise et similarly ne modifient pas l'adverbe importantly, et alike se place après le nom (they were treated alike)." },
+        { "choices": ["grace", "face", "honour", "pride"], "answer": 1, "explain": "« Save face » = sauver la face, sans article ni possessif. A saving grace est un nom composé (une qualité qui rachète), et honour ou pride exigeraient un possessif (their pride)." },
+        { "choices": ["produce", "output", "product", "yield"], "answer": 2, "explain": "« The product of » = le fruit, le résultat de. Produce désigne les produits agricoles, output une production chiffrée et yield un rendement." },
+        { "choices": ["measure", "extent", "scope", "range"], "answer": 1, "explain": "« To some extent » = dans une certaine mesure. Measure s'emploie avec in (in some measure), et scope ou range ne forment pas cette locution." },
+        { "choices": ["ratio", "proportion", "scale", "measure"], "answer": 1, "explain": "« Blow something out of (all) proportion » = grossir démesurément. Ratio, scale et measure ne forment pas cette expression figée." },
+        { "choices": ["pay", "give", "lend", "offer"], "answer": 1, "explain": "« Give something a second thought » = y réfléchir un instant. Pay s'emploie avec attention (pay attention), lend avec a hand ou an ear, et offer ne forme pas l'expression." },
+        { "choices": ["inflict", "exert", "impose", "enforce"], "answer": 1, "explain": "« Exert an influence on » = exercer une influence sur. Inflict s'emploie pour une souffrance, impose pour une règle ou une volonté, enforce pour une loi." },
+        { "choices": ["sight", "view", "light", "day"], "answer": 2, "explain": "« Bring to light » = mettre au jour, révéler. On dit bring into view (avec into), mais ni bring to sight ni bring to day n'ont ce sens." }
+      ]
+    },
+    {
+      "id": "u1-04",
+      "title": "The Fragile Archive",
+      "text": "We tend to assume that anything stored digitally will last forever. In many {1}, however, digital information is more fragile than ink on paper. A medieval manuscript kept in reasonable conditions can remain legible for centuries, whereas a file saved only a couple of decades ago may already be impossible to open. Formats fall {2} disuse, the software needed to read them disappears, and storage devices quietly deteriorate. Archivists have a name for this looming {3}: the digital dark age. Their fear is that future historians will find our era curiously silent, not because we recorded too little, but because so much of what we recorded has vanished without a {4}. Preventing this is no mean {5}. It is not enough simply to copy files onto newer machines; one must also preserve the context that gives them meaning. Libraries and universities are now {6} forces to develop shared standards, and some institutions regularly migrate their collections to fresh formats. Yet the scale of the task is daunting, and funding rarely keeps {7} with the sheer volume of material produced each year. Ultimately, whether our digital heritage survives may depend less on technology than on whether anyone is prepared to foot the {8}.",
+      "gaps": [
+        { "choices": ["respects", "facets", "features", "angles"], "answer": 0, "explain": "« In many respects » = à bien des égards. Facets, features et angles ne s'emploient pas dans cette locution adverbiale figée." },
+        { "choices": ["out", "into", "under", "from"], "answer": 1, "explain": "« Fall into disuse » = tomber en désuétude. Fall out of use existe, mais pas fall out disuse ; under et from ne se combinent pas avec fall … disuse." },
+        { "choices": ["prospect", "outlook", "perspective", "vista"], "answer": 0, "explain": "« Prospect » = perspective d'un événement futur, souvent menaçant, d'où a looming prospect. Outlook = prévisions générales, perspective = point de vue, vista = panorama." },
+        { "choices": ["track", "trace", "mark", "sign"], "answer": 1, "explain": "« Vanish without a trace » = disparaître sans laisser de trace : expression figée. On dit lose track of, mais jamais without a track, a mark ou a sign." },
+        { "choices": ["deed", "act", "feat", "exploit"], "answer": 2, "explain": "« No mean feat » = un véritable exploit, pas une mince affaire. Deed, act et exploit ne se combinent pas avec no mean." },
+        { "choices": ["linking", "joining", "binding", "tying"], "answer": 1, "explain": "« Join forces » = unir ses forces. Link, bind et tie ne forment pas d'expression avec forces." },
+        { "choices": ["speed", "pace", "rate", "tempo"], "answer": 1, "explain": "« Keep pace with » = suivre le rythme de. Speed, rate et tempo ne s'emploient pas dans keep … with." },
+        { "choices": ["invoice", "check", "bill", "account"], "answer": 2, "explain": "« Foot the bill » = payer la note, financer. Invoice et check ne se combinent pas avec foot, et account (compte) n'a pas ce sens." }
+      ]
+    },
+    {
+      "id": "u1-05",
+      "title": "Lost and Found in Translation",
+      "text": "Translators are often {1} to as invisible artists: when they do their job well, nobody notices they were there at all. Yet anyone who has tried to render a poem or a joke into another language knows how much ingenuity the task demands. Between any two languages there is seldom a one-to-one {2} of words, since each term carries a cloud of associations that its nearest equivalent may lack entirely. A good translator must therefore strike a delicate {3} between fidelity to the original and readability in the new language. Lean too far one way and the result is stilted; lean too far the other and the translator {4} the risk of rewriting the author altogether. Humour poses a particular challenge, since puns and wordplay are, almost {5} definition, rooted in the quirks of a single tongue. The most inventive translators sometimes devise entirely new jokes that capture the {6} of the original rather than its letter. Machine translation has made {7} strides in recent years, and for many everyday purposes it is perfectly adequate. Whether software will ever {8} up to the subtlety of a skilled human translator, however, remains an open question.",
+      "gaps": [
+        { "choices": ["called", "referred", "named", "termed"], "answer": 1, "explain": "Seul refer se construit avec to : be referred to as = être désigné comme. Called, named et termed s'emploient sans to (be called invisible artists)." },
+        { "choices": ["agreement", "correspondence", "accordance", "harmony"], "answer": 1, "explain": "« A one-to-one correspondence » = une correspondance terme à terme. Agreement = accord d'opinion ou grammatical, accordance s'emploie dans in accordance with, harmony = harmonie." },
+        { "choices": ["poise", "balance", "equation", "stability"], "answer": 1, "explain": "« Strike a balance » = trouver le juste équilibre : collocation figée. Poise = aisance, stability = stabilité, et aucun ne s'emploie avec strike." },
+        { "choices": ["makes", "holds", "runs", "bears"], "answer": 2, "explain": "« Run the risk of » = courir le risque de. Make, hold et bear ne se combinent pas avec the risk of dans ce sens." },
+        { "choices": ["in", "on", "for", "by"], "answer": 3, "explain": "« By definition » = par définition ; la préposition by est figée, les autres sont impossibles." },
+        { "choices": ["soul", "spirit", "ghost", "breath"], "answer": 1, "explain": "L'opposition figée est « the spirit, not the letter » (l'esprit et non la lettre). Soul, ghost ou breath ne s'opposent pas à letter." },
+        { "choices": ["broad", "tall", "great", "heavy"], "answer": 2, "explain": "« Make great strides » = faire de grands progrès. Broad, tall et heavy ne se combinent pas avec strides." },
+        { "choices": ["weigh", "measure", "count", "size"], "answer": 1, "explain": "« Measure up to » = être à la hauteur de. Weigh up = peser le pour et le contre, size up = jauger, count up = additionner." }
+      ]
+    },
+    {
+      "id": "u1-06",
+      "title": "Sleep: The Overlooked Necessity",
+      "text": "Not so long ago, sleep was widely seen as little more than a necessary evil, a nightly interruption to be kept to a {1}. Scientists now know better. While we sleep, the brain is busy sorting the day's experiences, consolidating some memories and discarding others. Over time, a chronic lack of sleep takes its {2} on both body and mind: we become irritable and forgetful, and our judgment suffers in ways we are often the last to notice. Despite this, many people treat rest as a luxury, sacrificing it whenever deadlines {3}. Teenagers are particularly hard {4}. Their internal clocks naturally shift later during adolescence, yet school timetables seldom take this into {5}. The result is a great many students who arrive at their first class barely awake. Some school boards have experimented with later start times, and the early results, while modest, point in an encouraging {6}. For the rest of us, the advice is refreshingly simple: keep regular hours, dim the screens in the evening, and resist the temptation to give up sleep for the {7} of a little more work. It may well {8} out to be the most productive decision we ever make.",
+      "gaps": [
+        { "choices": ["least", "minimum", "lowest", "smallest"], "answer": 1, "explain": "« Keep something to a minimum » = réduire au strict minimum. Least, lowest et smallest sont des superlatifs qui ne s'emploient pas après to a." },
+        { "choices": ["price", "toll", "cost", "charge"], "answer": 1, "explain": "« Take its toll on » = avoir des effets néfastes sur. On dit pay the price, mais jamais take its price, cost ou charge." },
+        { "choices": ["hover", "loom", "tower", "brood"], "answer": 1, "explain": "« Deadlines loom » : une échéance approche de façon menaçante. Hover = planer, tower = dominer par sa hauteur, brood = ruminer ; aucun ne se dit d'une échéance." },
+        { "choices": ["struck", "beaten", "hit", "knocked"], "answer": 2, "explain": "« Be hard hit » = être durement touché : c'est la collocation figée avec hard. Struck, beaten et knocked ne forment pas cette expression." },
+        { "choices": ["account", "regard", "respect", "count"], "answer": 0, "explain": "« Take something into account » = tenir compte de. Regard, respect et count ne s'emploient jamais après take into." },
+        { "choices": ["course", "route", "direction", "way"], "answer": 2, "explain": "« Point in the right / an encouraging direction » = aller dans le bon sens. Course et route ne se combinent pas avec point in, et point in a way n'a pas ce sens." },
+        { "choices": ["gain", "cause", "sake", "interest"], "answer": 2, "explain": "« For the sake of » = pour, dans le but d'obtenir. Interest s'emploie avec in (in the interest of), et for the gain / the cause of ne conviennent pas ici." },
+        { "choices": ["prove", "turn", "come", "work"], "answer": 1, "explain": "« Turn out to be » = s'avérer, se révéler. Prove to be existe, mais sans out ; come out et work out ne se construisent pas avec to be dans ce sens." }
+      ]
+    }
+  ],
+  "part2": [
+    {
+      "id": "u2-01",
+      "title": "The Return of the Night Train",
+      "text": "After decades of decline, the overnight sleeper train is enjoying an unexpected comeback, particularly in Europe. {1} once seemed a relic of a slower age is now being promoted as a greener alternative to short-haul flights. The appeal is easy to understand. Rather {2} spending hours in airport queues, passengers board in the city centre, fall asleep to the gentle rocking of the carriage and wake up hundreds of kilometres away. {3} only that: they also arrive refreshed and with a clear conscience. Not everyone is convinced, {4}. Critics point out that sleeper services are expensive to run and that a ticket can cost several times {5} much as a budget flight. Others complain that the comfort on board still leaves a great deal to {6} desired. Even so, demand has proved strong enough to persuade several operators to invest in new routes. {7} the trend continue, travellers may soon find that the journey itself, {8} merely the destination, becomes the highlight of the trip.",
+      "gaps": [
+        { "answer": ["What"], "explain": "What = ce qui : la proposition « What once seemed a relic » est le sujet de is. Which ou that exigeraient un antécédent, absent ici." },
+        { "answer": ["than"], "explain": "« Rather than + -ing » = au lieu de. Rather seul ne peut pas introduire spending ici." },
+        { "answer": ["Not"], "explain": "« Not only that » = et ce n'est pas tout, qui annonce un argument supplémentaire (they also arrive…)." },
+        { "answer": ["though", "however"], "explain": "Though ou however en fin de phrase = pourtant, cependant : ils introduisent une restriction. But ou although ne peuvent pas se placer en fin de proposition." },
+        { "answer": ["as"], "explain": "Comparaison d'égalité multipliée : « several times as much as » = plusieurs fois plus cher que. So ne s'emploie pas dans cette structure affirmative." },
+        { "answer": ["be"], "explain": "« Leave a lot / a great deal to be desired » = laisser beaucoup à désirer ; l'infinitif passif to be est figé." },
+        { "answer": ["Should"], "explain": "Inversion conditionnelle : « Should the trend continue » = si la tendance se poursuit. If exigerait continues, et were exigerait to continue." },
+        { "answer": ["not"], "explain": "« The journey itself, not merely the destination » = le trajet lui-même, et pas seulement la destination. Rather ou instead exigeraient than ou of." }
+      ]
+    },
+    {
+      "id": "u2-02",
+      "title": "Why We Collect",
+      "text": "Few human habits are as widespread, or as puzzling, as the urge to collect. Stamps, coins, seashells, vinyl records: there seems to be almost nothing that someone, somewhere, has not tried to gather a complete set {1}. Psychologists have put forward a number of explanations. Some believe that collecting gives us a sense of order in a world that is otherwise largely {2} of our control. Others emphasize the thrill of the hunt, pointing {3} the fact that the moment of acquisition is often more satisfying than ownership itself. {4} the explanation, collectors tend to share certain traits. They are patient, observant and, {5} times, a little obsessive. For many, a collection is also a way of preserving memories, with each object serving {6} a reminder of a particular place or moment. {7} matter how valuable a collection becomes, its true worth to its owner can rarely be measured in money. Indeed, many collectors would sooner part with their savings {8} with a single treasured item.",
+      "gaps": [
+        { "answer": ["of"], "explain": "« A complete set of something » : la préposition of est rejetée en fin de proposition relative (nothing that someone has tried to gather a set of)." },
+        { "answer": ["out"], "explain": "« Out of our control » = hors de notre contrôle. Beyond se construirait sans of (beyond our control)." },
+        { "answer": ["to"], "explain": "« Point to the fact that » = invoquer le fait que. Point out se construirait directement avec that, sans the fact." },
+        { "answer": ["Whatever"], "explain": "« Whatever the explanation » = quelle que soit l'explication (forme elliptique de whatever the explanation may be). However exigerait un adjectif." },
+        { "answer": ["at"], "explain": "« At times » = parfois : préposition figée. On dit at times, jamais in times ou on times dans ce sens." },
+        { "answer": ["as"], "explain": "« Serve as a reminder of » = servir de rappel. Serve for ne s'emploie pas dans ce sens." },
+        { "answer": ["No"], "explain": "« No matter how + adjectif » = peu importe à quel point. On ne dit pas Not matter." },
+        { "answer": ["than"], "explain": "« Would sooner … than … » = préférer … plutôt que … ; sooner, comparatif, appelle than." }
+      ]
+    },
+    {
+      "id": "u2-03",
+      "title": "The Myth of Multitasking",
+      "text": "We like to think of ourselves as accomplished multitaskers, capable of answering emails, listening to a podcast and cooking dinner {1} the same time. {2} as we might like to believe otherwise, the brain is not really doing several things at once. Instead, it switches rapidly from one task to another, and each switch carries {3} small but measurable cost. Errors creep in, and tasks take longer than they {4} otherwise. Curiously, the people {5} consider themselves the most skilled at multitasking often perform worst on tests of attention. This may be {6} to the fact that habitual multitaskers find it harder to filter out distractions. None of this means we should abandon multitasking altogether; folding laundry while chatting on the phone is unlikely to do anyone any harm. But when it {7} to demanding work, the evidence is clear: giving one task our undivided attention is {8} only more efficient but also, in the long run, far less exhausting.",
+      "gaps": [
+        { "answer": ["at"], "explain": "« At the same time » = en même temps : préposition figée." },
+        { "answer": ["Much"], "explain": "« Much as + proposition » = bien que, même si (concession soutenue). As seul ou Although ne peuvent pas être suivis de as." },
+        { "answer": ["a"], "explain": "Cost est ici dénombrable et singulier : a small but measurable cost. The ne convient pas, car ce coût n'a pas été mentionné." },
+        { "answer": ["would", "might"], "explain": "« Than they would / might otherwise » = que ce ne serait le cas autrement (conditionnel implicite). Will ou do ne rendent pas l'hypothèse." },
+        { "answer": ["who", "that"], "explain": "Pronom relatif sujet pour des personnes : who ou that. Which ne s'emploie pas pour des personnes." },
+        { "answer": ["due", "owing"], "explain": "« Due to / owing to the fact that » = en raison du fait que. Because exigerait of, et thanks ne s'emploie pas après be ici." },
+        { "answer": ["comes"], "explain": "« When it comes to » = quand il s'agit de : expression figée, au présent à la troisième personne (comes)." },
+        { "answer": ["not"], "explain": "« Not only … but also … » = non seulement … mais aussi ; la suite (but also) impose not." }
+      ]
+    },
+    {
+      "id": "u2-04",
+      "title": "Never Too Late to Learn",
+      "text": "It is often said that children pick up languages effortlessly, while adults struggle {1} master even the basics. Like many popular beliefs, this one contains a grain of truth but is far {2} the whole story. Young children do tend to acquire a native-like accent more easily, but older learners have advantages of their {3}. They can bring years of experience {4} bear on the task, they grasp grammatical concepts more readily, and they are usually better at organizing their study time. What adults often lack is not ability but confidence. Many are so afraid of making mistakes {5} they hardly dare to open their mouths. Yet errors are an essential part of learning: {6} them, there would be nothing to correct and therefore no progress. Teachers who work with adult beginners frequently remark {7} how quickly their students advance once they stop worrying about sounding foolish. The lesson, it seems, is that it is never too late to start, {8} long as one is prepared to laugh at oneself now and then.",
+      "gaps": [
+        { "answer": ["to"], "explain": "« Struggle to do something » = avoir du mal à faire quelque chose : struggle est suivi de l'infinitif avec to." },
+        { "answer": ["from"], "explain": "« Far from the whole story » = loin d'être toute l'histoire. Far seul ne peut pas précéder un groupe nominal." },
+        { "answer": ["own"], "explain": "« Of their own » = qui leur sont propres. Of theirs (sans own) serait incorrect devant cet emplacement." },
+        { "answer": ["to"], "explain": "« Bring something to bear on » = mettre à profit, mobiliser pour : expression figée avec to." },
+        { "answer": ["that"], "explain": "« So + adjectif + that » = si … que : la conséquence est introduite par that. As ou which ne conviennent pas." },
+        { "answer": ["without"], "explain": "« Without them, there would be… » = sans eux, il n'y aurait… : without introduit l'hypothèse irréelle du conditionnel qui suit." },
+        { "answer": ["on", "upon"], "explain": "« Remark on / upon something » = faire une remarque sur. About est possible avec talk, mais remark se construit avec on ou upon." },
+        { "answer": ["as", "so"], "explain": "« As long as » ou « so long as » = à condition que. Les deux formes sont correctes." }
+      ]
+    },
+    {
+      "id": "u2-05",
+      "title": "Keepers of the Light",
+      "text": "For centuries, lighthouse keepers led lives of remarkable solitude. Stationed on remote headlands or rocky islets, they were responsible {1} keeping the lamp burning from dusk till dawn, whatever the weather. It was demanding work, and a single lapse could spell disaster for any ship unlucky enough to be passing {2} that moment. Keepers had to trim wicks, polish lenses and record conditions in meticulous logbooks, many {3} which survive to this day. Supplies arrived only occasionally, and in stormy seasons a keeper's household might go weeks {4} seeing an unfamiliar face. {5} the hardships, many keepers grew deeply attached to their stations and were reluctant to leave. With the spread of automated systems in the twentieth century, the profession gradually died {6}. Today, most lighthouses operate with no one on site at all. {7} romantic the image of the solitary keeper may be, it is worth remembering {8} gruelling the job could be.",
+      "gaps": [
+        { "answer": ["for"], "explain": "« Be responsible for + -ing » = être chargé de. Responsible n'est jamais suivi de of ou to dans ce sens." },
+        { "answer": ["at"], "explain": "« At that moment » = à ce moment-là : préposition figée devant moment." },
+        { "answer": ["of"], "explain": "« Many of which » = dont beaucoup ; le quantifieur est suivi de of devant le relatif which." },
+        { "answer": ["without"], "explain": "« Go weeks without seeing » = passer des semaines sans voir : without + -ing exprime l'absence." },
+        { "answer": ["Despite", "Notwithstanding"], "explain": "Despite (ou notwithstanding, plus soutenu) + nom = malgré. In spite exigerait of, et Although exigerait une proposition avec un verbe." },
+        { "answer": ["out"], "explain": "« Die out » = disparaître progressivement, s'éteindre (pour une espèce, une coutume, un métier). Die down se dit d'un bruit ou du vent." },
+        { "answer": ["However"], "explain": "« However + adjectif + sujet + may be » = aussi … que soit. Whatever ne peut pas précéder directement un adjectif." },
+        { "answer": ["how"], "explain": "How + adjectif introduit une exclamative indirecte : remember how gruelling the job could be (à quel point c'était éreintant)." }
+      ]
+    },
+    {
+      "id": "u2-06",
+      "title": "The Trouble with Praise",
+      "text": "Most parents and teachers assume that praising children for their intelligence will boost their confidence. A considerable body of research suggests, however, that the opposite may {1} the case. Children who are repeatedly told how clever they are tend to see ability as something fixed: something you are either born with or {2}. As a result, they may avoid challenges {3} fear of failing and thus revealing that they are not so clever after all. By contrast, children praised for their effort are more inclined to persevere when the going gets tough. That is not to say that all praise is harmful; {4} from it. The point is that the kind of praise we give matters a great {5}. Comments such as 'You worked really hard on that' encourage children to view setbacks {6} opportunities rather than verdicts. Of course, praise must be sincere {7} it is to have any effect at all, since children are remarkably quick to detect flattery. Handled wisely, {8}, a few well-chosen words can make a lasting difference.",
+      "gaps": [
+        { "answer": ["be"], "explain": "« Be the case » = être le cas ; après le modal may, on emploie la base verbale be." },
+        { "answer": ["not"], "explain": "« Either … or not » = soit … soit pas : not reprend de façon elliptique « born with it »." },
+        { "answer": ["for"], "explain": "« For fear of + -ing » = de peur de : la préposition for est figée." },
+        { "answer": ["far"], "explain": "« Far from it » = loin de là : réplique figée qui renforce la négation précédente." },
+        { "answer": ["deal"], "explain": "« A great deal » = énormément, beaucoup : locution adverbiale figée." },
+        { "answer": ["as"], "explain": "« View something as » = considérer quelque chose comme ; view se construit avec as, jamais like." },
+        { "answer": ["if"], "explain": "« If it is to have any effect » = si l'on veut qu'il ait un effet (be to exprime la condition nécessaire). Unless donnerait le sens contraire." },
+        { "answer": ["though", "however"], "explain": "Though ou however en incise = cependant : ils opposent ce bilan positif à la mise en garde précédente. But ne peut pas se placer en incise." }
+      ]
+    }
+  ],
+  "part3": [
+    {
+      "id": "u3-01",
+      "title": "The Rise of Citizen Science",
+      "text": "Not long ago, scientific research was regarded as the {1} preserve of professionals working in laboratories. Today, thanks largely to the internet, ordinary people are making contributions that many scientists consider quite simply {2}. Volunteers classify galaxies, count migrating birds and record the first flowers of spring, generating data on a scale that would be {3} for any small research team. Critics initially questioned the {4} of observations made by amateurs, but careful study design has largely laid such doubts to rest. Results are cross-checked, and any {5} are flagged for expert review. For participants, the rewards may be less tangible but are no less real: a deeper understanding of the natural world and a sense of {6} to a wider community. Some projects have even led to genuine discoveries, a fact that has done much to {7} newcomers. At a time of growing public {8} of experts, citizen science may also help to bridge the gap between researchers and the rest of society.",
+      "gaps": [
+        { "stem": "EXCLUDE", "answer": ["exclusive"], "explain": "Adjectif devant preserve : « the exclusive preserve of » = le domaine réservé de. Excluded (participe) ne forme pas cette collocation." },
+        { "stem": "PRICE", "answer": ["priceless"], "explain": "Priceless = inestimable, d'une valeur qu'on ne peut pas chiffrer. Pricey (cher) donnerait un contresens." },
+        { "stem": "MANAGE", "answer": ["unmanageable"], "explain": "Préfixe négatif un- + suffixe -able : ingérable pour une petite équipe. Manageable contredirait l'idée d'une échelle énorme." },
+        { "stem": "RELY", "answer": ["reliability"], "explain": "Nom après the : reliability (fiabilité), avec y → i devant -ability. Reliance signifie dépendance, ce qui ne convient pas." },
+        { "stem": "CONSIST", "answer": ["inconsistencies"], "explain": "Nom pluriel (verbe are) avec préfixe négatif : inconsistencies = incohérences. Consistencies n'a pas de sens ici." },
+        { "stem": "BELONG", "answer": ["belonging"], "explain": "« A sense of belonging » = un sentiment d'appartenance : nom en -ing figé. Belongings signifie les affaires personnelles." },
+        { "stem": "HEART", "answer": ["hearten"], "explain": "Verbe après to : hearten = encourager, réconforter (suffixe -en). Disheartened donnerait le sens contraire et n'est pas un infinitif." },
+        { "stem": "TRUST", "answer": ["mistrust", "distrust"], "explain": "Nom suivi de of : mistrust ou distrust = méfiance. Trust contredirait l'idée qu'il faut rapprocher chercheurs et public." }
+      ]
+    },
+    {
+      "id": "u3-02",
+      "title": "The Quiet Strength of Introverts",
+      "text": "In many workplaces, the most {1} people are assumed to be the most capable. Those who speak up first in meetings tend to be seen as natural leaders, while their quieter colleagues are frequently {2} when promotions are handed out. Yet there is little evidence that {3} and competence go hand in hand. Introverts often excel at listening, reflection and careful analysis, qualities that are {4} in any organization hoping to avoid costly mistakes. Unfortunately, open-plan offices and endless brainstorming sessions can be a source of considerable {5} for them. Some companies have begun to rethink their working {6}, offering quiet areas where employees can concentrate without interruption. Such changes need not be expensive, and the benefits to morale and {7} can be substantial. Ultimately, a workplace that values different temperaments is not merely fairer; it is also {8} more effective.",
+      "gaps": [
+        { "stem": "TALK", "answer": ["talkative"], "explain": "Adjectif après the most : talkative = bavard, loquace. Talking ne s'emploie pas comme adjectif de caractère." },
+        { "stem": "LOOK", "answer": ["overlooked"], "explain": "Participe passif avec le préfixe over- : be overlooked = être ignoré, oublié (pour une promotion). Looked seul n'a pas ce sens." },
+        { "stem": "ASSERT", "answer": ["assertiveness"], "explain": "Nom de qualité coordonné à competence : assertiveness = assurance, aplomb (assert → assertive → assertiveness). Assertion désigne une affirmation." },
+        { "stem": "DISPENSE", "answer": ["indispensable"], "explain": "Adjectif négatif : indispensable. Dispensable (dont on peut se passer) contredirait l'éloge des qualités citées." },
+        { "stem": "COMFORT", "answer": ["discomfort"], "explain": "Nom après considerable : discomfort = gêne, malaise. Comfort contredirait unfortunately." },
+        { "stem": "ARRANGE", "answer": ["arrangements"], "explain": "Nom pluriel : working arrangements = l'organisation du travail. Le singulier est rare dans cette collocation." },
+        { "stem": "PRODUCE", "answer": ["productivity"], "explain": "Nom coordonné à morale : productivity = productivité. Production (fabrication) ou product (produit) ne désignent pas l'efficacité au travail." },
+        { "stem": "ARGUE", "answer": ["arguably"], "explain": "Adverbe de modalisation : arguably = sans doute, on peut soutenir que (le e de argue tombe). Argumentatively n'a pas ce sens." }
+      ]
+    },
+    {
+      "id": "u3-03",
+      "title": "Letting Nature Take Over",
+      "text": "Rewilding, the idea of allowing nature to restore itself with minimal human {1}, has moved from the margins of conservation into the mainstream. Its supporters argue that decades of intensive farming have left many landscapes ecologically {2}, and that the {3} of species that once roamed freely can transform entire ecosystems. Beavers, for instance, build dams that slow the flow of rivers, creating wetlands that are soon {4} by a remarkable variety of wildlife. Farmers, however, have expressed considerable {5} about losing productive land, and some critics dismiss the whole movement as hopelessly {6}. Advocates respond that rewilding need not be an all-or-nothing affair: even small patches of {7} land can provide valuable refuges for insects and birds. The debate is likely to continue for some time, but one thing seems {8}: our relationship with the land is changing.",
+      "gaps": [
+        { "stem": "INTERVENE", "answer": ["intervention"], "explain": "Nom après minimal human : intervention (intervene → intervention, le e tombe). Interference viendrait d'un autre mot." },
+        { "stem": "POOR", "answer": ["impoverished"], "explain": "Adjectif après left + nom : impoverished = appauvri (préfixe im- + suffixe -ish + -ed). Poorer ne convient pas après ecologically." },
+        { "stem": "INTRODUCE", "answer": ["reintroduction"], "explain": "Nom avec préfixe re- : les espèces « once roamed freely », donc on les réintroduit. Introduction seul ignorerait leur présence passée." },
+        { "stem": "HABIT", "answer": ["inhabited"], "explain": "Participe passif : be inhabited by = être peuplé par (préfixe in-). Habitable signifie seulement « où l'on peut vivre »." },
+        { "stem": "APPREHEND", "answer": ["apprehension"], "explain": "Nom après considerable : apprehension = appréhension, inquiétude (apprehend → apprehension). Apprehensive est un adjectif." },
+        { "stem": "REAL", "answer": ["unrealistic"], "explain": "Adjectif négatif : unrealistic = irréaliste (un- + real + -istic). Unreal signifie irréel, imaginaire, ce qui ne convient pas." },
+        { "stem": "CULTIVATE", "answer": ["uncultivated"], "explain": "Adjectif négatif : uncultivated land = terres non cultivées, laissées à la nature. Cultivated contredirait l'idée de refuge sauvage." },
+        { "stem": "DENY", "answer": ["undeniable"], "explain": "Adjectif négatif : undeniable = indéniable (y → i devant -able). Deniable donnerait le sens contraire." }
+      ]
+    },
+    {
+      "id": "u3-04",
+      "title": "The Future of Handwriting",
+      "text": "As keyboards and touchscreens become ever more {1}, handwriting is in danger of becoming a lost art. In some schools, cursive is no longer taught at all, a development that has been greeted with {2} by many parents. Defenders of the pen insist that theirs is not mere {3} nostalgia. Studies suggest that students who take notes by hand tend to remember material better, possibly because the slower pace forces them to {4} ideas rather than transcribe every word. Others warn that the gradual {5} of handwriting from classrooms may have consequences we have yet to understand. Skeptics, however, regard the fuss as wildly {6}, pointing out that for many people with motor difficulties typing has proved a genuinely {7} alternative. Perhaps the {8} course of action is to treat the two skills as complementary rather than mutually exclusive.",
+      "gaps": [
+        { "stem": "PERVADE", "answer": ["pervasive"], "explain": "Adjectif après more : pervasive = omniprésent (pervade → pervasive, d → s). Pervading est rare et peu naturel ici." },
+        { "stem": "BELIEVE", "answer": ["disbelief"], "explain": "Nom après greeted with : disbelief = incrédulité (préfixe dis-, ve → f). Belief n'exprime pas la réaction des parents." },
+        { "stem": "SENTIMENT", "answer": ["sentimental"], "explain": "Adjectif devant nostalgia : sentimental. Sentimentality est un nom et ne peut pas qualifier nostalgia." },
+        { "stem": "SUMMARY", "answer": ["summarize", "summarise"], "explain": "Verbe après to : summarize = résumer (summary → summarize). Ils doivent reformuler au lieu de tout recopier." },
+        { "stem": "APPEAR", "answer": ["disappearance"], "explain": "Nom après the gradual et suivi de from : disappearance = disparition. Appearance donnerait le sens inverse." },
+        { "stem": "PROPORTION", "answer": ["disproportionate"], "explain": "Adjectif : disproportionate = démesuré, exagéré (dis- + -ate). Proportionate contredirait wildly et the fuss." },
+        { "stem": "LIBERATE", "answer": ["liberating"], "explain": "Adjectif en -ing (qui produit l'effet) : liberating = libérateur. Liberated (-ed) décrirait la personne libérée, pas l'alternative." },
+        { "stem": "WISE", "answer": ["wisest"], "explain": "Superlatif après the : wisest = le plus sage. Wise seul serait possible sans the, mais the + course appelle le superlatif." }
+      ]
+    },
+    {
+      "id": "u3-05",
+      "title": "Why Waiting Feels So Long",
+      "text": "Few activities are as universally {1} as waiting in line. Yet research suggests that the amount of {2} we can muster depends less on the actual length of a queue than on how the wait feels. Time spent {3} seems to pass far more slowly than time filled with activity, which is why so many waiting rooms provide magazines or screens. {4} also plays a part: a wait of unknown length feels much longer than one whose end is in sight. Perhaps most importantly, we are {5} sensitive to fairness. Watching someone who arrived after us being served first can provoke {6} out of all proportion to the few minutes actually lost. This helps to explain the marked {7} of many customers for a single line feeding several counters, even when it looks longer. Businesses that grasp these {8} can make waiting, if not exactly enjoyable, at least a good deal more bearable.",
+      "gaps": [
+        { "stem": "APPEAL", "answer": ["unappealing"], "explain": "Adjectif négatif : unappealing = peu attrayant. Appealing contredirait l'idée que personne n'aime faire la queue." },
+        { "stem": "PATIENT", "answer": ["patience"], "explain": "Nom indénombrable après the amount of : patience. On « rassemble » (muster) de la patience, pas de l'impatience." },
+        { "stem": "OCCUPY", "answer": ["unoccupied"], "explain": "Adjectif négatif : unoccupied = sans occupation, opposé à time filled with activity. Occupied contredirait la comparaison." },
+        { "stem": "CERTAIN", "answer": ["Uncertainty"], "explain": "Nom sujet avec préfixe négatif : uncertainty = incertitude, expliquée par a wait of unknown length. Certainty dirait l'inverse." },
+        { "stem": "ORDINARY", "answer": ["extraordinarily"], "explain": "Adverbe devant l'adjectif sensitive : extraordinarily = extraordinairement (extra- + -ily, y → i)." },
+        { "stem": "RESENT", "answer": ["resentment"], "explain": "Nom complément de provoke : resentment = ressentiment, rancœur. Resentful est un adjectif et ne peut pas être complément ici." },
+        { "stem": "PREFER", "answer": ["preference"], "explain": "Nom après the marked et suivi de for : preference = préférence (un seul r, accent déplacé). Preferment signifie promotion." },
+        { "stem": "SUBTLE", "answer": ["subtleties"], "explain": "Nom pluriel après these : subtleties = subtilités (le e tombe, y → ies)." }
+      ]
+    },
+    {
+      "id": "u3-06",
+      "title": "In Praise of Failure",
+      "text": "Science is often portrayed as an {1} march of progress, in which each discovery builds neatly on the last. The reality is far {2}. For every {3} that makes the headlines, there are countless experiments that fail to produce the expected results. Yet such failures are rarely published, partly because journals have traditionally shown little interest in {4} findings. This bias distorts the overall picture and can lead to {5} duplication, as different teams unknowingly repeat the same fruitless experiments. In recent years, a growing number of researchers have called for greater {6}, arguing that a carefully documented failure can be every bit as {7} as a success. Some even suggest that a willingness to embrace failure is the {8} feature of good science.",
+      "gaps": [
+        { "stem": "INTERRUPT", "answer": ["uninterrupted"], "explain": "Adjectif négatif après an (qui annonce une voyelle) : uninterrupted = ininterrompu. Interrupted contredirait builds neatly on the last." },
+        { "stem": "TIDY", "answer": ["untidier"], "explain": "Comparatif après far, opposé à builds neatly : untidier = plus désordonnée (un- + y → ier). Tidier dirait l'inverse." },
+        { "stem": "BREAK", "answer": ["breakthrough"], "explain": "Nom composé : breakthrough = percée, découverte majeure. Break seul ne signifie pas une avancée scientifique." },
+        { "stem": "NEGATE", "answer": ["negative"], "explain": "Adjectif devant findings : negative findings = résultats négatifs (qui ne confirment pas l'hypothèse). Negated n'a pas ce sens." },
+        { "stem": "NECESSARY", "answer": ["unnecessary"], "explain": "Adjectif négatif (deux n) : unnecessary = inutile. Necessary contredirait fruitless experiments." },
+        { "stem": "TRANSPARENT", "answer": ["transparency"], "explain": "Nom après greater : transparency = transparence (-ent → -ency)." },
+        { "stem": "LIGHT", "answer": ["enlightening"], "explain": "Adjectif en -ing avec en- : enlightening = instructif, éclairant. Lightening (éclaircir) n'a pas ce sens." },
+        { "stem": "DEFINE", "answer": ["defining"], "explain": "« The defining feature » = la caractéristique déterminante (collocation). Definitive signifie définitif et ne convient pas ici." }
+      ]
+    }
+  ],
+  "part4": [
+    { "id": "u4-01", "lead": "I had no idea that the museum was about to close for good.", "key": "LITTLE", "q": "___ that the museum was about to close for good.", "answer": ["Little did I know", "Little did I realize", "Little did I suspect", "Little did I imagine", "Little did I think"], "explain": "Little en tête de phrase impose l'inversion auxiliaire + sujet : Little did I know = j'étais loin de me douter. « Little I knew » est incorrect sans did." },
+    { "id": "u4-02", "lead": "As soon as she had arrived home, the phone rang.", "key": "SOONER", "q": "No ___ the phone rang.", "answer": ["sooner had she arrived home than", "sooner had she got home than", "sooner had she gotten home than", "sooner had she reached home than"], "explain": "No sooner + inversion au plus-que-parfait (had she arrived) + than = à peine … que. On ne dit jamais no sooner … when." },
+    { "id": "u4-03", "lead": "The concert had only just begun when the power failed.", "key": "HARDLY", "q": "___ when the power failed.", "answer": ["Hardly had the concert begun", "Hardly had the concert started"], "explain": "Hardly en tête impose l'inversion au plus-que-parfait (had the concert begun), suivie de when. Than s'emploie avec no sooner, pas avec hardly." },
+    { "id": "u4-04", "lead": "It was the noise from the street, not the heat, that kept me awake.", "key": "WHAT", "q": "___ the noise from the street, not the heat.", "answer": ["What kept me awake was", "What kept me up was"], "explain": "Phrase pseudo-clivée : What + proposition + was + élément mis en relief = ce qui m'a empêché de dormir, c'était… Le verbe be est au singulier." },
+    { "id": "u4-05", "lead": "People believe that a former employee stole the painting.", "key": "BELIEVED", "q": "The painting ___ by a former employee.", "answer": ["is believed to have been stolen"], "explain": "Passif de rapport : is believed (croyance actuelle) + infinitif passé passif to have been stolen (vol antérieur). Was believed changerait le moment de la croyance." },
+    { "id": "u4-06", "lead": "Experts think that the bridge collapsed because of poor maintenance.", "key": "THOUGHT", "q": "The bridge ___ because of poor maintenance.", "answer": ["is thought to have collapsed"], "explain": "Is thought (opinion actuelle) + infinitif passé to have collapsed (effondrement passé). « Is thought to collapse » situerait l'effondrement dans le présent." },
+    { "id": "u4-07", "lead": "I turned down the job in Vancouver, which is why I'm still living in Ottawa.", "key": "TAKEN", "q": "If I ___ living in Vancouver now.", "answer": ["had taken the job, I would be"], "explain": "Conditionnel mixte : condition passée irréelle (if I had taken) et conséquence présente (I would be living … now). « Would have been » situerait la conséquence dans le passé, contredisant now." },
+    { "id": "u4-08", "lead": "I really regret not bringing my camera on the trip.", "key": "ONLY", "q": "___ my camera on the trip.", "answer": ["If only I had brought", "If only I had taken"], "explain": "If only + plus-que-parfait exprime un regret sur le passé (si seulement j'avais apporté). If only I brought porterait sur le présent." },
+    { "id": "u4-09", "lead": "I'd prefer you not to mention this to anyone.", "key": "RATHER", "q": "I'd ___ this to anyone.", "answer": ["rather you didn't mention"], "explain": "Would rather + sujet différent + prétérit (didn't mention) exprime une préférence sur le présent ou l'avenir. « Rather you not mention » ou « rather you don't » sont incorrects." },
+    { "id": "u4-10", "lead": "You really should start taking your studies seriously.", "key": "TIME", "q": "It's ___ taking your studies seriously.", "answer": ["high time you started", "about time you started", "high time you began", "about time you began"], "explain": "It's (high / about) time + sujet + prétérit = il est grand temps que : le prétérit (started) a ici une valeur d'irréel. « Time you start » est incorrect." },
+    { "id": "u4-11", "lead": "She was about to leave the house when the parcel arrived.", "key": "POINT", "q": "She was ___ the house when the parcel arrived.", "answer": ["on the point of leaving"], "explain": "Be on the point of + -ing = être sur le point de. Of est une préposition, donc le verbe qui suit prend -ing (pas « to leave »)." },
+    { "id": "u4-12", "lead": "Scientists are very close to making a major breakthrough.", "key": "VERGE", "q": "Scientists are ___ making a major breakthrough.", "answer": ["on the verge of"], "explain": "Be on the verge of + -ing / nom = être à deux doigts de. La préposition est on (pas at the verge)." },
+    { "id": "u4-13", "lead": "The match was cancelled because of the heavy rain.", "key": "ACCOUNT", "q": "The match was cancelled ___ the heavy rain.", "answer": ["on account of"], "explain": "On account of = en raison de, synonyme soutenu de because of. « On the account of » ou « by account of » sont incorrects." },
+    { "id": "u4-14", "lead": "You can borrow my bike provided that you return it by Friday.", "key": "LONG", "q": "You can borrow my bike ___ it by Friday.", "answer": ["as long as you return", "so long as you return"], "explain": "As long as / so long as = à condition que, suivi du présent (you return) même pour un sens futur. « As long as you will return » est incorrect." },
+    { "id": "u4-15", "lead": "The film was so moving that many people in the audience cried.", "key": "SUCH", "q": "It was ___ many people in the audience cried.", "answer": ["such a moving film that"], "explain": "Such + a + adjectif + nom + that = un tel … que. So s'emploie devant un adjectif seul, such devant un groupe nominal." },
+    { "id": "u4-16", "lead": "The storm was so violent that the ferry was cancelled.", "key": "SO", "q": "___ that the ferry was cancelled.", "answer": ["So violent was the storm"], "explain": "So + adjectif en tête de phrase entraîne l'inversion du verbe et du sujet (was the storm), style soutenu. « So violent the storm was » est incorrect." },
+    { "id": "u4-17", "lead": "If you need any further information, please contact the reception desk.", "key": "SHOULD", "q": "___ any further information, please contact the reception desk.", "answer": ["Should you need", "Should you require"], "explain": "Inversion conditionnelle avec should = si jamais vous aviez besoin (registre formel). If disparaît : « If should you need » est impossible." },
+    { "id": "u4-18", "lead": "If I had known about the delay, I would have taken a later train.", "key": "HAD", "q": "___ about the delay, I would have taken a later train.", "answer": ["Had I known"], "explain": "Inversion du troisième conditionnel : Had I known = If I had known, sans if. « Had I have known » est fautif." },
+    { "id": "u4-19", "lead": "You must not open this door, whatever happens.", "key": "CIRCUMSTANCES", "q": "Under ___ this door.", "answer": ["no circumstances must you open", "no circumstances should you open"], "explain": "Under no circumstances (en aucun cas) en tête de phrase impose l'inversion modal + sujet (must you open). « You must open » sans inversion est incorrect." },
+    { "id": "u4-20", "lead": "I have never seen such a beautiful sunset anywhere else.", "key": "NOWHERE", "q": "___ such a beautiful sunset.", "answer": ["Nowhere else have I seen", "Nowhere have I ever seen"], "explain": "Nowhere (else) en tête entraîne l'inversion au present perfect (have I seen). « Nowhere else I have seen » oublie l'inversion." },
+    { "id": "u4-21", "lead": "We didn't realize how serious the situation was until later.", "key": "LATER", "q": "___ how serious the situation was.", "answer": ["Only later did we realize", "Only later did we understand"], "explain": "Only + complément de temps en tête impose l'inversion avec did (did we realize). « Only later we realized » est incorrect à l'écrit soutenu." },
+    { "id": "u4-22", "lead": "The manager said that the delay was Tom's fault.", "key": "BLAMED", "q": "The manager ___ the delay.", "answer": ["blamed Tom for"], "explain": "Blame someone for something = rendre quelqu'un responsable de. L'autre tournure (blame the delay on Tom) ne s'insère pas dans la phrase donnée." },
+    { "id": "u4-23", "lead": "My grandmother has always been a role model for me.", "key": "LOOKED", "q": "I have always ___ my grandmother.", "answer": ["looked up to"], "explain": "Look up to someone = admirer, prendre pour modèle (verbe à deux particules). Look after signifie s'occuper de." },
+    { "id": "u4-24", "lead": "Many of us assume, without thinking, that clean water will always be available.", "key": "GRANTED", "q": "Many of us ___ that clean water will always be available.", "answer": ["take it for granted"], "explain": "Take it for granted that = considérer comme acquis que ; le pronom it annonce la proposition en that et ne peut pas être omis." },
+    { "id": "u4-25", "lead": "I know her name, but I just can't remember it right now.", "key": "TONGUE", "q": "Her name is ___.", "answer": ["on the tip of my tongue"], "explain": "Be on the tip of one's tongue = avoir un mot sur le bout de la langue. La préposition on et l'article the sont figés." },
+    { "id": "u4-26", "lead": "We should remember that he is still very young and not judge him too harshly.", "key": "ALLOWANCES", "q": "We should ___ his age.", "answer": ["make allowances for"], "explain": "Make allowances for = faire preuve d'indulgence en tenant compte de. Le verbe est make (pas do ou give)." },
+    { "id": "u4-27", "lead": "It took him years to accept the fact that he had lost his job.", "key": "TERMS", "q": "It took him years to ___ the loss of his job.", "answer": ["come to terms with"], "explain": "Come to terms with = accepter, se faire à (une perte, une épreuve). Terms est toujours au pluriel dans cette expression." },
+    { "id": "u4-28", "lead": "She insisted on going out even though it was raining heavily.", "key": "REGARDLESS", "q": "She insisted on going out ___ rain.", "answer": ["regardless of the heavy"], "explain": "Regardless of + nom = sans tenir compte de ; l'adverbe heavily devient l'adjectif heavy devant le nom rain." },
+    { "id": "u4-29", "lead": "Although he was exhausted, he finished the race.", "key": "SPITE", "q": "___, he finished the race.", "answer": ["In spite of being exhausted", "In spite of his exhaustion", "In spite of feeling exhausted"], "explain": "In spite of est une préposition : elle est suivie d'un nom ou d'un verbe en -ing, jamais d'une proposition (« in spite of he was »)." },
+    { "id": "u4-30", "lead": "Without your help, I would never have finished the project.", "key": "BEEN", "q": "___ your help, I would never have finished the project.", "answer": ["Had it not been for", "If it hadn't been for"], "explain": "If it hadn't been for / Had it not been for = sans (hypothèse irréelle passée). Le passé est imposé par would have finished ; « were it not for » renverrait au présent." },
+    { "id": "u4-31", "lead": "The hotel was expensive, and the service was poor as well.", "key": "ONLY", "q": "Not ___, but the service was also poor.", "answer": ["only was the hotel expensive"], "explain": "Not only en tête de phrase impose l'inversion (was the hotel). « Not only the hotel was expensive » est incorrect dans cette position." },
+    { "id": "u4-32", "lead": "Unsurprisingly, she was tired after working all night.", "key": "WONDER", "q": "It was ___ tired after working all night.", "answer": ["no wonder she was", "small wonder she was", "little wonder she was"], "explain": "It is no / small / little wonder (that) = il n'est pas étonnant que. « Not a wonder » n'est pas idiomatique." },
+    { "id": "u4-33", "lead": "Living in a big city no longer feels strange to me.", "key": "ACCUSTOMED", "q": "I have ___ in a big city.", "answer": ["become accustomed to living", "grown accustomed to living", "got accustomed to living", "gotten accustomed to living"], "explain": "Become accustomed to + -ing = s'habituer à : to est ici une préposition, d'où living (et non « to live »)." },
+    { "id": "u4-34", "lead": "It is very unlikely that the plan will succeed.", "key": "CHANCE", "q": "There is very ___ succeeding.", "answer": ["little chance of the plan"], "explain": "Little (indénombrable, sens négatif) + chance of + nom + -ing = peu de chances que. « Very few chance » est impossible, chance étant ici indénombrable." },
+    { "id": "u4-35", "lead": "I wasn't at all surprised by her decision.", "key": "LEAST", "q": "I was ___ by her decision.", "answer": ["not in the least surprised", "not the least bit surprised"], "explain": "Not in the least / not the least bit = pas le moins du monde, négation renforcée. « Not at least » signifie tout autre chose (au moins)." },
+    { "id": "u4-36", "lead": "It would be a good idea for you to leave before the traffic gets worse.", "key": "BETTER", "q": "You ___ before the traffic gets worse.", "answer": ["had better leave"], "explain": "Had better + base verbale (sans to) = tu ferais mieux de. « Had better to leave » ou « would better » sont fautifs." },
+    { "id": "u4-37", "lead": "Everyone expected the train to arrive at noon.", "key": "SUPPOSED", "q": "The train ___ at noon.", "answer": ["was supposed to arrive"], "explain": "Be supposed to = être censé ; au passé (was), il sous-entend souvent que ce n'est pas arrivé, comme dans l'idée d'attente du lead." },
+    { "id": "u4-38", "lead": "I'm sure she didn't see us, otherwise she would have waved.", "key": "SEEN", "q": "She ___, otherwise she would have waved.", "answer": ["can't have seen us", "couldn't have seen us"], "explain": "Can't / couldn't have + participe passé = déduction négative sur le passé (elle n'a pas pu nous voir). « Mustn't have seen » n'exprime pas la certitude négative en anglais standard." },
+    { "id": "u4-39", "lead": "I'm certain that someone has moved my keys.", "key": "MUST", "q": "Someone ___ my keys.", "answer": ["must have moved"], "explain": "Must have + participe passé = déduction positive quasi certaine sur le passé. « Must move » exprimerait une obligation." },
+    { "id": "u4-40", "lead": "There's no point in repairing that old printer.", "key": "WORTH", "q": "That old printer ___.", "answer": ["is not worth repairing", "is not worth fixing"], "explain": "Be worth + -ing = valoir la peine d'être … ; le sens passif est implicite, donc pas « worth being repaired » ni « worth to repair »." },
+    { "id": "u4-41", "lead": "The council rejected the proposal because it would be too expensive.", "key": "GROUNDS", "q": "The council rejected the proposal ___ would be too expensive.", "answer": ["on the grounds that it"], "explain": "On the grounds that + proposition = au motif que. Grounds est au pluriel et la préposition est on." },
+    { "id": "u4-42", "lead": "I haven't been in contact with my school friends for years.", "key": "TOUCH", "q": "I ___ my school friends years ago.", "answer": ["lost touch with"], "explain": "Lose touch with = perdre le contact avec ; years ago impose le prétérit lost. « Lost the touch » est incorrect." },
+    { "id": "u4-43", "lead": "We seldom see such dedication in young players.", "key": "RARELY", "q": "___ such dedication in young players.", "answer": ["Rarely do we see"], "explain": "Adverbe négatif rarely en tête de phrase : inversion avec l'auxiliaire do (do we see). « Rarely we see » est fautif dans ce registre." },
+    { "id": "u4-44", "lead": "She didn't complain once during the whole journey.", "key": "ONCE", "q": "Not ___ during the whole journey.", "answer": ["once did she complain"], "explain": "Not once en tête impose l'inversion avec did ; le verbe reste à la base (complain), pas « did she complained »." },
+    { "id": "u4-45", "lead": "I still haven't found the time to reply to her email.", "key": "AROUND", "q": "I still haven't ___ to her email.", "answer": ["gotten around to replying", "got around to replying"], "explain": "Get around to + -ing = trouver enfin le temps de ; to est une préposition, d'où replying. Au Canada, le participe passé courant est gotten." },
+    { "id": "u4-46", "lead": "If there is a fire, use the stairs.", "key": "EVENT", "q": "___ a fire, use the stairs.", "answer": ["In the event of"], "explain": "In the event of + nom = en cas de (registre formel). In the event that serait suivi d'une proposition, pas d'un nom seul." },
+    { "id": "u4-47", "lead": "She always takes care to thank every volunteer personally.", "key": "MAKES", "q": "She ___ every volunteer personally.", "answer": ["makes a point of thanking"], "explain": "Make a point of + -ing = tenir à faire, mettre un point d'honneur à. Of est une préposition, d'où thanking (pas « to thank »)." },
+    { "id": "u4-48", "lead": "I can't decide whether to accept the offer or not.", "key": "MINDS", "q": "I am ___ about whether to accept the offer.", "answer": ["in two minds", "of two minds"], "explain": "Be in two minds (britannique) / of two minds (nord-américain) = hésiter. Minds est au pluriel ; « in two mind » est impossible." }
+  ]
+}

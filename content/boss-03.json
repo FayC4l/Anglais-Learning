@@ -1,0 +1,86 @@
+{
+  "level": 3,
+  "taunts": {
+    "phase2": [
+      "Il est sept heures zéro deux. Tu as deux minutes de retard sur ma routine !",
+      "Every day, I win. Always. Never late. Et toi, tu oublies toujours le -s ?",
+      "Phase deux : je bois exactement a little juice… et je t'écrase."
+    ],
+    "phase3": [
+      "Ma routine ! Tu dérègles MA ROUTINE ! I hate that !",
+      "He gets, she goes, it does… et MOI, je gagne. Toujours !",
+      "Assez ! Il est l'heure de ta défaite : quarter past perdu !"
+    ],
+    "lose": [
+      "Tu vois ? Je gagne every day, at the same time. C'est ma routine.",
+      "Go to bed, champion ! Et demain matin, à six heures pile, tu révises ton -s.",
+      "« She doesn't likes » ? Moi, je ne dis jamais ça. Never. Reviens quand tu seras prêt."
+    ]
+  },
+  "questions": [
+    { "unit": "3.1", "type": "mcq", "q": "Comment dit-on « Mon chien dort toujours sur le divan » ?", "choices": ["My dog sleeps always on the couch.", "Always my dog sleeps on the couch.", "My dog always sleeps on the couch.", "My dog always sleep on the couch."], "answer": 2, "explain": "L'adverbe de fréquence se place avant le verbe (always sleeps), et my dog = it, donc sleeps avec un -s." },
+    { "unit": "3.1", "type": "mcq", "q": "Comment dit-on « Mon oncle n'est jamais fatigué le matin » ?", "choices": ["My uncle never is tired in the morning.", "My uncle is never tired in the morning.", "My uncle is tired never in the morning."], "answer": 1, "explain": "Avec le verbe be, l'adverbe se place après : is never tired." },
+    { "unit": "3.1", "type": "mcq", "q": "Ethan and his dad ___ dinner at six o'clock.", "choices": ["have", "has", "haves"], "answer": 0, "explain": "Ethan and his dad = they, donc have, sans -s. « Haves » n'existe pas." },
+    { "unit": "3.1", "type": "mcq", "q": "Mom ___ a shower before breakfast.", "choices": ["take", "takes", "taking", "is take"], "answer": 1, "explain": "Mom = she, donc le verbe prend un -s au présent simple : takes." },
+    { "unit": "3.1", "type": "fill", "q": "Docteur Routine ___ up at six o'clock. Every day!", "hint": "wake", "answer": ["wakes"], "explain": "Docteur Routine = he, donc wake prend un -s : he wakes up." },
+    { "unit": "3.1", "type": "fill", "q": "Our dog ___ to bed at eight o'clock.", "hint": "go", "answer": ["goes"], "explain": "Our dog = it. Go se termine par o, donc on ajoute -es : goes." },
+    { "unit": "3.1", "type": "fill", "q": "Mei ___ dressed in the bathroom.", "hint": "get", "answer": ["gets"], "explain": "Mei = she, donc get prend un -s : gets dressed." },
+    { "unit": "3.1", "type": "fill", "q": "Maurice the moose ___ hockey on TV every Saturday.", "hint": "watch", "answer": ["watches"], "explain": "Maurice the moose = he (un seul orignal). Watch se termine par -ch, donc on ajoute -es : watches." },
+    { "unit": "3.1", "type": "fill", "q": "Liam brushes ___ teeth after lunch.", "hint": "ses (à lui)", "answer": ["his"], "explain": "Liam est un garçon : « ses dents » = his teeth. En anglais, on dit toujours brush + possessif + teeth." },
+    { "unit": "3.1", "type": "error", "q": "Priya usually have lunch at school.", "wrong": 2, "fix": ["has"], "explain": "Priya = she, donc have devient has (irrégulier)." },
+    { "unit": "3.1", "type": "error", "q": "My brother dos his homework before dinner.", "wrong": 2, "fix": ["does"], "explain": "Do se termine par o : avec he, on écrit does (et non « dos »)." },
+    { "unit": "3.1", "type": "error", "q": "Emma does her homework and watch TV after dinner.", "wrong": 5, "fix": ["watches"], "explain": "Le sujet est toujours Emma (she) pour les deux verbes : does… and watches." },
+
+    { "unit": "3.2", "type": "mcq", "q": "___ your parents speak English at work?", "choices": ["Do", "Does", "Are"], "answer": 0, "explain": "Your parents = they, donc la question se pose avec Do." },
+    { "unit": "3.2", "type": "mcq", "q": "Does the moose ___ pancakes?", "choices": ["likes", "to like", "like", "liking"], "answer": 2, "explain": "Après does, le verbe reste à la forme de base : like. Le -s est déjà dans does." },
+    { "unit": "3.2", "type": "mcq", "q": "Does your grandpa understand French? — No, ___", "choices": ["he don't.", "he isn't.", "he doesn't.", "doesn't he."], "answer": 2, "explain": "Réponse courte avec does : No, he doesn't. On ne répète pas le verbe, et he va avec does, pas do." },
+    { "unit": "3.2", "type": "mcq", "q": "___ lives next to you? — A family of beavers!", "choices": ["Who does", "Who", "Where", "What do"], "answer": 1, "explain": "Who est ici le sujet (qui habite ?), donc pas de do / does : Who lives…?" },
+    { "unit": "3.2", "type": "fill", "q": "Where ___ Docteur Routine live?", "hint": "auxiliaire", "answer": ["does"], "explain": "Docteur Routine = he, donc l'assistant de la question est does, et live reste à la base." },
+    { "unit": "3.2", "type": "fill", "q": "My sister and I ___ like vegetables.", "hint": "négatif", "answer": ["don't"], "explain": "My sister and I = we, donc la négation est don't (do not)." },
+    { "unit": "3.2", "type": "fill", "q": "Why does your dog ___ under the bed?", "hint": "sleep", "answer": ["sleep"], "explain": "Après does, le verbe reste à la forme de base : sleep, sans -s." },
+    { "unit": "3.2", "type": "fill", "q": "___ do you go to bed? — At nine o'clock.", "hint": "quand", "answer": ["When"], "explain": "La réponse est une heure, donc on demande « quand » : When." },
+    { "unit": "3.2", "type": "fill", "q": "Ana ___ know my name. She always says \"Hey, you!\"", "hint": "négatif", "answer": ["doesn't"], "explain": "Ana = she, donc la négation est doesn't (does not) + know à la forme de base." },
+    { "unit": "3.2", "type": "error", "q": "Does the baby understands French?", "wrong": 3, "fix": ["understand"], "explain": "Après does, pas de -s sur le verbe : Does the baby understand…? Un seul -s suffit !" },
+    { "unit": "3.2", "type": "error", "q": "What do Maya want for her birthday?", "wrong": 1, "fix": ["does"], "explain": "Maya = she, donc la question se pose avec does : What does Maya want?" },
+    { "unit": "3.2", "type": "error", "q": "My uncle don't like maple syrup.", "wrong": 2, "fix": ["doesn't"], "explain": "My uncle = he, donc la négation est doesn't, pas don't." },
+
+    { "unit": "3.3", "type": "mcq", "q": "How ___ pancakes does Docteur Routine eat? — Exactly three. Always.", "choices": ["much", "many", "lot"], "answer": 1, "explain": "Pancakes se comptent (one, two, three…), donc How many." },
+    { "unit": "3.3", "type": "mcq", "q": "Would you like ___ cookies?", "choices": ["any", "some", "a"], "answer": 1, "explain": "Quand on offre quelque chose, on garde some, même dans une question : Would you like some cookies?" },
+    { "unit": "3.3", "type": "mcq", "q": "Comment dit-on « J'aime le fromage » (en général) ?", "choices": ["I like the cheese.", "I like cheeses.", "I like cheese.", "I like a cheese."], "answer": 2, "explain": "Pour parler en général, pas de the, et cheese est indénombrable : I like cheese." },
+    { "unit": "3.3", "type": "mcq", "q": "Lequel de ces mots est comptable (on peut dire « two … ») ?", "choices": ["water", "juice", "maple syrup", "egg"], "answer": 3, "explain": "On peut compter les œufs : an egg, two eggs. L'eau, le jus et le sirop ne se comptent pas." },
+    { "unit": "3.3", "type": "fill", "q": "There isn't ___ milk in the fridge.", "hint": "du (phrase négative)", "answer": ["any"], "explain": "Dans une phrase négative, on utilise any : There isn't any milk." },
+    { "unit": "3.3", "type": "fill", "q": "How ___ juice do you drink?", "hint": "combien", "answer": ["much"], "explain": "Juice est indénombrable, donc How much." },
+    { "unit": "3.3", "type": "fill", "q": "I'd like ___ egg and some bread, please.", "hint": "un", "answer": ["an"], "explain": "Egg est comptable et commence par un son de voyelle : an egg." },
+    { "unit": "3.3", "type": "fill", "q": "My dog eats ___ cheese. It's a problem!", "hint": "beaucoup de (3 mots)", "answer": ["a lot of"], "explain": "A lot of (beaucoup de) marche avec les indénombrables comme cheese." },
+    { "unit": "3.3", "type": "fill", "q": "Are there ___ vegetables in the fridge?", "hint": "des (question)", "answer": ["any"], "explain": "Dans une question (qui n'est pas une offre), on utilise any." },
+    { "unit": "3.3", "type": "error", "q": "How many juice does your cat drink?", "wrong": 1, "fix": ["much"], "explain": "Juice ne se compte pas, donc How much, pas How many." },
+    { "unit": "3.3", "type": "error", "q": "My brother eats a lot of cookie.", "wrong": 6, "fix": ["cookies"], "explain": "Cookie est comptable : après a lot of, il faut le pluriel, cookies." },
+    { "unit": "3.3", "type": "error", "q": "There isn't some juice in the fridge.", "wrong": 2, "fix": ["any"], "explain": "Dans une phrase négative, some devient any : There isn't any juice." },
+
+    { "unit": "3.4", "type": "mcq", "q": "___ any pancakes on the table?", "choices": ["Is there", "Are there", "There are"], "answer": 1, "explain": "Pancakes est au pluriel, donc Are there…? Et dans une question, l'ordre est inversé : Are there." },
+    { "unit": "3.4", "type": "mcq", "q": "Comment dit-on « Il y a un orignal derrière la porte » ?", "choices": ["It has a moose behind the door.", "There are a moose behind the door.", "There have a moose behind the door.", "There is a moose behind the door."], "answer": 3, "explain": "« Il y a » + un seul = There is. Jamais [[It has]] ni [[There have]]." },
+    { "unit": "3.4", "type": "mcq", "q": "Is there a TV in your bedroom? — No, ___", "choices": ["there isn't.", "there aren't.", "it isn't.", "isn't there."], "answer": 0, "explain": "On répond avec la même structure que la question : Is there…? → No, there isn't." },
+    { "unit": "3.4", "type": "mcq", "q": "Comment dit-on « La lampe est au-dessus du lit » ?", "choices": ["The lamp is under the bed.", "The lamp is behind the bed.", "The lamp is next to the bed.", "The lamp is above the bed."], "answer": 3, "explain": "Au-dessus de = above. Under = sous, behind = derrière, next to = à côté de." },
+    { "unit": "3.4", "type": "fill", "q": "There ___ three cats on my bed!", "hint": "il y a", "answer": ["are"], "explain": "Three cats = plusieurs, donc There are." },
+    { "unit": "3.4", "type": "fill", "q": "The fridge is ___ the stairs.", "hint": "à côté de (2 mots)", "answer": ["next to"], "explain": "« À côté de » = next to, jamais « next of »." },
+    { "unit": "3.4", "type": "fill", "q": "___ there a TV in the living room?", "hint": "il y a (question)", "answer": ["Is"], "explain": "A TV = un seul objet, donc la question est Is there…?" },
+    { "unit": "3.4", "type": "fill", "q": "The moose is ___ the window. Hello, moose!", "hint": "devant (3 mots)", "answer": ["in front of"], "explain": "« Devant » (un lieu) = in front of. Before, c'est pour le temps." },
+    { "unit": "3.4", "type": "fill", "q": "There ___ a fridge in my bedroom. Sad!", "hint": "il y a (négatif)", "answer": ["isn't"], "explain": "A fridge = un seul, donc la négation est There isn't (there is not)." },
+    { "unit": "3.4", "type": "error", "q": "There have two lamps in the living room.", "wrong": 1, "fix": ["are"], "explain": "« Il y a » + plusieurs = There are. On n'utilise jamais have avec there." },
+    { "unit": "3.4", "type": "error", "q": "The cat sleeps before the fridge.", "wrong": 3, "fix": ["in front of"], "explain": "« Devant » un objet = in front of. Before veut dire « avant » (dans le temps)." },
+    { "unit": "3.4", "type": "error", "q": "There are a pancake on the lamp.", "wrong": 1, "fix": ["is"], "explain": "A pancake = un seul, donc There is. (Et oui, une crêpe sur la lampe, c'est bizarre.)" },
+
+    { "unit": "3.5", "type": "mcq", "q": "___ room in the house has a window.", "choices": ["Every", "All", "Both"], "answer": 0, "explain": "Every + nom singulier + verbe avec -s : Every room has. All demanderait un pluriel (all the rooms have)." },
+    { "unit": "3.5", "type": "mcq", "q": "I have two brothers. ___ of them like hockey.", "choices": ["All", "Every", "Both"], "answer": 2, "explain": "Pour deux personnes, on dit both (les deux). All, c'est pour trois ou plus." },
+    { "unit": "3.5", "type": "mcq", "q": "There's ___ milk in the fridge, but not a lot.", "choices": ["a few", "a little", "many"], "answer": 1, "explain": "Milk est indénombrable : « un peu de » = a little. A few, c'est pour ce qui se compte." },
+    { "unit": "3.5", "type": "mcq", "q": "Stop! You drink ___ juice!", "choices": ["too many", "a few", "too much"], "answer": 2, "explain": "Juice est indénombrable : « trop de » = too much. Too many, c'est pour ce qui se compte." },
+    { "unit": "3.5", "type": "fill", "q": "We have ___ apples: one, two, three. Not a lot!", "hint": "quelques", "answer": ["a few"], "explain": "Apples se comptent : « quelques » = a few." },
+    { "unit": "3.5", "type": "fill", "q": "There are ___ cats in this house! Twenty cats!", "hint": "trop de", "answer": ["too many"], "explain": "Cats se comptent : « trop de » = too many." },
+    { "unit": "3.5", "type": "fill", "q": "___ my friends love pancakes.", "hint": "tous", "answer": ["All"], "explain": "« Tous mes amis » = All my friends, avec un verbe au pluriel (love)." },
+    { "unit": "3.5", "type": "fill", "q": "— How many cookies are there? — ___. Zero!", "hint": "aucun", "answer": ["None"], "explain": "Pour répondre « aucun » tout seul, on dit None." },
+    { "unit": "3.5", "type": "error", "q": "Every room have a lamp.", "wrong": 2, "fix": ["has"], "explain": "Après every, le nom est au singulier et le verbe aussi : Every room has." },
+    { "unit": "3.5", "type": "error", "q": "I need a few milk for my pancakes.", "wrong": 3, "fix": ["little"], "explain": "Milk ne se compte pas : a little milk. A few, c'est pour ce qui se compte (a few eggs)." },
+    { "unit": "3.5", "type": "error", "q": "My two cousins all live in Toronto.", "wrong": 3, "fix": ["both"], "explain": "Avec deux personnes, on utilise both : My two cousins both live in Toronto." },
+    { "unit": "3.5", "type": "error", "q": "There is too many maple syrup on my pancakes.", "wrong": 3, "fix": ["much"], "explain": "Maple syrup ne se compte pas : too much maple syrup." }
+  ]
+}

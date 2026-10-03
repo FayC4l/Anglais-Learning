@@ -1,0 +1,86 @@
+{
+  "level": 2,
+  "taunts": {
+    "phase2": [
+      "I am the King ! Et un roi ne perd jamais… enfin, presque jamais.",
+      "I am, you are, he is… et toi, tu es en danger ! Gardes, des questions plus dures !",
+      "Tu as eu de la chance, petit sujet. Are you ready ? Moi, I am !"
+    ],
+    "phase3": [
+      "I am NOT happy ! I am ANGRY ! Ma couronne en tremble !",
+      "Assez ! Je t'envoie dix moose… pas dix « mooses », je suis un roi cultivé, moi !",
+      "Tu oses défier le roi ? Is it a joke ? It isn't funny !"
+    ],
+    "lose": [
+      "Ha ! The King is happy, et toi, you are… battu ! Va réviser ton to be.",
+      "À genoux ! Le Roi To-Be règne encore. Reviens me défier… on Monday, at nine o'clock !",
+      "Tu as pensé « I have hungry », avoue ! Moi, en tout cas, I am the winner."
+    ]
+  },
+  "questions": [
+    { "unit": "2.1", "type": "mcq", "q": "Le roi te demande : « Are you scared? » Tu n'as pas peur du tout. Tu réponds :", "choices": ["No, I amn't.", "No, I'm.", "No, I'm not.", "No, I not am."], "answer": 2, "explain": "La réponse courte négative avec I est No, I'm not. [[I amn't]] n'existe pas." },
+    { "unit": "2.1", "type": "mcq", "q": "Comment dit-on « Mes parents ont chaud » ?", "choices": ["My parents have hot.", "My parents are hot.", "My parents is hot.", "My parents has hot."], "answer": 1, "explain": "Avoir chaud = BE hot. Parents est au pluriel (they), donc are." },
+    { "unit": "2.1", "type": "mcq", "q": "The moose ___ thirsty, but they ___ hungry.", "choices": ["is / aren't", "are / isn't", "are / aren't"], "answer": 2, "explain": "They montre qu'il y a plusieurs orignaux : moose est ici au pluriel, donc are… et aren't." },
+    { "unit": "2.1", "type": "mcq", "q": "Is your dog sick? — Yes, ___", "choices": ["it's.", "it is.", "it isn't.", "it are."], "answer": 1, "explain": "Réponse courte positive : pas de contraction à la fin. On dit Yes, it is, jamais « Yes, it's »." },
+    { "unit": "2.1", "type": "fill", "q": "Grandma and I ___ ready!", "hint": "être", "answer": ["are"], "explain": "Grandma and I = deux personnes = we, donc are." },
+    { "unit": "2.1", "type": "fill", "q": "— Are you bored? — No, I ___ bored. I'm happy!", "hint": "être, à la forme négative", "answer": ["am not"], "explain": "Avec I, la négation est am not (I'm not). Il n'existe pas de forme « amn't »." },
+    { "unit": "2.1", "type": "fill", "q": "My cat ___ angry. It's happy!", "hint": "être, à la forme négative", "answer": ["isn't"], "explain": "My cat = it, donc is not → isn't." },
+    { "unit": "2.1", "type": "fill", "q": "___ the ducks cold?", "hint": "être", "answer": ["Are"], "explain": "The ducks = plusieurs canards (they), donc la question commence par Are." },
+    { "unit": "2.1", "type": "fill", "q": "— Is Mister Hello sad? — Yes, he ___.", "hint": "être", "answer": ["is"], "explain": "Réponse courte avec he : Yes, he is. Pas de contraction à la fin de la réponse." },
+    { "unit": "2.1", "type": "error", "q": "Dad, I have thirsty!", "wrong": 2, "fix": ["am"], "explain": "Avoir soif = BE thirsty : I am thirsty (I'm thirsty). Jamais [[I have thirsty]]." },
+    { "unit": "2.1", "type": "error", "q": "Is your mom angry? — No, she not.", "wrong": 7, "fix": ["isn't"], "explain": "La négation de to be a besoin du verbe : No, she isn't (she is not). Not tout seul ne suffit pas." },
+    { "unit": "2.1", "type": "error", "q": "Liam and Priya isn't hungry.", "wrong": 3, "fix": ["aren't"], "explain": "Liam and Priya = they, donc aren't (are not), pas isn't." },
+
+    { "unit": "2.2", "type": "mcq", "q": "Comment dit-on « Je vois trois souris » ?", "choices": ["I see three mouses.", "I see three mice.", "I see three mices.", "I see three mouse."], "answer": 1, "explain": "Mouse a un pluriel irrégulier : mice. Pas de s à ajouter." },
+    { "unit": "2.2", "type": "mcq", "q": "Quelle phrase est correcte ?", "choices": ["Two moose are bored.", "Two mooses are bored.", "Two moose is bored."], "answer": 0, "explain": "Moose ne change pas au pluriel (two moose), mais le verbe, lui, passe au pluriel : are." },
+    { "unit": "2.2", "type": "mcq", "q": "Un loup, un renard, un mouton… et au pluriel ?", "choices": ["wolfs, foxes, sheeps", "wolves, foxs, sheep", "wolves, foxes, sheep", "wolves, foxes, sheeps"], "answer": 2, "explain": "Wolf → wolves (f devient ves), fox → foxes (-es après x), sheep ne change pas." },
+    { "unit": "2.2", "type": "mcq", "q": "Comment dit-on « Les femmes et les enfants sont prêts » ?", "choices": ["The women and the childrens are ready.", "The womans and the children are ready.", "The women and the children is ready.", "The women and the children are ready."], "answer": 3, "explain": "Women et children sont déjà des pluriels (pas de s en plus), et le verbe est are." },
+    { "unit": "2.2", "type": "fill", "q": "I see two ___ and a beaver!", "hint": "renard", "answer": ["foxes"], "explain": "Fox se termine par x, donc on ajoute -es : foxes." },
+    { "unit": "2.2", "type": "fill", "q": "The three ___ are happy.", "hint": "bébé", "answer": ["babies"], "explain": "Baby se termine par consonne + y : le y devient -ies, babies." },
+    { "unit": "2.2", "type": "fill", "q": "My uncle has ten ___.", "hint": "mouton", "answer": ["sheep"], "explain": "Sheep ne change pas au pluriel : one sheep, ten sheep." },
+    { "unit": "2.2", "type": "fill", "q": "Five ___ are bored.", "hint": "homme", "answer": ["men"], "explain": "Man a un pluriel irrégulier : men (pas « mans »)." },
+    { "unit": "2.2", "type": "fill", "q": "My grandpa has two ___ and a cow.", "hint": "cheval", "answer": ["horses"], "explain": "Horse est régulier : on ajoute un s, horses." },
+    { "unit": "2.2", "type": "error", "q": "The two beaver are tired.", "wrong": 2, "fix": ["beavers"], "explain": "Two = plusieurs, donc le nom prend un s : beavers. Seuls quelques animaux comme moose ou sheep ne changent pas." },
+    { "unit": "2.2", "type": "error", "q": "Three childrens are bored.", "wrong": 1, "fix": ["children"], "explain": "Children est déjà le pluriel de child. On n'ajoute jamais de s." },
+    { "unit": "2.2", "type": "error", "q": "Five moose is hungry.", "wrong": 2, "fix": ["are"], "explain": "Five moose = plusieurs orignaux. Moose ne change pas, mais le verbe doit être au pluriel : are." },
+
+    { "unit": "2.3", "type": "mcq", "q": "Comment dit-on « Le cheval a de grandes dents » ?", "choices": ["The horse has big tooths.", "The horse have big teeth.", "The horse has big teeth.", "The horse has the teeth big."], "answer": 2, "explain": "Avec the horse (it) : has. Tooth → teeth au pluriel, et l'adjectif big vient avant le nom." },
+    { "unit": "2.3", "type": "mcq", "q": "Comment dit-on « des cheveux bruns courts » ?", "choices": ["brown short hair", "short brown hair", "short brown hairs"], "answer": 1, "explain": "La taille passe avant la couleur (short brown), et hair reste sans s." },
+    { "unit": "2.3", "type": "mcq", "q": "My mom isn't short. She is ___.", "choices": ["tall", "big", "long"], "answer": 0, "explain": "Pour la taille d'une personne, « grand » = tall. Big, c'est pour les choses." },
+    { "unit": "2.3", "type": "mcq", "q": "Emma and Zoé ___ long legs.", "choices": ["has", "is", "have"], "answer": 2, "explain": "Emma and Zoé = they, donc have. Has, c'est seulement pour he, she, it." },
+    { "unit": "2.3", "type": "fill", "q": "My rabbit ___ a small mouth.", "hint": "avoir", "answer": ["has"], "explain": "My rabbit = it, donc has." },
+    { "unit": "2.3", "type": "fill", "q": "A baby has small ___.", "hint": "pieds", "answer": ["feet"], "explain": "Foot a un pluriel irrégulier : feet." },
+    { "unit": "2.3", "type": "fill", "q": "My dog has long brown ___.", "hint": "poils (cheveux)", "answer": ["hair"], "explain": "Hair (cheveux, poils) reste sans s : long brown hair." },
+    { "unit": "2.3", "type": "fill", "q": "You and I ___ big hands.", "hint": "avoir", "answer": ["have"], "explain": "You and I = we, donc have." },
+    { "unit": "2.3", "type": "fill", "q": "The beaver has two big orange ___.", "hint": "dents", "answer": ["teeth"], "explain": "Tooth → teeth au pluriel. Et oui, les castors ont vraiment les dents orange !" },
+    { "unit": "2.3", "type": "error", "q": "The wolf have big teeth.", "wrong": 2, "fix": ["has"], "explain": "The wolf = it, donc has, pas have." },
+    { "unit": "2.3", "type": "error", "q": "Olivia has longs legs.", "wrong": 2, "fix": ["long"], "explain": "L'adjectif ne prend jamais de s en anglais : long legs." },
+    { "unit": "2.3", "type": "error", "q": "The mouse has four small foot.", "wrong": 5, "fix": ["feet"], "explain": "Four = plusieurs, et foot a un pluriel irrégulier : feet." },
+
+    { "unit": "2.4", "type": "mcq", "q": "Comment dit-on « Il est onze heures et quart » ?", "choices": ["It's quarter past eleven.", "It's eleven hours and quarter.", "It's quarter to eleven."], "answer": 0, "explain": "« Et quart » = quarter past. Quarter to veut dire « moins le quart », et on ne dit jamais « hours »." },
+    { "unit": "2.4", "type": "mcq", "q": "See you ___ Saturday ___ seven o'clock!", "choices": ["in / at", "on / at", "at / on", "on / in"], "answer": 1, "explain": "On devant un jour (on Saturday), at devant une heure (at seven o'clock)." },
+    { "unit": "2.4", "type": "mcq", "q": "Quel mois vient juste avant « September » ?", "choices": ["October", "August", "July", "November"], "answer": 1, "explain": "L'ordre est July, August, September, October. Le mois avant septembre est août : August (avec une majuscule !)." },
+    { "unit": "2.4", "type": "mcq", "q": "Comment dit-on « Les ours ont chaud en été » ?", "choices": ["The bears are hot on summer.", "The bears have hot in summer.", "The bears are hot at summer.", "The bears are hot in summer."], "answer": 3, "explain": "Avoir chaud = be hot, et devant une saison on met in : in summer." },
+    { "unit": "2.4", "type": "fill", "q": "The beaver is tired ___ night.", "hint": "préposition", "answer": ["at"], "explain": "Expression fixe : at night (la nuit)." },
+    { "unit": "2.4", "type": "fill", "q": "Mister Hello is hungry ___ the morning.", "hint": "préposition", "answer": ["in"], "explain": "Avec the morning (le matin), on utilise in : in the morning." },
+    { "unit": "2.4", "type": "fill", "q": "It's a quarter ___ eight, not quarter past!", "hint": "moins", "answer": ["to"], "explain": "« Huit heures moins le quart » = a quarter to eight." },
+    { "unit": "2.4", "type": "fill", "q": "Monday, Tuesday, ___, Thursday…", "hint": "mercredi", "answer": ["Wednesday"], "explain": "Wednesday s'écrit avec un d qu'on n'entend pas (Wed-nes-day), et une majuscule." },
+    { "unit": "2.4", "type": "fill", "q": "— What ___ is it? — It's ten o'clock.", "hint": "heure", "answer": ["time"], "explain": "« Quelle heure est-il ? » = What time is it? On utilise time, pas hour." },
+    { "unit": "2.4", "type": "error", "q": "I see my cousins in Saturday.", "wrong": 4, "fix": ["on"], "explain": "Devant un jour de la semaine, on utilise on : on Saturday." },
+    { "unit": "2.4", "type": "error", "q": "The birds are happy on spring.", "wrong": 4, "fix": ["in"], "explain": "Devant une saison, on utilise in : in spring." },
+    { "unit": "2.4", "type": "error", "q": "It's seven o'clock on the morning.", "wrong": 4, "fix": ["in"], "explain": "On dit in the morning (le matin), jamais « on the morning » dans ce sens." },
+
+    { "unit": "2.5", "type": "mcq", "q": "Whose bag is this? — It's ___.", "choices": ["my", "mine", "me", "I"], "answer": 1, "explain": "Sans nom après, on utilise le pronom possessif : mine (le mien). My doit être suivi d'un nom (my bag)." },
+    { "unit": "2.5", "type": "mcq", "q": "The cat is sick. ___ nose is hot.", "choices": ["It's", "It", "Its"], "answer": 2, "explain": "Its (sans apostrophe) = son, sa pour un animal ou une chose. It's veut dire it is." },
+    { "unit": "2.5", "type": "mcq", "q": "Comment dit-on « le chien de mes parents » ?", "choices": ["my parent's dog", "my parents' dog", "my parents's dog", "the dog of my parents's"], "answer": 1, "explain": "Parents est un pluriel en s : on ajoute seulement l'apostrophe après le s, my parents' dog." },
+    { "unit": "2.5", "type": "mcq", "q": "Emma and Noah have a rabbit. It's ___ rabbit.", "choices": ["their", "theirs", "there", "they"], "answer": 0, "explain": "Avant un nom, « leur » = their. Theirs s'utilise sans nom (it's theirs), et there veut dire « là »." },
+    { "unit": "2.5", "type": "fill", "q": "This is Noah's pen. It's ___.", "hint": "le sien (à lui)", "answer": ["his"], "explain": "À lui = his. His sert aussi de pronom possessif : it's his." },
+    { "unit": "2.5", "type": "fill", "q": "Is this pencil ___, Maya? — Yes, it's mine.", "hint": "le tien", "answer": ["yours"], "explain": "Sans nom après, « le tien » = yours (avec un s, sans apostrophe)." },
+    { "unit": "2.5", "type": "fill", "q": "___ dog is this? — It's Malik's dog.", "hint": "à qui", "answer": ["Whose"], "explain": "Pour demander à qui est quelque chose : Whose + nom… ?" },
+    { "unit": "2.5", "type": "fill", "q": "We have a horse. ___ horse is brown.", "hint": "notre", "answer": ["Our"], "explain": "« Notre » = our, devant un nom." },
+    { "unit": "2.5", "type": "error", "q": "This is Zoé's bag. It's her.", "wrong": 5, "fix": ["hers"], "explain": "Sans nom après, « le sien (à elle) » = hers. Her doit être suivi d'un nom (her bag)." },
+    { "unit": "2.5", "type": "error", "q": "My dog is sick. It's nose is hot.", "wrong": 4, "fix": ["Its"], "explain": "« Son nez » (du chien) = its nose, sans apostrophe. It's = it is." },
+    { "unit": "2.5", "type": "error", "q": "Sofia has a cat. His cat is black.", "wrong": 4, "fix": ["Her"], "explain": "En anglais, « son, sa » dépend du propriétaire : Sofia est une fille, donc her cat (même si le chat est un mâle)." },
+    { "unit": "2.5", "type": "error", "q": "Is this book your? — No, it's Ethan's.", "wrong": 3, "fix": ["yours"], "explain": "Sans nom après, « le tien » = yours. Your doit être suivi d'un nom (your book)." }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "level": 9,
+  "taunts": {
+    "phase2": [
+      "Flash spécial : le joueur tient encore debout ! Dommage, j'avais déjà écrit l'article sur sa défaite…",
+      "Mes sources m'ont dit que tu avais bien révisé. Je vérifie toujours mes sources… et j'ai des doutes !",
+      "Deuxième partie de l'entrevue : cette fois, je pose les questions qui fâchent."
+    ],
+    "phase3": [
+      "Arrêtez les rotatives ! Je n'avais jamais vu un joueur aussi coriace !",
+      "Pas de commentaire ? Très bien. J'écrirai que tu as paniqué en direct !",
+      "Dernière édition : soit tu tombes, soit je déchire mon carnet de notes !"
+    ],
+    "lose": [
+      "Gros titre : « Le joueur a été battu ». Il a affirmé qu'il reviendrait… on verra bien !",
+      "Je rapporte fidèlement tes paroles : tu m'avais dit que tu étais prêt. Visiblement, tu ne l'étais pas !",
+      "Merci pour l'entrevue ! Reviens quand tu auras de meilleures réponses à me donner."
+    ]
+  },
+  "questions": [
+    { "unit": "9.1", "type": "mcq", "q": "I didn't recognize my old school because they ___ it completely.", "choices": ["have renovated", "were renovating", "had renovated", "renovate"], "answer": 2, "explain": "La rénovation a eu lieu avant ma visite (passé du passé) : had + participe passé." },
+    { "unit": "9.1", "type": "mcq", "q": "By the time the plumber arrived, the water ___ the whole basement.", "choices": ["flooded", "has flooded", "was flood", "had flooded"], "answer": 3, "explain": "By the time + passé : l'inondation était déjà terminée avant l'arrivée du plombier, donc past perfect." },
+    { "unit": "9.1", "type": "mcq", "q": "___ you ever been to Quebec City before your school trip last spring?", "choices": ["Had", "Have", "Did", "Were"], "answer": 0, "explain": "On remonte avant un moment passé (le voyage du printemps dernier) : past perfect, question avec Had + sujet + participe." },
+    { "unit": "9.1", "type": "mcq", "q": "Quelle phrase montre que Noah est arrivé APRÈS le début du discours ?", "choices": ["When Noah arrived, the principal gave her speech.", "When Noah arrived, the principal had started her speech.", "When Noah had arrived, the principal started her speech.", "Noah arrived when the principal starts her speech."], "answer": 1, "explain": "Had started = le discours avait commencé avant l'arrivée de Noah. Avec when Noah had arrived, c'est l'inverse : Noah arrive d'abord." },
+    { "unit": "9.1", "type": "fill", "q": "It was the first time our dog ___ snow, so he ran around in circles.", "hint": "see", "answer": ["had seen"], "explain": "Après It was the first time (au passé), on met le past perfect : had seen." },
+    { "unit": "9.1", "type": "fill", "q": "We ___ for forty minutes when the waiter finally brought the menus.", "hint": "wait, durée jusqu'à un moment passé", "answer": ["had been waiting"], "explain": "Une action qui durait jusqu'à un moment passé : past perfect continuous, had been + -ing. (« On attendait depuis quarante minutes. »)" },
+    { "unit": "9.1", "type": "fill", "q": "When I got to the bus stop, I realized I ___ my wallet at home.", "hint": "leave", "answer": ["had left"], "explain": "J'avais oublié mon portefeuille avant d'arriver à l'arrêt : past perfect, had left." },
+    { "unit": "9.1", "type": "fill", "lead": "Félix finished his homework, and then his friends arrived.", "key": "ALREADY", "q": "When his friends arrived, Félix ___ his homework.", "answer": ["had already finished", "had already done"], "explain": "Les devoirs étaient finis avant l'arrivée des amis : had + already + participe passé." },
+    { "unit": "9.1", "type": "fill", "q": "The kitchen smelled of smoke. Someone ___ toast again.", "hint": "burn", "answer": ["had burned", "had burnt"], "explain": "L'odeur vient d'une action plus ancienne : past perfect, had burned (burnt est aussi correct)." },
+    { "unit": "9.1", "type": "error", "q": "When we arrived at the cottage, we discovered that a raccoon has opened every bag of chips.", "wrong": 11, "fix": ["had"], "explain": "Le raton laveur a agi avant notre découverte (au passé) : past perfect, had opened." },
+    { "unit": "9.1", "type": "error", "q": "The detective had knew the thief for years.", "wrong": 3, "fix": ["known"], "explain": "Past perfect = had + participe passé. Le participe de know est known, pas knew." },
+    { "unit": "9.1", "type": "error", "q": "The children were exhausted because they had been played outside all day.", "wrong": 8, "fix": ["playing"], "explain": "Past perfect continuous : had been + verbe en -ing, donc had been playing." },
+    { "unit": "9.1", "type": "error", "q": "By the time I found my keys, the bus had already leave.", "wrong": 11, "fix": ["left"], "explain": "Après had, il faut le participe passé : leave → left." },
+
+    { "unit": "9.2", "type": "mcq", "q": "The flight attendant ___ us to fasten our seat belts.", "choices": ["said", "spoke", "explained", "told"], "answer": 3, "explain": "Un ordre rapporté avec la personne : told + personne + to. On ne dit jamais said us ni explained us." },
+    { "unit": "9.2", "type": "mcq", "q": "My boss asked me ___ the report yet.", "choices": ["if I had finished", "had I finished", "did I finish", "that I had finished"], "answer": 0, "explain": "Question oui/non rapportée : if (ou whether) + sujet + verbe, sans inversion. That ne sert pas pour une question." },
+    { "unit": "9.2", "type": "mcq", "q": "Last summer, the guide said: \"You can't swim here today.\" Comment rapporter ses paroles ?", "choices": ["The guide said that we can't swim here today.", "The guide told that we couldn't swim there that day.", "The guide said that we couldn't swim there that day.", "The guide said us that we couldn't swim there that day."], "answer": 2, "explain": "Histoire terminée : can → could, here → there, today → that day. Et say ne prend pas de personne (jamais told that ni said us)." },
+    { "unit": "9.2", "type": "mcq", "q": "When I asked about the broken window, my little brother ___ playing ball in the house.", "choices": ["refused", "denied", "said", "told"], "answer": 1, "explain": "Nier avoir fait quelque chose = deny + -ing : he denied playing. Refuse est suivi de to." },
+    { "unit": "9.2", "type": "fill", "q": "The receptionist asked me what time my appointment ___.", "hint": "be", "answer": ["was"], "explain": "Question rapportée : sujet + verbe (pas d'inversion), et backshift : is → was." },
+    { "unit": "9.2", "type": "fill", "q": "Our neighbour warned us ___ our car in front of his garage.", "hint": "ne pas garer", "answer": ["not to park"], "explain": "Avertissement rapporté : warn + personne + not to + verbe de base." },
+    { "unit": "9.2", "type": "fill", "lead": "\"Did you take my charger?\" Zoé asked her brother.", "q": "Zoé asked her brother ___ her charger.", "answer": ["if he had taken", "whether he had taken"], "explain": "Question oui/non rapportée : if/whether + sujet + verbe, et backshift : did take → had taken." },
+    { "unit": "9.2", "type": "fill", "q": "Grandma reminded me ___ my boots before coming inside.", "hint": "enlever (take off)", "answer": ["to take off"], "explain": "Remind + personne + to + verbe de base : reminded me to take off my boots." },
+    { "unit": "9.2", "type": "fill", "q": "The bus driver apologized ___ late.", "hint": "be", "answer": ["for being"], "explain": "Apologize for + -ing : il s'est excusé d'être en retard, apologized for being late." },
+    { "unit": "9.2", "type": "error", "q": "Ana told that she was moving to Halifax.", "wrong": 1, "fix": ["said"], "explain": "Tell doit être suivi de la personne (told me). Sans personne, on utilise said." },
+    { "unit": "9.2", "type": "error", "q": "He admitted to break the window with his soccer ball.", "wrong": 3, "fix": ["breaking"], "explain": "Admit est suivi de -ing (admitted breaking ou admitted to breaking), jamais de l'infinitif." },
+    { "unit": "9.2", "type": "error", "q": "The customer complained that his soup is cold, so the waiter brought another bowl.", "wrong": 6, "fix": ["was"], "explain": "L'histoire est finie (le serveur a apporté un autre bol) : on recule le temps, is → was." },
+    { "unit": "9.2", "type": "error", "q": "Last night, Sofia asked me whether I can lend her twenty dollars.", "wrong": 7, "fix": ["could"], "explain": "Verbe d'introduction au passé et histoire terminée : can → could dans le discours rapporté." },
+
+    { "unit": "9.3", "type": "mcq", "q": "___ having a broken arm, Lucas still came to every practice.", "choices": ["Despite", "Although", "Even though", "However"], "answer": 0, "explain": "Devant un -ing (having), on met despite (ou in spite of). Although et even though veulent un sujet + verbe." },
+    { "unit": "9.3", "type": "mcq", "q": "The hotel was cheap and close to the beach. ___, the walls were paper-thin.", "choices": ["Although", "Despite", "Whereas", "However"], "answer": 3, "explain": "Nouvelle phrase qui apporte une opposition, suivie d'une virgule : However." },
+    { "unit": "9.3", "type": "mcq", "q": "I'm going to the beach tomorrow ___ it rains. I don't mind getting wet!", "choices": ["even though", "even if", "although", "despite"], "answer": 1, "explain": "La pluie de demain est une hypothèse : « même s'il pleut » = even if. Even though, c'est pour un fait réel." },
+    { "unit": "9.3", "type": "mcq", "q": "My brother spends every penny he earns, ___ my sister saves almost everything.", "choices": ["therefore", "despite", "whereas", "so that"], "answer": 2, "explain": "On compare deux personnes qui font le contraire : whereas (alors que) + sujet + verbe." },
+    { "unit": "9.3", "type": "fill", "lead": "Although she was exhausted, Ana finished the race.", "key": "DESPITE", "q": "___ exhausted, Ana finished the race.", "answer": ["Despite being"], "explain": "Despite + -ing (ou + nom), jamais + sujet + verbe : Despite being exhausted." },
+    { "unit": "9.3", "type": "fill", "q": "Grandpa sat right next to the TV ___ he could hear the hockey game.", "hint": "pour que", "answer": ["so that"], "explain": "But avec un sujet + modal : so that he could hear." },
+    { "unit": "9.3", "type": "fill", "q": "The roads were closed because of the flood. ___, thousands of people worked from home.", "hint": "par conséquent (3 mots)", "answer": ["As a result"], "explain": "Conséquence en début de phrase, suivie d'une virgule : As a result." },
+    { "unit": "9.3", "type": "fill", "q": "We took the train ___ avoid the traffic downtown.", "hint": "afin de (3 mots)", "answer": ["in order to"], "explain": "But + verbe de base : in order to avoid." },
+    { "unit": "9.3", "type": "fill", "q": "Plastic bags are cheap and practical. ___, they pollute the oceans for centuries.", "hint": "d'un autre côté", "answer": ["On the other hand"], "explain": "Pour présenter l'autre côté d'un argument : On the other hand, suivi d'une virgule." },
+    { "unit": "9.3", "type": "error", "q": "Even if I studied all weekend, I failed the test.", "wrong": 1, "fix": ["though"], "explain": "J'ai vraiment étudié : c'est un fait, donc even though. Even if sert pour une hypothèse." },
+    { "unit": "9.3", "type": "error", "q": "I love camping. Although, I hate mosquitoes.", "wrong": 3, "fix": ["However"], "explain": "En début de nouvelle phrase avec une virgule, on utilise However. Although relie deux parties d'une même phrase." },
+    { "unit": "9.3", "type": "error", "q": "We left at dawn so that we can see the sunrise from the top of the hill.", "wrong": 7, "fix": ["could"], "explain": "Après un verbe au passé (left), so that + could : so that we could see." },
+    { "unit": "9.3", "type": "error", "q": "The bakery was out of bread; moreover, we bought croissants instead.", "wrong": 6, "fix": ["therefore"], "explain": "Acheter des croissants est une conséquence du manque de pain : therefore. Moreover sert à ajouter un argument." },
+
+    { "unit": "9.4", "type": "mcq", "q": "My uncle ___ a fortune selling snow tires in Winnipeg.", "choices": ["made", "did", "took", "had"], "answer": 0, "explain": "Gagner de l'argent = make money ; « faire fortune » = make a fortune." },
+    { "unit": "9.4", "type": "mcq", "q": "My boss rarely ___ compliments, so I was shocked when she said I was brilliant.", "choices": ["makes", "does", "pays", "takes"], "answer": 2, "explain": "« Faire un compliment » = pay a compliment. Faire ne se traduit pas toujours par make ou do !" },
+    { "unit": "9.4", "type": "mcq", "q": "Don't ___ your energy arguing with the GPS. It never listens.", "choices": ["lose", "do", "make", "waste"], "answer": 3, "explain": "« Perdre/gaspiller son énergie » = waste your energy, pas lose." },
+    { "unit": "9.4", "type": "mcq", "q": "« Mon grand-père a battu le record du club à soixante-dix ans. » → My grandpa ___ the club record at seventy.", "choices": ["hit", "broke", "won", "made"], "answer": 1, "explain": "Battre un record = break a record." },
+    { "unit": "9.4", "type": "fill", "q": "Wear a toque, or you'll ___ a cold!", "hint": "attraper", "answer": ["catch"], "explain": "Attraper un rhume = catch a cold." },
+    { "unit": "9.4", "type": "fill", "q": "Sorry, I can't talk right now. I'm ___ the laundry.", "hint": "faire", "answer": ["doing"], "explain": "Pour les tâches ménagères, on utilise do : do the laundry." },
+    { "unit": "9.4", "type": "fill", "q": "Our teacher says we can ___ notes during the documentary.", "hint": "prendre", "answer": ["take"], "explain": "Prendre des notes = take notes." },
+    { "unit": "9.4", "type": "fill", "q": "Tell me everything! I promise I'll ___ it a secret.", "hint": "garder", "answer": ["keep"], "explain": "Garder un secret = keep a secret (ici : keep it a secret)." },
+    { "unit": "9.4", "type": "fill", "q": "Taking the ferry instead of driving around the lake ___ us two hours.", "hint": "faire gagner, passé", "answer": ["saved"], "explain": "Gagner du temps = save time. Le traversier nous a fait gagner deux heures : saved us two hours." },
+    { "unit": "9.4", "type": "error", "q": "Everyone did a big effort to clean the park after the festival.", "wrong": 1, "fix": ["made"], "explain": "Faire un effort = make an effort, pas do." },
+    { "unit": "9.4", "type": "error", "q": "Shh! You're doing too much noise. The baby is asleep.", "wrong": 2, "fix": ["making"], "explain": "Faire du bruit = make noise : you're making too much noise." },
+    { "unit": "9.4", "type": "error", "q": "I hope I take my driving test. I've practised for months!", "wrong": 3, "fix": ["pass"], "explain": "Réussir un examen = pass a test. Take a test veut seulement dire « passer » (faire) l'examen." },
+    { "unit": "9.4", "type": "error", "q": "We did a party in the backyard for Grandma's eightieth birthday.", "wrong": 1, "fix": ["had", "threw"], "explain": "Faire une fête = have a party, pas do a party." },
+
+    { "unit": "9.5", "type": "mcq", "q": "Excuse me, could you tell me ___?", "choices": ["where is the nearest pharmacy", "where does the nearest pharmacy", "where the nearest pharmacy is", "the nearest pharmacy is where"], "answer": 2, "explain": "Question indirecte : mot interrogatif + sujet + verbe, sans inversion : where the nearest pharmacy is." },
+    { "unit": "9.5", "type": "mcq", "q": "___ the instructions, Ethan built the bookshelf in ten minutes.", "choices": ["Having reading", "Had read", "Have read", "Having read"], "answer": 3, "explain": "Having + participe passé = « après avoir… » : Having read the instructions." },
+    { "unit": "9.5", "type": "mcq", "q": "___ in only three days, the novel became a bestseller.", "choices": ["Written", "Writing", "Having writing", "Wrote"], "answer": 0, "explain": "Le roman a été écrit (sens passif) : on utilise le participe passé seul, Written." },
+    { "unit": "9.5", "type": "fill", "lead": "Where did I park the car?", "q": "I can't remember ___ the car.", "hint": "question indirecte", "answer": ["where I parked"], "explain": "Dans une question indirecte, plus de did ni d'inversion : where + sujet + verbe au passé." },
+    { "unit": "9.5", "type": "fill", "q": "___ what to say, I just smiled and nodded.", "hint": "ne sachant pas", "answer": ["Not knowing"], "explain": "Proposition participiale négative : Not + -ing (Not knowing = ne sachant pas)." },
+    { "unit": "9.5", "type": "fill", "q": "Could you tell me ___ this bus goes downtown?", "hint": "si", "answer": ["if", "whether"], "explain": "Question oui/non indirecte : if ou whether + sujet + verbe." },
+    { "unit": "9.5", "type": "error", "q": "Having finish the race, the runners collapsed on the grass.", "wrong": 1, "fix": ["finished"], "explain": "Having + participe passé : Having finished (après avoir fini)." },
+    { "unit": "9.5", "type": "error", "q": "Build in the eighteenth century, the old mill still produces flour.", "wrong": 0, "fix": ["Built"], "explain": "Le moulin a été construit (sens passif) : participe passé, Built." }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "unit": {
+    "id": "5.5",
+    "title": "C'était mieux avant",
+    "titleEn": "The Good Old Days",
+    "goal": "Parler des habitudes du passé avec used to et would, et dire à quoi tu es habitué avec be used to.",
+    "lesson": [
+      { "type": "p", "text": "Pour parler d'une habitude **finie** (« avant, je… », « dans le temps… »), l'anglais a un outil parfait : [[used to]] + verbe de base. [[I used to hate broccoli.]] = Avant, je détestais le brocoli (mais plus maintenant !). Idéal pour écouter tes grands-parents raconter « leur temps »… ou pour avouer tes vieilles manies." },
+      { "type": "table", "head": ["Forme", "Structure", "Exemple"], "rows": [
+        ["Affirmatif", "used to + verbe de base", "[[My dad used to have long hair.]]"],
+        ["Négatif", "didn't use to + verbe de base", "[[I didn't use to like fish.]]"],
+        ["Question", "Did… use to + verbe de base ?", "[[Did you use to walk to school?]]"],
+        ["Réponse courte", "Yes, I did. / No, I didn't.", "[[No, I didn't.]]"]
+      ] },
+      { "type": "rule", "title": "Le d qui disparaît", "text": "Même forme pour tous les sujets : [[I used to]], [[she used to]], [[they used to]] (jamais de **-s**). Mais après **did** et **didn't**, le **d** disparaît, comme pour tous les verbes (tu l'as vu à l'étape 5.3) : [[Did you use to…?]], [[I didn't use to…]]. Et [[used to]] parle **seulement** du passé : pour une habitude d'aujourd'hui, dis [[I usually…]]." },
+      { "type": "rule", "title": "Would : les souvenirs qui se répètent", "text": "Pour raconter des **actions répétées** du passé, on peut aussi utiliser **would** + verbe de base : [[Every summer, we would swim in the lake.]] À l'oral, [[we would]] devient souvent [[we'd]]. Mais attention : **would** ne marche **pas** avec les verbes d'état (**have, be, like, love, know, live**). [[I used to have a cat.]] est correct ; « I would have a cat » veut dire « j'aurais un chat » !" },
+      { "type": "rule", "title": "Be used to : être habitué à", "text": "Ne confonds pas ! [[be used to]] + **nom** ou verbe en **-ing** = **être habitué à**. Ça marche au présent : [[I'm used to the cold.]] (Je suis habitué au froid.) [[She isn't used to getting up early.]] Pour le changement, on dit [[get used to]] = **s'habituer à** : [[I got used to my new school.]]" },
+      { "type": "table", "head": ["Phrase", "Sens"], "rows": [
+        ["[[I used to live in Montreal.]]", "Avant, j'habitais à Montréal (plus maintenant)."],
+        ["[[I'm used to living in Ottawa.]]", "Je suis habitué à vivre à Ottawa."],
+        ["[[I got used to the noise.]]", "Je me suis habitué au bruit."]
+      ] },
+      { "type": "examples", "items": [
+        { "en": "When I was little, I used to be scared of the dark.", "fr": "Quand j'étais petit, j'avais peur du noir." },
+        { "en": "My grandparents didn't use to have a TV.", "fr": "Avant, mes grands-parents n'avaient pas de télé." },
+        { "en": "Did your mom use to play hockey?", "fr": "Est-ce que ta mère jouait au hockey, avant ?" },
+        { "en": "Every Sunday, Grandpa would make pancakes for everyone.", "fr": "Chaque dimanche, grand-papa faisait des crêpes pour tout le monde." },
+        { "en": "Mei is from Vancouver, so she isn't used to the snow.", "fr": "Mei vient de Vancouver, alors elle n'est pas habituée à la neige." },
+        { "en": "People used to rent movies at the video store.", "fr": "Avant, les gens louaient des films au club vidéo." }
+      ] },
+      { "type": "tip", "text": "Pièges de francophone : 1) « J'avais l'habitude de jouer » = [[I used to play]], et pas « I was used to play ». 2) Pas de **-s** et pas de présent : « she uses to » n'existe pas. 3) Après **did** : « Did you used to…? » est faux, on écrit [[Did you use to…?]] 4) [[used to]] + verbe de base, mais [[be used to]] + nom ou **-ing** : [[I'm used to waking up early.]]" },
+      { "type": "dialogue", "title": "Dans le temps de grand-maman", "lines": [
+        { "who": "Zoé", "en": "Grandma, what did you use to do after school?", "fr": "Grand-maman, qu'est-ce que tu faisais après l'école ?" },
+        { "who": "Grandma", "en": "I used to walk to the corner store and buy candy with my allowance.", "fr": "J'allais au dépanneur à pied et j'achetais des bonbons avec mon argent de poche." },
+        { "who": "Zoé", "en": "Did you use to have a cellphone?", "fr": "Est-ce que tu avais un cellulaire ?" },
+        { "who": "Grandma", "en": "No! We had a landline in the kitchen, and the whole family shared it.", "fr": "Non ! On avait un téléphone fixe dans la cuisine, et toute la famille le partageait." },
+        { "who": "Zoé", "en": "No way! How did you talk to your friends?", "fr": "Voyons donc ! Comment tu parlais à tes amis ?" },
+        { "who": "Grandma", "en": "We would write letters. Back then, a stamp was very cheap.", "fr": "On s'écrivait des lettres. À l'époque, un timbre coûtait presque rien." },
+        { "who": "Zoé", "en": "Letters? I'm not used to waiting for anything!", "fr": "Des lettres ? Moi, je ne suis pas habituée à attendre !" },
+        { "who": "Grandma", "en": "I know. But we were used to it, and we were happy!", "fr": "Je sais. Mais on y était habitués, et on était heureux !" }
+      ] },
+      { "type": "fun", "text": "Le sais-tu ? Le premier appel téléphonique « longue distance » de l'histoire a eu lieu en Ontario, en 1876, entre Brantford et Paris… une petite ville ontarienne, pas la capitale de la France ! C'est Alexander Graham Bell, l'inventeur du téléphone, qui l'a organisé." }
+    ],
+    "vocab": [
+      { "en": "used to", "fr": "avoir l'habitude de (avant, plus maintenant)", "alt": [], "ex": "I used to play the piano." },
+      { "en": "be used to", "fr": "être habitué à", "alt": [], "ex": "I'm used to the cold." },
+      { "en": "get used to", "fr": "s'habituer à", "alt": [], "ex": "I got used to my new school." },
+      { "en": "anymore", "fr": "ne… plus (en fin de phrase)", "alt": ["any longer"], "ex": "I don't play with dolls anymore." },
+      { "en": "nowadays", "fr": "de nos jours", "alt": ["these days"], "ex": "Nowadays, everyone has a cellphone." },
+      { "en": "back then", "fr": "à l'époque", "alt": ["at that time", "in those days"], "ex": "Back then, my mom had long hair." },
+      { "en": "childhood", "fr": "enfance", "alt": [], "ex": "My grandpa had a happy childhood on a farm." },
+      { "en": "still", "fr": "encore, toujours (ça continue)", "alt": [], "ex": "My dad still has his first bike." },
+      { "en": "habit", "fr": "habitude", "alt": [], "ex": "Biting your nails is a bad habit." },
+      { "en": "toy", "fr": "jouet", "alt": [], "ex": "This old toy was my mom's." },
+      { "en": "landline", "fr": "téléphone fixe (à la maison)", "alt": ["home phone"], "ex": "We still have a landline in the kitchen." },
+      { "en": "letter", "fr": "lettre (courrier)", "alt": [], "ex": "My grandma used to write letters to her cousin." },
+      { "en": "stamp", "fr": "timbre (pour le courrier)", "alt": [], "ex": "You need a stamp to mail this letter." },
+      { "en": "typewriter", "fr": "machine à écrire", "alt": [], "ex": "My grandpa wrote his stories on a typewriter." },
+      { "en": "record player", "fr": "tourne-disque", "alt": ["turntable"], "ex": "Our neighbour still has a record player." },
+      { "en": "video store", "fr": "club vidéo", "alt": [], "ex": "We used to rent movies at the video store." },
+      { "en": "rent", "fr": "louer (payer pour utiliser)", "alt": [], "ex": "Let's rent a canoe for the afternoon." },
+      { "en": "corner store", "fr": "dépanneur", "alt": ["convenience store"], "ex": "I bought milk at the corner store." },
+      { "en": "allowance", "fr": "argent de poche", "alt": ["pocket money"], "ex": "I used to spend my allowance on candy." }
+    ],
+    "sentences": [
+      { "en": "I used to play hockey every winter.", "fr": "Avant, je jouais au hockey chaque hiver.", "trap": ["use", "was"], "alt": ["Every winter, I used to play hockey."] },
+      { "en": "My grandparents didn't use to have a television.", "fr": "Avant, mes grands-parents n'avaient pas de télévision.", "trap": ["used", "had"], "alt": [] },
+      { "en": "Did you use to walk to school?", "fr": "Est-ce que tu allais à l'école à pied, avant ?", "trap": ["used", "walked"], "alt": [] },
+      { "en": "My mom used to have long hair back then.", "fr": "À l'époque, ma mère avait les cheveux longs.", "trap": ["uses", "would"], "alt": ["Back then, my mom used to have long hair."] },
+      { "en": "Every Sunday, my grandpa would make pancakes for us.", "fr": "Chaque dimanche, mon grand-père nous faisait des crêpes.", "trap": ["makes", "did"], "alt": ["My grandpa would make pancakes for us every Sunday."] },
+      { "en": "I'm not used to getting up so early.", "fr": "Je ne suis pas habitué à me lever si tôt.", "trap": ["get", "use"], "alt": [] },
+      { "en": "She got used to the cold winters in Ottawa.", "fr": "Elle s'est habituée aux hivers froids d'Ottawa.", "trap": ["use", "gets"], "alt": [] },
+      { "en": "We don't rent movies at the video store anymore.", "fr": "Nous ne louons plus de films au club vidéo.", "trap": ["used", "doesn't"], "alt": [] },
+      { "en": "What games did you use to play when you were little?", "fr": "À quels jeux jouais-tu quand tu étais petit ?", "trap": ["used", "played"], "alt": [] },
+      { "en": "Back then, people would write letters to their friends.", "fr": "À l'époque, les gens écrivaient des lettres à leurs amis.", "trap": ["writes", "was"], "alt": ["People would write letters to their friends back then."] },
+      { "en": "My little brother still sleeps with his old toy.", "fr": "Mon petit frère dort encore avec son vieux jouet.", "trap": ["anymore", "sleep"], "alt": [] },
+      { "en": "My cousin from Vancouver isn't used to the snow.", "fr": "Mon cousin de Vancouver n'est pas habitué à la neige.", "trap": ["doesn't", "use"], "alt": [] }
+    ],
+    "grammar": [
+      { "type": "mcq", "q": "When I was little, I ___ a dog named Biscuit.", "choices": ["would have", "used to have", "use to have", "was used to have"], "answer": 1, "explain": "Avoir un chien est un état : on utilise used to, pas would. Et à l'affirmatif, used prend toujours un d." },
+      { "type": "mcq", "q": "___ you use to watch cartoons on Saturday mornings?", "choices": ["Were", "Used", "Did", "Do"], "answer": 2, "explain": "Question au passé : Did + sujet + use to (sans d) + verbe de base." },
+      { "type": "mcq", "q": "Quelle phrase est correcte ?", "choices": ["She didn't used to like fish.", "She wasn't use to like fish.", "She didn't uses to like fish.", "She didn't use to like fish."], "answer": 3, "explain": "Après didn't, le d disparaît : didn't use to + verbe de base." },
+      { "type": "mcq", "q": "Mei is from Vancouver, so she ___ the cold winters in Ottawa.", "choices": ["isn't used to", "didn't use to", "doesn't use to", "isn't use to"], "answer": 0, "explain": "Être habitué à + nom = be used to. Ici au présent et au négatif : isn't used to." },
+      { "type": "mcq", "q": "« Avant, je détestais le brocoli (mais maintenant, j'adore !). » → ___", "choices": ["I'm used to hating broccoli.", "I used to hate broccoli.", "I usually hate broccoli.", "I use to hate broccoli."], "answer": 1, "explain": "Une habitude finie (avant, plus maintenant) : used to + verbe de base." },
+      { "type": "mcq", "q": "Every summer, we ___ in the lake near my uncle's cottage.", "choices": ["would swim", "would swam", "were used to swim", "use to swim"], "answer": 0, "explain": "Action répétée du passé : would + verbe de base (swim, pas swam)." },
+      { "type": "fill", "q": "My dad ___ a lot of video games, but now he only plays chess.", "hint": "play, habitude finie", "answer": ["used to play"], "explain": "Une habitude du passé qui n'existe plus : used to + verbe de base." },
+      { "type": "fill", "q": "My grandpa ___ vegetables, but now he eats salad every day!", "hint": "like, used to, négatif", "answer": ["didn't use to like"], "explain": "Négatif : didn't use to (sans d) + verbe de base." },
+      { "type": "fill", "q": "___ your parents use to live in Montreal?", "hint": "question au passé", "answer": ["Did"], "explain": "Question avec used to : Did + sujet + use to." },
+      { "type": "fill", "q": "My cousin lives on a farm, so she ___ the noise of the city.", "hint": "be used to, négatif, présent", "answer": ["isn't used to"], "explain": "Être habitué à = be used to + nom. She, au présent négatif : isn't used to." },
+      { "type": "fill", "q": "After a few weeks, Liam ___ his new school.", "hint": "s'habituer à, passé", "answer": ["got used to"], "explain": "S'habituer à = get used to. Au passé : got used to." },
+      { "type": "fill", "q": "When I was little, my grandma ___ me a story every night.", "hint": "tell, would", "answer": ["would tell"], "explain": "Action répétée dans le passé : would + verbe de base." },
+      { "type": "fill", "q": "I'm used to ___ up at six o'clock.", "hint": "get", "answer": ["getting"], "explain": "Après be used to, un verbe se met en -ing : I'm used to getting up." },
+      { "type": "error", "q": "She uses to play the piano when she was young.", "wrong": 1, "fix": ["used"], "explain": "Used to n'existe qu'au passé, sans -s : she used to play." },
+      { "type": "error", "q": "Did you used to have a bike?", "wrong": 2, "fix": ["use"], "explain": "Après did, le d disparaît : Did you use to…?" },
+      { "type": "error", "q": "When I was five, I would have a goldfish called Bubbles.", "wrong": 5, "fix": ["used to"], "explain": "Avoir un poisson est un état : would ne marche pas, il faut used to have." },
+      { "type": "error", "q": "I'm not used to wake up so early.", "wrong": 4, "fix": ["waking"], "explain": "Après be used to, le verbe prend -ing : I'm not used to waking up." },
+      { "type": "error", "q": "We didn't use to having a car back then.", "wrong": 4, "fix": ["have"], "explain": "Après (didn't) use to, on met le verbe de base : didn't use to have." }
+    ],
+    "reading": {
+      "title": "Grandpa's Old Box",
+      "text": "Last Sunday, Félix and his grandpa found an old box in the basement. Inside, there was a typewriter, some letters and a lot of stamps.\n\n\"I used to write letters to my cousin in France,\" said Grandpa. \"Back then, we didn't have cellphones. We had a landline in the kitchen, and my sister would talk on it for hours!\"\n\nFélix laughed. \"Did you use to play video games?\"\n\n\"No! After school, my friends and I would play hockey in the street until dinner. On Fridays, we used to rent a movie at the video store.\"\n\nFélix looked at the typewriter. \"It's so slow! I'm not used to that.\"\n\n\"I wasn't used to computers at first,\" said Grandpa. \"But I got used to them. Now I send you emails every week!\"",
+      "questions": [
+        { "q": "Qu'est-ce que Félix et son grand-père ont trouvé dans la boîte ?", "choices": ["un téléphone fixe et des jeux vidéo", "une machine à écrire, des lettres et des timbres", "des films du club vidéo", "un vieux bâton de hockey"], "answer": 1 },
+        { "q": "Qui parlait des heures au téléphone ?", "choices": ["le grand-père", "le cousin en France", "la sœur du grand-père", "Félix"], "answer": 2 },
+        { "q": "Que faisait le grand-père après l'école ?", "choices": ["Il jouait au hockey dans la rue avec ses amis.", "Il louait des films.", "Il écrivait des lettres.", "Il jouait à des jeux vidéo."], "answer": 0 },
+        { "q": "Que faisait-il le vendredi ?", "choices": ["Il allait au dépanneur.", "Il écrivait à son cousin.", "Il regardait le hockey à la télé.", "Il louait un film au club vidéo."], "answer": 3 },
+        { "q": "Que veut dire le grand-père à la fin ?", "choices": ["Il n'aime toujours pas les ordinateurs.", "Il ne sait pas écrire de courriels.", "Au début, il n'était pas habitué aux ordinateurs, mais il s'y est habitué.", "Il préfère sa machine à écrire."], "answer": 2 }
+      ]
+    }
+  },
+  "extra": {
+    "unit": "5.5",
+    "pron": {
+      "focus": "Used to : le « d » qui disparaît",
+      "ipa": "/juːstə/",
+      "explain": "Dans [[used to]], on n'entend **pas** de « d », et le « s » est un vrai « s » sifflant : on dit « YOUSS-teu », d'un seul souffle, avec un [[to]] tout petit. Attention : le verbe [[use]] (utiliser) se dit avec un « z » : « youz ». Donc [[I used to]] (avant, je…) se dit « aï-YOUSS-teu », mais [[I used a pen]] (j'ai utilisé un stylo) se dit « aï-YOUZD ». Le truc : à l'écrit, le d reste à l'affirmatif ; à l'oral, il s'envole !",
+      "words": [
+        { "en": "used to", "fr": "avoir l'habitude de (avant)", "hint": "« YOUSS-teu » : un « s » sifflant, pas de « d », pas de « z »" },
+        { "en": "I used to", "fr": "avant, je…", "hint": "« aï-YOUSS-teu » : tout collé, d'un seul souffle" },
+        { "en": "didn't use to", "fr": "ne… pas, avant", "hint": "« DI-deunt-YOUSS-teu » : exactement le même son qu'à l'affirmatif !" },
+        { "en": "did you use to", "fr": "est-ce que tu… avant ?", "hint": "« di-djeu-YOUSS-teu » : [[did you]] se colle en « didjeu », comme à l'étape 5.3" },
+        { "en": "be used to", "fr": "être habitué à", "hint": "« bi-YOUSS-teu » : même son, autre sens" },
+        { "en": "use", "fr": "utiliser", "hint": "« YOUZ » : ici, un « z » qui vibre" },
+        { "en": "used", "fr": "utilisé (passé de use)", "hint": "« YOUZD » : un « z » et un petit « d »" },
+        { "en": "we'd", "fr": "nous (would, habitude passée)", "hint": "« wiid » : [[we would]] se colle en une seule syllabe" },
+        { "en": "nowadays", "fr": "de nos jours", "hint": "« NAO-eu-déiz » : accent au début" },
+        { "en": "anymore", "fr": "ne… plus", "hint": "« è-ni-MOR » : accent à la fin" }
+      ],
+      "pairs": [],
+      "practice": ["I used to hate broccoli, but now I love it.", "Did you use to walk to school, Grandma?", "We'd play outside until dinner every day."]
+    },
+    "mission": {
+      "type": "oral",
+      "prompt": "Ta famille regarde de vieilles photos, et ton petit cousin anglophone te demande comment tu étais à cinq ans. Raconte-lui trois choses que tu faisais avant, une chose que tu ne faisais pas, et une chose à laquelle tu es habitué maintenant.",
+      "model": "When I was five, I used to have very curly hair. I used to sleep with a big teddy bear. Every Saturday, my dad would take me to the park. I didn't use to like vegetables at all! Now I'm used to eating salad, and I even like it.",
+      "checklist": [
+        "J'ai utilisé [[used to]] + verbe de base, sans -s",
+        "Au négatif, j'ai dit [[didn't use to]], sans d",
+        "J'ai utilisé [[would]] seulement pour une action répétée, pas pour un état",
+        "J'ai utilisé [[be used to]] + nom ou verbe en -ing",
+        "J'ai dit « YOUSS-teu », sans « d »"
+      ]
+    }
+  }
+}

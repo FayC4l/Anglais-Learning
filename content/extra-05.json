@@ -8,19 +8,88 @@
         "ipa": "/t/ – /d/ – /ɪd/",
         "explain": "Le piège numéro un des francophones, c'est de dire « walk-ède » ou « play-ède » ! En réalité, le **-ed** ajoute rarement une syllabe. Après un son sec (« k », « p », « s », « ch », « sh », « f »), il se dit « t » : [[walked]] = « wâkt », une seule syllabe. Après les autres sons, il se dit « d » : [[played]] = « pléïd ». On ajoute une syllabe « id » **seulement** après un « t » ou un « d » : [[wanted]], [[needed]]. Tu reconnais la logique ? C'est la même que pour le « s » de [[cats]], [[dogs]] et [[horses]] !",
         "words": [
-          { "en": "walked", "fr": "a marché (passé de walk)", "hint": "« wâkt » : une seule syllabe, le « l » est muet et le -ed se dit « t »" },
-          { "en": "watched", "fr": "a regardé (passé de watch)", "hint": "« wâtcht » : une seule syllabe, finis par « tcht »" },
-          { "en": "liked", "fr": "a aimé (passé de like)", "hint": "« laïkt » : une seule syllabe, -ed = « t »" },
-          { "en": "played", "fr": "a joué (passé de play)", "hint": "« pléïd » : une seule syllabe, -ed = « d »" },
-          { "en": "stayed", "fr": "est resté (passé de stay)", "hint": "« stéïd » : une seule syllabe, -ed = « d »" },
-          { "en": "arrived", "fr": "est arrivé (passé de arrive)", "hint": "« eu-RAÏVD » : deux syllabes, pas trois ! Le -ed = « d »" },
-          { "en": "wanted", "fr": "a voulu (passé de want)", "hint": "« WÂN-tid » : on ajoute « id » parce que [[want]] finit par « t »" },
-          { "en": "needed", "fr": "a eu besoin (passé de need)", "hint": "« NII-did » : on ajoute « id » parce que [[need]] finit par « d »" },
-          { "en": "visited", "fr": "a visité (passé de visit)", "hint": "« VI-zi-tid » : accent au début, « id » à la fin" },
-          { "en": "started", "fr": "a commencé (passé de start)", "hint": "« STÂR-tid » : accent au début, « id » à la fin" }
+          {
+            "en": "walked",
+            "fr": "a marché (passé de walk)",
+            "hint": "« wâkt » : une seule syllabe, le « l » est muet et le -ed se dit « t »"
+          },
+          {
+            "en": "watched",
+            "fr": "a regardé (passé de watch)",
+            "hint": "« wâtcht » : une seule syllabe, finis par « tcht »"
+          },
+          {
+            "en": "liked",
+            "fr": "a aimé (passé de like)",
+            "hint": "« laïkt » : une seule syllabe, -ed = « t »"
+          },
+          {
+            "en": "played",
+            "fr": "a joué (passé de play)",
+            "hint": "« pléïd » : une seule syllabe, -ed = « d »"
+          },
+          {
+            "en": "stayed",
+            "fr": "est resté (passé de stay)",
+            "hint": "« stéïd » : une seule syllabe, -ed = « d »"
+          },
+          {
+            "en": "arrived",
+            "fr": "est arrivé (passé de arrive)",
+            "hint": "« eu-RAÏVD » : deux syllabes, pas trois ! Le -ed = « d »"
+          },
+          {
+            "en": "wanted",
+            "fr": "a voulu (passé de want)",
+            "hint": "« WÂN-tid » : on ajoute « id » parce que [[want]] finit par « t »"
+          },
+          {
+            "en": "needed",
+            "fr": "a eu besoin (passé de need)",
+            "hint": "« NII-did » : on ajoute « id » parce que [[need]] finit par « d »"
+          },
+          {
+            "en": "visited",
+            "fr": "a visité (passé de visit)",
+            "hint": "« VI-zi-tid » : accent au début, « id » à la fin"
+          },
+          {
+            "en": "started",
+            "fr": "a commencé (passé de start)",
+            "hint": "« STÂR-tid » : accent au début, « id » à la fin"
+          }
         ],
-        "pairs": [["play", "played"], ["walk", "walked"], ["want", "wanted"], ["need", "needed"], ["stay", "stayed"], ["visit", "visited"]],
-        "practice": ["Yesterday, I walked to the park and played soccer.", "We wanted to stay, but we needed to go home.", "She visited Montreal and watched a hockey game."]
+        "pairs": [
+          [
+            "play",
+            "played"
+          ],
+          [
+            "walk",
+            "walked"
+          ],
+          [
+            "want",
+            "wanted"
+          ],
+          [
+            "need",
+            "needed"
+          ],
+          [
+            "stay",
+            "stayed"
+          ],
+          [
+            "visit",
+            "visited"
+          ]
+        ],
+        "practice": [
+          "Yesterday, I walked to the park and played soccer.",
+          "We wanted to stay, but we needed to go home.",
+          "She visited Montreal and watched a hockey game."
+        ]
       },
       "mission": {
         "type": "oral",
@@ -41,19 +110,88 @@
         "ipa": "/ɑ/ – /ɛ/ – /eɪ/",
         "explain": "Les verbes irréguliers ne s'écrivent pas comme ils se prononcent, alors ton oreille doit apprendre leur vraie musique. La famille **-ought / -aught** est super simple : le « gh » est muet, et [[bought]], [[brought]], [[thought]] et [[caught]] riment tous avec « hâte » (« bât », « brât », « thât », « kât »). Ne dis surtout pas « bôte » : on entendrait [[boat]] (bateau) ! Autres pièges : [[said]] se dit « sèd » (jamais « séïd »), [[read]] au passé se dit exactement comme [[red]] (rouge), et dans [[knew]], le « k » est muet. Truc : ces mots reviennent tout le temps dans les histoires, alors répète-les comme une petite chanson.",
         "words": [
-          { "en": "said", "fr": "a dit (passé de say)", "hint": "« sèd » : un « è » court, jamais « séïd »" },
-          { "en": "read", "fr": "a lu (passé de read)", "hint": "« rèd » : au passé, il se dit exactement comme [[red]] (rouge)" },
-          { "en": "ate", "fr": "a mangé (passé de eat)", "hint": "« éït » : comme [[eight]] (huit), le « é » glisse vers « i »" },
-          { "en": "saw", "fr": "a vu (passé de see)", "hint": "« sâ » : un « â » ouvert et c'est tout, le « w » ne s'entend pas" },
-          { "en": "made", "fr": "a fait, a fabriqué (passé de make)", "hint": "« méïd » : « éï » qui glisse, pas « mad »" },
-          { "en": "bought", "fr": "a acheté (passé de buy)", "hint": "« bât » : « gh » muet, rime avec [[thought]] ; pas « bôte » !" },
-          { "en": "brought", "fr": "a apporté (passé de bring)", "hint": "« brât » : « gh » muet, rime avec [[bought]]" },
-          { "en": "thought", "fr": "a pensé (passé de think)", "hint": "« thât » : « th » soufflé, « gh » muet" },
-          { "en": "caught", "fr": "a attrapé (passé de catch)", "hint": "« kât » : « gh » muet, rime avec [[bought]]" },
-          { "en": "knew", "fr": "savait, connaissait (passé de know)", "hint": "« niou » : le « k » est muet, comme dans [[know]]" }
+          {
+            "en": "said",
+            "fr": "a dit (passé de say)",
+            "hint": "« sèd » : un « è » court, jamais « séïd »"
+          },
+          {
+            "en": "read",
+            "fr": "a lu (passé de read)",
+            "hint": "« rèd » : au passé, il se dit exactement comme [[red]] (rouge)"
+          },
+          {
+            "en": "ate",
+            "fr": "a mangé (passé de eat)",
+            "hint": "« éït » : comme [[eight]] (huit), le « é » glisse vers « i »"
+          },
+          {
+            "en": "saw",
+            "fr": "a vu (passé de see)",
+            "hint": "« sâ » : un « â » ouvert et c'est tout, le « w » ne s'entend pas"
+          },
+          {
+            "en": "made",
+            "fr": "a fait, a fabriqué (passé de make)",
+            "hint": "« méïd » : « éï » qui glisse, pas « mad »"
+          },
+          {
+            "en": "bought",
+            "fr": "a acheté (passé de buy)",
+            "hint": "« bât » : « gh » muet, rime avec [[thought]] ; pas « bôte » !"
+          },
+          {
+            "en": "brought",
+            "fr": "a apporté (passé de bring)",
+            "hint": "« brât » : « gh » muet, rime avec [[bought]]"
+          },
+          {
+            "en": "thought",
+            "fr": "a pensé (passé de think)",
+            "hint": "« thât » : « th » soufflé, « gh » muet"
+          },
+          {
+            "en": "caught",
+            "fr": "a attrapé (passé de catch)",
+            "hint": "« kât » : « gh » muet, rime avec [[bought]]"
+          },
+          {
+            "en": "knew",
+            "fr": "savait, connaissait (passé de know)",
+            "hint": "« niou » : le « k » est muet, comme dans [[know]]"
+          }
         ],
-        "pairs": [["bought", "boat"], ["caught", "coat"], ["said", "sad"], ["saw", "so"], ["ate", "at"], ["made", "mad"]],
-        "practice": ["I thought you bought a boat!", "Yesterday, I read a book, ate a sandwich and saw a movie.", "He said he caught the ball, but I knew it wasn't true."]
+        "pairs": [
+          [
+            "bought",
+            "boat"
+          ],
+          [
+            "caught",
+            "coat"
+          ],
+          [
+            "said",
+            "sad"
+          ],
+          [
+            "saw",
+            "so"
+          ],
+          [
+            "ate",
+            "at"
+          ],
+          [
+            "made",
+            "mad"
+          ]
+        ],
+        "practice": [
+          "I thought you bought a boat!",
+          "Yesterday, I read a book, ate a sandwich and saw a movie.",
+          "He said he caught the ball, but I knew it wasn't true."
+        ]
       },
       "mission": {
         "type": "ecrit",
@@ -74,17 +212,53 @@
         "ipa": "",
         "explain": "Quand les anglophones parlent vite, les petits mots se collent et changent de son ! Le « d » de [[did]] et le « y » de [[you]] fusionnent en « dj » : [[did you]] devient « di-djeu ». [[What did you]] devient même « WEU-djeu », et dans [[did he]], le « h » disparaît presque : « di-di ». Tu n'es pas obligé de parler comme ça, mais ton oreille doit le reconnaître, sinon tu vas croire que c'est un mot inconnu. Rappelle-toi : à l'écrit, on garde toujours les mots complets ([[What did you do?]]), et après [[did]], le verbe reste à la forme de base !",
         "words": [
-          { "en": "did you", "fr": "est-ce que tu… ? (passé)", "hint": "« di-djeu » : le « d » et le « y » se collent en « dj »" },
-          { "en": "did he", "fr": "est-ce qu'il… ? (passé)", "hint": "« di-di » : le « h » de [[he]] disparaît presque" },
-          { "en": "didn't", "fr": "n'a pas, ne… pas (passé)", "hint": "« DI-deunt » : accent au début, le « t » final est très léger" },
-          { "en": "didn't you", "fr": "n'as-tu pas… ?", "hint": "« DI-deun-tcheu » : le « t » et le « y » se collent en « tch »" },
-          { "en": "what did you", "fr": "qu'est-ce que tu as… ?", "hint": "« WEU-djeu » : trois mots, mais ça sonne comme deux syllabes !" },
-          { "en": "where did you", "fr": "où est-ce que tu as… ?", "hint": "« WÈR-djeu » : « r » anglais, puis « djeu »" },
-          { "en": "what did you do", "fr": "qu'est-ce que tu as fait ?", "hint": "« WEU-djeu-DOU ↘ » : la force va sur [[do]], la voix descend" },
-          { "en": "did you like it", "fr": "est-ce que tu as aimé ça ?", "hint": "« di-djeu-LAÏ-kitt ↗ » : le « k » de [[like]] se colle à [[it]], la voix monte" }
+          {
+            "en": "did you",
+            "fr": "est-ce que tu… ? (passé)",
+            "hint": "« di-djeu » : le « d » et le « y » se collent en « dj »"
+          },
+          {
+            "en": "did he",
+            "fr": "est-ce qu'il… ? (passé)",
+            "hint": "« di-di » : le « h » de [[he]] disparaît presque"
+          },
+          {
+            "en": "didn't",
+            "fr": "n'a pas, ne… pas (passé)",
+            "hint": "« DI-deunt » : accent au début, le « t » final est très léger"
+          },
+          {
+            "en": "didn't you",
+            "fr": "n'as-tu pas… ?",
+            "hint": "« DI-deun-tcheu » : le « t » et le « y » se collent en « tch »"
+          },
+          {
+            "en": "what did you",
+            "fr": "qu'est-ce que tu as… ?",
+            "hint": "« WEU-djeu » : trois mots, mais ça sonne comme deux syllabes !"
+          },
+          {
+            "en": "where did you",
+            "fr": "où est-ce que tu as… ?",
+            "hint": "« WÈR-djeu » : « r » anglais, puis « djeu »"
+          },
+          {
+            "en": "what did you do",
+            "fr": "qu'est-ce que tu as fait ?",
+            "hint": "« WEU-djeu-DOU ↘ » : la force va sur [[do]], la voix descend"
+          },
+          {
+            "en": "did you like it",
+            "fr": "est-ce que tu as aimé ça ?",
+            "hint": "« di-djeu-LAÏ-kitt ↗ » : le « k » de [[like]] se colle à [[it]], la voix monte"
+          }
         ],
         "pairs": [],
-        "practice": ["What did you do yesterday?", "Did you like the movie?", "Where did he go after school?"]
+        "practice": [
+          "What did you do yesterday?",
+          "Did you like the movie?",
+          "Where did he go after school?"
+        ]
       },
       "mission": {
         "type": "oral",
@@ -105,19 +279,62 @@
         "ipa": "/ə/",
         "explain": "Le son le plus fréquent de l'anglais n'a même pas de lettre à lui : c'est le **schwa**, un petit « eu » tout mou, comme si tu étais très fatigué. Il remplace presque toutes les voyelles des syllabes **sans accent** : [[banana]] se dit « beu-NA-neu », pas « ba-na-na » ! Le piège des francophones, c'est de prononcer chaque voyelle clairement, comme en français. En anglais, seule la syllabe forte est bien claire ; les autres se ratatinent. Truc : dis [[Canada]] en anglais (« KA-neu-deu ») : une syllabe forte, deux syllabes paresseuses, et voilà !",
         "words": [
-          { "en": "about", "fr": "à propos de ; environ", "hint": "« eu-BAOUT » : le « a » du début devient un petit « eu »" },
-          { "en": "banana", "fr": "banane", "hint": "« beu-NA-neu » : seul le milieu est fort, le début et la fin font « eu »" },
-          { "en": "Canada", "fr": "Canada", "hint": "« KA-neu-deu » : accent au début, puis deux « eu » paresseux" },
-          { "en": "seven", "fr": "sept", "hint": "« SÈ-veun » : la 2e syllabe est toute molle" },
-          { "en": "problem", "fr": "problème", "hint": "« PRÂ-bleum » : accent au début, « bleum » tout mou" },
-          { "en": "together", "fr": "ensemble", "hint": "« teu-GUÈ-theur » : le début et la fin font « eu »" },
-          { "en": "suddenly", "fr": "soudain, tout à coup", "hint": "« SEU-deun-li » : accent au début, le milieu est tout petit" },
-          { "en": "finally", "fr": "finalement, enfin", "hint": "« FAÏ-neu-li » : accent au début, le « a » devient « eu »" },
-          { "en": "the", "fr": "le, la, les", "hint": "« theu » : tout petit et rapide devant une consonne" },
-          { "en": "a", "fr": "un, une", "hint": "« eu » : jamais « é » ni « a » au milieu d'une phrase : [[a banana]] = « eu-beu-NA-neu »" }
+          {
+            "en": "about",
+            "fr": "à propos de ; environ",
+            "hint": "« eu-BAOUT » : le « a » du début devient un petit « eu »"
+          },
+          {
+            "en": "banana",
+            "fr": "banane",
+            "hint": "« beu-NA-neu » : seul le milieu est fort, le début et la fin font « eu »"
+          },
+          {
+            "en": "Canada",
+            "fr": "Canada",
+            "hint": "« KA-neu-deu » : accent au début, puis deux « eu » paresseux"
+          },
+          {
+            "en": "seven",
+            "fr": "sept",
+            "hint": "« SÈ-veun » : la 2e syllabe est toute molle"
+          },
+          {
+            "en": "problem",
+            "fr": "problème",
+            "hint": "« PRÂ-bleum » : accent au début, « bleum » tout mou"
+          },
+          {
+            "en": "together",
+            "fr": "ensemble",
+            "hint": "« teu-GUÈ-theur » : le début et la fin font « eu »"
+          },
+          {
+            "en": "suddenly",
+            "fr": "soudain, tout à coup",
+            "hint": "« SEU-deun-li » : accent au début, le milieu est tout petit"
+          },
+          {
+            "en": "finally",
+            "fr": "finalement, enfin",
+            "hint": "« FAÏ-neu-li » : accent au début, le « a » devient « eu »"
+          },
+          {
+            "en": "the",
+            "fr": "le, la, les",
+            "hint": "« theu » : tout petit et rapide devant une consonne"
+          },
+          {
+            "en": "a",
+            "fr": "un, une",
+            "hint": "« eu » : jamais « é » ni « a » au milieu d'une phrase : [[a banana]] = « eu-beu-NA-neu »"
+          }
         ],
         "pairs": [],
-        "practice": ["Suddenly, a banana fell on the table.", "Finally, we arrived in Canada at about seven."]
+        "practice": [
+          "Suddenly, a banana fell on the table.",
+          "Finally, we arrived in Canada at about seven."
+        ]
       },
       "mission": {
         "type": "ecrit",
@@ -128,6 +345,84 @@
           "J'ai utilisé le passé simple pour l'action soudaine ([[Sofia fell]])",
           "J'ai organisé mon histoire avec [[first]], [[then]], [[suddenly]] et [[finally]]",
           "J'ai relu à voix haute avec des schwas bien paresseux : « SEU-deun-li », « FAÏ-neu-li »"
+        ]
+      }
+    },
+    {
+      "unit": "5.5",
+      "pron": {
+        "focus": "Used to : le « d » qui disparaît",
+        "ipa": "/juːstə/",
+        "explain": "Dans [[used to]], on n'entend **pas** de « d », et le « s » est un vrai « s » sifflant : on dit « YOUSS-teu », d'un seul souffle, avec un [[to]] tout petit. Attention : le verbe [[use]] (utiliser) se dit avec un « z » : « youz ». Donc [[I used to]] (avant, je…) se dit « aï-YOUSS-teu », mais [[I used a pen]] (j'ai utilisé un stylo) se dit « aï-YOUZD ». Le truc : à l'écrit, le d reste à l'affirmatif ; à l'oral, il s'envole !",
+        "words": [
+          {
+            "en": "used to",
+            "fr": "avoir l'habitude de (avant)",
+            "hint": "« YOUSS-teu » : un « s » sifflant, pas de « d », pas de « z »"
+          },
+          {
+            "en": "I used to",
+            "fr": "avant, je…",
+            "hint": "« aï-YOUSS-teu » : tout collé, d'un seul souffle"
+          },
+          {
+            "en": "didn't use to",
+            "fr": "ne… pas, avant",
+            "hint": "« DI-deunt-YOUSS-teu » : exactement le même son qu'à l'affirmatif !"
+          },
+          {
+            "en": "did you use to",
+            "fr": "est-ce que tu… avant ?",
+            "hint": "« di-djeu-YOUSS-teu » : [[did you]] se colle en « didjeu », comme à l'étape 5.3"
+          },
+          {
+            "en": "be used to",
+            "fr": "être habitué à",
+            "hint": "« bi-YOUSS-teu » : même son, autre sens"
+          },
+          {
+            "en": "use",
+            "fr": "utiliser",
+            "hint": "« YOUZ » : ici, un « z » qui vibre"
+          },
+          {
+            "en": "used",
+            "fr": "utilisé (passé de use)",
+            "hint": "« YOUZD » : un « z » et un petit « d »"
+          },
+          {
+            "en": "we'd",
+            "fr": "nous (would, habitude passée)",
+            "hint": "« wiid » : [[we would]] se colle en une seule syllabe"
+          },
+          {
+            "en": "nowadays",
+            "fr": "de nos jours",
+            "hint": "« NAO-eu-déiz » : accent au début"
+          },
+          {
+            "en": "anymore",
+            "fr": "ne… plus",
+            "hint": "« è-ni-MOR » : accent à la fin"
+          }
+        ],
+        "pairs": [],
+        "practice": [
+          "I used to hate broccoli, but now I love it.",
+          "Did you use to walk to school, Grandma?",
+          "We'd play outside until dinner every day."
+        ]
+      },
+      "mission": {
+        "type": "oral",
+        "prompt": "Ta famille regarde de vieilles photos, et ton petit cousin anglophone te demande comment tu étais à cinq ans. Raconte-lui trois choses que tu faisais avant, une chose que tu ne faisais pas, et une chose à laquelle tu es habitué maintenant.",
+        "model": "When I was five, I used to have very curly hair. I used to sleep with a big teddy bear. Every Saturday, my dad would take me to the park. I didn't use to like vegetables at all! Now I'm used to eating salad, and I even like it.",
+        "checklist": [
+          "J'ai utilisé [[used to]] + verbe de base, sans -s",
+          "Au négatif, j'ai dit [[didn't use to]], sans d",
+          "J'ai utilisé [[would]] seulement pour une action répétée, pas pour un état",
+          "J'ai utilisé [[be used to]] + nom ou verbe en -ing",
+          "J'ai dit « YOUSS-teu », sans « d »"
         ]
       }
     }

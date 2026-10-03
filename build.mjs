@@ -24,6 +24,20 @@ for (const f of readdirSync(contentDir).filter((f) => /^level-\d\d\.json$/.test(
   levels.push(lvl);
 }
 
+// V2 content: optional files, injected as window.__EXTRA__ (missing files simply disable a feature).
+const readOpt = (name) => {
+  const p = join(contentDir, name);
+  return existsSync(p) ? JSON.parse(readFileSync(p, "utf8").replace(/^\uFEFF/, "")) : null;
+};
+const extra = { boss: {}, lexicon: {} };
+for (const f of readdirSync(contentDir)) {
+  let m = f.match(/^boss-(\d\d)\.json$/);
+  if (m) extra.boss[Number(m[1])] = readOpt(f);
+  m = f.match(/^lexicon-(\d\d)\.json$/);
+  if (m) extra.lexicon[Number(m[1])] = readOpt(f).words;
+}
+for (const [k, f] of [["placement", "placement.json"], ["writing", "writing.json"], ["humor", "humor.json"], ["wordform", "wordform.json"], ["c2uoe", "c2-uoe.json"], ["c2papers", "c2-papers.json"]]) extra[k] = readOpt(f);
+
 const js = await build({
   entryPoints: [join(root, "src/main.js")],
   bundle: true,
@@ -33,13 +47,14 @@ const js = await build({
   minify: process.argv.includes("--minify"),
   legalComments: "none",
 });
-const css = readFileSync(join(root, "src/styles.css"), "utf8");
+const css = ["src/styles.css", "src/styles-v2.css"].filter((p) => existsSync(join(root, p))).map((p) => readFileSync(join(root, p), "utf8")).join("\n");
 const data = JSON.stringify(levels).replace(/</g, "\\u003c");
+const extraData = JSON.stringify(extra).replace(/</g, "\\u003c");
 const fonts =
   '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=JetBrains+Mono:wght@500;700&display=swap">';
 
 const body = `<div id="app"><main id="view"><noscript><p>Mission Bilingue a besoin de JavaScript.</p></noscript></main></div>
-<script>window.__CONTENT__=${data};</script>
+<script>window.__CONTENT__=${data};window.__EXTRA__=${extraData};</script>
 <script>${js.outputFiles[0].text}</script>`;
 
 const page = `<title>Mission Bilingue</title>

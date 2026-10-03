@@ -2509,6 +2509,642 @@
           }
         ]
       }
+    },
+    {
+      "id": "6.5",
+      "title": "N'est-ce pas ?",
+      "titleEn": "Isn't It?",
+      "goal": "Vérifier une information avec les question tags, répondre court et dire « moi aussi » ou « moi non plus » comme un anglophone.",
+      "lesson": [
+        {
+          "type": "p",
+          "text": "En français, on colle « n'est-ce pas ? » ou « hein ? » à la fin de n'importe quelle phrase. En anglais, cette petite question finale (le **question tag**) change selon la phrase : [[It's cold, isn't it?]], [[You like pizza, don't you?]], [[She went home, didn't she?]] C'est l'outil n° 1 pour jaser avec un voisin dans une file d'attente !"
+        },
+        {
+          "type": "rule",
+          "title": "La formule",
+          "text": "On reprend l'**auxiliaire** de la phrase (**be, do, have, will, can**) + le **pronom** sujet. Phrase **positive** → tag **négatif** : [[You're tired, aren't you?]] Phrase **négative** → tag **positif** : [[You aren't tired, are you?]] S'il n'y a pas d'auxiliaire (présent ou passé simple), on prend **do / does / did** : [[Liam plays hockey, doesn't he?]]"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Temps",
+            "Phrase positive",
+            "Phrase négative"
+          ],
+          "rows": [
+            [
+              "be",
+              "[[It's cold, isn't it?]]",
+              "[[It isn't cold, is it?]]"
+            ],
+            [
+              "présent simple",
+              "[[You like it, don't you?]]",
+              "[[She doesn't like it, does she?]]"
+            ],
+            [
+              "passé simple",
+              "[[They won, didn't they?]]",
+              "[[He didn't call, did he?]]"
+            ],
+            [
+              "present perfect",
+              "[[You've seen it, haven't you?]]",
+              "[[She hasn't eaten, has she?]]"
+            ],
+            [
+              "will",
+              "[[You'll help me, won't you?]]",
+              "[[It won't rain, will it?]]"
+            ],
+            [
+              "can",
+              "[[He can skate, can't he?]]",
+              "[[You can't come, can you?]]"
+            ]
+          ]
+        },
+        {
+          "type": "rule",
+          "title": "Les cas spéciaux",
+          "text": "Avec **I am**, le tag est [[aren't I?]] : [[I'm right, aren't I?]] Avec **never**, la phrase est déjà négative, donc le tag est **positif** : [[She never eats meat, does she?]] Le pronom remplace le nom : [[Your mom works downtown, doesn't she?]] Et **this** / **that** deviennent **it** : [[That was fun, wasn't it?]]"
+        },
+        {
+          "type": "rule",
+          "title": "Répondre court",
+          "text": "En anglais, on ne répond pas juste [[Yes]] ou [[No]] : on ajoute le **sujet** + l'**auxiliaire** de la question. [[Do you like poutine? Yes, I do.]] [[Is he from Gatineau? No, he isn't.]] [[Did you finish? Yes, I did.]] Jamais « Yes, I like », et jamais « Yes, I'm » : à la fin d'une réponse, on dit [[Yes, I am.]]"
+        },
+        {
+          "type": "rule",
+          "title": "Moi aussi, moi non plus",
+          "text": "Pour dire « moi aussi » après une phrase **positive** : **So** + auxiliaire + sujet. [[I love hockey. So do I.]] [[I'm hungry. So am I.]] [[I went to the game. So did I.]] Après une phrase **négative** : **Neither** + auxiliaire + sujet. [[I can't skate. Neither can I.]] [[I don't like rain. Neither do I.]] Le sujet peut être un nom : [[I love maple syrup, and so does my dad.]] En version courte et familière : [[Me too.]] (après une phrase positive) et [[Me neither.]] (après une phrase négative)."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "It's a nice day, isn't it?",
+              "fr": "Il fait beau, hein ?"
+            },
+            {
+              "en": "You didn't forget my birthday, did you?",
+              "fr": "Tu n'as pas oublié ma fête, hein ?"
+            },
+            {
+              "en": "You've seen this movie, haven't you?",
+              "fr": "Tu as déjà vu ce film, non ?"
+            },
+            {
+              "en": "Do you like poutine? Yes, I do.",
+              "fr": "Aimes-tu la poutine ? Oui."
+            },
+            {
+              "en": "I've never seen a moose. Neither have I.",
+              "fr": "Je n'ai jamais vu d'orignal. Moi non plus."
+            },
+            {
+              "en": "I'm so tired! So am I.",
+              "fr": "Je suis tellement fatigué ! Moi aussi."
+            }
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "Pièges de francophone : 1) « n'est-ce pas » ne se traduit **pas** toujours par [[isn't it?]] : [[You play the guitar, don't you?]] 2) Pas de double négation : [[Neither do I]], et non « Neither don't I ». 3) L'ordre est inversé : [[So do I]] ; « So I do » ne veut pas dire « moi aussi ». 4) Après une phrase négative, « moi non plus » se dit [[Me neither]], jamais [[Me too]] !"
+        },
+        {
+          "type": "dialogue",
+          "title": "La file du café",
+          "lines": [
+            {
+              "who": "Ana",
+              "en": "This lineup is really long, isn't it?",
+              "fr": "Cette file est vraiment longue, hein ?"
+            },
+            {
+              "who": "Samuel",
+              "en": "Yes, it is! You're Félix's sister, aren't you?",
+              "fr": "Oh oui ! Tu es la sœur de Félix, c'est ça ?"
+            },
+            {
+              "who": "Ana",
+              "en": "Yes, I am. And you live next door, don't you?",
+              "fr": "Oui. Et vous habitez à côté, non ?"
+            },
+            {
+              "who": "Samuel",
+              "en": "That's right. I come here every morning for the muffins.",
+              "fr": "C'est ça. Je viens ici tous les matins pour les muffins."
+            },
+            {
+              "who": "Ana",
+              "en": "So do I! But I don't like coffee.",
+              "fr": "Moi aussi ! Mais je n'aime pas le café."
+            },
+            {
+              "who": "Samuel",
+              "en": "Neither do I. I always get hot chocolate.",
+              "fr": "Moi non plus. Je prends toujours un chocolat chaud."
+            },
+            {
+              "who": "Ana",
+              "en": "Me too! By the way, you found a ball in your garden, didn't you?",
+              "fr": "Moi aussi ! Au fait, vous avez trouvé un ballon dans votre jardin, non ?"
+            },
+            {
+              "who": "Samuel",
+              "en": "Yes, I did. It broke my window. It wasn't your brother's ball, was it?",
+              "fr": "Oui. Il a cassé ma fenêtre. Ce n'était pas le ballon de ton frère, j'espère ?"
+            },
+            {
+              "who": "Ana",
+              "en": "Oh, look! It's my turn. Bye!",
+              "fr": "Oh, regardez ! C'est mon tour. Bye !"
+            }
+          ]
+        },
+        {
+          "type": "fun",
+          "text": "Le sais-tu ? Les Canadiens sont célèbres pour leur propre petit tag : [[eh?]] On l'entend partout au pays : [[Nice day, eh?]] Il veut dire à peu près « hein ? » ou « n'est-ce pas ? »."
+        }
+      ],
+      "vocab": [
+        {
+          "en": "agree",
+          "fr": "être d'accord",
+          "alt": [],
+          "ex": "I agree with you."
+        },
+        {
+          "en": "disagree",
+          "fr": "ne pas être d'accord",
+          "alt": [],
+          "ex": "My sister and I often disagree."
+        },
+        {
+          "en": "be right",
+          "fr": "avoir raison",
+          "alt": [],
+          "ex": "You're right, it's late."
+        },
+        {
+          "en": "be wrong",
+          "fr": "avoir tort (se tromper)",
+          "alt": [],
+          "ex": "Sorry, I was wrong."
+        },
+        {
+          "en": "of course",
+          "fr": "bien sûr",
+          "alt": [
+            "sure"
+          ],
+          "ex": "Can you help me? Of course!"
+        },
+        {
+          "en": "exactly",
+          "fr": "exactement",
+          "alt": [],
+          "ex": "That's exactly what I said."
+        },
+        {
+          "en": "me too",
+          "fr": "moi aussi",
+          "alt": [],
+          "ex": "I love snow days. Me too!"
+        },
+        {
+          "en": "me neither",
+          "fr": "moi non plus",
+          "alt": [],
+          "ex": "I don't like mornings. Me neither."
+        },
+        {
+          "en": "small talk",
+          "fr": "bavardage (conversation légère)",
+          "alt": [],
+          "ex": "Canadians love small talk about the weather."
+        },
+        {
+          "en": "chat",
+          "fr": "jaser (bavarder)",
+          "alt": [],
+          "ex": "We chatted for an hour on the phone."
+        },
+        {
+          "en": "guess",
+          "fr": "deviner",
+          "alt": [],
+          "ex": "Guess what! I won the game."
+        },
+        {
+          "en": "lineup",
+          "fr": "file d'attente",
+          "alt": [
+            "line"
+          ],
+          "ex": "The lineup at the arena was very long."
+        },
+        {
+          "en": "elevator",
+          "fr": "ascenseur",
+          "alt": [],
+          "ex": "We took the elevator to the tenth floor."
+        },
+        {
+          "en": "stranger",
+          "fr": "inconnu, inconnue (personne qu'on ne connaît pas)",
+          "alt": [],
+          "ex": "My grandma talks to strangers at the bus stop."
+        },
+        {
+          "en": "polite",
+          "fr": "poli",
+          "alt": [],
+          "ex": "It's polite to say thank you."
+        },
+        {
+          "en": "freezing",
+          "fr": "glacial (très, très froid)",
+          "alt": [],
+          "ex": "It's freezing today, isn't it?"
+        },
+        {
+          "en": "by the way",
+          "fr": "au fait (en passant)",
+          "alt": [],
+          "ex": "By the way, I love your toque!"
+        },
+        {
+          "en": "pretty",
+          "fr": "plutôt, assez (devant un adjectif)",
+          "alt": [
+            "quite",
+            "fairly"
+          ],
+          "ex": "The movie was pretty good."
+        }
+      ],
+      "sentences": [
+        {
+          "en": "It's freezing today, isn't it?",
+          "fr": "Il fait un froid glacial aujourd'hui, hein ?",
+          "trap": [
+            "doesn't",
+            "wasn't"
+          ],
+          "alt": []
+        },
+        {
+          "en": "You live next door, don't you?",
+          "fr": "Tu habites à côté, n'est-ce pas ?",
+          "trap": [
+            "isn't",
+            "doesn't"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Your sister didn't call, did she?",
+          "fr": "Ta sœur n'a pas appelé, hein ?",
+          "trap": [
+            "does",
+            "her"
+          ],
+          "alt": []
+        },
+        {
+          "en": "You've been to Vancouver, haven't you?",
+          "fr": "Tu es déjà allé à Vancouver, non ?",
+          "trap": [
+            "didn't",
+            "aren't"
+          ],
+          "alt": []
+        },
+        {
+          "en": "She never eats meat, does she?",
+          "fr": "Elle ne mange jamais de viande, n'est-ce pas ?",
+          "trap": [
+            "doesn't",
+            "eat"
+          ],
+          "alt": []
+        },
+        {
+          "en": "I'm right about this, aren't I?",
+          "fr": "J'ai raison là-dessus, non ?",
+          "trap": [
+            "have",
+            "isn't"
+          ],
+          "alt": []
+        },
+        {
+          "en": "You'll help me with my homework, won't you?",
+          "fr": "Tu vas m'aider avec mes devoirs, hein ?",
+          "trap": [
+            "don't",
+            "aren't"
+          ],
+          "alt": []
+        },
+        {
+          "en": "My brother can't skate, and neither can I.",
+          "fr": "Mon frère ne sait pas patiner, et moi non plus.",
+          "trap": [
+            "so",
+            "don't"
+          ],
+          "alt": []
+        },
+        {
+          "en": "I love maple syrup, and so does my dad.",
+          "fr": "J'adore le sirop d'érable, et mon père aussi.",
+          "trap": [
+            "do",
+            "neither"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Your parents work downtown, don't they?",
+          "fr": "Tes parents travaillent au centre-ville, non ?",
+          "trap": [
+            "doesn't",
+            "aren't"
+          ],
+          "alt": []
+        },
+        {
+          "en": "That movie was pretty good, wasn't it?",
+          "fr": "Ce film était plutôt bon, hein ?",
+          "trap": [
+            "isn't",
+            "didn't"
+          ],
+          "alt": []
+        },
+        {
+          "en": "You weren't at the party, were you?",
+          "fr": "Tu n'étais pas à la fête, hein ?",
+          "trap": [
+            "did",
+            "wasn't"
+          ],
+          "alt": []
+        }
+      ],
+      "grammar": [
+        {
+          "type": "mcq",
+          "q": "It's really cold today, ___?",
+          "choices": [
+            "is it",
+            "isn't it",
+            "doesn't it",
+            "it isn't"
+          ],
+          "answer": 1,
+          "explain": "Phrase positive avec is → tag négatif avec le même auxiliaire : isn't it?"
+        },
+        {
+          "type": "mcq",
+          "q": "I'm late, ___?",
+          "choices": [
+            "aren't I",
+            "am not I",
+            "isn't it",
+            "don't I"
+          ],
+          "answer": 0,
+          "explain": "Cas spécial : avec I am, le tag négatif est aren't I?"
+        },
+        {
+          "type": "mcq",
+          "q": "Your grandma has never flown, ___?",
+          "choices": [
+            "hasn't she",
+            "has she",
+            "did she",
+            "doesn't she"
+          ],
+          "answer": 1,
+          "explain": "Never rend la phrase négative, donc le tag est positif : has she?"
+        },
+        {
+          "type": "mcq",
+          "q": "« J'adore le hockey. — Moi aussi. » → I love hockey. ___",
+          "choices": [
+            "So I do.",
+            "So am I.",
+            "Neither do I.",
+            "So do I."
+          ],
+          "answer": 3,
+          "explain": "Après une phrase positive au présent simple : So + do + I (ordre inversé)."
+        },
+        {
+          "type": "mcq",
+          "q": "I can't swim. ___",
+          "choices": [
+            "Me too.",
+            "So can I.",
+            "Neither can I.",
+            "Neither can't I."
+          ],
+          "answer": 2,
+          "explain": "Après une phrase négative : Neither + auxiliaire positif (can) + sujet. Pas de double négation."
+        },
+        {
+          "type": "mcq",
+          "q": "Did you finish your homework? Yes, ___",
+          "choices": [
+            "I finished.",
+            "I do.",
+            "I did.",
+            "I have."
+          ],
+          "answer": 2,
+          "explain": "Réponse courte : on reprend l'auxiliaire de la question, did."
+        },
+        {
+          "type": "fill",
+          "q": "Your brother plays hockey, ___ he?",
+          "hint": "tag",
+          "answer": [
+            "doesn't"
+          ],
+          "explain": "Présent simple positif avec he → tag négatif : doesn't he?"
+        },
+        {
+          "type": "fill",
+          "q": "You won't forget, ___ you?",
+          "hint": "tag",
+          "answer": [
+            "will"
+          ],
+          "explain": "Phrase négative avec won't → tag positif : will you?"
+        },
+        {
+          "type": "fill",
+          "q": "They went to the game, ___ they?",
+          "hint": "tag",
+          "answer": [
+            "didn't"
+          ],
+          "explain": "Passé simple positif → tag négatif avec did : didn't they?"
+        },
+        {
+          "type": "fill",
+          "q": "Liam can't ski. ___ can I.",
+          "hint": "moi non plus",
+          "answer": [
+            "Neither",
+            "Nor"
+          ],
+          "explain": "Après une phrase négative : Neither + can + I."
+        },
+        {
+          "type": "fill",
+          "q": "I'm so hungry! ___ am I.",
+          "hint": "moi aussi",
+          "answer": [
+            "So"
+          ],
+          "explain": "Après une phrase positive avec am : So + am + I."
+        },
+        {
+          "type": "fill",
+          "q": "We've met before, ___?",
+          "hint": "tag",
+          "answer": [
+            "haven't we"
+          ],
+          "explain": "Present perfect positif (we have) → tag négatif : haven't we?"
+        },
+        {
+          "type": "fill",
+          "q": "Are you from Gatineau? No, ___.",
+          "hint": "réponse courte",
+          "answer": [
+            "I'm not"
+          ],
+          "explain": "Question avec are you → réponse courte avec I am : No, I'm not."
+        },
+        {
+          "type": "error",
+          "q": "It's a nice day, doesn't it?",
+          "wrong": 4,
+          "fix": [
+            "isn't"
+          ],
+          "explain": "La phrase utilise is (it's = it is), donc le tag est isn't it?"
+        },
+        {
+          "type": "error",
+          "q": "She doesn't like spiders, doesn't she?",
+          "wrong": 4,
+          "fix": [
+            "does"
+          ],
+          "explain": "Phrase négative → tag positif : does she?"
+        },
+        {
+          "type": "error",
+          "q": "Emma loves soccer, and so am I.",
+          "wrong": 5,
+          "fix": [
+            "do"
+          ],
+          "explain": "Loves est au présent simple : on reprend do, so do I."
+        },
+        {
+          "type": "error",
+          "q": "Your parents went to Quebec City, didn't you?",
+          "wrong": 7,
+          "fix": [
+            "they"
+          ],
+          "explain": "Le tag reprend le sujet de la phrase : your parents = they."
+        },
+        {
+          "type": "error",
+          "q": "Do you like poutine? Yes, I like.",
+          "wrong": 6,
+          "fix": [
+            "do"
+          ],
+          "explain": "Réponse courte : sujet + auxiliaire de la question, Yes, I do."
+        }
+      ],
+      "reading": {
+        "title": "Small Talk in the Elevator",
+        "text": "Every morning, Malik takes the elevator with his neighbour, Lucie. She is seventy-five, and she loves small talk.\n\nOn Monday, she says, \"It's freezing today, isn't it?\"\n\n\"Yes, it is,\" says Malik. \"And I have a math test this morning.\"\n\n\"You don't like tests, do you?\"\n\n\"No, I don't.\"\n\n\"Neither do I!\" says Lucie. \"And I'm not even at school!\"\n\nOn Tuesday, she looks at his big bag. \"You play hockey, don't you?\"\n\n\"Yes, I do. I love it.\"\n\n\"So do I! I watch every game on TV.\"\n\nOn Friday, the elevator doesn't work, so they take the stairs together. After ten floors, Malik is tired, but Lucie isn't.\n\n\"You aren't used to stairs, are you?\" she asks with a smile.\n\n\"No, I'm not,\" says Malik. \"You're pretty fast!\"",
+        "questions": [
+          {
+            "q": "Qui est Lucie ?",
+            "choices": [
+              "la sœur de Malik",
+              "la voisine de Malik",
+              "l'enseignante de maths",
+              "une inconnue dans l'autobus"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Qu'est-ce que Malik a lundi matin ?",
+            "choices": [
+              "un match de hockey",
+              "un rendez-vous chez le médecin",
+              "un examen de maths",
+              "un cours de natation"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Que pense Lucie des examens ?",
+            "choices": [
+              "Elle les adore.",
+              "Elle ne les aime pas non plus.",
+              "Elle en fait tous les jours.",
+              "Elle aide Malik à étudier."
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Comment Lucie suit-elle le hockey ?",
+            "choices": [
+              "Elle joue dans une équipe.",
+              "Elle patine avec Malik.",
+              "Elle ne l'aime pas.",
+              "Elle regarde tous les matchs à la télé."
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Pourquoi prennent-ils l'escalier vendredi ?",
+            "choices": [
+              "L'ascenseur ne fonctionne pas.",
+              "Malik veut faire du sport.",
+              "Lucie a peur de l'ascenseur.",
+              "Il y a une longue file."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Que pense Malik de Lucie à la fin ?",
+            "choices": [
+              "Elle est trop lente.",
+              "Elle parle trop.",
+              "Elle est plutôt rapide.",
+              "Elle est fatiguée."
+            ],
+            "answer": 2
+          }
+        ]
+      }
     }
   ]
 }

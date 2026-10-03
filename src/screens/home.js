@@ -1,75 +1,17 @@
 // Onboarding and the transit-line map of the 12 levels.
 import { h, icon, toast, dialog, esc } from "../ui.js";
 import { LEVELS, LINE_COUNT } from "../content.js";
-import { state, save, levelUnlocked, unitUnlocked, unitState, bossState, bossReady, levelDone, nextStep, rank, streakAlive, wordsLearned, mistakeCount, importCode } from "../store.js";
+import { state, levelUnlocked, unitUnlocked, unitState, bossState, bossReady, levelDone, nextStep, rank, streakAlive, wordsLearned, mistakeCount } from "../store.js";
+import { listProfiles } from "../profiles.js";
 import { go } from "../router.js";
-import { sfx, unlockAudio } from "../audio.js";
+import { sfx } from "../audio.js";
 import { shake } from "../fx.js";
+import { avatarEl } from "./who.js";
 
 export const TRAIN_SVG = `<svg class="train-svg" viewBox="0 0 32 32" aria-hidden="true"><rect x="7" y="3.5" width="18" height="21.5" rx="6" fill="currentColor"/><rect x="10" y="7.5" width="12" height="7.5" rx="2.2" fill="#fff" opacity=".92"/><circle cx="11.6" cy="20" r="1.9" fill="#FFD23F"/><circle cx="20.4" cy="20" r="1.9" fill="#FFD23F"/><path d="M10.5 25.5l-3 4M21.5 25.5l3 4" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>`;
 
 export function starsHtml(n, total = 3) {
   return Array.from({ length: total }, (_, i) => `<span class="st ${i < n ? "on" : ""}">${icon("star")}</span>`).join("");
-}
-
-export function onboarding(view) {
-  const name = h("input", { id: "player-name", class: "field", type: "text", maxlength: 20, placeholder: "Ton prénom", autocomplete: "off", "aria-label": "Ton prénom" });
-  const start = h("button", { type: "button", class: "btn btn-primary btn-xl" }, "Monter à bord");
-  const restore = h("button", { type: "button", class: "btn btn-ghost" }, "J'ai un code de sauvegarde");
-  const letters = "Mission Bilingue".split("").map((c, i) => h("span", { class: "drop", style: { "--i": i } }, c === " " ? " " : c));
-  const lines = h(
-    "div",
-    { class: "intro-lines", "aria-hidden": "true" },
-    Array.from({ length: LINE_COUNT }, (_, i) => h("span", { style: { "--c": `var(--l${i + 1})`, "--i": i } })),
-  );
-  view.append(
-    h(
-      "div",
-      { class: "onboard" },
-      lines,
-      h("p", { class: "eyebrow" }, "Le défi d'anglais"),
-      h("h1", { class: "brand-xl" }, letters),
-      h("p", { class: "onboard-lead" }, "12 lignes, 48 stations, 12 boss. Du premier « hello » jusqu'à parler anglais comme un bilingue. Chaque station se termine par un test difficile : 80 % minimum pour passer."),
-      h(
-        "ul",
-        { class: "onboard-facts" },
-        h("li", null, h("strong", null, "Leçons"), " courtes en français, avec la vraie prononciation"),
-        h("li", null, h("strong", null, "9 mini-jeux"), " pour t'entraîner avant chaque test"),
-        h("li", null, h("strong", null, "Un boss"), " au bout de chaque ligne : 3 erreurs et c'est perdu"),
-      ),
-      h("label", { class: "field-label", for: "player-name" }, "Comment tu t'appelles ?"),
-      h("div", { class: "onboard-form" }, name, start),
-      restore,
-    ),
-  );
-  const begin = () => {
-    const v = name.value.trim();
-    if (!v) {
-      shake(name);
-      name.focus();
-      return;
-    }
-    unlockAudio();
-    sfx.level();
-    state.player.name = v.slice(0, 20);
-    save();
-    go("map");
-  };
-  start.addEventListener("click", begin);
-  name.addEventListener("keydown", (e) => e.key === "Enter" && begin());
-  restore.addEventListener("click", async () => {
-    const area = h("textarea", { class: "field code-field", rows: 4, placeholder: "Colle ton code ici (il commence par MB1.)", id: "restore-code" });
-    const ok = await dialog({ title: "Restaurer une sauvegarde", body: h("div", null, h("p", null, "Colle le code de sauvegarde copié depuis ton profil."), area), actions: [{ label: "Annuler", value: false }, { label: "Restaurer", value: () => area.value, primary: true }] });
-    if (!ok) return;
-    try {
-      importCode(ok);
-      toast("Sauvegarde restaurée !", "ok");
-      go("map");
-    } catch (e) {
-      toast(e.message, "ko");
-    }
-  });
-  setTimeout(() => name.focus(), 400);
 }
 
 export function map(view) {
@@ -81,7 +23,12 @@ export function map(view) {
     "header",
     { class: "map-head" },
     h("div", { class: "brand" }, h("span", { class: "brand-mark", html: TRAIN_SVG }), h("span", { class: "brand-name" }, "Mission Bilingue")),
-    h("button", { type: "button", class: "player-chip", onClick: () => go("profile") }, h("span", { class: "avatar" }, (state.player.name || "?").slice(0, 1).toUpperCase()), h("span", { class: "player-text" }, h("strong", null, state.player.name), h("small", null, rank()))),
+    h(
+      "div",
+      { class: "map-head-right" },
+      listProfiles().length > 1 ? h("button", { type: "button", class: "icon-btn", "aria-label": "Changer de joueur", title: "Changer de joueur", html: icon("refresh"), onClick: () => go("who") }) : null,
+      h("button", { type: "button", class: "player-chip", onClick: () => go("profile") }, avatarEl(state.player.avatar), h("span", { class: "player-text" }, h("strong", null, state.player.name), h("small", null, rank()))),
+    ),
   );
 
   const stat = (ic, value, label, opts = {}) => h(opts.onClick ? "button" : "div", { type: opts.onClick ? "button" : null, class: `stat ${opts.cls || ""}`, onClick: opts.onClick }, h("span", { class: "stat-ic", html: icon(ic) }), h("span", { class: "stat-val" }, value), h("span", { class: "stat-label" }, label));
@@ -141,7 +88,7 @@ function lineEl(L, lvl, next) {
     { class: "line-head" },
     h("span", { class: "bullet" }, L),
     h("div", { class: "line-name" }, h("h3", null, lvl.title), h("p", null, `${lvl.titleEn} · ${lvl.cefr}`)),
-    h("span", { class: "line-progress", "aria-label": `${passed} stations sur 4` }, done ? h("span", { class: "done-badge", html: icon("check") }) : `${passed}/4`),
+    h("span", { class: "line-progress", "aria-label": `${passed} stations sur ${lvl.units.length}` }, done ? h("span", { class: "done-badge", html: icon("check") }) : `${passed}/${lvl.units.length}`),
   );
   const list = h("ol", { class: "stations" });
   lvl.units.forEach((u, i) => {
@@ -205,7 +152,7 @@ function lineEl(L, lvl, next) {
 async function skipChallenge(L, lvl) {
   const ok = await dialog({
     title: "Défi direct",
-    body: `<p>Tu peux sauter les 4 stations de la ligne ${L} si tu bats <strong>${esc(lvl.boss.name)}</strong> sans t'entraîner.</p><p>Le boss pose des questions sur tout le niveau ${L} et révise les niveaux d'avant. Si tu gagnes, la ligne entière est validée.</p>`,
+    body: `<p>Tu peux sauter les ${lvl.units.length} stations de la ligne ${L} si tu bats <strong>${esc(lvl.boss.name)}</strong> sans t'entraîner.</p><p>Le boss pose des questions sur tout le niveau ${L} et révise les niveaux d'avant. Si tu gagnes, la ligne entière est validée.</p>`,
     actions: [
       { label: "Pas maintenant", value: false },
       { label: "Affronter le boss", value: true, primary: true },

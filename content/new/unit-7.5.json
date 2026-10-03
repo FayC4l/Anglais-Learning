@@ -1,0 +1,140 @@
+{
+  "unit": {
+    "id": "7.5",
+    "title": "Le futur avancé",
+    "titleEn": "This Time Tomorrow",
+    "goal": "Parler d'actions en cours ou déjà terminées dans le futur, et de ce qui est sur le point d'arriver ou prévu à l'horaire.",
+    "lesson": [
+      { "type": "p", "text": "Tu connais déjà [[will]] et [[be going to]]. Voici deux temps pour voyager encore plus loin dans le futur : le **futur continu** (ce qui sera **en train** de se passer) et le **futur antérieur** (ce qui sera **déjà fini**). En prime, deux expressions très pratiques : [[be about to]] et [[be due to]]." },
+      { "type": "rule", "title": "Le futur continu : will be + -ing", "text": "Pour une action **en cours** à un moment précis du futur : [[This time tomorrow, I'll be flying to Vancouver.]] (Demain à cette heure-ci, je serai dans l'avion pour Vancouver.) Négatif : [[I won't be working on Saturday.]] Question : [[Will you be using the car tonight?]] (une façon polie de demander les plans de quelqu'un)." },
+      { "type": "rule", "title": "Le futur antérieur : will have + participe passé", "text": "Pour une action **terminée avant** un moment du futur, souvent avec **by** (d'ici, au plus tard) : [[By June, I'll have finished my exams.]] (D'ici juin, j'aurai fini mes examens.) Négatif : [[We won't have arrived by noon.]] Question : [[Will you have finished by six?]]" },
+      { "type": "table", "head": ["Temps", "Forme", "Exemple"], "rows": [
+        ["Futur simple", "will + verbe", "[[I'll call you tonight.]]"],
+        ["Futur continu", "will be + verbe en -ing", "[[At eight, I'll be eating dinner.]]"],
+        ["Futur antérieur", "will have + participe passé", "[[By nine, I'll have eaten.]]"],
+        ["Sur le point de", "be about to + verbe", "[[The movie is about to start.]]"],
+        ["Prévu à l'horaire", "be due to + verbe", "[[The train is due to arrive at noon.]]"]
+      ] },
+      { "type": "rule", "title": "Be about to et be due to", "text": "[[be about to]] + verbe de base = **être sur le point de** (dans quelques secondes !) : [[Hurry up! The bus is about to leave.]] Au passé : [[We were about to leave when it started to snow.]] [[be due to]] + verbe de base = **être prévu pour** (selon un horaire officiel) : [[The plane is due to land at four.]] Sans verbe, [[due]] + moment : [[The baby is due in May.]] (Le bébé doit naître en mai.)" },
+      { "type": "rule", "title": "By, by then, by the time", "text": "**by** + moment = **d'ici**, **au plus tard** : [[by Friday]], [[by the end of the year]]. [[By then]] = d'ici là. Avec [[by the time]] (le temps que, au moment où) et [[when]], on met le **présent**, comme après **if** : [[By the time you arrive, we'll have eaten.]] Jamais « by the time you will arrive »." },
+      { "type": "examples", "items": [
+        { "en": "Don't call at seven because we'll be having dinner.", "fr": "N'appelle pas à sept heures, parce qu'on sera en train de souper." },
+        { "en": "By the end of the summer, Maya will have read ten books.", "fr": "D'ici la fin de l'été, Maya aura lu dix livres." },
+        { "en": "This time next week, we'll be skiing in the mountains.", "fr": "La semaine prochaine à cette heure-ci, on sera en train de skier dans les montagnes." },
+        { "en": "Shh! The show is about to begin.", "fr": "Chut ! Le spectacle est sur le point de commencer." },
+        { "en": "Our flight is due to leave at noon.", "fr": "Notre vol doit partir à midi (selon l'horaire)." },
+        { "en": "Will you have finished your project by Monday?", "fr": "Auras-tu fini ton projet d'ici lundi ?" }
+      ] },
+      { "type": "tip", "text": "Pièges de francophone : 1) **by** ≠ **until** ! [[I'll have finished by five]] = au plus tard à cinq heures ; [[I'll be working until five]] = jusqu'à cinq heures, sans arrêt. 2) On dit [[be about to]] + verbe, pas « be on the point to ». 3) Après [[when]] et [[by the time]] : présent, jamais **will**. 4) Attention : [[due to the snow]] veut dire **à cause de** la neige. C'est un autre sens !" },
+      { "type": "dialogue", "title": "Le grand départ", "lines": [
+        { "who": "Mom", "en": "Hurry up, Noah! The taxi is about to arrive.", "fr": "Dépêche-toi, Noah ! Le taxi est sur le point d'arriver." },
+        { "who": "Noah", "en": "I'm coming! What time is our flight due to leave?", "fr": "J'arrive ! À quelle heure notre vol doit-il partir ?" },
+        { "who": "Mom", "en": "At ten. By two o'clock, we'll have landed in Halifax.", "fr": "À dix heures. D'ici deux heures de l'après-midi, on aura atterri à Halifax." },
+        { "who": "Noah", "en": "And this time tomorrow, we'll be eating lobster with Grandpa!", "fr": "Et demain à cette heure-ci, on sera en train de manger du homard avec grand-papa !" },
+        { "who": "Mom", "en": "Exactly. Did you pack your toothbrush?", "fr": "Exactement. As-tu mis ta brosse à dents dans ta valise ?" },
+        { "who": "Noah", "en": "Oops. Give me one minute. The taxi won't have left by then, will it?", "fr": "Oups. Donne-moi une minute. Le taxi ne sera pas parti d'ici là, hein ?" },
+        { "who": "Mom", "en": "It will if you don't hurry!", "fr": "Oui, si tu ne te dépêches pas !" }
+      ] },
+      { "type": "fun", "text": "Le sais-tu ? On attribue souvent l'invention du compte à rebours ([[countdown]]) au cinéma ! Le réalisateur Fritz Lang l'a utilisé pour créer du suspense dans son film « La Femme sur la Lune » (1929), bien avant le premier vrai lancement de fusée vers l'espace." }
+    ],
+    "vocab": [
+      { "en": "be about to", "fr": "être sur le point de", "alt": [], "ex": "Hurry up! The movie is about to start." },
+      { "en": "be due to", "fr": "être prévu pour (selon l'horaire)", "alt": [], "ex": "The train is due to arrive at noon." },
+      { "en": "by then", "fr": "d'ici là", "alt": [], "ex": "Come back at six. I'll have finished by then." },
+      { "en": "this time tomorrow", "fr": "demain à cette heure-ci", "alt": [], "ex": "This time tomorrow, I'll be sleeping on the plane." },
+      { "en": "by the end of", "fr": "d'ici la fin de", "alt": [], "ex": "We'll have moved by the end of the month." },
+      { "en": "by the time", "fr": "le temps que, au moment où (+ présent)", "alt": [], "ex": "By the time you get here, we'll have left." },
+      { "en": "until", "fr": "jusqu'à (sans arrêt)", "alt": ["till"], "ex": "I'll be working until five." },
+      { "en": "deadline", "fr": "date limite (échéance)", "alt": [], "ex": "The deadline for the project is Friday." },
+      { "en": "on time", "fr": "à l'heure (ni en avance ni en retard)", "alt": [], "ex": "The bus was on time for once!" },
+      { "en": "delayed", "fr": "retardé (en retard)", "alt": [], "ex": "Our flight is delayed by two hours." },
+      { "en": "flight", "fr": "vol (en avion)", "alt": [], "ex": "The flight to Halifax takes about two hours." },
+      { "en": "board", "fr": "embarquer (monter à bord)", "alt": [], "ex": "Passengers are now boarding the plane." },
+      { "en": "gate", "fr": "porte d'embarquement", "alt": [], "ex": "Our flight leaves from gate nine." },
+      { "en": "land", "fr": "atterrir", "alt": [], "ex": "The plane will land in ten minutes." },
+      { "en": "departure", "fr": "départ", "alt": [], "ex": "Check the departure time on your ticket." },
+      { "en": "schedule", "fr": "horaire (programme)", "alt": ["timetable"], "ex": "The bus schedule changes in the summer." },
+      { "en": "graduate", "fr": "obtenir son diplôme", "alt": [], "ex": "My sister will graduate from university next year." },
+      { "en": "retire", "fr": "prendre sa retraite", "alt": [], "ex": "Grandpa will have retired by the time I finish school." },
+      { "en": "countdown", "fr": "compte à rebours", "alt": [], "ex": "The countdown to the launch has started." }
+    ],
+    "sentences": [
+      { "en": "This time tomorrow, I'll be flying to Vancouver.", "fr": "Demain à cette heure-ci, je serai dans l'avion pour Vancouver.", "trap": ["fly", "flown"], "alt": ["I'll be flying to Vancouver this time tomorrow."] },
+      { "en": "By June, my brother will have finished university.", "fr": "D'ici juin, mon frère aura terminé l'université.", "trap": ["finish", "until"], "alt": ["My brother will have finished university by June."] },
+      { "en": "Hurry up, the train is about to leave!", "fr": "Dépêche-toi, le train est sur le point de partir !", "trap": ["leaving", "on"], "alt": [] },
+      { "en": "The plane is due to land at noon.", "fr": "L'avion doit atterrir à midi (selon l'horaire).", "trap": ["landing", "for"], "alt": [] },
+      { "en": "Don't call at seven because we'll be having dinner.", "fr": "N'appelle pas à sept heures, parce qu'on sera en train de souper.", "trap": ["had", "are"], "alt": [] },
+      { "en": "Will you have finished your project by Friday?", "fr": "Auras-tu fini ton projet d'ici vendredi ?", "trap": ["until", "finish"], "alt": [] },
+      { "en": "By the time you arrive, we'll have eaten everything.", "fr": "Le temps que tu arrives, on aura tout mangé.", "trap": ["will", "ate"], "alt": ["We'll have eaten everything by the time you arrive."] },
+      { "en": "I won't be working this weekend, so let's go skiing.", "fr": "Je ne travaillerai pas cette fin de semaine, alors allons skier.", "trap": ["work", "don't"], "alt": [] },
+      { "en": "Grandpa will have retired by the end of the year.", "fr": "Grand-papa aura pris sa retraite d'ici la fin de l'année.", "trap": ["retire", "until"], "alt": ["By the end of the year, Grandpa will have retired."] },
+      { "en": "The baby is due in March, so we're very excited.", "fr": "Le bébé doit naître en mars, alors on a très hâte.", "trap": ["for", "to"], "alt": [] },
+      { "en": "We were about to leave when it started to snow.", "fr": "Nous étions sur le point de partir quand il a commencé à neiger.", "trap": ["leaving", "on"], "alt": ["When it started to snow, we were about to leave."] },
+      { "en": "At midnight, everyone will be watching the fireworks.", "fr": "À minuit, tout le monde sera en train de regarder les feux d'artifice.", "trap": ["watched", "are"], "alt": ["Everyone will be watching the fireworks at midnight."] }
+    ],
+    "grammar": [
+      { "type": "mcq", "q": "This time tomorrow, I ___ my math exam. Wish me luck!", "choices": ["will have written", "will be writing", "write", "written"], "answer": 1, "explain": "Action en cours à un moment précis du futur (this time tomorrow) : futur continu, will be writing." },
+      { "type": "mcq", "q": "Don't worry, I ___ the dishes by the time you get home.", "choices": ["will be doing", "will have done", "have done", "do"], "answer": 1, "explain": "Action terminée avant un moment du futur (by the time…) : futur antérieur, will have done." },
+      { "type": "mcq", "q": "Hurry up! The movie ___ start.", "choices": ["is about to", "is about", "is due", "is on the point to"], "answer": 0, "explain": "Être sur le point de = be about to + verbe de base." },
+      { "type": "mcq", "q": "By the time Mom ___, we will have cleaned the whole house.", "choices": ["will arrive", "arrives", "will have arrived", "arrived"], "answer": 1, "explain": "Après by the time, on utilise le présent, jamais will : by the time Mom arrives." },
+      { "type": "mcq", "q": "« Le train doit arriver à midi (selon l'horaire). » → The train ___ arrive at noon.", "choices": ["is about to", "will have", "is due to", "is on time to"], "answer": 2, "explain": "Prévu par un horaire officiel = be due to + verbe de base." },
+      { "type": "mcq", "q": "I'll be working ___ six o'clock, so I can't see you before that.", "choices": ["by", "until", "since", "for"], "answer": 1, "explain": "Jusqu'à (une action qui continue sans arrêt) = until. By = au plus tard." },
+      { "type": "fill", "q": "At nine tonight, I ___ my favourite show.", "hint": "watch, futur continu", "answer": ["will be watching"], "explain": "Futur continu : will be + verbe en -ing, pour une action en cours à neuf heures." },
+      { "type": "fill", "q": "By the end of the year, we ___ to a bigger apartment.", "hint": "move, futur antérieur", "answer": ["will have moved"], "explain": "Futur antérieur : will have + participe passé, action finie avant la fin de l'année." },
+      { "type": "fill", "q": "They ___ by noon. The road is closed!", "hint": "arrive, futur antérieur, négatif", "answer": ["won't have arrived"], "explain": "Négatif du futur antérieur : won't have + participe passé." },
+      { "type": "fill", "q": "Shh! The baby is ___ fall asleep.", "hint": "sur le point de", "answer": ["about to"], "explain": "Être sur le point de = be about to + verbe de base." },
+      { "type": "fill", "q": "I'll have finished my homework ___ six o'clock.", "hint": "au plus tard à", "answer": ["by"], "explain": "Au plus tard à, d'ici = by + moment, avec le futur antérieur." },
+      { "type": "fill", "q": "___ you be using the computer tonight? I need it.", "hint": "question au futur continu", "answer": ["Will"], "explain": "Question au futur continu : Will + sujet + be + -ing. C'est une façon polie de demander les plans de quelqu'un." },
+      { "type": "fill", "q": "The new library is ___ open in September.", "hint": "prévu pour (selon l'horaire)", "answer": ["due to"], "explain": "Ce qui est prévu officiellement : be due to + verbe de base." },
+      { "type": "error", "q": "This time tomorrow, I will be fly over the Rockies.", "wrong": 6, "fix": ["flying"], "explain": "Futur continu : will be + verbe en -ing, donc will be flying." },
+      { "type": "error", "q": "By next summer, she will has finished her book.", "wrong": 5, "fix": ["have"], "explain": "Après will, toujours la base : will have, même avec she." },
+      { "type": "error", "q": "By the time he arrives, the movie will have start.", "wrong": 9, "fix": ["started"], "explain": "Futur antérieur : will have + participe passé, donc will have started." },
+      { "type": "error", "q": "Hurry, the bus is about to leaving!", "wrong": 6, "fix": ["leave"], "explain": "Be about to + verbe de base : is about to leave." },
+      { "type": "error", "q": "I'll have finished this report until Friday.", "wrong": 5, "fix": ["by"], "explain": "Avec une action terminée (futur antérieur), on dit by (au plus tard), pas until." }
+    ],
+    "reading": {
+      "title": "The Longest Morning",
+      "text": "Tomorrow is a big day for the Patel family. Priya's grandparents are due to arrive from India at seven in the morning, and nobody wants to be late.\n\n\"Here's the plan,\" says Priya's mom at dinner. \"At six tomorrow morning, Dad will be driving to the airport. By the time the plane lands, he'll have parked the car, and he'll be waiting in the arrivals area.\"\n\n\"And what will I be doing?\" asks Priya.\n\n\"You'll be cleaning your room,\" says Mom. \"By ten, you'll have finished, I hope.\"\n\nPriya laughs. Her room is a disaster.\n\nAt five the next morning, Dad checks the airline's website. The flight is delayed by two hours! \"Well,\" he says, \"by then, I'll have had three coffees.\"\n\nPriya has more time to clean, but she doesn't use it. She falls asleep again.\n\nAt eleven, the doorbell rings. Her grandparents are about to come in, and her room still looks like a storm hit it. Grandma opens Priya's door, smiles and says, \"This reminds me of your mother's room when she was your age!\"",
+      "questions": [
+        { "q": "When were Priya's grandparents due to arrive?", "choices": ["At five in the morning", "At seven in the morning", "At eleven in the morning", "At ten at night"], "answer": 1 },
+        { "q": "What did Mom want Priya to do?", "choices": ["Drive to the airport", "Wait in the arrivals area", "Clean her room by ten", "Check the airline's website"], "answer": 2 },
+        { "q": "Why did the grandparents arrive later than planned?", "choices": ["Dad forgot to pick them up.", "They missed their plane.", "There was a storm.", "Their flight was delayed."], "answer": 3 },
+        { "q": "What did Priya do with her extra time?", "choices": ["She cleaned her room.", "She went back to sleep.", "She went to the airport.", "She made coffee."], "answer": 1 },
+        { "q": "What can we guess about Priya's mom?", "choices": ["Her room was often messy when she was young.", "She was always on time.", "She didn't like her parents.", "She cleaned Priya's room."], "answer": 0 }
+      ]
+    }
+  },
+  "extra": {
+    "unit": "7.5",
+    "pron": {
+      "focus": "Le futur qui se contracte : I'll be, I'll have",
+      "ipa": "/əl/ – /əv/",
+      "explain": "À l'oral, le futur avancé se fait tout petit. [[I will be]] devient [[I'll be]] (« aïl-bi »), et dans [[I'll have finished]], le [[have]] perd son « h » et devient « euv » : « aï-leuv-FI-nicht ». Ce qu'on entend fort, c'est le **verbe principal** ([[finished]], [[flying]]). Le piège des francophones : appuyer sur chaque petit mot comme un robot. Et [[about to]] se colle aussi : « eu-BAOUT-teu ».",
+      "words": [
+        { "en": "I'll be flying", "fr": "je serai dans l'avion", "hint": "« aïl-bi-FLAÏ-ing » : la force va sur le verbe" },
+        { "en": "we'll be waiting", "fr": "nous serons en train d'attendre", "hint": "« wil-bi-OUÉÏ-ting » : [[we'll]] se dit presque comme [[will]]" },
+        { "en": "I'll have finished", "fr": "j'aurai fini", "hint": "« aï-leuv-FI-nicht » : [[have]] devient « euv »" },
+        { "en": "she'll have left", "fr": "elle sera partie", "hint": "« chi-leuv-LÈFT » : accent sur le participe" },
+        { "en": "won't have", "fr": "n'aura pas, n'auront pas…", "hint": "« WÔN-teuv » : le « t » glisse sur « euv »" },
+        { "en": "about to", "fr": "sur le point de", "hint": "« eu-BAOUT-teu » : [[to]] tout petit" },
+        { "en": "due to", "fr": "prévu pour", "hint": "« DOU-teu » : au Canada, on dit souvent « dou » ; en Angleterre, « diou »" },
+        { "en": "schedule", "fr": "horaire", "hint": "« SKÈ-djoul » : au Canada, avec un « k » ; en Angleterre, on entend souvent « CHÈ-djoul »" },
+        { "en": "deadline", "fr": "date limite", "hint": "« DÈD-laïn » : accent au début" },
+        { "en": "countdown", "fr": "compte à rebours", "hint": "« KAOUNT-daoun » : accent au début" }
+      ],
+      "pairs": [],
+      "practice": ["This time tomorrow, I'll be flying to Halifax.", "By noon, we'll have finished everything.", "Hurry up, the bus is about to leave!"]
+    },
+    "mission": {
+      "type": "oral",
+      "prompt": "Ta famille part en voyage demain et ta tante anglophone t'appelle pour connaître le plan. Explique-lui à quelle heure l'avion doit partir, ce que vous serez en train de faire à différents moments, et ce que vous aurez déjà fait d'ici la fin de la journée.",
+      "model": "Our flight is due to leave at nine tomorrow morning. At seven, we'll be driving to the airport. This time tomorrow, we'll be flying over Quebec! By two o'clock, we'll have landed in Halifax. By the evening, we'll have eaten our first lobster. Sorry, I have to go: my favourite show is about to start!",
+      "checklist": [
+        "J'ai utilisé [[will be]] + verbe en -ing pour une action en cours",
+        "J'ai utilisé [[will have]] + participe passé avec [[by]]",
+        "J'ai utilisé [[be due to]] ou [[be about to]] + verbe de base",
+        "J'ai contracté : [[I'll be]], [[we'll have]] (« wil-euv »)"
+      ]
+    }
+  }
+}
