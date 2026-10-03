@@ -257,3 +257,5 @@
 .redo-note { color: var(--ink); background: color-mix(in srgb, var(--amber) 15%, var(--card)); border-radius: 10px; padding: 8px 12px; }
 .boss-lock-msg, .lives-back, .redo-banner { padding: 10px 14px; border-radius: 12px; background: color-mix(in srgb, var(--amber) 14%, var(--card)); border-left: 5px solid var(--amber); margin: 6px 0; text-align: left; }
 .lives-back { border-left-color: var(--go); background: color-mix(in srgb, var(--go) 12%, var(--card)); font-weight: 700; }
+.mentor-name { display: block; font-family: var(--font-display); font-size: .8rem; letter-spacing: .02em; color: var(--l6); margin-bottom: 2px; }
+.mentor.sm .mentor-name { font-size: .72rem; }

@@ -4,6 +4,8 @@ import { EXTRA } from "./content.js";
 import { state } from "./store.js";
 import { h, rich, esc } from "./ui.js";
 
+export const MENTOR_NAME = "Chikh Fayçal";
+
 const recent = [];
 let lastQuip = { text: "", situation: "" };
 
@@ -70,5 +72,5 @@ export function mentorFaceHtml(mood) {
 export function mentorSays(text, cls = "", mood) {
   if (!text) return null;
   const m = mood || (text === lastQuip.text ? lastQuip.situation : "welcome");
-  return h("div", { class: `mentor ${cls}` }, h("span", { class: "mentor-face", html: mentorFaceHtml(m) }), h("p", { class: "mentor-bubble", html: rich(text) }));
+  return h("div", { class: `mentor ${cls}` }, h("span", { class: "mentor-face", html: mentorFaceHtml(m) }), h("p", { class: "mentor-bubble" }, h("strong", { class: "mentor-name" }, MENTOR_NAME), h("span", { html: rich(text) })));
 }
