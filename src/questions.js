@@ -371,6 +371,8 @@ export function renderQuestion(q, mount, { onAnswer, replays = diff().replays, a
 
   let audio = null;
   const card = h("div", { class: `q-card kind-${q.kind}` });
+  // Optional parts are passed as null: never let the DOM print them as the text "null".
+  card.append = (...xs) => Element.prototype.append.apply(card, xs.flat().filter((x) => x != null && x !== false));
 
   switch (q.kind) {
     case "type_en": {

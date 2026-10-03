@@ -33,13 +33,16 @@ for (const [w, r] of Object.entries({ runned: "ran", swimmed: "swam", sitted: "s
   MANUAL_OVERREG.add(w);
 }
 
-const AUX_BEFORE_BASE = new Set(["do", "does", "did", "don't", "doesn't", "didn't", "can", "could", "will", "would", "should", "must", "may", "might", "shall", "can't", "couldn't", "won't", "wouldn't", "shouldn't", "mustn't", "let", "lets", "make", "makes", "made", "help", "helps", "helped", "watch", "watched", "see", "saw", "hear", "heard", "feel", "felt", "that", "to", "not", "and", "or", "'ll", "'d", "i'll", "you'll", "we'll", "they'll", "rather", "better", "than"]);
+const AUX_BEFORE_BASE = new Set(["do", "does", "did", "don't", "doesn't", "didn't", "can", "could", "will", "would", "should", "must", "may", "might", "shall", "can't", "couldn't", "won't", "wouldn't", "shouldn't", "mustn't", "let", "lets", "make", "makes", "made", "help", "helps", "helped", "watch", "watched", "see", "saw", "hear", "heard", "feel", "felt", "that", "to", "not", "'ll", "'d", "i'll", "you'll", "we'll", "they'll", "rather", "better", "than"]);
 const FREQ_ADV = new Set(["always", "usually", "often", "sometimes", "never", "rarely", "seldom", "also", "really", "still", "just", "even", "only", "already", "generally", "normally", "frequently", "hardly", "ever"]);
 const MODALS = new Set(["can", "could", "will", "would", "should", "must", "might", "may", "shall", "can't", "couldn't", "won't", "wouldn't", "shouldn't", "mustn't", "cannot", "i'll", "you'll", "he'll", "she'll", "it'll", "we'll", "they'll"]);
 const SAME_PAST = new Set(VERBS.filter((v) => v.past === v.base).map((v) => v.base)); // cost, cut, put, read…
 const NOUNISH_S = new Set(["works", "hopes", "plans", "uses", "needs", "helps", "calls", "looks", "rains", "snows", "dances", "smiles", "changes", "answers", "orders", "fixes", "reviews", "returns", "picks", "fills", "laughs", "waits", "talks", "walks", "shows", "sells", "costs", "hits", "sets", "bets", "deals", "lies", "rings", "rises", "shakes", "sinks", "slides", "spreads", "sticks", "stings", "swings", "tears", "digs", "bends", "feeds", "fights", "freezes", "hangs", "leads", "lights", "shines", "shoots", "spins", "strikes", "sweeps", "swears", "winds", "weeps", "binds", "breeds", "broadcasts", "forecasts", "grinds", "stinks", "treads", "upsets", "withdraws", "studies", "visits", "travels", "chats", "drops", "jogs", "hugs", "regrets", "plays", "watches", "drinks", "cooks", "cleans", "dishes"]);
 
 const SUBJ_3S = new Set(["he", "she", "it"]);
+const DETERMINERS = new Set(["my", "your", "his", "her", "our", "their", "the", "this", "that"]);
+const CLAUSE_START = new Set(["and", "but", "because", "when", "so", "if", "while", "although", "though", "since", "where"]);
+const PLURAL_NOUNS = new Set(["people", "children", "police", "men", "women", "family", "team", "staff", "feet", "teeth", "mice", "sheep", "fish", "data", "media", "crew", "class", "government", "public", "audience", "couple", "majority", "rest", "same", "best", "most", "first", "last", "only", "other", "next", "whole", "more", "less", "kids'"]);
 const SUBJ_PL = new Set(["i", "you", "we", "they"]);
 const NUM = "(?:\\d+|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety)(?:[- ](?:one|two|three|four|five|six|seven|eight|nine))?";
 const DUR = "(?:years?|months?|weeks?|days?|hours?|minutes?|seconds?)";
@@ -193,6 +196,18 @@ function tokenRules(tk) {
           add(v.i, v.i, "grammar", "third-s", `Avec **${t.lower}**, le verbe prend un **-s** au présent : [[${t.lower} ${forms(v.lower).s}]].`, keepCase(v.text, forms(v.lower).s));
         }
       }
+      // "my brother / the dog / this app" + base verb (missing -s), at the start of a clause.
+      if (DETERMINERS.has(lw) && (k === 0 || CLAUSE_START.has(prev?.lower)) && next && W[k + 1] === W[k] + 1) {
+        const noun = next;
+        let j = k + 2;
+        if (FREQ_ADV.has(T[W[j]]?.lower)) j++;
+        const v = T[W[j]];
+        const after = T[W[j + 1]];
+        const nounOk = /^[a-z]+$/.test(noun.lower) && !/[^s]s$/.test(noun.lower) && !PLURAL_NOUNS.has(noun.lower) && !BASE.has(noun.lower) && !S_FORM.has(noun.lower) && !PAST.has(noun.lower) && tierOf(noun.lower) > 0 && !/(ing|ly|est)$/.test(noun.lower);
+        const verbOk = v && W[j] === W[k] + (j - k) && BASE.has(v.lower) && !SAME_PAST.has(v.lower) && !MODALS.has(v.lower) && v.lower !== "be";
+        const nounLike = after && (["is", "was", "has", "can", "will", "of", "'s", "are", "were"].includes(after.lower) || S_FORM.has(after.lower));
+        if (nounOk && verbOk && !nounLike) add(v.i, v.i, "grammar", "third-s", `« ${lw} ${noun.lower} » = he / she / it : le verbe prend un **-s** au présent ([[${lw} ${noun.lower} ${forms(v.lower).s}]]).`, keepCase(v.text, forms(v.lower).s));
+      }
       // I/you/we/they + s-form
       if (SUBJ_PL.has(lw) && (!prev || !["than", "as", "do", "does", "did", "will", "can"].includes(prev.lower))) {
         let j = k + 1;
@@ -274,9 +289,13 @@ function phraseRules(text) {
 function spellingRules(tk, suggestFn) {
   const out = [];
   const firstOfSentence = new Set(tk.sentences.map((s) => s.tokens[0]));
+  // Capitalized words used inside a sentence are names; so are capitalized words alone on a short line
+  // (greetings and signatures: "Hi Emma!", "Lina").
+  const names = new Set(tk.tokens.filter((t) => t.word && /^[A-Z]/.test(t.text) && !firstOfSentence.has(t.i)).map((t) => t.lower));
+  const shortSentence = new Set(tk.sentences.filter((s) => s.tokens.filter((i) => tk.tokens[i].word).length <= 2).flatMap((s) => s.tokens));
   for (const t of tk.tokens) {
     if (!t.word || t.text.length < 2) continue;
-    if (/^[A-Z]/.test(t.text) && !firstOfSentence.has(t.i)) continue;
+    if (/^[A-Z]/.test(t.text) && (!firstOfSentence.has(t.i) || names.has(t.lower) || shortSentence.has(t.i))) continue;
     if (/^[A-Z]{2,}$/.test(t.text)) continue;
     if (tierOf(t.lower) > 0) continue;
     if (/[À-ÿ]/.test(t.text)) {

@@ -107,6 +107,9 @@ export function conjugatorScreen(view, { v = "go" } = {}) {
   return undefined;
 }
 
+// A time marker that makes each tense natural in the drill sentences.
+const TAIL = { present_simple: " every day", present_continuous: " right now", past_simple: " yesterday", past_continuous: " when you called", present_perfect: " three times this year", present_perfect_continuous: " for two hours", past_perfect: " before the party started", past_perfect_continuous: " for an hour when we arrived", will: " tomorrow", going_to: " next week", future_continuous: " this time tomorrow", future_perfect: " by next Friday", would: " if I asked", would_have: " if you had asked" };
+
 /** 10 fill-in questions on one verb, in random tenses and persons. */
 function drill(view, base) {
   const x = verb(base);
@@ -123,7 +126,7 @@ function drill(view, base) {
       skill: "conjugaison",
       unitId: "0.0",
       level: 0,
-      q: `${S} ___.`,
+      q: `${S} ___${TAIL[t.id] || ""}.`,
       hint: `${neg ? "not / " : ""}${base} — ${t.fr}`,
       accept: [ans],
       expected: ans,

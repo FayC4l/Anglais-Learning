@@ -188,7 +188,7 @@ function report(view, p, text) {
       { class: "writing w-report" },
       h("div", { class: "topbar" }, h("button", { type: "button", class: "icon-btn", "aria-label": "Retour", html: icon("back"), onClick: () => back(p) }), h("span", { class: "topbar-title" }, "Correction")),
       h("p", { class: "eyebrow" }, `${p.title} · niveau visé ${p.cefr}`),
-      h("div", { class: "w-score" }, ring, h("div", null, bars, h("p", { class: "set-help" }, `Ton texte ressemble à un niveau `, h("strong", null, s.textBand), ` · ${a.words} mots · ${a.issues.length} remarque${a.issues.length > 1 ? "s" : ""}.`))),
+      h("div", { class: "w-score" }, ring, h("div", null, bars, h("p", { class: "set-help" }, `Ton texte ressemble à un niveau `, h("strong", null, s.textBand), ` · ${a.words} mots · ${a.issues.length} remarque${a.issues.length > 1 ? "s" : ""}. La langue compte un peu plus que les autres critères, comme aux vrais examens.`))),
       mooseSays(quip(s.total >= 14 ? "writing_good" : "writing_bad")),
       h("h2", { class: "section-title" }, "Ton texte corrigé"),
       h("div", { class: "w-legend" }, Object.entries(CAT_FR).map(([k, v]) => (byCat[k] ? h("span", { class: `w-err ${CAT_CLASS[k]}` }, `${v} (${byCat[k].length})`) : null))),

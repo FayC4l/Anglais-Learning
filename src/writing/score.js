@@ -28,8 +28,12 @@ function expectations(L) {
 export function textBand(a) {
   if (a.words < 15) return "A1";
   const e = errorDensity(a);
-  const idx = (a.avgSentence - 5) / 2.4 + (a.mattr - 0.5) * 14 + a.sophistication * 12 + Object.keys(a.connectors).length * 0.25 - e * 0.22;
-  return BANDS[clamp(Math.floor(idx / 2), 0, 5)];
+  // Calibrated on the model answers (tools/calibrate-bands.mjs): sentence length and the share of long words
+  // grow steadily from A1 to C2; advanced connectors and accuracy shift the estimate.
+  const long = a.tk.tokens.filter((t) => t.word && t.text.length >= 8).length / Math.max(1, a.words);
+  const idx = ((a.avgSentence - 5.5) / 2.6 + (long - 0.04) / 0.03) / 2 + a.advancedConnectors.length * 0.3 - e * 0.15;
+  const cuts = [0.35, 0.9, 1.6, 2.5, 3.8];
+  return BANDS[cuts.filter((c) => idx >= c).length];
 }
 
 export function errorDensity(a) {
@@ -129,7 +133,9 @@ export function score(a, prompt = {}) {
     .forEach(([cat, k]) => k >= 2 && priorities.push(`${k} erreurs de ${CAT_FR[cat]} : relis-les dans le texte souligné.`));
   if (a.repeated.length) priorities.push(`Tu répètes souvent : ${a.repeated.map(([w, k]) => `${w} (${k}×)${SYNONYMS[w] ? ` → essaie ${SYNONYMS[w]}` : ""}`).join(" ; ")}.`);
 
-  const raw = content + comm + organisation + language;
+  // Mistakes also blur the message, and language weighs a bit more than the other criteria (as in real exams).
+  comm = clamp(comm * (0.6 + 0.4 * accuracy), 0, 5);
+  const raw = 0.9 * content + 0.9 * comm + 0.8 * organisation + 1.4 * language;
   let total = Math.round(raw * 2) / 2;
   if (n < min * 0.3) total = Math.min(total, 5);
   return {

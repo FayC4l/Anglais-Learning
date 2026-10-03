@@ -16,7 +16,9 @@ const rulesOf = (text) => checkRules(tokenize(text)).map((x) => x.rule);
 // [sentence, expected rule, expected fix (first suggestion, optional)]
 const MISTAKES = [
   ["He go to school every day.", "third-s", "goes"],
-  ["My sister like pizza.", null],
+  ["My sister like pizza.", "third-s", "likes"],
+  ["My brother play hockey and he go to school by bus.", "third-s", "plays"],
+  ["I came home and he go to bed.", "third-s", "goes"],
   ["She always forget her keys.", "third-s", "forgets"],
   ["They goes to the park on Sundays.", "plural-s", "go"],
   ["She doesn't likes carrots.", "do-base", "like"],
@@ -121,6 +123,30 @@ test("spelling: known words, typos and suggestions", () => {
   assert.ok(suggest("becuase").includes("because"));
   const issues = checkRules(tokenize("My freind is beautifull. Emma and Noah live in Gatineau."), { suggest }).filter((x) => x.cat === "spelling");
   assert.equal(issues.length, 2);
+});
+
+test("the estimated CEFR band of model texts is close to their level", () => {
+  const BANDS = ["A1", "A2", "B1", "B2", "C1", "C2"];
+  const bandOf = (L) => (L <= 2 ? "A1" : L <= 4 ? "A2" : L <= 6 ? "B1" : L <= 9 ? "B2" : L <= 11 ? "C1" : "C2");
+  const prompts = JSON.parse(readFileSync("content/writing.json", "utf8")).prompts;
+  let close = 0;
+  const off = [];
+  for (const p of prompts) {
+    const s = score(analyze(p.model, p), p);
+    const d = Math.abs(BANDS.indexOf(s.textBand) - BANDS.indexOf(bandOf(p.level)));
+    if (d <= 1) close++;
+    else off.push(`${p.id} L${p.level} → ${s.textBand}`);
+  }
+  if (off.length) console.log(off.join(" | "));
+  assert.ok(close / prompts.length >= 0.7, `${close}/${prompts.length} within one band`);
+  // A short A1 message with mistakes is not a B1 text.
+  const t = "My name is Lina and i have twelve years. I live in Ottawa since two years. My brother play hockey every day.";
+  assert.ok(["A1", "A2"].includes(score(analyze(t, { level: 1 }), { level: 1, words: [25, 60] }).textBand));
+});
+
+test("names in greetings and signatures are not spelling mistakes", () => {
+  const issues = checkRules(tokenize("Hi Emma!\nMy name is Lina. See you soon!\nLina"), { suggest }).filter((x) => x.cat === "spelling");
+  assert.deepEqual(issues, []);
 });
 
 test("tense detection", () => {

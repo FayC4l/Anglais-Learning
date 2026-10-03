@@ -1,8 +1,12 @@
 # Mission Bilingue — content authoring guide
 
+> **V2 update:** the app is now used by the whole family (kids, teens, adults) and aims at Cambridge C2 Proficiency.
+> Each level has 5 units, and new content types (boss banks, placement test, lexicons, writing prompts, humour,
+> C2 papers) are described in `docs/CONTENT_FORMATS_V2.md`. The rules below still apply to every unit.
+
 You are writing the learning content for **Mission Bilingue**, a web app that takes a
 French-speaking kid/teen (about 10–15 years old, living in Ottawa, Canada) from zero English
-to fluent bilingual, through **12 levels × 4 units ("étapes")**, each unit followed by a
+to fluent bilingual, through **12 levels × 5 units ("étapes", the 5th being the bonus station)**, each unit followed by a
 **very hard test**, and each level ending with a **boss exam**.
 
 The app engine is written separately. It reads one JSON file per level:
@@ -54,7 +58,7 @@ earlier units (proper names and obvious cognates excepted).
 }
 ```
 
-`units` has **exactly 4** units. Each UNIT:
+`units` has **exactly 5** units (see `docs/CONTENT_FORMATS_V2.md` for the bonus station of each level). Each UNIT:
 
 ```json
 {
