@@ -2,6 +2,7 @@
 import { h, icon, rich, shuffle, toast, dialog } from "../ui.js";
 import { unitById, levelById, vocabRefs } from "../content.js";
 import { addCards } from "../srs.js";
+import { quickCheck } from "./writing.js";
 import { state, save, unitState, diff, unitUnlocked, STEPS, stepDone, markStep, missingPrep, pathOf, PRACTICE_GOAL, addXp, touchStreak } from "../store.js";
 import { go } from "../router.js";
 import { speak, speakParts, mixedParts, stopSpeaking, ttsReady, coachReady, sfx } from "../audio.js";
@@ -554,6 +555,15 @@ function missionCard(unit, refreshSteps) {
     reveal,
     model,
   );
+  if (!oral) {
+    const checkBtn = h("button", { type: "button", class: "btn btn-ghost" }, h("span", { html: icon("check") }), "Faire vérifier mon texte");
+    const out = h("div");
+    checkBtn.addEventListener("click", () => {
+      if (!answer.value.trim()) return toast("Écris d'abord ta réponse.");
+      out.replaceChildren(quickCheck(answer.value, Number(unit.id.split(".")[0])));
+    });
+    card.insertBefore(h("div", null, checkBtn, out), reveal);
+  }
   reveal.addEventListener("click", () => {
     reveal.hidden = true;
     const checks = m.checklist.map((c, i) => {

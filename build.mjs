@@ -47,7 +47,7 @@ const js = await build({
   format: "iife",
   target: "es2020",
   write: false,
-  minify: process.argv.includes("--minify"),
+  minify: !process.argv.includes("--dev"),
   legalComments: "none",
 });
 const css = ["src/styles.css", "src/styles-v2.css"].filter((p) => existsSync(join(root, p))).map((p) => readFileSync(join(root, p), "utf8")).join("\n");

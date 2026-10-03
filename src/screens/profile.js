@@ -230,7 +230,7 @@ function zone(view) {
   const aiModel = h(
     "select",
     { class: "field", id: "ai-model", "aria-label": "Modèle IA" },
-    [["claude-sonnet-5-5", "Claude Sonnet 5.5 (recommandé)"], ["claude-opus-5-5", "Claude Opus 5.5 (le plus fin, plus cher)"], ["claude-haiku-4-5-20251001", "Claude Haiku 4.5 (rapide et économique)"]].map(([v, l]) => h("option", { value: v, selected: v === family.aiModel }, l)),
+    [["claude-opus-5-5", "Claude Opus 5.5 (recommandé, le plus fin)"], ["claude-sonnet-5-5", "Claude Sonnet 5.5 (plus économique)"], ["claude-haiku-4-5", "Claude Haiku 4.5 (le plus rapide et le moins cher)"]].map(([v, l]) => h("option", { value: v, selected: v === family.aiModel }, l)),
   );
   const resetConfirm = h("input", { class: "field", type: "text", id: "reset-confirm", placeholder: "Tape EFFACER", autocomplete: "off", "aria-label": "Confirmation" });
   view.replaceChildren(

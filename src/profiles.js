@@ -25,7 +25,7 @@ export const AVATARS = [
 export const avatarOf = (id) => AVATARS.find((a) => a.id === id) || AVATARS[0];
 
 function freshGlobal() {
-  return { v: 2, pin: "", aiKey: "", aiModel: "claude-sonnet-5-5", activeId: "", profiles: [] };
+  return { v: 2, pin: "", aiKey: "", aiModel: "claude-opus-5-5", activeId: "", profiles: [] };
 }
 
 /** Family-wide settings and the list of profiles. */
