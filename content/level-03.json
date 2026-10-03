@@ -16,96 +16,580 @@
       "titleEn": "Rise and Shine",
       "goal": "Raconter sa journée au présent simple et dire à quelle fréquence on fait les choses.",
       "lesson": [
-        { "type": "p", "text": "Chaque jour, tu fais à peu près les mêmes choses : c'est ta **routine**. Pour en parler, l'anglais utilise le **présent simple** : [[I wake up at seven o'clock.]] = Je me réveille à sept heures." },
-        { "type": "rule", "title": "Le -s de he / she / it", "text": "Avec **he, she, it** (ou un prénom, ou [[my dad]]), le verbe prend un **-s** : [[I get up]] → [[she gets up]]. Avec **I, you, we, they**, pas de -s : [[My parents get up at six.]]" },
-        { "type": "table", "head": ["Verbe", "he / she / it", "Pourquoi ?"], "rows": [
-          ["play", "[[plays]]", "+ s"],
-          ["eat", "[[eats]]", "+ s"],
-          ["watch", "[[watches]]", "-ch → + es"],
-          ["brush", "[[brushes]]", "-sh → + es"],
-          ["go", "[[goes]]", "-o → + es"],
-          ["do", "[[does]]", "-o → + es"],
-          ["study", "[[studies]]", "consonne + y → -ies"],
-          ["have", "[[has]]", "irrégulier !"]
-        ] },
-        { "type": "rule", "title": "Les adverbes de fréquence", "text": "[[always]] (toujours) > [[usually]] (d'habitude) > [[often]] (souvent) > [[sometimes]] (parfois) > [[never]] (jamais). Ils se placent **avant le verbe** : [[I always get up at seven.]] Mais **après be** : [[She is never late.]]" },
-        { "type": "p", "text": "Petits mots utiles : [[every day]] (chaque jour), [[every morning]] (chaque matin), [[after]] (après), [[before]] (avant), [[in the evening]] (le soir). Et pour « son / sa / ses » : [[his]] pour un garçon, [[her]] pour une fille : [[He brushes his teeth.]] [[She does her homework.]]" },
-        { "type": "examples", "items": [
-          { "en": "I wake up at seven o'clock.", "fr": "Je me réveille à sept heures." },
-          { "en": "Zoé never has breakfast.", "fr": "Zoé ne déjeune jamais (ne prend jamais de petit-déjeuner)." },
-          { "en": "My dad watches TV in the evening.", "fr": "Mon père regarde la télé le soir." },
-          { "en": "We usually have lunch at school.", "fr": "D'habitude, nous dînons à l'école." },
-          { "en": "Liam is always hungry.", "fr": "Liam a toujours faim." }
-        ] },
-        { "type": "tip", "text": "Piège de francophone : en français, le -s de « il se lève » ne s'entend pas, alors on l'oublie en anglais ! Dis-le bien fort : [[He gets up.]] Et au Canada, attention aux repas : [[breakfast]] = déjeuner (petit-déjeuner), [[lunch]] = dîner, [[dinner]] = souper." },
-        { "type": "dialogue", "title": "Le matin chez Lucas", "lines": [
-          { "who": "Maman", "en": "Lucas, wake up! It's seven o'clock!", "fr": "Lucas, réveille-toi ! Il est sept heures !" },
-          { "who": "Lucas", "en": "Five minutes, please! I'm tired.", "fr": "Cinq minutes, s'il te plaît ! Je suis fatigué." },
-          { "who": "Maman", "en": "Your sister always gets up at half past six.", "fr": "Ta sœur se lève toujours à six heures et demie." },
-          { "who": "Lucas", "en": "Zoé is never tired!", "fr": "Zoé n'est jamais fatiguée !" },
-          { "who": "Maman", "en": "And she always has breakfast. Come on!", "fr": "Et elle déjeune toujours. Allez !" },
-          { "who": "Lucas", "en": "OK, OK. I'm up!", "fr": "D'accord, d'accord. Je suis debout !" }
-        ] }
+        {
+          "type": "p",
+          "text": "Chaque jour, tu fais à peu près les mêmes choses : c'est ta **routine**. Pour en parler, l'anglais utilise le **présent simple** : [[I wake up at seven o'clock.]] = Je me réveille à sept heures."
+        },
+        {
+          "type": "rule",
+          "title": "Le -s de he / she / it",
+          "text": "Avec **he, she, it** (ou un prénom, ou [[my dad]]), le verbe prend un **-s** : [[I get up]] → [[she gets up]]. Avec **I, you, we, they**, pas de -s : [[My parents get up at six.]]"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Verbe",
+            "he / she / it",
+            "Pourquoi ?"
+          ],
+          "rows": [
+            [
+              "play",
+              "[[plays]]",
+              "+ s"
+            ],
+            [
+              "eat",
+              "[[eats]]",
+              "+ s"
+            ],
+            [
+              "watch",
+              "[[watches]]",
+              "-ch → + es"
+            ],
+            [
+              "brush",
+              "[[brushes]]",
+              "-sh → + es"
+            ],
+            [
+              "go",
+              "[[goes]]",
+              "-o → + es"
+            ],
+            [
+              "do",
+              "[[does]]",
+              "-o → + es"
+            ],
+            [
+              "study",
+              "[[studies]]",
+              "consonne + y → -ies"
+            ],
+            [
+              "have",
+              "[[has]]",
+              "irrégulier !"
+            ]
+          ]
+        },
+        {
+          "type": "rule",
+          "title": "Les adverbes de fréquence",
+          "text": "[[always]] (toujours) > [[usually]] (d'habitude) > [[often]] (souvent) > [[sometimes]] (parfois) > [[never]] (jamais). Ils se placent **avant le verbe** : [[I always get up at seven.]] Mais **après be** : [[She is never late.]]"
+        },
+        {
+          "type": "p",
+          "text": "Petits mots utiles : [[every day]] (chaque jour), [[every morning]] (chaque matin), [[after]] (après), [[before]] (avant), [[in the evening]] (le soir). Et pour « son / sa / ses » : [[his]] pour un garçon, [[her]] pour une fille : [[He brushes his teeth.]] [[She does her homework.]]"
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "I wake up at seven o'clock.",
+              "fr": "Je me réveille à sept heures."
+            },
+            {
+              "en": "Zoé never has breakfast.",
+              "fr": "Zoé ne déjeune jamais (ne prend jamais de petit-déjeuner)."
+            },
+            {
+              "en": "My dad watches TV in the evening.",
+              "fr": "Mon père regarde la télé le soir."
+            },
+            {
+              "en": "We usually have lunch at school.",
+              "fr": "D'habitude, nous dînons à l'école."
+            },
+            {
+              "en": "Liam is always hungry.",
+              "fr": "Liam a toujours faim."
+            }
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "Piège de francophone : en français, le -s de « il se lève » ne s'entend pas, alors on l'oublie en anglais ! Dis-le bien fort : [[He gets up.]] Et au Canada, attention aux repas : [[breakfast]] = déjeuner (petit-déjeuner), [[lunch]] = dîner, [[dinner]] = souper."
+        },
+        {
+          "type": "dialogue",
+          "title": "Le matin chez Lucas",
+          "lines": [
+            {
+              "who": "Maman",
+              "en": "Lucas, wake up! It's seven o'clock!",
+              "fr": "Lucas, réveille-toi ! Il est sept heures !"
+            },
+            {
+              "who": "Lucas",
+              "en": "Five minutes, please! I'm tired.",
+              "fr": "Cinq minutes, s'il te plaît ! Je suis fatigué."
+            },
+            {
+              "who": "Maman",
+              "en": "Your sister always gets up at half past six.",
+              "fr": "Ta sœur se lève toujours à six heures et demie."
+            },
+            {
+              "who": "Lucas",
+              "en": "Zoé is never tired!",
+              "fr": "Zoé n'est jamais fatiguée !"
+            },
+            {
+              "who": "Maman",
+              "en": "And she always has breakfast. Come on!",
+              "fr": "Et elle déjeune toujours. Allez !"
+            },
+            {
+              "who": "Lucas",
+              "en": "OK, OK. I'm up!",
+              "fr": "D'accord, d'accord. Je suis debout !"
+            }
+          ]
+        }
       ],
       "vocab": [
-        { "en": "wake up", "fr": "se réveiller", "alt": [], "ex": "I wake up at seven o'clock." },
-        { "en": "get up", "fr": "se lever", "alt": [], "ex": "She gets up at half past six." },
-        { "en": "have breakfast", "fr": "déjeuner (prendre le petit-déjeuner)", "alt": ["eat breakfast"], "ex": "We have breakfast in the kitchen." },
-        { "en": "take a shower", "fr": "prendre une douche", "alt": ["have a shower"], "ex": "My brother takes a shower every morning." },
-        { "en": "brush my teeth", "fr": "me brosser les dents", "alt": [], "ex": "I brush my teeth after breakfast." },
-        { "en": "get dressed", "fr": "s'habiller", "alt": [], "ex": "Emma gets dressed before breakfast." },
-        { "en": "go to school", "fr": "aller à l'école", "alt": [], "ex": "We go to school at eight o'clock." },
-        { "en": "have lunch", "fr": "dîner (repas du midi)", "alt": ["eat lunch"], "ex": "Noah has lunch at school." },
-        { "en": "do homework", "fr": "faire ses devoirs", "alt": ["do my homework"], "ex": "I do homework after school." },
-        { "en": "have dinner", "fr": "souper (repas du soir)", "alt": ["eat dinner", "have supper", "eat supper"], "ex": "We have dinner at six o'clock." },
-        { "en": "go to bed", "fr": "se coucher", "alt": [], "ex": "My sister goes to bed at nine o'clock." },
-        { "en": "always", "fr": "toujours", "alt": [], "ex": "Liam is always hungry." },
-        { "en": "usually", "fr": "d'habitude (habituellement)", "alt": ["normally"], "ex": "I usually get up at seven." },
-        { "en": "often", "fr": "souvent", "alt": [], "ex": "Maya often watches TV in the evening." },
-        { "en": "sometimes", "fr": "parfois (quelquefois)", "alt": [], "ex": "I sometimes have lunch with my grandma." },
-        { "en": "never", "fr": "jamais", "alt": [], "ex": "My dad is never late." }
+        {
+          "en": "wake up",
+          "fr": "se réveiller",
+          "alt": [],
+          "ex": "I wake up at seven o'clock."
+        },
+        {
+          "en": "get up",
+          "fr": "se lever",
+          "alt": [],
+          "ex": "She gets up at half past six."
+        },
+        {
+          "en": "have breakfast",
+          "fr": "déjeuner (prendre le petit-déjeuner)",
+          "alt": [
+            "eat breakfast"
+          ],
+          "ex": "We have breakfast in the kitchen."
+        },
+        {
+          "en": "take a shower",
+          "fr": "prendre une douche",
+          "alt": [
+            "have a shower"
+          ],
+          "ex": "My brother takes a shower every morning."
+        },
+        {
+          "en": "brush my teeth",
+          "fr": "me brosser les dents",
+          "alt": [],
+          "ex": "I brush my teeth after breakfast."
+        },
+        {
+          "en": "get dressed",
+          "fr": "s'habiller",
+          "alt": [],
+          "ex": "Emma gets dressed before breakfast."
+        },
+        {
+          "en": "go to school",
+          "fr": "aller à l'école",
+          "alt": [],
+          "ex": "We go to school at eight o'clock."
+        },
+        {
+          "en": "have lunch",
+          "fr": "dîner (repas du midi)",
+          "alt": [
+            "eat lunch"
+          ],
+          "ex": "Noah has lunch at school."
+        },
+        {
+          "en": "do homework",
+          "fr": "faire ses devoirs",
+          "alt": [
+            "do my homework"
+          ],
+          "ex": "I do homework after school."
+        },
+        {
+          "en": "have dinner",
+          "fr": "souper (repas du soir)",
+          "alt": [
+            "eat dinner",
+            "have supper",
+            "eat supper"
+          ],
+          "ex": "We have dinner at six o'clock."
+        },
+        {
+          "en": "go to bed",
+          "fr": "se coucher",
+          "alt": [],
+          "ex": "My sister goes to bed at nine o'clock."
+        },
+        {
+          "en": "always",
+          "fr": "toujours",
+          "alt": [],
+          "ex": "Liam is always hungry."
+        },
+        {
+          "en": "usually",
+          "fr": "d'habitude (habituellement)",
+          "alt": [
+            "normally"
+          ],
+          "ex": "I usually get up at seven."
+        },
+        {
+          "en": "often",
+          "fr": "souvent",
+          "alt": [],
+          "ex": "Maya often watches TV in the evening."
+        },
+        {
+          "en": "sometimes",
+          "fr": "parfois (quelquefois)",
+          "alt": [],
+          "ex": "I sometimes have lunch with my grandma."
+        },
+        {
+          "en": "never",
+          "fr": "jamais",
+          "alt": [],
+          "ex": "My dad is never late."
+        }
       ],
       "sentences": [
-        { "en": "I wake up at seven o'clock.", "fr": "Je me réveille à sept heures.", "trap": ["wakes", "in"], "alt": [] },
-        { "en": "Emma gets up at half past six.", "fr": "Emma se lève à six heures et demie.", "trap": ["get", "on"], "alt": [] },
-        { "en": "Noah never has breakfast.", "fr": "Noah ne déjeune jamais (ne prend jamais de petit-déjeuner).", "trap": ["have", "not"], "alt": [] },
-        { "en": "They often do homework after school.", "fr": "Ils font souvent leurs devoirs après l'école.", "trap": ["does", "make"], "alt": [] },
-        { "en": "My dad watches TV in the evening.", "fr": "Mon père regarde la télé le soir.", "trap": ["watchs", "watch"], "alt": ["In the evening my dad watches TV."] },
-        { "en": "Is she always late?", "fr": "Est-elle toujours en retard ?", "trap": ["Does", "be"], "alt": [] },
-        { "en": "I am never hungry in the morning.", "fr": "Je n'ai jamais faim le matin.", "trap": ["have", "don't"], "alt": ["In the morning I am never hungry."] },
-        { "en": "She goes to bed at nine o'clock.", "fr": "Elle se couche à neuf heures.", "trap": ["go", "gos"], "alt": [] },
-        { "en": "My sister takes a shower every morning.", "fr": "Ma sœur prend une douche chaque matin.", "trap": ["take", "do"], "alt": ["Every morning my sister takes a shower."] },
-        { "en": "Léa does her homework before dinner.", "fr": "Léa fait ses devoirs avant le souper.", "trap": ["do", "make"], "alt": [] },
-        { "en": "He gets dressed after breakfast.", "fr": "Il s'habille après le déjeuner (petit-déjeuner).", "trap": ["get", "has"], "alt": [] },
-        { "en": "We always have lunch at school.", "fr": "Nous dînons toujours à l'école.", "trap": ["has", "eats"], "alt": [] }
+        {
+          "en": "I wake up at seven o'clock.",
+          "fr": "Je me réveille à sept heures.",
+          "trap": [
+            "wakes",
+            "in"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Emma gets up at half past six.",
+          "fr": "Emma se lève à six heures et demie.",
+          "trap": [
+            "get",
+            "on"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Noah never has breakfast.",
+          "fr": "Noah ne déjeune jamais (ne prend jamais de petit-déjeuner).",
+          "trap": [
+            "have",
+            "not"
+          ],
+          "alt": []
+        },
+        {
+          "en": "They often do homework after school.",
+          "fr": "Ils font souvent leurs devoirs après l'école.",
+          "trap": [
+            "does",
+            "make"
+          ],
+          "alt": []
+        },
+        {
+          "en": "My dad watches TV in the evening.",
+          "fr": "Mon père regarde la télé le soir.",
+          "trap": [
+            "watchs",
+            "watch"
+          ],
+          "alt": [
+            "In the evening my dad watches TV."
+          ]
+        },
+        {
+          "en": "Is she always late?",
+          "fr": "Est-elle toujours en retard ?",
+          "trap": [
+            "Does",
+            "be"
+          ],
+          "alt": []
+        },
+        {
+          "en": "I am never hungry in the morning.",
+          "fr": "Je n'ai jamais faim le matin.",
+          "trap": [
+            "have",
+            "don't"
+          ],
+          "alt": [
+            "In the morning I am never hungry."
+          ]
+        },
+        {
+          "en": "She goes to bed at nine o'clock.",
+          "fr": "Elle se couche à neuf heures.",
+          "trap": [
+            "go",
+            "gos"
+          ],
+          "alt": []
+        },
+        {
+          "en": "My sister takes a shower every morning.",
+          "fr": "Ma sœur prend une douche chaque matin.",
+          "trap": [
+            "take",
+            "do"
+          ],
+          "alt": [
+            "Every morning my sister takes a shower."
+          ]
+        },
+        {
+          "en": "Léa does her homework before dinner.",
+          "fr": "Léa fait ses devoirs avant le souper.",
+          "trap": [
+            "do",
+            "make"
+          ],
+          "alt": []
+        },
+        {
+          "en": "He gets dressed after breakfast.",
+          "fr": "Il s'habille après le déjeuner (petit-déjeuner).",
+          "trap": [
+            "get",
+            "has"
+          ],
+          "alt": []
+        },
+        {
+          "en": "We always have lunch at school.",
+          "fr": "Nous dînons toujours à l'école.",
+          "trap": [
+            "has",
+            "eats"
+          ],
+          "alt": []
+        }
       ],
       "grammar": [
-        { "type": "mcq", "q": "Zoé ___ to school at eight o'clock.", "choices": ["goes", "go", "gos"], "answer": 0, "explain": "Zoé = she, donc -s. Et go se termine par -o : on ajoute -es → goes." },
-        { "type": "mcq", "q": "Où placer always dans « He is late » ?", "choices": ["He always is late.", "He is always late.", "Always he is late."], "answer": 1, "explain": "Avec le verbe be, l'adverbe de fréquence se place après : he is always late." },
-        { "type": "mcq", "q": "My parents ___ up at six o'clock.", "choices": ["gets", "getting", "get"], "answer": 2, "explain": "My parents = they : pas de -s au verbe." },
-        { "type": "mcq", "q": "Comment écrit-on study avec she ?", "choices": ["studys", "studyes", "studies"], "answer": 2, "explain": "Consonne + y : le y devient -ies → she studies." },
-        { "type": "mcq", "q": "Liam ___ his teeth after breakfast.", "choices": ["brushes", "brush", "brushs"], "answer": 0, "explain": "Liam = he. Brush finit par -sh, donc on ajoute -es : brushes." },
-        { "type": "mcq", "q": "Comment dit-on « Je ne déjeune jamais » ?", "choices": ["I don't never have breakfast.", "I never have breakfast.", "I have never breakfast.", "I never has breakfast."], "answer": 1, "explain": "Never se place avant le verbe, sans don't (never est déjà négatif). Avec I : have, pas has." },
-        { "type": "fill", "q": "She ___ to bed at nine o'clock.", "hint": "go", "answer": ["goes"], "explain": "Avec she, go devient goes." },
-        { "type": "fill", "q": "Malik ___ his homework after dinner.", "hint": "do", "answer": ["does"], "explain": "Malik = he : do devient does." },
-        { "type": "fill", "q": "Emma ___ breakfast with her grandma.", "hint": "have", "answer": ["has"], "explain": "Have est irrégulier : avec he / she, c'est has." },
-        { "type": "fill", "q": "Noah ___ TV every evening.", "hint": "watch", "answer": ["watches"], "explain": "Watch finit par -ch : avec he, on ajoute -es → watches." },
-        { "type": "fill", "q": "My sister ___ English at school.", "hint": "study", "answer": ["studies"], "explain": "Consonne + y → -ies : she studies." },
-        { "type": "fill", "q": "Priya is ___ late.", "hint": "jamais", "answer": ["never"], "explain": "Jamais = never. Après be, l'adverbe se place juste après : is never late." },
-        { "type": "error", "q": "He go to school every day.", "wrong": 1, "fix": ["goes"], "explain": "Avec he, il faut le -s : he goes." },
-        { "type": "error", "q": "After dinner, she watchs TV.", "wrong": 3, "fix": ["watches"], "explain": "Watch finit par -ch : on écrit watches, pas watchs." },
-        { "type": "error", "q": "Ethan haves breakfast at seven o'clock.", "wrong": 1, "fix": ["has"], "explain": "Haves n'existe pas : avec he, have devient has." },
-        { "type": "error", "q": "My cousin Chloé studys English.", "wrong": 3, "fix": ["studies"], "explain": "Consonne + y → -ies : studies." },
-        { "type": "error", "q": "My parents gets up at six o'clock.", "wrong": 2, "fix": ["get"], "explain": "My parents = they, donc pas de -s : they get up." }
+        {
+          "type": "mcq",
+          "q": "Zoé ___ to school at eight o'clock.",
+          "choices": [
+            "goes",
+            "go",
+            "gos"
+          ],
+          "answer": 0,
+          "explain": "Zoé = she, donc -s. Et go se termine par -o : on ajoute -es → goes."
+        },
+        {
+          "type": "mcq",
+          "q": "Où placer always dans « He is late » ?",
+          "choices": [
+            "He always is late.",
+            "He is always late.",
+            "Always he is late."
+          ],
+          "answer": 1,
+          "explain": "Avec le verbe be, l'adverbe de fréquence se place après : he is always late."
+        },
+        {
+          "type": "mcq",
+          "q": "My parents ___ up at six o'clock.",
+          "choices": [
+            "gets",
+            "getting",
+            "get"
+          ],
+          "answer": 2,
+          "explain": "My parents = they : pas de -s au verbe."
+        },
+        {
+          "type": "mcq",
+          "q": "Comment écrit-on study avec she ?",
+          "choices": [
+            "studys",
+            "studyes",
+            "studies"
+          ],
+          "answer": 2,
+          "explain": "Consonne + y : le y devient -ies → she studies."
+        },
+        {
+          "type": "mcq",
+          "q": "Liam ___ his teeth after breakfast.",
+          "choices": [
+            "brushes",
+            "brush",
+            "brushs"
+          ],
+          "answer": 0,
+          "explain": "Liam = he. Brush finit par -sh, donc on ajoute -es : brushes."
+        },
+        {
+          "type": "mcq",
+          "q": "Comment dit-on « Je ne déjeune jamais » ?",
+          "choices": [
+            "I don't never have breakfast.",
+            "I never have breakfast.",
+            "I have never breakfast.",
+            "I never has breakfast."
+          ],
+          "answer": 1,
+          "explain": "Never se place avant le verbe, sans don't (never est déjà négatif). Avec I : have, pas has."
+        },
+        {
+          "type": "fill",
+          "q": "She ___ to bed at nine o'clock.",
+          "hint": "go",
+          "answer": [
+            "goes"
+          ],
+          "explain": "Avec she, go devient goes."
+        },
+        {
+          "type": "fill",
+          "q": "Malik ___ his homework after dinner.",
+          "hint": "do",
+          "answer": [
+            "does"
+          ],
+          "explain": "Malik = he : do devient does."
+        },
+        {
+          "type": "fill",
+          "q": "Emma ___ breakfast with her grandma.",
+          "hint": "have",
+          "answer": [
+            "has"
+          ],
+          "explain": "Have est irrégulier : avec he / she, c'est has."
+        },
+        {
+          "type": "fill",
+          "q": "Noah ___ TV every evening.",
+          "hint": "watch",
+          "answer": [
+            "watches"
+          ],
+          "explain": "Watch finit par -ch : avec he, on ajoute -es → watches."
+        },
+        {
+          "type": "fill",
+          "q": "My sister ___ English at school.",
+          "hint": "study",
+          "answer": [
+            "studies"
+          ],
+          "explain": "Consonne + y → -ies : she studies."
+        },
+        {
+          "type": "fill",
+          "q": "Priya is ___ late.",
+          "hint": "jamais",
+          "answer": [
+            "never"
+          ],
+          "explain": "Jamais = never. Après be, l'adverbe se place juste après : is never late."
+        },
+        {
+          "type": "error",
+          "q": "He go to school every day.",
+          "wrong": 1,
+          "fix": [
+            "goes"
+          ],
+          "explain": "Avec he, il faut le -s : he goes."
+        },
+        {
+          "type": "error",
+          "q": "After dinner, she watchs TV.",
+          "wrong": 3,
+          "fix": [
+            "watches"
+          ],
+          "explain": "Watch finit par -ch : on écrit watches, pas watchs."
+        },
+        {
+          "type": "error",
+          "q": "Ethan haves breakfast at seven o'clock.",
+          "wrong": 1,
+          "fix": [
+            "has"
+          ],
+          "explain": "Haves n'existe pas : avec he, have devient has."
+        },
+        {
+          "type": "error",
+          "q": "My cousin Chloé studys English.",
+          "wrong": 3,
+          "fix": [
+            "studies"
+          ],
+          "explain": "Consonne + y → -ies : studies."
+        },
+        {
+          "type": "error",
+          "q": "My parents gets up at six o'clock.",
+          "wrong": 2,
+          "fix": [
+            "get"
+          ],
+          "explain": "My parents = they, donc pas de -s : they get up."
+        }
       ],
       "reading": {
         "title": "Lucas's Day",
         "text": "Lucas is twelve years old. On school days, he wakes up at half past six, but he gets up at seven o'clock. He takes a shower and gets dressed. He has breakfast with his sister Zoé. Zoé never eats in the morning because she is never hungry!\n\nThey go to school at eight o'clock. After school, Lucas usually does his homework in his bedroom. He sometimes watches TV after dinner. He always brushes his teeth before bed, and he goes to bed at nine o'clock.",
         "questions": [
-          { "q": "À quelle heure Lucas se lève-t-il ?", "choices": ["À six heures et demie", "À sept heures", "À huit heures", "À neuf heures"], "answer": 1 },
-          { "q": "Pourquoi Zoé ne mange-t-elle rien le matin ?", "choices": ["Elle est en retard", "Elle est malade", "Elle n'a jamais faim le matin", "Elle n'aime pas le déjeuner"], "answer": 2 },
-          { "q": "Que fait Lucas d'habitude après l'école ?", "choices": ["Il fait ses devoirs", "Il regarde la télé", "Il prend une douche", "Il se couche"], "answer": 0 },
-          { "q": "Quand Lucas regarde-t-il parfois la télé ?", "choices": ["Avant l'école", "Au déjeuner (petit-déjeuner)", "À neuf heures", "Après le souper"], "answer": 3 }
+          {
+            "q": "À quelle heure Lucas se lève-t-il ?",
+            "choices": [
+              "À six heures et demie",
+              "À sept heures",
+              "À huit heures",
+              "À neuf heures"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Pourquoi Zoé ne mange-t-elle rien le matin ?",
+            "choices": [
+              "Elle est en retard",
+              "Elle est malade",
+              "Elle n'a jamais faim le matin",
+              "Elle n'aime pas le déjeuner"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Que fait Lucas d'habitude après l'école ?",
+            "choices": [
+              "Il fait ses devoirs",
+              "Il regarde la télé",
+              "Il prend une douche",
+              "Il se couche"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Quand Lucas regarde-t-il parfois la télé ?",
+            "choices": [
+              "Avant l'école",
+              "Au déjeuner (petit-déjeuner)",
+              "À neuf heures",
+              "Après le souper"
+            ],
+            "answer": 3
+          }
         ]
       }
     },
@@ -115,92 +599,552 @@
       "titleEn": "Do You Like It?",
       "goal": "Poser des questions et dire non au présent avec do / does et les mots interrogatifs.",
       "lesson": [
-        { "type": "p", "text": "Au présent simple, pour dire **non** ou poser une **question**, l'anglais appelle un petit assistant : **do** (ou **does** avec he / she / it)." },
-        { "type": "table", "head": ["Sujet", "Négation", "Question"], "rows": [
-          ["I / you / we / they", "[[I don't like it.]]", "[[Do you like it?]]"],
-          ["he / she / it", "[[She doesn't like it.]]", "[[Does she like it?]]"]
-        ] },
-        { "type": "rule", "title": "Un seul -s, pas deux !", "text": "Avec **does** ou **doesn't**, le -s est déjà pris par l'assistant : le verbe reste à la **forme de base**. [[She likes pizza.]] → [[She doesn't like pizza.]] → [[Does she like pizza?]]" },
-        { "type": "rule", "title": "Les mots interrogatifs", "text": "[[What]] (que, quoi), [[Where]] (où), [[When]] (quand), [[Who]] (qui), [[Why]] (pourquoi), [[How]] (comment), [[Which]] (quel, lequel, parmi un choix). Ordre : mot interrogatif + do / does + sujet + verbe : [[Where do you live?]] [[What does she want?]]" },
-        { "type": "p", "text": "Réponses courtes : [[Do you speak English?]] → [[Yes, I do.]] / [[No, I don't.]] On ne répète pas le verbe ! Quand **who** est le sujet (qui fait l'action ?), pas de do : [[Who speaks French?]] Pour répondre à [[Why?]], on dit [[Because…]] (parce que)." },
-        { "type": "examples", "items": [
-          { "en": "Do you speak French?", "fr": "Parles-tu français ?" },
-          { "en": "My dad doesn't work on Saturday.", "fr": "Mon père ne travaille pas le samedi." },
-          { "en": "Where does your aunt live?", "fr": "Où habite ta tante ?" },
-          { "en": "I don't know where she lives.", "fr": "Je ne sais pas où elle habite." },
-          { "en": "Which colour do you like?", "fr": "Quelle couleur aimes-tu ?" }
-        ] },
-        { "type": "tip", "text": "Pièges classiques : [[She doesn't likes]] ou [[Does he speaks?]] = deux -s ! Un seul suffit, et c'est does qui le garde. On ne dit jamais [[Do she]] : avec she, c'est [[Does she]]. Et « savoir » comme « connaître » se disent [[know]]." },
-        { "type": "dialogue", "title": "Le nouveau voisin", "lines": [
-          { "who": "Karim", "en": "Hi! Do you live here?", "fr": "Salut ! Est-ce que tu habites ici ?" },
-          { "who": "Sofia", "en": "Yes, I do. I'm Sofia. Do you speak English?", "fr": "Oui. Moi c'est Sofia. Parles-tu anglais ?" },
-          { "who": "Karim", "en": "Yes, and French. My mom doesn't speak English, but she understands it.", "fr": "Oui, et français. Ma mère ne parle pas anglais, mais elle le comprend." },
-          { "who": "Sofia", "en": "Where does your dad work?", "fr": "Où travaille ton père ?" },
-          { "who": "Karim", "en": "He works in Ottawa. Why?", "fr": "Il travaille à Ottawa. Pourquoi ?" },
-          { "who": "Sofia", "en": "Because my mom works in Ottawa too!", "fr": "Parce que ma mère travaille à Ottawa aussi !" }
-        ] }
+        {
+          "type": "p",
+          "text": "Au présent simple, pour dire **non** ou poser une **question**, l'anglais appelle un petit assistant : **do** (ou **does** avec he / she / it)."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Sujet",
+            "Négation",
+            "Question"
+          ],
+          "rows": [
+            [
+              "I / you / we / they",
+              "[[I don't like it.]]",
+              "[[Do you like it?]]"
+            ],
+            [
+              "he / she / it",
+              "[[She doesn't like it.]]",
+              "[[Does she like it?]]"
+            ]
+          ]
+        },
+        {
+          "type": "rule",
+          "title": "Un seul -s, pas deux !",
+          "text": "Avec **does** ou **doesn't**, le -s est déjà pris par l'assistant : le verbe reste à la **forme de base**. [[She likes pizza.]] → [[She doesn't like pizza.]] → [[Does she like pizza?]]"
+        },
+        {
+          "type": "rule",
+          "title": "Les mots interrogatifs",
+          "text": "[[What]] (que, quoi), [[Where]] (où), [[When]] (quand), [[Who]] (qui), [[Why]] (pourquoi), [[How]] (comment), [[Which]] (quel, lequel, parmi un choix). Ordre : mot interrogatif + do / does + sujet + verbe : [[Where do you live?]] [[What does she want?]]"
+        },
+        {
+          "type": "p",
+          "text": "Réponses courtes : [[Do you speak English?]] → [[Yes, I do.]] / [[No, I don't.]] On ne répète pas le verbe ! Quand **who** est le sujet (qui fait l'action ?), pas de do : [[Who speaks French?]] Pour répondre à [[Why?]], on dit [[Because…]] (parce que)."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "Do you speak French?",
+              "fr": "Parles-tu français ?"
+            },
+            {
+              "en": "My dad doesn't work on Saturday.",
+              "fr": "Mon père ne travaille pas le samedi."
+            },
+            {
+              "en": "Where does your aunt live?",
+              "fr": "Où habite ta tante ?"
+            },
+            {
+              "en": "I don't know where she lives.",
+              "fr": "Je ne sais pas où elle habite."
+            },
+            {
+              "en": "Which colour do you like?",
+              "fr": "Quelle couleur aimes-tu ?"
+            }
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "Pièges classiques : [[She doesn't likes]] ou [[Does he speaks?]] = deux -s ! Un seul suffit, et c'est does qui le garde. On ne dit jamais [[Do she]] : avec she, c'est [[Does she]]. Et « savoir » comme « connaître » se disent [[know]]."
+        },
+        {
+          "type": "dialogue",
+          "title": "Le nouveau voisin",
+          "lines": [
+            {
+              "who": "Karim",
+              "en": "Hi! Do you live here?",
+              "fr": "Salut ! Est-ce que tu habites ici ?"
+            },
+            {
+              "who": "Sofia",
+              "en": "Yes, I do. I'm Sofia. Do you speak English?",
+              "fr": "Oui. Moi c'est Sofia. Parles-tu anglais ?"
+            },
+            {
+              "who": "Karim",
+              "en": "Yes, and French. My mom doesn't speak English, but she understands it.",
+              "fr": "Oui, et français. Ma mère ne parle pas anglais, mais elle le comprend."
+            },
+            {
+              "who": "Sofia",
+              "en": "Where does your dad work?",
+              "fr": "Où travaille ton père ?"
+            },
+            {
+              "who": "Karim",
+              "en": "He works in Ottawa. Why?",
+              "fr": "Il travaille à Ottawa. Pourquoi ?"
+            },
+            {
+              "who": "Sofia",
+              "en": "Because my mom works in Ottawa too!",
+              "fr": "Parce que ma mère travaille à Ottawa aussi !"
+            }
+          ]
+        }
       ],
       "vocab": [
-        { "en": "like", "fr": "aimer (bien)", "alt": [], "ex": "I like hockey." },
-        { "en": "love", "fr": "adorer (aimer beaucoup)", "alt": [], "ex": "My sister loves cats." },
-        { "en": "hate", "fr": "détester", "alt": [], "ex": "I hate Mondays!" },
-        { "en": "want", "fr": "vouloir", "alt": [], "ex": "Maya wants a dog." },
-        { "en": "need", "fr": "avoir besoin de", "alt": [], "ex": "We need a new ruler." },
-        { "en": "know", "fr": "savoir (connaître)", "alt": [], "ex": "Do you know my brother?" },
-        { "en": "live", "fr": "habiter (vivre)", "alt": [], "ex": "My aunt lives in Toronto." },
-        { "en": "speak", "fr": "parler (une langue)", "alt": [], "ex": "Do you speak English?" },
-        { "en": "understand", "fr": "comprendre", "alt": [], "ex": "I don't understand." },
-        { "en": "work", "fr": "travailler", "alt": [], "ex": "My mom works in Gatineau." },
-        { "en": "what", "fr": "que (quoi)", "alt": [], "ex": "What do you want?" },
-        { "en": "where", "fr": "où", "alt": [], "ex": "Where do you live?" },
-        { "en": "when", "fr": "quand", "alt": [], "ex": "When do you have lunch?" },
-        { "en": "who", "fr": "qui", "alt": [], "ex": "Who is your teacher?" },
-        { "en": "why", "fr": "pourquoi", "alt": [], "ex": "Why are you sad?" },
-        { "en": "which", "fr": "lequel (quel, parmi un choix)", "alt": [], "ex": "Which pen do you want?" }
+        {
+          "en": "like",
+          "fr": "aimer (bien)",
+          "alt": [],
+          "ex": "I like hockey."
+        },
+        {
+          "en": "love",
+          "fr": "adorer (aimer beaucoup)",
+          "alt": [],
+          "ex": "My sister loves cats."
+        },
+        {
+          "en": "hate",
+          "fr": "détester",
+          "alt": [],
+          "ex": "I hate Mondays!"
+        },
+        {
+          "en": "want",
+          "fr": "vouloir",
+          "alt": [],
+          "ex": "Maya wants a dog."
+        },
+        {
+          "en": "need",
+          "fr": "avoir besoin de",
+          "alt": [],
+          "ex": "We need a new ruler."
+        },
+        {
+          "en": "know",
+          "fr": "savoir (connaître)",
+          "alt": [],
+          "ex": "Do you know my brother?"
+        },
+        {
+          "en": "live",
+          "fr": "habiter (vivre)",
+          "alt": [],
+          "ex": "My aunt lives in Toronto."
+        },
+        {
+          "en": "speak",
+          "fr": "parler (une langue)",
+          "alt": [],
+          "ex": "Do you speak English?"
+        },
+        {
+          "en": "understand",
+          "fr": "comprendre",
+          "alt": [],
+          "ex": "I don't understand."
+        },
+        {
+          "en": "work",
+          "fr": "travailler",
+          "alt": [],
+          "ex": "My mom works in Gatineau."
+        },
+        {
+          "en": "what",
+          "fr": "que (quoi)",
+          "alt": [],
+          "ex": "What do you want?"
+        },
+        {
+          "en": "where",
+          "fr": "où",
+          "alt": [],
+          "ex": "Where do you live?"
+        },
+        {
+          "en": "when",
+          "fr": "quand",
+          "alt": [],
+          "ex": "When do you have lunch?"
+        },
+        {
+          "en": "who",
+          "fr": "qui",
+          "alt": [],
+          "ex": "Who is your teacher?"
+        },
+        {
+          "en": "why",
+          "fr": "pourquoi",
+          "alt": [],
+          "ex": "Why are you sad?"
+        },
+        {
+          "en": "which",
+          "fr": "lequel (quel, parmi un choix)",
+          "alt": [],
+          "ex": "Which pen do you want?"
+        }
       ],
       "sentences": [
-        { "en": "She doesn't like pizza.", "fr": "Elle n'aime pas la pizza.", "trap": ["don't", "likes"], "alt": [] },
-        { "en": "Do you speak French?", "fr": "Parles-tu français ?", "trap": ["Does", "speaks"], "alt": [] },
-        { "en": "Where does your aunt live?", "fr": "Où habite ta tante ?", "trap": ["do", "lives"], "alt": [] },
-        { "en": "My dad doesn't work on Saturday.", "fr": "Mon père ne travaille pas le samedi.", "trap": ["don't", "works"], "alt": [] },
-        { "en": "Does Zoé understand English?", "fr": "Est-ce que Zoé comprend l'anglais ?", "trap": ["Do", "understands"], "alt": [] },
-        { "en": "I don't know where she lives.", "fr": "Je ne sais pas où elle habite.", "trap": ["does", "live"], "alt": [] },
-        { "en": "Why do you hate Mondays?", "fr": "Pourquoi détestes-tu les lundis ?", "trap": ["does", "hates"], "alt": [] },
-        { "en": "What does Malik want?", "fr": "Que veut Malik ?", "trap": ["do", "wants"], "alt": [] },
-        { "en": "When do they have lunch?", "fr": "Quand dînent-ils (à quelle heure prennent-ils le repas du midi) ?", "trap": ["does", "has"], "alt": [] },
-        { "en": "Who speaks English at home?", "fr": "Qui parle anglais à la maison ?", "trap": ["do", "speak"], "alt": [] },
-        { "en": "We need a new ruler.", "fr": "Nous avons besoin d'une nouvelle règle.", "trap": ["needs", "of"], "alt": [] },
-        { "en": "Which colour do you like?", "fr": "Quelle couleur aimes-tu ?", "trap": ["does", "likes"], "alt": [] }
+        {
+          "en": "She doesn't like pizza.",
+          "fr": "Elle n'aime pas la pizza.",
+          "trap": [
+            "don't",
+            "likes"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Do you speak French?",
+          "fr": "Parles-tu français ?",
+          "trap": [
+            "Does",
+            "speaks"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Where does your aunt live?",
+          "fr": "Où habite ta tante ?",
+          "trap": [
+            "do",
+            "lives"
+          ],
+          "alt": []
+        },
+        {
+          "en": "My dad doesn't work on Saturday.",
+          "fr": "Mon père ne travaille pas le samedi.",
+          "trap": [
+            "don't",
+            "works"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Does Zoé understand English?",
+          "fr": "Est-ce que Zoé comprend l'anglais ?",
+          "trap": [
+            "Do",
+            "understands"
+          ],
+          "alt": []
+        },
+        {
+          "en": "I don't know where she lives.",
+          "fr": "Je ne sais pas où elle habite.",
+          "trap": [
+            "does",
+            "live"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Why do you hate Mondays?",
+          "fr": "Pourquoi détestes-tu les lundis ?",
+          "trap": [
+            "does",
+            "hates"
+          ],
+          "alt": []
+        },
+        {
+          "en": "What does Malik want?",
+          "fr": "Que veut Malik ?",
+          "trap": [
+            "do",
+            "wants"
+          ],
+          "alt": []
+        },
+        {
+          "en": "When do they have lunch?",
+          "fr": "Quand dînent-ils (à quelle heure prennent-ils le repas du midi) ?",
+          "trap": [
+            "does",
+            "has"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Who speaks English at home?",
+          "fr": "Qui parle anglais à la maison ?",
+          "trap": [
+            "do",
+            "speak"
+          ],
+          "alt": []
+        },
+        {
+          "en": "We need a new ruler.",
+          "fr": "Nous avons besoin d'une nouvelle règle.",
+          "trap": [
+            "needs",
+            "of"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Which colour do you like?",
+          "fr": "Quelle couleur aimes-tu ?",
+          "trap": [
+            "does",
+            "likes"
+          ],
+          "alt": []
+        }
       ],
       "grammar": [
-        { "type": "mcq", "q": "___ your brother speak French?", "choices": ["Do", "Does", "Is"], "answer": 1, "explain": "Your brother = he : la question se fait avec does." },
-        { "type": "mcq", "q": "She doesn't ___ hockey.", "choices": ["like", "likes", "liking"], "answer": 0, "explain": "Après doesn't, le verbe reste à la forme de base : like." },
-        { "type": "mcq", "q": "___ do you live? — In Gatineau.", "choices": ["Who", "When", "Where", "What"], "answer": 2, "explain": "La réponse est un lieu : on demande où, donc where." },
-        { "type": "mcq", "q": "___ is your best friend? — Amir.", "choices": ["What", "Who", "Which"], "answer": 1, "explain": "La réponse est une personne : who = qui." },
-        { "type": "mcq", "q": "Does Léa like cats? — Yes, ___.", "choices": ["she likes", "she is", "she does"], "answer": 2, "explain": "Réponse courte : on reprend l'assistant de la question → Yes, she does." },
-        { "type": "mcq", "q": "Who ___ Spanish in your family?", "choices": ["speak", "speaks", "do speak"], "answer": 1, "explain": "Who est le sujet : pas de do, et le verbe prend un -s comme avec he." },
-        { "type": "mcq", "q": "___ pen do you want, the red pen or the blue pen?", "choices": ["Which", "Who", "Where", "When"], "answer": 0, "explain": "On choisit parmi deux objets : which = lequel / quel." },
-        { "type": "fill", "q": "My mom ___ work on Sunday.", "hint": "ne… pas", "answer": ["doesn't"], "explain": "My mom = she : la négation est doesn't + verbe de base." },
-        { "type": "fill", "q": "___ they live in Toronto?", "hint": "question", "answer": ["Do"], "explain": "Avec they, la question commence par do." },
-        { "type": "fill", "q": "Does Ethan ___ my sister?", "hint": "connaître", "answer": ["know"], "explain": "Connaître = know. Après does, pas de -s." },
-        { "type": "fill", "q": "I ___ understand this word.", "hint": "ne… pas", "answer": ["don't"], "explain": "Avec I, la négation est don't." },
-        { "type": "fill", "q": "___ does your dad work? — In a hospital.", "hint": "où", "answer": ["Where"], "explain": "Où = where. On demande un lieu." },
-        { "type": "fill", "q": "Maya ___ a new bag.", "hint": "vouloir", "answer": ["wants"], "explain": "Vouloir = want. Phrase affirmative avec she : wants." },
-        { "type": "error", "q": "She doesn't likes Mondays.", "wrong": 2, "fix": ["like"], "explain": "Doesn't garde déjà le -s : le verbe reste like." },
-        { "type": "error", "q": "Do your sister speak English?", "wrong": 0, "fix": ["Does"], "explain": "Your sister = she : la question commence par does." },
-        { "type": "error", "q": "Where does you live?", "wrong": 1, "fix": ["do"], "explain": "Avec you, c'est do : Where do you live?" },
-        { "type": "error", "q": "He don't work on Saturday.", "wrong": 1, "fix": ["doesn't"], "explain": "Avec he, la négation est doesn't." },
-        { "type": "error", "q": "Does Noah wants a dog?", "wrong": 2, "fix": ["want"], "explain": "Après does, le verbe reste à la forme de base : want." }
+        {
+          "type": "mcq",
+          "q": "___ your brother speak French?",
+          "choices": [
+            "Do",
+            "Does",
+            "Is"
+          ],
+          "answer": 1,
+          "explain": "Your brother = he : la question se fait avec does."
+        },
+        {
+          "type": "mcq",
+          "q": "She doesn't ___ hockey.",
+          "choices": [
+            "like",
+            "likes",
+            "liking"
+          ],
+          "answer": 0,
+          "explain": "Après doesn't, le verbe reste à la forme de base : like."
+        },
+        {
+          "type": "mcq",
+          "q": "___ do you live? — In Gatineau.",
+          "choices": [
+            "Who",
+            "When",
+            "Where",
+            "What"
+          ],
+          "answer": 2,
+          "explain": "La réponse est un lieu : on demande où, donc where."
+        },
+        {
+          "type": "mcq",
+          "q": "___ is your best friend? — Amir.",
+          "choices": [
+            "What",
+            "Who",
+            "Which"
+          ],
+          "answer": 1,
+          "explain": "La réponse est une personne : who = qui."
+        },
+        {
+          "type": "mcq",
+          "q": "Does Léa like cats? — Yes, ___.",
+          "choices": [
+            "she likes",
+            "she is",
+            "she does"
+          ],
+          "answer": 2,
+          "explain": "Réponse courte : on reprend l'assistant de la question → Yes, she does."
+        },
+        {
+          "type": "mcq",
+          "q": "Who ___ Spanish in your family?",
+          "choices": [
+            "speak",
+            "speaks",
+            "do speak"
+          ],
+          "answer": 1,
+          "explain": "Who est le sujet : pas de do, et le verbe prend un -s comme avec he."
+        },
+        {
+          "type": "mcq",
+          "q": "___ pen do you want, the red pen or the blue pen?",
+          "choices": [
+            "Which",
+            "Who",
+            "Where",
+            "When"
+          ],
+          "answer": 0,
+          "explain": "On choisit parmi deux objets : which = lequel / quel."
+        },
+        {
+          "type": "fill",
+          "q": "My mom ___ work on Sunday.",
+          "hint": "ne… pas",
+          "answer": [
+            "doesn't"
+          ],
+          "explain": "My mom = she : la négation est doesn't + verbe de base."
+        },
+        {
+          "type": "fill",
+          "q": "___ they live in Toronto?",
+          "hint": "question",
+          "answer": [
+            "Do"
+          ],
+          "explain": "Avec they, la question commence par do."
+        },
+        {
+          "type": "fill",
+          "q": "Does Ethan ___ my sister?",
+          "hint": "connaître",
+          "answer": [
+            "know"
+          ],
+          "explain": "Connaître = know. Après does, pas de -s."
+        },
+        {
+          "type": "fill",
+          "q": "I ___ understand this word.",
+          "hint": "ne… pas",
+          "answer": [
+            "don't"
+          ],
+          "explain": "Avec I, la négation est don't."
+        },
+        {
+          "type": "fill",
+          "q": "___ does your dad work? — In a hospital.",
+          "hint": "où",
+          "answer": [
+            "Where"
+          ],
+          "explain": "Où = where. On demande un lieu."
+        },
+        {
+          "type": "fill",
+          "q": "Maya ___ a new bag.",
+          "hint": "vouloir",
+          "answer": [
+            "wants"
+          ],
+          "explain": "Vouloir = want. Phrase affirmative avec she : wants."
+        },
+        {
+          "type": "error",
+          "q": "She doesn't likes Mondays.",
+          "wrong": 2,
+          "fix": [
+            "like"
+          ],
+          "explain": "Doesn't garde déjà le -s : le verbe reste like."
+        },
+        {
+          "type": "error",
+          "q": "Do your sister speak English?",
+          "wrong": 0,
+          "fix": [
+            "Does"
+          ],
+          "explain": "Your sister = she : la question commence par does."
+        },
+        {
+          "type": "error",
+          "q": "Where does you live?",
+          "wrong": 1,
+          "fix": [
+            "do"
+          ],
+          "explain": "Avec you, c'est do : Where do you live?"
+        },
+        {
+          "type": "error",
+          "q": "He don't work on Saturday.",
+          "wrong": 1,
+          "fix": [
+            "doesn't"
+          ],
+          "explain": "Avec he, la négation est doesn't."
+        },
+        {
+          "type": "error",
+          "q": "Does Noah wants a dog?",
+          "wrong": 2,
+          "fix": [
+            "want"
+          ],
+          "explain": "Après does, le verbe reste à la forme de base : want."
+        }
       ],
       "reading": {
         "title": "A New Friend",
         "text": "Félix is new in Ana's class. Ana wants to be his friend.\n\n“Where do you live, Félix?”\n\n“I live in Gatineau, but my mom works in Ottawa.”\n\n“Do you speak English at home?”\n\n“No, we don't. We speak French. My dad doesn't speak English, but he understands it.”\n\n“What do you like?”\n\n“I love hockey, but I hate Mondays!”\n\n“Why?”\n\n“Because we have a math test every Monday!”",
         "questions": [
-          { "q": "Où habite Félix ?", "choices": ["À Ottawa", "À Gatineau", "À Toronto", "À Montréal"], "answer": 1 },
-          { "q": "Qui travaille à Ottawa ?", "choices": ["Le père de Félix", "Ana", "Félix", "La mère de Félix"], "answer": 3 },
-          { "q": "Quelle langue parle-t-on chez Félix ?", "choices": ["Le français", "L'anglais", "L'anglais et le français", "L'espagnol"], "answer": 0 },
-          { "q": "Que sait-on du père de Félix ?", "choices": ["Il parle très bien anglais", "Il ne comprend pas l'anglais", "Il comprend l'anglais, mais ne le parle pas", "Il travaille à Gatineau"], "answer": 2 },
-          { "q": "Pourquoi Félix déteste-t-il les lundis ?", "choices": ["Il n'y a pas de hockey", "Il a un examen de maths", "Il se lève tôt", "Il ne voit pas Ana"], "answer": 1 }
+          {
+            "q": "Où habite Félix ?",
+            "choices": [
+              "À Ottawa",
+              "À Gatineau",
+              "À Toronto",
+              "À Montréal"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Qui travaille à Ottawa ?",
+            "choices": [
+              "Le père de Félix",
+              "Ana",
+              "Félix",
+              "La mère de Félix"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Quelle langue parle-t-on chez Félix ?",
+            "choices": [
+              "Le français",
+              "L'anglais",
+              "L'anglais et le français",
+              "L'espagnol"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Que sait-on du père de Félix ?",
+            "choices": [
+              "Il parle très bien anglais",
+              "Il ne comprend pas l'anglais",
+              "Il comprend l'anglais, mais ne le parle pas",
+              "Il travaille à Gatineau"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Pourquoi Félix déteste-t-il les lundis ?",
+            "choices": [
+              "Il n'y a pas de hockey",
+              "Il a un examen de maths",
+              "Il se lève tôt",
+              "Il ne voit pas Ana"
+            ],
+            "answer": 1
+          }
         ]
       }
     },
@@ -210,93 +1154,556 @@
       "titleEn": "Snack Time",
       "goal": "Parler de nourriture, commander poliment et demander des quantités avec some, any, much et many.",
       "lesson": [
-        { "type": "p", "text": "Pour parler de nourriture, il faut d'abord savoir si on peut **compter** la chose ou non. Ça change tout : a / an, -s, some / any, much / many ! Verbes utiles : [[eat]] (manger) et [[drink]] (boire)." },
-        { "type": "rule", "title": "Comptable ou pas ?", "text": "Ce qu'on peut compter prend **a / an** et un **-s** au pluriel : [[an egg]], [[two eggs]], [[an apple]], [[three cookies]]. Ce qu'on ne peut pas compter ne prend **jamais** a ni -s : [[water]], [[milk]], [[bread]], [[cheese]], [[juice]], [[maple syrup]]." },
-        { "type": "table", "head": ["", "Comptable (pluriel)", "Indénombrable"], "rows": [
-          ["Affirmatif : some", "[[I have some apples.]]", "[[I have some milk.]]"],
-          ["Négatif : any", "[[I don't have any apples.]]", "[[I don't have any milk.]]"],
-          ["Question : any", "[[Do you have any apples?]]", "[[Do you have any milk?]]"]
-        ] },
-        { "type": "rule", "title": "How much ou How many ?", "text": "[[How many]] + chose comptable au pluriel : [[How many eggs?]] [[How much]] + chose indénombrable : [[How much water?]] Et [[a lot of]] (beaucoup de) marche avec les deux : [[a lot of cookies]], [[a lot of juice]]." },
-        { "type": "rule", "title": "Commander poliment", "text": "[[I'd like]] = je voudrais (c'est [[I would like]]). Pour offrir quelque chose : [[Would you like some juice?]] Ici on garde **some**, parce qu'on offre." },
-        { "type": "examples", "items": [
-          { "en": "I'd like some water, please.", "fr": "Je voudrais de l'eau, s'il vous plaît." },
-          { "en": "We don't have any bread.", "fr": "Nous n'avons pas de pain." },
-          { "en": "How many eggs do you need?", "fr": "De combien d'œufs as-tu besoin ?" },
-          { "en": "How much milk does she want?", "fr": "Combien de lait veut-elle ?" },
-          { "en": "My grandpa eats a lot of cheese.", "fr": "Mon grand-père mange beaucoup de fromage." }
-        ] },
-        { "type": "tip", "text": "Le français dit « **du** pain », « **de l'**eau ». En anglais : pas d'article, ou **some**. Jamais [[a bread]] ni [[breads]] ! Et pour parler en général, pas de the : « J'aime le fromage » = [[I like cheese.]]" },
-        { "type": "fun", "text": "Le sais-tu ? La **poutine** vient du Québec : des frites ([[fries]]), du fromage en grains et une sauce brune. Et le Québec produit la majorité du sirop d'érable ([[maple syrup]]) de la planète !" },
-        { "type": "dialogue", "title": "Au casse-croûte", "lines": [
-          { "who": "Employé", "en": "Hi! What would you like?", "fr": "Bonjour ! Qu'est-ce que tu voudrais ?" },
-          { "who": "Maya", "en": "I'd like some fries and some water, please.", "fr": "Je voudrais des frites et de l'eau, s'il vous plaît." },
-          { "who": "Employé", "en": "Would you like some cheese on your fries?", "fr": "Voudrais-tu du fromage sur tes frites ?" },
-          { "who": "Maya", "en": "Yes, please! A lot of cheese!", "fr": "Oui, s'il vous plaît ! Beaucoup de fromage !" },
-          { "who": "Employé", "en": "Sorry, we don't have any cheese today.", "fr": "Désolé, nous n'avons pas de fromage aujourd'hui." },
-          { "who": "Maya", "en": "Oh no! No poutine for me today!", "fr": "Oh non ! Pas de poutine pour moi aujourd'hui !" }
-        ] }
+        {
+          "type": "p",
+          "text": "Pour parler de nourriture, il faut d'abord savoir si on peut **compter** la chose ou non. Ça change tout : a / an, -s, some / any, much / many ! Verbes utiles : [[eat]] (manger) et [[drink]] (boire)."
+        },
+        {
+          "type": "rule",
+          "title": "Comptable ou pas ?",
+          "text": "Ce qu'on peut compter prend **a / an** et un **-s** au pluriel : [[an egg]], [[two eggs]], [[an apple]], [[three cookies]]. Ce qu'on ne peut pas compter ne prend **jamais** a ni -s : [[water]], [[milk]], [[bread]], [[cheese]], [[juice]], [[maple syrup]]."
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "Comptable (pluriel)",
+            "Indénombrable"
+          ],
+          "rows": [
+            [
+              "Affirmatif : some",
+              "[[I have some apples.]]",
+              "[[I have some milk.]]"
+            ],
+            [
+              "Négatif : any",
+              "[[I don't have any apples.]]",
+              "[[I don't have any milk.]]"
+            ],
+            [
+              "Question : any",
+              "[[Do you have any apples?]]",
+              "[[Do you have any milk?]]"
+            ]
+          ]
+        },
+        {
+          "type": "rule",
+          "title": "How much ou How many ?",
+          "text": "[[How many]] + chose comptable au pluriel : [[How many eggs?]] [[How much]] + chose indénombrable : [[How much water?]] Et [[a lot of]] (beaucoup de) marche avec les deux : [[a lot of cookies]], [[a lot of juice]]."
+        },
+        {
+          "type": "rule",
+          "title": "Commander poliment",
+          "text": "[[I'd like]] = je voudrais (c'est [[I would like]]). Pour offrir quelque chose : [[Would you like some juice?]] Ici on garde **some**, parce qu'on offre."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "I'd like some water, please.",
+              "fr": "Je voudrais de l'eau, s'il vous plaît."
+            },
+            {
+              "en": "We don't have any bread.",
+              "fr": "Nous n'avons pas de pain."
+            },
+            {
+              "en": "How many eggs do you need?",
+              "fr": "De combien d'œufs as-tu besoin ?"
+            },
+            {
+              "en": "How much milk does she want?",
+              "fr": "Combien de lait veut-elle ?"
+            },
+            {
+              "en": "My grandpa eats a lot of cheese.",
+              "fr": "Mon grand-père mange beaucoup de fromage."
+            }
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "Le français dit « **du** pain », « **de l'**eau ». En anglais : pas d'article, ou **some**. Jamais [[a bread]] ni [[breads]] ! Et pour parler en général, pas de the : « J'aime le fromage » = [[I like cheese.]]"
+        },
+        {
+          "type": "fun",
+          "text": "Le sais-tu ? La **poutine** vient du Québec : des frites ([[fries]]), du fromage en grains et une sauce brune. Et le Québec produit la majorité du sirop d'érable ([[maple syrup]]) de la planète !"
+        },
+        {
+          "type": "dialogue",
+          "title": "Au casse-croûte",
+          "lines": [
+            {
+              "who": "Employé",
+              "en": "Hi! What would you like?",
+              "fr": "Bonjour ! Qu'est-ce que tu voudrais ?"
+            },
+            {
+              "who": "Maya",
+              "en": "I'd like some fries and some water, please.",
+              "fr": "Je voudrais des frites et de l'eau, s'il vous plaît."
+            },
+            {
+              "who": "Employé",
+              "en": "Would you like some cheese on your fries?",
+              "fr": "Voudrais-tu du fromage sur tes frites ?"
+            },
+            {
+              "who": "Maya",
+              "en": "Yes, please! A lot of cheese!",
+              "fr": "Oui, s'il vous plaît ! Beaucoup de fromage !"
+            },
+            {
+              "who": "Employé",
+              "en": "Sorry, we don't have any cheese today.",
+              "fr": "Désolé, nous n'avons pas de fromage aujourd'hui."
+            },
+            {
+              "who": "Maya",
+              "en": "Oh no! No poutine for me today!",
+              "fr": "Oh non ! Pas de poutine pour moi aujourd'hui !"
+            }
+          ]
+        }
       ],
       "vocab": [
-        { "en": "bread", "fr": "pain", "alt": [], "ex": "We don't have any bread." },
-        { "en": "milk", "fr": "lait", "alt": [], "ex": "I'd like some milk, please." },
-        { "en": "water", "fr": "eau", "alt": [], "ex": "How much water do you drink?" },
-        { "en": "juice", "fr": "jus", "alt": [], "ex": "Would you like some juice?" },
-        { "en": "cheese", "fr": "fromage", "alt": [], "ex": "My grandpa eats a lot of cheese." },
-        { "en": "egg", "fr": "œuf", "alt": [], "ex": "I have an egg for breakfast." },
-        { "en": "apple", "fr": "pomme", "alt": [], "ex": "She eats an apple every day." },
-        { "en": "vegetable", "fr": "légume", "alt": [], "ex": "He doesn't like vegetables." },
-        { "en": "fries", "fr": "frites", "alt": ["french fries"], "ex": "I'd like some fries, please." },
-        { "en": "pancake", "fr": "crêpe", "alt": [], "ex": "Liam eats six pancakes!" },
-        { "en": "maple syrup", "fr": "sirop d'érable", "alt": [], "ex": "Canadians love maple syrup." },
-        { "en": "cookie", "fr": "biscuit", "alt": [], "ex": "We have a lot of cookies." },
-        { "en": "how much", "fr": "combien (chose qu'on ne compte pas)", "alt": [], "ex": "How much milk do you want?" },
-        { "en": "how many", "fr": "combien (chose qu'on compte)", "alt": [], "ex": "How many eggs do you need?" },
-        { "en": "a lot of", "fr": "beaucoup de", "alt": ["lots of"], "ex": "My dad drinks a lot of water." },
-        { "en": "I'd like", "fr": "je voudrais", "alt": [], "ex": "I'd like some juice, please." }
+        {
+          "en": "bread",
+          "fr": "pain",
+          "alt": [],
+          "ex": "We don't have any bread."
+        },
+        {
+          "en": "milk",
+          "fr": "lait",
+          "alt": [],
+          "ex": "I'd like some milk, please."
+        },
+        {
+          "en": "water",
+          "fr": "eau",
+          "alt": [],
+          "ex": "How much water do you drink?"
+        },
+        {
+          "en": "juice",
+          "fr": "jus",
+          "alt": [],
+          "ex": "Would you like some juice?"
+        },
+        {
+          "en": "cheese",
+          "fr": "fromage",
+          "alt": [],
+          "ex": "My grandpa eats a lot of cheese."
+        },
+        {
+          "en": "egg",
+          "fr": "œuf",
+          "alt": [],
+          "ex": "I have an egg for breakfast."
+        },
+        {
+          "en": "apple",
+          "fr": "pomme",
+          "alt": [],
+          "ex": "She eats an apple every day."
+        },
+        {
+          "en": "vegetable",
+          "fr": "légume",
+          "alt": [],
+          "ex": "He doesn't like vegetables."
+        },
+        {
+          "en": "fries",
+          "fr": "frites",
+          "alt": [
+            "french fries"
+          ],
+          "ex": "I'd like some fries, please."
+        },
+        {
+          "en": "pancake",
+          "fr": "crêpe",
+          "alt": [],
+          "ex": "Liam eats six pancakes!"
+        },
+        {
+          "en": "maple syrup",
+          "fr": "sirop d'érable",
+          "alt": [],
+          "ex": "Canadians love maple syrup."
+        },
+        {
+          "en": "cookie",
+          "fr": "biscuit",
+          "alt": [],
+          "ex": "We have a lot of cookies."
+        },
+        {
+          "en": "how much",
+          "fr": "combien (chose qu'on ne compte pas)",
+          "alt": [],
+          "ex": "How much milk do you want?"
+        },
+        {
+          "en": "how many",
+          "fr": "combien (chose qu'on compte)",
+          "alt": [],
+          "ex": "How many eggs do you need?"
+        },
+        {
+          "en": "a lot of",
+          "fr": "beaucoup de",
+          "alt": [
+            "lots of"
+          ],
+          "ex": "My dad drinks a lot of water."
+        },
+        {
+          "en": "I'd like",
+          "fr": "je voudrais",
+          "alt": [],
+          "ex": "I'd like some juice, please."
+        }
       ],
       "sentences": [
-        { "en": "I'd like some water, please.", "fr": "Je voudrais de l'eau, s'il vous plaît.", "trap": ["any", "waters"], "alt": [] },
-        { "en": "We don't have any bread.", "fr": "Nous n'avons pas de pain.", "trap": ["some", "breads"], "alt": [] },
-        { "en": "How many eggs do you need?", "fr": "De combien d'œufs as-tu besoin ?", "trap": ["much", "does"], "alt": [] },
-        { "en": "How much milk does she want?", "fr": "Combien de lait veut-elle ?", "trap": ["many", "wants"], "alt": [] },
-        { "en": "My grandpa eats a lot of cheese.", "fr": "Mon grand-père mange beaucoup de fromage.", "trap": ["eat", "cheeses"], "alt": [] },
-        { "en": "Do you have any apples?", "fr": "As-tu des pommes ?", "trap": ["Does", "apple"], "alt": [] },
-        { "en": "Canadians love maple syrup.", "fr": "Les Canadiens adorent le sirop d'érable.", "trap": ["loves", "syrups"], "alt": [] },
-        { "en": "Zoé never drinks milk.", "fr": "Zoé ne boit jamais de lait.", "trap": ["drink", "doesn't"], "alt": [] },
-        { "en": "Would you like some juice?", "fr": "Voudrais-tu du jus ?", "trap": ["Do", "juices"], "alt": [] },
-        { "en": "He doesn't like vegetables.", "fr": "Il n'aime pas les légumes.", "trap": ["likes", "vegetable"], "alt": [] },
-        { "en": "We have a lot of cookies.", "fr": "Nous avons beaucoup de biscuits.", "trap": ["much", "cookie"], "alt": [] },
-        { "en": "Liam eats pancakes with maple syrup.", "fr": "Liam mange des crêpes avec du sirop d'érable.", "trap": ["eat", "syrups"], "alt": [] }
+        {
+          "en": "I'd like some water, please.",
+          "fr": "Je voudrais de l'eau, s'il vous plaît.",
+          "trap": [
+            "any",
+            "waters"
+          ],
+          "alt": []
+        },
+        {
+          "en": "We don't have any bread.",
+          "fr": "Nous n'avons pas de pain.",
+          "trap": [
+            "some",
+            "breads"
+          ],
+          "alt": []
+        },
+        {
+          "en": "How many eggs do you need?",
+          "fr": "De combien d'œufs as-tu besoin ?",
+          "trap": [
+            "much",
+            "does"
+          ],
+          "alt": []
+        },
+        {
+          "en": "How much milk does she want?",
+          "fr": "Combien de lait veut-elle ?",
+          "trap": [
+            "many",
+            "wants"
+          ],
+          "alt": []
+        },
+        {
+          "en": "My grandpa eats a lot of cheese.",
+          "fr": "Mon grand-père mange beaucoup de fromage.",
+          "trap": [
+            "eat",
+            "cheeses"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Do you have any apples?",
+          "fr": "As-tu des pommes ?",
+          "trap": [
+            "Does",
+            "apple"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Canadians love maple syrup.",
+          "fr": "Les Canadiens adorent le sirop d'érable.",
+          "trap": [
+            "loves",
+            "syrups"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Zoé never drinks milk.",
+          "fr": "Zoé ne boit jamais de lait.",
+          "trap": [
+            "drink",
+            "doesn't"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Would you like some juice?",
+          "fr": "Voudrais-tu du jus ?",
+          "trap": [
+            "Do",
+            "juices"
+          ],
+          "alt": []
+        },
+        {
+          "en": "He doesn't like vegetables.",
+          "fr": "Il n'aime pas les légumes.",
+          "trap": [
+            "likes",
+            "vegetable"
+          ],
+          "alt": []
+        },
+        {
+          "en": "We have a lot of cookies.",
+          "fr": "Nous avons beaucoup de biscuits.",
+          "trap": [
+            "much",
+            "cookie"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Liam eats pancakes with maple syrup.",
+          "fr": "Liam mange des crêpes avec du sirop d'érable.",
+          "trap": [
+            "eat",
+            "syrups"
+          ],
+          "alt": []
+        }
       ],
       "grammar": [
-        { "type": "mcq", "q": "How ___ water do you drink every day?", "choices": ["many", "much", "lot"], "answer": 1, "explain": "Water ne se compte pas : how much." },
-        { "type": "mcq", "q": "How ___ apples do you want?", "choices": ["many", "much", "any"], "answer": 0, "explain": "Apples se comptent (pluriel) : how many." },
-        { "type": "mcq", "q": "I don't have ___ cheese.", "choices": ["a", "some", "any"], "answer": 2, "explain": "Phrase négative : any. Et cheese ne se compte pas, donc jamais a." },
-        { "type": "mcq", "q": "Lequel de ces mots est indénombrable (jamais de a, jamais de -s) ?", "choices": ["egg", "apple", "cookie", "bread"], "answer": 3, "explain": "Bread ne se compte pas : on dit some bread, jamais a bread ni breads." },
-        { "type": "mcq", "q": "Comment dit-on « Je voudrais du jus » ?", "choices": ["I like some juice.", "I'd like of juice.", "I'd like some juice.", "I'd like juices."], "answer": 2, "explain": "Je voudrais = I'd like, et « du » = some." },
-        { "type": "mcq", "q": "We need ___ eggs for breakfast.", "choices": ["a lot of", "much", "a"], "answer": 0, "explain": "A lot of marche avec un pluriel. Much va avec ce qui ne se compte pas, et a n'est jamais suivi d'un pluriel." },
-        { "type": "fill", "q": "How ___ cookies do you want?", "hint": "combien", "answer": ["many"], "explain": "Cookies se comptent : how many." },
-        { "type": "fill", "q": "How ___ milk do we need?", "hint": "combien", "answer": ["much"], "explain": "Milk ne se compte pas : how much." },
-        { "type": "fill", "q": "She doesn't want ___ fries.", "hint": "des (phrase négative)", "answer": ["any"], "explain": "Dans une phrase négative, « des » = any." },
-        { "type": "fill", "q": "I'd like ___ bread, please.", "hint": "du (phrase affirmative)", "answer": ["some"], "explain": "Phrase affirmative : « du » = some." },
-        { "type": "fill", "q": "___ like some cheese, please.", "hint": "je voudrais", "answer": ["I'd"], "explain": "Je voudrais = I'd like (I would like)." },
-        { "type": "fill", "q": "My brother eats ___ apple every day.", "hint": "un / une", "answer": ["an"], "explain": "Apple commence par une voyelle : an apple." },
-        { "type": "error", "q": "I'd like a bread, please.", "wrong": 2, "fix": ["some", "the"], "explain": "Bread ne se compte pas : jamais a. On dit some bread." },
-        { "type": "error", "q": "How many milk do you want?", "wrong": 1, "fix": ["much"], "explain": "Milk ne se compte pas : how much." },
-        { "type": "error", "q": "We don't have some eggs.", "wrong": 3, "fix": ["any"], "explain": "Dans une phrase négative, on utilise any." },
-        { "type": "error", "q": "How much cookies do you have?", "wrong": 1, "fix": ["many"], "explain": "Cookies se comptent : how many." },
-        { "type": "error", "q": "I don't eat many cheese.", "wrong": 3, "fix": ["much"], "explain": "Cheese ne se compte pas : much, pas many." }
+        {
+          "type": "mcq",
+          "q": "How ___ water do you drink every day?",
+          "choices": [
+            "many",
+            "much",
+            "lot"
+          ],
+          "answer": 1,
+          "explain": "Water ne se compte pas : how much."
+        },
+        {
+          "type": "mcq",
+          "q": "How ___ apples do you want?",
+          "choices": [
+            "many",
+            "much",
+            "any"
+          ],
+          "answer": 0,
+          "explain": "Apples se comptent (pluriel) : how many."
+        },
+        {
+          "type": "mcq",
+          "q": "I don't have ___ cheese.",
+          "choices": [
+            "a",
+            "some",
+            "any"
+          ],
+          "answer": 2,
+          "explain": "Phrase négative : any. Et cheese ne se compte pas, donc jamais a."
+        },
+        {
+          "type": "mcq",
+          "q": "Lequel de ces mots est indénombrable (jamais de a, jamais de -s) ?",
+          "choices": [
+            "egg",
+            "apple",
+            "cookie",
+            "bread"
+          ],
+          "answer": 3,
+          "explain": "Bread ne se compte pas : on dit some bread, jamais a bread ni breads."
+        },
+        {
+          "type": "mcq",
+          "q": "Comment dit-on « Je voudrais du jus » ?",
+          "choices": [
+            "I like some juice.",
+            "I'd like of juice.",
+            "I'd like some juice.",
+            "I'd like juices."
+          ],
+          "answer": 2,
+          "explain": "Je voudrais = I'd like, et « du » = some."
+        },
+        {
+          "type": "mcq",
+          "q": "We need ___ eggs for breakfast.",
+          "choices": [
+            "a lot of",
+            "much",
+            "a"
+          ],
+          "answer": 0,
+          "explain": "A lot of marche avec un pluriel. Much va avec ce qui ne se compte pas, et a n'est jamais suivi d'un pluriel."
+        },
+        {
+          "type": "fill",
+          "q": "How ___ cookies do you want?",
+          "hint": "combien",
+          "answer": [
+            "many"
+          ],
+          "explain": "Cookies se comptent : how many."
+        },
+        {
+          "type": "fill",
+          "q": "How ___ milk do we need?",
+          "hint": "combien",
+          "answer": [
+            "much"
+          ],
+          "explain": "Milk ne se compte pas : how much."
+        },
+        {
+          "type": "fill",
+          "q": "She doesn't want ___ fries.",
+          "hint": "des (phrase négative)",
+          "answer": [
+            "any"
+          ],
+          "explain": "Dans une phrase négative, « des » = any."
+        },
+        {
+          "type": "fill",
+          "q": "I'd like ___ bread, please.",
+          "hint": "du (phrase affirmative)",
+          "answer": [
+            "some"
+          ],
+          "explain": "Phrase affirmative : « du » = some."
+        },
+        {
+          "type": "fill",
+          "q": "___ like some cheese, please.",
+          "hint": "je voudrais",
+          "answer": [
+            "I'd"
+          ],
+          "explain": "Je voudrais = I'd like (I would like)."
+        },
+        {
+          "type": "fill",
+          "q": "My brother eats ___ apple every day.",
+          "hint": "un / une",
+          "answer": [
+            "an"
+          ],
+          "explain": "Apple commence par une voyelle : an apple."
+        },
+        {
+          "type": "error",
+          "q": "I'd like a bread, please.",
+          "wrong": 2,
+          "fix": [
+            "some",
+            "the"
+          ],
+          "explain": "Bread ne se compte pas : jamais a. On dit some bread."
+        },
+        {
+          "type": "error",
+          "q": "How many milk do you want?",
+          "wrong": 1,
+          "fix": [
+            "much"
+          ],
+          "explain": "Milk ne se compte pas : how much."
+        },
+        {
+          "type": "error",
+          "q": "We don't have some eggs.",
+          "wrong": 3,
+          "fix": [
+            "any"
+          ],
+          "explain": "Dans une phrase négative, on utilise any."
+        },
+        {
+          "type": "error",
+          "q": "How much cookies do you have?",
+          "wrong": 1,
+          "fix": [
+            "many"
+          ],
+          "explain": "Cookies se comptent : how many."
+        },
+        {
+          "type": "error",
+          "q": "I don't eat many cheese.",
+          "wrong": 3,
+          "fix": [
+            "much"
+          ],
+          "explain": "Cheese ne se compte pas : much, pas many."
+        }
       ],
       "reading": {
         "title": "Sunday Breakfast",
         "text": "Every Sunday, Olivia and Liam have breakfast at their grandma's house. Grandma always makes a lot of pancakes with maple syrup. Liam loves pancakes. He eats six!\n\nOlivia doesn't like pancakes. She has an egg and some bread with cheese.\n\n“Would you like some juice?” Grandma asks.\n\n“No, thank you. I'd like some milk, please,” Olivia says.\n\n“Sorry, I don't have any milk today.”\n\nSo Olivia drinks water. And how many pancakes does Grandma eat? Zero! She never has breakfast.",
         "questions": [
-          { "q": "Quand Olivia et Liam déjeunent-ils chez leur grand-mère ?", "choices": ["Le samedi", "Le dimanche", "Tous les jours", "Le lundi"], "answer": 1 },
-          { "q": "Combien de crêpes Liam mange-t-il ?", "choices": ["Deux", "Zéro", "Six", "Dix"], "answer": 2 },
-          { "q": "Que mange Olivia ?", "choices": ["Des crêpes au sirop d'érable", "Des frites", "Une pomme et un biscuit", "Un œuf et du pain avec du fromage"], "answer": 3 },
-          { "q": "Pourquoi Olivia boit-elle de l'eau ?", "choices": ["Grand-maman n'a pas de lait", "Elle n'aime pas le jus", "Elle a très soif", "Le lait est pour Liam"], "answer": 0 },
-          { "q": "Combien de crêpes grand-maman mange-t-elle ?", "choices": ["Six", "Une", "Aucune", "Beaucoup"], "answer": 2 }
+          {
+            "q": "Quand Olivia et Liam déjeunent-ils chez leur grand-mère ?",
+            "choices": [
+              "Le samedi",
+              "Le dimanche",
+              "Tous les jours",
+              "Le lundi"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Combien de crêpes Liam mange-t-il ?",
+            "choices": [
+              "Deux",
+              "Zéro",
+              "Six",
+              "Dix"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Que mange Olivia ?",
+            "choices": [
+              "Des crêpes au sirop d'érable",
+              "Des frites",
+              "Une pomme et un biscuit",
+              "Un œuf et du pain avec du fromage"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Pourquoi Olivia boit-elle de l'eau ?",
+            "choices": [
+              "Grand-maman n'a pas de lait",
+              "Elle n'aime pas le jus",
+              "Elle a très soif",
+              "Le lait est pour Liam"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Combien de crêpes grand-maman mange-t-elle ?",
+            "choices": [
+              "Six",
+              "Une",
+              "Aucune",
+              "Beaucoup"
+            ],
+            "answer": 2
+          }
         ]
       }
     },
@@ -306,103 +1713,1231 @@
       "titleEn": "Home Sweet Home",
       "goal": "Décrire une maison avec there is / there are et dire où sont les objets.",
       "lesson": [
-        { "type": "p", "text": "Pour décrire ta maison, tu as besoin de **« il y a »**. En anglais : [[there is]] (un seul) et [[there are]] (plusieurs). Une pièce de la maison = [[a room]]." },
-        { "type": "table", "head": ["", "Singulier", "Pluriel"], "rows": [
-          ["Affirmatif", "[[There is a lamp.]]", "[[There are two lamps.]]"],
-          ["Négatif", "[[There isn't a fridge.]]", "[[There aren't any windows.]]"],
-          ["Question", "[[Is there a couch?]]", "[[Are there any chairs?]]"],
-          ["Réponse courte", "[[Yes, there is.]] / [[No, there isn't.]]", "[[Yes, there are.]] / [[No, there aren't.]]"]
-        ] },
-        { "type": "rule", "title": "Is ou are ?", "text": "Regarde le nom qui suit : un seul → [[there is]] (ou [[there's]]) ; plusieurs → [[there are]]. Pour compter : [[How many rooms are there?]] Et au négatif pluriel, on ajoute **any** : [[There aren't any stairs.]]" },
-        { "type": "table", "head": ["Anglais", "Français"], "rows": [
-          ["[[in]]", "dans"],
-          ["[[on]]", "sur"],
-          ["[[under]]", "sous"],
-          ["[[next to]]", "à côté de"],
-          ["[[between]]", "entre"],
-          ["[[behind]]", "derrière"],
-          ["[[in front of]]", "devant"],
-          ["[[above]]", "au-dessus de"]
-        ] },
-        { "type": "examples", "items": [
-          { "en": "There are two bedrooms in my house.", "fr": "Il y a deux chambres dans ma maison." },
-          { "en": "Is there a fridge in the kitchen?", "fr": "Y a-t-il un frigo dans la cuisine ?" },
-          { "en": "There aren't any windows in the bathroom.", "fr": "Il n'y a pas de fenêtres dans la salle de bain." },
-          { "en": "The lamp is between the bed and the window.", "fr": "La lampe est entre le lit et la fenêtre." },
-          { "en": "My cat sleeps under the couch.", "fr": "Mon chat dort sous le canapé." }
-        ] },
-        { "type": "tip", "text": "« Il y a » ne se traduit **jamais** par [[It has]] ni [[There have]] ! Et « devant » = [[in front of]], pas [[before]] : before, c'est pour le temps ([[before dinner]]). Enfin, « à côté **de** » = [[next to]], jamais [[next of]]." },
-        { "type": "fun", "text": "Le sais-tu ? Au Canada, on dit souvent [[washroom]] pour les toilettes dans un lieu public. À la maison, on parle plutôt de la [[bathroom]]." },
-        { "type": "dialogue", "title": "Visite chez Priya", "lines": [
-          { "who": "Priya", "en": "Welcome! This is the living room.", "fr": "Bienvenue ! Voici le salon." },
-          { "who": "Jaden", "en": "Wow, there is a big couch!", "fr": "Wow, il y a un gros canapé !" },
-          { "who": "Priya", "en": "Yes, and my bedroom is next to the kitchen.", "fr": "Oui, et ma chambre est à côté de la cuisine." },
-          { "who": "Jaden", "en": "Are there any cookies in the kitchen?", "fr": "Est-ce qu'il y a des biscuits dans la cuisine ?" },
-          { "who": "Priya", "en": "No, there aren't. Sorry!", "fr": "Non, il n'y en a pas. Désolée !" },
-          { "who": "Jaden", "en": "Where is your dog?", "fr": "Où est ton chien ?" },
-          { "who": "Priya", "en": "He's under my bed, as always!", "fr": "Il est sous mon lit, comme toujours !" }
-        ] }
+        {
+          "type": "p",
+          "text": "Pour décrire ta maison, tu as besoin de **« il y a »**. En anglais : [[there is]] (un seul) et [[there are]] (plusieurs). Une pièce de la maison = [[a room]]."
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "Singulier",
+            "Pluriel"
+          ],
+          "rows": [
+            [
+              "Affirmatif",
+              "[[There is a lamp.]]",
+              "[[There are two lamps.]]"
+            ],
+            [
+              "Négatif",
+              "[[There isn't a fridge.]]",
+              "[[There aren't any windows.]]"
+            ],
+            [
+              "Question",
+              "[[Is there a couch?]]",
+              "[[Are there any chairs?]]"
+            ],
+            [
+              "Réponse courte",
+              "[[Yes, there is.]] / [[No, there isn't.]]",
+              "[[Yes, there are.]] / [[No, there aren't.]]"
+            ]
+          ]
+        },
+        {
+          "type": "rule",
+          "title": "Is ou are ?",
+          "text": "Regarde le nom qui suit : un seul → [[there is]] (ou [[there's]]) ; plusieurs → [[there are]]. Pour compter : [[How many rooms are there?]] Et au négatif pluriel, on ajoute **any** : [[There aren't any stairs.]]"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Anglais",
+            "Français"
+          ],
+          "rows": [
+            [
+              "[[in]]",
+              "dans"
+            ],
+            [
+              "[[on]]",
+              "sur"
+            ],
+            [
+              "[[under]]",
+              "sous"
+            ],
+            [
+              "[[next to]]",
+              "à côté de"
+            ],
+            [
+              "[[between]]",
+              "entre"
+            ],
+            [
+              "[[behind]]",
+              "derrière"
+            ],
+            [
+              "[[in front of]]",
+              "devant"
+            ],
+            [
+              "[[above]]",
+              "au-dessus de"
+            ]
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "There are two bedrooms in my house.",
+              "fr": "Il y a deux chambres dans ma maison."
+            },
+            {
+              "en": "Is there a fridge in the kitchen?",
+              "fr": "Y a-t-il un frigo dans la cuisine ?"
+            },
+            {
+              "en": "There aren't any windows in the bathroom.",
+              "fr": "Il n'y a pas de fenêtres dans la salle de bain."
+            },
+            {
+              "en": "The lamp is between the bed and the window.",
+              "fr": "La lampe est entre le lit et la fenêtre."
+            },
+            {
+              "en": "My cat sleeps under the couch.",
+              "fr": "Mon chat dort sous le canapé."
+            }
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "« Il y a » ne se traduit **jamais** par [[It has]] ni [[There have]] ! Et « devant » = [[in front of]], pas [[before]] : before, c'est pour le temps ([[before dinner]]). Enfin, « à côté **de** » = [[next to]], jamais [[next of]]."
+        },
+        {
+          "type": "fun",
+          "text": "Le sais-tu ? Au Canada, on dit souvent [[washroom]] pour les toilettes dans un lieu public. À la maison, on parle plutôt de la [[bathroom]]."
+        },
+        {
+          "type": "dialogue",
+          "title": "Visite chez Priya",
+          "lines": [
+            {
+              "who": "Priya",
+              "en": "Welcome! This is the living room.",
+              "fr": "Bienvenue ! Voici le salon."
+            },
+            {
+              "who": "Jaden",
+              "en": "Wow, there is a big couch!",
+              "fr": "Wow, il y a un gros canapé !"
+            },
+            {
+              "who": "Priya",
+              "en": "Yes, and my bedroom is next to the kitchen.",
+              "fr": "Oui, et ma chambre est à côté de la cuisine."
+            },
+            {
+              "who": "Jaden",
+              "en": "Are there any cookies in the kitchen?",
+              "fr": "Est-ce qu'il y a des biscuits dans la cuisine ?"
+            },
+            {
+              "who": "Priya",
+              "en": "No, there aren't. Sorry!",
+              "fr": "Non, il n'y en a pas. Désolée !"
+            },
+            {
+              "who": "Jaden",
+              "en": "Where is your dog?",
+              "fr": "Où est ton chien ?"
+            },
+            {
+              "who": "Priya",
+              "en": "He's under my bed, as always!",
+              "fr": "Il est sous mon lit, comme toujours !"
+            }
+          ]
+        }
       ],
       "vocab": [
-        { "en": "kitchen", "fr": "cuisine", "alt": [], "ex": "Is there a fridge in the kitchen?" },
-        { "en": "bedroom", "fr": "chambre", "alt": [], "ex": "There are two bedrooms in my house." },
-        { "en": "bathroom", "fr": "salle de bain", "alt": ["washroom"], "ex": "The bathroom is next to my bedroom." },
-        { "en": "living room", "fr": "salon", "alt": [], "ex": "We watch TV in the living room." },
-        { "en": "couch", "fr": "canapé (divan)", "alt": ["sofa"], "ex": "My cat sleeps under the couch." },
-        { "en": "lamp", "fr": "lampe", "alt": [], "ex": "There is a lamp next to my bed." },
-        { "en": "fridge", "fr": "frigo (réfrigérateur)", "alt": ["refrigerator"], "ex": "There isn't any milk in the fridge." },
-        { "en": "window", "fr": "fenêtre", "alt": [], "ex": "There is a big window in the living room." },
-        { "en": "door", "fr": "porte", "alt": [], "ex": "My bag is behind the door." },
-        { "en": "stairs", "fr": "escalier", "alt": ["staircase"], "ex": "There aren't any stairs in my house." },
-        { "en": "under", "fr": "sous", "alt": [], "ex": "The dog is under the table." },
-        { "en": "next to", "fr": "à côté de", "alt": [], "ex": "The bathroom is next to the kitchen." },
-        { "en": "between", "fr": "entre", "alt": [], "ex": "The lamp is between the bed and the window." },
-        { "en": "behind", "fr": "derrière", "alt": [], "ex": "The cat is behind the door." },
-        { "en": "in front of", "fr": "devant", "alt": [], "ex": "Emma is in front of the house." },
-        { "en": "above", "fr": "au-dessus de", "alt": ["over"], "ex": "There is a lamp above the table." }
+        {
+          "en": "kitchen",
+          "fr": "cuisine",
+          "alt": [],
+          "ex": "Is there a fridge in the kitchen?"
+        },
+        {
+          "en": "bedroom",
+          "fr": "chambre",
+          "alt": [],
+          "ex": "There are two bedrooms in my house."
+        },
+        {
+          "en": "bathroom",
+          "fr": "salle de bain",
+          "alt": [
+            "washroom"
+          ],
+          "ex": "The bathroom is next to my bedroom."
+        },
+        {
+          "en": "living room",
+          "fr": "salon",
+          "alt": [],
+          "ex": "We watch TV in the living room."
+        },
+        {
+          "en": "couch",
+          "fr": "canapé (divan)",
+          "alt": [
+            "sofa"
+          ],
+          "ex": "My cat sleeps under the couch."
+        },
+        {
+          "en": "lamp",
+          "fr": "lampe",
+          "alt": [],
+          "ex": "There is a lamp next to my bed."
+        },
+        {
+          "en": "fridge",
+          "fr": "frigo (réfrigérateur)",
+          "alt": [
+            "refrigerator"
+          ],
+          "ex": "There isn't any milk in the fridge."
+        },
+        {
+          "en": "window",
+          "fr": "fenêtre",
+          "alt": [],
+          "ex": "There is a big window in the living room."
+        },
+        {
+          "en": "door",
+          "fr": "porte",
+          "alt": [],
+          "ex": "My bag is behind the door."
+        },
+        {
+          "en": "stairs",
+          "fr": "escalier",
+          "alt": [
+            "staircase"
+          ],
+          "ex": "There aren't any stairs in my house."
+        },
+        {
+          "en": "under",
+          "fr": "sous",
+          "alt": [],
+          "ex": "The dog is under the table."
+        },
+        {
+          "en": "next to",
+          "fr": "à côté de",
+          "alt": [],
+          "ex": "The bathroom is next to the kitchen."
+        },
+        {
+          "en": "between",
+          "fr": "entre",
+          "alt": [],
+          "ex": "The lamp is between the bed and the window."
+        },
+        {
+          "en": "behind",
+          "fr": "derrière",
+          "alt": [],
+          "ex": "The cat is behind the door."
+        },
+        {
+          "en": "in front of",
+          "fr": "devant",
+          "alt": [],
+          "ex": "Emma is in front of the house."
+        },
+        {
+          "en": "above",
+          "fr": "au-dessus de",
+          "alt": [
+            "over"
+          ],
+          "ex": "There is a lamp above the table."
+        }
       ],
       "sentences": [
-        { "en": "There are two bedrooms in my house.", "fr": "Il y a deux chambres dans ma maison.", "trap": ["is", "have"], "alt": ["In my house there are two bedrooms."] },
-        { "en": "Is there a fridge in the kitchen?", "fr": "Y a-t-il un frigo dans la cuisine ?", "trap": ["Are", "has"], "alt": [] },
-        { "en": "There aren't any windows in the bathroom.", "fr": "Il n'y a pas de fenêtres dans la salle de bain.", "trap": ["isn't", "some"], "alt": ["In the bathroom there aren't any windows."] },
-        { "en": "My cat sleeps under the couch.", "fr": "Mon chat dort sous le canapé.", "trap": ["sleep", "is"], "alt": [] },
-        { "en": "The lamp is between the bed and the window.", "fr": "La lampe est entre le lit et la fenêtre.", "trap": ["are", "of"], "alt": [] },
-        { "en": "How many rooms are there in your house?", "fr": "Combien de pièces y a-t-il dans ta maison ?", "trap": ["much", "is"], "alt": [] },
-        { "en": "The bathroom is next to my bedroom.", "fr": "La salle de bain est à côté de ma chambre.", "trap": ["of", "are"], "alt": [] },
-        { "en": "There is a big window above the couch.", "fr": "Il y a une grande fenêtre au-dessus du canapé.", "trap": ["are", "has"], "alt": ["Above the couch there is a big window."] },
-        { "en": "My bag is behind the door.", "fr": "Mon sac est derrière la porte.", "trap": ["of", "are"], "alt": [] },
-        { "en": "Emma is in front of the house.", "fr": "Emma est devant la maison.", "trap": ["before", "at"], "alt": [] },
-        { "en": "Are there any cookies in the kitchen?", "fr": "Y a-t-il des biscuits dans la cuisine ?", "trap": ["Is", "much"], "alt": [] },
-        { "en": "There isn't a lamp in my bedroom.", "fr": "Il n'y a pas de lampe dans ma chambre.", "trap": ["aren't", "It"], "alt": ["In my bedroom there isn't a lamp."] }
+        {
+          "en": "There are two bedrooms in my house.",
+          "fr": "Il y a deux chambres dans ma maison.",
+          "trap": [
+            "is",
+            "have"
+          ],
+          "alt": [
+            "In my house there are two bedrooms."
+          ]
+        },
+        {
+          "en": "Is there a fridge in the kitchen?",
+          "fr": "Y a-t-il un frigo dans la cuisine ?",
+          "trap": [
+            "Are",
+            "has"
+          ],
+          "alt": []
+        },
+        {
+          "en": "There aren't any windows in the bathroom.",
+          "fr": "Il n'y a pas de fenêtres dans la salle de bain.",
+          "trap": [
+            "isn't",
+            "some"
+          ],
+          "alt": [
+            "In the bathroom there aren't any windows."
+          ]
+        },
+        {
+          "en": "My cat sleeps under the couch.",
+          "fr": "Mon chat dort sous le canapé.",
+          "trap": [
+            "sleep",
+            "is"
+          ],
+          "alt": []
+        },
+        {
+          "en": "The lamp is between the bed and the window.",
+          "fr": "La lampe est entre le lit et la fenêtre.",
+          "trap": [
+            "are",
+            "of"
+          ],
+          "alt": []
+        },
+        {
+          "en": "How many rooms are there in your house?",
+          "fr": "Combien de pièces y a-t-il dans ta maison ?",
+          "trap": [
+            "much",
+            "is"
+          ],
+          "alt": []
+        },
+        {
+          "en": "The bathroom is next to my bedroom.",
+          "fr": "La salle de bain est à côté de ma chambre.",
+          "trap": [
+            "of",
+            "are"
+          ],
+          "alt": []
+        },
+        {
+          "en": "There is a big window above the couch.",
+          "fr": "Il y a une grande fenêtre au-dessus du canapé.",
+          "trap": [
+            "are",
+            "has"
+          ],
+          "alt": [
+            "Above the couch there is a big window."
+          ]
+        },
+        {
+          "en": "My bag is behind the door.",
+          "fr": "Mon sac est derrière la porte.",
+          "trap": [
+            "of",
+            "are"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Emma is in front of the house.",
+          "fr": "Emma est devant la maison.",
+          "trap": [
+            "before",
+            "at"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Are there any cookies in the kitchen?",
+          "fr": "Y a-t-il des biscuits dans la cuisine ?",
+          "trap": [
+            "Is",
+            "much"
+          ],
+          "alt": []
+        },
+        {
+          "en": "There isn't a lamp in my bedroom.",
+          "fr": "Il n'y a pas de lampe dans ma chambre.",
+          "trap": [
+            "aren't",
+            "It"
+          ],
+          "alt": [
+            "In my bedroom there isn't a lamp."
+          ]
+        }
       ],
       "grammar": [
-        { "type": "mcq", "q": "There ___ three windows in my bedroom.", "choices": ["is", "are", "have"], "answer": 1, "explain": "Three windows = plusieurs : there are." },
-        { "type": "mcq", "q": "___ a lamp in the living room?", "choices": ["Is there", "Are there", "There is"], "answer": 0, "explain": "Une seule lampe et c'est une question : Is there…?" },
-        { "type": "mcq", "q": "Comment dit-on « devant la maison » ?", "choices": ["before the house", "behind the house", "in front of the house"], "answer": 2, "explain": "Devant = in front of. Before sert pour le temps, et behind veut dire derrière." },
-        { "type": "mcq", "q": "There aren't ___ chairs in the kitchen.", "choices": ["any", "a", "some"], "answer": 0, "explain": "Négatif + pluriel : any." },
-        { "type": "mcq", "q": "Comment dit-on « entre la porte et la fenêtre » ?", "choices": ["next the door and the window", "between the door and the window", "above the door and the window"], "answer": 1, "explain": "Entre = between." },
-        { "type": "mcq", "q": "How many bedrooms ___ there in your house?", "choices": ["have", "is", "has", "are"], "answer": 3, "explain": "Bedrooms est au pluriel : How many bedrooms are there?" },
-        { "type": "fill", "q": "There ___ a big couch in the living room.", "hint": "il y a", "answer": ["is"], "explain": "A big couch = un seul : there is." },
-        { "type": "fill", "q": "___ there any eggs in the fridge?", "hint": "question", "answer": ["Are"], "explain": "Eggs est au pluriel : Are there any…?" },
-        { "type": "fill", "q": "There ___ any cookies in the kitchen.", "hint": "il n'y a pas de", "answer": ["aren't"], "explain": "Pluriel + négatif : there aren't any." },
-        { "type": "fill", "q": "The bathroom is ___ the kitchen and my bedroom.", "hint": "entre", "answer": ["between"], "explain": "Entre deux choses = between." },
-        { "type": "fill", "q": "My bag is ___ the door.", "hint": "derrière", "answer": ["behind"], "explain": "Derrière = behind." },
-        { "type": "fill", "q": "The lamp is ___ the table.", "hint": "au-dessus de", "answer": ["above", "over"], "explain": "Au-dessus de = above (ou over)." },
-        { "type": "error", "q": "There is two bathrooms in the house.", "wrong": 1, "fix": ["are"], "explain": "Two bathrooms = pluriel : there are." },
-        { "type": "error", "q": "Is there any chairs in the kitchen?", "wrong": 0, "fix": ["Are"], "explain": "Chairs est au pluriel : Are there any chairs?" },
-        { "type": "error", "q": "The cat is next of the couch.", "wrong": 4, "fix": ["to"], "explain": "À côté de = next to, jamais next of." },
-        { "type": "error", "q": "There aren't some windows in the bathroom.", "wrong": 2, "fix": ["any"], "explain": "Dans une phrase négative : any, pas some." },
-        { "type": "error", "q": "Are there a fridge in the kitchen?", "wrong": 0, "fix": ["Is"], "explain": "A fridge = un seul : Is there a fridge?" }
+        {
+          "type": "mcq",
+          "q": "There ___ three windows in my bedroom.",
+          "choices": [
+            "is",
+            "are",
+            "have"
+          ],
+          "answer": 1,
+          "explain": "Three windows = plusieurs : there are."
+        },
+        {
+          "type": "mcq",
+          "q": "___ a lamp in the living room?",
+          "choices": [
+            "Is there",
+            "Are there",
+            "There is"
+          ],
+          "answer": 0,
+          "explain": "Une seule lampe et c'est une question : Is there…?"
+        },
+        {
+          "type": "mcq",
+          "q": "Comment dit-on « devant la maison » ?",
+          "choices": [
+            "before the house",
+            "behind the house",
+            "in front of the house"
+          ],
+          "answer": 2,
+          "explain": "Devant = in front of. Before sert pour le temps, et behind veut dire derrière."
+        },
+        {
+          "type": "mcq",
+          "q": "There aren't ___ chairs in the kitchen.",
+          "choices": [
+            "any",
+            "a",
+            "some"
+          ],
+          "answer": 0,
+          "explain": "Négatif + pluriel : any."
+        },
+        {
+          "type": "mcq",
+          "q": "Comment dit-on « entre la porte et la fenêtre » ?",
+          "choices": [
+            "next the door and the window",
+            "between the door and the window",
+            "above the door and the window"
+          ],
+          "answer": 1,
+          "explain": "Entre = between."
+        },
+        {
+          "type": "mcq",
+          "q": "How many bedrooms ___ there in your house?",
+          "choices": [
+            "have",
+            "is",
+            "has",
+            "are"
+          ],
+          "answer": 3,
+          "explain": "Bedrooms est au pluriel : How many bedrooms are there?"
+        },
+        {
+          "type": "fill",
+          "q": "There ___ a big couch in the living room.",
+          "hint": "il y a",
+          "answer": [
+            "is"
+          ],
+          "explain": "A big couch = un seul : there is."
+        },
+        {
+          "type": "fill",
+          "q": "___ there any eggs in the fridge?",
+          "hint": "question",
+          "answer": [
+            "Are"
+          ],
+          "explain": "Eggs est au pluriel : Are there any…?"
+        },
+        {
+          "type": "fill",
+          "q": "There ___ any cookies in the kitchen.",
+          "hint": "il n'y a pas de",
+          "answer": [
+            "aren't"
+          ],
+          "explain": "Pluriel + négatif : there aren't any."
+        },
+        {
+          "type": "fill",
+          "q": "The bathroom is ___ the kitchen and my bedroom.",
+          "hint": "entre",
+          "answer": [
+            "between"
+          ],
+          "explain": "Entre deux choses = between."
+        },
+        {
+          "type": "fill",
+          "q": "My bag is ___ the door.",
+          "hint": "derrière",
+          "answer": [
+            "behind"
+          ],
+          "explain": "Derrière = behind."
+        },
+        {
+          "type": "fill",
+          "q": "The lamp is ___ the table.",
+          "hint": "au-dessus de",
+          "answer": [
+            "above",
+            "over"
+          ],
+          "explain": "Au-dessus de = above (ou over)."
+        },
+        {
+          "type": "error",
+          "q": "There is two bathrooms in the house.",
+          "wrong": 1,
+          "fix": [
+            "are"
+          ],
+          "explain": "Two bathrooms = pluriel : there are."
+        },
+        {
+          "type": "error",
+          "q": "Is there any chairs in the kitchen?",
+          "wrong": 0,
+          "fix": [
+            "Are"
+          ],
+          "explain": "Chairs est au pluriel : Are there any chairs?"
+        },
+        {
+          "type": "error",
+          "q": "The cat is next of the couch.",
+          "wrong": 4,
+          "fix": [
+            "to"
+          ],
+          "explain": "À côté de = next to, jamais next of."
+        },
+        {
+          "type": "error",
+          "q": "There aren't some windows in the bathroom.",
+          "wrong": 2,
+          "fix": [
+            "any"
+          ],
+          "explain": "Dans une phrase négative : any, pas some."
+        },
+        {
+          "type": "error",
+          "q": "Are there a fridge in the kitchen?",
+          "wrong": 0,
+          "fix": [
+            "Is"
+          ],
+          "explain": "A fridge = un seul : Is there a fridge?"
+        }
       ],
       "reading": {
         "title": "Priya's House",
         "text": "Priya lives in a small house in Gatineau. There are five rooms: a kitchen, a living room, a bathroom and two bedrooms. There aren't any stairs.\n\nIn the living room, there is a big couch in front of the window. There is a lamp next to the couch. Priya's bedroom is between the bathroom and the kitchen. In her bedroom, there is a bed, a desk and a chair. Above the bed, there is a photo of her dog, Max.\n\nAnd where is Max? He is under the bed, as always!",
         "questions": [
-          { "q": "Combien de chambres y a-t-il dans la maison ?", "choices": ["Une", "Deux", "Trois", "Cinq"], "answer": 1 },
-          { "q": "Où est le canapé ?", "choices": ["Devant la fenêtre", "Derrière la porte", "Dans la chambre", "À côté du lit"], "answer": 0 },
-          { "q": "Où est la chambre de Priya ?", "choices": ["À côté du salon", "Au-dessus de la cuisine", "Entre la salle de bain et la cuisine", "Derrière la maison"], "answer": 2 },
-          { "q": "Qu'est-ce qu'il y a au-dessus du lit ?", "choices": ["Une lampe", "Une fenêtre", "Un bureau", "Une photo du chien"], "answer": 3 },
-          { "q": "Où est Max ?", "choices": ["Sur le canapé", "Sous le lit", "Dans la cuisine", "Devant la maison"], "answer": 1 }
+          {
+            "q": "Combien de chambres y a-t-il dans la maison ?",
+            "choices": [
+              "Une",
+              "Deux",
+              "Trois",
+              "Cinq"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Où est le canapé ?",
+            "choices": [
+              "Devant la fenêtre",
+              "Derrière la porte",
+              "Dans la chambre",
+              "À côté du lit"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Où est la chambre de Priya ?",
+            "choices": [
+              "À côté du salon",
+              "Au-dessus de la cuisine",
+              "Entre la salle de bain et la cuisine",
+              "Derrière la maison"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Qu'est-ce qu'il y a au-dessus du lit ?",
+            "choices": [
+              "Une lampe",
+              "Une fenêtre",
+              "Un bureau",
+              "Une photo du chien"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Où est Max ?",
+            "choices": [
+              "Sur le canapé",
+              "Sous le lit",
+              "Dans la cuisine",
+              "Devant la maison"
+            ],
+            "answer": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "3.5",
+      "title": "Combien et lesquels",
+      "titleEn": "Too Many Cookies!",
+      "goal": "Parler de quantités avec all, every, each, both, none, a few, a little, too much et too many.",
+      "lesson": [
+        {
+          "type": "p",
+          "text": "Organiser une fête, c'est surtout compter : combien d'amis, combien de biscuits, combien de jus… et dire quand il y en a **trop** ! Dans cette station, tu apprends les petits mots qui disent « chaque », « tous », « les deux », « aucun », « quelques », « un peu » et « trop »."
+        },
+        {
+          "type": "rule",
+          "title": "Chaque et tous : every, each, all",
+          "text": "[[every]] et [[each]] = chaque. Ils prennent un nom au **singulier** et le verbe au singulier : [[Every child has a cookie.]] « Tous les jours » = [[every day]], jamais « every days ». [[each]] insiste sur chaque personne, une par une : [[Each student has a pencil.]] [[all]] = tous, toutes : nom au **pluriel** et verbe au pluriel : [[All my friends like pizza.]] [[All the students are hungry.]] Et « tout le monde » = [[everyone]], avec un verbe au **singulier** : [[Everyone is happy.]] Mais [[people]] (les gens) est pluriel : [[People love maple syrup.]]"
+        },
+        {
+          "type": "rule",
+          "title": "Les deux et aucun : both, none",
+          "text": "[[both]] = les deux (deux, pas plus !), avec un pluriel : [[Both my sisters are tall.]] Jamais « the both ». [[none]] = aucun, pas un seul. C'est la réponse courte parfaite : [[How many eggs are there? None!]] [[Are there any cookies? No, there are none.]]"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Mot",
+            "Avec…",
+            "Exemple"
+          ],
+          "rows": [
+            [
+              "[[every]] (chaque, tous les)",
+              "nom singulier",
+              "[[Every student has a book.]]"
+            ],
+            [
+              "[[each]] (chaque, un par un)",
+              "nom singulier",
+              "[[Each room has a window.]]"
+            ],
+            [
+              "[[all]] (tous, toutes)",
+              "nom pluriel ou indénombrable",
+              "[[All my friends like pizza.]]"
+            ],
+            [
+              "[[both]] (les deux)",
+              "deux choses, nom pluriel",
+              "[[Both my brothers love pancakes.]]"
+            ],
+            [
+              "[[none]] (aucun)",
+              "tout seul, comme réponse",
+              "[[How many cookies are there? None!]]"
+            ]
+          ]
+        },
+        {
+          "type": "rule",
+          "title": "Combien ? Beaucoup, quelques, un peu, trop",
+          "text": "Révision : [[many]] + pluriel ; [[much]] + indénombrable, surtout dans les questions et les négations : [[We don't have much milk.]] Dans une phrase positive, dis plutôt [[a lot of]] : [[We have a lot of milk.]] Nouveau : [[a few]] = quelques (dénombrable) : [[a few eggs]] ; [[a little]] = un peu de (indénombrable) : [[a little sugar]]. Et attention : [[a lot of]] = beaucoup (c'est neutre), mais [[too many]] / [[too much]] = **trop** (c'est un problème !) : [[too many cookies]], [[too much sugar]]."
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "Dénombrable (pluriel)",
+            "Indénombrable"
+          ],
+          "rows": [
+            [
+              "beaucoup de",
+              "[[many cookies]] / [[a lot of cookies]]",
+              "[[much milk]] / [[a lot of milk]]"
+            ],
+            [
+              "quelques / un peu de",
+              "[[a few eggs]]",
+              "[[a little sugar]]"
+            ],
+            [
+              "trop de",
+              "[[too many people]]",
+              "[[too much candy]]"
+            ],
+            [
+              "combien ?",
+              "[[How many?]]",
+              "[[How much?]]"
+            ]
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "Pièges de francophone ! 1) « Tous les jours » = [[every day]] : every + singulier, toujours. 2) « Tout le monde **est** là » : [[Everyone is]], jamais « everyone are ». Mais « les gens » = [[people]] + [[are]]. 3) « Trop de monde » = [[too many people]], jamais « too much people ». 4) Au Canada, [[candy]] (les bonbons) est indénombrable : [[too much candy]]. 5) [[a few]] pour ce qu'on compte, [[a little]] pour le reste : [[a few cookies]], [[a little juice]]."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "Every student has a pencil.",
+              "fr": "Chaque élève a un crayon."
+            },
+            {
+              "en": "Both my sisters are tall.",
+              "fr": "Mes deux sœurs sont grandes."
+            },
+            {
+              "en": "We have a few eggs and a little milk.",
+              "fr": "Nous avons quelques œufs et un peu de lait."
+            },
+            {
+              "en": "There are too many people in the kitchen!",
+              "fr": "Il y a trop de monde dans la cuisine !"
+            },
+            {
+              "en": "Everyone likes maple syrup.",
+              "fr": "Tout le monde aime le sirop d'érable."
+            },
+            {
+              "en": "How many apples are there? None!",
+              "fr": "Combien de pommes y a-t-il ? Aucune !"
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "title": "La fête d'Ethan",
+          "lines": [
+            {
+              "who": "Mom",
+              "en": "How many friends do you want at your party?",
+              "fr": "Combien d'amis veux-tu à ta fête ?"
+            },
+            {
+              "who": "Ethan",
+              "en": "All my friends! Twenty-two.",
+              "fr": "Tous mes amis ! Vingt-deux."
+            },
+            {
+              "who": "Mom",
+              "en": "Twenty-two? That's too many! Our living room is small.",
+              "fr": "Vingt-deux ? C'est trop ! Notre salon est petit."
+            },
+            {
+              "who": "Ethan",
+              "en": "OK, twelve. And we need a lot of candy.",
+              "fr": "D'accord, douze. Et on a besoin de beaucoup de bonbons."
+            },
+            {
+              "who": "Mom",
+              "en": "There's too much sugar in candy. We have a few apples.",
+              "fr": "Il y a trop de sucre dans les bonbons. Nous avons quelques pommes."
+            },
+            {
+              "who": "Ethan",
+              "en": "Apples? Mom! Every party has candy!",
+              "fr": "Des pommes ? Maman ! Chaque fête a des bonbons !"
+            },
+            {
+              "who": "Mom",
+              "en": "OK, a little candy. And both your grandmas want to come.",
+              "fr": "D'accord, un peu de bonbons. Et tes deux grands-mamans veulent venir."
+            },
+            {
+              "who": "Ethan",
+              "en": "Great! Grandma Rose's cookies are great!",
+              "fr": "Super ! Les biscuits de grand-maman Rose sont délicieux !"
+            }
+          ]
+        },
+        {
+          "type": "fun",
+          "text": "Le sais-tu ? [[none]] vient du vieil anglais « nān », formé de « ne » (pas) + « ān » (un). [[none]], c'est donc littéralement « pas un » : [[not one]] !"
+        }
+      ],
+      "vocab": [
+        {
+          "en": "all",
+          "fr": "tout, tous, toutes",
+          "alt": [],
+          "ex": "All my friends like pizza."
+        },
+        {
+          "en": "every",
+          "fr": "chaque, tous les (every day)",
+          "alt": [
+            "each"
+          ],
+          "ex": "I drink milk every day."
+        },
+        {
+          "en": "each",
+          "fr": "chaque (un par un), chacun",
+          "alt": [
+            "every"
+          ],
+          "ex": "Each room has a window."
+        },
+        {
+          "en": "much",
+          "fr": "beaucoup de (indénombrable, questions et négations)",
+          "alt": [],
+          "ex": "We don't have much milk."
+        },
+        {
+          "en": "many",
+          "fr": "beaucoup de (dénombrable, pluriel)",
+          "alt": [],
+          "ex": "Do you have many friends?"
+        },
+        {
+          "en": "a few",
+          "fr": "quelques (dénombrable)",
+          "alt": [],
+          "ex": "We have a few eggs."
+        },
+        {
+          "en": "a little",
+          "fr": "un peu de (indénombrable)",
+          "alt": [],
+          "ex": "I'd like a little milk, please."
+        },
+        {
+          "en": "too much",
+          "fr": "trop de (indénombrable)",
+          "alt": [],
+          "ex": "There is too much sugar in this juice."
+        },
+        {
+          "en": "too many",
+          "fr": "trop de (dénombrable)",
+          "alt": [],
+          "ex": "There are too many people here."
+        },
+        {
+          "en": "none",
+          "fr": "aucun, aucune (pas un seul)",
+          "alt": [],
+          "ex": "How many cookies are there? None!"
+        },
+        {
+          "en": "both",
+          "fr": "les deux (tous les deux)",
+          "alt": [],
+          "ex": "Both my brothers love pancakes."
+        },
+        {
+          "en": "everyone",
+          "fr": "tout le monde",
+          "alt": [
+            "everybody"
+          ],
+          "ex": "Everyone is in the kitchen."
+        },
+        {
+          "en": "people",
+          "fr": "gens (personnes)",
+          "alt": [],
+          "ex": "People love maple syrup."
+        },
+        {
+          "en": "sugar",
+          "fr": "sucre",
+          "alt": [],
+          "ex": "I'd like a little sugar, please."
+        },
+        {
+          "en": "candy",
+          "fr": "bonbons (friandises)",
+          "alt": [],
+          "ex": "My brother eats too much candy."
+        },
+        {
+          "en": "party",
+          "fr": "fête (party)",
+          "alt": [],
+          "ex": "Everyone likes my party."
+        }
+      ],
+      "sentences": [
+        {
+          "en": "Every student has a book.",
+          "fr": "Chaque élève a un livre.",
+          "trap": [
+            "students",
+            "have"
+          ],
+          "alt": []
+        },
+        {
+          "en": "All my friends like pizza.",
+          "fr": "Tous mes amis aiment la pizza.",
+          "trap": [
+            "likes",
+            "every"
+          ],
+          "alt": []
+        },
+        {
+          "en": "There are too many people in the kitchen.",
+          "fr": "Il y a trop de monde dans la cuisine.",
+          "trap": [
+            "much",
+            "is"
+          ],
+          "alt": []
+        },
+        {
+          "en": "There is too much sugar in this juice.",
+          "fr": "Il y a trop de sucre dans ce jus.",
+          "trap": [
+            "many",
+            "are"
+          ],
+          "alt": []
+        },
+        {
+          "en": "I'd like a little milk, please.",
+          "fr": "Je voudrais un peu de lait, s'il te plaît.",
+          "trap": [
+            "few",
+            "much"
+          ],
+          "alt": []
+        },
+        {
+          "en": "We have a few eggs.",
+          "fr": "Nous avons quelques œufs.",
+          "trap": [
+            "little",
+            "egg"
+          ],
+          "alt": []
+        },
+        {
+          "en": "How many cookies are there? None!",
+          "fr": "Combien de biscuits y a-t-il ? Aucun !",
+          "trap": [
+            "much",
+            "is"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Both my brothers love pancakes.",
+          "fr": "Mes deux frères adorent les crêpes.",
+          "trap": [
+            "loves",
+            "the"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Each room has a window.",
+          "fr": "Chaque pièce a une fenêtre.",
+          "trap": [
+            "rooms",
+            "have"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Everyone is in the living room.",
+          "fr": "Tout le monde est dans le salon.",
+          "trap": [
+            "are",
+            "all"
+          ],
+          "alt": []
+        },
+        {
+          "en": "My dad doesn't drink much water.",
+          "fr": "Mon père ne boit pas beaucoup d'eau.",
+          "trap": [
+            "many",
+            "drinks"
+          ],
+          "alt": []
+        },
+        {
+          "en": "I drink milk every day.",
+          "fr": "Je bois du lait tous les jours.",
+          "trap": [
+            "days",
+            "the"
+          ],
+          "alt": []
+        }
+      ],
+      "grammar": [
+        {
+          "type": "mcq",
+          "q": "___ student has a pencil.",
+          "choices": [
+            "All",
+            "Every",
+            "Many"
+          ],
+          "answer": 1,
+          "explain": "Student est au singulier : seul every (chaque) va avec un nom singulier. All et many veulent un pluriel."
+        },
+        {
+          "type": "mcq",
+          "q": "We don't have much milk, but we have ___ juice.",
+          "choices": [
+            "a few",
+            "a little",
+            "many"
+          ],
+          "answer": 1,
+          "explain": "Le jus ne se compte pas : un peu de = a little. A few et many vont avec un pluriel."
+        },
+        {
+          "type": "mcq",
+          "q": "Comment dit-on « Mes deux sœurs sont grandes » ?",
+          "choices": [
+            "Both my sisters are tall.",
+            "The both my sisters are tall.",
+            "My both sisters are tall."
+          ],
+          "answer": 0,
+          "explain": "Both se place devant my, sans the : Both my sisters."
+        },
+        {
+          "type": "mcq",
+          "q": "Everyone ___ pizza.",
+          "choices": [
+            "likes",
+            "like",
+            "are like"
+          ],
+          "answer": 0,
+          "explain": "Everyone (tout le monde) se conjugue au singulier, comme he : everyone likes."
+        },
+        {
+          "type": "mcq",
+          "q": "I'd like ___ cookies, please. Three or four.",
+          "choices": [
+            "a little",
+            "much",
+            "a few"
+          ],
+          "answer": 2,
+          "explain": "Les biscuits se comptent : quelques = a few."
+        },
+        {
+          "type": "mcq",
+          "q": "How many apples are there? — ___! Sorry, I love apples.",
+          "choices": [
+            "Nothing",
+            "None",
+            "No"
+          ],
+          "answer": 1,
+          "explain": "Pour répondre « aucune » à une question How many…?, on dit None."
+        },
+        {
+          "type": "fill",
+          "q": "Every child ___ a cookie.",
+          "hint": "have",
+          "answer": [
+            "has"
+          ],
+          "explain": "Every + nom singulier → verbe au singulier : every child has."
+        },
+        {
+          "type": "fill",
+          "q": "There's too ___ sugar in this juice.",
+          "hint": "trop (indénombrable)",
+          "answer": [
+            "much"
+          ],
+          "explain": "Le sucre ne se compte pas : too much sugar."
+        },
+        {
+          "type": "fill",
+          "q": "I have two cats. ___ cats are black.",
+          "hint": "les deux",
+          "answer": [
+            "Both"
+          ],
+          "explain": "Les deux = both, avec un nom au pluriel."
+        },
+        {
+          "type": "fill",
+          "q": "I'd like ___ maple syrup on my pancakes.",
+          "hint": "un peu de",
+          "answer": [
+            "a little"
+          ],
+          "explain": "Le sirop d'érable ne se compte pas : a little maple syrup."
+        },
+        {
+          "type": "fill",
+          "q": "There are ___ people in the kitchen: Ana, Liam and Mei.",
+          "hint": "quelques",
+          "answer": [
+            "a few"
+          ],
+          "explain": "People est un pluriel qu'on compte : quelques = a few."
+        },
+        {
+          "type": "fill",
+          "q": "I drink milk ___ day.",
+          "hint": "tous les (jours)",
+          "answer": [
+            "every"
+          ],
+          "explain": "Tous les jours = every day, avec day au singulier."
+        },
+        {
+          "type": "error",
+          "q": "Every student have a book.",
+          "wrong": 2,
+          "fix": [
+            "has"
+          ],
+          "explain": "Every + nom singulier : le verbe est au singulier, has."
+        },
+        {
+          "type": "error",
+          "q": "We don't have many milk.",
+          "wrong": 3,
+          "fix": [
+            "much"
+          ],
+          "explain": "Le lait ne se compte pas : much milk."
+        },
+        {
+          "type": "error",
+          "q": "There are too much people in the kitchen.",
+          "wrong": 3,
+          "fix": [
+            "many"
+          ],
+          "explain": "People est pluriel et se compte : too many people."
+        },
+        {
+          "type": "error",
+          "q": "I'd like a few water, please.",
+          "wrong": 3,
+          "fix": [
+            "little"
+          ],
+          "explain": "L'eau ne se compte pas : a little water."
+        },
+        {
+          "type": "error",
+          "q": "Everyone are happy today.",
+          "wrong": 1,
+          "fix": [
+            "is"
+          ],
+          "explain": "Everyone prend un verbe au singulier : Everyone is."
+        },
+        {
+          "type": "error",
+          "q": "My brother eats too many candy.",
+          "wrong": 4,
+          "fix": [
+            "much"
+          ],
+          "explain": "Au Canada, candy (les bonbons) est indénombrable : too much candy."
+        }
+      ],
+      "reading": {
+        "title": "The Class Party",
+        "text": "Every June, our class has a big party. Each student brings something to eat or drink.\n\nThis year, there is a problem. Ana and Félix both bring cookies. Priya brings cookies too, and Ethan brings a lot of candy. Maya brings a little juice, and that's all!\n\n“How many cookies are there?” asks our teacher.\n\n“Eighty!” says Ana.\n\nSo there are too many cookies, too much candy and not much juice. Everyone is thirsty!\n\nAt the end of the party, how many cookies are there? None! All the students are happy, but next year, every student wants to bring juice.",
+        "questions": [
+          {
+            "q": "Quand la classe fait-elle sa grande fête ?",
+            "choices": [
+              "Tous les vendredis",
+              "Chaque année, en juin",
+              "Une fois par mois",
+              "À Noël"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Que fait chaque élève ?",
+            "choices": [
+              "Il apporte quelque chose à manger ou à boire",
+              "Il apporte un cadeau pour l'enseignant",
+              "Il fait des biscuits en classe",
+              "Il paie pour la pizza"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Qu'apportent Ana et Félix ?",
+            "choices": [
+              "Du jus",
+              "Des bonbons",
+              "Des pommes",
+              "Des biscuits, tous les deux"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Pourquoi tout le monde a-t-il soif ?",
+            "choices": [
+              "Il fait trop chaud",
+              "Il n'y a pas beaucoup de jus",
+              "Les bonbons sont trop salés",
+              "Maya boit tout le jus"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Combien de biscuits reste-t-il à la fin de la fête ?",
+            "choices": [
+              "Quatre-vingts",
+              "Quelques-uns",
+              "Aucun",
+              "Beaucoup"
+            ],
+            "answer": 2
+          }
         ]
       }
     }

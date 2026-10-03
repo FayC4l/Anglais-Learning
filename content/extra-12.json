@@ -8,16 +8,56 @@
         "ipa": "",
         "explain": "Le français est une mitraillette : chaque syllabe a la même force. L'anglais, lui, est un tambour : les **mots pleins** (noms, verbes, adjectifs) frappent fort, et les **mots outils** ([[a]], [[the]], [[to]], [[that]], [[you]], [[were]], [[as]]) se glissent entre les coups, tout petits. Même dans une phrase très soutenue comme [[Should you need help]], on n'articule pas tout pareil : « cheud-yeu-NIID-HÈLP ». Le piège des francophones : croire que « formel » veut dire « chaque mot détaché »… et sonner comme un robot ! Truc : tape le rythme sur la table, un coup par mot plein seulement.",
         "words": [
-          { "en": "it's high time we left", "fr": "il est grand temps qu'on parte", "hint": "« its-HAÏ-TAÏM-wi-LÈFT » : [[we]] tout petit entre deux coups forts" },
-          { "en": "I'd rather you didn't", "fr": "je préférerais que tu ne le fasses pas", "hint": "« aïd-RA-theur-yeu-DI-deunt » : [[you]] devient « yeu »" },
-          { "en": "you'd better hurry", "fr": "tu ferais mieux de te dépêcher", "hint": "« youd-BÈ-deur-HEU-ri » : le d de [[you'd]] est minuscule, mais il est là" },
-          { "en": "as if it were a game", "fr": "comme si c'était un jeu", "hint": "« eu-ZI-fit-weur-eu-GUÉIM » : tout glisse jusqu'à [[game]]" },
-          { "en": "should you need help", "fr": "si jamais tu as besoin d'aide", "hint": "« cheud-yeu-NIID-HÈLP » : [[should]] et [[you]] restent légers" },
-          { "en": "were I to win", "fr": "si je devais gagner", "hint": "« weur-aï-teu-WIN » : seul [[win]] frappe fort" },
-          { "en": "provided that you're on time", "fr": "à condition que tu sois à l'heure", "hint": "« preu-VAÏ-did-theut-yeur-ân-TAÏM » : [[that]] devient « theut »" },
-          { "en": "in case it rains", "fr": "au cas où il pleuvrait", "hint": "« in-KÉIS-it-RÉINZ » : deux coups forts, [[in]] et [[it]] avalés" },
-          { "en": "we insist that he be there", "fr": "nous exigeons qu'il soit là", "hint": "« wi-in-SIST-theut-hi-BII-THÈR » : [[be]] reste fort, c'est le cœur de la demande" },
-          { "en": "as though nothing had happened", "fr": "comme si de rien n'était", "hint": "« eu-THÔ-NEU-thing-eud-HA-peund » : [[had]] devient un petit « eud »" }
+          {
+            "en": "it's high time we left",
+            "fr": "il est grand temps qu'on parte",
+            "hint": "« its-HAÏ-TAÏM-wi-LÈFT » : [[we]] tout petit entre deux coups forts"
+          },
+          {
+            "en": "I'd rather you didn't",
+            "fr": "je préférerais que tu ne le fasses pas",
+            "hint": "« aïd-RA-theur-yeu-DI-deunt » : [[you]] devient « yeu »"
+          },
+          {
+            "en": "you'd better hurry",
+            "fr": "tu ferais mieux de te dépêcher",
+            "hint": "« youd-BÈ-deur-HEU-ri » : le d de [[you'd]] est minuscule, mais il est là"
+          },
+          {
+            "en": "as if it were a game",
+            "fr": "comme si c'était un jeu",
+            "hint": "« eu-ZI-fit-weur-eu-GUÉIM » : tout glisse jusqu'à [[game]]"
+          },
+          {
+            "en": "should you need help",
+            "fr": "si jamais tu as besoin d'aide",
+            "hint": "« cheud-yeu-NIID-HÈLP » : [[should]] et [[you]] restent légers"
+          },
+          {
+            "en": "were I to win",
+            "fr": "si je devais gagner",
+            "hint": "« weur-aï-teu-WIN » : seul [[win]] frappe fort"
+          },
+          {
+            "en": "provided that you're on time",
+            "fr": "à condition que tu sois à l'heure",
+            "hint": "« preu-VAÏ-did-theut-yeur-ân-TAÏM » : [[that]] devient « theut »"
+          },
+          {
+            "en": "in case it rains",
+            "fr": "au cas où il pleuvrait",
+            "hint": "« in-KÉIS-it-RÉINZ » : deux coups forts, [[in]] et [[it]] avalés"
+          },
+          {
+            "en": "we insist that he be there",
+            "fr": "nous exigeons qu'il soit là",
+            "hint": "« wi-in-SIST-theut-hi-BII-THÈR » : [[be]] reste fort, c'est le cœur de la demande"
+          },
+          {
+            "en": "as though nothing had happened",
+            "fr": "comme si de rien n'était",
+            "hint": "« eu-THÔ-NEU-thing-eud-HA-peund » : [[had]] devient un petit « eud »"
+          }
         ],
         "pairs": [],
         "practice": [
@@ -46,15 +86,51 @@
         "ipa": "",
         "explain": "En anglais, la mélodie peut dire le contraire des mots ! Une voix qui **descend** franchement est sincère ([[Fine.]] = ça va vraiment) ; une voix qui **descend puis remonte** (le « ton fourche ») sous-entend un « mais… » : [[Fine…]] = d'accord, mais je ne suis pas content. Et une voix toute **plate**, presque ennuyée, sonne sarcastique : [[Great.]] = c'est tout sauf génial. Soyons honnêtes : la voix de synthèse de l'appli ne sait pas jouer toutes ces émotions, elle lit presque tout de façon neutre ; elle te sert pour les sons, mais c'est **toi** l'acteur pour la mélodie, en suivant les indices. Le piège des francophones : garder la mélodie française partout, qui monte souvent à la fin… et avoir l'air de poser une question quand tu veux être poli !",
         "words": [
-          { "en": "fine", "fr": "bien, d'accord", "hint": "« FAÏN » ↘ (descend) = ça va vraiment ; ↘↗ (descend puis remonte) = bon… d'accord, mais j'ai un reproche" },
-          { "en": "really", "fr": "vraiment", "hint": "« RII-li » ↗ (monte) = « Ah oui ? » surprise et intérêt ; ↘ (descend, lent) = je ne suis pas impressionné" },
-          { "en": "great", "fr": "génial, super", "hint": "« GRÉIT » ↘ qui part de haut = vrai enthousiasme ; tout plat et bas = sarcasme" },
-          { "en": "sure", "fr": "bien sûr, d'accord", "hint": "« CHOUR » ↘ = oui, sans problème ; ↘↗ allongé = oui… mais j'en doute" },
-          { "en": "whatever", "fr": "peu importe, n'importe quoi", "hint": "« weu-DÈ-veur » ↘ sec = très impoli, ça veut dire « je m'en fiche » ; à éviter avec les adultes !" },
-          { "en": "sorry", "fr": "désolé ; pardon ?", "hint": "« SÔ-ri » ↘ = je m'excuse ; ↗ (monte) = « Pardon ? Je n'ai pas compris »" },
-          { "en": "thanks a lot", "fr": "merci beaucoup", "hint": "« THANK-seu-LÂT » ↘ chaleureux = sincère ; plat et lent = « merci pour rien » (sarcasme)" },
-          { "en": "oh", "fr": "oh, ah", "hint": "« Ô » ↘ long = déception ; ↗ court = surprise ; ↘↗ = « ah, je vois… »" },
-          { "en": "that's nice", "fr": "c'est gentil, c'est bien", "hint": "« thats-NAÏS » ↘ chaleureux = sincère ; plat = poli, mais pas intéressé" }
+          {
+            "en": "fine",
+            "fr": "bien, d'accord",
+            "hint": "« FAÏN » ↘ (descend) = ça va vraiment ; ↘↗ (descend puis remonte) = bon… d'accord, mais j'ai un reproche"
+          },
+          {
+            "en": "really",
+            "fr": "vraiment",
+            "hint": "« RII-li » ↗ (monte) = « Ah oui ? » surprise et intérêt ; ↘ (descend, lent) = je ne suis pas impressionné"
+          },
+          {
+            "en": "great",
+            "fr": "génial, super",
+            "hint": "« GRÉIT » ↘ qui part de haut = vrai enthousiasme ; tout plat et bas = sarcasme"
+          },
+          {
+            "en": "sure",
+            "fr": "bien sûr, d'accord",
+            "hint": "« CHOUR » ↘ = oui, sans problème ; ↘↗ allongé = oui… mais j'en doute"
+          },
+          {
+            "en": "whatever",
+            "fr": "peu importe, n'importe quoi",
+            "hint": "« weu-DÈ-veur » ↘ sec = très impoli, ça veut dire « je m'en fiche » ; à éviter avec les adultes !"
+          },
+          {
+            "en": "sorry",
+            "fr": "désolé ; pardon ?",
+            "hint": "« SÔ-ri » ↘ = je m'excuse ; ↗ (monte) = « Pardon ? Je n'ai pas compris »"
+          },
+          {
+            "en": "thanks a lot",
+            "fr": "merci beaucoup",
+            "hint": "« THANK-seu-LÂT » ↘ chaleureux = sincère ; plat et lent = « merci pour rien » (sarcasme)"
+          },
+          {
+            "en": "oh",
+            "fr": "oh, ah",
+            "hint": "« Ô » ↘ long = déception ; ↗ court = surprise ; ↘↗ = « ah, je vois… »"
+          },
+          {
+            "en": "that's nice",
+            "fr": "c'est gentil, c'est bien",
+            "hint": "« thats-NAÏS » ↘ chaleureux = sincère ; plat = poli, mais pas intéressé"
+          }
         ],
         "pairs": [],
         "practice": [
@@ -82,16 +158,56 @@
         "ipa": "",
         "explain": "Dans un verbe à trois mots comme [[come up with]], c'est la **particule du milieu** qui prend le coup le plus fort : « keu-MEUP-with ». La préposition finale ([[with]], [[to]], [[of]], [[for]], [[on]]) reste petite et se colle au complément. Et comme dans les phrasal verbs simples, tout s'enchaîne : la consonne de la fin glisse sur la voyelle suivante, [[run out of]] sonne « reu-NAOU-deuv ». Le piège des francophones : couper entre chaque mot, ou appuyer sur le dernier comme en français. Truc : imagine que la particule est la vedette, et les deux autres ses gardes du corps !",
         "words": [
-          { "en": "come up with", "fr": "trouver (une idée), inventer", "hint": "« keu-MEUP-with » : le m glisse sur [[up]], qui prend l'accent" },
-          { "en": "put up with", "fr": "endurer, supporter", "hint": "« pou-DEUP-with » : le t devient un « d » léger devant [[up]]" },
-          { "en": "look forward to", "fr": "avoir hâte de (+ -ing)", "hint": "« louk-FOR-weurd-teu » : accent sur « for », [[to]] tout petit" },
-          { "en": "get away with", "fr": "s'en tirer, s'en sortir sans punition", "hint": "« guè-deu-OUÉI-with » : accent sur « wéi »" },
-          { "en": "catch up with", "fr": "rattraper (quelqu'un)", "hint": "« ka-TCHEUP-with » : le « tch » glisse sur [[up]]" },
-          { "en": "run out of", "fr": "manquer de, ne plus avoir de", "hint": "« reu-NAOU-deuv » : le n glisse sur [[out]], le t devient « d »" },
-          { "en": "look up to", "fr": "admirer (quelqu'un)", "hint": "« lou-KEUP-teu » : accent sur [[up]]" },
-          { "en": "cut down on", "fr": "réduire, consommer moins de", "hint": "« keut-DAOU-nân » : accent sur [[down]], le n glisse sur [[on]]" },
-          { "en": "make up for", "fr": "compenser, se rattraper", "hint": "« méi-KEUP-for » : le k glisse sur [[up]]" },
-          { "en": "fall out with", "fr": "se brouiller avec", "hint": "« fâ-LAOUT-with » : le l glisse sur [[out]]" }
+          {
+            "en": "come up with",
+            "fr": "trouver (une idée), inventer",
+            "hint": "« keu-MEUP-with » : le m glisse sur [[up]], qui prend l'accent"
+          },
+          {
+            "en": "put up with",
+            "fr": "endurer, supporter",
+            "hint": "« pou-DEUP-with » : le t devient un « d » léger devant [[up]]"
+          },
+          {
+            "en": "look forward to",
+            "fr": "avoir hâte de (+ -ing)",
+            "hint": "« louk-FOR-weurd-teu » : accent sur « for », [[to]] tout petit"
+          },
+          {
+            "en": "get away with",
+            "fr": "s'en tirer, s'en sortir sans punition",
+            "hint": "« guè-deu-OUÉI-with » : accent sur « wéi »"
+          },
+          {
+            "en": "catch up with",
+            "fr": "rattraper (quelqu'un)",
+            "hint": "« ka-TCHEUP-with » : le « tch » glisse sur [[up]]"
+          },
+          {
+            "en": "run out of",
+            "fr": "manquer de, ne plus avoir de",
+            "hint": "« reu-NAOU-deuv » : le n glisse sur [[out]], le t devient « d »"
+          },
+          {
+            "en": "look up to",
+            "fr": "admirer (quelqu'un)",
+            "hint": "« lou-KEUP-teu » : accent sur [[up]]"
+          },
+          {
+            "en": "cut down on",
+            "fr": "réduire, consommer moins de",
+            "hint": "« keut-DAOU-nân » : accent sur [[down]], le n glisse sur [[on]]"
+          },
+          {
+            "en": "make up for",
+            "fr": "compenser, se rattraper",
+            "hint": "« méi-KEUP-for » : le k glisse sur [[up]]"
+          },
+          {
+            "en": "fall out with",
+            "fr": "se brouiller avec",
+            "hint": "« fâ-LAOUT-with » : le l glisse sur [[out]]"
+          }
         ],
         "pairs": [],
         "practice": [
@@ -120,18 +236,75 @@
         "ipa": "",
         "explain": "L'anglais est plein de lettres fantômes : le k devant n ([[knife]], [[knight]]), le b après m ou devant t ([[comb]], [[doubt]]), le t de [[listen]], le s de [[island]], le h de [[hour]] et [[honest]], le p de [[receipt]], et même le d de [[Wednesday]] ! Et « ough » est le roi du casse-tête : « ô » dans [[though]], « ou » dans [[through]], « euf » dans [[tough]], « â » dans [[thought]], « âf » dans [[cough]]. Il n'y a pas de règle magique : c'est l'oreille qui apprend, alors répète chaque mot jusqu'à ce qu'il sonne naturel. Bonne nouvelle : [[knight]] et [[night]], [[hour]] et [[our]] se prononcent exactement pareil, deux mots pour le prix d'un !",
         "words": [
-          { "en": "knight", "fr": "un chevalier", "hint": "« NAÏT » : le k est muet ; identique à [[night]] (la nuit)" },
-          { "en": "island", "fr": "une île", "hint": "« AÏ-leund » : le s est muet, accent au début" },
-          { "en": "Wednesday", "fr": "mercredi", "hint": "« OUÈNZ-déi » : deux syllabes seulement, le d est muet" },
-          { "en": "doubt", "fr": "un doute, douter", "hint": "« DAOUT » : le b est muet" },
-          { "en": "hour", "fr": "une heure", "hint": "« AOUR » : le h est muet ; identique à [[our]] (notre)" },
-          { "en": "receipt", "fr": "un reçu, une facture", "hint": "« ri-SIIT » : le p est muet, accent à la fin" },
-          { "en": "though", "fr": "pourtant, quand même", "hint": "« thô » : th doux, « ough » = « ô »" },
-          { "en": "through", "fr": "à travers", "hint": "« throu » : th soufflé, « ough » = « ou »" },
-          { "en": "tough", "fr": "dur, difficile, coriace", "hint": "« TEUF » : « ough » = « euf »" },
-          { "en": "thought", "fr": "une pensée ; pensé (passé de think)", "hint": "« THÂT » : th soufflé, « ough » = « â », gh muet" }
+          {
+            "en": "knight",
+            "fr": "un chevalier",
+            "hint": "« NAÏT » : le k est muet ; identique à [[night]] (la nuit)"
+          },
+          {
+            "en": "island",
+            "fr": "une île",
+            "hint": "« AÏ-leund » : le s est muet, accent au début"
+          },
+          {
+            "en": "Wednesday",
+            "fr": "mercredi",
+            "hint": "« OUÈNZ-déi » : deux syllabes seulement, le d est muet"
+          },
+          {
+            "en": "doubt",
+            "fr": "un doute, douter",
+            "hint": "« DAOUT » : le b est muet"
+          },
+          {
+            "en": "hour",
+            "fr": "une heure",
+            "hint": "« AOUR » : le h est muet ; identique à [[our]] (notre)"
+          },
+          {
+            "en": "receipt",
+            "fr": "un reçu, une facture",
+            "hint": "« ri-SIIT » : le p est muet, accent à la fin"
+          },
+          {
+            "en": "though",
+            "fr": "pourtant, quand même",
+            "hint": "« thô » : th doux, « ough » = « ô »"
+          },
+          {
+            "en": "through",
+            "fr": "à travers",
+            "hint": "« throu » : th soufflé, « ough » = « ou »"
+          },
+          {
+            "en": "tough",
+            "fr": "dur, difficile, coriace",
+            "hint": "« TEUF » : « ough » = « euf »"
+          },
+          {
+            "en": "thought",
+            "fr": "une pensée ; pensé (passé de think)",
+            "hint": "« THÂT » : th soufflé, « ough » = « â », gh muet"
+          }
         ],
-        "pairs": [["comb", "come"], ["listen", "lesson"], ["island", "Iceland"], ["cough", "cuff"]],
+        "pairs": [
+          [
+            "comb",
+            "come"
+          ],
+          [
+            "listen",
+            "lesson"
+          ],
+          [
+            "island",
+            "Iceland"
+          ],
+          [
+            "cough",
+            "cuff"
+          ]
+        ],
         "practice": [
           "Honestly, I doubt the knight can reach the island in an hour.",
           "Although the walk through the snow was tough, I thought it was fun.",
@@ -148,6 +321,79 @@
           "J'ai dit [[Wednesday]] en deux syllabes : « OUÈNZ-déi »",
           "J'ai bien distingué [[though]], [[through]], [[tough]] et [[thought]]",
           "J'ai parlé comme un vrai animateur : souriant, avec des pauses et des mots forts"
+        ]
+      }
+    },
+    {
+      "unit": "12.5",
+      "pron": {
+        "focus": "L'auxiliaire qui reste seul est fort",
+        "ipa": "",
+        "explain": "Dans une phrase normale, les petits mots comme [[can]], [[do]] ou [[to]] sont faibles : « keun », « deu », « teu ». Mais quand l'ellipse les laisse **seuls en fin de phrase**, ils reprennent leur son **plein** : [[but my sister can]] se dit « KANN », jamais « keun » ; [[I'd love to]] finit par un « tou » bien net. Dans [[I hope so]] et [[I'm afraid not]], l'accent tombe sur le verbe, puis [[so]] ou [[not]] se pose clairement. Et dans [[the blue one]], c'est la couleur qu'on accentue : [[one]] reste léger.",
+        "words": [
+          {
+            "en": "I hope so",
+            "fr": "je l'espère",
+            "hint": "« aï-HÔP-sô » : accent sur HOPE, so bien rond"
+          },
+          {
+            "en": "I'm afraid not",
+            "fr": "malheureusement non",
+            "hint": "« aïm-eu-FRÉÏD-NOT » : not bien net à la fin"
+          },
+          {
+            "en": "I don't think so",
+            "fr": "je ne crois pas",
+            "hint": "« aï-DÔNT-think-sô » : accent sur DON'T"
+          },
+          {
+            "en": "I suppose so",
+            "fr": "je suppose que oui",
+            "hint": "« aï-seu-PÔZ-sô » : accent sur POSE"
+          },
+          {
+            "en": "but my sister can",
+            "fr": "mais ma sœur, oui",
+            "hint": "« beut-maï-SISS-teur-KANN » : can final est FORT"
+          },
+          {
+            "en": "and she did",
+            "fr": "et elle l'a fait",
+            "hint": "« eunn-chi-DID » : did bien appuyé"
+          },
+          {
+            "en": "if you want to",
+            "fr": "si tu veux",
+            "hint": "« if-iou-WANT-tou » : le to final garde un « ou » plein"
+          },
+          {
+            "en": "please do so",
+            "fr": "fais-le, je t'en prie",
+            "hint": "« pliiz-DOU-sô » : do est fort"
+          },
+          {
+            "en": "the blue one",
+            "fr": "le bleu",
+            "hint": "« dzeu-BLOU-ouann » : accent sur la couleur, one léger"
+          }
+        ],
+        "pairs": [],
+        "practice": [
+          "I can't dance, but my brother can.",
+          "Will it snow tomorrow? I'm afraid so.",
+          "I don't want the red one, I want the blue one."
+        ]
+      },
+      "mission": {
+        "type": "oral",
+        "prompt": "Ton oncle t'appelle : il veut savoir si tu viens au chalet en fin de semaine, s'il va neiger et si tu peux apporter ses vieilles raquettes. Réponds-lui (cinq à huit phrases) sans répéter les verbes : so / not, un auxiliaire seul, one / ones, do so, et au moins deux collocations de la leçon.",
+        "model": "Am I coming to the cottage this weekend? I hope so! Will it snow? I'm afraid not, but bear in mind that the weather can change quickly up north. Your old snowshoes are broken, so I'll bring my new ones instead. Mom can't come, but Dad can. He wants to drive, and if the roads are icy, he'll do so very carefully. Don't worry, we'll take into account that you go to bed early!",
+        "checklist": [
+          "J'ai répondu avec [[I hope so]] ou [[I'm afraid not]], sans [[I hope yes]] ni [[I think no]]",
+          "J'ai repris un auxiliaire seul ([[Dad can]]) au lieu de répéter le verbe, et je l'ai prononcé fort",
+          "J'ai remplacé un nom par [[one]] ou [[ones]]",
+          "J'ai utilisé [[do so]] ou une ellipse avec [[to]]",
+          "J'ai placé au moins deux collocations ([[bear in mind]], [[take into account]]…)"
         ]
       }
     }

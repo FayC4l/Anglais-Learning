@@ -14,6 +14,7 @@ import { bossScreen } from "./screens/boss.js";
 import { reviewScreen } from "./screens/review.js";
 import { profileScreen } from "./screens/profile.js";
 import { gameScreen } from "./games/shell.js";
+import { dashboardScreen } from "./screens/dashboard.js";
 
 register("onboarding", onboarding);
 register("who", whoScreen);
@@ -26,6 +27,7 @@ register("boss", bossScreen);
 register("review", reviewScreen);
 register("profile", profileScreen);
 register("game", gameScreen);
+register("dashboard", dashboardScreen);
 
 // Sounds and speech need one user gesture before they can play.
 const unlock = () => {

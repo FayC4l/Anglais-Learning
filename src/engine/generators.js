@@ -1,9 +1,8 @@
 // Procedural question generators. Each question has a stable ref "gen:<id>|<params>" and can be rebuilt
 // from it (mistakes notebook, spaced repetition). Pure: no DOM.
 import { makeRng } from "./rng.js";
-import { VERBS, verb, forms, conjugate, contract, pastForms, ppForms, personOf } from "./verbs.js";
+import { VERBS, verb, forms, conjugate, contract, pastForms, ppForms, personOf, regularPast } from "./verbs.js";
 import { ADJECTIVES, COMPARATIVE, SUPERLATIVE } from "./adjectives.js";
-import { regularPast } from "./spelling.js";
 
 // ---------- Data ----------
 
@@ -84,7 +83,7 @@ const STATES = ["tired", "hungry", "happy", "late", "ready", "cold", "bored", "a
 const FEATURES = ["blue eyes", "curly hair", "long hair", "a big smile", "freckles", "short hair", "brown eyes", "a beard"];
 
 const DURATIONS = ["ten years", "three months", "two weeks", "a long time", "five minutes", "ages", "two hours"];
-const POINTS = ["Monday", "last summer", "January", "nine o'clock", "the beginning of the year", "Christmas", "I was a kid"];
+const POINTS = ["Monday", "last summer", "January", "the spring", "the beginning of the year", "Christmas", "I was a kid"];
 const FOR_SINCE = [
   ["I have known Léa ___ {X}.", "known"], ["We have lived in this apartment ___ {X}.", "lived"], ["She has worked at the hospital ___ {X}.", "worked"],
   ["They have been friends ___ {X}.", "been"], ["Maurice has waited for the bus ___ {X}.", "waited"], ["My dad has played the guitar ___ {X}.", "played"],

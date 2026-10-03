@@ -1,0 +1,86 @@
+{
+  "level": 6,
+  "taunts": {
+    "phase2": [
+      "Tiens, tiens… Tu as marqué un point. Have you ever been this lucky before? Je ne crois pas !",
+      "Hmm. Tu progresses. You're better than I thought… mais toujours pas as good as me !",
+      "Je n'ai jamais, never, au grand jamais raté une question. Et ce n'est pas aujourd'hui que je vais commencer !"
+    ],
+    "phase3": [
+      "ASSEZ ! J'ai corrigé des millions de copies, and I have NEVER lost my temper… jusqu'à aujourd'hui !",
+      "Tu vas voir ce que tu vas voir ! I'm going to give you the hardest questions in the world !",
+      "Je bouillonne depuis cinq minutes ! I have been angry FOR five minutes, pas SINCE five minutes, note-le bien !"
+    ],
+    "lose": [
+      "Échec ! Mais tu as essayé, isn't it ? … Pardon : haven't you ? Tu vois, même moi, je suis presque parfait.",
+      "Reviens quand tu auras révisé. When you HAVE revised, pas « when you will have revised » !",
+      "Tu as perdu ? So have many others. Allez, au tableau, et cent lignes de present perfect !"
+    ]
+  },
+  "questions": [
+    { "unit": "6.1", "type": "mcq", "q": "Look at those black clouds! It ___ rain any minute.", "choices": ["going to", "is going to", "rains", "is raining"], "answer": 1, "explain": "On VOIT la preuve (les nuages noirs) : be going to pour une prédiction évidente." },
+    { "unit": "6.1", "type": "mcq", "q": "Oh no, I forgot my wallet! — Don't worry, I ___ for your lunch.", "choices": ["pay", "will pay", "am paying", "paid"], "answer": 1, "explain": "Décision prise sur le coup, pour rendre service : will + base verbale." },
+    { "unit": "6.1", "type": "mcq", "q": "Comment dit-on « Quand je serai à la retraite, je vivrai au bord d'un lac » ?", "choices": ["When I will retire, I will live by a lake.", "When I retire, I live by a lake.", "When I retire, I will live by a lake.", "When I will retire, I live by a lake."], "answer": 2, "explain": "Après when, présent (When I retire) ; dans l'autre partie, le futur avec will." },
+    { "unit": "6.1", "type": "mcq", "q": "We ___ my cousins at the airport at six tomorrow. The tickets are booked.", "choices": ["are meeting", "meeting", "meets", "have met"], "answer": 0, "explain": "Rendez-vous fixé (heure, billets) : présent continu, we are meeting." },
+    { "unit": "6.1", "type": "fill", "q": "I promise I ___ eat the last cookie again.", "hint": "will, au négatif", "answer": ["won't"], "explain": "Promesse au négatif : won't (= will not) + base verbale." },
+    { "unit": "6.1", "type": "fill", "q": "Call me when you ___ at the cottage.", "hint": "arrive, sans will !", "answer": ["arrive"], "explain": "Après when, on parle du futur avec le présent : when you arrive, jamais when you will arrive." },
+    { "unit": "6.1", "type": "fill", "q": "Grandma has bought new skis: she ___ learn to ski at seventy!", "hint": "be going to", "answer": ["is going to"], "explain": "Projet déjà décidé (elle a acheté les skis) : be going to + base verbale." },
+    { "unit": "6.1", "type": "fill", "q": "Take an umbrella. According to the forecast, it ___ rainy all afternoon.", "hint": "be, avec will", "answer": ["will be"], "explain": "Prédiction de la météo : will + be, sans to et sans -s." },
+    { "unit": "6.1", "type": "fill", "q": "Dad ___ his famous chili for the neighbours on Saturday. He has already invited them.", "hint": "cook, plan fixé", "answer": ["is cooking"], "explain": "Plan organisé (les invitations sont faites) : présent continu, is cooking." },
+    { "unit": "6.1", "type": "error", "q": "It's going to snowing tonight, so wear your toque.", "wrong": 3, "fix": ["snow"], "explain": "Be going to + base verbale : going to snow, sans -ing." },
+    { "unit": "6.1", "type": "error", "q": "We'll leave when Mom finish her coffee.", "wrong": 4, "fix": ["finishes"], "explain": "Après when, présent simple : Mom = she, donc finishes avec -es." },
+    { "unit": "6.1", "type": "error", "q": "Don't worry, I will helps you with your science project.", "wrong": 4, "fix": ["help"], "explain": "Après will, toujours la base verbale : will help, jamais de -s." },
+
+    { "unit": "6.2", "type": "mcq", "q": "My little sister is ___ than me at video games, and she never lets me forget it.", "choices": ["more good", "better", "best", "gooder"], "answer": 1, "explain": "Good est irrégulier : good, better, the best. Jamais more good ni gooder." },
+    { "unit": "6.2", "type": "mcq", "q": "This is ___ pizza I have ever eaten. Never again!", "choices": ["the worse", "the most bad", "the worst", "worst"], "answer": 2, "explain": "Superlatif irrégulier de bad : the worst, avec the." },
+    { "unit": "6.2", "type": "mcq", "q": "Our new apartment isn't ___ the old one.", "choices": ["as big as", "as bigger as", "so big than", "big as"], "answer": 0, "explain": "« Aussi… que » = as + adjectif simple + as. Au négatif : isn't as big as." },
+    { "unit": "6.2", "type": "mcq", "q": "Comment dit-on « Le chalet est plus loin que le lac » ?", "choices": ["The cottage is more far than the lake.", "The cottage is farer that the lake.", "The cottage is far than the lake.", "The cottage is farther than the lake."], "answer": 3, "explain": "Far est irrégulier : far, farther, the farthest. Et « que » = than." },
+    { "unit": "6.2", "type": "fill", "q": "Today is ___ day of the year: minus thirty-five degrees!", "hint": "cold, superlatif", "answer": ["the coldest"], "explain": "Adjectif court : the + -est, the coldest." },
+    { "unit": "6.2", "type": "fill", "q": "This math problem is ___ than the last one.", "hint": "difficult", "answer": ["more difficult"], "explain": "Adjectif long : more + adjectif + than." },
+    { "unit": "6.2", "type": "fill", "q": "My cat is ___ than my dog, and he knows it.", "hint": "smart", "answer": ["smarter"], "explain": "Adjectif court d'une syllabe : smart → smarter." },
+    { "unit": "6.2", "type": "fill", "q": "The traffic was ___ than yesterday, so we were late again.", "hint": "bad", "answer": ["worse"], "explain": "Comparatif irrégulier : bad → worse → the worst." },
+    { "unit": "6.2", "type": "fill", "q": "Our street is the ___ in the whole neighbourhood, thanks to Mr. Patel's rooster.", "hint": "noisy", "answer": ["noisiest"], "explain": "Consonne + y : le y devient i, puis -est : noisiest." },
+    { "unit": "6.2", "type": "error", "q": "My grandpa is older that my grandma.", "wrong": 4, "fix": ["than"], "explain": "Dans une comparaison, « que » se dit than, pas that." },
+    { "unit": "6.2", "type": "error", "q": "This is the hotest summer in years.", "wrong": 3, "fix": ["hottest"], "explain": "Hot est court et finit par consonne-voyelle-consonne : on double le t, hottest." },
+    { "unit": "6.2", "type": "error", "q": "My brother is as tall than my dad now.", "wrong": 5, "fix": ["as"], "explain": "« Aussi grand que » = as tall as : as… as, jamais as… than." },
+
+    { "unit": "6.3", "type": "mcq", "q": "___ you ever ridden a camel?", "choices": ["Did", "Have", "Has", "Are"], "answer": 1, "explain": "Expérience de vie avec ever : present perfect, Have you ever + participe passé." },
+    { "unit": "6.3", "type": "mcq", "q": "Where's Karim? — He has ___ to the dentist. He'll be back at noon.", "choices": ["been", "gone", "went", "go"], "answer": 1, "explain": "Il est parti et il n'est pas encore revenu : has gone. Has been voudrait dire qu'il est déjà revenu." },
+    { "unit": "6.3", "type": "mcq", "q": "Comment dit-on « Je n'ai jamais vu d'aurores boréales » ?", "choices": ["I haven't never seen the northern lights.", "I have never saw the northern lights.", "I have never seen the northern lights.", "I didn't never see the northern lights."], "answer": 2, "explain": "Une seule négation (never) + participe passé (seen) : I have never seen." },
+    { "unit": "6.3", "type": "mcq", "q": "How many times have you ___ on a plane?", "choices": ["fly", "flew", "flied", "flown"], "answer": 3, "explain": "Participe passé de fly : flown (fly, flew, flown)." },
+    { "unit": "6.3", "type": "fill", "q": "Have you ever ___ a horse on the beach?", "hint": "ride", "answer": ["ridden"], "explain": "Participe passé irrégulier : ride, rode, ridden." },
+    { "unit": "6.3", "type": "fill", "q": "My uncle has ___ the same joke at every family dinner.", "hint": "tell", "answer": ["told"], "explain": "Present perfect = have / has + participe passé : tell, told, told." },
+    { "unit": "6.3", "type": "fill", "q": "I've ___ swum in the Atlantic Ocean. Is it really that cold?", "hint": "jamais", "answer": ["never"], "explain": "« Jamais » avec un verbe affirmatif : I've never swum." },
+    { "unit": "6.3", "type": "fill", "q": "My parents have ___ to Japan twice, and they want to go back.", "hint": "be ou go ? (ils sont revenus)", "answer": ["been"], "explain": "Ils y sont allés et en sont revenus : have been to." },
+    { "unit": "6.3", "type": "fill", "q": "Chloé has ___ to make Grandma's tourtière three times, but it's never as good.", "hint": "try", "answer": ["tried"], "explain": "Try → tried : consonne + y devient -ied." },
+    { "unit": "6.3", "type": "error", "q": "Have you ever eat poutine with maple syrup on it?", "wrong": 3, "fix": ["eaten"], "explain": "Après have, le participe passé : eat, ate, eaten." },
+    { "unit": "6.3", "type": "error", "q": "I have ever met a famous hockey player.", "wrong": 2, "fix": ["never"], "explain": "Ever ne s'emploie pas dans une phrase affirmative de ce type : I have never met." },
+    { "unit": "6.3", "type": "error", "q": "My sister has broke her arm twice on her skateboard.", "wrong": 3, "fix": ["broken"], "explain": "Participe passé de break : broken (break, broke, broken)." },
+
+    { "unit": "6.4", "type": "mcq", "q": "We have lived in Gatineau ___ I was five.", "choices": ["for", "since", "during", "ago"], "answer": 1, "explain": "I was five est un point de départ : since." },
+    { "unit": "6.4", "type": "mcq", "q": "Comment dit-on « Je connais Léa depuis trois ans » ?", "choices": ["I have known Léa for three years.", "I know Léa since three years.", "I have known Léa since three years.", "I am knowing Léa for three years."], "answer": 0, "explain": "Situation qui dure encore : present perfect (have known) + for devant une durée." },
+    { "unit": "6.4", "type": "mcq", "q": "Have you cleaned your room ___?", "choices": ["ago", "just", "since", "yet"], "answer": 3, "explain": "Yet se place à la fin d'une question ou d'une négation." },
+    { "unit": "6.4", "type": "mcq", "q": "I ___ my keys yesterday, and I still can't find them.", "choices": ["have lost", "lost", "have lose", "am losing"], "answer": 1, "explain": "Yesterday est un moment précis du passé : passé simple, lost." },
+    { "unit": "6.4", "type": "fill", "q": "How long ___ you known your best friend?", "hint": "auxiliaire", "answer": ["have"], "explain": "How long + present perfect : How long have you known… ?" },
+    { "unit": "6.4", "type": "fill", "q": "No dessert for me, thanks. I ___ eaten a huge lunch.", "hint": "venir de", "answer": ["have just"], "explain": "« Je viens de » = I have just + participe passé." },
+    { "unit": "6.4", "type": "fill", "q": "My neighbour has played the bagpipes every morning ___ June. Help!", "hint": "depuis, point de départ", "answer": ["since"], "explain": "June est un point de départ : since June." },
+    { "unit": "6.4", "type": "fill", "q": "We've been stuck in this lineup ___ forty minutes.", "hint": "depuis, durée", "answer": ["for"], "explain": "Forty minutes est une durée : for forty minutes." },
+    { "unit": "6.4", "type": "fill", "q": "My grandparents ___ married for fifty years.", "hint": "be", "answer": ["have been"], "explain": "Ils sont toujours mariés : present perfect de be, have been + for." },
+    { "unit": "6.4", "type": "error", "q": "I am at this school since grade seven.", "wrong": 1, "fix": ["have been"], "explain": "« Je suis ici depuis » = present perfect : I have been at this school since grade seven." },
+    { "unit": "6.4", "type": "error", "q": "He hasn't called me already.", "wrong": 4, "fix": ["yet"], "explain": "Dans une phrase négative, « encore » se dit yet, à la fin : He hasn't called me yet." },
+    { "unit": "6.4", "type": "error", "q": "My dad has had this old car since twelve years.", "wrong": 7, "fix": ["for"], "explain": "Twelve years est une durée : for twelve years, jamais since." },
+
+    { "unit": "6.5", "type": "mcq", "q": "You've met my cousin before, ___?", "choices": ["didn't you", "haven't you", "don't you", "aren't you"], "answer": 1, "explain": "La phrase est au present perfect (you've met) : on reprend have au négatif, haven't you?" },
+    { "unit": "6.5", "type": "mcq", "q": "I'm on the right bus, ___?", "choices": ["isn't I", "amn't I", "don't I", "aren't I"], "answer": 3, "explain": "Cas spécial : avec I am, le tag est aren't I?" },
+    { "unit": "6.5", "type": "mcq", "q": "I can't stand cold pizza. — ___", "choices": ["Neither can I.", "So can I.", "Neither can't I.", "Me too."], "answer": 0, "explain": "Phrase négative : Neither + auxiliaire positif + sujet. Pas de double négation." },
+    { "unit": "6.5", "type": "mcq", "q": "Your brother never cleans his room, ___?", "choices": ["doesn't he", "does he", "is he", "did he"], "answer": 1, "explain": "Never rend la phrase négative : le tag est positif, does he?" },
+    { "unit": "6.5", "type": "fill", "q": "Mom loves maple fudge, and so ___ Dad.", "hint": "auxiliaire", "answer": ["does"], "explain": "Présent simple positif : so + does + sujet (Dad = he)." },
+    { "unit": "6.5", "type": "fill", "q": "That movie was amazing, ___ it?", "hint": "tag", "answer": ["wasn't"], "explain": "Phrase positive avec was : tag négatif, wasn't it?" },
+    { "unit": "6.5", "type": "fill", "q": "They won't forget the cake, ___ they?", "hint": "tag", "answer": ["will"], "explain": "Phrase négative avec won't : tag positif, will they?" },
+    { "unit": "6.5", "type": "fill", "q": "Did you lock the front door? — Yes, I ___.", "hint": "réponse courte", "answer": ["did"], "explain": "Réponse courte : on reprend l'auxiliaire de la question, Yes, I did." },
+    { "unit": "6.5", "type": "fill", "q": "Your parents went to Halifax last summer, ___ they?", "hint": "tag", "answer": ["didn't"], "explain": "Passé simple sans auxiliaire : on prend did, au négatif, didn't they?" },
+    { "unit": "6.5", "type": "error", "q": "You speak Spanish, doesn't you?", "wrong": 3, "fix": ["don't"], "explain": "Avec you, l'auxiliaire est do : don't you?" },
+    { "unit": "6.5", "type": "error", "q": "I didn't sleep well last night. Me too.", "wrong": 7, "fix": ["neither"], "explain": "Après une phrase négative, « moi non plus » = Me neither, jamais Me too." },
+    { "unit": "6.5", "type": "error", "q": "Liam has already eaten, hasn't Liam?", "wrong": 5, "fix": ["he"], "explain": "Dans le tag, on remplace le nom par un pronom : hasn't he?" }
+  ]
+}

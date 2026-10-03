@@ -2,14 +2,15 @@
 // Usage: node tools/smoke.mjs dist/test-standalone.html [--shots]
 import { chromium } from "playwright-core";
 import { resolve } from "node:path";
-import { mkdirSync } from "node:fs";
+import { mkdirSync, existsSync } from "node:fs";
 
 const file = resolve(process.argv[2] || "dist/test-standalone.html");
 const shots = process.argv.includes("--shots");
 const outDir = resolve("shots");
 mkdirSync(outDir, { recursive: true });
 
-const browser = await chromium.launch({ executablePath: "/opt/pw-browsers/chromium-1194/chrome-linux/chrome" });
+const CANDIDATES = [process.env.PW_CHROME, "/opt/pw-browsers/chromium-1194/chrome-linux/chrome", "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe", "C:/Program Files/Google/Chrome/Application/chrome.exe", "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"].filter(Boolean);
+const browser = await chromium.launch({ executablePath: CANDIDATES.find((p) => existsSync(p)) });
 const errors = [];
 
 // Fake speech synthesis so the audio paths run headless.
@@ -34,14 +35,14 @@ const mockTTS = () => {
   };
 };
 
-async function run({ name, viewport, scheme, tts }) {
+async function run({ name, viewport, scheme, tts, placement = false }) {
   const ctx = await browser.newContext({ viewport, colorScheme: scheme, deviceScaleFactor: 1 });
   const page = await ctx.newPage();
   page.setDefaultTimeout(6000);
   if (tts) await page.addInitScript(mockTTS);
   page.on("pageerror", (e) => errors.push(`[${name}] pageerror: ${e.message}`));
   page.on("console", (m) => m.type() === "error" && !/fonts\.g|ERR_|net::/.test(m.text()) && errors.push(`[${name}] console: ${m.text()}`));
-  await page.goto(`file://${file}`);
+  await page.goto(`file:///${file.replace(/\\/g, "/").replace(/^\//, "")}`);
   const shot = async (n) => shots && page.screenshot({ path: `${outDir}/${name}-${n}.png`, fullPage: false });
   const step = async (label, fn) => {
     try {
@@ -55,9 +56,41 @@ async function run({ name, viewport, scheme, tts }) {
   await shot("01-onboarding");
   await step("onboarding", async () => {
     await page.fill("#player-name", "Noah");
+    await page.click(".age-opt[data-age=ado]");
     await page.click("text=Monter à bord");
-    await page.waitForSelector(".map");
+    await page.waitForSelector(".welcome");
   });
+  await shot("01b-welcome");
+  if (placement) {
+    await step("placement test", async () => {
+      await page.click("text=Je connais quelques bases");
+      await page.waitForSelector(".placement");
+      for (let i = 0; i < 40; i++) {
+        if (await page.locator(".place-result").count()) break;
+        const card = page.locator(".q-card");
+        await card.waitFor({ timeout: 5000 });
+        const kind = (await card.getAttribute("class")).match(/kind-(\w+)/)[1];
+        if (kind === "fill") {
+          await page.fill("#answer-input", "zzz");
+          await page.keyboard.press("Enter");
+        } else await page.locator(".choices .choice").nth(i % 2).click();
+        if (i === 0) await shot("01c-placement-q");
+        await page.waitForSelector(".feedback:not([hidden]) .btn-continue", { timeout: 4000 });
+        await page.click(".btn-continue");
+        await page.waitForTimeout(150);
+      }
+      await page.waitForSelector(".place-result");
+      await page.waitForTimeout(900);
+      await shot("01d-placement-result");
+      await page.click("text=C'est parti !");
+      await page.waitForSelector(".map");
+    });
+  } else {
+    await step("start from zero", async () => {
+      await page.click("text=Je débute de zéro");
+      await page.waitForSelector(".map");
+    });
+  }
   await shot("02-map");
   await step("open unit", async () => {
     await page.click(".next-card");
@@ -203,7 +236,7 @@ async function run({ name, viewport, scheme, tts }) {
     await page.click(".player-chip");
     await page.waitForSelector(".profile");
     await shot("14-profile");
-    await page.click("text=Ouvrir la zone grand frère");
+    await page.click("text=Ouvrir la zone gestion");
     await page.fill("#pin", "1234");
     await page.click(".dialog >> text=Valider");
     await page.waitForSelector(".zone");
@@ -265,6 +298,6 @@ async function run({ name, viewport, scheme, tts }) {
 }
 
 await run({ name: "mobile-light", viewport: { width: 390, height: 844 }, scheme: "light", tts: true });
-await run({ name: "desktop-dark", viewport: { width: 1280, height: 860 }, scheme: "dark", tts: false });
+await run({ name: "desktop-dark", viewport: { width: 1280, height: 860 }, scheme: "dark", tts: false, placement: true });
 await browser.close();
 console.log(errors.length ? errors.join("\n") : "NO ERRORS");

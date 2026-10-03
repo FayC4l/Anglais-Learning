@@ -27,13 +27,37 @@
         },
         {
           "type": "table",
-          "head": ["Type", "Structure", "Exemple"],
+          "head": [
+            "Type",
+            "Structure",
+            "Exemple"
+          ],
           "rows": [
-            ["Réel", "If + présent, will", "[[If it rains, we'll stay home.]]"],
-            ["Imaginaire (présent)", "If + passé, would + verbe", "[[If I had a dog, I'd walk it every day.]]"],
-            ["Imaginaire (passé)", "If + had + participe, would have + participe", "[[If you had called, I would have answered.]]"],
-            ["Mixte : passé → présent", "If + had + participe, would + verbe", "[[If I had slept more, I wouldn't be so tired now.]]"],
-            ["Mixte : présent → passé", "If + passé, would have + participe", "[[If I were braver, I would have said something.]]"]
+            [
+              "Réel",
+              "If + présent, will",
+              "[[If it rains, we'll stay home.]]"
+            ],
+            [
+              "Imaginaire (présent)",
+              "If + passé, would + verbe",
+              "[[If I had a dog, I'd walk it every day.]]"
+            ],
+            [
+              "Imaginaire (passé)",
+              "If + had + participe, would have + participe",
+              "[[If you had called, I would have answered.]]"
+            ],
+            [
+              "Mixte : passé → présent",
+              "If + had + participe, would + verbe",
+              "[[If I had slept more, I wouldn't be so tired now.]]"
+            ],
+            [
+              "Mixte : présent → passé",
+              "If + passé, would have + participe",
+              "[[If I were braver, I would have said something.]]"
+            ]
           ]
         },
         {
@@ -48,88 +72,553 @@
         {
           "type": "examples",
           "items": [
-            { "en": "If we had left earlier, we wouldn't have missed the bus.", "fr": "Si on était partis plus tôt, on n'aurait pas raté l'autobus." },
-            { "en": "If she hadn't overslept, she would be here now.", "fr": "Si elle ne s'était pas réveillée en retard, elle serait ici maintenant." },
-            { "en": "I wish I hadn't eaten so much poutine.", "fr": "J'aurais dû manger moins de poutine. (Je regrette d'en avoir mangé autant.)" },
-            { "en": "Luckily, Mei had a map; otherwise, we would have gotten lost.", "fr": "Heureusement, Mei avait une carte ; sinon, on se serait perdus." }
+            {
+              "en": "If we had left earlier, we wouldn't have missed the bus.",
+              "fr": "Si on était partis plus tôt, on n'aurait pas raté l'autobus."
+            },
+            {
+              "en": "If she hadn't overslept, she would be here now.",
+              "fr": "Si elle ne s'était pas réveillée en retard, elle serait ici maintenant."
+            },
+            {
+              "en": "I wish I hadn't eaten so much poutine.",
+              "fr": "J'aurais dû manger moins de poutine. (Je regrette d'en avoir mangé autant.)"
+            },
+            {
+              "en": "Luckily, Mei had a map; otherwise, we would have gotten lost.",
+              "fr": "Heureusement, Mei avait une carte ; sinon, on se serait perdus."
+            }
           ]
         },
         {
           "type": "dialogue",
           "title": "Le concert raté",
           "lines": [
-            { "who": "Emma", "en": "How was the concert last night?", "fr": "Comment était le concert hier soir ?" },
-            { "who": "Lucas", "en": "I didn't go. I missed the bus by thirty seconds!", "fr": "Je n'y suis pas allé. J'ai raté l'autobus de trente secondes !" },
-            { "who": "Emma", "en": "Oh no! If you had left a bit earlier, you would have caught it.", "fr": "Oh non ! Si tu étais parti un peu plus tôt, tu l'aurais attrapé." },
-            { "who": "Lucas", "en": "I know. If only I hadn't stopped to look for my headphones!", "fr": "Je sais. Si seulement je ne m'étais pas arrêté pour chercher mes écouteurs !" },
-            { "who": "Emma", "en": "If you had called me, my mom would have driven you.", "fr": "Si tu m'avais appelée, ma mère t'aurait conduit." },
-            { "who": "Lucas", "en": "Really? I wish I had known that! Next time, I'll call you.", "fr": "Vraiment ? J'aurais aimé le savoir ! La prochaine fois, je t'appelle." }
+            {
+              "who": "Emma",
+              "en": "How was the concert last night?",
+              "fr": "Comment était le concert hier soir ?"
+            },
+            {
+              "who": "Lucas",
+              "en": "I didn't go. I missed the bus by thirty seconds!",
+              "fr": "Je n'y suis pas allé. J'ai raté l'autobus de trente secondes !"
+            },
+            {
+              "who": "Emma",
+              "en": "Oh no! If you had left a bit earlier, you would have caught it.",
+              "fr": "Oh non ! Si tu étais parti un peu plus tôt, tu l'aurais attrapé."
+            },
+            {
+              "who": "Lucas",
+              "en": "I know. If only I hadn't stopped to look for my headphones!",
+              "fr": "Je sais. Si seulement je ne m'étais pas arrêté pour chercher mes écouteurs !"
+            },
+            {
+              "who": "Emma",
+              "en": "If you had called me, my mom would have driven you.",
+              "fr": "Si tu m'avais appelée, ma mère t'aurait conduit."
+            },
+            {
+              "who": "Lucas",
+              "en": "Really? I wish I had known that! Next time, I'll call you.",
+              "fr": "Vraiment ? J'aurais aimé le savoir ! La prochaine fois, je t'appelle."
+            }
           ]
         }
       ],
       "vocab": [
-        { "en": "regret", "fr": "regretter", "alt": [], "ex": "I regret not going to the party." },
-        { "en": "if only", "fr": "si seulement", "alt": [], "ex": "If only I had listened to you!" },
-        { "en": "opportunity", "fr": "occasion (à saisir)", "alt": ["chance"], "ex": "Don't miss this opportunity to travel." },
-        { "en": "miss", "fr": "rater, manquer (un autobus, une occasion)", "alt": [], "ex": "Hurry up, or we'll miss the bus!" },
-        { "en": "on time", "fr": "à l'heure (pile)", "alt": [], "ex": "The train left exactly on time." },
-        { "en": "in time", "fr": "à temps (assez tôt)", "alt": [], "ex": "We got to the station just in time." },
-        { "en": "oversleep", "fr": "dormir trop longtemps (ne pas se réveiller à temps)", "alt": [], "ex": "I overslept and missed my first class." },
-        { "en": "alarm clock", "fr": "réveille-matin", "alt": ["alarm"], "ex": "My alarm clock didn't ring this morning." },
-        { "en": "spill", "fr": "renverser (un liquide)", "alt": [], "ex": "Be careful not to spill your juice." },
-        { "en": "trip", "fr": "trébucher", "alt": ["stumble"], "ex": "Noah tripped on a rock and fell." },
-        { "en": "drop", "fr": "échapper (laisser tomber par accident)", "alt": [], "ex": "I dropped my phone in the snow." },
-        { "en": "puddle", "fr": "flaque d'eau", "alt": [], "ex": "The little boy jumped into every puddle." },
-        { "en": "get lost", "fr": "se perdre", "alt": [], "ex": "We got lost in the forest." },
-        { "en": "weather forecast", "fr": "prévisions météo", "alt": ["forecast"], "ex": "Did you check the weather forecast?" },
-        { "en": "otherwise", "fr": "sinon (autrement)", "alt": ["or else"], "ex": "Leave now; otherwise, you'll be late." },
-        { "en": "luckily", "fr": "heureusement, par chance", "alt": ["fortunately"], "ex": "Luckily, nobody was hurt." },
-        { "en": "ruin", "fr": "gâcher, ruiner", "alt": ["spoil"], "ex": "The rain ruined our picnic." },
-        { "en": "in hindsight", "fr": "avec le recul", "alt": ["with hindsight"], "ex": "In hindsight, I should have stayed home." }
+        {
+          "en": "regret",
+          "fr": "regretter",
+          "alt": [],
+          "ex": "I regret not going to the party."
+        },
+        {
+          "en": "if only",
+          "fr": "si seulement",
+          "alt": [],
+          "ex": "If only I had listened to you!"
+        },
+        {
+          "en": "opportunity",
+          "fr": "occasion (à saisir)",
+          "alt": [
+            "chance"
+          ],
+          "ex": "Don't miss this opportunity to travel."
+        },
+        {
+          "en": "miss",
+          "fr": "rater, manquer (un autobus, une occasion)",
+          "alt": [],
+          "ex": "Hurry up, or we'll miss the bus!"
+        },
+        {
+          "en": "on time",
+          "fr": "à l'heure (pile)",
+          "alt": [],
+          "ex": "The train left exactly on time."
+        },
+        {
+          "en": "in time",
+          "fr": "à temps (assez tôt)",
+          "alt": [],
+          "ex": "We got to the station just in time."
+        },
+        {
+          "en": "oversleep",
+          "fr": "dormir trop longtemps (ne pas se réveiller à temps)",
+          "alt": [],
+          "ex": "I overslept and missed my first class."
+        },
+        {
+          "en": "alarm clock",
+          "fr": "réveille-matin",
+          "alt": [
+            "alarm"
+          ],
+          "ex": "My alarm clock didn't ring this morning."
+        },
+        {
+          "en": "spill",
+          "fr": "renverser (un liquide)",
+          "alt": [],
+          "ex": "Be careful not to spill your juice."
+        },
+        {
+          "en": "trip",
+          "fr": "trébucher",
+          "alt": [
+            "stumble"
+          ],
+          "ex": "Noah tripped on a rock and fell."
+        },
+        {
+          "en": "drop",
+          "fr": "échapper (laisser tomber par accident)",
+          "alt": [],
+          "ex": "I dropped my phone in the snow."
+        },
+        {
+          "en": "puddle",
+          "fr": "flaque d'eau",
+          "alt": [],
+          "ex": "The little boy jumped into every puddle."
+        },
+        {
+          "en": "get lost",
+          "fr": "se perdre",
+          "alt": [],
+          "ex": "We got lost in the forest."
+        },
+        {
+          "en": "weather forecast",
+          "fr": "prévisions météo",
+          "alt": [
+            "forecast"
+          ],
+          "ex": "Did you check the weather forecast?"
+        },
+        {
+          "en": "otherwise",
+          "fr": "sinon (autrement)",
+          "alt": [
+            "or else"
+          ],
+          "ex": "Leave now; otherwise, you'll be late."
+        },
+        {
+          "en": "luckily",
+          "fr": "heureusement, par chance",
+          "alt": [
+            "fortunately"
+          ],
+          "ex": "Luckily, nobody was hurt."
+        },
+        {
+          "en": "ruin",
+          "fr": "gâcher, ruiner",
+          "alt": [
+            "spoil"
+          ],
+          "ex": "The rain ruined our picnic."
+        },
+        {
+          "en": "in hindsight",
+          "fr": "avec le recul",
+          "alt": [
+            "with hindsight"
+          ],
+          "ex": "In hindsight, I should have stayed home."
+        }
       ],
       "sentences": [
-        { "en": "If I had known about the party, I would have come.", "fr": "Si j'avais su pour la fête, je serais venu.", "trap": ["will", "has"], "alt": ["I would have come if I had known about the party."] },
-        { "en": "If we had left earlier, we wouldn't have missed the bus.", "fr": "Si on était partis plus tôt, on n'aurait pas raté l'autobus.", "trap": ["would", "didn't"], "alt": ["We wouldn't have missed the bus if we had left earlier."] },
-        { "en": "I wish I hadn't eaten so much poutine.", "fr": "Je regrette d'avoir mangé autant de poutine.", "trap": ["wouldn't", "haven't"], "alt": [] },
-        { "en": "If only I had brought my umbrella this morning!", "fr": "Si seulement j'avais apporté mon parapluie ce matin !", "trap": ["would", "bring"], "alt": [] },
-        { "en": "If she hadn't overslept, she would be here now.", "fr": "Si elle ne s'était pas réveillée en retard, elle serait ici maintenant.", "trap": ["have", "didn't"], "alt": ["She would be here now if she hadn't overslept."] },
-        { "en": "We could have won the game if Noah hadn't tripped.", "fr": "On aurait pu gagner le match si Noah n'avait pas trébuché.", "trap": ["can", "didn't"], "alt": ["If Noah hadn't tripped, we could have won the game."] },
-        { "en": "If I were more organized, I wouldn't have forgotten my lunch.", "fr": "Si j'étais plus organisé, je n'aurais pas oublié mon dîner.", "trap": ["forgot", "will"], "alt": ["I wouldn't have forgotten my lunch if I were more organized."] },
-        { "en": "Otherwise, we would have walked in the wrong direction for hours.", "fr": "Sinon, on aurait marché dans la mauvaise direction pendant des heures.", "trap": ["will", "walk"], "alt": [] },
-        { "en": "Would you have helped me if I had asked you?", "fr": "M'aurais-tu aidé si je te l'avais demandé ?", "trap": ["Will", "did"], "alt": ["If I had asked you, would you have helped me?"] },
-        { "en": "If only I hadn't dropped my phone in the lake!", "fr": "Si seulement je n'avais pas échappé mon téléphone dans le lac !", "trap": ["didn't", "wouldn't"], "alt": [] },
-        { "en": "In hindsight, taking the bus would have been faster.", "fr": "Avec le recul, prendre l'autobus aurait été plus rapide.", "trap": ["will", "was"], "alt": ["Taking the bus would have been faster in hindsight."] }
+        {
+          "en": "If I had known about the party, I would have come.",
+          "fr": "Si j'avais su pour la fête, je serais venu.",
+          "trap": [
+            "will",
+            "has"
+          ],
+          "alt": [
+            "I would have come if I had known about the party."
+          ]
+        },
+        {
+          "en": "If we had left earlier, we wouldn't have missed the bus.",
+          "fr": "Si on était partis plus tôt, on n'aurait pas raté l'autobus.",
+          "trap": [
+            "would",
+            "didn't"
+          ],
+          "alt": [
+            "We wouldn't have missed the bus if we had left earlier."
+          ]
+        },
+        {
+          "en": "I wish I hadn't eaten so much poutine.",
+          "fr": "Je regrette d'avoir mangé autant de poutine.",
+          "trap": [
+            "wouldn't",
+            "haven't"
+          ],
+          "alt": []
+        },
+        {
+          "en": "If only I had brought my umbrella this morning!",
+          "fr": "Si seulement j'avais apporté mon parapluie ce matin !",
+          "trap": [
+            "would",
+            "bring"
+          ],
+          "alt": []
+        },
+        {
+          "en": "If she hadn't overslept, she would be here now.",
+          "fr": "Si elle ne s'était pas réveillée en retard, elle serait ici maintenant.",
+          "trap": [
+            "have",
+            "didn't"
+          ],
+          "alt": [
+            "She would be here now if she hadn't overslept."
+          ]
+        },
+        {
+          "en": "We could have won the game if Noah hadn't tripped.",
+          "fr": "On aurait pu gagner le match si Noah n'avait pas trébuché.",
+          "trap": [
+            "can",
+            "didn't"
+          ],
+          "alt": [
+            "If Noah hadn't tripped, we could have won the game."
+          ]
+        },
+        {
+          "en": "If I were more organized, I wouldn't have forgotten my lunch.",
+          "fr": "Si j'étais plus organisé, je n'aurais pas oublié mon dîner.",
+          "trap": [
+            "forgot",
+            "will"
+          ],
+          "alt": [
+            "I wouldn't have forgotten my lunch if I were more organized."
+          ]
+        },
+        {
+          "en": "Otherwise, we would have walked in the wrong direction for hours.",
+          "fr": "Sinon, on aurait marché dans la mauvaise direction pendant des heures.",
+          "trap": [
+            "will",
+            "walk"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Would you have helped me if I had asked you?",
+          "fr": "M'aurais-tu aidé si je te l'avais demandé ?",
+          "trap": [
+            "Will",
+            "did"
+          ],
+          "alt": [
+            "If I had asked you, would you have helped me?"
+          ]
+        },
+        {
+          "en": "If only I hadn't dropped my phone in the lake!",
+          "fr": "Si seulement je n'avais pas échappé mon téléphone dans le lac !",
+          "trap": [
+            "didn't",
+            "wouldn't"
+          ],
+          "alt": []
+        },
+        {
+          "en": "In hindsight, taking the bus would have been faster.",
+          "fr": "Avec le recul, prendre l'autobus aurait été plus rapide.",
+          "trap": [
+            "will",
+            "was"
+          ],
+          "alt": [
+            "Taking the bus would have been faster in hindsight."
+          ]
+        }
       ],
       "grammar": [
-        { "type": "mcq", "q": "If I ___ about the test, I would have studied.", "choices": ["knew", "would know", "had known", "have known"], "answer": 2, "explain": "Troisième conditionnel : if + past perfect (had known)." },
-        { "type": "mcq", "q": "If you had asked me, I ___ you.", "choices": ["would have helped", "would help", "had helped", "will help"], "answer": 0, "explain": "Passé imaginaire : would have + participe passé." },
-        { "type": "mcq", "q": "If I hadn't stayed up so late, I ___ so tired now.", "choices": ["wouldn't have been", "won't be", "wouldn't be", "hadn't been"], "answer": 2, "explain": "Conditionnel mixte : cause passée (hadn't stayed up), résultat présent (now) → wouldn't be." },
-        { "type": "mcq", "q": "I wish I ___ that mean comment yesterday.", "choices": ["didn't make", "hadn't made", "wouldn't make", "don't make"], "answer": 1, "explain": "Regret sur le passé : wish + past perfect." },
-        { "type": "mcq", "q": "Laquelle de ces phrases est correcte ?", "choices": ["If I would have known, I would have helped.", "If I knew, I would have helped yesterday.", "If I had known, I will help.", "If I had known, I would have helped."], "answer": 3, "explain": "Jamais would après if : If I had known, I would have helped." },
-        { "type": "mcq", "q": "If she were braver, she ___ the coach for help last week.", "choices": ["would ask", "would have asked", "had asked", "will ask"], "answer": 1, "explain": "Mixte : un trait de caractère présent (were braver), un résultat passé (last week) → would have asked." },
-        { "type": "fill", "q": "If it ___ so cold, we would have gone skating.", "hint": "not / be", "answer": ["hadn't been"], "explain": "Partie if du troisième conditionnel : past perfect → hadn't been." },
-        { "type": "fill", "q": "We ___ the bus if we had run faster.", "hint": "catch", "answer": ["would have caught", "could have caught", "might have caught"], "explain": "Résultat passé imaginaire : would (ou could) have + caught." },
-        { "type": "fill", "q": "If only I ___ my keys at home!", "hint": "not / leave", "answer": ["hadn't left"], "explain": "Regret sur le passé : if only + past perfect." },
-        { "type": "fill", "q": "If Amir had studied harder, he ___ in a better class now.", "hint": "be", "answer": ["would be", "might be", "could be"], "explain": "Mixte : cause passée, résultat présent (now) → would be." },
-        { "type": "fill", "q": "I wish you ___ me the truth from the beginning.", "hint": "tell", "answer": ["had told"], "explain": "Regret sur le passé : wish + had told." },
-        { "type": "fill", "q": "If I ___ you were sick, I would have brought you some soup.", "hint": "know", "answer": ["had known"], "explain": "If + past perfect : had known." },
-        { "type": "fill", "q": "Leave now; ___, you'll be late.", "hint": "sinon", "answer": ["otherwise", "or else"], "explain": "Sinon = otherwise." },
-        { "type": "error", "q": "If you would told me earlier, I would have helped you.", "wrong": 2, "fix": ["had"], "explain": "Jamais would après if : If you had told me." },
-        { "type": "error", "q": "If we had took a taxi, we would have arrived on time.", "wrong": 3, "fix": ["taken"], "explain": "Had + participe passé : taken, pas took." },
-        { "type": "error", "q": "I wish I have listened to my mom.", "wrong": 3, "fix": ["had"], "explain": "Regret sur le passé : wish + had + participe." },
-        { "type": "error", "q": "If she hadn't missed the bus, she would has arrived on time.", "wrong": 8, "fix": ["have"], "explain": "Après would, toujours have (jamais has)." },
-        { "type": "error", "q": "If I had saved my money, I will have a new bike now.", "wrong": 7, "fix": ["would"], "explain": "Résultat imaginaire au présent : would have a new bike now, pas will." }
+        {
+          "type": "mcq",
+          "q": "If I ___ about the test, I would have studied.",
+          "choices": [
+            "knew",
+            "would know",
+            "had known",
+            "have known"
+          ],
+          "answer": 2,
+          "explain": "Troisième conditionnel : if + past perfect (had known)."
+        },
+        {
+          "type": "mcq",
+          "q": "If you had asked me, I ___ you.",
+          "choices": [
+            "would have helped",
+            "would help",
+            "had helped",
+            "will help"
+          ],
+          "answer": 0,
+          "explain": "Passé imaginaire : would have + participe passé."
+        },
+        {
+          "type": "mcq",
+          "q": "If I hadn't stayed up so late, I ___ so tired now.",
+          "choices": [
+            "wouldn't have been",
+            "won't be",
+            "wouldn't be",
+            "hadn't been"
+          ],
+          "answer": 2,
+          "explain": "Conditionnel mixte : cause passée (hadn't stayed up), résultat présent (now) → wouldn't be."
+        },
+        {
+          "type": "mcq",
+          "q": "I wish I ___ that mean comment yesterday.",
+          "choices": [
+            "didn't make",
+            "hadn't made",
+            "wouldn't make",
+            "don't make"
+          ],
+          "answer": 1,
+          "explain": "Regret sur le passé : wish + past perfect."
+        },
+        {
+          "type": "mcq",
+          "q": "Laquelle de ces phrases est correcte ?",
+          "choices": [
+            "If I would have known, I would have helped.",
+            "If I knew, I would have helped yesterday.",
+            "If I had known, I will help.",
+            "If I had known, I would have helped."
+          ],
+          "answer": 3,
+          "explain": "Jamais would après if : If I had known, I would have helped."
+        },
+        {
+          "type": "mcq",
+          "q": "If she were braver, she ___ the coach for help last week.",
+          "choices": [
+            "would ask",
+            "would have asked",
+            "had asked",
+            "will ask"
+          ],
+          "answer": 1,
+          "explain": "Mixte : un trait de caractère présent (were braver), un résultat passé (last week) → would have asked."
+        },
+        {
+          "type": "fill",
+          "q": "If it ___ so cold, we would have gone skating.",
+          "hint": "not / be",
+          "answer": [
+            "hadn't been"
+          ],
+          "explain": "Partie if du troisième conditionnel : past perfect → hadn't been."
+        },
+        {
+          "type": "fill",
+          "q": "We ___ the bus if we had run faster.",
+          "hint": "catch",
+          "answer": [
+            "would have caught",
+            "could have caught",
+            "might have caught"
+          ],
+          "explain": "Résultat passé imaginaire : would (ou could) have + caught."
+        },
+        {
+          "type": "fill",
+          "q": "If only I ___ my keys at home!",
+          "hint": "not / leave",
+          "answer": [
+            "hadn't left"
+          ],
+          "explain": "Regret sur le passé : if only + past perfect."
+        },
+        {
+          "type": "fill",
+          "q": "If Amir had studied harder, he ___ in a better class now.",
+          "hint": "be",
+          "answer": [
+            "would be",
+            "might be",
+            "could be"
+          ],
+          "explain": "Mixte : cause passée, résultat présent (now) → would be."
+        },
+        {
+          "type": "fill",
+          "q": "I wish you ___ me the truth from the beginning.",
+          "hint": "tell",
+          "answer": [
+            "had told"
+          ],
+          "explain": "Regret sur le passé : wish + had told."
+        },
+        {
+          "type": "fill",
+          "q": "If I ___ you were sick, I would have brought you some soup.",
+          "hint": "know",
+          "answer": [
+            "had known"
+          ],
+          "explain": "If + past perfect : had known."
+        },
+        {
+          "type": "fill",
+          "q": "Leave now; ___, you'll be late.",
+          "hint": "sinon",
+          "answer": [
+            "otherwise",
+            "or else"
+          ],
+          "explain": "Sinon = otherwise."
+        },
+        {
+          "type": "error",
+          "q": "If you would told me earlier, I would have helped you.",
+          "wrong": 2,
+          "fix": [
+            "had"
+          ],
+          "explain": "Jamais would après if : If you had told me."
+        },
+        {
+          "type": "error",
+          "q": "If we had took a taxi, we would have arrived on time.",
+          "wrong": 3,
+          "fix": [
+            "taken"
+          ],
+          "explain": "Had + participe passé : taken, pas took."
+        },
+        {
+          "type": "error",
+          "q": "I wish I have listened to my mom.",
+          "wrong": 3,
+          "fix": [
+            "had"
+          ],
+          "explain": "Regret sur le passé : wish + had + participe."
+        },
+        {
+          "type": "error",
+          "q": "If she hadn't missed the bus, she would has arrived on time.",
+          "wrong": 8,
+          "fix": [
+            "have"
+          ],
+          "explain": "Après would, toujours have (jamais has)."
+        },
+        {
+          "type": "error",
+          "q": "If I had saved my money, I will have a new bike now.",
+          "wrong": 7,
+          "fix": [
+            "would"
+          ],
+          "explain": "Résultat imaginaire au présent : would have a new bike now, pas will."
+        }
       ],
       "reading": {
         "title": "A Chain of Small Mistakes",
         "text": "Last Friday was the worst day of Olivia's school year, and it all started with a tiny mistake. The night before, she had forgotten to set her alarm clock. As a result, she overslept by almost an hour.\n\nIf she had woken up on time, she would have caught the school bus. Instead, she had to run to the city bus stop, and on the way, she tripped and dropped her lunch in a puddle. If she hadn't been in such a hurry, she probably wouldn't have fallen.\n\nWhen she finally arrived at school, her class had already started the big science test. Her teacher let her write it, but she only had half the time. She did her best, but she couldn't finish. \"If only I had checked my alarm!\" she thought.\n\nAt lunch, she had nothing to eat, because her sandwich was still lying in a puddle somewhere near the bus stop. Luckily, her friend Ana shared her pasta with her. \"If you hadn't helped me with my project last week,\" Ana joked, \"I would have eaten it all myself!\"\n\nIn the evening, Olivia told her dad about her terrible day. He smiled and said that everybody had days like that. In hindsight, Olivia realized that one small action could have changed everything. Now she checks her alarm twice every night. If she had done that from the start, she would have saved herself a lot of trouble, and a perfectly good sandwich.",
         "questions": [
-          { "q": "What was Olivia's first mistake?", "choices": ["She missed the bus.", "She forgot to set her alarm.", "She dropped her lunch.", "She forgot her science book."], "answer": 1 },
-          { "q": "According to the text, why did Olivia probably fall?", "choices": ["The ground was icy.", "Ana pushed her.", "She was in a hurry.", "She was looking at her phone."], "answer": 2 },
-          { "q": "What happened with the science test?", "choices": ["She didn't have enough time to finish it.", "She missed it completely.", "She got a perfect score.", "The teacher cancelled it."], "answer": 0 },
-          { "q": "What does Ana's joke suggest?", "choices": ["Ana doesn't like pasta.", "Ana was angry at Olivia.", "Ana had forgotten her lunch.", "Olivia had been kind to Ana before."], "answer": 3 },
-          { "q": "What does Olivia do differently now?", "choices": ["She sets two alarms.", "She takes a taxi.", "She checks her alarm twice every night.", "She goes to bed earlier."], "answer": 2 },
-          { "q": "What is the main message of the story?", "choices": ["Science tests are too hard.", "Small mistakes can have big consequences.", "You should never take the bus.", "Friends should always share their lunch."], "answer": 1 }
+          {
+            "q": "What was Olivia's first mistake?",
+            "choices": [
+              "She missed the bus.",
+              "She forgot to set her alarm.",
+              "She dropped her lunch.",
+              "She forgot her science book."
+            ],
+            "answer": 1
+          },
+          {
+            "q": "According to the text, why did Olivia probably fall?",
+            "choices": [
+              "The ground was icy.",
+              "Ana pushed her.",
+              "She was in a hurry.",
+              "She was looking at her phone."
+            ],
+            "answer": 2
+          },
+          {
+            "q": "What happened with the science test?",
+            "choices": [
+              "She didn't have enough time to finish it.",
+              "She missed it completely.",
+              "She got a perfect score.",
+              "The teacher cancelled it."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "What does Ana's joke suggest?",
+            "choices": [
+              "Ana doesn't like pasta.",
+              "Ana was angry at Olivia.",
+              "Ana had forgotten her lunch.",
+              "Olivia had been kind to Ana before."
+            ],
+            "answer": 3
+          },
+          {
+            "q": "What does Olivia do differently now?",
+            "choices": [
+              "She sets two alarms.",
+              "She takes a taxi.",
+              "She checks her alarm twice every night.",
+              "She goes to bed earlier."
+            ],
+            "answer": 2
+          },
+          {
+            "q": "What is the main message of the story?",
+            "choices": [
+              "Science tests are too hard.",
+              "Small mistakes can have big consequences.",
+              "You should never take the bus.",
+              "Friends should always share their lunch."
+            ],
+            "answer": 1
+          }
         ]
       }
     },
@@ -145,16 +634,52 @@
         },
         {
           "type": "table",
-          "head": ["Modal", "Sens", "Exemple"],
+          "head": [
+            "Modal",
+            "Sens",
+            "Exemple"
+          ],
           "rows": [
-            ["must have + participe", "je suis presque sûr (oui)", "[[She must have forgotten.]] Elle a dû oublier."],
-            ["can't have / couldn't have", "c'est impossible (non)", "[[He can't have seen us.]] Il n'a pas pu nous voir."],
-            ["might / may / could have", "peut-être", "[[They might have missed the bus.]] Ils ont peut-être raté l'autobus."],
-            ["should have", "ça aurait été mieux (regret, reproche)", "[[You should have told me.]] Tu aurais dû me le dire."],
-            ["shouldn't have", "c'était une erreur", "[[I shouldn't have shouted.]] Je n'aurais pas dû crier."],
-            ["could have", "c'était possible, mais ce n'est pas arrivé", "[[You could have hurt yourself!]] Tu aurais pu te blesser !"],
-            ["needn't have + participe", "c'était inutile… mais on l'a fait", "[[You needn't have brought a gift.]]"],
-            ["didn't need to + verbe", "ce n'était pas nécessaire", "[[I didn't need to wake up early.]]"]
+            [
+              "must have + participe",
+              "je suis presque sûr (oui)",
+              "[[She must have forgotten.]] Elle a dû oublier."
+            ],
+            [
+              "can't have / couldn't have",
+              "c'est impossible (non)",
+              "[[He can't have seen us.]] Il n'a pas pu nous voir."
+            ],
+            [
+              "might / may / could have",
+              "peut-être",
+              "[[They might have missed the bus.]] Ils ont peut-être raté l'autobus."
+            ],
+            [
+              "should have",
+              "ça aurait été mieux (regret, reproche)",
+              "[[You should have told me.]] Tu aurais dû me le dire."
+            ],
+            [
+              "shouldn't have",
+              "c'était une erreur",
+              "[[I shouldn't have shouted.]] Je n'aurais pas dû crier."
+            ],
+            [
+              "could have",
+              "c'était possible, mais ce n'est pas arrivé",
+              "[[You could have hurt yourself!]] Tu aurais pu te blesser !"
+            ],
+            [
+              "needn't have + participe",
+              "c'était inutile… mais on l'a fait",
+              "[[You needn't have brought a gift.]]"
+            ],
+            [
+              "didn't need to + verbe",
+              "ce n'était pas nécessaire",
+              "[[I didn't need to wake up early.]]"
+            ]
           ]
         },
         {
@@ -174,86 +699,518 @@
         {
           "type": "examples",
           "items": [
-            { "en": "The ground is wet, so it must have rained last night.", "fr": "Le sol est mouillé, alors il a dû pleuvoir la nuit dernière." },
-            { "en": "Someone might have taken your bag by accident.", "fr": "Quelqu'un a peut-être pris ton sac par accident." },
-            { "en": "I shouldn't have eaten the whole bag of chips.", "fr": "Je n'aurais pas dû manger tout le sac de croustilles." },
-            { "en": "We needn't have hurried, because the movie started late.", "fr": "Ce n'était pas la peine de se dépêcher, parce que le film a commencé en retard." }
+            {
+              "en": "The ground is wet, so it must have rained last night.",
+              "fr": "Le sol est mouillé, alors il a dû pleuvoir la nuit dernière."
+            },
+            {
+              "en": "Someone might have taken your bag by accident.",
+              "fr": "Quelqu'un a peut-être pris ton sac par accident."
+            },
+            {
+              "en": "I shouldn't have eaten the whole bag of chips.",
+              "fr": "Je n'aurais pas dû manger tout le sac de croustilles."
+            },
+            {
+              "en": "We needn't have hurried, because the movie started late.",
+              "fr": "Ce n'était pas la peine de se dépêcher, parce que le film a commencé en retard."
+            }
           ]
         },
         {
           "type": "dialogue",
           "title": "Où est Karim ?",
           "lines": [
-            { "who": "Chloé", "en": "Where's Karim? He should have been here at six.", "fr": "Où est Karim ? Il aurait dû être ici à six heures." },
-            { "who": "Malik", "en": "He might have missed the bus. It's been snowing all day.", "fr": "Il a peut-être raté l'autobus. Il neige depuis le matin." },
-            { "who": "Chloé", "en": "He can't have missed it. He texted me from the bus twenty minutes ago.", "fr": "Il ne peut pas l'avoir raté. Il m'a texté de l'autobus il y a vingt minutes." },
-            { "who": "Malik", "en": "Then he must have gotten off at the wrong stop.", "fr": "Alors il a dû descendre au mauvais arrêt." },
-            { "who": "Chloé", "en": "Typical! I should have sent him the address again.", "fr": "Typique ! J'aurais dû lui renvoyer l'adresse." },
-            { "who": "Malik", "en": "Don't blame yourself. Oh look, here he is!", "fr": "Ne te blâme pas. Oh, regarde, le voilà !" }
+            {
+              "who": "Chloé",
+              "en": "Where's Karim? He should have been here at six.",
+              "fr": "Où est Karim ? Il aurait dû être ici à six heures."
+            },
+            {
+              "who": "Malik",
+              "en": "He might have missed the bus. It's been snowing all day.",
+              "fr": "Il a peut-être raté l'autobus. Il neige depuis le matin."
+            },
+            {
+              "who": "Chloé",
+              "en": "He can't have missed it. He texted me from the bus twenty minutes ago.",
+              "fr": "Il ne peut pas l'avoir raté. Il m'a texté de l'autobus il y a vingt minutes."
+            },
+            {
+              "who": "Malik",
+              "en": "Then he must have gotten off at the wrong stop.",
+              "fr": "Alors il a dû descendre au mauvais arrêt."
+            },
+            {
+              "who": "Chloé",
+              "en": "Typical! I should have sent him the address again.",
+              "fr": "Typique ! J'aurais dû lui renvoyer l'adresse."
+            },
+            {
+              "who": "Malik",
+              "en": "Don't blame yourself. Oh look, here he is!",
+              "fr": "Ne te blâme pas. Oh, regarde, le voilà !"
+            }
           ]
         }
       ],
       "vocab": [
-        { "en": "must have", "fr": "avoir sûrement… (déduction : il a dû)", "alt": [], "ex": "She must have forgotten our meeting." },
-        { "en": "can't have", "fr": "n'avoir sûrement pas pu (c'est impossible)", "alt": ["couldn't have"], "ex": "He can't have finished already!" },
-        { "en": "might have", "fr": "avoir peut-être… (il a peut-être)", "alt": ["may have", "could have"], "ex": "They might have gone to the park." },
-        { "en": "should have", "fr": "aurait dû", "alt": [], "ex": "You should have asked me first." },
-        { "en": "shouldn't have", "fr": "n'aurait pas dû", "alt": [], "ex": "I shouldn't have stayed up so late." },
-        { "en": "needn't have", "fr": "n'avait pas besoin de (mais l'a fait quand même)", "alt": [], "ex": "You needn't have cooked; we already ate." },
-        { "en": "mess", "fr": "désordre, dégât", "alt": [], "ex": "Who made this mess in the kitchen?" },
-        { "en": "crumbs", "fr": "miettes", "alt": [], "ex": "There are crumbs all over the sofa." },
-        { "en": "scratch", "fr": "égratignure, rayure", "alt": [], "ex": "There's a long scratch on the car door." },
-        { "en": "leak", "fr": "fuite (d'eau)", "alt": [], "ex": "There's a leak under the sink." },
-        { "en": "stain", "fr": "tache", "alt": [], "ex": "This chocolate stain won't come out." },
-        { "en": "flat tire", "fr": "pneu crevé (à plat)", "alt": ["flat"], "ex": "My bike has a flat tire again." },
-        { "en": "blame", "fr": "blâmer, rejeter la faute sur", "alt": [], "ex": "Don't blame your sister; it was an accident." },
-        { "en": "guess", "fr": "deviner", "alt": [], "ex": "Guess who I saw at the mall!" },
-        { "en": "assume", "fr": "supposer, présumer", "alt": ["suppose"], "ex": "I assumed that you were busy." },
-        { "en": "obviously", "fr": "de toute évidence, évidemment", "alt": ["clearly"], "ex": "Obviously, someone has been in my room." },
-        { "en": "on purpose", "fr": "exprès (volontairement)", "alt": ["deliberately", "intentionally"], "ex": "I didn't do it on purpose!" },
-        { "en": "by accident", "fr": "par accident (sans faire exprès)", "alt": ["accidentally", "by mistake"], "ex": "I deleted the photo by accident." }
+        {
+          "en": "must have",
+          "fr": "avoir sûrement… (déduction : il a dû)",
+          "alt": [],
+          "ex": "She must have forgotten our meeting."
+        },
+        {
+          "en": "can't have",
+          "fr": "n'avoir sûrement pas pu (c'est impossible)",
+          "alt": [
+            "couldn't have"
+          ],
+          "ex": "He can't have finished already!"
+        },
+        {
+          "en": "might have",
+          "fr": "avoir peut-être… (il a peut-être)",
+          "alt": [
+            "may have",
+            "could have"
+          ],
+          "ex": "They might have gone to the park."
+        },
+        {
+          "en": "should have",
+          "fr": "aurait dû",
+          "alt": [],
+          "ex": "You should have asked me first."
+        },
+        {
+          "en": "shouldn't have",
+          "fr": "n'aurait pas dû",
+          "alt": [],
+          "ex": "I shouldn't have stayed up so late."
+        },
+        {
+          "en": "needn't have",
+          "fr": "n'avait pas besoin de (mais l'a fait quand même)",
+          "alt": [],
+          "ex": "You needn't have cooked; we already ate."
+        },
+        {
+          "en": "mess",
+          "fr": "désordre, dégât",
+          "alt": [],
+          "ex": "Who made this mess in the kitchen?"
+        },
+        {
+          "en": "crumbs",
+          "fr": "miettes",
+          "alt": [],
+          "ex": "There are crumbs all over the sofa."
+        },
+        {
+          "en": "scratch",
+          "fr": "égratignure, rayure",
+          "alt": [],
+          "ex": "There's a long scratch on the car door."
+        },
+        {
+          "en": "leak",
+          "fr": "fuite (d'eau)",
+          "alt": [],
+          "ex": "There's a leak under the sink."
+        },
+        {
+          "en": "stain",
+          "fr": "tache",
+          "alt": [],
+          "ex": "This chocolate stain won't come out."
+        },
+        {
+          "en": "flat tire",
+          "fr": "pneu crevé (à plat)",
+          "alt": [
+            "flat"
+          ],
+          "ex": "My bike has a flat tire again."
+        },
+        {
+          "en": "blame",
+          "fr": "blâmer, rejeter la faute sur",
+          "alt": [],
+          "ex": "Don't blame your sister; it was an accident."
+        },
+        {
+          "en": "guess",
+          "fr": "deviner",
+          "alt": [],
+          "ex": "Guess who I saw at the mall!"
+        },
+        {
+          "en": "assume",
+          "fr": "supposer, présumer",
+          "alt": [
+            "suppose"
+          ],
+          "ex": "I assumed that you were busy."
+        },
+        {
+          "en": "obviously",
+          "fr": "de toute évidence, évidemment",
+          "alt": [
+            "clearly"
+          ],
+          "ex": "Obviously, someone has been in my room."
+        },
+        {
+          "en": "on purpose",
+          "fr": "exprès (volontairement)",
+          "alt": [
+            "deliberately",
+            "intentionally"
+          ],
+          "ex": "I didn't do it on purpose!"
+        },
+        {
+          "en": "by accident",
+          "fr": "par accident (sans faire exprès)",
+          "alt": [
+            "accidentally",
+            "by mistake"
+          ],
+          "ex": "I deleted the photo by accident."
+        }
       ],
       "sentences": [
-        { "en": "The ground is wet, so it must have rained last night.", "fr": "Le sol est mouillé, alors il a dû pleuvoir la nuit dernière.", "trap": ["had", "rain"], "alt": [] },
-        { "en": "You can't have seen Maya at the mall; she's in Toronto this week.", "fr": "Tu n'as pas pu voir Maya au centre commercial : elle est à Toronto cette semaine.", "trap": ["mustn't", "saw"], "alt": [] },
-        { "en": "I shouldn't have eaten the whole bag of chips.", "fr": "Je n'aurais pas dû manger tout le sac de croustilles.", "trap": ["ate", "wouldn't"], "alt": [] },
-        { "en": "You should have told me that you were sick.", "fr": "Tu aurais dû me dire que tu étais malade.", "trap": ["said", "had"], "alt": [] },
-        { "en": "Someone might have taken your bag by accident.", "fr": "Quelqu'un a peut-être pris ton sac par accident.", "trap": ["took", "of"], "alt": [] },
-        { "en": "We needn't have hurried, because the movie started late.", "fr": "Ce n'était pas la peine de se dépêcher, parce que le film a commencé en retard.", "trap": ["didn't", "hurry"], "alt": [] },
-        { "en": "He didn't break the vase on purpose; it was an accident.", "fr": "Il n'a pas cassé le vase exprès ; c'était un accident.", "trap": ["broke", "by"], "alt": [] },
-        { "en": "There are crumbs everywhere, so the dog must have found the cookies.", "fr": "Il y a des miettes partout, alors le chien a dû trouver les biscuits.", "trap": ["founded", "had"], "alt": [] },
-        { "en": "She could have hurt herself when she fell off her bike.", "fr": "Elle aurait pu se blesser quand elle est tombée de son vélo.", "trap": ["can", "hurted"], "alt": [] },
-        { "en": "Don't blame me; I didn't make this mess!", "fr": "Ne me blâme pas, ce n'est pas moi qui ai fait ce dégât !", "trap": ["do", "done"], "alt": [] },
-        { "en": "Ethan can't have finished his homework already; he only started ten minutes ago.", "fr": "Ethan n'a pas pu déjà finir ses devoirs : il a commencé il y a seulement dix minutes.", "trap": ["mustn't", "finish"], "alt": [] }
+        {
+          "en": "The ground is wet, so it must have rained last night.",
+          "fr": "Le sol est mouillé, alors il a dû pleuvoir la nuit dernière.",
+          "trap": [
+            "had",
+            "rain"
+          ],
+          "alt": []
+        },
+        {
+          "en": "You can't have seen Maya at the mall; she's in Toronto this week.",
+          "fr": "Tu n'as pas pu voir Maya au centre commercial : elle est à Toronto cette semaine.",
+          "trap": [
+            "mustn't",
+            "saw"
+          ],
+          "alt": []
+        },
+        {
+          "en": "I shouldn't have eaten the whole bag of chips.",
+          "fr": "Je n'aurais pas dû manger tout le sac de croustilles.",
+          "trap": [
+            "ate",
+            "wouldn't"
+          ],
+          "alt": []
+        },
+        {
+          "en": "You should have told me that you were sick.",
+          "fr": "Tu aurais dû me dire que tu étais malade.",
+          "trap": [
+            "said",
+            "had"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Someone might have taken your bag by accident.",
+          "fr": "Quelqu'un a peut-être pris ton sac par accident.",
+          "trap": [
+            "took",
+            "of"
+          ],
+          "alt": []
+        },
+        {
+          "en": "We needn't have hurried, because the movie started late.",
+          "fr": "Ce n'était pas la peine de se dépêcher, parce que le film a commencé en retard.",
+          "trap": [
+            "didn't",
+            "hurry"
+          ],
+          "alt": []
+        },
+        {
+          "en": "He didn't break the vase on purpose; it was an accident.",
+          "fr": "Il n'a pas cassé le vase exprès ; c'était un accident.",
+          "trap": [
+            "broke",
+            "by"
+          ],
+          "alt": []
+        },
+        {
+          "en": "There are crumbs everywhere, so the dog must have found the cookies.",
+          "fr": "Il y a des miettes partout, alors le chien a dû trouver les biscuits.",
+          "trap": [
+            "founded",
+            "had"
+          ],
+          "alt": []
+        },
+        {
+          "en": "She could have hurt herself when she fell off her bike.",
+          "fr": "Elle aurait pu se blesser quand elle est tombée de son vélo.",
+          "trap": [
+            "can",
+            "hurted"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Don't blame me; I didn't make this mess!",
+          "fr": "Ne me blâme pas, ce n'est pas moi qui ai fait ce dégât !",
+          "trap": [
+            "do",
+            "done"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Ethan can't have finished his homework already; he only started ten minutes ago.",
+          "fr": "Ethan n'a pas pu déjà finir ses devoirs : il a commencé il y a seulement dix minutes.",
+          "trap": [
+            "mustn't",
+            "finish"
+          ],
+          "alt": []
+        }
       ],
       "grammar": [
-        { "type": "mcq", "q": "Félix wasn't at the party, so he ___ this coat here.", "choices": ["must have left", "should have left", "can't have left", "needn't have left"], "answer": 2, "explain": "Il n'était pas là : c'est impossible → can't have left." },
-        { "type": "mcq", "q": "Quel est le contraire de « must have » (déduction) ?", "choices": ["mustn't have", "can't have", "shouldn't have", "needn't have"], "answer": 1, "explain": "Le contraire d'une déduction sûre (must have), c'est can't have (impossible)." },
-        { "type": "mcq", "q": "Comment dit-on « Tu aurais dû me demander » ?", "choices": ["You must have asked me.", "You should asked me.", "You had to ask me.", "You should have asked me."], "answer": 3, "explain": "Aurait dû = should have + participe passé." },
-        { "type": "mcq", "q": "I'm not sure where Mei is. She ___ gone to the library.", "choices": ["might have", "must have", "should have", "can't have"], "answer": 0, "explain": "On n'est pas sûr : might have (peut-être)." },
-        { "type": "mcq", "q": "« Il a dû partir. » (C'est une supposition.) →", "choices": ["He had to leave.", "He must have left.", "He must leave.", "He has to leave."], "answer": 1, "explain": "Une supposition sur le passé → must have left. He had to leave = il était obligé." },
-        { "type": "mcq", "q": "The school gave us lunch, so we ___ bring sandwiches. We left them at home.", "choices": ["needn't have", "shouldn't", "didn't need to", "mustn't"], "answer": 2, "explain": "Ce n'était pas nécessaire et on ne l'a pas fait : didn't need to + verbe de base." },
-        { "type": "fill", "q": "You ___ me! I was so worried.", "hint": "should / call", "answer": ["should have called"], "explain": "Reproche sur le passé : should have + participe passé." },
-        { "type": "fill", "q": "Sofia ___ my message; she answered in two seconds!", "hint": "must / read", "answer": ["must have read"], "explain": "Déduction presque sûre sur le passé : must have read." },
-        { "type": "fill", "q": "Ana ___ the cake; she's allergic to chocolate!", "hint": "can't / eat", "answer": ["can't have eaten", "couldn't have eaten"], "explain": "C'est impossible : can't have + participe passé." },
-        { "type": "fill", "q": "I ___ my umbrella, because it didn't rain at all.", "hint": "need not / bring", "answer": ["needn't have brought"], "explain": "Je l'ai apporté pour rien : needn't have brought." },
-        { "type": "fill", "q": "You ___ so many snacks; now you feel sick.", "hint": "should not / eat", "answer": ["shouldn't have eaten"], "explain": "C'était une erreur : shouldn't have eaten." },
-        { "type": "fill", "q": "He was lucky. He ___ badly hurt.", "hint": "could / be", "answer": ["could have been"], "explain": "C'était possible, mais ce n'est pas arrivé : could have been." },
-        { "type": "error", "q": "You should of told me the truth.", "wrong": 2, "fix": ["have"], "explain": "On entend « should of », mais on écrit toujours should have." },
-        { "type": "error", "q": "She must have forget her lunch at home.", "wrong": 3, "fix": ["forgotten"], "explain": "Après have, le participe passé : forgotten." },
-        { "type": "error", "q": "He mustn't have seen us, because he didn't wave.", "wrong": 1, "fix": ["can't", "couldn't"], "explain": "Déduction négative : can't have, pas mustn't have." },
-        { "type": "error", "q": "I should have went to bed earlier last night.", "wrong": 3, "fix": ["gone"], "explain": "go → went → gone : après have, c'est gone." },
-        { "type": "error", "q": "We needn't have bring our coats; it was really warm.", "wrong": 3, "fix": ["brought"], "explain": "Needn't have + participe passé : brought." }
+        {
+          "type": "mcq",
+          "q": "Félix wasn't at the party, so he ___ this coat here.",
+          "choices": [
+            "must have left",
+            "should have left",
+            "can't have left",
+            "needn't have left"
+          ],
+          "answer": 2,
+          "explain": "Il n'était pas là : c'est impossible → can't have left."
+        },
+        {
+          "type": "mcq",
+          "q": "Quel est le contraire de « must have » (déduction) ?",
+          "choices": [
+            "mustn't have",
+            "can't have",
+            "shouldn't have",
+            "needn't have"
+          ],
+          "answer": 1,
+          "explain": "Le contraire d'une déduction sûre (must have), c'est can't have (impossible)."
+        },
+        {
+          "type": "mcq",
+          "q": "Comment dit-on « Tu aurais dû me demander » ?",
+          "choices": [
+            "You must have asked me.",
+            "You should asked me.",
+            "You had to ask me.",
+            "You should have asked me."
+          ],
+          "answer": 3,
+          "explain": "Aurait dû = should have + participe passé."
+        },
+        {
+          "type": "mcq",
+          "q": "I'm not sure where Mei is. She ___ gone to the library.",
+          "choices": [
+            "might have",
+            "must have",
+            "should have",
+            "can't have"
+          ],
+          "answer": 0,
+          "explain": "On n'est pas sûr : might have (peut-être)."
+        },
+        {
+          "type": "mcq",
+          "q": "« Il a dû partir. » (C'est une supposition.) →",
+          "choices": [
+            "He had to leave.",
+            "He must have left.",
+            "He must leave.",
+            "He has to leave."
+          ],
+          "answer": 1,
+          "explain": "Une supposition sur le passé → must have left. He had to leave = il était obligé."
+        },
+        {
+          "type": "mcq",
+          "q": "The school gave us lunch, so we ___ bring sandwiches. We left them at home.",
+          "choices": [
+            "needn't have",
+            "shouldn't",
+            "didn't need to",
+            "mustn't"
+          ],
+          "answer": 2,
+          "explain": "Ce n'était pas nécessaire et on ne l'a pas fait : didn't need to + verbe de base."
+        },
+        {
+          "type": "fill",
+          "q": "You ___ me! I was so worried.",
+          "hint": "should / call",
+          "answer": [
+            "should have called"
+          ],
+          "explain": "Reproche sur le passé : should have + participe passé."
+        },
+        {
+          "type": "fill",
+          "q": "Sofia ___ my message; she answered in two seconds!",
+          "hint": "must / read",
+          "answer": [
+            "must have read"
+          ],
+          "explain": "Déduction presque sûre sur le passé : must have read."
+        },
+        {
+          "type": "fill",
+          "q": "Ana ___ the cake; she's allergic to chocolate!",
+          "hint": "can't / eat",
+          "answer": [
+            "can't have eaten",
+            "couldn't have eaten"
+          ],
+          "explain": "C'est impossible : can't have + participe passé."
+        },
+        {
+          "type": "fill",
+          "q": "I ___ my umbrella, because it didn't rain at all.",
+          "hint": "need not / bring",
+          "answer": [
+            "needn't have brought"
+          ],
+          "explain": "Je l'ai apporté pour rien : needn't have brought."
+        },
+        {
+          "type": "fill",
+          "q": "You ___ so many snacks; now you feel sick.",
+          "hint": "should not / eat",
+          "answer": [
+            "shouldn't have eaten"
+          ],
+          "explain": "C'était une erreur : shouldn't have eaten."
+        },
+        {
+          "type": "fill",
+          "q": "He was lucky. He ___ badly hurt.",
+          "hint": "could / be",
+          "answer": [
+            "could have been"
+          ],
+          "explain": "C'était possible, mais ce n'est pas arrivé : could have been."
+        },
+        {
+          "type": "error",
+          "q": "You should of told me the truth.",
+          "wrong": 2,
+          "fix": [
+            "have"
+          ],
+          "explain": "On entend « should of », mais on écrit toujours should have."
+        },
+        {
+          "type": "error",
+          "q": "She must have forget her lunch at home.",
+          "wrong": 3,
+          "fix": [
+            "forgotten"
+          ],
+          "explain": "Après have, le participe passé : forgotten."
+        },
+        {
+          "type": "error",
+          "q": "He mustn't have seen us, because he didn't wave.",
+          "wrong": 1,
+          "fix": [
+            "can't",
+            "couldn't"
+          ],
+          "explain": "Déduction négative : can't have, pas mustn't have."
+        },
+        {
+          "type": "error",
+          "q": "I should have went to bed earlier last night.",
+          "wrong": 3,
+          "fix": [
+            "gone"
+          ],
+          "explain": "go → went → gone : après have, c'est gone."
+        },
+        {
+          "type": "error",
+          "q": "We needn't have bring our coats; it was really warm.",
+          "wrong": 3,
+          "fix": [
+            "brought"
+          ],
+          "explain": "Needn't have + participe passé : brought."
+        }
       ],
       "reading": {
         "title": "The Midnight Snack Mystery",
         "text": "When the Nguyen family came downstairs on Sunday morning, the kitchen was a mess. The fridge door was open, there were crumbs all over the counter, and half of Grandma's birthday cake had disappeared.\n\n\"Someone must have been very hungry last night,\" said Mom, looking at everyone.\n\n\"It can't have been me,\" said Mei. \"I was at Priya's sleepover until this morning.\" That was true: Dad had picked her up an hour before.\n\nHer brother Jaden looked at the floor. \"It might have been the cat,\" he suggested. But the cat was sleeping peacefully on the sofa, and cats don't usually open fridges.\n\nThen Dad noticed a small chocolate stain on the stairs, then another, and another. The trail led straight to Jaden's bedroom door. \"Well,\" Dad said, \"the cat must have walked very carefully up the stairs and opened your door.\"\n\nJaden's face turned red. He admitted that he had woken up at midnight, starving. \"I only wanted a tiny piece,\" he explained, \"but it was so good!\"\n\n\"You should have asked us,\" said Mom. \"And you obviously shouldn't have eaten half of Grandma's cake!\"\n\nLuckily, Grandma's party wasn't until the evening. Jaden spent the whole afternoon baking a new cake with his dad, and he cleaned up every crumb. In the end, Grandma loved it. \"You needn't have made a second cake,\" she laughed, \"but I'm very glad you did!\"",
         "questions": [
-          { "q": "Why can't Mei have eaten the cake?", "choices": ["She doesn't like cake.", "She was at a sleepover.", "She was sleeping on the sofa.", "She was baking with Dad."], "answer": 1 },
-          { "q": "Who did Jaden blame at first?", "choices": ["The cat", "Mom", "Mei", "Grandma"], "answer": 0 },
-          { "q": "What clue led Dad to Jaden's room?", "choices": ["Footprints of milk", "Cake crumbs in the hallway", "A trail of chocolate stains", "An open window"], "answer": 2 },
-          { "q": "What did Dad mean when he talked about the cat walking up the stairs?", "choices": ["He really believed that the cat did it.", "He wanted to buy a new cat.", "He was angry at the cat.", "He was joking, because the clues pointed to Jaden."], "answer": 3 },
-          { "q": "Why did Grandma say \"You needn't have made a second cake\"?", "choices": ["She hates cake.", "She didn't think a new cake was necessary, but she appreciated it.", "She knew that Jaden couldn't bake.", "She had already bought another cake."], "answer": 1 }
+          {
+            "q": "Why can't Mei have eaten the cake?",
+            "choices": [
+              "She doesn't like cake.",
+              "She was at a sleepover.",
+              "She was sleeping on the sofa.",
+              "She was baking with Dad."
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Who did Jaden blame at first?",
+            "choices": [
+              "The cat",
+              "Mom",
+              "Mei",
+              "Grandma"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "What clue led Dad to Jaden's room?",
+            "choices": [
+              "Footprints of milk",
+              "Cake crumbs in the hallway",
+              "A trail of chocolate stains",
+              "An open window"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "What did Dad mean when he talked about the cat walking up the stairs?",
+            "choices": [
+              "He really believed that the cat did it.",
+              "He wanted to buy a new cat.",
+              "He was angry at the cat.",
+              "He was joking, because the clues pointed to Jaden."
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Why did Grandma say \"You needn't have made a second cake\"?",
+            "choices": [
+              "She hates cake.",
+              "She didn't think a new cake was necessary, but she appreciated it.",
+              "She knew that Jaden couldn't bake.",
+              "She had already bought another cake."
+            ],
+            "answer": 1
+          }
         ]
       }
     },
@@ -274,26 +1231,77 @@
         },
         {
           "type": "table",
-          "head": ["Expression", "Mot à mot", "Sens"],
+          "head": [
+            "Expression",
+            "Mot à mot",
+            "Sens"
+          ],
           "rows": [
-            ["[[a piece of cake]]", "un morceau de gâteau", "très facile, un jeu d'enfant"],
-            ["[[spill the beans]]", "renverser les fèves", "vendre la mèche"],
-            ["[[under the weather]]", "sous la météo", "pas dans son assiette"],
-            ["[[once in a blue moon]]", "une fois par lune bleue", "très rarement"],
-            ["[[get cold feet]]", "avoir les pieds froids", "se dégonfler au dernier moment"],
-            ["[[cut corners]]", "couper les coins", "tourner les coins ronds, bâcler"],
-            ["[[the last straw]]", "la dernière paille", "la goutte qui fait déborder le vase"],
-            ["[[hit the sack]]", "frapper le sac", "aller se coucher"]
+            [
+              "[[a piece of cake]]",
+              "un morceau de gâteau",
+              "très facile, un jeu d'enfant"
+            ],
+            [
+              "[[spill the beans]]",
+              "renverser les fèves",
+              "vendre la mèche"
+            ],
+            [
+              "[[under the weather]]",
+              "sous la météo",
+              "pas dans son assiette"
+            ],
+            [
+              "[[once in a blue moon]]",
+              "une fois par lune bleue",
+              "très rarement"
+            ],
+            [
+              "[[get cold feet]]",
+              "avoir les pieds froids",
+              "se dégonfler au dernier moment"
+            ],
+            [
+              "[[cut corners]]",
+              "couper les coins",
+              "tourner les coins ronds, bâcler"
+            ],
+            [
+              "[[the last straw]]",
+              "la dernière paille",
+              "la goutte qui fait déborder le vase"
+            ],
+            [
+              "[[hit the sack]]",
+              "frapper le sac",
+              "aller se coucher"
+            ]
           ]
         },
         {
           "type": "examples",
           "items": [
-            { "en": "The math test was a piece of cake.", "fr": "L'examen de maths était un jeu d'enfant." },
-            { "en": "I can't come tonight; I have to hit the books.", "fr": "Je ne peux pas venir ce soir ; je dois me mettre à étudier." },
-            { "en": "I've made my offer. The ball is in your court.", "fr": "J'ai fait mon offre. La balle est dans ton camp." },
-            { "en": "We've been working for hours. Let's call it a day.", "fr": "On travaille depuis des heures. Arrêtons-nous là pour aujourd'hui." },
-            { "en": "I'm still on the fence about joining the drama club.", "fr": "J'hésite encore à m'inscrire au club de théâtre." }
+            {
+              "en": "The math test was a piece of cake.",
+              "fr": "L'examen de maths était un jeu d'enfant."
+            },
+            {
+              "en": "I can't come tonight; I have to hit the books.",
+              "fr": "Je ne peux pas venir ce soir ; je dois me mettre à étudier."
+            },
+            {
+              "en": "I've made my offer. The ball is in your court.",
+              "fr": "J'ai fait mon offre. La balle est dans ton camp."
+            },
+            {
+              "en": "We've been working for hours. Let's call it a day.",
+              "fr": "On travaille depuis des heures. Arrêtons-nous là pour aujourd'hui."
+            },
+            {
+              "en": "I'm still on the fence about joining the drama club.",
+              "fr": "J'hésite encore à m'inscrire au club de théâtre."
+            }
           ]
         },
         {
@@ -304,12 +1312,36 @@
           "type": "dialogue",
           "title": "Le projet d'histoire",
           "lines": [
-            { "who": "Priya", "en": "Did you finish the history project? It took me forever.", "fr": "As-tu fini le projet d'histoire ? Ça m'a pris une éternité." },
-            { "who": "Samuel", "en": "Honestly, it was a piece of cake. I finished in an hour.", "fr": "Honnêtement, c'était un jeu d'enfant. J'ai fini en une heure." },
-            { "who": "Priya", "en": "You're pulling my leg! It was super long.", "fr": "Tu me fais marcher ! C'était super long." },
-            { "who": "Samuel", "en": "Okay, okay, I'm joking. I hit the books all weekend.", "fr": "D'accord, d'accord, je blague. J'ai étudié toute la fin de semaine." },
-            { "who": "Priya", "en": "Same here. I almost cut corners on the last part, but I didn't.", "fr": "Moi aussi. J'ai failli bâcler la dernière partie, mais je ne l'ai pas fait." },
-            { "who": "Samuel", "en": "Good for you. Now let's call it a day and get some poutine.", "fr": "Bravo. Maintenant, arrêtons-nous là pour aujourd'hui et allons manger une poutine." }
+            {
+              "who": "Priya",
+              "en": "Did you finish the history project? It took me forever.",
+              "fr": "As-tu fini le projet d'histoire ? Ça m'a pris une éternité."
+            },
+            {
+              "who": "Samuel",
+              "en": "Honestly, it was a piece of cake. I finished in an hour.",
+              "fr": "Honnêtement, c'était un jeu d'enfant. J'ai fini en une heure."
+            },
+            {
+              "who": "Priya",
+              "en": "You're pulling my leg! It was super long.",
+              "fr": "Tu me fais marcher ! C'était super long."
+            },
+            {
+              "who": "Samuel",
+              "en": "Okay, okay, I'm joking. I hit the books all weekend.",
+              "fr": "D'accord, d'accord, je blague. J'ai étudié toute la fin de semaine."
+            },
+            {
+              "who": "Priya",
+              "en": "Same here. I almost cut corners on the last part, but I didn't.",
+              "fr": "Moi aussi. J'ai failli bâcler la dernière partie, mais je ne l'ai pas fait."
+            },
+            {
+              "who": "Samuel",
+              "en": "Good for you. Now let's call it a day and get some poutine.",
+              "fr": "Bravo. Maintenant, arrêtons-nous là pour aujourd'hui et allons manger une poutine."
+            }
           ]
         },
         {
@@ -318,70 +1350,487 @@
         }
       ],
       "vocab": [
-        { "en": "break the ice", "fr": "briser la glace (détendre l'atmosphère)", "alt": [], "ex": "He told a joke to break the ice." },
-        { "en": "a piece of cake", "fr": "un jeu d'enfant (très facile)", "alt": [], "ex": "Don't worry, the test was a piece of cake." },
-        { "en": "hit the books", "fr": "se mettre à étudier sérieusement", "alt": [], "ex": "Exams start Monday, so I'm hitting the books." },
-        { "en": "under the weather", "fr": "pas dans son assiette (un peu malade)", "alt": [], "ex": "I'm feeling a bit under the weather today." },
-        { "en": "once in a blue moon", "fr": "tous les trente-six du mois (très rarement)", "alt": [], "ex": "My cousin visits us once in a blue moon." },
-        { "en": "cost an arm and a leg", "fr": "coûter les yeux de la tête", "alt": [], "ex": "Those skates cost an arm and a leg." },
-        { "en": "spill the beans", "fr": "vendre la mèche", "alt": ["let the cat out of the bag"], "ex": "Who spilled the beans about the surprise?" },
-        { "en": "the ball is in your court", "fr": "la balle est dans ton camp (c'est à toi de décider)", "alt": [], "ex": "I said sorry. Now the ball is in your court." },
-        { "en": "call it a day", "fr": "s'arrêter là pour aujourd'hui", "alt": ["call it a night"], "ex": "We're all tired. Let's call it a day." },
-        { "en": "on the fence", "fr": "indécis (hésiter entre deux choix)", "alt": [], "ex": "I'm still on the fence about the trip." },
-        { "en": "hit the sack", "fr": "aller se coucher (aller au lit)", "alt": ["hit the hay"], "ex": "I'm exhausted. I'm going to hit the sack." },
-        { "en": "get cold feet", "fr": "se dégonfler au dernier moment", "alt": [], "ex": "She got cold feet before her solo." },
-        { "en": "beat around the bush", "fr": "tourner autour du pot", "alt": ["beat about the bush"], "ex": "Stop beating around the bush and tell me!" },
-        { "en": "pull someone's leg", "fr": "faire marcher quelqu'un (le taquiner)", "alt": ["pull somebody's leg"], "ex": "Relax, I'm just pulling your leg." },
-        { "en": "a blessing in disguise", "fr": "un mal pour un bien", "alt": [], "ex": "Missing the bus was a blessing in disguise." },
-        { "en": "it's not rocket science", "fr": "ce n'est pas sorcier", "alt": [], "ex": "Just follow the recipe. It's not rocket science." },
-        { "en": "cut corners", "fr": "tourner les coins ronds (bâcler)", "alt": [], "ex": "Don't cut corners on your science project." },
-        { "en": "the last straw", "fr": "la goutte qui fait déborder le vase", "alt": [], "ex": "When he lied again, that was the last straw." },
-        { "en": "in hot water", "fr": "dans le pétrin (en difficulté)", "alt": [], "ex": "You'll be in hot water if Mom finds out." },
-        { "en": "keep an eye on", "fr": "surveiller (garder un œil sur)", "alt": [], "ex": "Can you keep an eye on my bag?" }
+        {
+          "en": "break the ice",
+          "fr": "briser la glace (détendre l'atmosphère)",
+          "alt": [],
+          "ex": "He told a joke to break the ice."
+        },
+        {
+          "en": "a piece of cake",
+          "fr": "un jeu d'enfant (très facile)",
+          "alt": [],
+          "ex": "Don't worry, the test was a piece of cake."
+        },
+        {
+          "en": "hit the books",
+          "fr": "se mettre à étudier sérieusement",
+          "alt": [],
+          "ex": "Exams start Monday, so I'm hitting the books."
+        },
+        {
+          "en": "under the weather",
+          "fr": "pas dans son assiette (un peu malade)",
+          "alt": [],
+          "ex": "I'm feeling a bit under the weather today."
+        },
+        {
+          "en": "once in a blue moon",
+          "fr": "tous les trente-six du mois (très rarement)",
+          "alt": [],
+          "ex": "My cousin visits us once in a blue moon."
+        },
+        {
+          "en": "cost an arm and a leg",
+          "fr": "coûter les yeux de la tête",
+          "alt": [],
+          "ex": "Those skates cost an arm and a leg."
+        },
+        {
+          "en": "spill the beans",
+          "fr": "vendre la mèche",
+          "alt": [
+            "let the cat out of the bag"
+          ],
+          "ex": "Who spilled the beans about the surprise?"
+        },
+        {
+          "en": "the ball is in your court",
+          "fr": "la balle est dans ton camp (c'est à toi de décider)",
+          "alt": [],
+          "ex": "I said sorry. Now the ball is in your court."
+        },
+        {
+          "en": "call it a day",
+          "fr": "s'arrêter là pour aujourd'hui",
+          "alt": [
+            "call it a night"
+          ],
+          "ex": "We're all tired. Let's call it a day."
+        },
+        {
+          "en": "on the fence",
+          "fr": "indécis (hésiter entre deux choix)",
+          "alt": [],
+          "ex": "I'm still on the fence about the trip."
+        },
+        {
+          "en": "hit the sack",
+          "fr": "aller se coucher (aller au lit)",
+          "alt": [
+            "hit the hay"
+          ],
+          "ex": "I'm exhausted. I'm going to hit the sack."
+        },
+        {
+          "en": "get cold feet",
+          "fr": "se dégonfler au dernier moment",
+          "alt": [],
+          "ex": "She got cold feet before her solo."
+        },
+        {
+          "en": "beat around the bush",
+          "fr": "tourner autour du pot",
+          "alt": [
+            "beat about the bush"
+          ],
+          "ex": "Stop beating around the bush and tell me!"
+        },
+        {
+          "en": "pull someone's leg",
+          "fr": "faire marcher quelqu'un (le taquiner)",
+          "alt": [
+            "pull somebody's leg"
+          ],
+          "ex": "Relax, I'm just pulling your leg."
+        },
+        {
+          "en": "a blessing in disguise",
+          "fr": "un mal pour un bien",
+          "alt": [],
+          "ex": "Missing the bus was a blessing in disguise."
+        },
+        {
+          "en": "it's not rocket science",
+          "fr": "ce n'est pas sorcier",
+          "alt": [],
+          "ex": "Just follow the recipe. It's not rocket science."
+        },
+        {
+          "en": "cut corners",
+          "fr": "tourner les coins ronds (bâcler)",
+          "alt": [],
+          "ex": "Don't cut corners on your science project."
+        },
+        {
+          "en": "the last straw",
+          "fr": "la goutte qui fait déborder le vase",
+          "alt": [],
+          "ex": "When he lied again, that was the last straw."
+        },
+        {
+          "en": "in hot water",
+          "fr": "dans le pétrin (en difficulté)",
+          "alt": [],
+          "ex": "You'll be in hot water if Mom finds out."
+        },
+        {
+          "en": "keep an eye on",
+          "fr": "surveiller (garder un œil sur)",
+          "alt": [],
+          "ex": "Can you keep an eye on my bag?"
+        }
       ],
       "sentences": [
-        { "en": "The math test was a piece of cake, so I finished early.", "fr": "L'examen de maths était un jeu d'enfant, alors j'ai fini tôt.", "trap": ["slice", "bread"], "alt": [] },
-        { "en": "I can't come tonight because I have to hit the books.", "fr": "Je ne peux pas venir ce soir parce que je dois me mettre à étudier.", "trap": ["hits", "beat"], "alt": [] },
-        { "en": "Félix is feeling a bit under the weather today.", "fr": "Félix n'est pas dans son assiette aujourd'hui.", "trap": ["below", "on"], "alt": ["Today Félix is feeling a bit under the weather."] },
-        { "en": "Those new skates cost an arm and a leg!", "fr": "Ces nouveaux patins coûtent les yeux de la tête !", "trap": ["eyes", "head"], "alt": [] },
-        { "en": "Who spilled the beans about the surprise party?", "fr": "Qui a vendu la mèche pour la fête surprise ?", "trap": ["spill", "peas"], "alt": [] },
-        { "en": "We've been working for hours, so let's call it a day.", "fr": "On travaille depuis des heures, alors arrêtons-nous là pour aujourd'hui.", "trap": ["since", "make"], "alt": [] },
-        { "en": "I'm still on the fence about joining the drama club.", "fr": "J'hésite encore à m'inscrire au club de théâtre.", "trap": ["in", "join"], "alt": [] },
-        { "en": "Stop beating around the bush and tell me what happened!", "fr": "Arrête de tourner autour du pot et dis-moi ce qui s'est passé !", "trap": ["beat", "tree"], "alt": [] },
-        { "en": "Relax, I'm just pulling your leg.", "fr": "Relaxe, je te fais juste marcher.", "trap": ["foot", "pushing"], "alt": [] },
-        { "en": "Missing the bus was a blessing in disguise, because I met my best friend.", "fr": "Rater l'autobus a été un mal pour un bien, parce que j'ai rencontré mon meilleur ami.", "trap": ["disguised", "bless"], "alt": [] },
-        { "en": "Can you keep an eye on my little brother for a minute?", "fr": "Peux-tu surveiller mon petit frère une minute ?", "trap": ["eyes", "in"], "alt": [] },
-        { "en": "When he forgot my birthday again, that was the last straw.", "fr": "Quand il a encore oublié ma fête, ç'a été la goutte qui fait déborder le vase.", "trap": ["drop", "glass"], "alt": [] }
+        {
+          "en": "The math test was a piece of cake, so I finished early.",
+          "fr": "L'examen de maths était un jeu d'enfant, alors j'ai fini tôt.",
+          "trap": [
+            "slice",
+            "bread"
+          ],
+          "alt": []
+        },
+        {
+          "en": "I can't come tonight because I have to hit the books.",
+          "fr": "Je ne peux pas venir ce soir parce que je dois me mettre à étudier.",
+          "trap": [
+            "hits",
+            "beat"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Félix is feeling a bit under the weather today.",
+          "fr": "Félix n'est pas dans son assiette aujourd'hui.",
+          "trap": [
+            "below",
+            "on"
+          ],
+          "alt": [
+            "Today Félix is feeling a bit under the weather."
+          ]
+        },
+        {
+          "en": "Those new skates cost an arm and a leg!",
+          "fr": "Ces nouveaux patins coûtent les yeux de la tête !",
+          "trap": [
+            "eyes",
+            "head"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Who spilled the beans about the surprise party?",
+          "fr": "Qui a vendu la mèche pour la fête surprise ?",
+          "trap": [
+            "spill",
+            "peas"
+          ],
+          "alt": []
+        },
+        {
+          "en": "We've been working for hours, so let's call it a day.",
+          "fr": "On travaille depuis des heures, alors arrêtons-nous là pour aujourd'hui.",
+          "trap": [
+            "since",
+            "make"
+          ],
+          "alt": []
+        },
+        {
+          "en": "I'm still on the fence about joining the drama club.",
+          "fr": "J'hésite encore à m'inscrire au club de théâtre.",
+          "trap": [
+            "in",
+            "join"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Stop beating around the bush and tell me what happened!",
+          "fr": "Arrête de tourner autour du pot et dis-moi ce qui s'est passé !",
+          "trap": [
+            "beat",
+            "tree"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Relax, I'm just pulling your leg.",
+          "fr": "Relaxe, je te fais juste marcher.",
+          "trap": [
+            "foot",
+            "pushing"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Missing the bus was a blessing in disguise, because I met my best friend.",
+          "fr": "Rater l'autobus a été un mal pour un bien, parce que j'ai rencontré mon meilleur ami.",
+          "trap": [
+            "disguised",
+            "bless"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Can you keep an eye on my little brother for a minute?",
+          "fr": "Peux-tu surveiller mon petit frère une minute ?",
+          "trap": [
+            "eyes",
+            "in"
+          ],
+          "alt": []
+        },
+        {
+          "en": "When he forgot my birthday again, that was the last straw.",
+          "fr": "Quand il a encore oublié ma fête, ç'a été la goutte qui fait déborder le vase.",
+          "trap": [
+            "drop",
+            "glass"
+          ],
+          "alt": []
+        }
       ],
       "grammar": [
-        { "type": "mcq", "q": "« It costs an arm and a leg » veut dire que c'est…", "choices": ["très dangereux", "très cher", "très lourd", "très loin"], "answer": 1, "explain": "Cost an arm and a leg = coûter les yeux de la tête." },
-        { "type": "mcq", "q": "My grandma lives in Vancouver, so she only visits us ___.", "choices": ["once in a blue moon", "a piece of cake", "under the weather", "on the fence"], "answer": 0, "explain": "Once in a blue moon = très rarement." },
-        { "type": "mcq", "q": "Comment dit-on « vendre la mèche » ?", "choices": ["break the ice", "cut corners", "spill the beans", "hit the sack"], "answer": 2, "explain": "Spill the beans = révéler un secret, vendre la mèche." },
-        { "type": "mcq", "q": "On the first day of camp, the counsellor played a funny game to ___.", "choices": ["call it a day", "hit the books", "get cold feet", "break the ice"], "answer": 3, "explain": "Break the ice = détendre l'atmosphère entre des gens qui ne se connaissent pas." },
-        { "type": "mcq", "q": "Sofia wanted to sing in the show, but she ___ and stayed backstage.", "choices": ["got cold feet", "hit the sack", "broke the ice", "kept an eye on"], "answer": 0, "explain": "Get cold feet = se dégonfler au dernier moment." },
-        { "type": "mcq", "q": "I've made you an offer. Now ___.", "choices": ["it's a piece of cake", "the ball is in your court", "you're under the weather", "it's the last straw"], "answer": 1, "explain": "The ball is in your court = c'est à toi de décider." },
-        { "type": "fill", "q": "I'm so tired. I'm going to hit the ___.", "hint": "aller me coucher", "answer": ["sack", "hay"], "explain": "Hit the sack (ou hit the hay) = aller se coucher." },
-        { "type": "fill", "q": "Don't ___ corners on your project; do it properly.", "hint": "bâcler", "answer": ["cut"], "explain": "Cut corners = tourner les coins ronds, bâcler." },
-        { "type": "fill", "q": "Are you serious, or are you ___ my leg?", "hint": "faire marcher", "answer": ["pulling"], "explain": "Pull someone's leg = faire marcher quelqu'un ; ici au présent continu." },
-        { "type": "fill", "q": "Stop beating around the ___ and just say it!", "hint": "tourner autour du pot", "answer": ["bush"], "explain": "Beat around the bush = tourner autour du pot." },
-        { "type": "fill", "q": "Can you keep an ___ on my bag while I go to the washroom?", "hint": "surveiller", "answer": ["eye"], "explain": "Keep an eye on = surveiller." },
-        { "type": "fill", "q": "Breaking my arm was a blessing in ___: I discovered that I love reading.", "hint": "un mal pour un bien", "answer": ["disguise"], "explain": "A blessing in disguise = un mal pour un bien." },
-        { "type": "error", "q": "This puzzle is a piece of pie.", "wrong": 6, "fix": ["cake"], "explain": "L'expression est figée : a piece of cake." },
-        { "type": "error", "q": "Who spilled the peas about my surprise?", "wrong": 3, "fix": ["beans"], "explain": "Vendre la mèche = spill the beans." },
-        { "type": "error", "q": "Okay, let's call it a week and go home.", "wrong": 5, "fix": ["day", "night"], "explain": "S'arrêter pour aujourd'hui = call it a day (ou call it a night le soir)." },
-        { "type": "error", "q": "I'm still on the wall about which camp to choose.", "wrong": 4, "fix": ["fence"], "explain": "Hésiter = be on the fence." },
-        { "type": "error", "q": "He got cold hands and didn't jump into the lake.", "wrong": 3, "fix": ["feet"], "explain": "Se dégonfler = get cold feet." },
-        { "type": "error", "q": "After a horrible week, losing my phone was the last drop.", "wrong": 10, "fix": ["straw"], "explain": "La goutte qui fait déborder le vase = the last straw, pas the last drop." }
+        {
+          "type": "mcq",
+          "q": "« It costs an arm and a leg » veut dire que c'est…",
+          "choices": [
+            "très dangereux",
+            "très cher",
+            "très lourd",
+            "très loin"
+          ],
+          "answer": 1,
+          "explain": "Cost an arm and a leg = coûter les yeux de la tête."
+        },
+        {
+          "type": "mcq",
+          "q": "My grandma lives in Vancouver, so she only visits us ___.",
+          "choices": [
+            "once in a blue moon",
+            "a piece of cake",
+            "under the weather",
+            "on the fence"
+          ],
+          "answer": 0,
+          "explain": "Once in a blue moon = très rarement."
+        },
+        {
+          "type": "mcq",
+          "q": "Comment dit-on « vendre la mèche » ?",
+          "choices": [
+            "break the ice",
+            "cut corners",
+            "spill the beans",
+            "hit the sack"
+          ],
+          "answer": 2,
+          "explain": "Spill the beans = révéler un secret, vendre la mèche."
+        },
+        {
+          "type": "mcq",
+          "q": "On the first day of camp, the counsellor played a funny game to ___.",
+          "choices": [
+            "call it a day",
+            "hit the books",
+            "get cold feet",
+            "break the ice"
+          ],
+          "answer": 3,
+          "explain": "Break the ice = détendre l'atmosphère entre des gens qui ne se connaissent pas."
+        },
+        {
+          "type": "mcq",
+          "q": "Sofia wanted to sing in the show, but she ___ and stayed backstage.",
+          "choices": [
+            "got cold feet",
+            "hit the sack",
+            "broke the ice",
+            "kept an eye on"
+          ],
+          "answer": 0,
+          "explain": "Get cold feet = se dégonfler au dernier moment."
+        },
+        {
+          "type": "mcq",
+          "q": "I've made you an offer. Now ___.",
+          "choices": [
+            "it's a piece of cake",
+            "the ball is in your court",
+            "you're under the weather",
+            "it's the last straw"
+          ],
+          "answer": 1,
+          "explain": "The ball is in your court = c'est à toi de décider."
+        },
+        {
+          "type": "fill",
+          "q": "I'm so tired. I'm going to hit the ___.",
+          "hint": "aller me coucher",
+          "answer": [
+            "sack",
+            "hay"
+          ],
+          "explain": "Hit the sack (ou hit the hay) = aller se coucher."
+        },
+        {
+          "type": "fill",
+          "q": "Don't ___ corners on your project; do it properly.",
+          "hint": "bâcler",
+          "answer": [
+            "cut"
+          ],
+          "explain": "Cut corners = tourner les coins ronds, bâcler."
+        },
+        {
+          "type": "fill",
+          "q": "Are you serious, or are you ___ my leg?",
+          "hint": "faire marcher",
+          "answer": [
+            "pulling"
+          ],
+          "explain": "Pull someone's leg = faire marcher quelqu'un ; ici au présent continu."
+        },
+        {
+          "type": "fill",
+          "q": "Stop beating around the ___ and just say it!",
+          "hint": "tourner autour du pot",
+          "answer": [
+            "bush"
+          ],
+          "explain": "Beat around the bush = tourner autour du pot."
+        },
+        {
+          "type": "fill",
+          "q": "Can you keep an ___ on my bag while I go to the washroom?",
+          "hint": "surveiller",
+          "answer": [
+            "eye"
+          ],
+          "explain": "Keep an eye on = surveiller."
+        },
+        {
+          "type": "fill",
+          "q": "Breaking my arm was a blessing in ___: I discovered that I love reading.",
+          "hint": "un mal pour un bien",
+          "answer": [
+            "disguise"
+          ],
+          "explain": "A blessing in disguise = un mal pour un bien."
+        },
+        {
+          "type": "error",
+          "q": "This puzzle is a piece of pie.",
+          "wrong": 6,
+          "fix": [
+            "cake"
+          ],
+          "explain": "L'expression est figée : a piece of cake."
+        },
+        {
+          "type": "error",
+          "q": "Who spilled the peas about my surprise?",
+          "wrong": 3,
+          "fix": [
+            "beans"
+          ],
+          "explain": "Vendre la mèche = spill the beans."
+        },
+        {
+          "type": "error",
+          "q": "Okay, let's call it a week and go home.",
+          "wrong": 5,
+          "fix": [
+            "day",
+            "night"
+          ],
+          "explain": "S'arrêter pour aujourd'hui = call it a day (ou call it a night le soir)."
+        },
+        {
+          "type": "error",
+          "q": "I'm still on the wall about which camp to choose.",
+          "wrong": 4,
+          "fix": [
+            "fence"
+          ],
+          "explain": "Hésiter = be on the fence."
+        },
+        {
+          "type": "error",
+          "q": "He got cold hands and didn't jump into the lake.",
+          "wrong": 3,
+          "fix": [
+            "feet"
+          ],
+          "explain": "Se dégonfler = get cold feet."
+        },
+        {
+          "type": "error",
+          "q": "After a horrible week, losing my phone was the last drop.",
+          "wrong": 10,
+          "fix": [
+            "straw"
+          ],
+          "explain": "La goutte qui fait déborder le vase = the last straw, pas the last drop."
+        }
       ],
       "reading": {
         "title": "Ethan's First Day",
         "text": "Ethan had just moved from Montreal to Ottawa, and on his first day at his new school, he was so nervous that he almost got cold feet at the front door. His mom smiled and told him it wasn't rocket science: all he had to do was say hello.\n\nIn his first class, the teacher asked everyone to tell a joke to break the ice. Ethan was on the fence for a moment, but then he told the funniest joke he knew. The whole class laughed, and a boy named Karim gave him a high five.\n\nAt lunch, Karim told Ethan that the math teacher gave surprise tests only once in a blue moon. \"And don't worry,\" he added, \"they're always a piece of cake.\" That afternoon, the math teacher announced a surprise test. Ethan looked at Karim in panic, but Karim just laughed. He had been pulling Ethan's leg: the surprise tests happened every week, and they were anything but easy.\n\nAfter school, Ethan's new friends invited him to the arena. Hockey equipment can cost an arm and a leg, so Ethan only had old skates. Nobody cared. They played until the lights went off, and then they finally called it a day.\n\nThat night, Ethan was too excited to hit the sack. Moving to a new city had seemed like a disaster, but maybe it was a blessing in disguise.",
         "questions": [
-          { "q": "How did Ethan feel at the front door of the school?", "choices": ["Excited and calm", "So nervous that he almost didn't go in", "Angry at his mom", "Bored"], "answer": 1 },
-          { "q": "Why did the teacher ask students to tell a joke?", "choices": ["To help everyone feel comfortable", "To give them a grade", "To find the funniest student", "To practise for a show"], "answer": 0 },
-          { "q": "What was true about the math teacher's surprise tests?", "choices": ["They happened very rarely.", "They were very easy.", "They didn't exist.", "They happened often and were difficult."], "answer": 3 },
-          { "q": "Why did Ethan only have old skates?", "choices": ["He didn't like hockey.", "He had lost his new skates.", "Hockey equipment is very expensive.", "Karim had borrowed them."], "answer": 2 },
-          { "q": "At the end of the day, how did Ethan probably feel about moving to Ottawa?", "choices": ["He regretted it.", "He was starting to see it as something positive.", "He wanted to go back to Montreal right away.", "He was still afraid of his new classmates."], "answer": 1 }
+          {
+            "q": "How did Ethan feel at the front door of the school?",
+            "choices": [
+              "Excited and calm",
+              "So nervous that he almost didn't go in",
+              "Angry at his mom",
+              "Bored"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Why did the teacher ask students to tell a joke?",
+            "choices": [
+              "To help everyone feel comfortable",
+              "To give them a grade",
+              "To find the funniest student",
+              "To practise for a show"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "What was true about the math teacher's surprise tests?",
+            "choices": [
+              "They happened very rarely.",
+              "They were very easy.",
+              "They didn't exist.",
+              "They happened often and were difficult."
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Why did Ethan only have old skates?",
+            "choices": [
+              "He didn't like hockey.",
+              "He had lost his new skates.",
+              "Hockey equipment is very expensive.",
+              "Karim had borrowed them."
+            ],
+            "answer": 2
+          },
+          {
+            "q": "At the end of the day, how did Ethan probably feel about moving to Ottawa?",
+            "choices": [
+              "He regretted it.",
+              "He was starting to see it as something positive.",
+              "He wanted to go back to Montreal right away.",
+              "He was still afraid of his new classmates."
+            ],
+            "answer": 1
+          }
         ]
       }
     },
@@ -402,13 +1851,37 @@
         },
         {
           "type": "table",
-          "head": ["Suffixe", "Ça donne…", "Exemples"],
+          "head": [
+            "Suffixe",
+            "Ça donne…",
+            "Exemples"
+          ],
           "rows": [
-            ["-ness, -ment, -ity, -tion, -ance", "un nom", "[[kindness]], [[improvement]], [[ability]], [[invention]], [[appearance]]"],
-            ["-hood, -ship", "un nom (période, relation)", "[[childhood]], [[friendship]]"],
-            ["-ful / -less", "un adjectif (avec / sans)", "[[helpful]], [[careless]], [[harmless]]"],
-            ["-able, -ous, -ive", "un adjectif", "[[enjoyable]], [[dangerous]], [[creative]]"],
-            ["-ize, -en", "un verbe", "[[realize]], [[organize]], [[strengthen]], [[widen]]"]
+            [
+              "-ness, -ment, -ity, -tion, -ance",
+              "un nom",
+              "[[kindness]], [[improvement]], [[ability]], [[invention]], [[appearance]]"
+            ],
+            [
+              "-hood, -ship",
+              "un nom (période, relation)",
+              "[[childhood]], [[friendship]]"
+            ],
+            [
+              "-ful / -less",
+              "un adjectif (avec / sans)",
+              "[[helpful]], [[careless]], [[harmless]]"
+            ],
+            [
+              "-able, -ous, -ive",
+              "un adjectif",
+              "[[enjoyable]], [[dangerous]], [[creative]]"
+            ],
+            [
+              "-ize, -en",
+              "un verbe",
+              "[[realize]], [[organize]], [[strengthen]], [[widen]]"
+            ]
           ]
         },
         {
@@ -423,91 +1896,1204 @@
         {
           "type": "examples",
           "items": [
-            { "en": "It's impossible to finish this project in one night.", "fr": "C'est impossible de finir ce projet en une seule nuit." },
-            { "en": "Their friendship began in early childhood.", "fr": "Leur amitié a commencé dans la petite enfance." },
-            { "en": "Don't worry, this spider is completely harmless.", "fr": "Ne t'inquiète pas, cette araignée est complètement inoffensive." },
-            { "en": "Sorry, I think I misunderstood your question.", "fr": "Désolé, je pense que j'ai mal compris ta question." }
+            {
+              "en": "It's impossible to finish this project in one night.",
+              "fr": "C'est impossible de finir ce projet en une seule nuit."
+            },
+            {
+              "en": "Their friendship began in early childhood.",
+              "fr": "Leur amitié a commencé dans la petite enfance."
+            },
+            {
+              "en": "Don't worry, this spider is completely harmless.",
+              "fr": "Ne t'inquiète pas, cette araignée est complètement inoffensive."
+            },
+            {
+              "en": "Sorry, I think I misunderstood your question.",
+              "fr": "Désolé, je pense que j'ai mal compris ta question."
+            }
           ]
         },
         {
           "type": "dialogue",
           "title": "La rédaction à refaire",
           "lines": [
-            { "who": "Zoé", "en": "Ugh, I got my essay back. The teacher says I have to rewrite it.", "fr": "Ouache, j'ai reçu ma rédaction corrigée. L'enseignante dit que je dois la réécrire." },
-            { "who": "Noah", "en": "Really? What was the problem?", "fr": "Vraiment ? C'était quoi, le problème ?" },
-            { "who": "Zoé", "en": "Some parts were unclear, and I made a few careless mistakes.", "fr": "Certaines parties n'étaient pas claires, et j'ai fait quelques fautes d'inattention." },
-            { "who": "Noah", "en": "That's not so bad. It's not impossible to fix!", "fr": "Ce n'est pas si grave. Ce n'est pas impossible à corriger !" },
-            { "who": "Zoé", "en": "True. And she said there was a big improvement since last time.", "fr": "C'est vrai. Et elle a dit qu'il y avait une grosse amélioration depuis la dernière fois." },
-            { "who": "Noah", "en": "See? That's really helpful feedback. Your next version will be even better.", "fr": "Tu vois ? Ce sont des commentaires vraiment utiles. Ta prochaine version sera encore meilleure." }
+            {
+              "who": "Zoé",
+              "en": "Ugh, I got my essay back. The teacher says I have to rewrite it.",
+              "fr": "Ouache, j'ai reçu ma rédaction corrigée. L'enseignante dit que je dois la réécrire."
+            },
+            {
+              "who": "Noah",
+              "en": "Really? What was the problem?",
+              "fr": "Vraiment ? C'était quoi, le problème ?"
+            },
+            {
+              "who": "Zoé",
+              "en": "Some parts were unclear, and I made a few careless mistakes.",
+              "fr": "Certaines parties n'étaient pas claires, et j'ai fait quelques fautes d'inattention."
+            },
+            {
+              "who": "Noah",
+              "en": "That's not so bad. It's not impossible to fix!",
+              "fr": "Ce n'est pas si grave. Ce n'est pas impossible à corriger !"
+            },
+            {
+              "who": "Zoé",
+              "en": "True. And she said there was a big improvement since last time.",
+              "fr": "C'est vrai. Et elle a dit qu'il y avait une grosse amélioration depuis la dernière fois."
+            },
+            {
+              "who": "Noah",
+              "en": "See? That's really helpful feedback. Your next version will be even better.",
+              "fr": "Tu vois ? Ce sont des commentaires vraiment utiles. Ta prochaine version sera encore meilleure."
+            }
           ]
         }
       ],
       "vocab": [
-        { "en": "unfair", "fr": "injuste", "alt": [], "ex": "It's unfair that I always do the dishes!" },
-        { "en": "unlucky", "fr": "malchanceux (pas de chance)", "alt": [], "ex": "We were unlucky: it rained all week." },
-        { "en": "dishonest", "fr": "malhonnête", "alt": [], "ex": "Copying a friend's homework is dishonest." },
-        { "en": "disagree", "fr": "ne pas être d'accord", "alt": [], "ex": "I disagree with you about that movie." },
-        { "en": "misunderstand", "fr": "mal comprendre", "alt": [], "ex": "Sorry, I misunderstood your question." },
-        { "en": "impolite", "fr": "impoli", "alt": ["rude"], "ex": "It's impolite to talk with your mouth full." },
-        { "en": "irresponsible", "fr": "irresponsable", "alt": [], "ex": "Leaving the stove on was irresponsible." },
-        { "en": "rewrite", "fr": "réécrire", "alt": [], "ex": "I had to rewrite my whole essay." },
-        { "en": "undercooked", "fr": "pas assez cuit", "alt": [], "ex": "The chicken was undercooked, so we put it back in the oven." },
-        { "en": "overcrowded", "fr": "bondé (trop plein de monde)", "alt": ["packed"], "ex": "The bus was overcrowded this morning." },
-        { "en": "kindness", "fr": "gentillesse", "alt": [], "ex": "Thank you for your kindness." },
-        { "en": "friendship", "fr": "amitié", "alt": [], "ex": "Their friendship lasted all their lives." },
-        { "en": "childhood", "fr": "enfance", "alt": [], "ex": "My grandpa spent his childhood in Gatineau." },
-        { "en": "improvement", "fr": "amélioration", "alt": [], "ex": "There's a big improvement in your writing." },
-        { "en": "ability", "fr": "capacité, habileté (être capable de)", "alt": ["skill"], "ex": "She has an amazing ability to learn languages." },
-        { "en": "helpful", "fr": "serviable, utile (qui aide)", "alt": ["useful"], "ex": "Thanks, you've been very helpful." },
-        { "en": "careless", "fr": "négligent, distrait (pas prudent)", "alt": [], "ex": "I made a careless mistake on the test." },
-        { "en": "harmless", "fr": "inoffensif", "alt": [], "ex": "Don't worry, that snake is harmless." },
-        { "en": "enjoyable", "fr": "agréable (qu'on apprécie)", "alt": ["pleasant"], "ex": "It was a very enjoyable evening." },
-        { "en": "strengthen", "fr": "renforcer", "alt": [], "ex": "Swimming strengthens your whole body." }
+        {
+          "en": "unfair",
+          "fr": "injuste",
+          "alt": [],
+          "ex": "It's unfair that I always do the dishes!"
+        },
+        {
+          "en": "unlucky",
+          "fr": "malchanceux (pas de chance)",
+          "alt": [],
+          "ex": "We were unlucky: it rained all week."
+        },
+        {
+          "en": "dishonest",
+          "fr": "malhonnête",
+          "alt": [],
+          "ex": "Copying a friend's homework is dishonest."
+        },
+        {
+          "en": "disagree",
+          "fr": "ne pas être d'accord",
+          "alt": [],
+          "ex": "I disagree with you about that movie."
+        },
+        {
+          "en": "misunderstand",
+          "fr": "mal comprendre",
+          "alt": [],
+          "ex": "Sorry, I misunderstood your question."
+        },
+        {
+          "en": "impolite",
+          "fr": "impoli",
+          "alt": [
+            "rude"
+          ],
+          "ex": "It's impolite to talk with your mouth full."
+        },
+        {
+          "en": "irresponsible",
+          "fr": "irresponsable",
+          "alt": [],
+          "ex": "Leaving the stove on was irresponsible."
+        },
+        {
+          "en": "rewrite",
+          "fr": "réécrire",
+          "alt": [],
+          "ex": "I had to rewrite my whole essay."
+        },
+        {
+          "en": "undercooked",
+          "fr": "pas assez cuit",
+          "alt": [],
+          "ex": "The chicken was undercooked, so we put it back in the oven."
+        },
+        {
+          "en": "overcrowded",
+          "fr": "bondé (trop plein de monde)",
+          "alt": [
+            "packed"
+          ],
+          "ex": "The bus was overcrowded this morning."
+        },
+        {
+          "en": "kindness",
+          "fr": "gentillesse",
+          "alt": [],
+          "ex": "Thank you for your kindness."
+        },
+        {
+          "en": "friendship",
+          "fr": "amitié",
+          "alt": [],
+          "ex": "Their friendship lasted all their lives."
+        },
+        {
+          "en": "childhood",
+          "fr": "enfance",
+          "alt": [],
+          "ex": "My grandpa spent his childhood in Gatineau."
+        },
+        {
+          "en": "improvement",
+          "fr": "amélioration",
+          "alt": [],
+          "ex": "There's a big improvement in your writing."
+        },
+        {
+          "en": "ability",
+          "fr": "capacité, habileté (être capable de)",
+          "alt": [
+            "skill"
+          ],
+          "ex": "She has an amazing ability to learn languages."
+        },
+        {
+          "en": "helpful",
+          "fr": "serviable, utile (qui aide)",
+          "alt": [
+            "useful"
+          ],
+          "ex": "Thanks, you've been very helpful."
+        },
+        {
+          "en": "careless",
+          "fr": "négligent, distrait (pas prudent)",
+          "alt": [],
+          "ex": "I made a careless mistake on the test."
+        },
+        {
+          "en": "harmless",
+          "fr": "inoffensif",
+          "alt": [],
+          "ex": "Don't worry, that snake is harmless."
+        },
+        {
+          "en": "enjoyable",
+          "fr": "agréable (qu'on apprécie)",
+          "alt": [
+            "pleasant"
+          ],
+          "ex": "It was a very enjoyable evening."
+        },
+        {
+          "en": "strengthen",
+          "fr": "renforcer",
+          "alt": [],
+          "ex": "Swimming strengthens your whole body."
+        }
       ],
       "sentences": [
-        { "en": "It's impossible to finish this project in one night.", "fr": "C'est impossible de finir ce projet en une seule nuit.", "trap": ["unpossible", "inpossible"], "alt": [] },
-        { "en": "Thank you for your kindness and your patience.", "fr": "Merci pour ta gentillesse et ta patience.", "trap": ["kindeness", "kindful"], "alt": ["Thank you for your patience and your kindness."] },
-        { "en": "My parents disagree about which movie we should watch.", "fr": "Mes parents ne sont pas d'accord sur le film qu'on devrait regarder.", "trap": ["unagree", "desagree"], "alt": [] },
-        { "en": "Sorry, I think I misunderstood your question.", "fr": "Désolé, je pense que j'ai mal compris ta question.", "trap": ["disunderstood", "ununderstood"], "alt": [] },
-        { "en": "Leaving the door unlocked was really careless.", "fr": "Laisser la porte déverrouillée, c'était vraiment négligent.", "trap": ["carefull", "uncareful"], "alt": [] },
-        { "en": "Their friendship began in early childhood.", "fr": "Leur amitié a commencé dans la petite enfance.", "trap": ["friendhood", "childship"], "alt": [] },
-        { "en": "Don't worry, this spider is completely harmless.", "fr": "Ne t'inquiète pas, cette araignée est complètement inoffensive.", "trap": ["harmfull", "unharmful"], "alt": [] },
-        { "en": "The bus was so overcrowded that we decided to walk.", "fr": "L'autobus était tellement bondé qu'on a décidé de marcher.", "trap": ["undercrowded", "such"], "alt": [] },
-        { "en": "It's impolite to interrupt someone who is speaking.", "fr": "C'est impoli d'interrompre quelqu'un qui parle.", "trap": ["unpolite", "dispolite"], "alt": [] },
-        { "en": "I need to rewrite my essay because it was too short.", "fr": "Je dois réécrire ma rédaction parce qu'elle était trop courte.", "trap": ["unwrite", "diswrite"], "alt": [] },
-        { "en": "There has been a huge improvement in your English this year.", "fr": "Ton anglais s'est énormément amélioré cette année.", "trap": ["improvation", "improvness"], "alt": [] },
-        { "en": "Exercise and good sleep strengthen your body.", "fr": "L'exercice et un bon sommeil renforcent ton corps.", "trap": ["strongen", "strengthens"], "alt": ["Good sleep and exercise strengthen your body."] }
+        {
+          "en": "It's impossible to finish this project in one night.",
+          "fr": "C'est impossible de finir ce projet en une seule nuit.",
+          "trap": [
+            "unpossible",
+            "inpossible"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Thank you for your kindness and your patience.",
+          "fr": "Merci pour ta gentillesse et ta patience.",
+          "trap": [
+            "kindeness",
+            "kindful"
+          ],
+          "alt": [
+            "Thank you for your patience and your kindness."
+          ]
+        },
+        {
+          "en": "My parents disagree about which movie we should watch.",
+          "fr": "Mes parents ne sont pas d'accord sur le film qu'on devrait regarder.",
+          "trap": [
+            "unagree",
+            "desagree"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Sorry, I think I misunderstood your question.",
+          "fr": "Désolé, je pense que j'ai mal compris ta question.",
+          "trap": [
+            "disunderstood",
+            "ununderstood"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Leaving the door unlocked was really careless.",
+          "fr": "Laisser la porte déverrouillée, c'était vraiment négligent.",
+          "trap": [
+            "carefull",
+            "uncareful"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Their friendship began in early childhood.",
+          "fr": "Leur amitié a commencé dans la petite enfance.",
+          "trap": [
+            "friendhood",
+            "childship"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Don't worry, this spider is completely harmless.",
+          "fr": "Ne t'inquiète pas, cette araignée est complètement inoffensive.",
+          "trap": [
+            "harmfull",
+            "unharmful"
+          ],
+          "alt": []
+        },
+        {
+          "en": "The bus was so overcrowded that we decided to walk.",
+          "fr": "L'autobus était tellement bondé qu'on a décidé de marcher.",
+          "trap": [
+            "undercrowded",
+            "such"
+          ],
+          "alt": []
+        },
+        {
+          "en": "It's impolite to interrupt someone who is speaking.",
+          "fr": "C'est impoli d'interrompre quelqu'un qui parle.",
+          "trap": [
+            "unpolite",
+            "dispolite"
+          ],
+          "alt": []
+        },
+        {
+          "en": "I need to rewrite my essay because it was too short.",
+          "fr": "Je dois réécrire ma rédaction parce qu'elle était trop courte.",
+          "trap": [
+            "unwrite",
+            "diswrite"
+          ],
+          "alt": []
+        },
+        {
+          "en": "There has been a huge improvement in your English this year.",
+          "fr": "Ton anglais s'est énormément amélioré cette année.",
+          "trap": [
+            "improvation",
+            "improvness"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Exercise and good sleep strengthen your body.",
+          "fr": "L'exercice et un bon sommeil renforcent ton corps.",
+          "trap": [
+            "strongen",
+            "strengthens"
+          ],
+          "alt": [
+            "Good sleep and exercise strengthen your body."
+          ]
+        }
       ],
       "grammar": [
-        { "type": "mcq", "q": "Le contraire de possible est…", "choices": ["unpossible", "inpossible", "impossible", "dispossible"], "answer": 2, "explain": "Devant p, le préfixe in- devient im- : impossible." },
-        { "type": "mcq", "q": "It's ___ to drive faster than the speed limit.", "choices": ["illegal", "unlegal", "dislegal", "inlegal"], "answer": 0, "explain": "Devant l, le préfixe in- devient il- : illegal." },
-        { "type": "mcq", "q": "Thank you! You've been very ___.", "choices": ["helpless", "helpfull", "helping", "helpful"], "answer": 3, "explain": "Qui aide = helpful, avec un seul l. Helpless veut dire « sans défense »." },
-        { "type": "mcq", "q": "Our ___ is the most important thing to me.", "choices": ["friendhood", "friendship", "friendness", "friendity"], "answer": 1, "explain": "Une relation → -ship : friendship." },
-        { "type": "mcq", "q": "My grandpa often talks about his ___ in Gatineau.", "choices": ["childship", "childness", "childhood", "childment"], "answer": 2, "explain": "Une période de la vie → -hood : childhood." },
-        { "type": "mcq", "q": "Quel mot veut dire « trop cuit » ?", "choices": ["overcooked", "undercooked", "miscooked", "discooked"], "answer": 0, "explain": "Over- = trop ; under- = pas assez." },
-        { "type": "fill", "q": "Please don't ___ me; I didn't mean it that way.", "hint": "understand (mal)", "answer": ["misunderstand"], "explain": "Mis- = mal : misunderstand = mal comprendre." },
-        { "type": "fill", "q": "Your homework shows a big ___ since last month.", "hint": "improve", "answer": ["improvement"], "explain": "Verbe + -ment = nom : improvement." },
-        { "type": "fill", "q": "Leaving your bike unlocked downtown is ___.", "hint": "responsible (contraire)", "answer": ["irresponsible"], "explain": "Devant r, le préfixe devient ir- : irresponsible (deux r)." },
-        { "type": "fill", "q": "She has an amazing ___ to learn languages quickly.", "hint": "able", "answer": ["ability"], "explain": "able → ability (nom en -ity)." },
-        { "type": "fill", "q": "The movie was so ___ that we watched it twice.", "hint": "enjoy", "answer": ["enjoyable"], "explain": "Verbe + -able = adjectif : enjoyable (agréable)." },
-        { "type": "fill", "q": "The city decided to ___ the road because there were too many cars.", "hint": "wide (verbe)", "answer": ["widen"], "explain": "Adjectif + -en = verbe : wide → widen (élargir)." },
-        { "type": "error", "q": "It's unpossible to sleep with all this noise.", "wrong": 1, "fix": ["impossible"], "explain": "Unpossible n'existe pas : impossible." },
-        { "type": "error", "q": "Be carefull when you cross the street.", "wrong": 1, "fix": ["careful"], "explain": "Le suffixe -ful n'a qu'un seul l : careful." },
-        { "type": "error", "q": "He was very unpolite to the waiter.", "wrong": 3, "fix": ["impolite", "rude"], "explain": "Le contraire de polite est impolite." },
-        { "type": "error", "q": "I completely desagree with you.", "wrong": 2, "fix": ["disagree"], "explain": "En anglais, le préfixe est dis- : disagree." },
-        { "type": "error", "q": "That answer is unlogical.", "wrong": 3, "fix": ["illogical"], "explain": "Devant l, on utilise il- : illogical." },
-        { "type": "error", "q": "There is a lot of happyness in this house.", "wrong": 5, "fix": ["happiness"], "explain": "Le y devient i devant -ness : happiness." }
+        {
+          "type": "mcq",
+          "q": "Le contraire de possible est…",
+          "choices": [
+            "unpossible",
+            "inpossible",
+            "impossible",
+            "dispossible"
+          ],
+          "answer": 2,
+          "explain": "Devant p, le préfixe in- devient im- : impossible."
+        },
+        {
+          "type": "mcq",
+          "q": "It's ___ to drive faster than the speed limit.",
+          "choices": [
+            "illegal",
+            "unlegal",
+            "dislegal",
+            "inlegal"
+          ],
+          "answer": 0,
+          "explain": "Devant l, le préfixe in- devient il- : illegal."
+        },
+        {
+          "type": "mcq",
+          "q": "Thank you! You've been very ___.",
+          "choices": [
+            "helpless",
+            "helpfull",
+            "helping",
+            "helpful"
+          ],
+          "answer": 3,
+          "explain": "Qui aide = helpful, avec un seul l. Helpless veut dire « sans défense »."
+        },
+        {
+          "type": "mcq",
+          "q": "Our ___ is the most important thing to me.",
+          "choices": [
+            "friendhood",
+            "friendship",
+            "friendness",
+            "friendity"
+          ],
+          "answer": 1,
+          "explain": "Une relation → -ship : friendship."
+        },
+        {
+          "type": "mcq",
+          "q": "My grandpa often talks about his ___ in Gatineau.",
+          "choices": [
+            "childship",
+            "childness",
+            "childhood",
+            "childment"
+          ],
+          "answer": 2,
+          "explain": "Une période de la vie → -hood : childhood."
+        },
+        {
+          "type": "mcq",
+          "q": "Quel mot veut dire « trop cuit » ?",
+          "choices": [
+            "overcooked",
+            "undercooked",
+            "miscooked",
+            "discooked"
+          ],
+          "answer": 0,
+          "explain": "Over- = trop ; under- = pas assez."
+        },
+        {
+          "type": "fill",
+          "q": "Please don't ___ me; I didn't mean it that way.",
+          "hint": "understand (mal)",
+          "answer": [
+            "misunderstand"
+          ],
+          "explain": "Mis- = mal : misunderstand = mal comprendre."
+        },
+        {
+          "type": "fill",
+          "q": "Your homework shows a big ___ since last month.",
+          "hint": "improve",
+          "answer": [
+            "improvement"
+          ],
+          "explain": "Verbe + -ment = nom : improvement."
+        },
+        {
+          "type": "fill",
+          "q": "Leaving your bike unlocked downtown is ___.",
+          "hint": "responsible (contraire)",
+          "answer": [
+            "irresponsible"
+          ],
+          "explain": "Devant r, le préfixe devient ir- : irresponsible (deux r)."
+        },
+        {
+          "type": "fill",
+          "q": "She has an amazing ___ to learn languages quickly.",
+          "hint": "able",
+          "answer": [
+            "ability"
+          ],
+          "explain": "able → ability (nom en -ity)."
+        },
+        {
+          "type": "fill",
+          "q": "The movie was so ___ that we watched it twice.",
+          "hint": "enjoy",
+          "answer": [
+            "enjoyable"
+          ],
+          "explain": "Verbe + -able = adjectif : enjoyable (agréable)."
+        },
+        {
+          "type": "fill",
+          "q": "The city decided to ___ the road because there were too many cars.",
+          "hint": "wide (verbe)",
+          "answer": [
+            "widen"
+          ],
+          "explain": "Adjectif + -en = verbe : wide → widen (élargir)."
+        },
+        {
+          "type": "error",
+          "q": "It's unpossible to sleep with all this noise.",
+          "wrong": 1,
+          "fix": [
+            "impossible"
+          ],
+          "explain": "Unpossible n'existe pas : impossible."
+        },
+        {
+          "type": "error",
+          "q": "Be carefull when you cross the street.",
+          "wrong": 1,
+          "fix": [
+            "careful"
+          ],
+          "explain": "Le suffixe -ful n'a qu'un seul l : careful."
+        },
+        {
+          "type": "error",
+          "q": "He was very unpolite to the waiter.",
+          "wrong": 3,
+          "fix": [
+            "impolite",
+            "rude"
+          ],
+          "explain": "Le contraire de polite est impolite."
+        },
+        {
+          "type": "error",
+          "q": "I completely desagree with you.",
+          "wrong": 2,
+          "fix": [
+            "disagree"
+          ],
+          "explain": "En anglais, le préfixe est dis- : disagree."
+        },
+        {
+          "type": "error",
+          "q": "That answer is unlogical.",
+          "wrong": 3,
+          "fix": [
+            "illogical"
+          ],
+          "explain": "Devant l, on utilise il- : illogical."
+        },
+        {
+          "type": "error",
+          "q": "There is a lot of happyness in this house.",
+          "wrong": 5,
+          "fix": [
+            "happiness"
+          ],
+          "explain": "Le y devient i devant -ness : happiness."
+        }
       ],
       "reading": {
         "title": "The Kindness Club",
         "text": "When Amir started grade eight, he felt invisible. His family had just moved to Ottawa, and he found it impossible to make friends. At lunch, he usually sat alone and pretended to read.\n\nOne day, his teacher, Madame Roy, announced that the school was starting a new club. Its goal was simple: to make the school a kinder place. Amir was unsure at first, but he decided to join.\n\nThe members of the Kindness Club did small, helpful things. They wrote encouraging notes and hid them in library books. They helped younger students who were lost or unhappy. Once a month, they organized a game afternoon for anyone who felt lonely. Nothing was too small. Even a smile, Madame Roy said, could change someone's day.\n\nAt first, some students thought the club was useless. A few boys even made unkind jokes about it. But little by little, the atmosphere in the school changed. There were fewer arguments in the hallways, and more students sat together at lunch.\n\nFor Amir, the biggest improvement was personal. His shyness slowly disappeared, and he discovered an ability that he didn't know he had: he was a wonderful listener. People enjoyed talking to him, and by the end of the year, he had more friends than he could count.\n\nYears later, Amir still remembers that club as the beginning of the most important friendship of his life. The boy who had sat next to him at the very first meeting became his best friend.",
         "questions": [
-          { "q": "How did Amir feel at the start of the year?", "choices": ["Popular", "Invisible and alone", "Angry", "Excited"], "answer": 1 },
-          { "q": "What was the goal of the club?", "choices": ["To win competitions", "To read more books", "To make the school a kinder place", "To organize sports"], "answer": 2 },
-          { "q": "Which activity did the club NOT do?", "choices": ["Hiding encouraging notes in books", "Helping younger students", "Organizing game afternoons", "Selling cookies"], "answer": 3 },
-          { "q": "What ability did Amir discover?", "choices": ["He was a great listener.", "He was a great singer.", "He was good at hockey.", "He could speak four languages."], "answer": 0 },
-          { "q": "What does the text suggest about small acts of kindness?", "choices": ["They are useless.", "They can slowly change a whole school.", "They only help the person who does them.", "They are only for teachers."], "answer": 1 },
-          { "q": "Why does Amir remember the club as so important?", "choices": ["Because Madame Roy gave him a prize", "Because he became the club's president", "Because he met his best friend there", "Because the club became famous"], "answer": 2 }
+          {
+            "q": "How did Amir feel at the start of the year?",
+            "choices": [
+              "Popular",
+              "Invisible and alone",
+              "Angry",
+              "Excited"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "What was the goal of the club?",
+            "choices": [
+              "To win competitions",
+              "To read more books",
+              "To make the school a kinder place",
+              "To organize sports"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Which activity did the club NOT do?",
+            "choices": [
+              "Hiding encouraging notes in books",
+              "Helping younger students",
+              "Organizing game afternoons",
+              "Selling cookies"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "What ability did Amir discover?",
+            "choices": [
+              "He was a great listener.",
+              "He was a great singer.",
+              "He was good at hockey.",
+              "He could speak four languages."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "What does the text suggest about small acts of kindness?",
+            "choices": [
+              "They are useless.",
+              "They can slowly change a whole school.",
+              "They only help the person who does them.",
+              "They are only for teachers."
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Why does Amir remember the club as so important?",
+            "choices": [
+              "Because Madame Roy gave him a prize",
+              "Because he became the club's president",
+              "Because he met his best friend there",
+              "Because the club became famous"
+            ],
+            "answer": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "10.5",
+      "title": "Articles et quantités avancés",
+      "titleEn": "A Few or Few?",
+      "goal": "Savoir quand ne pas mettre d'article, parler d'un groupe avec the + adjectif et doser finement les quantités.",
+      "lesson": [
+        {
+          "type": "rule",
+          "title": "L'article zéro",
+          "text": "En français, on met « le, la, les » partout. En anglais, **pas d'article** pour parler d'une chose **en général** : [[Dogs are loyal.]] (Les chiens sont fidèles.) [[I love music.]] [[Health is more important than money.]] Mais [[the]] revient dès qu'on parle de quelque chose de **précis** : [[The dogs next door bark all night.]] Pas d'article non plus dans des expressions fixes : les lieux pris pour leur **fonction** ([[at school]], [[at work]], [[at home]], [[in bed]], [[go to bed]], [[in class]]), les transports avec by ([[by bus]], [[by car]], [[by train]], mais [[on foot]]), les repas ([[have breakfast]], [[after lunch]]), les sports, les langues et les matières ([[play hockey]], [[speak French]], [[I'm good at math]])."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Sans article (la fonction, le général)",
+            "Avec the (un lieu, une chose précise)"
+          ],
+          "rows": [
+            [
+              "[[Emma is at school.]] (elle est en classe, elle étudie)",
+              "[[Her dad went to the school to meet the teacher.]] (le bâtiment)"
+            ],
+            [
+              "[[It's late, go to bed!]]",
+              "[[Don't jump on the bed!]]"
+            ],
+            [
+              "[[We went to Toronto by train.]]",
+              "[[We took the train to Toronto.]]"
+            ],
+            [
+              "[[Children love snow.]] (tous les enfants, la neige en général)",
+              "[[The children loved the snow at the cottage.]] (ces enfants-là, cette neige-là)"
+            ]
+          ]
+        },
+        {
+          "type": "rule",
+          "title": "The + adjectif : tout un groupe",
+          "text": "Pour parler d'un **groupe de personnes**, on met [[the]] + adjectif : [[the young]], [[the elderly]], [[the homeless]], [[the unemployed]], [[the injured]], [[the rich]], [[the poor]]. Deux règles : le verbe est au **pluriel** ([[The elderly are…]]) et l'adjectif ne prend **jamais de -s** (jamais « the elderlies »). Pour **une seule** personne, il faut un nom : [[an elderly man]], [[a homeless person]]. Même chose pour certaines nationalités : [[the French]], [[the British]], [[the Japanese]]."
+        },
+        {
+          "type": "rule",
+          "title": "Few ou a few ? Little ou a little ?",
+          "text": "Le petit [[a]] change tout ! [[a few]] / [[a little]] = **quelques / un peu** (positif : il y en a, ça suffit). [[few]] / [[little]] tout seuls = **peu de** (négatif : pas assez). [[few]] va avec un pluriel qu'on compte ([[friends]], [[cookies]]), [[little]] avec ce qu'on ne compte pas ([[time]], [[milk]], [[patience]]). [[We have a little time.]] = on a un peu de temps, relaxe. [[We have little time.]] = on n'a presque plus de temps, vite ! Attention : [[quite a few]] = **pas mal de**, donc beaucoup !"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Sens",
+            "+ pluriel (dénombrable)",
+            "+ indénombrable"
+          ],
+          "rows": [
+            [
+              "quelques, un peu (positif)",
+              "[[a few friends]]",
+              "[[a little time]]"
+            ],
+            [
+              "peu de (négatif)",
+              "[[few friends]]",
+              "[[little time]]"
+            ],
+            [
+              "presque pas de",
+              "[[hardly any friends]]",
+              "[[hardly any time]]"
+            ],
+            [
+              "beaucoup, pas mal de",
+              "[[quite a few friends]]",
+              "[[a great deal of time]]"
+            ],
+            [
+              "largement assez",
+              "[[plenty of friends]]",
+              "[[plenty of time]]"
+            ]
+          ]
+        },
+        {
+          "type": "rule",
+          "title": "Either, neither, none… et whole ou all ?",
+          "text": "Pour **deux** choses : [[either]] = l'un ou l'autre ; [[neither]] = ni l'un ni l'autre, **avec un verbe affirmatif** : [[Neither answer is correct.]] [[Neither of my parents speaks Spanish.]] (à l'écrit soigné, verbe au singulier). Si la phrase est déjà négative, c'est [[either]] : [[I don't like either of them.]] = [[I like neither of them.]] Jamais de double négation (jamais « I don't like neither »). Pour **trois ou plus** : [[none of]] ([[None of my five cousins came.]]). En paires : [[either… or]] (soit… soit), [[neither… nor]] (ni… ni). Enfin, « tout le, toute la » : [[the whole]] + nom singulier, avec l'article **devant** ([[the whole family]], [[my whole life]]), ou [[all the]] ([[all the family]]), mais jamais « the all family ». Avec un pluriel ou un indénombrable, on prend [[all]] : [[all the students]], [[all the milk]]."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "Most teenagers need more sleep than adults.",
+              "fr": "La plupart des ados ont besoin de plus de sommeil que les adultes."
+            },
+            {
+              "en": "The homeless need warm shelters in winter.",
+              "fr": "Les sans-abri ont besoin de refuges chauffés en hiver."
+            },
+            {
+              "en": "Only a few people came, but we had plenty of food.",
+              "fr": "Seulement quelques personnes sont venues, mais nous avions plein de nourriture."
+            },
+            {
+              "en": "There's very little milk left, so I'll have juice instead.",
+              "fr": "Il reste très peu de lait, alors je vais prendre du jus à la place."
+            },
+            {
+              "en": "Neither of my sisters wanted to do the dishes.",
+              "fr": "Aucune de mes deux sœurs ne voulait faire la vaisselle."
+            },
+            {
+              "en": "We spent the whole afternoon at the food bank.",
+              "fr": "Nous avons passé tout l'après-midi à la banque alimentaire."
+            }
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "Pièges de francophone : « Les enfants adorent les bonbons » → [[Children love candy.]], pas « The children love the candy » (ça voudrait dire « ces enfants-là adorent ces bonbons-là »). « En autobus » → [[by bus]], jamais « by the bus » ni « with the bus » ; « à pied » → [[on foot]]. Bonus : « à l'hôpital » se dit [[in the hospital]] au Canada et aux États-Unis, mais [[in hospital]] en anglais britannique : les deux sont corrects."
+        },
+        {
+          "type": "dialogue",
+          "title": "Samedi à la banque alimentaire",
+          "lines": [
+            {
+              "who": "Ana",
+              "en": "Dad, how many volunteers are coming today?",
+              "fr": "Papa, combien de bénévoles viennent aujourd'hui ?"
+            },
+            {
+              "who": "Samuel",
+              "en": "Quite a few, I hope. Last week, very few people showed up.",
+              "fr": "Pas mal, j'espère. La semaine dernière, très peu de gens se sont présentés."
+            },
+            {
+              "who": "Ana",
+              "en": "Do we have enough pasta? There's hardly any left on this shelf.",
+              "fr": "Avons-nous assez de pâtes ? Il n'en reste presque plus sur cette tablette."
+            },
+            {
+              "who": "Samuel",
+              "en": "Don't worry, there's plenty of pasta in the back, but we have very little rice.",
+              "fr": "Ne t'en fais pas, il y a plein de pâtes en arrière, mais on a très peu de riz."
+            },
+            {
+              "who": "Ana",
+              "en": "Should I sort the cans or the boxes first?",
+              "fr": "Je trie les conserves ou les boîtes en premier ?"
+            },
+            {
+              "who": "Samuel",
+              "en": "Either is fine. Neither will take long.",
+              "fr": "Peu importe. Ni l'un ni l'autre ne prendra longtemps."
+            },
+            {
+              "who": "Ana",
+              "en": "Who usually comes here on Saturdays?",
+              "fr": "Qui vient ici d'habitude, le samedi ?"
+            },
+            {
+              "who": "Samuel",
+              "en": "All kinds of people: the elderly, the unemployed, students, even families where both parents work.",
+              "fr": "Toutes sortes de gens : des personnes âgées, des sans-emploi, des étudiants, même des familles où les deux parents travaillent."
+            }
+          ]
+        },
+        {
+          "type": "fun",
+          "text": "Le sais-tu ? Au Canada, le lait entier, [[whole milk]], contient 3,25 % de matières grasses. Alors si on te demande d'acheter du [[whole milk]], pas besoin de rapporter tout le lait du magasin : c'est simplement du lait entier !"
+        }
+      ],
+      "vocab": [
+        {
+          "en": "the elderly",
+          "fr": "les personnes âgées, les aînés",
+          "alt": [],
+          "ex": "Our school organizes a concert for the elderly every December."
+        },
+        {
+          "en": "the homeless",
+          "fr": "les sans-abri, les itinérants",
+          "alt": [],
+          "ex": "The shelter offers hot meals to the homeless."
+        },
+        {
+          "en": "the unemployed",
+          "fr": "les sans-emploi, les chômeurs",
+          "alt": [],
+          "ex": "The new program helps the unemployed find work."
+        },
+        {
+          "en": "the injured",
+          "fr": "les blessés",
+          "alt": [],
+          "ex": "The injured were taken to the hospital."
+        },
+        {
+          "en": "the young",
+          "fr": "les jeunes",
+          "alt": [],
+          "ex": "The young often learn new apps faster than their parents."
+        },
+        {
+          "en": "on foot",
+          "fr": "à pied",
+          "alt": [],
+          "ex": "We went to the park on foot."
+        },
+        {
+          "en": "quite a few",
+          "fr": "pas mal de, un bon nombre de",
+          "alt": [],
+          "ex": "Quite a few of my friends play the guitar."
+        },
+        {
+          "en": "hardly any",
+          "fr": "presque pas de",
+          "alt": [],
+          "ex": "There's hardly any snow this year."
+        },
+        {
+          "en": "plenty of",
+          "fr": "plein de (largement assez)",
+          "alt": [],
+          "ex": "Don't worry, we have plenty of time."
+        },
+        {
+          "en": "a great deal of",
+          "fr": "énormément de (+ indénombrable)",
+          "alt": [],
+          "ex": "Organizing the party took a great deal of energy."
+        },
+        {
+          "en": "a handful of",
+          "fr": "une poignée de",
+          "alt": [],
+          "ex": "Only a handful of students came to the meeting."
+        },
+        {
+          "en": "neither … nor",
+          "fr": "ni… ni",
+          "alt": [],
+          "ex": "Neither my brother nor my sister likes mushrooms."
+        },
+        {
+          "en": "either … or",
+          "fr": "soit… soit (ou bien… ou bien)",
+          "alt": [],
+          "ex": "You can either walk or take the bus."
+        },
+        {
+          "en": "none of",
+          "fr": "aucun de, aucune de (parmi trois ou plus)",
+          "alt": [],
+          "ex": "None of my cousins can skate."
+        },
+        {
+          "en": "the whole",
+          "fr": "tout le, toute la (en entier)",
+          "alt": [],
+          "ex": "We ate the whole cake in one evening."
+        },
+        {
+          "en": "whole milk",
+          "fr": "lait entier",
+          "alt": [],
+          "ex": "Grandma always buys whole milk."
+        },
+        {
+          "en": "food bank",
+          "fr": "banque alimentaire",
+          "alt": [],
+          "ex": "We brought some cans to the food bank."
+        },
+        {
+          "en": "donate",
+          "fr": "faire un don, donner (à un organisme)",
+          "alt": [],
+          "ex": "Every spring, my family donates old clothes."
+        },
+        {
+          "en": "leftovers",
+          "fr": "restes (d'un repas)",
+          "alt": [],
+          "ex": "We had leftovers for lunch the next day."
+        }
+      ],
+      "sentences": [
+        {
+          "en": "Life is too short to argue about pineapple on pizza.",
+          "fr": "La vie est trop courte pour se disputer à propos de l'ananas sur la pizza.",
+          "trap": [
+            "The",
+            "of"
+          ],
+          "alt": []
+        },
+        {
+          "en": "We went to the market on foot because the car wouldn't start.",
+          "fr": "Nous sommes allés au marché à pied parce que la voiture ne démarrait pas.",
+          "trap": [
+            "feet",
+            "with"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Few people came to the meeting, so it ended early.",
+          "fr": "Peu de gens sont venus à la réunion, alors elle s'est terminée tôt.",
+          "trap": [
+            "Little",
+            "Much"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Relax, we still have a little time before the movie starts.",
+          "fr": "Relaxe, on a encore un peu de temps avant le début du film.",
+          "trap": [
+            "few",
+            "many"
+          ],
+          "alt": []
+        },
+        {
+          "en": "The elderly are often the first to feel the cold.",
+          "fr": "Les personnes âgées sont souvent les premières à souffrir du froid.",
+          "trap": [
+            "elderlies",
+            "is"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Volunteers at the food bank help the homeless every weekend.",
+          "fr": "Les bénévoles de la banque alimentaire aident les sans-abri chaque fin de semaine.",
+          "trap": [
+            "homelesses",
+            "helps"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Neither of my brothers wanted to share the leftovers.",
+          "fr": "Aucun de mes deux frères ne voulait partager les restes.",
+          "trap": [
+            "Either",
+            "didn't"
+          ],
+          "alt": []
+        },
+        {
+          "en": "I've eaten the whole box of cookies, and I regret nothing.",
+          "fr": "J'ai mangé toute la boîte de biscuits, et je ne regrette rien.",
+          "trap": [
+            "all",
+            "anything"
+          ],
+          "alt": []
+        },
+        {
+          "en": "You can pay either by card or in cash.",
+          "fr": "Tu peux payer soit par carte, soit en argent comptant.",
+          "trap": [
+            "neither",
+            "the"
+          ],
+          "alt": [
+            "You can either pay by card or in cash."
+          ]
+        },
+        {
+          "en": "Quite a few of my friends speak both French and English.",
+          "fr": "Pas mal de mes amis parlent à la fois français et anglais.",
+          "trap": [
+            "the",
+            "little"
+          ],
+          "alt": []
+        },
+        {
+          "en": "There's hardly any milk left, so we need to buy some.",
+          "fr": "Il ne reste presque plus de lait, alors on doit en acheter.",
+          "trap": [
+            "no",
+            "few"
+          ],
+          "alt": []
+        },
+        {
+          "en": "My little sister goes to bed at eight, but she never sleeps.",
+          "fr": "Ma petite sœur va se coucher à huit heures, mais elle ne dort jamais.",
+          "trap": [
+            "the",
+            "sleep"
+          ],
+          "alt": []
+        }
+      ],
+      "grammar": [
+        {
+          "type": "mcq",
+          "q": "___ is more important than money.",
+          "choices": [
+            "The health",
+            "Health",
+            "A health",
+            "Healths"
+          ],
+          "answer": 1,
+          "explain": "On parle de la santé en général (indénombrable) : pas d'article. « La santé » = Health."
+        },
+        {
+          "type": "mcq",
+          "q": "We usually go to the cottage ___.",
+          "choices": [
+            "by the car",
+            "with the car",
+            "by car",
+            "in car"
+          ],
+          "answer": 2,
+          "explain": "Moyen de transport : by + nom sans article (by car, by bus, by train)."
+        },
+        {
+          "type": "mcq",
+          "q": "___ are not always happier than other people.",
+          "choices": [
+            "The rich",
+            "Rich",
+            "The riches",
+            "A rich"
+          ],
+          "answer": 0,
+          "explain": "Un groupe de personnes : the + adjectif, sans -s, avec un verbe au pluriel (The rich are)."
+        },
+        {
+          "type": "mcq",
+          "q": "Relax, there's no rush: we still have ___ time before the bus comes.",
+          "choices": [
+            "little",
+            "a little",
+            "a few",
+            "few"
+          ],
+          "answer": 1,
+          "explain": "Time est indénombrable et le sens est positif (pas de panique) : a little."
+        },
+        {
+          "type": "mcq",
+          "q": "The test was so hard that ___ students passed it. Only two!",
+          "choices": [
+            "a few",
+            "a little",
+            "little",
+            "few"
+          ],
+          "answer": 3,
+          "explain": "Sens négatif (presque personne) avec un pluriel dénombrable : few, sans a."
+        },
+        {
+          "type": "mcq",
+          "q": "I invited my two best friends, but ___ of them could come.",
+          "choices": [
+            "none",
+            "neither",
+            "either",
+            "both"
+          ],
+          "answer": 1,
+          "explain": "Deux personnes, sens négatif avec un verbe affirmatif (could come) : neither."
+        },
+        {
+          "type": "mcq",
+          "q": "___ of my three cousins came to the party; they were all sick.",
+          "choices": [
+            "Neither",
+            "Either",
+            "None",
+            "Nobody"
+          ],
+          "answer": 2,
+          "explain": "Trois personnes ou plus : none of. Neither ne sert que pour deux."
+        },
+        {
+          "type": "fill",
+          "q": "It's almost midnight. Go ___!",
+          "hint": "au lit, te coucher",
+          "answer": [
+            "to bed"
+          ],
+          "explain": "Expression fixe sans article : go to bed (on va au lit pour dormir, pas vers un lit précis)."
+        },
+        {
+          "type": "fill",
+          "q": "The new program will help ___ find jobs more quickly.",
+          "hint": "les sans-emploi",
+          "answer": [
+            "the unemployed"
+          ],
+          "explain": "Un groupe de personnes : the + adjectif, sans -s : the unemployed."
+        },
+        {
+          "type": "fill",
+          "q": "There were still ___ cookies left, so I offered one to our neighbour.",
+          "hint": "quelques, avec few",
+          "answer": [
+            "a few"
+          ],
+          "explain": "Quelques (positif) + pluriel dénombrable : a few."
+        },
+        {
+          "type": "fill",
+          "q": "I don't like ___ of these two shirts. Do you have another colour?",
+          "hint": "aucun des deux, phrase déjà négative",
+          "answer": [
+            "either"
+          ],
+          "explain": "Avec don't, on prend either ; neither ferait une double négation."
+        },
+        {
+          "type": "fill",
+          "q": "___ my dad nor my uncle can cook rice properly.",
+          "hint": "ni",
+          "answer": [
+            "Neither"
+          ],
+          "explain": "Ni… ni = neither… nor, avec un verbe affirmatif (can cook)."
+        },
+        {
+          "type": "fill",
+          "q": "She spent ___ day reading in the hammock.",
+          "hint": "toute la, avec whole",
+          "answer": [
+            "the whole"
+          ],
+          "explain": "« Toute la journée » : the whole day, l'article se place avant whole."
+        },
+        {
+          "type": "error",
+          "q": "The elderlies in our building love playing cards.",
+          "wrong": 1,
+          "fix": [
+            "elderly"
+          ],
+          "explain": "The + adjectif ne prend jamais de -s : the elderly."
+        },
+        {
+          "type": "error",
+          "q": "The homeless needs warm clothes in winter.",
+          "wrong": 2,
+          "fix": [
+            "need"
+          ],
+          "explain": "The homeless désigne un groupe : verbe au pluriel, need."
+        },
+        {
+          "type": "error",
+          "q": "I don't like neither of these songs.",
+          "wrong": 3,
+          "fix": [
+            "either"
+          ],
+          "explain": "Pas de double négation : don't + either (ou I like neither)."
+        },
+        {
+          "type": "error",
+          "q": "We ate the all pizza in ten minutes.",
+          "wrong": 3,
+          "fix": [
+            "whole"
+          ],
+          "explain": "« Toute la pizza » : the whole pizza (ou all the pizza), jamais the all."
+        },
+        {
+          "type": "error",
+          "q": "Only a little people came, so there was plenty of cake.",
+          "wrong": 2,
+          "fix": [
+            "few"
+          ],
+          "explain": "People est un pluriel qu'on compte : a few people, pas a little."
+        }
+      ],
+      "reading": {
+        "title": "The No-Waste Challenge",
+        "text": "Last winter, the Nguyen family made a bold decision: for the whole month of February, they would not throw away a single crumb of food. Mom had read an article about how much food families waste, and she had been shocked.\n\nAt first, it was harder than expected. They had very few ideas for leftovers. Dad suggested soup. Mei, who is eleven, suggested pizza. In the end, they made both: leftover soup on Mondays and \"fridge pizza\" on Fridays, topped with whatever was left. Neither recipe looked elegant, but both tasted surprisingly good.\n\nBy the middle of the month, there was hardly any food in the garbage. The family had also realized something embarrassing: they bought far too much. Quite a few of the cans in the cupboard had never been opened. So one Saturday morning, they walked downtown, carrying three heavy bags for the food bank.\n\nThe volunteers explained that the food bank helps people of all ages: the elderly, the unemployed, students, and even families with full-time jobs who can't afford enough groceries. Mei was surprised. \"I thought only the homeless needed help,\" she said. A volunteer smiled. \"Plenty of people need a little help at some point in their lives.\"\n\nAt the end of February, the family looked back on the challenge. None of them wanted to go back to their old habits. Well, almost none of them. Mei's little brother admitted that he missed one thing: being allowed to leave his broccoli on his plate.",
+        "questions": [
+          {
+            "q": "What was the family's goal for February?",
+            "choices": [
+              "To eat only vegetables",
+              "Not to waste any food",
+              "To cook pizza every day",
+              "To volunteer every weekend"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "What does \"Neither recipe looked elegant\" mean?",
+            "choices": [
+              "Only one recipe looked nice.",
+              "Both recipes looked very nice.",
+              "The two recipes did not look nice.",
+              "The recipes were too difficult."
+            ],
+            "answer": 2
+          },
+          {
+            "q": "What did the family do with the unopened cans?",
+            "choices": [
+              "They gave them to the food bank.",
+              "They threw them away.",
+              "They used them in the fridge pizza.",
+              "They gave them to their neighbours."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "What surprised Mei at the food bank?",
+            "choices": [
+              "That the volunteers were so young",
+              "That many different kinds of people use it",
+              "That it was closed on Saturdays",
+              "That it didn't accept cans"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Why does Mei's little brother miss leaving his broccoli on his plate?",
+            "choices": [
+              "Because he loves broccoli",
+              "Because the family stopped buying broccoli",
+              "Because he gave his broccoli to the food bank",
+              "Because during the challenge, he had to finish everything on his plate"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "What did the family probably learn from the challenge?",
+            "choices": [
+              "That pizza is healthier than soup",
+              "That food banks only help the homeless",
+              "That they should plan their shopping better",
+              "That February is the best month for cooking"
+            ],
+            "answer": 2
+          }
         ]
       }
     }

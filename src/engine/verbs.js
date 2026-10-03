@@ -240,3 +240,6 @@ export const ppForms = (v) => {
 };
 
 export { VOWEL };
+
+/** The (wrong) regular past a learner might invent for an irregular verb: go → goed, buy → buyed. */
+export const regularPast = (base) => regularForms(base, false).ed;

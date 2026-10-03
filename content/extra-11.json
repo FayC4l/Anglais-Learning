@@ -317,6 +317,84 @@
           "J'ai relu mon message une fois juste pour les homophones"
         ]
       }
+    },
+    {
+      "unit": "11.5",
+      "pron": {
+        "focus": "Les mots en -ate : verbe ou nom ?",
+        "ipa": "/eɪt/ – /ət/",
+        "explain": "L'anglais académique adore les mots en [[-ate]], et beaucoup sont à la fois **verbe** et **nom** ou **adjectif**. L'orthographe ne change pas, mais le son, oui ! Quand c'est un **verbe**, la fin est pleine : « éït » ([[to estimate]], [[to separate]]). Quand c'est un **nom** ou un **adjectif**, la fin devient un petit « eut » tout faible ([[an estimate]], [[separate rooms]]). L'accent, lui, reste au début. Honnêtement, la voix de synthèse se trompe parfois : fie-toi à la règle et à ton oreille.",
+        "words": [
+          {
+            "en": "to estimate",
+            "fr": "estimer",
+            "hint": "« tou-ESS-ti-méït » : verbe, la fin sonne « éït »"
+          },
+          {
+            "en": "an estimate",
+            "fr": "une estimation",
+            "hint": "« eun-ESS-ti-meut » : nom, la fin est un petit « eut »"
+          },
+          {
+            "en": "to separate",
+            "fr": "séparer",
+            "hint": "« tou-SÈ-peu-réït » : verbe, fin en « éït »"
+          },
+          {
+            "en": "separate rooms",
+            "fr": "des chambres séparées",
+            "hint": "« SÈP-reut-ROUMZ » : adjectif, fin faible « reut »"
+          },
+          {
+            "en": "to graduate",
+            "fr": "obtenir son diplôme",
+            "hint": "« tou-GRA-djou-éït » : verbe, fin en « éït »"
+          },
+          {
+            "en": "a graduate",
+            "fr": "un diplômé, une diplômée",
+            "hint": "« eu-GRA-djou-eut » : nom, fin faible « eut »"
+          },
+          {
+            "en": "to advocate",
+            "fr": "prôner, défendre (une idée)",
+            "hint": "« tou-AD-veu-kéït » : verbe, fin en « éït »"
+          },
+          {
+            "en": "an advocate",
+            "fr": "un défenseur, une défenseure",
+            "hint": "« eun-AD-veu-keut » : nom, fin faible « keut »"
+          },
+          {
+            "en": "appropriate",
+            "fr": "approprié",
+            "hint": "« eu-PRÔ-pri-eut » : adjectif, fin faible « eut »"
+          },
+          {
+            "en": "approximately",
+            "fr": "environ, approximativement",
+            "hint": "« eu-PROK-si-meut-li » : adverbe, le « ate » devient « meut »"
+          }
+        ],
+        "pairs": [],
+        "practice": [
+          "We estimate that the estimate is approximately right.",
+          "Please separate the papers into two separate piles.",
+          "My sister will graduate in June, and then she will be a graduate!"
+        ]
+      },
+      "mission": {
+        "type": "ecrit",
+        "prompt": "Ton club de sciences a fait un sondage sur le sommeil des élèves de ton école. Écris le paragraphe de conclusion du rapport (cinq à huit phrases) dans un style académique : au moins deux outils de nuance, une structure impersonnelle et deux nominalisations.",
+        "model": "It is widely believed that teenagers do not get enough sleep, and our survey of sixty students appears to confirm this assumption. Most students tend to go to bed after eleven o'clock on school nights. A significant number also admitted that they check their phones in bed. Screens are thought to delay the production of the hormone that helps us fall asleep. Arguably, the introduction of a later start time would improve concentration in class. However, further research is needed before any firm recommendation can be made.",
+        "checklist": [
+          "J'ai nuancé avec au moins deux outils : [[tend to]], [[appears to]], [[is likely to]], [[arguably]]…",
+          "J'ai utilisé une structure impersonnelle : [[It is widely believed that…]] ou [[X is thought to…]]",
+          "Après [[is thought to]] ou [[tends to]], j'ai mis la base verbale",
+          "J'ai transformé au moins deux verbes en noms ([[the introduction of]], [[the production of]])",
+          "J'ai évité les affirmations absolues comme [[everybody knows]]"
+        ]
+      }
     }
   ]
 }

@@ -2,10 +2,12 @@
 import { h, esc, icon, shuffle, sample, pick, plain, $ } from "./ui.js";
 import { matches, tiles, tileKey, diffWords, clean } from "./answer.js";
 import { gapWords, joinBoxes } from "./fill.js";
-import { regen } from "./engine/generators.js";
-import { resolveRef, unitById, levelById, levelVocab, vocabRefs, sentenceRefs, grammarRefs, readingRefs } from "./content.js";
+import { regen, generate, generatorsOf, generatorsUpTo } from "./engine/generators.js";
+import { pickFresh, recordSeen } from "./engine/pool.js";
+import { rng } from "./engine/rng.js";
+import { resolveRef, unitById, levelById, levelVocab, vocabRefs, sentenceRefs, grammarRefs, readingRefs, bossRefs } from "./content.js";
 import { speak, stopSpeaking, ttsReady, sfx } from "./audio.js";
-import { diff } from "./store.js";
+import { diff, state, save } from "./store.js";
 
 // Base time in seconds for each kind (multiplied by the difficulty's time factor).
 const BASE_TIME = { type_en: 25, choose_fr: 15, listen_type: 30, listen_choose: 18, build: 45, dictation: 55, mcq: 25, fill: 35, error: 40, reading: 100, listening: 120 };
@@ -153,73 +155,122 @@ function refsFor(unit, kind) {
   return [];
 }
 
+// Boss phases: 1 recognition, 2 production, 3 "rage" (hunting errors, dictations, texts).
+export const PHASE = { choose_fr: 1, listen_choose: 1, mcq: 1, type_en: 2, listen_type: 2, build: 2, fill: 2, error: 3, dictation: 3, reading: 3, listening: 3 };
+
+const byWeight = (list, spread = 2.2) => list.sort((a, b) => WEIGHT[a.kind] + Math.random() * spread - (WEIGHT[b.kind] + Math.random() * spread));
+
 /**
- * Picks `plan` questions from the given units without reusing an item.
- * Returns question objects ordered from easier to harder kinds, with some shuffle.
+ * Picks `plan` questions from the given units without reusing an item, preferring items the player has not
+ * seen recently (`history`, see engine/pool.js). Returns question objects (unsorted).
  */
-export function assemble(units, plan, used = new Set()) {
+export function assemble(units, plan, { used = new Set(), history = {} } = {}) {
   const out = [];
-  const entries = Object.entries(plan);
-  for (const [k, n] of entries) {
+  for (const [k, n] of Object.entries(plan)) {
     for (let i = 0; i < n; i++) {
       let kind = silentKind(k);
-      // Spread picks over the units in round-robin to cover everything studied.
-      const order = shuffle(units);
-      let made = null;
-      for (const unit of order) {
-        let pool = refsFor(unit, kind).filter((r) => !used.has(r));
-        if (!pool.length && (kind === "reading" || kind === "listening")) continue;
-        if (!pool.length) continue;
-        const ref = pick(pool);
-        made = makeQuestion(kind, ref);
-        if (made) {
-          used.add(ref);
-          break;
-        }
-      }
-      if (!made && (kind === "reading" || kind === "listening")) {
+      let ref = pickFresh(units.flatMap((u) => refsFor(u, kind)), history, used);
+      if (!ref && (kind === "reading" || kind === "listening")) {
         // No reading available: replace with a grammar fill.
-        for (const unit of order) {
-          const pool = refsFor(unit, "fill").filter((r) => !used.has(r));
-          if (pool.length) {
-            const ref = pick(pool);
-            made = makeQuestion("fill", ref);
-            used.add(ref);
-            break;
-          }
-        }
+        kind = "fill";
+        ref = pickFresh(units.flatMap((u) => refsFor(u, kind)), history, used);
       }
-      if (made) out.push(made);
+      if (!ref) continue;
+      used.add(ref);
+      const q = makeQuestion(kind, ref);
+      if (q) out.push(q);
     }
   }
-  return out.sort((a, b) => WEIGHT[a.kind] + Math.random() * 2.2 - (WEIGHT[b.kind] + Math.random() * 2.2));
+  return out;
 }
 
-/** The 15-question test of one unit. */
+/** Fresh questions of one kind taken from a list of refs (boss bank). */
+function fromRefs(refs, kind, n, history, used) {
+  const out = [];
+  for (let i = 0; i < n; i++) {
+    const ref = pickFresh(refs, history, used);
+    if (!ref) break;
+    used.add(ref);
+    const q = makeQuestion(kind, ref);
+    if (q) out.push(q);
+  }
+  return out;
+}
+
+/** n generated questions, drawn from the given generators (different generators first). */
+function generated(gens, n, L) {
+  const out = [];
+  const order = shuffle(gens);
+  for (let i = 0; i < n && order.length; i++) {
+    const q = generate(order[i % order.length].id, rng, L);
+    if (q && !(AUDIO_KINDS.has(q.kind) && !ttsReady())) out.push(makeQuestion(q.kind, q.ref));
+  }
+  return out.filter(Boolean);
+}
+
+/** Takes n questions off a plan, from the most represented production kinds. */
+function shrink(plan, n) {
+  const p = { ...plan };
+  const order = ["fill", "type_en", "mcq", "error", "build", "fill", "type_en"];
+  for (let i = 0; n > 0 && i < 40; i++) {
+    const k = order[i % order.length];
+    if ((p[k] || 0) > 1) {
+      p[k]--;
+      n--;
+    }
+  }
+  return p;
+}
+
+/** The 15-question test of one unit: unit items (freshest first) + questions generated for this station. */
 export function unitTest(uid) {
   const unit = unitById(uid);
   const L = Number(uid.split(".")[0]);
-  return assemble([unit], planFor(L));
+  const key = `unit${uid}`;
+  const history = state.seen[key] || {};
+  const gens = generatorsOf(uid);
+  const nGen = gens.length ? Math.min(4, gens.length + 1) : 0;
+  const gen = generated(gens, nGen, L);
+  const qs = assemble([unit], shrink(planFor(L), gen.length), { history });
+  state.seen[key] = recordSeen(history, qs.map((q) => q.ref));
+  save();
+  return byWeight([...qs, ...gen]);
 }
 
-/** The boss exam: questions from the 4 units, plus review from earlier levels. */
+/**
+ * The boss exam in 3 phases: the level's items, its reserved boss bank, generated questions and a little
+ * review of the two previous levels. Questions seen in the previous attempts come last.
+ */
 export function bossExam(L) {
   const lvl = levelById(L);
+  const key = `boss${L}`;
+  const history = state.seen[key] || {};
   const used = new Set();
-  const p = planFor(L);
-  const scale = (plan, f) => Object.fromEntries(Object.entries(plan).map(([k, n]) => [k, Math.max(0, Math.round(n * f))]));
-  const main = assemble(lvl.units, scale(p, 20 / 15), used);
+  const bank = bossRefs(L);
+  const bankOf = (type) => bank.filter((r) => resolveRef(r)?.item.type === type);
+  const hasBank = bank.length > 0;
+  const plan = {
+    choose_fr: 1, listen_choose: 1, mcq: hasBank ? 1 : 3,
+    type_en: 2, listen_type: 1, build: 2, fill: hasBank ? 1 : 3,
+    error: hasBank ? 1 : 2, dictation: 1, reading: L >= 3 ? 1 : 0, listening: L >= 9 ? 1 : 0,
+  };
+  const main = assemble(lvl.units, plan, { used, history });
+  const fromBank = hasBank ? [...fromRefs(bankOf("mcq"), "mcq", 3, history, used), ...fromRefs(bankOf("fill"), "fill", 3, history, used), ...fromRefs(bankOf("error"), "error", 2, history, used)] : [];
+  const gens = generatorsUpTo(`${L}.5`);
+  const own = gens.filter((g) => Number(g.unit.split(".")[0]) === L);
+  const gen = [...generated(own.length ? own : gens, 3, L), ...generated(gens, 1, L)];
   let review = [];
   if (L > 1) {
     const prevUnits = [];
     for (let k = Math.max(1, L - 2); k < L; k++) prevUnits.push(...(levelById(k)?.units || []));
-    review = assemble(prevUnits, { type_en: 1, build: 1, fill: 1, error: 1, mcq: 1 }, used);
-  } else {
-    review = assemble(lvl.units, { type_en: 2, fill: 1, build: 1, error: 1 }, used);
+    review = assemble(prevUnits, { type_en: 1, fill: 1 }, { used, history });
   }
-  return [...main, ...review].sort((a, b) => WEIGHT[a.kind] + Math.random() * 3 - (WEIGHT[b.kind] + Math.random() * 3));
+  const all = [...main, ...fromBank, ...gen, ...review];
+  state.seen[key] = recordSeen(history, all.map((q) => q.ref));
+  save();
+  // Phase order, shuffled inside each phase.
+  return all.map((q) => ({ ...q, phase: PHASE[q.kind] || 2 })).sort((a, b) => a.phase - b.phase || Math.random() - 0.5);
 }
-
 /** A question for a reference, choosing a kind suited to reviewing it. */
 export function reviewQuestion(ref) {
   const kinds = kindsForRef(ref).map(silentKind);
@@ -324,7 +375,7 @@ export function renderQuestion(q, mount, { onAnswer, replays = diff().replays, a
   switch (q.kind) {
     case "type_en": {
       const input = textInput("Écris en anglais…");
-      card.append(head("Écris en anglais", null), h("div", { class: "q-prompt fr" }, q.fr), input, submitRow(input, (v) => finish(matches(v, q.accept), v)));
+      card.append(head("Écris en anglais", null), h("div", { class: "q-prompt fr" }, q.fr), input, submitRow(input, (v) => finish(!(q.noDigits && /\d/.test(v)) && matches(v, q.accept), v)));
       setTimeout(() => input.focus(), 60);
       break;
     }

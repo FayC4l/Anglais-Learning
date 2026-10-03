@@ -5,6 +5,8 @@ import { recordTest, diff, checkBadges, unitUnlocked } from "../store.js";
 import { go } from "../router.js";
 import { runQuiz, scoreOf } from "../runner.js";
 import { unitTest, KIND_LABEL, blankHtml } from "../questions.js";
+import { gapWords } from "../fill.js";
+import { quip, mooseSays } from "../humor.js";
 import { sfx } from "../audio.js";
 import { confetti, stamp } from "../fx.js";
 import { starsHtml } from "./home.js";
@@ -57,6 +59,7 @@ async function showResults(view, { results, unit, L }) {
       ring,
       h("p", { class: "results-line" }, `${good} bonnes réponses sur ${results.length}. `, res.passed ? (res.firstPass ? "Nouvelle station débloquée." : "") : `Il faut ${need} %. C'est normal de ne pas réussir du premier coup : ce test est fait pour être exigeant. Révise tes erreurs, rejoue un peu, puis retente.`),
       stars,
+      mooseSays(quip(res.passed ? (res.stars === 3 ? "perfect" : "correct") : "fail")),
       h("div", { class: "xp-gain" }, h("span", { html: icon("bolt") }), "+", xp, " XP"),
       badges.length ? h("div", { class: "new-badges" }, badges.map((b) => h("div", { class: "badge-pop" }, h("span", { html: icon("trophy") }), h("strong", null, b.name), h("small", null, b.desc)))) : null,
       actions,
@@ -120,8 +123,9 @@ function promptHtml(q) {
     case "dictation":
       return `Dictée (${esc(q.fr)})`;
     case "mcq":
-    case "fill":
       return blankHtml(q.q) + (q.hint ? ` <em>(${esc(q.hint)})</em>` : "");
+    case "fill":
+      return (q.lead ? `${esc(q.lead)}<br>` : "") + blankHtml(q.q, gapWords(q.expected).length) + (q.hint ? ` <em>(${esc(q.hint)})</em>` : "") + (q.key ? ` <strong>${esc(q.key)}</strong>` : "");
     case "error":
       return esc(q.tokens.join(" "));
     case "reading":

@@ -16,92 +16,560 @@
       "titleEn": "Right Now!",
       "goal": "Dire ce qui se passe en ce moment avec le présent continu, et le distinguer du présent simple.",
       "lesson": [
-        { "type": "p", "text": "Pour dire ce qui se passe **en ce moment**, l'anglais utilise le **présent continu** : be + verbe en **-ing**. [[I am reading.]] = Je lis (en ce moment)." },
-        { "type": "table", "head": ["Sujet", "Affirmatif", "Négatif", "Question"], "rows": [
-          ["I", "[[I am eating.]]", "[[I'm not eating.]]", "[[Am I eating?]]"],
-          ["he / she / it", "[[She is eating.]]", "[[She isn't eating.]]", "[[Is she eating?]]"],
-          ["you / we / they", "[[They are eating.]]", "[[They aren't eating.]]", "[[Are they eating?]]"]
-        ] },
-        { "type": "rule", "title": "L'orthographe du -ing", "text": "1. En général, on ajoute -ing : [[read]] → [[reading]]. 2. Un **-e** muet à la fin ? On l'enlève : [[write]] → [[writing]], [[dance]] → [[dancing]]. 3. Mot court qui finit par voyelle + consonne ? On **double** la consonne : [[run]] → [[running]], [[sit]] → [[sitting]], [[swim]] → [[swimming]]." },
-        { "type": "rule", "title": "Maintenant ou d'habitude ?", "text": "Présent simple = habitude : [[every day]], [[usually]], [[never]]. Présent continu = maintenant : [[right now]], [[Look!]], [[Listen!]], [[Shh!]], [[today]]. [[Zoé usually walks, but today she is running.]]" },
-        { "type": "p", "text": "Ces verbes gardent leur petit mot : [[wait for]] (attendre quelqu'un ou quelque chose), [[listen to]] (écouter), [[look at]] (regarder). On dit [[We are waiting for the bus.]], jamais [[waiting the bus]]." },
-        { "type": "examples", "items": [
-          { "en": "What are you doing?", "fr": "Qu'est-ce que tu fais (en ce moment) ?" },
-          { "en": "My dad is cooking dinner.", "fr": "Mon père prépare le souper." },
-          { "en": "They aren't listening to the teacher.", "fr": "Ils n'écoutent pas l'enseignante." },
-          { "en": "Is Maya sleeping?", "fr": "Est-ce que Maya dort ?" },
-          { "en": "Priya is writing a story.", "fr": "Priya écrit une histoire." }
-        ] },
-        { "type": "tip", "text": "Le français n'a qu'un présent (« je mange »), l'anglais en a deux ! Et certains verbes ne prennent **jamais** -ing, même en ce moment : [[know]], [[like]], [[want]], [[need]], [[understand]]. On dit [[I know the answer.]], jamais [[I am knowing]]." },
-        { "type": "dialogue", "title": "Au téléphone", "lines": [
-          { "who": "Zoé", "en": "Hi Noah! What are you doing?", "fr": "Salut Noah ! Qu'est-ce que tu fais ?" },
-          { "who": "Noah", "en": "I'm cooking dinner with my dad.", "fr": "Je prépare le souper avec mon père." },
-          { "who": "Zoé", "en": "You're cooking? You never cook!", "fr": "Tu cuisines ? Tu ne cuisines jamais !" },
-          { "who": "Noah", "en": "I know! My dad is laughing a lot.", "fr": "Je sais ! Mon père rit beaucoup." },
-          { "who": "Zoé", "en": "And your sister? Is she helping?", "fr": "Et ta sœur ? Est-ce qu'elle aide ?" },
-          { "who": "Noah", "en": "No, she isn't. She's sitting on the couch and listening to music.", "fr": "Non. Elle est assise sur le canapé et elle écoute de la musique." }
-        ] }
+        {
+          "type": "p",
+          "text": "Pour dire ce qui se passe **en ce moment**, l'anglais utilise le **présent continu** : be + verbe en **-ing**. [[I am reading.]] = Je lis (en ce moment)."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Sujet",
+            "Affirmatif",
+            "Négatif",
+            "Question"
+          ],
+          "rows": [
+            [
+              "I",
+              "[[I am eating.]]",
+              "[[I'm not eating.]]",
+              "[[Am I eating?]]"
+            ],
+            [
+              "he / she / it",
+              "[[She is eating.]]",
+              "[[She isn't eating.]]",
+              "[[Is she eating?]]"
+            ],
+            [
+              "you / we / they",
+              "[[They are eating.]]",
+              "[[They aren't eating.]]",
+              "[[Are they eating?]]"
+            ]
+          ]
+        },
+        {
+          "type": "rule",
+          "title": "L'orthographe du -ing",
+          "text": "1. En général, on ajoute -ing : [[read]] → [[reading]]. 2. Un **-e** muet à la fin ? On l'enlève : [[write]] → [[writing]], [[dance]] → [[dancing]]. 3. Mot court qui finit par voyelle + consonne ? On **double** la consonne : [[run]] → [[running]], [[sit]] → [[sitting]], [[swim]] → [[swimming]]."
+        },
+        {
+          "type": "rule",
+          "title": "Maintenant ou d'habitude ?",
+          "text": "Présent simple = habitude : [[every day]], [[usually]], [[never]]. Présent continu = maintenant : [[right now]], [[Look!]], [[Listen!]], [[Shh!]], [[today]]. [[Zoé usually walks, but today she is running.]]"
+        },
+        {
+          "type": "p",
+          "text": "Ces verbes gardent leur petit mot : [[wait for]] (attendre quelqu'un ou quelque chose), [[listen to]] (écouter), [[look at]] (regarder). On dit [[We are waiting for the bus.]], jamais [[waiting the bus]]."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "What are you doing?",
+              "fr": "Qu'est-ce que tu fais (en ce moment) ?"
+            },
+            {
+              "en": "My dad is cooking dinner.",
+              "fr": "Mon père prépare le souper."
+            },
+            {
+              "en": "They aren't listening to the teacher.",
+              "fr": "Ils n'écoutent pas l'enseignante."
+            },
+            {
+              "en": "Is Maya sleeping?",
+              "fr": "Est-ce que Maya dort ?"
+            },
+            {
+              "en": "Priya is writing a story.",
+              "fr": "Priya écrit une histoire."
+            }
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "Le français n'a qu'un présent (« je mange »), l'anglais en a deux ! Et certains verbes ne prennent **jamais** -ing, même en ce moment : [[know]], [[like]], [[want]], [[need]], [[understand]]. On dit [[I know the answer.]], jamais [[I am knowing]]."
+        },
+        {
+          "type": "dialogue",
+          "title": "Au téléphone",
+          "lines": [
+            {
+              "who": "Zoé",
+              "en": "Hi Noah! What are you doing?",
+              "fr": "Salut Noah ! Qu'est-ce que tu fais ?"
+            },
+            {
+              "who": "Noah",
+              "en": "I'm cooking dinner with my dad.",
+              "fr": "Je prépare le souper avec mon père."
+            },
+            {
+              "who": "Zoé",
+              "en": "You're cooking? You never cook!",
+              "fr": "Tu cuisines ? Tu ne cuisines jamais !"
+            },
+            {
+              "who": "Noah",
+              "en": "I know! My dad is laughing a lot.",
+              "fr": "Je sais ! Mon père rit beaucoup."
+            },
+            {
+              "who": "Zoé",
+              "en": "And your sister? Is she helping?",
+              "fr": "Et ta sœur ? Est-ce qu'elle aide ?"
+            },
+            {
+              "who": "Noah",
+              "en": "No, she isn't. She's sitting on the couch and listening to music.",
+              "fr": "Non. Elle est assise sur le canapé et elle écoute de la musique."
+            }
+          ]
+        }
       ],
       "vocab": [
-        { "en": "right now", "fr": "en ce moment", "alt": ["now", "at the moment"], "ex": "I am reading a book right now." },
-        { "en": "run", "fr": "courir", "alt": [], "ex": "She is running in the park." },
-        { "en": "write", "fr": "écrire", "alt": [], "ex": "He is writing to his grandma." },
-        { "en": "sit", "fr": "s'asseoir (être assis)", "alt": [], "ex": "The baby is sitting on the couch." },
-        { "en": "cook", "fr": "cuisiner (faire à manger)", "alt": [], "ex": "My dad is cooking dinner." },
-        { "en": "wait", "fr": "attendre", "alt": [], "ex": "We are waiting for the bus." },
-        { "en": "sleep", "fr": "dormir", "alt": [], "ex": "Shh! The baby is sleeping." },
-        { "en": "dance", "fr": "danser", "alt": [], "ex": "Emma is dancing in the kitchen." },
-        { "en": "sing", "fr": "chanter", "alt": [], "ex": "Mei is singing in the living room." },
-        { "en": "read", "fr": "lire", "alt": [], "ex": "Mom is reading a book." },
-        { "en": "listen to", "fr": "écouter", "alt": [], "ex": "They aren't listening to the teacher." },
-        { "en": "look at", "fr": "regarder (observer)", "alt": [], "ex": "Look at the ducks!" },
-        { "en": "talk", "fr": "parler (bavarder)", "alt": ["chat"], "ex": "Why are you talking?" },
-        { "en": "help", "fr": "aider", "alt": [], "ex": "Malik is helping his dad." },
-        { "en": "laugh", "fr": "rire", "alt": [], "ex": "Why are you laughing?" }
+        {
+          "en": "right now",
+          "fr": "en ce moment",
+          "alt": [
+            "now",
+            "at the moment"
+          ],
+          "ex": "I am reading a book right now."
+        },
+        {
+          "en": "run",
+          "fr": "courir",
+          "alt": [],
+          "ex": "She is running in the park."
+        },
+        {
+          "en": "write",
+          "fr": "écrire",
+          "alt": [],
+          "ex": "He is writing to his grandma."
+        },
+        {
+          "en": "sit",
+          "fr": "s'asseoir (être assis)",
+          "alt": [],
+          "ex": "The baby is sitting on the couch."
+        },
+        {
+          "en": "cook",
+          "fr": "cuisiner (faire à manger)",
+          "alt": [],
+          "ex": "My dad is cooking dinner."
+        },
+        {
+          "en": "wait",
+          "fr": "attendre",
+          "alt": [],
+          "ex": "We are waiting for the bus."
+        },
+        {
+          "en": "sleep",
+          "fr": "dormir",
+          "alt": [],
+          "ex": "Shh! The baby is sleeping."
+        },
+        {
+          "en": "dance",
+          "fr": "danser",
+          "alt": [],
+          "ex": "Emma is dancing in the kitchen."
+        },
+        {
+          "en": "sing",
+          "fr": "chanter",
+          "alt": [],
+          "ex": "Mei is singing in the living room."
+        },
+        {
+          "en": "read",
+          "fr": "lire",
+          "alt": [],
+          "ex": "Mom is reading a book."
+        },
+        {
+          "en": "listen to",
+          "fr": "écouter",
+          "alt": [],
+          "ex": "They aren't listening to the teacher."
+        },
+        {
+          "en": "look at",
+          "fr": "regarder (observer)",
+          "alt": [],
+          "ex": "Look at the ducks!"
+        },
+        {
+          "en": "talk",
+          "fr": "parler (bavarder)",
+          "alt": [
+            "chat"
+          ],
+          "ex": "Why are you talking?"
+        },
+        {
+          "en": "help",
+          "fr": "aider",
+          "alt": [],
+          "ex": "Malik is helping his dad."
+        },
+        {
+          "en": "laugh",
+          "fr": "rire",
+          "alt": [],
+          "ex": "Why are you laughing?"
+        }
       ],
       "sentences": [
-        { "en": "I am reading a book right now.", "fr": "Je lis un livre en ce moment.", "trap": ["read", "is"], "alt": ["Right now I am reading a book."] },
-        { "en": "She is running in the park.", "fr": "Elle court dans le parc (en ce moment).", "trap": ["runing", "runs"], "alt": [] },
-        { "en": "What are you doing?", "fr": "Qu'est-ce que tu fais (en ce moment) ?", "trap": ["do", "is"], "alt": [] },
-        { "en": "My dad is cooking dinner.", "fr": "Mon père prépare le souper (en ce moment).", "trap": ["cooks", "are"], "alt": [] },
-        { "en": "They aren't listening to the teacher.", "fr": "Ils n'écoutent pas l'enseignant (en ce moment).", "trap": ["isn't", "listen"], "alt": [] },
-        { "en": "Is Maya sleeping?", "fr": "Est-ce que Maya dort (en ce moment) ?", "trap": ["Does", "sleep"], "alt": [] },
-        { "en": "We are waiting for the bus.", "fr": "Nous attendons l'autobus (en ce moment).", "trap": ["wait", "to"], "alt": [] },
-        { "en": "Zoé usually walks, but today she is running.", "fr": "D'habitude, Zoé marche, mais aujourd'hui elle court.", "trap": ["runs", "walking"], "alt": ["Zoé usually walks, but she is running today."] },
-        { "en": "I know the answer.", "fr": "Je connais la réponse.", "trap": ["am", "knowing"], "alt": [] },
-        { "en": "Why are you laughing?", "fr": "Pourquoi ris-tu (en ce moment) ?", "trap": ["laugh", "do"], "alt": [] },
-        { "en": "The baby is sitting on the couch.", "fr": "Le bébé est assis sur le canapé.", "trap": ["siting", "sits"], "alt": [] },
-        { "en": "He is writing to his grandma.", "fr": "Il écrit à sa grand-mère (en ce moment).", "trap": ["writting", "writes"], "alt": [] }
+        {
+          "en": "I am reading a book right now.",
+          "fr": "Je lis un livre en ce moment.",
+          "trap": [
+            "read",
+            "is"
+          ],
+          "alt": [
+            "Right now I am reading a book."
+          ]
+        },
+        {
+          "en": "She is running in the park.",
+          "fr": "Elle court dans le parc (en ce moment).",
+          "trap": [
+            "runing",
+            "runs"
+          ],
+          "alt": []
+        },
+        {
+          "en": "What are you doing?",
+          "fr": "Qu'est-ce que tu fais (en ce moment) ?",
+          "trap": [
+            "do",
+            "is"
+          ],
+          "alt": []
+        },
+        {
+          "en": "My dad is cooking dinner.",
+          "fr": "Mon père prépare le souper (en ce moment).",
+          "trap": [
+            "cooks",
+            "are"
+          ],
+          "alt": []
+        },
+        {
+          "en": "They aren't listening to the teacher.",
+          "fr": "Ils n'écoutent pas l'enseignant (en ce moment).",
+          "trap": [
+            "isn't",
+            "listen"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Is Maya sleeping?",
+          "fr": "Est-ce que Maya dort (en ce moment) ?",
+          "trap": [
+            "Does",
+            "sleep"
+          ],
+          "alt": []
+        },
+        {
+          "en": "We are waiting for the bus.",
+          "fr": "Nous attendons l'autobus (en ce moment).",
+          "trap": [
+            "wait",
+            "to"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Zoé usually walks, but today she is running.",
+          "fr": "D'habitude, Zoé marche, mais aujourd'hui elle court.",
+          "trap": [
+            "runs",
+            "walking"
+          ],
+          "alt": [
+            "Zoé usually walks, but she is running today."
+          ]
+        },
+        {
+          "en": "I know the answer.",
+          "fr": "Je connais la réponse.",
+          "trap": [
+            "am",
+            "knowing"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Why are you laughing?",
+          "fr": "Pourquoi ris-tu (en ce moment) ?",
+          "trap": [
+            "laugh",
+            "do"
+          ],
+          "alt": []
+        },
+        {
+          "en": "The baby is sitting on the couch.",
+          "fr": "Le bébé est assis sur le canapé.",
+          "trap": [
+            "siting",
+            "sits"
+          ],
+          "alt": []
+        },
+        {
+          "en": "He is writing to his grandma.",
+          "fr": "Il écrit à sa grand-mère (en ce moment).",
+          "trap": [
+            "writting",
+            "writes"
+          ],
+          "alt": []
+        }
       ],
       "grammar": [
-        { "type": "mcq", "q": "Look! The baby ___.", "choices": ["sleeps", "is sleeping", "sleeping"], "answer": 1, "explain": "Look! = ça se passe maintenant : présent continu, be + -ing." },
-        { "type": "mcq", "q": "Comment écrit-on run + -ing ?", "choices": ["running", "runing", "runnig"], "answer": 0, "explain": "Run est court et finit par voyelle + consonne : on double le n → running." },
-        { "type": "mcq", "q": "Ethan ___ hockey every Saturday.", "choices": ["is playing", "play", "plays"], "answer": 2, "explain": "Every Saturday = une habitude : présent simple, avec -s pour he." },
-        { "type": "mcq", "q": "I ___ the answer.", "choices": ["am knowing", "know", "knowing"], "answer": 1, "explain": "Know ne se met jamais en -ing : I know." },
-        { "type": "mcq", "q": "___ they listening to music?", "choices": ["Is", "Do", "Are"], "answer": 2, "explain": "Présent continu avec they : Are they…ing?" },
-        { "type": "mcq", "q": "Comment dit-on « Qu'est-ce que tu fais en ce moment ? »", "choices": ["What do you do right now?", "What are you doing right now?", "What you are doing right now?"], "answer": 1, "explain": "En ce moment = présent continu, et dans la question be passe devant le sujet : What are you doing?" },
-        { "type": "fill", "q": "Shh! Noah ___ right now.", "hint": "sleep", "answer": ["is sleeping"], "explain": "Right now = présent continu : is sleeping." },
-        { "type": "fill", "q": "We ___ for the bus right now.", "hint": "wait", "answer": ["are waiting"], "explain": "We + are + verbe en -ing : are waiting." },
-        { "type": "fill", "q": "Look! Emma and Chloé ___ in the kitchen.", "hint": "dance", "answer": ["are dancing"], "explain": "Look! = maintenant. Dance perd son -e : dancing." },
-        { "type": "fill", "q": "My sister ___ to music every evening.", "hint": "listen", "answer": ["listens"], "explain": "Every evening = habitude : présent simple, avec -s pour she." },
-        { "type": "fill", "q": "Right now, I ___ some water.", "hint": "avoir besoin de", "answer": ["need"], "explain": "Need ne se met jamais en -ing, même en ce moment : I need." },
-        { "type": "fill", "q": "Look! The ducks ___ in the water.", "hint": "swim", "answer": ["are swimming"], "explain": "Swim est court, voyelle + consonne : on double le m → swimming." },
-        { "type": "fill", "q": "___ Malik helping his dad?", "hint": "question", "answer": ["Is"], "explain": "Malik = he : Is he helping…?" },
-        { "type": "error", "q": "She is runing in the park.", "wrong": 2, "fix": ["running"], "explain": "On double le n : running." },
-        { "type": "error", "q": "They is dancing in the kitchen.", "wrong": 1, "fix": ["are"], "explain": "Avec they, c'est are : they are dancing." },
-        { "type": "error", "q": "What are you do right now?", "wrong": 3, "fix": ["doing"], "explain": "Présent continu : be + verbe en -ing → What are you doing?" },
-        { "type": "error", "q": "Priya is writting a story.", "wrong": 2, "fix": ["writing"], "explain": "Write perd son -e et ne double pas le t : writing." },
-        { "type": "error", "q": "Shh! The baby sleeps right now.", "wrong": 3, "fix": ["is sleeping"], "explain": "Right now = présent continu : the baby is sleeping." }
+        {
+          "type": "mcq",
+          "q": "Look! The baby ___.",
+          "choices": [
+            "sleeps",
+            "is sleeping",
+            "sleeping"
+          ],
+          "answer": 1,
+          "explain": "Look! = ça se passe maintenant : présent continu, be + -ing."
+        },
+        {
+          "type": "mcq",
+          "q": "Comment écrit-on run + -ing ?",
+          "choices": [
+            "running",
+            "runing",
+            "runnig"
+          ],
+          "answer": 0,
+          "explain": "Run est court et finit par voyelle + consonne : on double le n → running."
+        },
+        {
+          "type": "mcq",
+          "q": "Ethan ___ hockey every Saturday.",
+          "choices": [
+            "is playing",
+            "play",
+            "plays"
+          ],
+          "answer": 2,
+          "explain": "Every Saturday = une habitude : présent simple, avec -s pour he."
+        },
+        {
+          "type": "mcq",
+          "q": "I ___ the answer.",
+          "choices": [
+            "am knowing",
+            "know",
+            "knowing"
+          ],
+          "answer": 1,
+          "explain": "Know ne se met jamais en -ing : I know."
+        },
+        {
+          "type": "mcq",
+          "q": "___ they listening to music?",
+          "choices": [
+            "Is",
+            "Do",
+            "Are"
+          ],
+          "answer": 2,
+          "explain": "Présent continu avec they : Are they…ing?"
+        },
+        {
+          "type": "mcq",
+          "q": "Comment dit-on « Qu'est-ce que tu fais en ce moment ? »",
+          "choices": [
+            "What do you do right now?",
+            "What are you doing right now?",
+            "What you are doing right now?"
+          ],
+          "answer": 1,
+          "explain": "En ce moment = présent continu, et dans la question be passe devant le sujet : What are you doing?"
+        },
+        {
+          "type": "fill",
+          "q": "Shh! Noah ___ right now.",
+          "hint": "sleep",
+          "answer": [
+            "is sleeping"
+          ],
+          "explain": "Right now = présent continu : is sleeping."
+        },
+        {
+          "type": "fill",
+          "q": "We ___ for the bus right now.",
+          "hint": "wait",
+          "answer": [
+            "are waiting"
+          ],
+          "explain": "We + are + verbe en -ing : are waiting."
+        },
+        {
+          "type": "fill",
+          "q": "Look! Emma and Chloé ___ in the kitchen.",
+          "hint": "dance",
+          "answer": [
+            "are dancing"
+          ],
+          "explain": "Look! = maintenant. Dance perd son -e : dancing."
+        },
+        {
+          "type": "fill",
+          "q": "My sister ___ to music every evening.",
+          "hint": "listen",
+          "answer": [
+            "listens"
+          ],
+          "explain": "Every evening = habitude : présent simple, avec -s pour she."
+        },
+        {
+          "type": "fill",
+          "q": "Right now, I ___ some water.",
+          "hint": "avoir besoin de",
+          "answer": [
+            "need"
+          ],
+          "explain": "Need ne se met jamais en -ing, même en ce moment : I need."
+        },
+        {
+          "type": "fill",
+          "q": "Look! The ducks ___ in the water.",
+          "hint": "swim",
+          "answer": [
+            "are swimming"
+          ],
+          "explain": "Swim est court, voyelle + consonne : on double le m → swimming."
+        },
+        {
+          "type": "fill",
+          "q": "___ Malik helping his dad?",
+          "hint": "question",
+          "answer": [
+            "Is"
+          ],
+          "explain": "Malik = he : Is he helping…?"
+        },
+        {
+          "type": "error",
+          "q": "She is runing in the park.",
+          "wrong": 2,
+          "fix": [
+            "running"
+          ],
+          "explain": "On double le n : running."
+        },
+        {
+          "type": "error",
+          "q": "They is dancing in the kitchen.",
+          "wrong": 1,
+          "fix": [
+            "are"
+          ],
+          "explain": "Avec they, c'est are : they are dancing."
+        },
+        {
+          "type": "error",
+          "q": "What are you do right now?",
+          "wrong": 3,
+          "fix": [
+            "doing"
+          ],
+          "explain": "Présent continu : be + verbe en -ing → What are you doing?"
+        },
+        {
+          "type": "error",
+          "q": "Priya is writting a story.",
+          "wrong": 2,
+          "fix": [
+            "writing"
+          ],
+          "explain": "Write perd son -e et ne double pas le t : writing."
+        },
+        {
+          "type": "error",
+          "q": "Shh! The baby sleeps right now.",
+          "wrong": 3,
+          "fix": [
+            "is sleeping"
+          ],
+          "explain": "Right now = présent continu : the baby is sleeping."
+        }
       ],
       "reading": {
         "title": "A Saturday Morning",
         "text": "It's Saturday morning at the Nguyen house. Dad is in the kitchen. He is cooking pancakes. Mom isn't cooking today. She is sitting on the couch and she is reading a book. Grandpa is sleeping in his chair. My little sister Mei is dancing and singing in the living room.\n\nAnd me? I'm writing this story! I usually play soccer on Saturday, but today my friend Jaden is sick. So I'm sitting at the kitchen table, I'm writing, and I'm waiting for pancakes!",
         "questions": [
-          { "q": "Que fait papa ?", "choices": ["Il lit un livre", "Il prépare des crêpes", "Il dort", "Il danse"], "answer": 1 },
-          { "q": "Où est maman ?", "choices": ["Dans la cuisine", "Dans sa chambre", "Au parc", "Sur le canapé"], "answer": 3 },
-          { "q": "Qui dort ?", "choices": ["Grand-papa", "Mei", "Papa", "Jaden"], "answer": 0 },
-          { "q": "Que fait d'habitude la personne qui raconte, le samedi ?", "choices": ["Elle écrit des histoires", "Elle prépare des crêpes", "Elle joue au soccer", "Elle regarde la télé"], "answer": 2 },
-          { "q": "Pourquoi ne joue-t-elle pas au soccer aujourd'hui ?", "choices": ["Elle est fatiguée", "Son ami Jaden est malade", "Elle fait ses devoirs", "Elle aide sa mère"], "answer": 1 }
+          {
+            "q": "Que fait papa ?",
+            "choices": [
+              "Il lit un livre",
+              "Il prépare des crêpes",
+              "Il dort",
+              "Il danse"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Où est maman ?",
+            "choices": [
+              "Dans la cuisine",
+              "Dans sa chambre",
+              "Au parc",
+              "Sur le canapé"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Qui dort ?",
+            "choices": [
+              "Grand-papa",
+              "Mei",
+              "Papa",
+              "Jaden"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Que fait d'habitude la personne qui raconte, le samedi ?",
+            "choices": [
+              "Elle écrit des histoires",
+              "Elle prépare des crêpes",
+              "Elle joue au soccer",
+              "Elle regarde la télé"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Pourquoi ne joue-t-elle pas au soccer aujourd'hui ?",
+            "choices": [
+              "Elle est fatiguée",
+              "Son ami Jaden est malade",
+              "Elle fait ses devoirs",
+              "Elle aide sa mère"
+            ],
+            "answer": 1
+          }
         ]
       }
     },
@@ -111,95 +579,568 @@
       "titleEn": "Game On!",
       "goal": "Dire ce qu'on sait faire avec can / can't et parler des sports qu'on aime.",
       "lesson": [
-        { "type": "p", "text": "Au Canada, le sport, c'est sérieux ! Pour dire ce que tu sais faire (ou pas), tu as besoin de [[can]] et [[can't]]." },
-        { "type": "rule", "title": "can / can't", "text": "[[can]] = pouvoir ou savoir faire. Toujours suivi du **verbe de base**, **sans to** et **sans -s** : [[She can swim.]] Négation : [[can't]]. Question : on inverse → [[Can you ski?]] — [[Yes, I can.]] / [[No, I can't.]]" },
-        { "type": "table", "head": ["Sujet", "Affirmatif", "Négatif", "Question"], "rows": [
-          ["I / you", "[[I can skate.]]", "[[I can't skate.]]", "[[Can you skate?]]"],
-          ["he / she", "[[He can skate.]]", "[[He can't skate.]]", "[[Can he skate?]]"],
-          ["we / they", "[[They can skate.]]", "[[They can't skate.]]", "[[Can they skate?]]"]
-        ] },
-        { "type": "rule", "title": "Aimer faire quelque chose", "text": "[[enjoy]], [[like]], [[love]] et [[hate]] + verbe en **-ing** : [[I enjoy skiing.]] [[She hates losing.]] Avec like, love et hate, to + verbe marche aussi ([[I love to swim.]]), mais **jamais avec enjoy**. Et jamais le verbe tout seul : [[I like play]] ✗." },
-        { "type": "rule", "title": "Être bon en…", "text": "[[good at]] + sport ou verbe en -ing : [[I'm good at hockey.]] [[Ana is good at climbing.]] Jamais [[good in]] !" },
-        { "type": "p", "text": "Mots utiles : [[very well]] (très bien), [[a ball]] (un ballon, une balle), [[lose]] (perdre) → [[losing]], [[skate]] → [[skating]], [[ski]] → [[skiing]]." },
-        { "type": "examples", "items": [
-          { "en": "I can't swim very well.", "fr": "Je ne sais pas très bien nager." },
-          { "en": "Can your sister ski?", "fr": "Est-ce que ta sœur sait skier ?" },
-          { "en": "We enjoy playing soccer.", "fr": "Nous aimons jouer au soccer." },
-          { "en": "Are you good at swimming?", "fr": "Es-tu bon en natation ?" },
-          { "en": "My team never wins.", "fr": "Mon équipe ne gagne jamais." }
-        ] },
-        { "type": "tip", "text": "« Je sais nager » = [[I can swim.]], pas [[I know swim]]. Pas de -s après can : [[He can ski.]], jamais [[He cans]] ni [[He can skis]]. Et jamais de to : [[I can to swim]] ✗." },
-        { "type": "fun", "text": "Le sais-tu ? Le hockey est le sport national d'hiver du Canada, et la crosse est son sport national d'été." },
-        { "type": "dialogue", "title": "Une nouvelle joueuse", "lines": [
-          { "who": "Liam", "en": "Can you skate, Priya?", "fr": "Sais-tu patiner, Priya ?" },
-          { "who": "Priya", "en": "Yes, I can! I love skating.", "fr": "Oui ! J'adore patiner." },
-          { "who": "Liam", "en": "Are you good at hockey?", "fr": "Es-tu bonne au hockey ?" },
-          { "who": "Priya", "en": "Not really. But I'm good at skiing.", "fr": "Pas vraiment. Mais je suis bonne en ski." },
-          { "who": "Liam", "en": "Do you want to play on my team?", "fr": "Veux-tu jouer dans mon équipe ?" },
-          { "who": "Priya", "en": "Sure! But I can't catch very well.", "fr": "Bien sûr ! Mais je n'attrape pas très bien." },
-          { "who": "Liam", "en": "No problem. My team never wins!", "fr": "Pas de problème. Mon équipe ne gagne jamais !" }
-        ] }
+        {
+          "type": "p",
+          "text": "Au Canada, le sport, c'est sérieux ! Pour dire ce que tu sais faire (ou pas), tu as besoin de [[can]] et [[can't]]."
+        },
+        {
+          "type": "rule",
+          "title": "can / can't",
+          "text": "[[can]] = pouvoir ou savoir faire. Toujours suivi du **verbe de base**, **sans to** et **sans -s** : [[She can swim.]] Négation : [[can't]]. Question : on inverse → [[Can you ski?]] — [[Yes, I can.]] / [[No, I can't.]]"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Sujet",
+            "Affirmatif",
+            "Négatif",
+            "Question"
+          ],
+          "rows": [
+            [
+              "I / you",
+              "[[I can skate.]]",
+              "[[I can't skate.]]",
+              "[[Can you skate?]]"
+            ],
+            [
+              "he / she",
+              "[[He can skate.]]",
+              "[[He can't skate.]]",
+              "[[Can he skate?]]"
+            ],
+            [
+              "we / they",
+              "[[They can skate.]]",
+              "[[They can't skate.]]",
+              "[[Can they skate?]]"
+            ]
+          ]
+        },
+        {
+          "type": "rule",
+          "title": "Aimer faire quelque chose",
+          "text": "[[enjoy]], [[like]], [[love]] et [[hate]] + verbe en **-ing** : [[I enjoy skiing.]] [[She hates losing.]] Avec like, love et hate, to + verbe marche aussi ([[I love to swim.]]), mais **jamais avec enjoy**. Et jamais le verbe tout seul : [[I like play]] ✗."
+        },
+        {
+          "type": "rule",
+          "title": "Être bon en…",
+          "text": "[[good at]] + sport ou verbe en -ing : [[I'm good at hockey.]] [[Ana is good at climbing.]] Jamais [[good in]] !"
+        },
+        {
+          "type": "p",
+          "text": "Mots utiles : [[very well]] (très bien), [[a ball]] (un ballon, une balle), [[lose]] (perdre) → [[losing]], [[skate]] → [[skating]], [[ski]] → [[skiing]]."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "I can't swim very well.",
+              "fr": "Je ne sais pas très bien nager."
+            },
+            {
+              "en": "Can your sister ski?",
+              "fr": "Est-ce que ta sœur sait skier ?"
+            },
+            {
+              "en": "We enjoy playing soccer.",
+              "fr": "Nous aimons jouer au soccer."
+            },
+            {
+              "en": "Are you good at swimming?",
+              "fr": "Es-tu bon en natation ?"
+            },
+            {
+              "en": "My team never wins.",
+              "fr": "Mon équipe ne gagne jamais."
+            }
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "« Je sais nager » = [[I can swim.]], pas [[I know swim]]. Pas de -s après can : [[He can ski.]], jamais [[He cans]] ni [[He can skis]]. Et jamais de to : [[I can to swim]] ✗."
+        },
+        {
+          "type": "fun",
+          "text": "Le sais-tu ? Le hockey est le sport national d'hiver du Canada, et la crosse est son sport national d'été."
+        },
+        {
+          "type": "dialogue",
+          "title": "Une nouvelle joueuse",
+          "lines": [
+            {
+              "who": "Liam",
+              "en": "Can you skate, Priya?",
+              "fr": "Sais-tu patiner, Priya ?"
+            },
+            {
+              "who": "Priya",
+              "en": "Yes, I can! I love skating.",
+              "fr": "Oui ! J'adore patiner."
+            },
+            {
+              "who": "Liam",
+              "en": "Are you good at hockey?",
+              "fr": "Es-tu bonne au hockey ?"
+            },
+            {
+              "who": "Priya",
+              "en": "Not really. But I'm good at skiing.",
+              "fr": "Pas vraiment. Mais je suis bonne en ski."
+            },
+            {
+              "who": "Liam",
+              "en": "Do you want to play on my team?",
+              "fr": "Veux-tu jouer dans mon équipe ?"
+            },
+            {
+              "who": "Priya",
+              "en": "Sure! But I can't catch very well.",
+              "fr": "Bien sûr ! Mais je n'attrape pas très bien."
+            },
+            {
+              "who": "Liam",
+              "en": "No problem. My team never wins!",
+              "fr": "Pas de problème. Mon équipe ne gagne jamais !"
+            }
+          ]
+        }
       ],
       "vocab": [
-        { "en": "swim", "fr": "nager", "alt": [], "ex": "I can't swim very well." },
-        { "en": "skate", "fr": "patiner", "alt": [], "ex": "Do you like skating?" },
-        { "en": "ski", "fr": "skier", "alt": [], "ex": "Can your sister ski?" },
-        { "en": "ride a bike", "fr": "faire du vélo", "alt": ["ride a bicycle"], "ex": "Noah can ride a bike." },
-        { "en": "climb", "fr": "grimper", "alt": [], "ex": "Ana is good at climbing." },
-        { "en": "jump", "fr": "sauter", "alt": [], "ex": "My dog can jump very high." },
-        { "en": "throw", "fr": "lancer", "alt": [], "ex": "Can you throw the ball?" },
-        { "en": "catch", "fr": "attraper", "alt": [], "ex": "Can you catch the ball?" },
-        { "en": "win", "fr": "gagner", "alt": [], "ex": "My team never wins." },
-        { "en": "team", "fr": "équipe", "alt": [], "ex": "Do you want to play on my team?" },
-        { "en": "game", "fr": "partie (match)", "alt": ["match"], "ex": "He loves watching hockey games." },
-        { "en": "soccer", "fr": "soccer (football européen)", "alt": [], "ex": "We enjoy playing soccer." },
-        { "en": "enjoy", "fr": "aimer (prendre plaisir à)", "alt": [], "ex": "I enjoy skiing." },
-        { "en": "good at", "fr": "bon en (doué pour)", "alt": [], "ex": "Are you good at swimming?" },
-        { "en": "can", "fr": "pouvoir (savoir faire)", "alt": [], "ex": "She can skate very well." },
-        { "en": "can't", "fr": "ne pas pouvoir (ne pas savoir faire)", "alt": [], "ex": "My grandpa can't ski." }
+        {
+          "en": "swim",
+          "fr": "nager",
+          "alt": [],
+          "ex": "I can't swim very well."
+        },
+        {
+          "en": "skate",
+          "fr": "patiner",
+          "alt": [],
+          "ex": "Do you like skating?"
+        },
+        {
+          "en": "ski",
+          "fr": "skier",
+          "alt": [],
+          "ex": "Can your sister ski?"
+        },
+        {
+          "en": "ride a bike",
+          "fr": "faire du vélo",
+          "alt": [
+            "ride a bicycle"
+          ],
+          "ex": "Noah can ride a bike."
+        },
+        {
+          "en": "climb",
+          "fr": "grimper",
+          "alt": [],
+          "ex": "Ana is good at climbing."
+        },
+        {
+          "en": "jump",
+          "fr": "sauter",
+          "alt": [],
+          "ex": "My dog can jump very high."
+        },
+        {
+          "en": "throw",
+          "fr": "lancer",
+          "alt": [],
+          "ex": "Can you throw the ball?"
+        },
+        {
+          "en": "catch",
+          "fr": "attraper",
+          "alt": [],
+          "ex": "Can you catch the ball?"
+        },
+        {
+          "en": "win",
+          "fr": "gagner",
+          "alt": [],
+          "ex": "My team never wins."
+        },
+        {
+          "en": "team",
+          "fr": "équipe",
+          "alt": [],
+          "ex": "Do you want to play on my team?"
+        },
+        {
+          "en": "game",
+          "fr": "partie (match)",
+          "alt": [
+            "match"
+          ],
+          "ex": "He loves watching hockey games."
+        },
+        {
+          "en": "soccer",
+          "fr": "soccer (football européen)",
+          "alt": [],
+          "ex": "We enjoy playing soccer."
+        },
+        {
+          "en": "enjoy",
+          "fr": "aimer (prendre plaisir à)",
+          "alt": [],
+          "ex": "I enjoy skiing."
+        },
+        {
+          "en": "good at",
+          "fr": "bon en (doué pour)",
+          "alt": [],
+          "ex": "Are you good at swimming?"
+        },
+        {
+          "en": "can",
+          "fr": "pouvoir (savoir faire)",
+          "alt": [],
+          "ex": "She can skate very well."
+        },
+        {
+          "en": "can't",
+          "fr": "ne pas pouvoir (ne pas savoir faire)",
+          "alt": [],
+          "ex": "My grandpa can't ski."
+        }
       ],
       "sentences": [
-        { "en": "I can't swim very well.", "fr": "Je ne sais pas très bien nager.", "trap": ["to", "swimming"], "alt": [] },
-        { "en": "Can your sister ski?", "fr": "Est-ce que ta sœur sait skier ?", "trap": ["Does", "skis"], "alt": [] },
-        { "en": "Noah can ride a bike.", "fr": "Noah sait faire du vélo.", "trap": ["cans", "to"], "alt": [] },
-        { "en": "We enjoy playing soccer.", "fr": "Nous aimons jouer au soccer.", "trap": ["play", "to"], "alt": [] },
-        { "en": "Ana is good at climbing.", "fr": "Ana est douée pour grimper.", "trap": ["in", "climb"], "alt": [] },
-        { "en": "Do you like skating?", "fr": "Aimes-tu patiner ?", "trap": ["skate", "Does"], "alt": [] },
-        { "en": "My team never wins.", "fr": "Mon équipe ne gagne jamais.", "trap": ["win", "don't"], "alt": [] },
-        { "en": "He loves watching hockey games.", "fr": "Il adore regarder des matchs de hockey.", "trap": ["watch", "love"], "alt": [] },
-        { "en": "Can you catch the ball?", "fr": "Peux-tu attraper le ballon ?", "trap": ["to", "catching"], "alt": [] },
-        { "en": "I hate losing!", "fr": "Je déteste perdre !", "trap": ["lose", "loseing"], "alt": [] },
-        { "en": "Mei can't skate, but she can ski.", "fr": "Mei ne sait pas patiner, mais elle sait skier.", "trap": ["skates", "to"], "alt": [] },
-        { "en": "Are you good at swimming?", "fr": "Es-tu bon en natation ?", "trap": ["in", "swim"], "alt": [] }
+        {
+          "en": "I can't swim very well.",
+          "fr": "Je ne sais pas très bien nager.",
+          "trap": [
+            "to",
+            "swimming"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Can your sister ski?",
+          "fr": "Est-ce que ta sœur sait skier ?",
+          "trap": [
+            "Does",
+            "skis"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Noah can ride a bike.",
+          "fr": "Noah sait faire du vélo.",
+          "trap": [
+            "cans",
+            "to"
+          ],
+          "alt": []
+        },
+        {
+          "en": "We enjoy playing soccer.",
+          "fr": "Nous aimons jouer au soccer.",
+          "trap": [
+            "play",
+            "to"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Ana is good at climbing.",
+          "fr": "Ana est douée pour grimper.",
+          "trap": [
+            "in",
+            "climb"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Do you like skating?",
+          "fr": "Aimes-tu patiner ?",
+          "trap": [
+            "skate",
+            "Does"
+          ],
+          "alt": []
+        },
+        {
+          "en": "My team never wins.",
+          "fr": "Mon équipe ne gagne jamais.",
+          "trap": [
+            "win",
+            "don't"
+          ],
+          "alt": []
+        },
+        {
+          "en": "He loves watching hockey games.",
+          "fr": "Il adore regarder des matchs de hockey.",
+          "trap": [
+            "watch",
+            "love"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Can you catch the ball?",
+          "fr": "Peux-tu attraper le ballon ?",
+          "trap": [
+            "to",
+            "catching"
+          ],
+          "alt": []
+        },
+        {
+          "en": "I hate losing!",
+          "fr": "Je déteste perdre !",
+          "trap": [
+            "lose",
+            "loseing"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Mei can't skate, but she can ski.",
+          "fr": "Mei ne sait pas patiner, mais elle sait skier.",
+          "trap": [
+            "skates",
+            "to"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Are you good at swimming?",
+          "fr": "Es-tu bon en natation ?",
+          "trap": [
+            "in",
+            "swim"
+          ],
+          "alt": []
+        }
       ],
       "grammar": [
-        { "type": "mcq", "q": "She ___ swim.", "choices": ["cans", "can", "can to"], "answer": 1, "explain": "Can ne prend jamais de -s et jamais de to : she can swim." },
-        { "type": "mcq", "q": "I enjoy ___ with my friends.", "choices": ["to play", "play", "playing"], "answer": 2, "explain": "Après enjoy, toujours le verbe en -ing : enjoy playing." },
-        { "type": "mcq", "q": "Can you ski? — Yes, ___.", "choices": ["I can", "I do", "I ski"], "answer": 0, "explain": "La réponse courte reprend can : Yes, I can." },
-        { "type": "mcq", "q": "Liam is good ___ hockey.", "choices": ["in", "at", "on"], "answer": 1, "explain": "Être bon en = good at." },
-        { "type": "mcq", "q": "Comment dit-on « Je sais nager » ?", "choices": ["I can to swim.", "I know swim.", "I can swim."], "answer": 2, "explain": "Savoir faire = can + verbe de base, sans to." },
-        { "type": "mcq", "q": "___ Emma ride a bike? — No, she can't.", "choices": ["Does", "Can", "Is"], "answer": 1, "explain": "La réponse est she can't, donc la question commence par can." },
-        { "type": "fill", "q": "My grandpa ___ ski.", "hint": "ne pas pouvoir", "answer": ["can't"], "explain": "Ne pas savoir / pouvoir = can't + verbe de base." },
-        { "type": "fill", "q": "Sofia can ___ very well.", "hint": "nager", "answer": ["swim"], "explain": "Après can : verbe de base, sans -s → swim." },
-        { "type": "fill", "q": "We love ___ on the Rideau Canal in winter.", "hint": "skate", "answer": ["skating", "to skate"], "explain": "Love + verbe en -ing (ou to + verbe) : skating. Skate perd son -e." },
-        { "type": "fill", "q": "Do you enjoy ___ soccer?", "hint": "play", "answer": ["playing"], "explain": "Enjoy est toujours suivi de -ing : playing." },
-        { "type": "fill", "q": "Karim is good at ___.", "hint": "climb", "answer": ["climbing"], "explain": "Après good at, le verbe prend -ing : climbing." },
-        { "type": "fill", "q": "My team ___ every game!", "hint": "win", "answer": ["wins"], "explain": "My team = it : présent simple avec -s → wins." },
-        { "type": "error", "q": "She cans ride a bike.", "wrong": 1, "fix": ["can"], "explain": "Can ne prend jamais de -s." },
-        { "type": "error", "q": "He can skis very well.", "wrong": 2, "fix": ["ski"], "explain": "Après can, verbe de base sans -s : he can ski." },
-        { "type": "error", "q": "I like play hockey.", "wrong": 2, "fix": ["playing", "to play"], "explain": "Après like : verbe en -ing (ou to + verbe), jamais le verbe seul." },
-        { "type": "error", "q": "Jaden is good in soccer.", "wrong": 3, "fix": ["at"], "explain": "Être bon en = good at, jamais good in." },
-        { "type": "error", "q": "Maya enjoys ski in winter.", "wrong": 2, "fix": ["skiing"], "explain": "Après enjoy, toujours -ing : skiing." }
+        {
+          "type": "mcq",
+          "q": "She ___ swim.",
+          "choices": [
+            "cans",
+            "can",
+            "can to"
+          ],
+          "answer": 1,
+          "explain": "Can ne prend jamais de -s et jamais de to : she can swim."
+        },
+        {
+          "type": "mcq",
+          "q": "I enjoy ___ with my friends.",
+          "choices": [
+            "to play",
+            "play",
+            "playing"
+          ],
+          "answer": 2,
+          "explain": "Après enjoy, toujours le verbe en -ing : enjoy playing."
+        },
+        {
+          "type": "mcq",
+          "q": "Can you ski? — Yes, ___.",
+          "choices": [
+            "I can",
+            "I do",
+            "I ski"
+          ],
+          "answer": 0,
+          "explain": "La réponse courte reprend can : Yes, I can."
+        },
+        {
+          "type": "mcq",
+          "q": "Liam is good ___ hockey.",
+          "choices": [
+            "in",
+            "at",
+            "on"
+          ],
+          "answer": 1,
+          "explain": "Être bon en = good at."
+        },
+        {
+          "type": "mcq",
+          "q": "Comment dit-on « Je sais nager » ?",
+          "choices": [
+            "I can to swim.",
+            "I know swim.",
+            "I can swim."
+          ],
+          "answer": 2,
+          "explain": "Savoir faire = can + verbe de base, sans to."
+        },
+        {
+          "type": "mcq",
+          "q": "___ Emma ride a bike? — No, she can't.",
+          "choices": [
+            "Does",
+            "Can",
+            "Is"
+          ],
+          "answer": 1,
+          "explain": "La réponse est she can't, donc la question commence par can."
+        },
+        {
+          "type": "fill",
+          "q": "My grandpa ___ ski.",
+          "hint": "ne pas pouvoir",
+          "answer": [
+            "can't"
+          ],
+          "explain": "Ne pas savoir / pouvoir = can't + verbe de base."
+        },
+        {
+          "type": "fill",
+          "q": "Sofia can ___ very well.",
+          "hint": "nager",
+          "answer": [
+            "swim"
+          ],
+          "explain": "Après can : verbe de base, sans -s → swim."
+        },
+        {
+          "type": "fill",
+          "q": "We love ___ on the Rideau Canal in winter.",
+          "hint": "skate",
+          "answer": [
+            "skating",
+            "to skate"
+          ],
+          "explain": "Love + verbe en -ing (ou to + verbe) : skating. Skate perd son -e."
+        },
+        {
+          "type": "fill",
+          "q": "Do you enjoy ___ soccer?",
+          "hint": "play",
+          "answer": [
+            "playing"
+          ],
+          "explain": "Enjoy est toujours suivi de -ing : playing."
+        },
+        {
+          "type": "fill",
+          "q": "Karim is good at ___.",
+          "hint": "climb",
+          "answer": [
+            "climbing"
+          ],
+          "explain": "Après good at, le verbe prend -ing : climbing."
+        },
+        {
+          "type": "fill",
+          "q": "My team ___ every game!",
+          "hint": "win",
+          "answer": [
+            "wins"
+          ],
+          "explain": "My team = it : présent simple avec -s → wins."
+        },
+        {
+          "type": "error",
+          "q": "She cans ride a bike.",
+          "wrong": 1,
+          "fix": [
+            "can"
+          ],
+          "explain": "Can ne prend jamais de -s."
+        },
+        {
+          "type": "error",
+          "q": "He can skis very well.",
+          "wrong": 2,
+          "fix": [
+            "ski"
+          ],
+          "explain": "Après can, verbe de base sans -s : he can ski."
+        },
+        {
+          "type": "error",
+          "q": "I like play hockey.",
+          "wrong": 2,
+          "fix": [
+            "playing",
+            "to play"
+          ],
+          "explain": "Après like : verbe en -ing (ou to + verbe), jamais le verbe seul."
+        },
+        {
+          "type": "error",
+          "q": "Jaden is good in soccer.",
+          "wrong": 3,
+          "fix": [
+            "at"
+          ],
+          "explain": "Être bon en = good at, jamais good in."
+        },
+        {
+          "type": "error",
+          "q": "Maya enjoys ski in winter.",
+          "wrong": 2,
+          "fix": [
+            "skiing"
+          ],
+          "explain": "Après enjoy, toujours -ing : skiing."
+        }
       ],
       "reading": {
         "title": "Ethan's Team",
         "text": "Ethan loves hockey. He plays on a team in Ottawa, but he isn't very good at skating. His sister Chloé can skate very well. She can ski, swim and ride a bike too! Ethan can't ski, but he enjoys swimming.\n\nEthan's team never wins. But the players don't care. They love playing hockey together.\n\nToday, Chloé is watching the game. Ethan's team is losing again, but Ethan is laughing with his friends. “We can't win, but we can have fun!” he says.",
         "questions": [
-          { "q": "Ethan est-il bon en patin ?", "choices": ["Oui, très bon", "Il ne sait pas patiner du tout", "Non, pas très bon", "Le texte ne le dit pas"], "answer": 2 },
-          { "q": "Que sait faire Chloé ?", "choices": ["Patiner, skier, nager et faire du vélo", "Seulement patiner", "Skier, mais pas nager", "Jouer au soccer"], "answer": 0 },
-          { "q": "Quel sport Ethan ne sait-il pas faire ?", "choices": ["La natation", "Le ski", "Le hockey", "Le patin"], "answer": 1 },
-          { "q": "Que se passe-t-il pendant la partie d'aujourd'hui ?", "choices": ["L'équipe d'Ethan gagne", "Chloé joue avec Ethan", "Ethan pleure", "L'équipe d'Ethan perd"], "answer": 3 },
-          { "q": "Comment réagit Ethan ?", "choices": ["Il est fâché", "Il rit avec ses amis", "Il rentre chez lui", "Il arrête le hockey"], "answer": 1 }
+          {
+            "q": "Ethan est-il bon en patin ?",
+            "choices": [
+              "Oui, très bon",
+              "Il ne sait pas patiner du tout",
+              "Non, pas très bon",
+              "Le texte ne le dit pas"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Que sait faire Chloé ?",
+            "choices": [
+              "Patiner, skier, nager et faire du vélo",
+              "Seulement patiner",
+              "Skier, mais pas nager",
+              "Jouer au soccer"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Quel sport Ethan ne sait-il pas faire ?",
+            "choices": [
+              "La natation",
+              "Le ski",
+              "Le hockey",
+              "Le patin"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Que se passe-t-il pendant la partie d'aujourd'hui ?",
+            "choices": [
+              "L'équipe d'Ethan gagne",
+              "Chloé joue avec Ethan",
+              "Ethan pleure",
+              "L'équipe d'Ethan perd"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Comment réagit Ethan ?",
+            "choices": [
+              "Il est fâché",
+              "Il rit avec ses amis",
+              "Il rentre chez lui",
+              "Il arrête le hockey"
+            ],
+            "answer": 1
+          }
         ]
       }
     },
@@ -209,100 +1150,588 @@
       "titleEn": "Around Town",
       "goal": "Demander et donner son chemin en ville avec l'impératif.",
       "lesson": [
-        { "type": "p", "text": "Tu te promènes à Ottawa et tu cherches la bibliothèque ? Il faut savoir **demander** ton chemin et **comprendre** la réponse. Pour commencer poliment : [[Excuse me…]] (Excusez-moi…)." },
-        { "type": "rule", "title": "L'impératif : donner un ordre ou une direction", "text": "Verbe de base, **sans sujet** : [[Turn left.]] [[Go straight.]] Négatif : [[Don't]] + verbe : [[Don't run!]] Pour proposer de faire quelque chose ensemble : [[Let's]] + verbe : [[Let's go!]] (Allons-y !)" },
-        { "type": "table", "head": ["Anglais", "Français"], "rows": [
-          ["[[turn left]]", "tourner à gauche"],
-          ["[[turn right]]", "tourner à droite"],
-          ["[[go straight]]", "aller tout droit"],
-          ["[[at the corner]]", "au coin"],
-          ["[[at the traffic lights]]", "aux feux de circulation"],
-          ["[[across from]]", "en face de"],
-          ["[[next to]]", "à côté de"],
-          ["[[near]]", "près de"],
-          ["[[far from]]", "loin de"],
-          ["[[cross the street]]", "traverser la rue"]
-        ] },
-        { "type": "rule", "title": "Demander son chemin", "text": "[[Where is the bank?]] → [[It's next to the park.]] [[How do I get to the library?]] (Comment je me rends à la bibliothèque ?) → [[Go straight and turn left.]] [[Is it far from here?]] (Est-ce loin d'ici ?) → [[No, it's near.]]" },
-        { "type": "examples", "items": [
-          { "en": "Turn left at the traffic lights.", "fr": "Tourne à gauche aux feux de circulation." },
-          { "en": "Don't run in the library!", "fr": "Ne cours pas dans la bibliothèque !" },
-          { "en": "How do I get to the hospital?", "fr": "Comment est-ce que je me rends à l'hôpital ?" },
-          { "en": "The bank is across from the park.", "fr": "La banque est en face du parc." },
-          { "en": "Let's go to the movie theatre!", "fr": "Allons au cinéma !" }
-        ] },
-        { "type": "tip", "text": "Faux ami géant ! [[library]] = **bibliothèque** : on y emprunte ([[borrow]]) des livres. La **librairie**, où on achète des livres, c'est le [[bookstore]]. Autre piège : « près **de** » = [[near]], sans of. Et « Ne cours pas » = [[Don't run]], jamais [[No run]]." },
-        { "type": "fun", "text": "Le sais-tu ? En hiver, une partie du canal Rideau, à Ottawa, devient une immense patinoire. Le canal est inscrit au patrimoine mondial de l'UNESCO." },
-        { "type": "dialogue", "title": "Perdu au centre-ville", "lines": [
-          { "who": "Félix", "en": "Excuse me, where is the post office?", "fr": "Excusez-moi, où est le bureau de poste ?" },
-          { "who": "Passante", "en": "It's on Elm Street, next to the bank.", "fr": "Il est sur la rue Elm, à côté de la banque." },
-          { "who": "Félix", "en": "How do I get to Elm Street?", "fr": "Comment je me rends à la rue Elm ?" },
-          { "who": "Passante", "en": "Go straight and turn right at the traffic lights.", "fr": "Va tout droit et tourne à droite aux feux de circulation." },
-          { "who": "Félix", "en": "Is it far from here?", "fr": "Est-ce loin d'ici ?" },
-          { "who": "Passante", "en": "No, it's near. But don't cross the street here!", "fr": "Non, c'est proche. Mais ne traverse pas la rue ici !" },
-          { "who": "Félix", "en": "OK. Thank you very much!", "fr": "D'accord. Merci beaucoup !" }
-        ] }
+        {
+          "type": "p",
+          "text": "Tu te promènes à Ottawa et tu cherches la bibliothèque ? Il faut savoir **demander** ton chemin et **comprendre** la réponse. Pour commencer poliment : [[Excuse me…]] (Excusez-moi…)."
+        },
+        {
+          "type": "rule",
+          "title": "L'impératif : donner un ordre ou une direction",
+          "text": "Verbe de base, **sans sujet** : [[Turn left.]] [[Go straight.]] Négatif : [[Don't]] + verbe : [[Don't run!]] Pour proposer de faire quelque chose ensemble : [[Let's]] + verbe : [[Let's go!]] (Allons-y !)"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Anglais",
+            "Français"
+          ],
+          "rows": [
+            [
+              "[[turn left]]",
+              "tourner à gauche"
+            ],
+            [
+              "[[turn right]]",
+              "tourner à droite"
+            ],
+            [
+              "[[go straight]]",
+              "aller tout droit"
+            ],
+            [
+              "[[at the corner]]",
+              "au coin"
+            ],
+            [
+              "[[at the traffic lights]]",
+              "aux feux de circulation"
+            ],
+            [
+              "[[across from]]",
+              "en face de"
+            ],
+            [
+              "[[next to]]",
+              "à côté de"
+            ],
+            [
+              "[[near]]",
+              "près de"
+            ],
+            [
+              "[[far from]]",
+              "loin de"
+            ],
+            [
+              "[[cross the street]]",
+              "traverser la rue"
+            ]
+          ]
+        },
+        {
+          "type": "rule",
+          "title": "Demander son chemin",
+          "text": "[[Where is the bank?]] → [[It's next to the park.]] [[How do I get to the library?]] (Comment je me rends à la bibliothèque ?) → [[Go straight and turn left.]] [[Is it far from here?]] (Est-ce loin d'ici ?) → [[No, it's near.]]"
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "Turn left at the traffic lights.",
+              "fr": "Tourne à gauche aux feux de circulation."
+            },
+            {
+              "en": "Don't run in the library!",
+              "fr": "Ne cours pas dans la bibliothèque !"
+            },
+            {
+              "en": "How do I get to the hospital?",
+              "fr": "Comment est-ce que je me rends à l'hôpital ?"
+            },
+            {
+              "en": "The bank is across from the park.",
+              "fr": "La banque est en face du parc."
+            },
+            {
+              "en": "Let's go to the movie theatre!",
+              "fr": "Allons au cinéma !"
+            }
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "Faux ami géant ! [[library]] = **bibliothèque** : on y emprunte ([[borrow]]) des livres. La **librairie**, où on achète des livres, c'est le [[bookstore]]. Autre piège : « près **de** » = [[near]], sans of. Et « Ne cours pas » = [[Don't run]], jamais [[No run]]."
+        },
+        {
+          "type": "fun",
+          "text": "Le sais-tu ? En hiver, une partie du canal Rideau, à Ottawa, devient une immense patinoire. Le canal est inscrit au patrimoine mondial de l'UNESCO."
+        },
+        {
+          "type": "dialogue",
+          "title": "Perdu au centre-ville",
+          "lines": [
+            {
+              "who": "Félix",
+              "en": "Excuse me, where is the post office?",
+              "fr": "Excusez-moi, où est le bureau de poste ?"
+            },
+            {
+              "who": "Passante",
+              "en": "It's on Elm Street, next to the bank.",
+              "fr": "Il est sur la rue Elm, à côté de la banque."
+            },
+            {
+              "who": "Félix",
+              "en": "How do I get to Elm Street?",
+              "fr": "Comment je me rends à la rue Elm ?"
+            },
+            {
+              "who": "Passante",
+              "en": "Go straight and turn right at the traffic lights.",
+              "fr": "Va tout droit et tourne à droite aux feux de circulation."
+            },
+            {
+              "who": "Félix",
+              "en": "Is it far from here?",
+              "fr": "Est-ce loin d'ici ?"
+            },
+            {
+              "who": "Passante",
+              "en": "No, it's near. But don't cross the street here!",
+              "fr": "Non, c'est proche. Mais ne traverse pas la rue ici !"
+            },
+            {
+              "who": "Félix",
+              "en": "OK. Thank you very much!",
+              "fr": "D'accord. Merci beaucoup !"
+            }
+          ]
+        }
       ],
       "vocab": [
-        { "en": "library", "fr": "bibliothèque", "alt": [], "ex": "Don't run in the library!" },
-        { "en": "bookstore", "fr": "librairie", "alt": ["bookshop"], "ex": "I buy books at the bookstore." },
-        { "en": "bank", "fr": "banque", "alt": [], "ex": "The bank is across from the park." },
-        { "en": "hospital", "fr": "hôpital", "alt": [], "ex": "How do I get to the hospital?" },
-        { "en": "post office", "fr": "bureau de poste", "alt": [], "ex": "Where is the post office?" },
-        { "en": "grocery store", "fr": "épicerie (supermarché)", "alt": ["supermarket"], "ex": "Is the grocery store far from here?" },
-        { "en": "street", "fr": "rue", "alt": [], "ex": "Don't cross the street here." },
-        { "en": "corner", "fr": "coin (de rue)", "alt": [], "ex": "Turn left at the corner." },
-        { "en": "traffic lights", "fr": "feux de circulation", "alt": ["traffic light"], "ex": "Turn right at the traffic lights." },
-        { "en": "turn left", "fr": "tourner à gauche", "alt": [], "ex": "Turn left at the bank." },
-        { "en": "turn right", "fr": "tourner à droite", "alt": [], "ex": "Go straight and turn right." },
-        { "en": "go straight", "fr": "aller tout droit", "alt": ["go straight ahead"], "ex": "Go straight and turn left." },
-        { "en": "across from", "fr": "en face de", "alt": ["opposite"], "ex": "The library is across from the park." },
-        { "en": "near", "fr": "près de", "alt": ["close to"], "ex": "The library is near my school." },
-        { "en": "far from", "fr": "loin de", "alt": [], "ex": "Is the hospital far from here?" },
-        { "en": "movie theatre", "fr": "cinéma", "alt": ["cinema", "movie theater"], "ex": "Let's go to the movie theatre!" }
+        {
+          "en": "library",
+          "fr": "bibliothèque",
+          "alt": [],
+          "ex": "Don't run in the library!"
+        },
+        {
+          "en": "bookstore",
+          "fr": "librairie",
+          "alt": [
+            "bookshop"
+          ],
+          "ex": "I buy books at the bookstore."
+        },
+        {
+          "en": "bank",
+          "fr": "banque",
+          "alt": [],
+          "ex": "The bank is across from the park."
+        },
+        {
+          "en": "hospital",
+          "fr": "hôpital",
+          "alt": [],
+          "ex": "How do I get to the hospital?"
+        },
+        {
+          "en": "post office",
+          "fr": "bureau de poste",
+          "alt": [],
+          "ex": "Where is the post office?"
+        },
+        {
+          "en": "grocery store",
+          "fr": "épicerie (supermarché)",
+          "alt": [
+            "supermarket"
+          ],
+          "ex": "Is the grocery store far from here?"
+        },
+        {
+          "en": "street",
+          "fr": "rue",
+          "alt": [],
+          "ex": "Don't cross the street here."
+        },
+        {
+          "en": "corner",
+          "fr": "coin (de rue)",
+          "alt": [],
+          "ex": "Turn left at the corner."
+        },
+        {
+          "en": "traffic lights",
+          "fr": "feux de circulation",
+          "alt": [
+            "traffic light"
+          ],
+          "ex": "Turn right at the traffic lights."
+        },
+        {
+          "en": "turn left",
+          "fr": "tourner à gauche",
+          "alt": [],
+          "ex": "Turn left at the bank."
+        },
+        {
+          "en": "turn right",
+          "fr": "tourner à droite",
+          "alt": [],
+          "ex": "Go straight and turn right."
+        },
+        {
+          "en": "go straight",
+          "fr": "aller tout droit",
+          "alt": [
+            "go straight ahead"
+          ],
+          "ex": "Go straight and turn left."
+        },
+        {
+          "en": "across from",
+          "fr": "en face de",
+          "alt": [
+            "opposite"
+          ],
+          "ex": "The library is across from the park."
+        },
+        {
+          "en": "near",
+          "fr": "près de",
+          "alt": [
+            "close to"
+          ],
+          "ex": "The library is near my school."
+        },
+        {
+          "en": "far from",
+          "fr": "loin de",
+          "alt": [],
+          "ex": "Is the hospital far from here?"
+        },
+        {
+          "en": "movie theatre",
+          "fr": "cinéma",
+          "alt": [
+            "cinema",
+            "movie theater"
+          ],
+          "ex": "Let's go to the movie theatre!"
+        }
       ],
       "sentences": [
-        { "en": "Turn left at the traffic lights.", "fr": "Tourne à gauche aux feux de circulation.", "trap": ["To", "on"], "alt": [] },
-        { "en": "Don't run in the library!", "fr": "Ne cours pas dans la bibliothèque !", "trap": ["No", "bookstore"], "alt": [] },
-        { "en": "Where is the post office?", "fr": "Où est le bureau de poste ?", "trap": ["are", "Who"], "alt": [] },
-        { "en": "How do I get to the hospital?", "fr": "Comment est-ce que je me rends à l'hôpital ?", "trap": ["does", "at"], "alt": [] },
-        { "en": "Go straight and turn right.", "fr": "Va tout droit et tourne à droite.", "trap": ["Goes", "to"], "alt": [] },
-        { "en": "The bank is across from the park.", "fr": "La banque est en face du parc.", "trap": ["front", "of"], "alt": [] },
-        { "en": "The bookstore is on Rideau Street.", "fr": "La librairie est sur la rue Rideau.", "trap": ["at", "library"], "alt": [] },
-        { "en": "Is the grocery store far from here?", "fr": "Est-ce que l'épicerie est loin d'ici ?", "trap": ["of", "Does"], "alt": [] },
-        { "en": "Let's go to the movie theatre!", "fr": "Allons au cinéma !", "trap": ["Let", "goes"], "alt": [] },
-        { "en": "Don't cross the street here.", "fr": "Ne traverse pas la rue ici.", "trap": ["Not", "crosses"], "alt": [] },
-        { "en": "The library is near my school.", "fr": "La bibliothèque est près de mon école.", "trap": ["of", "bookstore"], "alt": [] },
-        { "en": "Turn right at the corner.", "fr": "Tourne à droite au coin de la rue.", "trap": ["Turns", "of"], "alt": [] }
+        {
+          "en": "Turn left at the traffic lights.",
+          "fr": "Tourne à gauche aux feux de circulation.",
+          "trap": [
+            "To",
+            "on"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Don't run in the library!",
+          "fr": "Ne cours pas dans la bibliothèque !",
+          "trap": [
+            "No",
+            "bookstore"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Where is the post office?",
+          "fr": "Où est le bureau de poste ?",
+          "trap": [
+            "are",
+            "Who"
+          ],
+          "alt": []
+        },
+        {
+          "en": "How do I get to the hospital?",
+          "fr": "Comment est-ce que je me rends à l'hôpital ?",
+          "trap": [
+            "does",
+            "at"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Go straight and turn right.",
+          "fr": "Va tout droit et tourne à droite.",
+          "trap": [
+            "Goes",
+            "to"
+          ],
+          "alt": []
+        },
+        {
+          "en": "The bank is across from the park.",
+          "fr": "La banque est en face du parc.",
+          "trap": [
+            "front",
+            "of"
+          ],
+          "alt": []
+        },
+        {
+          "en": "The bookstore is on Rideau Street.",
+          "fr": "La librairie est sur la rue Rideau.",
+          "trap": [
+            "at",
+            "library"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Is the grocery store far from here?",
+          "fr": "Est-ce que l'épicerie est loin d'ici ?",
+          "trap": [
+            "of",
+            "Does"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Let's go to the movie theatre!",
+          "fr": "Allons au cinéma !",
+          "trap": [
+            "Let",
+            "goes"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Don't cross the street here.",
+          "fr": "Ne traverse pas la rue ici.",
+          "trap": [
+            "Not",
+            "crosses"
+          ],
+          "alt": []
+        },
+        {
+          "en": "The library is near my school.",
+          "fr": "La bibliothèque est près de mon école.",
+          "trap": [
+            "of",
+            "bookstore"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Turn right at the corner.",
+          "fr": "Tourne à droite au coin de la rue.",
+          "trap": [
+            "Turns",
+            "of"
+          ],
+          "alt": []
+        }
       ],
       "grammar": [
-        { "type": "mcq", "q": "Tu veux emprunter un livre gratuitement. Tu vas à la…", "choices": ["bookstore", "library", "bank"], "answer": 1, "explain": "On emprunte des livres à la bibliothèque = library. Le bookstore, c'est la librairie (on achète)." },
-        { "type": "mcq", "q": "Comment dit-on « Ne cours pas ! » ?", "choices": ["Don't run!", "No run!", "Don't to run!", "Not run!"], "answer": 0, "explain": "Impératif négatif : Don't + verbe de base." },
-        { "type": "mcq", "q": "___ is the hospital? — It's on Carling Avenue.", "choices": ["Who", "What", "Where"], "answer": 2, "explain": "La réponse est un lieu : where." },
-        { "type": "mcq", "q": "« La banque est en face du bureau de poste. » The bank is ___ the post office.", "choices": ["across of", "across from", "in front"], "answer": 1, "explain": "En face de = across from." },
-        { "type": "mcq", "q": "How do I get ___ the library?", "choices": ["to", "at", "in"], "answer": 0, "explain": "Se rendre à un endroit = get to." },
-        { "type": "mcq", "q": "Comment dit-on « Allons au parc ! » ?", "choices": ["Let's going to the park!", "Go we to the park!", "Let's go to the park!"], "answer": 2, "explain": "Allons… = Let's + verbe de base." },
-        { "type": "fill", "q": "___ left at the corner.", "hint": "tourner", "answer": ["Turn"], "explain": "Impératif : le verbe de base, sans sujet → Turn left." },
-        { "type": "fill", "q": "___ run in the street!", "hint": "ne… pas (ordre)", "answer": ["Don't"], "explain": "Impératif négatif : Don't + verbe." },
-        { "type": "fill", "q": "The grocery store is ___ the bank.", "hint": "à côté de", "answer": ["next to"], "explain": "À côté de = next to." },
-        { "type": "fill", "q": "I need a book for school. Let's go to the ___.", "hint": "bibliothèque", "answer": ["library"], "explain": "Bibliothèque = library (faux ami !)." },
-        { "type": "fill", "q": "Is the hospital ___ from here?", "hint": "loin", "answer": ["far"], "explain": "Loin de = far from." },
-        { "type": "fill", "q": "Go ___ and turn right at the traffic lights.", "hint": "tout droit", "answer": ["straight"], "explain": "Aller tout droit = go straight." },
-        { "type": "error", "q": "Turns left at the bank.", "wrong": 0, "fix": ["Turn"], "explain": "L'impératif n'a pas de -s : Turn left." },
-        { "type": "error", "q": "Don't crossing the street!", "wrong": 1, "fix": ["cross"], "explain": "Après don't, verbe de base : Don't cross." },
-        { "type": "error", "q": "The bank is across of the library.", "wrong": 4, "fix": ["from"], "explain": "En face de = across from, jamais across of." },
-        { "type": "error", "q": "How does I get to the bank?", "wrong": 1, "fix": ["do"], "explain": "Avec I, c'est do : How do I get to…?" },
-        { "type": "error", "q": "Where are the post office?", "wrong": 1, "fix": ["is"], "explain": "The post office = un seul endroit : Where is…?" },
-        { "type": "error", "q": "I borrow books at the bookstore.", "wrong": 5, "fix": ["library"], "explain": "On emprunte (borrow) des livres à la bibliothèque = library. Au bookstore, on les achète." }
+        {
+          "type": "mcq",
+          "q": "Tu veux emprunter un livre gratuitement. Tu vas à la…",
+          "choices": [
+            "bookstore",
+            "library",
+            "bank"
+          ],
+          "answer": 1,
+          "explain": "On emprunte des livres à la bibliothèque = library. Le bookstore, c'est la librairie (on achète)."
+        },
+        {
+          "type": "mcq",
+          "q": "Comment dit-on « Ne cours pas ! » ?",
+          "choices": [
+            "Don't run!",
+            "No run!",
+            "Don't to run!",
+            "Not run!"
+          ],
+          "answer": 0,
+          "explain": "Impératif négatif : Don't + verbe de base."
+        },
+        {
+          "type": "mcq",
+          "q": "___ is the hospital? — It's on Carling Avenue.",
+          "choices": [
+            "Who",
+            "What",
+            "Where"
+          ],
+          "answer": 2,
+          "explain": "La réponse est un lieu : where."
+        },
+        {
+          "type": "mcq",
+          "q": "« La banque est en face du bureau de poste. » The bank is ___ the post office.",
+          "choices": [
+            "across of",
+            "across from",
+            "in front"
+          ],
+          "answer": 1,
+          "explain": "En face de = across from."
+        },
+        {
+          "type": "mcq",
+          "q": "How do I get ___ the library?",
+          "choices": [
+            "to",
+            "at",
+            "in"
+          ],
+          "answer": 0,
+          "explain": "Se rendre à un endroit = get to."
+        },
+        {
+          "type": "mcq",
+          "q": "Comment dit-on « Allons au parc ! » ?",
+          "choices": [
+            "Let's going to the park!",
+            "Go we to the park!",
+            "Let's go to the park!"
+          ],
+          "answer": 2,
+          "explain": "Allons… = Let's + verbe de base."
+        },
+        {
+          "type": "fill",
+          "q": "___ left at the corner.",
+          "hint": "tourner",
+          "answer": [
+            "Turn"
+          ],
+          "explain": "Impératif : le verbe de base, sans sujet → Turn left."
+        },
+        {
+          "type": "fill",
+          "q": "___ run in the street!",
+          "hint": "ne… pas (ordre)",
+          "answer": [
+            "Don't"
+          ],
+          "explain": "Impératif négatif : Don't + verbe."
+        },
+        {
+          "type": "fill",
+          "q": "The grocery store is ___ the bank.",
+          "hint": "à côté de",
+          "answer": [
+            "next to"
+          ],
+          "explain": "À côté de = next to."
+        },
+        {
+          "type": "fill",
+          "q": "I need a book for school. Let's go to the ___.",
+          "hint": "bibliothèque",
+          "answer": [
+            "library"
+          ],
+          "explain": "Bibliothèque = library (faux ami !)."
+        },
+        {
+          "type": "fill",
+          "q": "Is the hospital ___ from here?",
+          "hint": "loin",
+          "answer": [
+            "far"
+          ],
+          "explain": "Loin de = far from."
+        },
+        {
+          "type": "fill",
+          "q": "Go ___ and turn right at the traffic lights.",
+          "hint": "tout droit",
+          "answer": [
+            "straight"
+          ],
+          "explain": "Aller tout droit = go straight."
+        },
+        {
+          "type": "error",
+          "q": "Turns left at the bank.",
+          "wrong": 0,
+          "fix": [
+            "Turn"
+          ],
+          "explain": "L'impératif n'a pas de -s : Turn left."
+        },
+        {
+          "type": "error",
+          "q": "Don't crossing the street!",
+          "wrong": 1,
+          "fix": [
+            "cross"
+          ],
+          "explain": "Après don't, verbe de base : Don't cross."
+        },
+        {
+          "type": "error",
+          "q": "The bank is across of the library.",
+          "wrong": 4,
+          "fix": [
+            "from"
+          ],
+          "explain": "En face de = across from, jamais across of."
+        },
+        {
+          "type": "error",
+          "q": "How does I get to the bank?",
+          "wrong": 1,
+          "fix": [
+            "do"
+          ],
+          "explain": "Avec I, c'est do : How do I get to…?"
+        },
+        {
+          "type": "error",
+          "q": "Where are the post office?",
+          "wrong": 1,
+          "fix": [
+            "is"
+          ],
+          "explain": "The post office = un seul endroit : Where is…?"
+        },
+        {
+          "type": "error",
+          "q": "I borrow books at the bookstore.",
+          "wrong": 5,
+          "fix": [
+            "library"
+          ],
+          "explain": "On emprunte (borrow) des livres à la bibliothèque = library. Au bookstore, on les achète."
+        }
       ],
       "reading": {
         "title": "Where Is the Library?",
         "text": "Amir is new in Ottawa. He wants to borrow a book, so he asks a woman in the street.\n\n“Excuse me, where is the library?”\n\n“Go straight and turn left at the traffic lights. The library is next to the bank, across from the park.”\n\n“Is it far from here?”\n\n“No, it's near.”\n\nAmir goes straight and turns left at the traffic lights. Oh no! He sees a bookstore, not a library. But wait! He looks across the street and sees the park. Across from the park, next to the bank, there is a big building. It's the library!",
         "questions": [
-          { "q": "Que veut faire Amir ?", "choices": ["Acheter un livre", "Emprunter un livre", "Aller à la banque", "Jouer au parc"], "answer": 1 },
-          { "q": "Où est la bibliothèque ?", "choices": ["À côté de la banque, en face du parc", "À côté du parc, en face de la banque", "Derrière la librairie", "Loin d'ici"], "answer": 0 },
-          { "q": "Où Amir doit-il tourner à gauche ?", "choices": ["Au coin de la banque", "Devant le parc", "Aux feux de circulation", "Après la librairie"], "answer": 2 },
-          { "q": "Qu'est-ce qu'Amir voit d'abord, après avoir tourné ?", "choices": ["La bibliothèque", "La banque", "Un hôpital", "Une librairie"], "answer": 3 }
+          {
+            "q": "Que veut faire Amir ?",
+            "choices": [
+              "Acheter un livre",
+              "Emprunter un livre",
+              "Aller à la banque",
+              "Jouer au parc"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Où est la bibliothèque ?",
+            "choices": [
+              "À côté de la banque, en face du parc",
+              "À côté du parc, en face de la banque",
+              "Derrière la librairie",
+              "Loin d'ici"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Où Amir doit-il tourner à gauche ?",
+            "choices": [
+              "Au coin de la banque",
+              "Devant le parc",
+              "Aux feux de circulation",
+              "Après la librairie"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Qu'est-ce qu'Amir voit d'abord, après avoir tourné ?",
+            "choices": [
+              "La bibliothèque",
+              "La banque",
+              "Un hôpital",
+              "Une librairie"
+            ],
+            "answer": 3
+          }
         ]
       }
     },
@@ -312,110 +1741,1246 @@
       "titleEn": "Let's Go Shopping",
       "goal": "Magasiner des vêtements, demander les prix et utiliser this, that, these, those et les pronoms compléments.",
       "lesson": [
-        { "type": "p", "text": "L'hiver arrive à Ottawa : il te faut une tuque et des mitaines ! Au magasin, tu dois demander le prix, montrer ce que tu veux et dire « je **le** prends »." },
-        { "type": "rule", "title": "Combien ça coûte ?", "text": "Un seul objet : [[How much is this toque?]] → [[It's fifteen dollars.]] Plusieurs : [[How much are these boots?]] → [[They're ninety dollars.]] Attention : [[pants]] est **toujours pluriel** : [[These pants are cheap.]]" },
-        { "type": "table", "head": ["Nombre", "Anglais"], "rows": [
-          ["30", "[[thirty]]"],
-          ["40", "[[forty]]"],
-          ["50", "[[fifty]]"],
-          ["60", "[[sixty]]"],
-          ["70", "[[seventy]]"],
-          ["80", "[[eighty]]"],
-          ["90", "[[ninety]]"],
-          ["100", "[[a hundred]]"]
-        ] },
-        { "type": "table", "head": ["", "Ici (près de moi)", "Là-bas (loin)"], "rows": [
-          ["Singulier", "[[this coat]]", "[[that coat]]"],
-          ["Pluriel", "[[these coats]]", "[[those coats]]"]
-        ] },
-        { "type": "table", "head": ["Sujet", "Complément", "Exemple"], "rows": [
-          ["I", "me", "[[Help me!]]"],
-          ["you", "you", "[[I see you.]]"],
-          ["he", "him", "[[Give it to him.]]"],
-          ["she", "her", "[[I can't see her.]]"],
-          ["it", "it", "[[I love it!]]"],
-          ["we", "us", "[[Can you help us?]]"],
-          ["they", "them", "[[I want them.]]"]
-        ] },
-        { "type": "rule", "title": "Les pronoms compléments", "text": "Après un verbe (ou après to, for, at…), on utilise **me, you, him, her, it, us, them**. Ils se placent **après** le verbe, pas avant comme en français : « Je **la** vois » = [[I see her.]] « Je **les** achète » = [[I buy them.]] « Puis-je **l'**essayer ? » = [[Can I try it on?]]" },
-        { "type": "examples", "items": [
-          { "en": "How much are those boots?", "fr": "Combien coûtent ces bottes-là ?" },
-          { "en": "These pants are too big.", "fr": "Ce pantalon est trop grand." },
-          { "en": "I like this sweater, but it's expensive.", "fr": "J'aime ce chandail, mais il est cher." },
-          { "en": "My mom buys them for me.", "fr": "Ma mère me les achète." },
-          { "en": "I don't have enough money.", "fr": "Je n'ai pas assez d'argent." }
-        ] },
-        { "type": "tip", "text": "« **Ce** pantalon » = [[these pants]] (pluriel en anglais !). « **Trop** cher » = [[too expensive]], jamais [[too much expensive]]. Et le pronom ne passe jamais devant le verbe : « je **le** veux » = [[I want it]]. Petits mots utiles : [[over there]] (là-bas), [[enough]] (assez), [[too]] (trop)." },
-        { "type": "fun", "text": "Le sais-tu ? [[toque]] (ou [[tuque]]) est un mot typiquement canadien. Ailleurs, les anglophones disent plutôt [[beanie]] ou [[winter hat]]." },
-        { "type": "dialogue", "title": "Au magasin de vêtements", "lines": [
-          { "who": "Vendeuse", "en": "Hi! Can I help you?", "fr": "Bonjour ! Je peux t'aider ?" },
-          { "who": "Samuel", "en": "Yes, please. How much is this toque?", "fr": "Oui, s'il vous plaît. Combien coûte cette tuque ?" },
-          { "who": "Vendeuse", "en": "It's twenty dollars.", "fr": "Elle coûte vingt dollars." },
-          { "who": "Samuel", "en": "And how much are those mittens over there?", "fr": "Et combien coûtent ces mitaines-là ?" },
-          { "who": "Vendeuse", "en": "They're cheap: only ten dollars. Do you want to try them on?", "fr": "Elles ne sont pas chères : seulement dix dollars. Veux-tu les essayer ?" },
-          { "who": "Samuel", "en": "Yes! I love them. I'm buying the toque and the mittens!", "fr": "Oui ! Je les adore. J'achète la tuque et les mitaines !" }
-        ] }
+        {
+          "type": "p",
+          "text": "L'hiver arrive à Ottawa : il te faut une tuque et des mitaines ! Au magasin, tu dois demander le prix, montrer ce que tu veux et dire « je **le** prends »."
+        },
+        {
+          "type": "rule",
+          "title": "Combien ça coûte ?",
+          "text": "Un seul objet : [[How much is this toque?]] → [[It's fifteen dollars.]] Plusieurs : [[How much are these boots?]] → [[They're ninety dollars.]] Attention : [[pants]] est **toujours pluriel** : [[These pants are cheap.]]"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Nombre",
+            "Anglais"
+          ],
+          "rows": [
+            [
+              "30",
+              "[[thirty]]"
+            ],
+            [
+              "40",
+              "[[forty]]"
+            ],
+            [
+              "50",
+              "[[fifty]]"
+            ],
+            [
+              "60",
+              "[[sixty]]"
+            ],
+            [
+              "70",
+              "[[seventy]]"
+            ],
+            [
+              "80",
+              "[[eighty]]"
+            ],
+            [
+              "90",
+              "[[ninety]]"
+            ],
+            [
+              "100",
+              "[[a hundred]]"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "Ici (près de moi)",
+            "Là-bas (loin)"
+          ],
+          "rows": [
+            [
+              "Singulier",
+              "[[this coat]]",
+              "[[that coat]]"
+            ],
+            [
+              "Pluriel",
+              "[[these coats]]",
+              "[[those coats]]"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "head": [
+            "Sujet",
+            "Complément",
+            "Exemple"
+          ],
+          "rows": [
+            [
+              "I",
+              "me",
+              "[[Help me!]]"
+            ],
+            [
+              "you",
+              "you",
+              "[[I see you.]]"
+            ],
+            [
+              "he",
+              "him",
+              "[[Give it to him.]]"
+            ],
+            [
+              "she",
+              "her",
+              "[[I can't see her.]]"
+            ],
+            [
+              "it",
+              "it",
+              "[[I love it!]]"
+            ],
+            [
+              "we",
+              "us",
+              "[[Can you help us?]]"
+            ],
+            [
+              "they",
+              "them",
+              "[[I want them.]]"
+            ]
+          ]
+        },
+        {
+          "type": "rule",
+          "title": "Les pronoms compléments",
+          "text": "Après un verbe (ou après to, for, at…), on utilise **me, you, him, her, it, us, them**. Ils se placent **après** le verbe, pas avant comme en français : « Je **la** vois » = [[I see her.]] « Je **les** achète » = [[I buy them.]] « Puis-je **l'**essayer ? » = [[Can I try it on?]]"
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "How much are those boots?",
+              "fr": "Combien coûtent ces bottes-là ?"
+            },
+            {
+              "en": "These pants are too big.",
+              "fr": "Ce pantalon est trop grand."
+            },
+            {
+              "en": "I like this sweater, but it's expensive.",
+              "fr": "J'aime ce chandail, mais il est cher."
+            },
+            {
+              "en": "My mom buys them for me.",
+              "fr": "Ma mère me les achète."
+            },
+            {
+              "en": "I don't have enough money.",
+              "fr": "Je n'ai pas assez d'argent."
+            }
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "« **Ce** pantalon » = [[these pants]] (pluriel en anglais !). « **Trop** cher » = [[too expensive]], jamais [[too much expensive]]. Et le pronom ne passe jamais devant le verbe : « je **le** veux » = [[I want it]]. Petits mots utiles : [[over there]] (là-bas), [[enough]] (assez), [[too]] (trop)."
+        },
+        {
+          "type": "fun",
+          "text": "Le sais-tu ? [[toque]] (ou [[tuque]]) est un mot typiquement canadien. Ailleurs, les anglophones disent plutôt [[beanie]] ou [[winter hat]]."
+        },
+        {
+          "type": "dialogue",
+          "title": "Au magasin de vêtements",
+          "lines": [
+            {
+              "who": "Vendeuse",
+              "en": "Hi! Can I help you?",
+              "fr": "Bonjour ! Je peux t'aider ?"
+            },
+            {
+              "who": "Samuel",
+              "en": "Yes, please. How much is this toque?",
+              "fr": "Oui, s'il vous plaît. Combien coûte cette tuque ?"
+            },
+            {
+              "who": "Vendeuse",
+              "en": "It's twenty dollars.",
+              "fr": "Elle coûte vingt dollars."
+            },
+            {
+              "who": "Samuel",
+              "en": "And how much are those mittens over there?",
+              "fr": "Et combien coûtent ces mitaines-là ?"
+            },
+            {
+              "who": "Vendeuse",
+              "en": "They're cheap: only ten dollars. Do you want to try them on?",
+              "fr": "Elles ne sont pas chères : seulement dix dollars. Veux-tu les essayer ?"
+            },
+            {
+              "who": "Samuel",
+              "en": "Yes! I love them. I'm buying the toque and the mittens!",
+              "fr": "Oui ! Je les adore. J'achète la tuque et les mitaines !"
+            }
+          ]
+        }
       ],
       "vocab": [
-        { "en": "toque", "fr": "tuque", "alt": ["tuque"], "ex": "How much is this toque?" },
-        { "en": "coat", "fr": "manteau", "alt": [], "ex": "That coat is very expensive." },
-        { "en": "boots", "fr": "bottes", "alt": [], "ex": "How much are those boots?" },
-        { "en": "mittens", "fr": "mitaines", "alt": [], "ex": "Those mittens are very cheap." },
-        { "en": "pants", "fr": "pantalon", "alt": ["trousers"], "ex": "These pants are too big." },
-        { "en": "shoes", "fr": "souliers (chaussures)", "alt": [], "ex": "I want to buy those shoes." },
-        { "en": "dress", "fr": "robe", "alt": [], "ex": "I love this dress!" },
-        { "en": "sweater", "fr": "chandail (pull)", "alt": [], "ex": "I like this sweater, but it's expensive." },
-        { "en": "price", "fr": "prix", "alt": [], "ex": "What is the price of this coat?" },
-        { "en": "cheap", "fr": "pas cher (bon marché)", "alt": ["inexpensive"], "ex": "This sweater is cheap." },
-        { "en": "expensive", "fr": "cher (coûteux)", "alt": [], "ex": "That's too expensive!" },
-        { "en": "size", "fr": "taille (grandeur)", "alt": [], "ex": "What size do you need?" },
-        { "en": "try on", "fr": "essayer (un vêtement)", "alt": [], "ex": "Can I try it on?" },
-        { "en": "buy", "fr": "acheter", "alt": [], "ex": "My mom buys them for me." },
-        { "en": "money", "fr": "argent", "alt": [], "ex": "I don't have enough money." },
-        { "en": "how much is", "fr": "combien coûte", "alt": [], "ex": "How much is this dress?" }
+        {
+          "en": "toque",
+          "fr": "tuque",
+          "alt": [
+            "tuque"
+          ],
+          "ex": "How much is this toque?"
+        },
+        {
+          "en": "coat",
+          "fr": "manteau",
+          "alt": [],
+          "ex": "That coat is very expensive."
+        },
+        {
+          "en": "boots",
+          "fr": "bottes",
+          "alt": [],
+          "ex": "How much are those boots?"
+        },
+        {
+          "en": "mittens",
+          "fr": "mitaines",
+          "alt": [],
+          "ex": "Those mittens are very cheap."
+        },
+        {
+          "en": "pants",
+          "fr": "pantalon",
+          "alt": [
+            "trousers"
+          ],
+          "ex": "These pants are too big."
+        },
+        {
+          "en": "shoes",
+          "fr": "souliers (chaussures)",
+          "alt": [],
+          "ex": "I want to buy those shoes."
+        },
+        {
+          "en": "dress",
+          "fr": "robe",
+          "alt": [],
+          "ex": "I love this dress!"
+        },
+        {
+          "en": "sweater",
+          "fr": "chandail (pull)",
+          "alt": [],
+          "ex": "I like this sweater, but it's expensive."
+        },
+        {
+          "en": "price",
+          "fr": "prix",
+          "alt": [],
+          "ex": "What is the price of this coat?"
+        },
+        {
+          "en": "cheap",
+          "fr": "pas cher (bon marché)",
+          "alt": [
+            "inexpensive"
+          ],
+          "ex": "This sweater is cheap."
+        },
+        {
+          "en": "expensive",
+          "fr": "cher (coûteux)",
+          "alt": [],
+          "ex": "That's too expensive!"
+        },
+        {
+          "en": "size",
+          "fr": "taille (grandeur)",
+          "alt": [],
+          "ex": "What size do you need?"
+        },
+        {
+          "en": "try on",
+          "fr": "essayer (un vêtement)",
+          "alt": [],
+          "ex": "Can I try it on?"
+        },
+        {
+          "en": "buy",
+          "fr": "acheter",
+          "alt": [],
+          "ex": "My mom buys them for me."
+        },
+        {
+          "en": "money",
+          "fr": "argent",
+          "alt": [],
+          "ex": "I don't have enough money."
+        },
+        {
+          "en": "how much is",
+          "fr": "combien coûte",
+          "alt": [],
+          "ex": "How much is this dress?"
+        }
       ],
       "sentences": [
-        { "en": "How much is this toque?", "fr": "Combien coûte cette tuque ?", "trap": ["are", "these"], "alt": [] },
-        { "en": "How much are those boots?", "fr": "Combien coûtent ces bottes-là ?", "trap": ["is", "that"], "alt": [] },
-        { "en": "These pants are too big.", "fr": "Ce pantalon est trop grand.", "trap": ["is", "This"], "alt": [] },
-        { "en": "I like this sweater, but it's expensive.", "fr": "J'aime ce chandail, mais il est cher.", "trap": ["these", "much"], "alt": [] },
-        { "en": "Can I try it on?", "fr": "Est-ce que je peux l'essayer (ce chandail) ?", "trap": ["him", "the"], "alt": [] },
-        { "en": "My mom buys them for me.", "fr": "Ma mère me les achète.", "trap": ["they", "I"], "alt": [] },
-        { "en": "Can you help us, please?", "fr": "Peux-tu nous aider, s'il te plaît ?", "trap": ["we", "our"], "alt": [] },
-        { "en": "Those mittens are very cheap.", "fr": "Ces mitaines-là sont très bon marché.", "trap": ["That", "is"], "alt": [] },
-        { "en": "What size do you need?", "fr": "De quelle taille as-tu besoin ?", "trap": ["does", "much"], "alt": [] },
-        { "en": "I don't have enough money.", "fr": "Je n'ai pas assez d'argent.", "trap": ["moneys", "doesn't"], "alt": [] },
-        { "en": "Give it to him.", "fr": "Donne-le-lui.", "trap": ["he", "its"], "alt": [] },
-        { "en": "That coat is twenty dollars.", "fr": "Ce manteau-là coûte vingt dollars.", "trap": ["Those", "are"], "alt": [] }
+        {
+          "en": "How much is this toque?",
+          "fr": "Combien coûte cette tuque ?",
+          "trap": [
+            "are",
+            "these"
+          ],
+          "alt": []
+        },
+        {
+          "en": "How much are those boots?",
+          "fr": "Combien coûtent ces bottes-là ?",
+          "trap": [
+            "is",
+            "that"
+          ],
+          "alt": []
+        },
+        {
+          "en": "These pants are too big.",
+          "fr": "Ce pantalon est trop grand.",
+          "trap": [
+            "is",
+            "This"
+          ],
+          "alt": []
+        },
+        {
+          "en": "I like this sweater, but it's expensive.",
+          "fr": "J'aime ce chandail, mais il est cher.",
+          "trap": [
+            "these",
+            "much"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Can I try it on?",
+          "fr": "Est-ce que je peux l'essayer (ce chandail) ?",
+          "trap": [
+            "him",
+            "the"
+          ],
+          "alt": []
+        },
+        {
+          "en": "My mom buys them for me.",
+          "fr": "Ma mère me les achète.",
+          "trap": [
+            "they",
+            "I"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Can you help us, please?",
+          "fr": "Peux-tu nous aider, s'il te plaît ?",
+          "trap": [
+            "we",
+            "our"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Those mittens are very cheap.",
+          "fr": "Ces mitaines-là sont très bon marché.",
+          "trap": [
+            "That",
+            "is"
+          ],
+          "alt": []
+        },
+        {
+          "en": "What size do you need?",
+          "fr": "De quelle taille as-tu besoin ?",
+          "trap": [
+            "does",
+            "much"
+          ],
+          "alt": []
+        },
+        {
+          "en": "I don't have enough money.",
+          "fr": "Je n'ai pas assez d'argent.",
+          "trap": [
+            "moneys",
+            "doesn't"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Give it to him.",
+          "fr": "Donne-le-lui.",
+          "trap": [
+            "he",
+            "its"
+          ],
+          "alt": []
+        },
+        {
+          "en": "That coat is twenty dollars.",
+          "fr": "Ce manteau-là coûte vingt dollars.",
+          "trap": [
+            "Those",
+            "are"
+          ],
+          "alt": []
+        }
       ],
       "grammar": [
-        { "type": "mcq", "q": "How much ___ these shoes?", "choices": ["is", "are", "does"], "answer": 1, "explain": "These shoes = pluriel : How much are…?" },
-        { "type": "mcq", "q": "Do you know Malik? I see ___ every day.", "choices": ["his", "he", "him"], "answer": 2, "explain": "Après le verbe, on utilise le pronom complément : him." },
-        { "type": "mcq", "q": "Look at ___ boots over there!", "choices": ["those", "this", "these"], "answer": 0, "explain": "Boots = pluriel, over there = loin : those." },
-        { "type": "mcq", "q": "Comment dit-on « ce pantalon » ?", "choices": ["this pants", "these pants", "this pant"], "answer": 1, "explain": "Pants est toujours pluriel en anglais : these pants." },
-        { "type": "mcq", "q": "« Ma grand-mère nous appelle chaque dimanche. » My grandma calls ___ every Sunday.", "choices": ["our", "we", "them", "us"], "answer": 3, "explain": "Nous (complément) = us, et il se place après le verbe." },
-        { "type": "mcq", "q": "Comment dit-on « C'est trop cher » ?", "choices": ["It's too much expensive.", "It's too expensive.", "It's very cheap."], "answer": 1, "explain": "Trop + adjectif = too + adjectif. Jamais too much expensive." },
-        { "type": "fill", "q": "How much ___ this toque?", "hint": "être", "answer": ["is"], "explain": "This toque = un seul objet : How much is…?" },
-        { "type": "fill", "q": "I love these mittens. I want to buy ___.", "hint": "les", "answer": ["them"], "explain": "Les (complément, pluriel) = them, placé après le verbe." },
-        { "type": "fill", "q": "Where is Chloé? I can't see ___.", "hint": "la", "answer": ["her"], "explain": "La (une fille) = her." },
-        { "type": "fill", "q": "___ coat over there is very expensive.", "hint": "ce… -là", "answer": ["That"], "explain": "Un seul objet, loin (over there) : that." },
-        { "type": "fill", "q": "Can I try on ___ shoes? They're right here.", "hint": "ces (ici)", "answer": ["these"], "explain": "Pluriel et près de moi : these." },
-        { "type": "fill", "q": "This sweater is ___. It's only five dollars!", "hint": "pas cher", "answer": ["cheap", "inexpensive"], "explain": "Pas cher = cheap." },
-        { "type": "error", "q": "How much is these boots?", "wrong": 2, "fix": ["are"], "explain": "These boots = pluriel : How much are…?" },
-        { "type": "error", "q": "I like this pants.", "wrong": 2, "fix": ["these", "those"], "explain": "Pants est pluriel : these pants." },
-        { "type": "error", "q": "The teacher helps we every day.", "wrong": 3, "fix": ["us"], "explain": "Après le verbe : pronom complément us, pas we." },
-        { "type": "error", "q": "Where are my mittens? I can't find they.", "wrong": 7, "fix": ["them"], "explain": "Après le verbe find : them, pas they." },
-        { "type": "error", "q": "Those coat is very cheap.", "wrong": 0, "fix": ["That", "This"], "explain": "Coat est au singulier : that coat (ou this coat)." },
-        { "type": "error", "q": "I want to buy that shoes.", "wrong": 4, "fix": ["those", "these"], "explain": "Shoes est au pluriel : those shoes." }
+        {
+          "type": "mcq",
+          "q": "How much ___ these shoes?",
+          "choices": [
+            "is",
+            "are",
+            "does"
+          ],
+          "answer": 1,
+          "explain": "These shoes = pluriel : How much are…?"
+        },
+        {
+          "type": "mcq",
+          "q": "Do you know Malik? I see ___ every day.",
+          "choices": [
+            "his",
+            "he",
+            "him"
+          ],
+          "answer": 2,
+          "explain": "Après le verbe, on utilise le pronom complément : him."
+        },
+        {
+          "type": "mcq",
+          "q": "Look at ___ boots over there!",
+          "choices": [
+            "those",
+            "this",
+            "these"
+          ],
+          "answer": 0,
+          "explain": "Boots = pluriel, over there = loin : those."
+        },
+        {
+          "type": "mcq",
+          "q": "Comment dit-on « ce pantalon » ?",
+          "choices": [
+            "this pants",
+            "these pants",
+            "this pant"
+          ],
+          "answer": 1,
+          "explain": "Pants est toujours pluriel en anglais : these pants."
+        },
+        {
+          "type": "mcq",
+          "q": "« Ma grand-mère nous appelle chaque dimanche. » My grandma calls ___ every Sunday.",
+          "choices": [
+            "our",
+            "we",
+            "them",
+            "us"
+          ],
+          "answer": 3,
+          "explain": "Nous (complément) = us, et il se place après le verbe."
+        },
+        {
+          "type": "mcq",
+          "q": "Comment dit-on « C'est trop cher » ?",
+          "choices": [
+            "It's too much expensive.",
+            "It's too expensive.",
+            "It's very cheap."
+          ],
+          "answer": 1,
+          "explain": "Trop + adjectif = too + adjectif. Jamais too much expensive."
+        },
+        {
+          "type": "fill",
+          "q": "How much ___ this toque?",
+          "hint": "être",
+          "answer": [
+            "is"
+          ],
+          "explain": "This toque = un seul objet : How much is…?"
+        },
+        {
+          "type": "fill",
+          "q": "I love these mittens. I want to buy ___.",
+          "hint": "les",
+          "answer": [
+            "them"
+          ],
+          "explain": "Les (complément, pluriel) = them, placé après le verbe."
+        },
+        {
+          "type": "fill",
+          "q": "Where is Chloé? I can't see ___.",
+          "hint": "la",
+          "answer": [
+            "her"
+          ],
+          "explain": "La (une fille) = her."
+        },
+        {
+          "type": "fill",
+          "q": "___ coat over there is very expensive.",
+          "hint": "ce… -là",
+          "answer": [
+            "That"
+          ],
+          "explain": "Un seul objet, loin (over there) : that."
+        },
+        {
+          "type": "fill",
+          "q": "Can I try on ___ shoes? They're right here.",
+          "hint": "ces (ici)",
+          "answer": [
+            "these"
+          ],
+          "explain": "Pluriel et près de moi : these."
+        },
+        {
+          "type": "fill",
+          "q": "This sweater is ___. It's only five dollars!",
+          "hint": "pas cher",
+          "answer": [
+            "cheap",
+            "inexpensive"
+          ],
+          "explain": "Pas cher = cheap."
+        },
+        {
+          "type": "error",
+          "q": "How much is these boots?",
+          "wrong": 2,
+          "fix": [
+            "are"
+          ],
+          "explain": "These boots = pluriel : How much are…?"
+        },
+        {
+          "type": "error",
+          "q": "I like this pants.",
+          "wrong": 2,
+          "fix": [
+            "these",
+            "those"
+          ],
+          "explain": "Pants est pluriel : these pants."
+        },
+        {
+          "type": "error",
+          "q": "The teacher helps we every day.",
+          "wrong": 3,
+          "fix": [
+            "us"
+          ],
+          "explain": "Après le verbe : pronom complément us, pas we."
+        },
+        {
+          "type": "error",
+          "q": "Where are my mittens? I can't find they.",
+          "wrong": 7,
+          "fix": [
+            "them"
+          ],
+          "explain": "Après le verbe find : them, pas they."
+        },
+        {
+          "type": "error",
+          "q": "Those coat is very cheap.",
+          "wrong": 0,
+          "fix": [
+            "That",
+            "This"
+          ],
+          "explain": "Coat est au singulier : that coat (ou this coat)."
+        },
+        {
+          "type": "error",
+          "q": "I want to buy that shoes.",
+          "wrong": 4,
+          "fix": [
+            "those",
+            "these"
+          ],
+          "explain": "Shoes est au pluriel : those shoes."
+        }
       ],
       "reading": {
         "title": "Winter Shopping",
         "text": "It's November and Olivia needs winter clothes. She goes shopping with her dad.\n\n“Look at those boots! I love them!” says Olivia.\n\n“How much are they?” asks Dad.\n\n“They're ninety dollars.”\n\n“That's too expensive!”\n\nThen Olivia tries on a red coat. It's cheap, but it's too small. Next, she sees a blue toque and some mittens.\n\n“How much is this toque?”\n\n“It's fifteen dollars, and the mittens are ten dollars.”\n\nDad buys the toque and the mittens for her. Olivia is happy, and her dad is happy too!",
         "questions": [
-          { "q": "Pourquoi Olivia magasine-t-elle ?", "choices": ["Pour l'anniversaire de son père", "Elle a besoin de vêtements d'hiver", "Pour l'école", "Pour le hockey"], "answer": 1 },
-          { "q": "Pourquoi papa n'achète-t-il pas les bottes ?", "choices": ["Elles sont trop petites", "Olivia ne les aime pas", "Elles sont trop chères", "Elles sont rouges"], "answer": 2 },
-          { "q": "Quel est le problème du manteau rouge ?", "choices": ["Il est trop petit", "Il est trop cher", "Il est trop grand", "Il est bleu"], "answer": 0 },
-          { "q": "Combien papa paie-t-il en tout ?", "choices": ["Quinze dollars", "Dix dollars", "Quatre-vingt-dix dollars", "Vingt-cinq dollars"], "answer": 3 }
+          {
+            "q": "Pourquoi Olivia magasine-t-elle ?",
+            "choices": [
+              "Pour l'anniversaire de son père",
+              "Elle a besoin de vêtements d'hiver",
+              "Pour l'école",
+              "Pour le hockey"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Pourquoi papa n'achète-t-il pas les bottes ?",
+            "choices": [
+              "Elles sont trop petites",
+              "Olivia ne les aime pas",
+              "Elles sont trop chères",
+              "Elles sont rouges"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Quel est le problème du manteau rouge ?",
+            "choices": [
+              "Il est trop petit",
+              "Il est trop cher",
+              "Il est trop grand",
+              "Il est bleu"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Combien papa paie-t-il en tout ?",
+            "choices": [
+              "Quinze dollars",
+              "Dix dollars",
+              "Quatre-vingt-dix dollars",
+              "Vingt-cinq dollars"
+            ],
+            "answer": 3
+          }
+        ]
+      }
+    },
+    {
+      "id": "4.5",
+      "title": "Comment ?",
+      "titleEn": "Well Done!",
+      "goal": "Dire comment on fait les choses avec les adverbes (quickly, well, hard…) et nuancer avec very, really, too et enough.",
+      "lesson": [
+        {
+          "type": "p",
+          "text": "Tu sais déjà dire ce que les gens font : [[She sings.]] [[He skates.]] Maintenant, tu vas dire **comment** ils le font : bien, mal, vite, lentement, doucement… Pour ça, l'anglais utilise des **adverbes**, et la plupart finissent par **-ly** (comme notre « -ment »)."
+        },
+        {
+          "type": "rule",
+          "title": "Adjectif ou adverbe ?",
+          "text": "L'**adjectif** décrit une personne ou une chose : [[Liam is slow.]] L'**adverbe** décrit une action, la façon de faire : [[Liam walks slowly.]] Pour le fabriquer, ajoute **-ly** à l'adjectif : [[quick]] → [[quickly]], [[careful]] → [[carefully]]. Un **-y** à la fin ? Il devient **-ily** : [[easy]] → [[easily]], [[happy]] → [[happily]]. Après [[be]], on garde l'adjectif : [[The test is easy.]]"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Adjectif",
+            "Adverbe",
+            "Exemple"
+          ],
+          "rows": [
+            [
+              "quick (rapide)",
+              "[[quickly]]",
+              "[[She reads quickly.]]"
+            ],
+            [
+              "slow (lent)",
+              "[[slowly]]",
+              "[[He skates slowly.]]"
+            ],
+            [
+              "careful (prudent)",
+              "[[carefully]]",
+              "[[Ride your bike carefully.]]"
+            ],
+            [
+              "quiet (silencieux)",
+              "[[quietly]]",
+              "[[Talk quietly, please.]]"
+            ],
+            [
+              "loud (bruyant)",
+              "[[loudly]]",
+              "[[My dad sings loudly.]]"
+            ],
+            [
+              "bad (mauvais)",
+              "[[badly]]",
+              "[[I dance badly.]]"
+            ],
+            [
+              "easy (facile)",
+              "[[easily]]",
+              "[[She wins easily.]]"
+            ],
+            [
+              "good (bon) (!)",
+              "[[well]]",
+              "[[He plays well.]]"
+            ],
+            [
+              "fast (rapide) (!)",
+              "[[fast]]",
+              "[[She runs fast.]]"
+            ],
+            [
+              "hard (dur, difficile) (!)",
+              "[[hard]]",
+              "[[We work hard.]]"
+            ]
+          ]
+        },
+        {
+          "type": "rule",
+          "title": "Les trois rebelles : well, fast, hard",
+          "text": "[[good]] → [[well]] : [[Olivia is a good player. She plays well.]] [[fast]] reste [[fast]] : « fastly » n'existe pas ! [[hard]] reste [[hard]] : [[My mom works hard.]] (Ma mère travaille fort.) Et attention : [[hardly]] existe, mais il veut dire **à peine** ! [[He works hard]] = il travaille fort ; [[He hardly works]] = il travaille à peine. Tout le contraire !"
+        },
+        {
+          "type": "rule",
+          "title": "Où placer l'adverbe ?",
+          "text": "L'adverbe se place **après le verbe** : [[She sings well.]] S'il y a un complément, l'adverbe va **après le complément** : [[She speaks English well.]] [[He rides his bike carefully.]] Jamais entre le verbe et son complément : « She speaks well English » ✗. Exception : [[hardly]] se met devant le verbe : [[I can hardly see you.]]"
+        },
+        {
+          "type": "rule",
+          "title": "very, really, too, enough",
+          "text": "[[very]] et [[really]] = très, vraiment : [[very fast]], [[really well]]. [[too]] = trop, c'est un problème : [[This soup is too hot!]] (jamais « too much hot »). [[enough]] = assez : il se place **après** un adjectif ou un adverbe ([[old enough]], [[fast enough]]), mais **avant** un nom ([[enough money]], [[enough time]]). « Il n'est pas assez grand » = [[He isn't tall enough.]]"
+        },
+        {
+          "type": "tip",
+          "text": "Pièges de francophone ! 1) Après un verbe, « bien » = [[well]], jamais [[good]] : [[He plays hockey well]], pas « He plays hockey good ». 2) « fastly » et « goodly » n'existent pas. 3) [[hardly]] est un faux ami : il veut dire « à peine », pas « durement ». 4) Pas d'adverbe entre le verbe et le complément : [[I speak English well]]. 5) [[enough]] après l'adjectif : [[old enough]], jamais « enough old »."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "Olivia is a good player. She plays well.",
+              "fr": "Olivia est une bonne joueuse. Elle joue bien."
+            },
+            {
+              "en": "He runs fast, but he skates slowly.",
+              "fr": "Il court vite, mais il patine lentement."
+            },
+            {
+              "en": "My mom works hard.",
+              "fr": "Ma mère travaille fort."
+            },
+            {
+              "en": "I can hardly hear you.",
+              "fr": "Je t'entends à peine."
+            },
+            {
+              "en": "This soup is too hot!",
+              "fr": "Cette soupe est trop chaude !"
+            },
+            {
+              "en": "Sofia isn't old enough, and we don't have enough money.",
+              "fr": "Sofia n'est pas assez vieille, et nous n'avons pas assez d'argent."
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "title": "Soirée karaoké",
+          "lines": [
+            {
+              "who": "Maya",
+              "en": "Dad, you sing really badly!",
+              "fr": "Papa, tu chantes vraiment mal !"
+            },
+            {
+              "who": "Dad",
+              "en": "Badly? No, I sing well! I sing loudly, that's all.",
+              "fr": "Mal ? Non, je chante bien ! Je chante fort, c'est tout."
+            },
+            {
+              "who": "Maya",
+              "en": "Too loudly! Look, the cat is under the bed!",
+              "fr": "Trop fort ! Regarde, le chat est sous le lit !"
+            },
+            {
+              "who": "Dad",
+              "en": "OK, OK. I can sing quietly.",
+              "fr": "D'accord, d'accord. Je peux chanter doucement."
+            },
+            {
+              "who": "Maya",
+              "en": "Thank you! Now sing slowly and carefully.",
+              "fr": "Merci ! Maintenant, chante lentement et avec soin."
+            },
+            {
+              "who": "Dad",
+              "en": "Is this quiet enough?",
+              "fr": "Est-ce assez doux comme ça ?"
+            },
+            {
+              "who": "Maya",
+              "en": "Yes! Well done, Dad!",
+              "fr": "Oui ! Bravo, papa !"
+            }
+          ]
+        },
+        {
+          "type": "fun",
+          "text": "Le sais-tu ? [[Well done!]] veut dire « Bravo ! ». Mais au restaurant, un steak [[well done]], c'est un steak **bien cuit** ! Le même [[well]] sert à féliciter… et à cuisiner."
+        }
+      ],
+      "vocab": [
+        {
+          "en": "quickly",
+          "fr": "rapidement",
+          "alt": [
+            "fast"
+          ],
+          "ex": "She reads quickly."
+        },
+        {
+          "en": "slowly",
+          "fr": "lentement",
+          "alt": [],
+          "ex": "My grandpa walks slowly."
+        },
+        {
+          "en": "carefully",
+          "fr": "prudemment (avec soin)",
+          "alt": [],
+          "ex": "Ride your bike carefully."
+        },
+        {
+          "en": "quietly",
+          "fr": "doucement (sans bruit)",
+          "alt": [],
+          "ex": "Talk quietly, please."
+        },
+        {
+          "en": "loudly",
+          "fr": "fort (bruyamment)",
+          "alt": [],
+          "ex": "My dad sings loudly."
+        },
+        {
+          "en": "well",
+          "fr": "bien",
+          "alt": [],
+          "ex": "Olivia plays soccer well."
+        },
+        {
+          "en": "badly",
+          "fr": "mal",
+          "alt": [],
+          "ex": "I dance badly."
+        },
+        {
+          "en": "hard",
+          "fr": "fort, dur (avec effort)",
+          "alt": [],
+          "ex": "My mom works hard."
+        },
+        {
+          "en": "hardly",
+          "fr": "à peine (presque pas)",
+          "alt": [],
+          "ex": "I can hardly hear you."
+        },
+        {
+          "en": "fast",
+          "fr": "vite (rapide)",
+          "alt": [
+            "quickly"
+          ],
+          "ex": "Mei runs fast."
+        },
+        {
+          "en": "easily",
+          "fr": "facilement",
+          "alt": [],
+          "ex": "She wins easily."
+        },
+        {
+          "en": "really",
+          "fr": "vraiment (très)",
+          "alt": [],
+          "ex": "You skate really well!"
+        },
+        {
+          "en": "too",
+          "fr": "trop (devant un adjectif)",
+          "alt": [],
+          "ex": "This soup is too hot."
+        },
+        {
+          "en": "enough",
+          "fr": "assez (suffisamment)",
+          "alt": [],
+          "ex": "I'm not tall enough."
+        },
+        {
+          "en": "careful",
+          "fr": "prudent (attentif)",
+          "alt": [],
+          "ex": "Be careful!"
+        },
+        {
+          "en": "quiet",
+          "fr": "silencieux (calme)",
+          "alt": [],
+          "ex": "The library is quiet."
+        }
+      ],
+      "sentences": [
+        {
+          "en": "My dad cooks very well.",
+          "fr": "Mon père cuisine très bien.",
+          "trap": [
+            "good"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Shh! The baby is sleeping. Talk quietly!",
+          "fr": "Chut ! Le bébé dort. Parle doucement !",
+          "trap": [
+            "quiet",
+            "sleeps"
+          ],
+          "alt": []
+        },
+        {
+          "en": "He runs fast, but he skates slowly.",
+          "fr": "Il court vite, mais il patine lentement.",
+          "trap": [
+            "fastly",
+            "slow"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Emma works hard every day.",
+          "fr": "Emma travaille fort tous les jours.",
+          "trap": [
+            "hardly"
+          ],
+          "alt": []
+        },
+        {
+          "en": "I can hardly see you!",
+          "fr": "Je te vois à peine !",
+          "trap": [
+            "hard"
+          ],
+          "alt": []
+        },
+        {
+          "en": "This soup is too hot!",
+          "fr": "Cette soupe est trop chaude !",
+          "trap": [
+            "much",
+            "enough"
+          ],
+          "alt": []
+        },
+        {
+          "en": "My little brother isn't tall enough.",
+          "fr": "Mon petit frère n'est pas assez grand.",
+          "trap": [
+            "much",
+            "of"
+          ],
+          "alt": []
+        },
+        {
+          "en": "We don't have enough money.",
+          "fr": "Nous n'avons pas assez d'argent.",
+          "trap": [
+            "of",
+            "moneys"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Ride your bike carefully.",
+          "fr": "Roule prudemment à vélo.",
+          "trap": [
+            "careful",
+            "you"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Liam sings really badly.",
+          "fr": "Liam chante vraiment mal.",
+          "trap": [
+            "bad",
+            "sing"
+          ],
+          "alt": []
+        },
+        {
+          "en": "You're talking too quickly.",
+          "fr": "Tu parles trop vite.",
+          "trap": [
+            "much",
+            "quick"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Mei does her homework easily.",
+          "fr": "Mei fait ses devoirs facilement.",
+          "trap": [
+            "easy",
+            "makes"
+          ],
+          "alt": []
+        }
+      ],
+      "grammar": [
+        {
+          "type": "mcq",
+          "q": "Ethan is a good skater. He skates ___.",
+          "choices": [
+            "good",
+            "well",
+            "goodly"
+          ],
+          "answer": 1,
+          "explain": "Après un verbe, « bien » = well. Good est un adjectif (a good skater) et « goodly » n'existe pas."
+        },
+        {
+          "type": "mcq",
+          "q": "Comment dit-on « Elle parle bien anglais » ?",
+          "choices": [
+            "She speaks well English.",
+            "She well speaks English.",
+            "She speaks English well."
+          ],
+          "answer": 2,
+          "explain": "L'adverbe va après le complément : speaks English well. Jamais entre le verbe et le complément."
+        },
+        {
+          "type": "mcq",
+          "q": "Comment dit-on « Il travaille à peine » ?",
+          "choices": [
+            "He works hard.",
+            "He hardly works.",
+            "He works hardly."
+          ],
+          "answer": 1,
+          "explain": "Hardly = à peine, et il se place devant le verbe. He works hard veut dire le contraire : il travaille fort !"
+        },
+        {
+          "type": "mcq",
+          "q": "Ana is nine. She isn't ___ for the big team.",
+          "choices": [
+            "enough old",
+            "old enough",
+            "much old"
+          ],
+          "answer": 1,
+          "explain": "Enough se place après l'adjectif : old enough."
+        },
+        {
+          "type": "mcq",
+          "q": "These boots are ___ small for me.",
+          "choices": [
+            "too",
+            "too much",
+            "enough"
+          ],
+          "answer": 0,
+          "explain": "Trop + adjectif = too, tout seul : too small. Jamais « too much small »."
+        },
+        {
+          "type": "mcq",
+          "q": "Shh! The baby is sleeping. Talk ___!",
+          "choices": [
+            "quiet",
+            "quietly",
+            "loudly"
+          ],
+          "answer": 1,
+          "explain": "On décrit comment parler : il faut l'adverbe quietly (doucement). Loudly veut dire fort : pas une bonne idée !"
+        },
+        {
+          "type": "fill",
+          "q": "Be careful on your bike! Ride ___.",
+          "hint": "careful",
+          "answer": [
+            "carefully"
+          ],
+          "explain": "Pour décrire l'action, on ajoute -ly à l'adjectif : careful → carefully."
+        },
+        {
+          "type": "fill",
+          "q": "Mei is a quick reader. She reads ___.",
+          "hint": "quick",
+          "answer": [
+            "quickly"
+          ],
+          "explain": "Quick (adjectif) → quickly (adverbe) pour décrire comment elle lit."
+        },
+        {
+          "type": "fill",
+          "q": "This game is easy. I can win it ___.",
+          "hint": "easy",
+          "answer": [
+            "easily"
+          ],
+          "explain": "Easy finit par -y : le y devient -ily, easily."
+        },
+        {
+          "type": "fill",
+          "q": "Olivia plays soccer really ___.",
+          "hint": "bien",
+          "answer": [
+            "well"
+          ],
+          "explain": "Après un verbe, « bien » = well, jamais good."
+        },
+        {
+          "type": "fill",
+          "q": "We don't have ___ money for the movie.",
+          "hint": "assez",
+          "answer": [
+            "enough"
+          ],
+          "explain": "Devant un nom, enough se place avant : enough money."
+        },
+        {
+          "type": "fill",
+          "q": "I'm so tired, I can ___ walk.",
+          "hint": "à peine",
+          "answer": [
+            "hardly"
+          ],
+          "explain": "À peine = hardly, placé devant le verbe : I can hardly walk."
+        },
+        {
+          "type": "error",
+          "q": "Noah plays hockey very good.",
+          "wrong": 4,
+          "fix": [
+            "well"
+          ],
+          "explain": "Après un verbe, « bien » = well : Noah plays hockey very well."
+        },
+        {
+          "type": "error",
+          "q": "Félix runs fastly.",
+          "wrong": 2,
+          "fix": [
+            "fast"
+          ],
+          "explain": "Fast est un rebelle : l'adverbe reste fast. « Fastly » n'existe pas."
+        },
+        {
+          "type": "error",
+          "q": "Please talk quiet in the library.",
+          "wrong": 2,
+          "fix": [
+            "quietly"
+          ],
+          "explain": "On décrit comment parler : il faut l'adverbe quietly."
+        },
+        {
+          "type": "error",
+          "q": "He rides his bike very careful.",
+          "wrong": 5,
+          "fix": [
+            "carefully"
+          ],
+          "explain": "On décrit l'action : careful → carefully."
+        },
+        {
+          "type": "error",
+          "q": "Emma works hardly every day.",
+          "wrong": 2,
+          "fix": [
+            "hard"
+          ],
+          "explain": "Travailler fort = work hard. Hardly veut dire « à peine » : ici, ça n'a pas de sens !"
+        },
+        {
+          "type": "error",
+          "q": "The test is easily.",
+          "wrong": 3,
+          "fix": [
+            "easy"
+          ],
+          "explain": "Après be, on décrit une chose : il faut l'adjectif easy."
+        }
+      ],
+      "reading": {
+        "title": "The Talent Show",
+        "text": "It's Friday night, and it's the school talent show. My parents are here, and Grandma too.\n\nFirst, Mei sings. She sings really well, but very quietly. We can hardly hear her! Then Liam plays the piano. He plays fast and loudly, too loudly for Grandma!\n\nMy little brother Jaden wants to dance, but he isn't old enough for the show. So he dances happily next to our chairs.\n\nLast, our teacher dances too. He dances slowly and carefully, but really badly. Everyone laughs. Well done!",
+        "questions": [
+          {
+            "q": "Qui est venu voir le spectacle avec le narrateur ?",
+            "choices": [
+              "Ses amis de l'équipe",
+              "Ses parents et sa grand-mère",
+              "Seulement son petit frère",
+              "Son enseignant et ses parents"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Quel est le problème quand Mei chante ?",
+            "choices": [
+              "Elle chante mal",
+              "Elle chante trop vite",
+              "On l'entend à peine",
+              "Elle chante trop fort"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Pourquoi grand-maman n'aime-t-elle pas trop le piano de Liam ?",
+            "choices": [
+              "Liam joue trop fort",
+              "Liam joue trop lentement",
+              "Liam joue mal",
+              "Le piano est trop petit"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Pourquoi Jaden ne danse-t-il pas dans le spectacle ?",
+            "choices": [
+              "Il danse mal",
+              "Il est fatigué",
+              "Il ne veut pas danser",
+              "Il n'est pas assez vieux"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Comment l'enseignant danse-t-il ?",
+            "choices": [
+              "Vite et bien",
+              "Lentement et prudemment, mais très mal",
+              "Doucement et facilement",
+              "Il ne danse pas"
+            ],
+            "answer": 1
+          }
         ]
       }
     }

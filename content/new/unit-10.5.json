@@ -23,7 +23,7 @@
       {
         "type": "rule",
         "title": "The + adjectif : tout un groupe",
-        "text": "Pour parler d'un **groupe de personnes**, on met [[the]] + adjectif : [[the young]], [[the elderly]], [[the homeless]], [[the unemployed]], [[the injured]], [[the rich]], [[the poor]]. Deux règles : le verbe est au **pluriel** ([[The elderly are…]]) et l'adjectif ne prend **jamais de -s** ([[the elderlies]] ✗). Pour **une seule** personne, il faut un nom : [[an elderly man]], [[a homeless person]]. Même chose pour certaines nationalités : [[the French]], [[the British]], [[the Japanese]]."
+        "text": "Pour parler d'un **groupe de personnes**, on met [[the]] + adjectif : [[the young]], [[the elderly]], [[the homeless]], [[the unemployed]], [[the injured]], [[the rich]], [[the poor]]. Deux règles : le verbe est au **pluriel** ([[The elderly are…]]) et l'adjectif ne prend **jamais de -s** (jamais « the elderlies »). Pour **une seule** personne, il faut un nom : [[an elderly man]], [[a homeless person]]. Même chose pour certaines nationalités : [[the French]], [[the British]], [[the Japanese]]."
       },
       {
         "type": "rule",
@@ -44,7 +44,7 @@
       {
         "type": "rule",
         "title": "Either, neither, none… et whole ou all ?",
-        "text": "Pour **deux** choses : [[either]] = l'un ou l'autre ; [[neither]] = ni l'un ni l'autre, **avec un verbe affirmatif** : [[Neither answer is correct.]] [[Neither of my parents speaks Spanish.]] (à l'écrit soigné, verbe au singulier). Si la phrase est déjà négative, c'est [[either]] : [[I don't like either of them.]] = [[I like neither of them.]] Jamais de double négation ([[I don't like neither]] ✗). Pour **trois ou plus** : [[none of]] ([[None of my five cousins came.]]). En paires : [[either… or]] (soit… soit), [[neither… nor]] (ni… ni). Enfin, « tout le, toute la » : [[the whole]] + nom singulier, avec l'article **devant** ([[the whole family]], [[my whole life]]), ou [[all the]] ([[all the family]]), mais jamais [[the all family]]. Avec un pluriel ou un indénombrable, on prend [[all]] : [[all the students]], [[all the milk]]."
+        "text": "Pour **deux** choses : [[either]] = l'un ou l'autre ; [[neither]] = ni l'un ni l'autre, **avec un verbe affirmatif** : [[Neither answer is correct.]] [[Neither of my parents speaks Spanish.]] (à l'écrit soigné, verbe au singulier). Si la phrase est déjà négative, c'est [[either]] : [[I don't like either of them.]] = [[I like neither of them.]] Jamais de double négation (jamais « I don't like neither »). Pour **trois ou plus** : [[none of]] ([[None of my five cousins came.]]). En paires : [[either… or]] (soit… soit), [[neither… nor]] (ni… ni). Enfin, « tout le, toute la » : [[the whole]] + nom singulier, avec l'article **devant** ([[the whole family]], [[my whole life]]), ou [[all the]] ([[all the family]]), mais jamais « the all family ». Avec un pluriel ou un indénombrable, on prend [[all]] : [[all the students]], [[all the milk]]."
       },
       {
         "type": "examples",
@@ -59,7 +59,7 @@
       },
       {
         "type": "tip",
-        "text": "Pièges de francophone : « Les enfants adorent les bonbons » → [[Children love candy.]], pas [[The children love the candy]] (ça voudrait dire « ces enfants-là adorent ces bonbons-là »). « En autobus » → [[by bus]], jamais [[by the bus]] ni [[with the bus]] ; « à pied » → [[on foot]]. Bonus : « à l'hôpital » se dit [[in the hospital]] au Canada et aux États-Unis, mais [[in hospital]] en anglais britannique ; Cambridge accepte les deux."
+        "text": "Pièges de francophone : « Les enfants adorent les bonbons » → [[Children love candy.]], pas « The children love the candy » (ça voudrait dire « ces enfants-là adorent ces bonbons-là »). « En autobus » → [[by bus]], jamais « by the bus » ni « with the bus » ; « à pied » → [[on foot]]. Bonus : « à l'hôpital » se dit [[in the hospital]] au Canada et aux États-Unis, mais [[in hospital]] en anglais britannique : les deux sont corrects."
       },
       {
         "type": "dialogue",
@@ -72,12 +72,12 @@
           { "who": "Ana", "en": "Should I sort the cans or the boxes first?", "fr": "Je trie les conserves ou les boîtes en premier ?" },
           { "who": "Samuel", "en": "Either is fine. Neither will take long.", "fr": "Peu importe. Ni l'un ni l'autre ne prendra longtemps." },
           { "who": "Ana", "en": "Who usually comes here on Saturdays?", "fr": "Qui vient ici d'habitude, le samedi ?" },
-          { "who": "Samuel", "en": "All kinds of people: the elderly, the unemployed, students, even families with two jobs.", "fr": "Toutes sortes de gens : des personnes âgées, des sans-emploi, des étudiants, même des familles avec deux emplois." }
+          { "who": "Samuel", "en": "All kinds of people: the elderly, the unemployed, students, even families where both parents work.", "fr": "Toutes sortes de gens : des personnes âgées, des sans-emploi, des étudiants, même des familles où les deux parents travaillent." }
         ]
       },
       {
         "type": "fun",
-        "text": "Le sais-tu ? Au Canada, le lait entier, [[whole milk]], contient 3,25 % de matières grasses. Alors si on te demande d'acheter du [[whole milk]], pas besoin de vider toute la laiterie : c'est simplement du lait entier !"
+        "text": "Le sais-tu ? Au Canada, le lait entier, [[whole milk]], contient 3,25 % de matières grasses. Alors si on te demande d'acheter du [[whole milk]], pas besoin de rapporter tout le lait du magasin : c'est simplement du lait entier !"
       }
     ],
     "vocab": [
@@ -104,8 +104,8 @@
     "sentences": [
       { "en": "Life is too short to argue about pineapple on pizza.", "fr": "La vie est trop courte pour se disputer à propos de l'ananas sur la pizza.", "trap": ["The", "of"], "alt": [] },
       { "en": "We went to the market on foot because the car wouldn't start.", "fr": "Nous sommes allés au marché à pied parce que la voiture ne démarrait pas.", "trap": ["feet", "with"], "alt": [] },
-      { "en": "Few people came to the meeting, so it ended early.", "fr": "Peu de gens sont venus à la réunion, alors elle s'est terminée tôt.", "trap": ["A", "Little"], "alt": [] },
-      { "en": "Relax, we still have a little time before the movie starts.", "fr": "Relaxe, on a encore un peu de temps avant le début du film.", "trap": ["few", "much"], "alt": [] },
+      { "en": "Few people came to the meeting, so it ended early.", "fr": "Peu de gens sont venus à la réunion, alors elle s'est terminée tôt.", "trap": ["Little", "Much"], "alt": [] },
+      { "en": "Relax, we still have a little time before the movie starts.", "fr": "Relaxe, on a encore un peu de temps avant le début du film.", "trap": ["few", "many"], "alt": [] },
       { "en": "The elderly are often the first to feel the cold.", "fr": "Les personnes âgées sont souvent les premières à souffrir du froid.", "trap": ["elderlies", "is"], "alt": [] },
       { "en": "Volunteers at the food bank help the homeless every weekend.", "fr": "Les bénévoles de la banque alimentaire aident les sans-abri chaque fin de semaine.", "trap": ["homelesses", "helps"], "alt": [] },
       { "en": "Neither of my brothers wanted to share the leftovers.", "fr": "Aucun de mes deux frères ne voulait partager les restes.", "trap": ["Either", "didn't"], "alt": [] },
@@ -125,9 +125,9 @@
       { "type": "mcq", "q": "___ of my three cousins came to the party; they were all sick.", "choices": ["Neither", "Either", "None", "Nobody"], "answer": 2, "explain": "Trois personnes ou plus : none of. Neither ne sert que pour deux." },
       { "type": "fill", "q": "It's almost midnight. Go ___!", "hint": "au lit, te coucher", "answer": ["to bed"], "explain": "Expression fixe sans article : go to bed (on va au lit pour dormir, pas vers un lit précis)." },
       { "type": "fill", "q": "The new program will help ___ find jobs more quickly.", "hint": "les sans-emploi", "answer": ["the unemployed"], "explain": "Un groupe de personnes : the + adjectif, sans -s : the unemployed." },
-      { "type": "fill", "q": "There were ___ cookies left, so everyone got one.", "hint": "quelques", "answer": ["a few"], "explain": "Quelques (positif) + pluriel dénombrable : a few." },
+      { "type": "fill", "q": "There were still ___ cookies left, so I offered one to our neighbour.", "hint": "quelques, avec few", "answer": ["a few"], "explain": "Quelques (positif) + pluriel dénombrable : a few." },
       { "type": "fill", "q": "I don't like ___ of these two shirts. Do you have another colour?", "hint": "aucun des deux, phrase déjà négative", "answer": ["either"], "explain": "Avec don't, on prend either ; neither ferait une double négation." },
-      { "type": "fill", "q": "___ my sister nor my brother likes mushrooms.", "hint": "ni", "answer": ["Neither"], "explain": "Ni… ni = neither… nor, avec un verbe affirmatif (likes)." },
+      { "type": "fill", "q": "___ my dad nor my uncle can cook rice properly.", "hint": "ni", "answer": ["Neither"], "explain": "Ni… ni = neither… nor, avec un verbe affirmatif (can cook)." },
       { "type": "fill", "q": "She spent ___ day reading in the hammock.", "hint": "toute la, avec whole", "answer": ["the whole"], "explain": "« Toute la journée » : the whole day, l'article se place avant whole." },
       { "type": "error", "q": "The elderlies in our building love playing cards.", "wrong": 1, "fix": ["elderly"], "explain": "The + adjectif ne prend jamais de -s : the elderly." },
       { "type": "error", "q": "The homeless needs warm clothes in winter.", "wrong": 2, "fix": ["need"], "explain": "The homeless désigne un groupe : verbe au pluriel, need." },
@@ -137,7 +137,7 @@
     ],
     "reading": {
       "title": "The No-Waste Challenge",
-      "text": "Last winter, the Nguyen family made a bold decision: for the whole month of February, they would not throw away a single crumb of food. Mom had read an article about how much food families waste, and she had been shocked.\n\nAt first, it was harder than expected. Few of them knew what to do with leftovers. Dad suggested soup. Mei, who is eleven, suggested pizza. In the end, they made both: leftover soup on Mondays and \"fridge pizza\" on Fridays, topped with whatever was left. Neither recipe looked elegant, but both tasted surprisingly good.\n\nBy the middle of the month, there was hardly any food in the garbage. The family had also realized something embarrassing: they bought far too much. Quite a few of the cans in the cupboard had never been opened. So one Saturday morning, they walked downtown, carrying three heavy bags for the food bank.\n\nThe volunteers explained that the food bank helps people of all ages: the elderly, the unemployed, students, and even families with full-time jobs who can't afford enough groceries. Mei was surprised. \"I thought only the homeless needed help,\" she said. A volunteer smiled. \"Plenty of people need a little help at some point in their lives.\"\n\nAt the end of February, the family looked back on the challenge. None of them wanted to go back to their old habits. Well, almost none of them. Mei's little brother admitted that he missed one thing: being allowed to leave his broccoli on his plate.",
+      "text": "Last winter, the Nguyen family made a bold decision: for the whole month of February, they would not throw away a single crumb of food. Mom had read an article about how much food families waste, and she had been shocked.\n\nAt first, it was harder than expected. They had very few ideas for leftovers. Dad suggested soup. Mei, who is eleven, suggested pizza. In the end, they made both: leftover soup on Mondays and \"fridge pizza\" on Fridays, topped with whatever was left. Neither recipe looked elegant, but both tasted surprisingly good.\n\nBy the middle of the month, there was hardly any food in the garbage. The family had also realized something embarrassing: they bought far too much. Quite a few of the cans in the cupboard had never been opened. So one Saturday morning, they walked downtown, carrying three heavy bags for the food bank.\n\nThe volunteers explained that the food bank helps people of all ages: the elderly, the unemployed, students, and even families with full-time jobs who can't afford enough groceries. Mei was surprised. \"I thought only the homeless needed help,\" she said. A volunteer smiled. \"Plenty of people need a little help at some point in their lives.\"\n\nAt the end of February, the family looked back on the challenge. None of them wanted to go back to their old habits. Well, almost none of them. Mei's little brother admitted that he missed one thing: being allowed to leave his broccoli on his plate.",
       "questions": [
         { "q": "What was the family's goal for February?", "choices": ["To eat only vegetables", "Not to waste any food", "To cook pizza every day", "To volunteer every weekend"], "answer": 1 },
         { "q": "What does \"Neither recipe looked elegant\" mean?", "choices": ["Only one recipe looked nice.", "Both recipes looked very nice.", "The two recipes did not look nice.", "The recipes were too difficult."], "answer": 2 },

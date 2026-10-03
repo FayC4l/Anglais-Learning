@@ -1,6 +1,6 @@
 // Boss fight at the end of each line: a cartoon monster drawn on canvas, hearts, HP bar.
 import { h, icon, sleep, countUp, reducedMotion } from "../ui.js";
-import { levelById } from "../content.js";
+import { levelById, EXTRA } from "../content.js";
 import { diff, recordBoss, checkBadges, bossReady, levelUnlocked } from "../store.js";
 import { go } from "../router.js";
 import { runQuiz, scoreOf } from "../runner.js";
@@ -287,6 +287,7 @@ export function bossScreen(view, { level }) {
         h("li", null, h("span", { html: icon("heart") }), `Tu as ${d.hearts} cœurs. Chaque erreur en coûte un.`),
         h("li", null, h("span", { html: icon("bolt") }), "Chaque bonne réponse frappe le boss."),
         h("li", null, h("span", { html: icon("book") }), `Questions sur toute la ligne ${L}${L > 1 ? ", plus des révisions des lignes d'avant" : ""}.`),
+        h("li", null, h("span", { html: icon("sparkle") }), "3 phases : reconnaissance, production, puis la rage du boss. Les questions changent à chaque combat."),
         h("li", null, h("span", { html: icon("refresh") }), "Perdu ? Tu révises tes erreurs et tu reviens. Il n'y a aucune limite d'essais."),
       ),
       !ready ? h("p", { class: "boss-warn" }, "Défi direct : tu n'as pas fini les stations de cette ligne. Si tu gagnes, toute la ligne est validée.") : null,
@@ -331,7 +332,19 @@ function fight(view, L, lvl) {
     heartsEl.setAttribute("aria-label", `${hearts} cœurs`);
   };
   renderHearts();
-  const arena = h("div", { class: "arena", style: { "--line": `var(--l${L})` } }, h("div", { class: "arena-head" }, h("span", { class: "arena-name" }, lvl.boss.name), h("div", { class: "hp", role: "progressbar", "aria-label": "Vie du boss" }, hpFill)), canvas, heartsEl);
+  const taunts = EXTRA.boss[L]?.taunts || {};
+  const sayEl = h("p", { class: "boss-say", "aria-live": "polite" });
+  const phaseEl = h("span", { class: "boss-phase" }, "Phase 1");
+  const arena = h("div", { class: "arena", style: { "--line": `var(--l${L})` } }, h("div", { class: "arena-head" }, h("span", { class: "arena-name" }, lvl.boss.name), phaseEl, h("div", { class: "hp", role: "progressbar", "aria-label": "Vie du boss" }, hpFill)), canvas, sayEl, heartsEl);
+  const say = (text) => {
+    if (!text) return;
+    sayEl.textContent = text;
+    sayEl.classList.remove("pop");
+    void sayEl.offsetWidth;
+    sayEl.classList.add("pop");
+  };
+  const pickLine = (list) => (list?.length ? list[Math.floor(Math.random() * list.length)] : "");
+  let phase = 1;
   let monster = null;
   const quiz = runQuiz(view, questions, {
     title: `Boss · ligne ${L}`,
@@ -371,6 +384,15 @@ function fight(view, L, lvl) {
           monster.laugh();
           return { stop: true };
         }
+      }
+      // Entering a new phase: the boss gets angrier and says so.
+      const nextPhase = questions[i + 1]?.phase;
+      if (nextPhase && nextPhase > phase) {
+        phase = nextPhase;
+        phaseEl.textContent = phase === 3 ? "Phase 3 · Rage" : `Phase ${phase}`;
+        arena.classList.toggle("rage", phase === 3);
+        monster.attack();
+        say(pickLine(taunts[`phase${phase}`]) || (phase === 3 ? "Assez joué ! Place aux vraies questions !" : "Pas mal… mais maintenant, tu vas devoir écrire !"));
       }
       return {};
     },
@@ -414,7 +436,7 @@ function fight(view, L, lvl) {
         { class: `results boss-results ${won ? "won" : "lost"}`, style: { "--line": `var(--l${L})`, "--line-ink": `var(--l${L}-ink)` } },
         h("p", { class: "eyebrow" }, `Terminus de la ligne ${L}`),
         h("h1", { class: "results-title" }, won ? "Victoire !" : "Le boss a gagné… cette fois."),
-        h("p", { class: "boss-quote" }, h("strong", null, `${lvl.boss.name} : `), won ? lvl.boss.defeat : "Ha ! Révise tes erreurs et reviens me voir. Je t'attends !"),
+        h("p", { class: "boss-quote" }, h("strong", null, `${lvl.boss.name} : `), won ? lvl.boss.defeat : pickLine(taunts.lose) || "Ha ! Révise tes erreurs et reviens me voir. Je t'attends !"),
         h("p", { class: "results-line" }, `${results.filter((r) => r.ok).length} bonnes réponses sur ${results.length}${won ? "" : ` (le combat s'arrête après ${maxHearts} erreurs)`}.`, won && res.flawless ? " Sans perdre un seul cœur !" : ""),
         h("div", { class: "xp-gain" }, h("span", { html: icon("bolt") }), "+", xp, " XP"),
         badges.length ? h("div", { class: "new-badges" }, badges.map((b) => h("div", { class: "badge-pop" }, h("span", { html: icon("trophy") }), h("strong", null, b.name), h("small", null, b.desc)))) : null,

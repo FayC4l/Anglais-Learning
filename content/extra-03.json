@@ -8,19 +8,88 @@
         "ipa": "/s/ – /z/ – /ɪz/",
         "explain": "Bonne nouvelle : le « s » de [[she plays]] se prononce exactement comme le pluriel de [[dogs]] et [[cats]] ! Après un son sec (« t », « k », « p »), c'est un « s » sifflé : [[gets]], [[eats]]. Après les autres sons, c'est un « z » qui bourdonne : [[plays]], [[goes]]. Après un son qui siffle déjà (« ch », « sh », « s »), on ajoute la syllabe « iz » : [[watch]] devient [[watches]] (« WÂ-tchiz »). Attention à deux tricheurs : [[does]] se dit « deuz » (pas « douz ») et [[says]] se dit « sèz » (pas « séïz ») !",
         "words": [
-          { "en": "gets", "fr": "se lève (gets up), obtient", "hint": "« guètss » : « s » sifflé après le « t »" },
-          { "en": "eats", "fr": "mange", "hint": "« iitss » : « ii » long, puis « tss »" },
-          { "en": "plays", "fr": "joue", "hint": "« pléïz » : « éï » qui glisse, puis un « z »" },
-          { "en": "goes", "fr": "va", "hint": "« gôouz » : « ôou » qui glisse, puis un « z » (le « e » est muet)" },
-          { "en": "watches", "fr": "regarde", "hint": "« WÂ-tchiz » : deux syllabes, on ajoute « iz »" },
-          { "en": "brushes", "fr": "brosse", "hint": "« BREU-chiz » : deux syllabes, « iz » après le « ch »" },
-          { "en": "finishes", "fr": "finit, termine", "hint": "« FI-ni-chiz » : trois syllabes, accent au début" },
-          { "en": "has", "fr": "a (verbe avoir)", "hint": "« haz » : souffle le « h », et finis par un « z »" },
-          { "en": "does", "fr": "fait", "hint": "« deuz » : surtout pas « douz » ! Ça rime avec [[buzz]]" },
-          { "en": "says", "fr": "dit", "hint": "« sèz » : surtout pas « séïz » ! Un « è » court, puis un « z »" }
+          {
+            "en": "gets",
+            "fr": "se lève (gets up), obtient",
+            "hint": "« guètss » : « s » sifflé après le « t »"
+          },
+          {
+            "en": "eats",
+            "fr": "mange",
+            "hint": "« iitss » : « ii » long, puis « tss »"
+          },
+          {
+            "en": "plays",
+            "fr": "joue",
+            "hint": "« pléïz » : « éï » qui glisse, puis un « z »"
+          },
+          {
+            "en": "goes",
+            "fr": "va",
+            "hint": "« gôouz » : « ôou » qui glisse, puis un « z » (le « e » est muet)"
+          },
+          {
+            "en": "watches",
+            "fr": "regarde",
+            "hint": "« WÂ-tchiz » : deux syllabes, on ajoute « iz »"
+          },
+          {
+            "en": "brushes",
+            "fr": "brosse",
+            "hint": "« BREU-chiz » : deux syllabes, « iz » après le « ch »"
+          },
+          {
+            "en": "finishes",
+            "fr": "finit, termine",
+            "hint": "« FI-ni-chiz » : trois syllabes, accent au début"
+          },
+          {
+            "en": "has",
+            "fr": "a (verbe avoir)",
+            "hint": "« haz » : souffle le « h », et finis par un « z »"
+          },
+          {
+            "en": "does",
+            "fr": "fait",
+            "hint": "« deuz » : surtout pas « douz » ! Ça rime avec [[buzz]]"
+          },
+          {
+            "en": "says",
+            "fr": "dit",
+            "hint": "« sèz » : surtout pas « séïz » ! Un « è » court, puis un « z »"
+          }
         ],
-        "pairs": [["play", "plays"], ["watch", "watches"], ["eat", "eats"], ["go", "goes"], ["brush", "brushes"], ["get", "gets"]],
-        "practice": ["Every morning, Noah gets up, eats breakfast and goes to school.", "Maya brushes her teeth and finishes her homework.", "He says he does his homework every day."]
+        "pairs": [
+          [
+            "play",
+            "plays"
+          ],
+          [
+            "watch",
+            "watches"
+          ],
+          [
+            "eat",
+            "eats"
+          ],
+          [
+            "go",
+            "goes"
+          ],
+          [
+            "brush",
+            "brushes"
+          ],
+          [
+            "get",
+            "gets"
+          ]
+        ],
+        "practice": [
+          "Every morning, Noah gets up, eats breakfast and goes to school.",
+          "Maya brushes her teeth and finishes her homework.",
+          "He says he does his homework every day."
+        ]
       },
       "mission": {
         "type": "ecrit",
@@ -41,17 +110,53 @@
         "ipa": "",
         "explain": "En anglais, la voix ne fait pas la même chose pour toutes les questions. Quand on peut répondre **oui ou non** ([[Do you like pizza?]]), la voix **monte** à la fin, comme un ascenseur qui va vers le haut ↗. Quand la question commence par un mot comme [[where]], [[what]] ou [[when]] ([[Where do you live?]]), la voix **descend** à la fin ↘, comme dans une phrase normale : le mot en « wh » fait déjà le travail de la question ! Petit secret : dans la vraie vie, [[do you]] se dit très vite, presque « deu-yeu ». Écoute bien la voix, puis exagère la mélodie en répétant.",
         "words": [
-          { "en": "do you like pizza", "fr": "aimes-tu la pizza ?", "hint": "« deu-yeu-LAÏK-PIT-sa ↗ » : oui ou non, donc la voix monte à la fin" },
-          { "en": "does she speak French", "fr": "parle-t-elle français ?", "hint": "« deuz-chi-SPIIK-FRÈNNTCH ↗ » : la voix monte à la fin" },
-          { "en": "are you hungry", "fr": "as-tu faim ?", "hint": "« âr-yeu-HEUN-gri ↗ » : la voix monte sur « gri »" },
-          { "en": "do you understand", "fr": "comprends-tu ?", "hint": "« deu-yeu-eun-deur-STANND ↗ » : accent et montée à la fin" },
-          { "en": "where do you live", "fr": "où habites-tu ?", "hint": "« WÈR-deu-yeu-LIV ↘ » : question en « wh », la voix descend à la fin" },
-          { "en": "what do you want", "fr": "que veux-tu ?", "hint": "« WEU-deu-yeu-WANNT ↘ » : la voix descend, comme une phrase normale" },
-          { "en": "when is your birthday", "fr": "quand est ton anniversaire ?", "hint": "« WÈNN-iz-yeur-BEURTH-déï ↘ » : la voix descend à la fin" },
-          { "en": "why are you sad", "fr": "pourquoi es-tu triste ?", "hint": "« WAÏ-âr-yeu-SAD ↘ » : la voix descend sur « SAD »" }
+          {
+            "en": "do you like pizza",
+            "fr": "aimes-tu la pizza ?",
+            "hint": "« deu-yeu-LAÏK-PIT-sa ↗ » : oui ou non, donc la voix monte à la fin"
+          },
+          {
+            "en": "does she speak French",
+            "fr": "parle-t-elle français ?",
+            "hint": "« deuz-chi-SPIIK-FRÈNNTCH ↗ » : la voix monte à la fin"
+          },
+          {
+            "en": "are you hungry",
+            "fr": "as-tu faim ?",
+            "hint": "« âr-yeu-HEUN-gri ↗ » : la voix monte sur « gri »"
+          },
+          {
+            "en": "do you understand",
+            "fr": "comprends-tu ?",
+            "hint": "« deu-yeu-eun-deur-STANND ↗ » : accent et montée à la fin"
+          },
+          {
+            "en": "where do you live",
+            "fr": "où habites-tu ?",
+            "hint": "« WÈR-deu-yeu-LIV ↘ » : question en « wh », la voix descend à la fin"
+          },
+          {
+            "en": "what do you want",
+            "fr": "que veux-tu ?",
+            "hint": "« WEU-deu-yeu-WANNT ↘ » : la voix descend, comme une phrase normale"
+          },
+          {
+            "en": "when is your birthday",
+            "fr": "quand est ton anniversaire ?",
+            "hint": "« WÈNN-iz-yeur-BEURTH-déï ↘ » : la voix descend à la fin"
+          },
+          {
+            "en": "why are you sad",
+            "fr": "pourquoi es-tu triste ?",
+            "hint": "« WAÏ-âr-yeu-SAD ↘ » : la voix descend sur « SAD »"
+          }
         ],
         "pairs": [],
-        "practice": ["Do you like hockey?", "Where do you live?", "Does your brother speak English?"]
+        "practice": [
+          "Do you like hockey?",
+          "Where do you live?",
+          "Does your brother speak English?"
+        ]
       },
       "mission": {
         "type": "oral",
@@ -72,18 +177,82 @@
         "ipa": "/dʒ/ – /tʃ/",
         "explain": "Le « j » français de « jus » est tout doux. Le « j » anglais de [[juice]], lui, commence par un petit « d » : « djouss », comme dans « adjectif ». Même chose pour le « ch » : en anglais, [[cheese]] se dit « tchiiz », avec un petit « t » devant, comme un éternuement : « atchoum ! ». Le piège du francophone, c'est de dire « shicken » pour [[chicken]] : on entend alors un autre mot, comme [[ship]] (bateau) au lieu de [[chip]] (croustille) ! Truc : pour faire le « t » ou le « d », colle d'abord le bout de ta langue derrière tes dents du haut, puis décolle-la d'un coup.",
         "words": [
-          { "en": "juice", "fr": "jus", "hint": "« djouss » : un petit « d » devant le « j », puis un « ou » long" },
-          { "en": "jam", "fr": "confiture", "hint": "« djamm » : « dj » au début, bouche bien ouverte sur le « a »" },
-          { "en": "orange", "fr": "orange", "hint": "« Ô-rinndj » : accent au début, et finis par « ndj » (pas « o-ranje »)" },
-          { "en": "vegetables", "fr": "légumes", "hint": "« VÈDJ-teu-beulz » : trois syllabes seulement, accent au début, « dj » au milieu" },
-          { "en": "fridge", "fr": "frigo, réfrigérateur", "hint": "« fridj » : finis par « dj », le « d » écrit ne s'entend pas tout seul" },
-          { "en": "cheese", "fr": "fromage", "hint": "« tchiiz » : « tch » comme dans « atchoum », « ii » long, puis un « z »" },
-          { "en": "chicken", "fr": "poulet", "hint": "« TCHI-kinn » : « tch », pas « sh » ! Accent au début" },
-          { "en": "lunch", "fr": "dîner (repas du midi)", "hint": "« leuntch » : un « eu » court, puis « ntch »" },
-          { "en": "kitchen", "fr": "cuisine (la pièce)", "hint": "« KI-tchinn » : « tch » au milieu, accent au début" }
+          {
+            "en": "juice",
+            "fr": "jus",
+            "hint": "« djouss » : un petit « d » devant le « j », puis un « ou » long"
+          },
+          {
+            "en": "jam",
+            "fr": "confiture",
+            "hint": "« djamm » : « dj » au début, bouche bien ouverte sur le « a »"
+          },
+          {
+            "en": "orange",
+            "fr": "orange",
+            "hint": "« Ô-rinndj » : accent au début, et finis par « ndj » (pas « o-ranje »)"
+          },
+          {
+            "en": "vegetables",
+            "fr": "légumes",
+            "hint": "« VÈDJ-teu-beulz » : trois syllabes seulement, accent au début, « dj » au milieu"
+          },
+          {
+            "en": "fridge",
+            "fr": "frigo, réfrigérateur",
+            "hint": "« fridj » : finis par « dj », le « d » écrit ne s'entend pas tout seul"
+          },
+          {
+            "en": "cheese",
+            "fr": "fromage",
+            "hint": "« tchiiz » : « tch » comme dans « atchoum », « ii » long, puis un « z »"
+          },
+          {
+            "en": "chicken",
+            "fr": "poulet",
+            "hint": "« TCHI-kinn » : « tch », pas « sh » ! Accent au début"
+          },
+          {
+            "en": "lunch",
+            "fr": "dîner (repas du midi)",
+            "hint": "« leuntch » : un « eu » court, puis « ntch »"
+          },
+          {
+            "en": "kitchen",
+            "fr": "cuisine (la pièce)",
+            "hint": "« KI-tchinn » : « tch » au milieu, accent au début"
+          }
         ],
-        "pairs": [["jeep", "cheap"], ["joke", "choke"], ["badge", "batch"], ["chip", "ship"], ["chair", "share"], ["watch", "wash"]],
-        "practice": ["I'd like some orange juice and a cheese sandwich for lunch.", "Charlie eats chicken and vegetables in the kitchen."]
+        "pairs": [
+          [
+            "jeep",
+            "cheap"
+          ],
+          [
+            "joke",
+            "choke"
+          ],
+          [
+            "badge",
+            "batch"
+          ],
+          [
+            "chip",
+            "ship"
+          ],
+          [
+            "chair",
+            "share"
+          ],
+          [
+            "watch",
+            "wash"
+          ]
+        ],
+        "practice": [
+          "I'd like some orange juice and a cheese sandwich for lunch.",
+          "Charlie eats chicken and vegetables in the kitchen."
+        ]
       },
       "mission": {
         "type": "ecrit",
@@ -104,19 +273,71 @@
         "ipa": "/ʊ/ – /uː/",
         "explain": "En français, il y a un seul « ou ». En anglais, il y en a deux ! Le « ou » **long** de [[food]] et [[room]] est tendu : avance les lèvres comme pour un bisou et étire le son, « fouuud ». Le « ou » **court** de [[book]] et [[good]] est rapide et paresseux : les lèvres bougent à peine, et ça ressemble presque à un « eu ». Le piège : les deux s'écrivent souvent « oo », alors l'orthographe ne t'aide pas ! Écoute bien la différence entre [[full]] (plein) et [[fool]] (un nigaud).",
         "words": [
-          { "en": "book", "fr": "livre", "hint": "« bouk » : un « ou » très court et détendu, presque « beuk »" },
-          { "en": "look", "fr": "regarder", "hint": "« louk » : « ou » court, lèvres presque pas arrondies" },
-          { "en": "good", "fr": "bon, bonne, bien", "hint": "« goud » : « ou » court et rapide" },
-          { "en": "cook", "fr": "cuisiner ; un cuisinier", "hint": "« kouk » : « ou » court, comme dans [[book]]" },
-          { "en": "put", "fr": "mettre, poser", "hint": "« pout » : « ou » court ; ça ne rime pas avec [[but]] !" },
-          { "en": "food", "fr": "nourriture", "hint": "« fouud » : « ou » long, lèvres en bisou" },
-          { "en": "room", "fr": "pièce, chambre", "hint": "« rouum » : « ou » long et tendu, « r » anglais au début" },
-          { "en": "bedroom", "fr": "chambre à coucher", "hint": "« BÈD-rouum » : accent au début, « ou » long à la fin" },
-          { "en": "bathroom", "fr": "salle de bain", "hint": "« BATH-rouum » : « th » soufflé, accent au début, « ou » long à la fin" },
-          { "en": "school", "fr": "école", "hint": "« skouul » : « ou » long, puis un « l » bien sombre" }
+          {
+            "en": "book",
+            "fr": "livre",
+            "hint": "« bouk » : un « ou » très court et détendu, presque « beuk »"
+          },
+          {
+            "en": "look",
+            "fr": "regarder",
+            "hint": "« louk » : « ou » court, lèvres presque pas arrondies"
+          },
+          {
+            "en": "good",
+            "fr": "bon, bonne, bien",
+            "hint": "« goud » : « ou » court et rapide"
+          },
+          {
+            "en": "cook",
+            "fr": "cuisiner ; un cuisinier",
+            "hint": "« kouk » : « ou » court, comme dans [[book]]"
+          },
+          {
+            "en": "put",
+            "fr": "mettre, poser",
+            "hint": "« pout » : « ou » court ; ça ne rime pas avec [[but]] !"
+          },
+          {
+            "en": "food",
+            "fr": "nourriture",
+            "hint": "« fouud » : « ou » long, lèvres en bisou"
+          },
+          {
+            "en": "room",
+            "fr": "pièce, chambre",
+            "hint": "« rouum » : « ou » long et tendu, « r » anglais au début"
+          },
+          {
+            "en": "bedroom",
+            "fr": "chambre à coucher",
+            "hint": "« BÈD-rouum » : accent au début, « ou » long à la fin"
+          },
+          {
+            "en": "bathroom",
+            "fr": "salle de bain",
+            "hint": "« BATH-rouum » : « th » soufflé, accent au début, « ou » long à la fin"
+          },
+          {
+            "en": "school",
+            "fr": "école",
+            "hint": "« skouul » : « ou » long, puis un « l » bien sombre"
+          }
         ],
-        "pairs": [["full", "fool"], ["pull", "pool"]],
-        "practice": ["Look at the good book in my room.", "Put the food on the table in the kitchen."]
+        "pairs": [
+          [
+            "full",
+            "fool"
+          ],
+          [
+            "pull",
+            "pool"
+          ]
+        ],
+        "practice": [
+          "Look at the good book in my room.",
+          "Put the food on the table in the kitchen."
+        ]
       },
       "mission": {
         "type": "oral",
@@ -127,6 +348,73 @@
           "J'ai utilisé au moins deux prépositions de lieu ([[on]], [[under]], [[next to]], [[between]]…)",
           "J'ai dit « ou » long dans [[room]] et « ou » court dans [[book]] et [[look]]",
           "Je n'ai pas dit « it has » pour « il y a »"
+        ]
+      }
+    },
+    {
+      "unit": "3.5",
+      "pron": {
+        "focus": "Le « of » tout petit des quantités",
+        "ipa": "/əv/",
+        "explain": "Dans [[a lot of]], [[both of them]] ou [[a glass of milk]], le petit mot [[of]] ne se dit presque jamais « ov » : il devient un « euv » tout faible, collé au mot d'avant. Le [[a]] aussi devient un petit « eu ». Les mots importants ([[lot]], [[glass]], [[milk]]) sont forts ; les petits mots glissent vite entre eux. Et au Canada, le « t » de [[a lot of]] sonne presque comme un « d » : « eu-LÂ-deuv ». Bonus : [[none]] rime avec [[one]], ne dis pas « nonne » !",
+        "words": [
+          {
+            "en": "a lot of",
+            "fr": "beaucoup de",
+            "hint": "« eu-LÂ-deuv » : accent sur lot, le « t » devient presque « d », of = « euv »"
+          },
+          {
+            "en": "a lot of people",
+            "fr": "beaucoup de gens",
+            "hint": "« eu-LÂ-deuv PII-peul » : deux mots forts, lot et people"
+          },
+          {
+            "en": "all of us",
+            "fr": "nous tous",
+            "hint": "« ÔL-euv-euss » : of et us se collent à all"
+          },
+          {
+            "en": "both of them",
+            "fr": "tous les deux (eux deux)",
+            "hint": "« BÔOUTH-euv-THeum » : langue entre les dents pour les deux « th »"
+          },
+          {
+            "en": "none of them",
+            "fr": "aucun d'eux",
+            "hint": "« NEUNN-euv-THeum » : none rime avec one"
+          },
+          {
+            "en": "a glass of milk",
+            "fr": "un verre de lait",
+            "hint": "« eu GLASS-euv MILK » : of tout petit entre deux mots forts"
+          },
+          {
+            "en": "a piece of cake",
+            "fr": "un morceau de gâteau",
+            "hint": "« eu PIISS-euv KÉÏK » : trois syllabes rapides au milieu"
+          },
+          {
+            "en": "none",
+            "fr": "aucun",
+            "hint": "« NEUNN » : comme one, jamais « nonne »"
+          }
+        ],
+        "pairs": [],
+        "practice": [
+          "A lot of people eat a lot of candy.",
+          "Both of them want a glass of milk.",
+          "All of us love a piece of cake."
+        ]
+      },
+      "mission": {
+        "type": "ecrit",
+        "prompt": "Tu organises une petite fête avec ta classe. Écris un message à ton amie Maya pour lui dire qui vient, ce que vous avez à manger et à boire (en quantité !), et ce qu'il manque.",
+        "model": "Hi, Maya! Every student in our class wants to come! We have a lot of pizza and a few cookies, but we don't have much juice. We need some juice and a little maple syrup.",
+        "checklist": [
+          "J'ai utilisé [[a few]] avec un pluriel et [[a little]] avec un indénombrable",
+          "J'ai utilisé [[much]] dans une phrase négative et [[a lot of]] dans une phrase positive",
+          "J'ai utilisé [[all]], [[every]] ou [[both]] correctement (every + singulier)",
+          "J'ai écrit au moins quatre phrases au présent simple"
         ]
       }
     }

@@ -8,16 +8,56 @@
         "ipa": "/ʃʊd/ – /kʊd/ – /wʊd/",
         "explain": "En anglais, certaines lettres sont là juste pour la décoration ! Dans [[should]], [[could]] et [[would]], le **l est muet** : les trois riment avec [[good]] (« choud », « koud », « woud »). Même chose dans [[talk]], [[walk]], [[half]] et [[salmon]], et dans [[mustn't]], où le premier t disparaît (« MEU-seunt »). Le piège des francophones : tout lire comme en français et faire sonner un beau « l » dans « choulde » ou « oualk ». Truc : [[would]] se prononce exactement comme [[wood]] (le bois) ; si tu sais dire l'un, tu sais dire l'autre !",
         "words": [
-          { "en": "should", "fr": "devrais, devrait (conseil)", "hint": "« choud » : le l ne se prononce jamais ; un « ou » bref" },
-          { "en": "could", "fr": "pourrais, pourrait ; pouvait", "hint": "« koud » : l muet ; rime avec « choud »" },
-          { "en": "would", "fr": "auxiliaire du conditionnel (I would go = j'irais)", "hint": "« woud » : l muet ; le conditionnel et « le bois » se prononcent exactement pareil !" },
-          { "en": "wood", "fr": "le bois", "hint": "« woud » : l muet ; le conditionnel et « le bois » se prononcent exactement pareil !" },
-          { "en": "shouldn't", "fr": "ne devrais pas, ne devrait pas", "hint": "« CHOU-deunt » : l muet ; accent sur la première syllabe" },
-          { "en": "mustn't", "fr": "ne doit pas (c'est interdit)", "hint": "« MEU-seunt » : le premier t est muet ; et attention, ça veut dire « interdit » !" },
-          { "en": "talk", "fr": "parler, discuter", "hint": "« tâk » : l muet ; un « â » bien ouvert, comme dans « pâte »" },
-          { "en": "walk", "fr": "marcher ; une promenade", "hint": "« wâk » : l muet ; ne le confonds pas avec « weurk » (travailler)" },
-          { "en": "half", "fr": "la moitié ; demi", "hint": "« haf » : l muet ; on souffle bien le h" },
-          { "en": "salmon", "fr": "le saumon", "hint": "« SA-meun » : l muet, donc surtout pas « sal-mon » !" }
+          {
+            "en": "should",
+            "fr": "devrais, devrait (conseil)",
+            "hint": "« choud » : le l ne se prononce jamais ; un « ou » bref"
+          },
+          {
+            "en": "could",
+            "fr": "pourrais, pourrait ; pouvait",
+            "hint": "« koud » : l muet ; rime avec « choud »"
+          },
+          {
+            "en": "would",
+            "fr": "auxiliaire du conditionnel (I would go = j'irais)",
+            "hint": "« woud » : l muet ; le conditionnel et « le bois » se prononcent exactement pareil !"
+          },
+          {
+            "en": "wood",
+            "fr": "le bois",
+            "hint": "« woud » : l muet ; le conditionnel et « le bois » se prononcent exactement pareil !"
+          },
+          {
+            "en": "shouldn't",
+            "fr": "ne devrais pas, ne devrait pas",
+            "hint": "« CHOU-deunt » : l muet ; accent sur la première syllabe"
+          },
+          {
+            "en": "mustn't",
+            "fr": "ne doit pas (c'est interdit)",
+            "hint": "« MEU-seunt » : le premier t est muet ; et attention, ça veut dire « interdit » !"
+          },
+          {
+            "en": "talk",
+            "fr": "parler, discuter",
+            "hint": "« tâk » : l muet ; un « â » bien ouvert, comme dans « pâte »"
+          },
+          {
+            "en": "walk",
+            "fr": "marcher ; une promenade",
+            "hint": "« wâk » : l muet ; ne le confonds pas avec « weurk » (travailler)"
+          },
+          {
+            "en": "half",
+            "fr": "la moitié ; demi",
+            "hint": "« haf » : l muet ; on souffle bien le h"
+          },
+          {
+            "en": "salmon",
+            "fr": "le saumon",
+            "hint": "« SA-meun » : l muet, donc surtout pas « sal-mon » !"
+          }
         ],
         "pairs": [],
         "practice": [
@@ -46,15 +86,51 @@
         "ipa": "",
         "explain": "Une phrase avec [[if]], [[unless]] ou [[as soon as]] a deux parties, comme une colline : la voix **monte** à la virgule (« attends, ce n'est pas fini ! »), puis **redescend** à la fin (« voilà, c'est fini »). Bonne nouvelle : le français fait pareil, écoute-toi dire « s'il pleut, on reste à l'intérieur ». La différence : en anglais, le mouvement part de la syllabe forte du dernier mot important, pas de la toute dernière syllabe ; dans [[if you recycle]], ça monte dès « saï ». Et à la fin, laisse vraiment tomber ta voix, sinon on croit que tu poses une question ! Truc : quand [[if]] arrive au milieu de la phrase, il n'y a pas de virgule… et une seule descente.",
         "words": [
-          { "en": "if it rains, we stay inside", "fr": "s'il pleut, on reste à l'intérieur", "hint": "« if it RAINS ↗ we stay in-SIDE ↘ » : ça monte à la virgule, puis ça redescend" },
-          { "en": "if you heat ice, it melts", "fr": "si on chauffe de la glace, elle fond", "hint": "« if you heat ICE ↗ it MELTS ↘ » : une vérité scientifique, même mélodie" },
-          { "en": "if you recycle, you help the planet", "fr": "si tu recycles, tu aides la planète", "hint": "« if you re-CY-cle ↗ you help the PLA-net ↘ » : la montée part de « saï », pas de la fin du mot" },
-          { "en": "if we plant trees, the air will be cleaner", "fr": "si on plante des arbres, l'air sera plus propre", "hint": "« if we plant TREES ↗ the air will be CLEA-ner ↘ » : c'est le dernier mot important qui décide" },
-          { "en": "if you waste energy, you waste money", "fr": "si tu gaspilles l'énergie, tu gaspilles de l'argent", "hint": "« if you waste EN-er-gy ↗ you waste MO-ney ↘ » : le mot « énergie » appuie au début, pas « é-ner-GIE » !" },
-          { "en": "unless you hurry, you'll miss the bus", "fr": "à moins que tu te dépêches, tu vas rater l'autobus", "hint": "« un-LESS you HUR-ry ↗ you'll miss the BUS ↘ » : le premier mot appuie sur sa deuxième syllabe, « eun-LÈSS »" },
-          { "en": "as soon as I get home, I'll call you", "fr": "dès que j'arrive à la maison, je t'appelle", "hint": "« as soon as I get HOME ↗ I'll CALL you ↘ » : la voix tombe sur l'avant-dernier mot ; le dernier reste tout bas" },
-          { "en": "when the bin is full, take it out", "fr": "quand le bac est plein, sors-le", "hint": "« when the bin is FULL ↗ take it OUT ↘ » : le coup final va sur la petite particule" },
-          { "en": "we'll go swimming if it's sunny", "fr": "on ira se baigner s'il fait soleil", "hint": "« we'll go SWIM-ming if it's SUN-ny ↘ » : la condition est à la fin, donc pas de virgule et une seule descente" }
+          {
+            "en": "if it rains, we stay inside",
+            "fr": "s'il pleut, on reste à l'intérieur",
+            "hint": "« if it RAINS ↗ we stay in-SIDE ↘ » : ça monte à la virgule, puis ça redescend"
+          },
+          {
+            "en": "if you heat ice, it melts",
+            "fr": "si on chauffe de la glace, elle fond",
+            "hint": "« if you heat ICE ↗ it MELTS ↘ » : une vérité scientifique, même mélodie"
+          },
+          {
+            "en": "if you recycle, you help the planet",
+            "fr": "si tu recycles, tu aides la planète",
+            "hint": "« if you re-CY-cle ↗ you help the PLA-net ↘ » : la montée part de « saï », pas de la fin du mot"
+          },
+          {
+            "en": "if we plant trees, the air will be cleaner",
+            "fr": "si on plante des arbres, l'air sera plus propre",
+            "hint": "« if we plant TREES ↗ the air will be CLEA-ner ↘ » : c'est le dernier mot important qui décide"
+          },
+          {
+            "en": "if you waste energy, you waste money",
+            "fr": "si tu gaspilles l'énergie, tu gaspilles de l'argent",
+            "hint": "« if you waste EN-er-gy ↗ you waste MO-ney ↘ » : le mot « énergie » appuie au début, pas « é-ner-GIE » !"
+          },
+          {
+            "en": "unless you hurry, you'll miss the bus",
+            "fr": "à moins que tu te dépêches, tu vas rater l'autobus",
+            "hint": "« un-LESS you HUR-ry ↗ you'll miss the BUS ↘ » : le premier mot appuie sur sa deuxième syllabe, « eun-LÈSS »"
+          },
+          {
+            "en": "as soon as I get home, I'll call you",
+            "fr": "dès que j'arrive à la maison, je t'appelle",
+            "hint": "« as soon as I get HOME ↗ I'll CALL you ↘ » : la voix tombe sur l'avant-dernier mot ; le dernier reste tout bas"
+          },
+          {
+            "en": "when the bin is full, take it out",
+            "fr": "quand le bac est plein, sors-le",
+            "hint": "« when the bin is FULL ↗ take it OUT ↘ » : le coup final va sur la petite particule"
+          },
+          {
+            "en": "we'll go swimming if it's sunny",
+            "fr": "on ira se baigner s'il fait soleil",
+            "hint": "« we'll go SWIM-ming if it's SUN-ny ↘ » : la condition est à la fin, donc pas de virgule et une seule descente"
+          }
         ],
         "pairs": [],
         "practice": [
@@ -83,16 +159,56 @@
         "ipa": "",
         "explain": "Les mots « transparents » sont des pièges sournois : tu les comprends tout de suite, alors tu les prononces… à la française ! En anglais, ils perdent souvent des syllabes : [[comfortable]] n'en a que trois (« KEUMF-teur-beul ») et [[chocolate]] seulement deux (« TCHÂ-kleut »). L'accent tombe souvent au début ([[interesting]], [[different]], [[restaurant]]), alors que le français appuie sur la fin. Truc : avant de dire un mot transparent, compte ses syllabes sur tes doigts… et écoute d'abord la voix anglaise !",
         "words": [
-          { "en": "comfortable", "fr": "confortable ; à l'aise", "hint": "« KEUMF-teur-beul » : trois syllabes seulement ; le « or » s'efface" },
-          { "en": "vegetable", "fr": "un légume", "hint": "« VÈDJ-teu-beul » : trois syllabes, pas quatre ; le deuxième e est muet" },
-          { "en": "chocolate", "fr": "le chocolat", "hint": "« TCHÂ-kleut » : deux syllabes ; « tch » comme dans « tchou-tchou »" },
-          { "en": "interesting", "fr": "intéressant", "hint": "« IN-tres-ting » : trois syllabes, accent sur la première" },
-          { "en": "different", "fr": "différent", "hint": "« DIF-reunt » : deux syllabes, accent au début" },
-          { "en": "restaurant", "fr": "un restaurant", "hint": "« RÈS-teu-rânt » : accent au début ; pas de son nasal, on entend le n et le t" },
-          { "en": "hotel", "fr": "un hôtel", "hint": "« hô-TÈL » : on souffle le h, et l'accent est à la fin (comme en français, pour une fois !)" },
-          { "en": "recipe", "fr": "une recette (de cuisine)", "hint": "« RÈ-seu-pi » : trois syllabes ; le e final se prononce « i » !" },
-          { "en": "machine", "fr": "une machine", "hint": "« meu-CHIIN » : « ch » doux comme en français ; accent sur la deuxième syllabe" },
-          { "en": "event", "fr": "un événement", "hint": "« i-VÈNT » : accent sur la deuxième syllabe ; on entend le n et le t, sans son nasal" }
+          {
+            "en": "comfortable",
+            "fr": "confortable ; à l'aise",
+            "hint": "« KEUMF-teur-beul » : trois syllabes seulement ; le « or » s'efface"
+          },
+          {
+            "en": "vegetable",
+            "fr": "un légume",
+            "hint": "« VÈDJ-teu-beul » : trois syllabes, pas quatre ; le deuxième e est muet"
+          },
+          {
+            "en": "chocolate",
+            "fr": "le chocolat",
+            "hint": "« TCHÂ-kleut » : deux syllabes ; « tch » comme dans « tchou-tchou »"
+          },
+          {
+            "en": "interesting",
+            "fr": "intéressant",
+            "hint": "« IN-tres-ting » : trois syllabes, accent sur la première"
+          },
+          {
+            "en": "different",
+            "fr": "différent",
+            "hint": "« DIF-reunt » : deux syllabes, accent au début"
+          },
+          {
+            "en": "restaurant",
+            "fr": "un restaurant",
+            "hint": "« RÈS-teu-rânt » : accent au début ; pas de son nasal, on entend le n et le t"
+          },
+          {
+            "en": "hotel",
+            "fr": "un hôtel",
+            "hint": "« hô-TÈL » : on souffle le h, et l'accent est à la fin (comme en français, pour une fois !)"
+          },
+          {
+            "en": "recipe",
+            "fr": "une recette (de cuisine)",
+            "hint": "« RÈ-seu-pi » : trois syllabes ; le e final se prononce « i » !"
+          },
+          {
+            "en": "machine",
+            "fr": "une machine",
+            "hint": "« meu-CHIIN » : « ch » doux comme en français ; accent sur la deuxième syllabe"
+          },
+          {
+            "en": "event",
+            "fr": "un événement",
+            "hint": "« i-VÈNT » : accent sur la deuxième syllabe ; on entend le n et le t, sans son nasal"
+          }
         ],
         "pairs": [],
         "practice": [
@@ -121,16 +237,56 @@
         "ipa": "/ʃən/ – /ʒən/",
         "explain": "Les mots comme [[information]] et [[decision]] existent aussi en français, mais leur fin change complètement : -tion se dit « cheun » et -sion, après une voyelle, se dit « jeun », sans « i » et sans « on » nasal. Le secret : l'accent tombe **juste avant** cette fin : « in-feur-MÉI-cheun », « di-SI-jeun », « kân-veur-SÉI-cheun ». Deux pièges : [[television]] fait exception (accent au début : « TÈ-leu-vi-jeun »), et [[question]] se dit « KWÈS-tcheun » à cause du s. Truc : pense au nom de ton appli, car [[mission]] se dit « MI-cheun » !",
         "words": [
-          { "en": "decision", "fr": "une décision", "hint": "« di-SI-jeun » : un « jeun » tout doux, accent juste avant" },
-          { "en": "vision", "fr": "la vue ; une vision", "hint": "« VI-jeun » : pas de « on » nasal à la fin" },
-          { "en": "television", "fr": "la télévision", "hint": "« TÈ-leu-vi-jeun » : la grande exception, accent au début !" },
-          { "en": "information", "fr": "de l'information, des renseignements", "hint": "« in-feur-MÉI-cheun » : accent juste avant « cheun »" },
-          { "en": "conversation", "fr": "une conversation", "hint": "« kân-veur-SÉI-cheun » : accent juste avant « cheun »" },
-          { "en": "education", "fr": "l'éducation, les études", "hint": "« è-djeu-KÉI-cheun » : le « du » devient « djeu »" },
-          { "en": "pollution", "fr": "la pollution", "hint": "« peu-LOU-cheun » : accent juste avant « cheun »" },
-          { "en": "competition", "fr": "une compétition, un concours", "hint": "« kâm-peu-TI-cheun » : accent juste avant « cheun »" },
-          { "en": "mission", "fr": "une mission", "hint": "« MI-cheun » : comme dans Mission Bilingue !" },
-          { "en": "question", "fr": "une question", "hint": "« KWÈS-tcheun » : après un s, la fin devient « tcheun » ; et « kw » au début" }
+          {
+            "en": "decision",
+            "fr": "une décision",
+            "hint": "« di-SI-jeun » : un « jeun » tout doux, accent juste avant"
+          },
+          {
+            "en": "vision",
+            "fr": "la vue ; une vision",
+            "hint": "« VI-jeun » : pas de « on » nasal à la fin"
+          },
+          {
+            "en": "television",
+            "fr": "la télévision",
+            "hint": "« TÈ-leu-vi-jeun » : la grande exception, accent au début !"
+          },
+          {
+            "en": "information",
+            "fr": "de l'information, des renseignements",
+            "hint": "« in-feur-MÉI-cheun » : accent juste avant « cheun »"
+          },
+          {
+            "en": "conversation",
+            "fr": "une conversation",
+            "hint": "« kân-veur-SÉI-cheun » : accent juste avant « cheun »"
+          },
+          {
+            "en": "education",
+            "fr": "l'éducation, les études",
+            "hint": "« è-djeu-KÉI-cheun » : le « du » devient « djeu »"
+          },
+          {
+            "en": "pollution",
+            "fr": "la pollution",
+            "hint": "« peu-LOU-cheun » : accent juste avant « cheun »"
+          },
+          {
+            "en": "competition",
+            "fr": "une compétition, un concours",
+            "hint": "« kâm-peu-TI-cheun » : accent juste avant « cheun »"
+          },
+          {
+            "en": "mission",
+            "fr": "une mission",
+            "hint": "« MI-cheun » : comme dans Mission Bilingue !"
+          },
+          {
+            "en": "question",
+            "fr": "une question",
+            "hint": "« KWÈS-tcheun » : après un s, la fin devient « tcheun » ; et « kw » au début"
+          }
         ],
         "pairs": [],
         "practice": [
@@ -148,6 +304,83 @@
           "J'ai mis [[to]] + verbe après [[hope]], [[decide]], [[plan]] ou [[promise]]",
           "Après une préposition ([[in]], [[at]], [[about]]), j'ai mis le verbe en -ing",
           "J'ai écrit au moins cinq phrases vraies sur moi"
+        ]
+      }
+    },
+    {
+      "unit": "7.5",
+      "pron": {
+        "focus": "Le futur qui se contracte : I'll be, I'll have",
+        "ipa": "/əl/ – /əv/",
+        "explain": "À l'oral, le futur avancé se fait tout petit. [[I will be]] devient [[I'll be]] (« aïl-bi »), et dans [[I'll have finished]], le [[have]] perd son « h » et devient « euv » : « aï-leuv-FI-nicht ». Ce qu'on entend fort, c'est le **verbe principal** ([[finished]], [[flying]]). Le piège des francophones : appuyer sur chaque petit mot comme un robot. Et [[about to]] se colle aussi : « eu-BAOUT-teu ».",
+        "words": [
+          {
+            "en": "I'll be flying",
+            "fr": "je serai dans l'avion",
+            "hint": "« aïl-bi-FLAÏ-ing » : la force va sur le verbe"
+          },
+          {
+            "en": "we'll be waiting",
+            "fr": "nous serons en train d'attendre",
+            "hint": "« wil-bi-OUÉÏ-ting » : [[we'll]] se dit presque comme [[will]]"
+          },
+          {
+            "en": "I'll have finished",
+            "fr": "j'aurai fini",
+            "hint": "« aï-leuv-FI-nicht » : [[have]] devient « euv »"
+          },
+          {
+            "en": "she'll have left",
+            "fr": "elle sera partie",
+            "hint": "« chi-leuv-LÈFT » : accent sur le participe"
+          },
+          {
+            "en": "won't have",
+            "fr": "n'aura pas, n'auront pas…",
+            "hint": "« WÔN-teuv » : le « t » glisse sur « euv »"
+          },
+          {
+            "en": "about to",
+            "fr": "sur le point de",
+            "hint": "« eu-BAOUT-teu » : [[to]] tout petit"
+          },
+          {
+            "en": "due to",
+            "fr": "prévu pour",
+            "hint": "« DOU-teu » : au Canada, on dit souvent « dou » ; en Angleterre, « diou »"
+          },
+          {
+            "en": "schedule",
+            "fr": "horaire",
+            "hint": "« SKÈ-djoul » : au Canada, avec un « k » ; en Angleterre, on entend souvent « CHÈ-djoul »"
+          },
+          {
+            "en": "deadline",
+            "fr": "date limite",
+            "hint": "« DÈD-laïn » : accent au début"
+          },
+          {
+            "en": "countdown",
+            "fr": "compte à rebours",
+            "hint": "« KAOUNT-daoun » : accent au début"
+          }
+        ],
+        "pairs": [],
+        "practice": [
+          "This time tomorrow, I'll be flying to Halifax.",
+          "By noon, we'll have finished everything.",
+          "Hurry up, the bus is about to leave!"
+        ]
+      },
+      "mission": {
+        "type": "oral",
+        "prompt": "Ta famille part en voyage demain et ta tante anglophone t'appelle pour connaître le plan. Explique-lui à quelle heure l'avion doit partir, ce que vous serez en train de faire à différents moments, et ce que vous aurez déjà fait d'ici la fin de la journée.",
+        "model": "Our flight is due to leave at nine tomorrow morning. At seven, we'll be driving to the airport. This time tomorrow, we'll be flying over Quebec! By two o'clock, we'll have landed in Halifax. By the evening, we'll have eaten our first lobster. Sorry, I have to go: my favourite show is about to start!",
+        "checklist": [
+          "J'ai utilisé [[will be]] + verbe en -ing pour une action en cours",
+          "J'ai utilisé [[will have]] + participe passé avec [[by]]",
+          "J'ai utilisé [[be due to]] ou [[be about to]] + verbe de base",
+          "J'ai contracté : [[I'll be]], [[we'll have]] (« wil-euv »)"
         ]
       }
     }

@@ -27,15 +27,47 @@
         },
         {
           "type": "table",
-          "head": ["Début de phrase", "Sens", "Exemple"],
+          "head": [
+            "Début de phrase",
+            "Sens",
+            "Exemple"
+          ],
           "rows": [
-            ["Never / Rarely / Nowhere", "jamais / rarement / nulle part", "[[Rarely do we see moose in the city.]]"],
-            ["Not only … but also", "non seulement… mais aussi", "[[Not only did she win, but she also broke the record.]]"],
-            ["Hardly … when", "à peine… que", "[[Hardly had I sat down when the phone rang.]]"],
-            ["No sooner … than", "aussitôt… que", "[[No sooner had we arrived than it started to rain.]]"],
-            ["Under no circumstances / At no time", "en aucun cas / à aucun moment", "[[Under no circumstances should you open this door.]]"],
-            ["Little", "être loin de se douter", "[[Little did they know what was coming.]]"],
-            ["Only then / Only when / Only after", "c'est seulement alors / quand / après que", "[[Only then did I understand.]]"]
+            [
+              "Never / Rarely / Nowhere",
+              "jamais / rarement / nulle part",
+              "[[Rarely do we see moose in the city.]]"
+            ],
+            [
+              "Not only … but also",
+              "non seulement… mais aussi",
+              "[[Not only did she win, but she also broke the record.]]"
+            ],
+            [
+              "Hardly … when",
+              "à peine… que",
+              "[[Hardly had I sat down when the phone rang.]]"
+            ],
+            [
+              "No sooner … than",
+              "aussitôt… que",
+              "[[No sooner had we arrived than it started to rain.]]"
+            ],
+            [
+              "Under no circumstances / At no time",
+              "en aucun cas / à aucun moment",
+              "[[Under no circumstances should you open this door.]]"
+            ],
+            [
+              "Little",
+              "être loin de se douter",
+              "[[Little did they know what was coming.]]"
+            ],
+            [
+              "Only then / Only when / Only after",
+              "c'est seulement alors / quand / après que",
+              "[[Only then did I understand.]]"
+            ]
           ]
         },
         {
@@ -51,11 +83,26 @@
         {
           "type": "examples",
           "items": [
-            { "en": "Never have I eaten such a big poutine.", "fr": "Jamais je n'ai mangé une aussi grosse poutine." },
-            { "en": "Only when the bell rang did we stop working.", "fr": "C'est seulement quand la cloche a sonné qu'on a arrêté de travailler." },
-            { "en": "It was Mei who found the solution.", "fr": "C'est Mei qui a trouvé la solution." },
-            { "en": "What surprised me was the silence.", "fr": "Ce qui m'a surpris, c'est le silence." },
-            { "en": "I did call you, but you didn't answer!", "fr": "Je t'ai appelé, je te jure, mais tu n'as pas répondu !" }
+            {
+              "en": "Never have I eaten such a big poutine.",
+              "fr": "Jamais je n'ai mangé une aussi grosse poutine."
+            },
+            {
+              "en": "Only when the bell rang did we stop working.",
+              "fr": "C'est seulement quand la cloche a sonné qu'on a arrêté de travailler."
+            },
+            {
+              "en": "It was Mei who found the solution.",
+              "fr": "C'est Mei qui a trouvé la solution."
+            },
+            {
+              "en": "What surprised me was the silence.",
+              "fr": "Ce qui m'a surpris, c'est le silence."
+            },
+            {
+              "en": "I did call you, but you didn't answer!",
+              "fr": "Je t'ai appelé, je te jure, mais tu n'as pas répondu !"
+            }
           ]
         },
         {
@@ -66,79 +113,526 @@
           "type": "dialogue",
           "title": "Après le match de soccer",
           "lines": [
-            { "who": "Ethan", "en": "Never have I seen a goalie make so many saves!", "fr": "Jamais je n'ai vu une gardienne faire autant d'arrêts !" },
-            { "who": "Maya", "en": "I know! Not only did she stop every penalty, but she also scored the last one.", "fr": "Je sais ! Non seulement elle a arrêté tous les tirs de pénalité, mais en plus elle a marqué le dernier." },
-            { "who": "Ethan", "en": "Wait, it was the goalie who scored?", "fr": "Attends, c'est la gardienne qui a marqué ?" },
-            { "who": "Maya", "en": "Yes! Little did the other team know that she used to play forward.", "fr": "Oui ! L'autre équipe était loin de se douter qu'elle jouait autrefois à l'attaque." },
-            { "who": "Ethan", "en": "What I don't understand is why the coach didn't try that earlier.", "fr": "Ce que je ne comprends pas, c'est pourquoi l'entraîneur n'a pas essayé ça avant." },
-            { "who": "Maya", "en": "Only at the last minute did he think of it.", "fr": "C'est seulement à la dernière minute qu'il y a pensé." },
-            { "who": "Ethan", "en": "Well, I do hope she plays in the final!", "fr": "Eh bien, j'espère vraiment qu'elle va jouer en finale !" }
+            {
+              "who": "Ethan",
+              "en": "Never have I seen a goalie make so many saves!",
+              "fr": "Jamais je n'ai vu une gardienne faire autant d'arrêts !"
+            },
+            {
+              "who": "Maya",
+              "en": "I know! Not only did she stop every penalty, but she also scored the last one.",
+              "fr": "Je sais ! Non seulement elle a arrêté tous les tirs de pénalité, mais en plus elle a marqué le dernier."
+            },
+            {
+              "who": "Ethan",
+              "en": "Wait, it was the goalie who scored?",
+              "fr": "Attends, c'est la gardienne qui a marqué ?"
+            },
+            {
+              "who": "Maya",
+              "en": "Yes! Little did the other team know that she used to play forward.",
+              "fr": "Oui ! L'autre équipe était loin de se douter qu'elle jouait autrefois à l'attaque."
+            },
+            {
+              "who": "Ethan",
+              "en": "What I don't understand is why the coach didn't try that earlier.",
+              "fr": "Ce que je ne comprends pas, c'est pourquoi l'entraîneur n'a pas essayé ça avant."
+            },
+            {
+              "who": "Maya",
+              "en": "Only at the last minute did he think of it.",
+              "fr": "C'est seulement à la dernière minute qu'il y a pensé."
+            },
+            {
+              "who": "Ethan",
+              "en": "Well, I do hope she plays in the final!",
+              "fr": "Eh bien, j'espère vraiment qu'elle va jouer en finale !"
+            }
           ]
         }
       ],
       "vocab": [
-        { "en": "under no circumstances", "fr": "en aucun cas", "alt": ["on no account"], "ex": "Under no circumstances should you feed the bears." },
-        { "en": "not only … but also", "fr": "non seulement… mais aussi", "alt": [], "ex": "She is not only funny but also very kind." },
-        { "en": "hardly", "fr": "à peine (… when)", "alt": ["barely", "scarcely"], "ex": "Hardly had we sat down when the fire alarm rang." },
-        { "en": "no sooner … than", "fr": "aussitôt… que (mot à mot : pas plus tôt… que)", "alt": [], "ex": "No sooner had I left than it started to rain." },
-        { "en": "little did I know", "fr": "j'étais loin de me douter", "alt": [], "ex": "Little did I know that my friends were hiding behind the couch." },
-        { "en": "only then", "fr": "c'est seulement à ce moment-là que", "alt": [], "ex": "Only then did I see the note on the fridge." },
-        { "en": "at no time", "fr": "à aucun moment", "alt": [], "ex": "At no time did the coach raise his voice." },
-        { "en": "nowhere", "fr": "nulle part", "alt": [], "ex": "Nowhere is the snow as deep as in our backyard." },
-        { "en": "what I need is", "fr": "ce dont j'ai besoin, c'est", "alt": [], "ex": "What I need is a good night's sleep." },
-        { "en": "all I want is", "fr": "tout ce que je veux, c'est", "alt": [], "ex": "All I want is five more minutes of sleep." },
-        { "en": "rarely", "fr": "rarement", "alt": ["seldom"], "ex": "Rarely does my cat let anyone touch her." },
-        { "en": "indeed", "fr": "en effet, vraiment", "alt": [], "ex": "It was a long trip indeed." },
-        { "en": "astonished", "fr": "stupéfait", "alt": ["amazed", "stunned"], "ex": "We were astonished by the size of the moose." },
-        { "en": "breathtaking", "fr": "à couper le souffle", "alt": [], "ex": "The view from the top of the mountain was breathtaking." },
-        { "en": "spotless", "fr": "impeccable, d'une propreté parfaite", "alt": [], "ex": "After two hours of cleaning, the kitchen was spotless." },
-        { "en": "emphasize", "fr": "souligner, mettre l'accent sur", "alt": ["stress"], "ex": "The coach emphasized the importance of teamwork." },
-        { "en": "unbelievable", "fr": "incroyable", "alt": ["incredible"], "ex": "Your story is unbelievable!" },
-        { "en": "reveal", "fr": "révéler", "alt": [], "ex": "A good magician never reveals his tricks." }
+        {
+          "en": "under no circumstances",
+          "fr": "en aucun cas",
+          "alt": [
+            "on no account"
+          ],
+          "ex": "Under no circumstances should you feed the bears."
+        },
+        {
+          "en": "not only … but also",
+          "fr": "non seulement… mais aussi",
+          "alt": [],
+          "ex": "She is not only funny but also very kind."
+        },
+        {
+          "en": "hardly",
+          "fr": "à peine (… when)",
+          "alt": [
+            "barely",
+            "scarcely"
+          ],
+          "ex": "Hardly had we sat down when the fire alarm rang."
+        },
+        {
+          "en": "no sooner … than",
+          "fr": "aussitôt… que (mot à mot : pas plus tôt… que)",
+          "alt": [],
+          "ex": "No sooner had I left than it started to rain."
+        },
+        {
+          "en": "little did I know",
+          "fr": "j'étais loin de me douter",
+          "alt": [],
+          "ex": "Little did I know that my friends were hiding behind the couch."
+        },
+        {
+          "en": "only then",
+          "fr": "c'est seulement à ce moment-là que",
+          "alt": [],
+          "ex": "Only then did I see the note on the fridge."
+        },
+        {
+          "en": "at no time",
+          "fr": "à aucun moment",
+          "alt": [],
+          "ex": "At no time did the coach raise his voice."
+        },
+        {
+          "en": "nowhere",
+          "fr": "nulle part",
+          "alt": [],
+          "ex": "Nowhere is the snow as deep as in our backyard."
+        },
+        {
+          "en": "what I need is",
+          "fr": "ce dont j'ai besoin, c'est",
+          "alt": [],
+          "ex": "What I need is a good night's sleep."
+        },
+        {
+          "en": "all I want is",
+          "fr": "tout ce que je veux, c'est",
+          "alt": [],
+          "ex": "All I want is five more minutes of sleep."
+        },
+        {
+          "en": "rarely",
+          "fr": "rarement",
+          "alt": [
+            "seldom"
+          ],
+          "ex": "Rarely does my cat let anyone touch her."
+        },
+        {
+          "en": "indeed",
+          "fr": "en effet, vraiment",
+          "alt": [],
+          "ex": "It was a long trip indeed."
+        },
+        {
+          "en": "astonished",
+          "fr": "stupéfait",
+          "alt": [
+            "amazed",
+            "stunned"
+          ],
+          "ex": "We were astonished by the size of the moose."
+        },
+        {
+          "en": "breathtaking",
+          "fr": "à couper le souffle",
+          "alt": [],
+          "ex": "The view from the top of the mountain was breathtaking."
+        },
+        {
+          "en": "spotless",
+          "fr": "impeccable, d'une propreté parfaite",
+          "alt": [],
+          "ex": "After two hours of cleaning, the kitchen was spotless."
+        },
+        {
+          "en": "emphasize",
+          "fr": "souligner, mettre l'accent sur",
+          "alt": [
+            "stress"
+          ],
+          "ex": "The coach emphasized the importance of teamwork."
+        },
+        {
+          "en": "unbelievable",
+          "fr": "incroyable",
+          "alt": [
+            "incredible"
+          ],
+          "ex": "Your story is unbelievable!"
+        },
+        {
+          "en": "reveal",
+          "fr": "révéler",
+          "alt": [],
+          "ex": "A good magician never reveals his tricks."
+        }
       ],
       "sentences": [
-        { "en": "Never have I seen such a beautiful sunset.", "fr": "Jamais je n'ai vu un aussi beau coucher de soleil.", "trap": ["did", "saw"], "alt": ["I have never seen such a beautiful sunset."] },
-        { "en": "Little did we know that the test had been cancelled.", "fr": "Nous étions loin de nous douter que l'examen avait été annulé.", "trap": ["knew", "didn't"], "alt": [] },
-        { "en": "Not only did Félix win the race, but he also broke the school record.", "fr": "Non seulement Félix a gagné la course, mais il a aussi battu le record de l'école.", "trap": ["won", "does"], "alt": [] },
-        { "en": "Hardly had we left the house when it started to rain.", "fr": "À peine étions-nous sortis de la maison qu'il a commencé à pleuvoir.", "trap": ["than", "did"], "alt": ["We had hardly left the house when it started to rain."] },
-        { "en": "No sooner had the bell rung than everyone ran outside.", "fr": "Aussitôt la cloche sonnée, tout le monde a couru dehors.", "trap": ["when", "rang"], "alt": ["The bell had no sooner rung than everyone ran outside."] },
-        { "en": "Under no circumstances should you share your password.", "fr": "En aucun cas tu ne dois partager ton mot de passe.", "trap": ["shouldn't", "don't"], "alt": ["You should share your password under no circumstances."] },
-        { "en": "Only then did I realize how lucky I was.", "fr": "C'est seulement à ce moment-là que j'ai compris la chance que j'avais.", "trap": ["realized", "I've"], "alt": [] },
-        { "en": "What I really need is a long weekend at the cottage.", "fr": "Ce dont j'ai vraiment besoin, c'est d'une longue fin de semaine au chalet.", "trap": ["that", "are"], "alt": ["A long weekend at the cottage is what I really need."] },
-        { "en": "It was Zoé who found the missing keys under the couch.", "fr": "C'est Zoé qui a trouvé les clés perdues sous le divan.", "trap": ["which", "what"], "alt": [] },
-        { "en": "I do like your drawing, but the colours are too dark.", "fr": "J'aime vraiment ton dessin, mais les couleurs sont trop foncées.", "trap": ["likes", "does"], "alt": [] },
-        { "en": "We did warn you that the ice was too thin!", "fr": "On t'avait bien prévenu que la glace était trop mince !", "trap": ["warned", "does"], "alt": [] }
+        {
+          "en": "Never have I seen such a beautiful sunset.",
+          "fr": "Jamais je n'ai vu un aussi beau coucher de soleil.",
+          "trap": [
+            "did",
+            "saw"
+          ],
+          "alt": [
+            "I have never seen such a beautiful sunset."
+          ]
+        },
+        {
+          "en": "Little did we know that the test had been cancelled.",
+          "fr": "Nous étions loin de nous douter que l'examen avait été annulé.",
+          "trap": [
+            "knew",
+            "didn't"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Not only did Félix win the race, but he also broke the school record.",
+          "fr": "Non seulement Félix a gagné la course, mais il a aussi battu le record de l'école.",
+          "trap": [
+            "won",
+            "does"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Hardly had we left the house when it started to rain.",
+          "fr": "À peine étions-nous sortis de la maison qu'il a commencé à pleuvoir.",
+          "trap": [
+            "than",
+            "did"
+          ],
+          "alt": [
+            "We had hardly left the house when it started to rain."
+          ]
+        },
+        {
+          "en": "No sooner had the bell rung than everyone ran outside.",
+          "fr": "Aussitôt la cloche sonnée, tout le monde a couru dehors.",
+          "trap": [
+            "when",
+            "rang"
+          ],
+          "alt": [
+            "The bell had no sooner rung than everyone ran outside."
+          ]
+        },
+        {
+          "en": "Under no circumstances should you share your password.",
+          "fr": "En aucun cas tu ne dois partager ton mot de passe.",
+          "trap": [
+            "shouldn't",
+            "don't"
+          ],
+          "alt": [
+            "You should share your password under no circumstances."
+          ]
+        },
+        {
+          "en": "Only then did I realize how lucky I was.",
+          "fr": "C'est seulement à ce moment-là que j'ai compris la chance que j'avais.",
+          "trap": [
+            "realized",
+            "I've"
+          ],
+          "alt": []
+        },
+        {
+          "en": "What I really need is a long weekend at the cottage.",
+          "fr": "Ce dont j'ai vraiment besoin, c'est d'une longue fin de semaine au chalet.",
+          "trap": [
+            "that",
+            "are"
+          ],
+          "alt": [
+            "A long weekend at the cottage is what I really need."
+          ]
+        },
+        {
+          "en": "It was Zoé who found the missing keys under the couch.",
+          "fr": "C'est Zoé qui a trouvé les clés perdues sous le divan.",
+          "trap": [
+            "which",
+            "what"
+          ],
+          "alt": []
+        },
+        {
+          "en": "I do like your drawing, but the colours are too dark.",
+          "fr": "J'aime vraiment ton dessin, mais les couleurs sont trop foncées.",
+          "trap": [
+            "likes",
+            "does"
+          ],
+          "alt": []
+        },
+        {
+          "en": "We did warn you that the ice was too thin!",
+          "fr": "On t'avait bien prévenu que la glace était trop mince !",
+          "trap": [
+            "warned",
+            "does"
+          ],
+          "alt": []
+        }
       ],
       "grammar": [
-        { "type": "mcq", "q": "Never ___ such a delicious poutine.", "choices": ["I have eaten", "have I eaten", "I ate", "did I ate"], "answer": 1, "explain": "Never en début de phrase → inversion : auxiliaire (have) + sujet (I) + participe (eaten)." },
-        { "type": "mcq", "q": "Not only ___ the dishes, but he also cleaned his room.", "choices": ["he washed", "he did wash", "washed he", "did he wash"], "answer": 3, "explain": "Après Not only en début de phrase, on inverse avec did : did he wash (verbe à la base)." },
-        { "type": "mcq", "q": "No sooner had we sat down ___ the movie started.", "choices": ["than", "when", "that", "then"], "answer": 0, "explain": "On dit No sooner… than. (C'est Hardly qui va avec when.)" },
-        { "type": "mcq", "q": "Hardly had she closed the door ___ someone knocked.", "choices": ["than", "then", "when", "that"], "answer": 2, "explain": "On dit Hardly… when. (C'est No sooner qui va avec than.)" },
-        { "type": "mcq", "q": "Only when I got home ___ that my phone was missing.", "choices": ["I noticed", "did I notice", "I did notice", "noticed I"], "answer": 1, "explain": "Avec Only when, l'inversion se fait dans la deuxième partie de la phrase : did I notice." },
-        { "type": "mcq", "q": "It was Malik ___ scored the winning goal.", "choices": ["which", "what", "who", "whom"], "answer": 2, "explain": "Dans une phrase clivée sur une personne : It was Malik who… (ou that). Jamais which ni what pour une personne." },
-        { "type": "fill", "q": "Never ___ so much snow in one day!", "hint": "I / see (present perfect)", "answer": ["have I seen"], "explain": "Never en tête → inversion : have I seen." },
-        { "type": "fill", "q": "Little ___ that his friends were planning a surprise.", "hint": "he / know (passé)", "answer": ["did he know"], "explain": "Little en tête → did + sujet + verbe à la base : did he know." },
-        { "type": "fill", "q": "Under no circumstances ___ leave the room during the exam.", "hint": "you / should", "answer": ["should you"], "explain": "Under no circumstances en tête → inversion : should you." },
-        { "type": "fill", "q": "Rarely ___ late for school.", "hint": "Ethan / be (présent)", "answer": ["is Ethan"], "explain": "Rarely en tête → on inverse be et le sujet : is Ethan." },
-        { "type": "fill", "q": "What I love about winter ___ skating on the canal.", "hint": "be (présent)", "answer": ["is"], "explain": "Phrase clivée avec What : le verbe be est au singulier → is." },
-        { "type": "fill", "q": "You say I never help, but I ___ the dishes yesterday!", "hint": "do (passé, avec insistance)", "answer": ["did do"], "explain": "Do d'insistance au passé : did + verbe à la base → I did do the dishes." },
-        { "type": "error", "q": "Never have I saw such a mess.", "wrong": 3, "fix": ["seen"], "explain": "Après have, il faut le participe passé : have I seen, pas saw." },
-        { "type": "error", "q": "No sooner had we arrived when it began to snow.", "wrong": 5, "fix": ["than"], "explain": "No sooner va toujours avec than." },
-        { "type": "error", "q": "Not only did she sang, but she also danced.", "wrong": 4, "fix": ["sing"], "explain": "Après did, le verbe revient à la base : did she sing." },
-        { "type": "error", "q": "It was Amir which helped me with my project.", "wrong": 3, "fix": ["who", "that"], "explain": "Amir est une personne : It was Amir who (ou that) helped me." },
-        { "type": "error", "q": "Only after the game did we went for pizza.", "wrong": 6, "fix": ["go"], "explain": "Après did, le verbe est à la base : did we go." },
-        { "type": "error", "q": "She does likes your idea; she's just shy.", "wrong": 2, "fix": ["like"], "explain": "Do d'insistance : does + verbe à la base → she does like." }
+        {
+          "type": "mcq",
+          "q": "Never ___ such a delicious poutine.",
+          "choices": [
+            "I have eaten",
+            "have I eaten",
+            "I ate",
+            "did I ate"
+          ],
+          "answer": 1,
+          "explain": "Never en début de phrase → inversion : auxiliaire (have) + sujet (I) + participe (eaten)."
+        },
+        {
+          "type": "mcq",
+          "q": "Not only ___ the dishes, but he also cleaned his room.",
+          "choices": [
+            "he washed",
+            "he did wash",
+            "washed he",
+            "did he wash"
+          ],
+          "answer": 3,
+          "explain": "Après Not only en début de phrase, on inverse avec did : did he wash (verbe à la base)."
+        },
+        {
+          "type": "mcq",
+          "q": "No sooner had we sat down ___ the movie started.",
+          "choices": [
+            "than",
+            "when",
+            "that",
+            "then"
+          ],
+          "answer": 0,
+          "explain": "On dit No sooner… than. (C'est Hardly qui va avec when.)"
+        },
+        {
+          "type": "mcq",
+          "q": "Hardly had she closed the door ___ someone knocked.",
+          "choices": [
+            "than",
+            "then",
+            "when",
+            "that"
+          ],
+          "answer": 2,
+          "explain": "On dit Hardly… when. (C'est No sooner qui va avec than.)"
+        },
+        {
+          "type": "mcq",
+          "q": "Only when I got home ___ that my phone was missing.",
+          "choices": [
+            "I noticed",
+            "did I notice",
+            "I did notice",
+            "noticed I"
+          ],
+          "answer": 1,
+          "explain": "Avec Only when, l'inversion se fait dans la deuxième partie de la phrase : did I notice."
+        },
+        {
+          "type": "mcq",
+          "q": "It was Malik ___ scored the winning goal.",
+          "choices": [
+            "which",
+            "what",
+            "who",
+            "whom"
+          ],
+          "answer": 2,
+          "explain": "Dans une phrase clivée sur une personne : It was Malik who… (ou that). Jamais which ni what pour une personne."
+        },
+        {
+          "type": "fill",
+          "q": "Never ___ so much snow in one day!",
+          "hint": "I / see (present perfect)",
+          "answer": [
+            "have I seen"
+          ],
+          "explain": "Never en tête → inversion : have I seen."
+        },
+        {
+          "type": "fill",
+          "q": "Little ___ that his friends were planning a surprise.",
+          "hint": "he / know (passé)",
+          "answer": [
+            "did he know"
+          ],
+          "explain": "Little en tête → did + sujet + verbe à la base : did he know."
+        },
+        {
+          "type": "fill",
+          "q": "Under no circumstances ___ leave the room during the exam.",
+          "hint": "you / should",
+          "answer": [
+            "should you"
+          ],
+          "explain": "Under no circumstances en tête → inversion : should you."
+        },
+        {
+          "type": "fill",
+          "q": "Rarely ___ late for school.",
+          "hint": "Ethan / be (présent)",
+          "answer": [
+            "is Ethan"
+          ],
+          "explain": "Rarely en tête → on inverse be et le sujet : is Ethan."
+        },
+        {
+          "type": "fill",
+          "q": "What I love about winter ___ skating on the canal.",
+          "hint": "be (présent)",
+          "answer": [
+            "is"
+          ],
+          "explain": "Phrase clivée avec What : le verbe be est au singulier → is."
+        },
+        {
+          "type": "fill",
+          "q": "You say I never help, but I ___ the dishes yesterday!",
+          "hint": "do (passé, avec insistance)",
+          "answer": [
+            "did do"
+          ],
+          "explain": "Do d'insistance au passé : did + verbe à la base → I did do the dishes."
+        },
+        {
+          "type": "error",
+          "q": "Never have I saw such a mess.",
+          "wrong": 3,
+          "fix": [
+            "seen"
+          ],
+          "explain": "Après have, il faut le participe passé : have I seen, pas saw."
+        },
+        {
+          "type": "error",
+          "q": "No sooner had we arrived when it began to snow.",
+          "wrong": 5,
+          "fix": [
+            "than"
+          ],
+          "explain": "No sooner va toujours avec than."
+        },
+        {
+          "type": "error",
+          "q": "Not only did she sang, but she also danced.",
+          "wrong": 4,
+          "fix": [
+            "sing"
+          ],
+          "explain": "Après did, le verbe revient à la base : did she sing."
+        },
+        {
+          "type": "error",
+          "q": "It was Amir which helped me with my project.",
+          "wrong": 3,
+          "fix": [
+            "who",
+            "that"
+          ],
+          "explain": "Amir est une personne : It was Amir who (ou that) helped me."
+        },
+        {
+          "type": "error",
+          "q": "Only after the game did we went for pizza.",
+          "wrong": 6,
+          "fix": [
+            "go"
+          ],
+          "explain": "Après did, le verbe est à la base : did we go."
+        },
+        {
+          "type": "error",
+          "q": "She does likes your idea; she's just shy.",
+          "wrong": 2,
+          "fix": [
+            "like"
+          ],
+          "explain": "Do d'insistance : does + verbe à la base → she does like."
+        }
       ],
       "reading": {
         "title": "The Night the Lights Went Out",
         "text": "Never had Priya been so excited about a sleepover. Her cousin Léa had come all the way from Montreal, and the two girls had planned the perfect evening: pizza, a movie and a board game that would probably last until midnight.\n\nLittle did they know that the weather had other plans. Around eight o'clock, freezing rain began to fall on Ottawa. Hardly had the movie started when the lights flickered and the screen went black. The whole street was dark.\n\nWhat surprised Priya most was how quiet the house became. No fridge humming, no music from her brother's room, nothing at all. Only then did she realize how much noise their machines made every day.\n\nHer dad lit a few candles and found an old lantern in the basement. Not only did he find the board game in the dark, but he also managed to make hot chocolate on the gas stove. Under no circumstances, he told the girls, were they to open the fridge, because the food had to stay cold.\n\nIt was Léa who suggested telling stories instead of playing. At first, Priya rolled her eyes. Rarely did her cousin have good ideas, or so she thought. But Léa's story about a lost beaver who dreamed of becoming a hockey player was so funny that even Priya's dad laughed until he cried.\n\nNo sooner had they finished the third story than the lights came back on. The fridge started humming, the movie started playing again, and Priya's brother cheered from upstairs.\n\nStrangely, nobody wanted to watch the movie anymore. “Can we turn the lights off again?” Léa asked. And she did mean it.\n\nThe next morning, Priya wrote one sentence in her diary: “Never have I enjoyed a blackout so much.”",
         "questions": [
-          { "q": "Why was Léa at Priya's house?", "choices": ["She lived next door.", "Her own house had lost power.", "She had come from Montreal for a sleepover.", "She wanted to borrow a board game."], "answer": 2 },
-          { "q": "What happened just after the movie started?", "choices": ["The lights went out.", "Priya's brother started playing music.", "Léa told a story.", "The freezing rain stopped."], "answer": 0 },
-          { "q": "Why did Priya's dad tell the girls not to open the fridge?", "choices": ["He was hiding a surprise in it.", "The fridge door was broken.", "It was making too much noise.", "He wanted to keep the food cold."], "answer": 3 },
-          { "q": "Before that night, what did Priya think of Léa's ideas?", "choices": ["She thought they were usually excellent.", "She thought they were usually not very good.", "She thought they were too scary.", "She had never heard any of them."], "answer": 1 },
-          { "q": "Why did nobody want to watch the movie anymore?", "choices": ["The screen was still broken.", "It was too late to watch anything.", "They had enjoyed the evening without electricity more.", "Priya's brother wanted the TV."], "answer": 2 },
-          { "q": "What does the last sentence of the story suggest?", "choices": ["The blackout became a happy memory for Priya.", "Priya was angry about the blackout.", "Priya was scared during the whole night.", "Priya wants to stop writing in her diary."], "answer": 0 }
+          {
+            "q": "Why was Léa at Priya's house?",
+            "choices": [
+              "She lived next door.",
+              "Her own house had lost power.",
+              "She had come from Montreal for a sleepover.",
+              "She wanted to borrow a board game."
+            ],
+            "answer": 2
+          },
+          {
+            "q": "What happened just after the movie started?",
+            "choices": [
+              "The lights went out.",
+              "Priya's brother started playing music.",
+              "Léa told a story.",
+              "The freezing rain stopped."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Why did Priya's dad tell the girls not to open the fridge?",
+            "choices": [
+              "He was hiding a surprise in it.",
+              "The fridge door was broken.",
+              "It was making too much noise.",
+              "He wanted to keep the food cold."
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Before that night, what did Priya think of Léa's ideas?",
+            "choices": [
+              "She thought they were usually excellent.",
+              "She thought they were usually not very good.",
+              "She thought they were too scary.",
+              "She had never heard any of them."
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Why did nobody want to watch the movie anymore?",
+            "choices": [
+              "The screen was still broken.",
+              "It was too late to watch anything.",
+              "They had enjoyed the evening without electricity more.",
+              "Priya's brother wanted the TV."
+            ],
+            "answer": 2
+          },
+          {
+            "q": "What does the last sentence of the story suggest?",
+            "choices": [
+              "The blackout became a happy memory for Priya.",
+              "Priya was angry about the blackout.",
+              "Priya was scared during the whole night.",
+              "Priya wants to stop writing in her diary."
+            ],
+            "answer": 0
+          }
         ]
       }
     },
@@ -154,19 +648,67 @@
         },
         {
           "type": "table",
-          "head": ["Familier / neutre", "Formel", "Sens"],
+          "head": [
+            "Familier / neutre",
+            "Formel",
+            "Sens"
+          ],
           "rows": [
-            ["ask for", "[[request]]", "demander"],
-            ["help", "[[assist]]", "aider"],
-            ["need", "[[require]]", "avoir besoin de"],
-            ["buy", "[[purchase]]", "acheter"],
-            ["find out", "[[discover]]", "découvrir, apprendre"],
-            ["give back", "[[return]]", "rendre"],
-            ["tell", "[[inform]]", "informer"],
-            ["get", "[[receive]]", "recevoir"],
-            ["about", "[[regarding]]", "au sujet de"],
-            ["enough", "[[sufficient]]", "suffisant"],
-            ["say sorry", "[[apologize]]", "s'excuser"]
+            [
+              "ask for",
+              "[[request]]",
+              "demander"
+            ],
+            [
+              "help",
+              "[[assist]]",
+              "aider"
+            ],
+            [
+              "need",
+              "[[require]]",
+              "avoir besoin de"
+            ],
+            [
+              "buy",
+              "[[purchase]]",
+              "acheter"
+            ],
+            [
+              "find out",
+              "[[discover]]",
+              "découvrir, apprendre"
+            ],
+            [
+              "give back",
+              "[[return]]",
+              "rendre"
+            ],
+            [
+              "tell",
+              "[[inform]]",
+              "informer"
+            ],
+            [
+              "get",
+              "[[receive]]",
+              "recevoir"
+            ],
+            [
+              "about",
+              "[[regarding]]",
+              "au sujet de"
+            ],
+            [
+              "enough",
+              "[[sufficient]]",
+              "suffisant"
+            ],
+            [
+              "say sorry",
+              "[[apologize]]",
+              "s'excuser"
+            ]
           ]
         },
         {
@@ -187,11 +729,26 @@
         {
           "type": "examples",
           "items": [
-            { "en": "I am writing to request information about your summer camp.", "fr": "Je vous écris pour demander des renseignements sur votre camp d'été." },
-            { "en": "I would be grateful if you could reply by Friday.", "fr": "Je vous serais reconnaissant de répondre d'ici vendredi." },
-            { "en": "Please find attached my application form.", "fr": "Vous trouverez ci-joint mon formulaire d'inscription." },
-            { "en": "We apologize for any inconvenience.", "fr": "Nous nous excusons pour tout désagrément." },
-            { "en": "I'm gonna call you after supper.", "fr": "Je vais t'appeler après le souper." }
+            {
+              "en": "I am writing to request information about your summer camp.",
+              "fr": "Je vous écris pour demander des renseignements sur votre camp d'été."
+            },
+            {
+              "en": "I would be grateful if you could reply by Friday.",
+              "fr": "Je vous serais reconnaissant de répondre d'ici vendredi."
+            },
+            {
+              "en": "Please find attached my application form.",
+              "fr": "Vous trouverez ci-joint mon formulaire d'inscription."
+            },
+            {
+              "en": "We apologize for any inconvenience.",
+              "fr": "Nous nous excusons pour tout désagrément."
+            },
+            {
+              "en": "I'm gonna call you after supper.",
+              "fr": "Je vais t'appeler après le souper."
+            }
           ]
         },
         {
@@ -202,79 +759,510 @@
           "type": "dialogue",
           "title": "Un courriel à la bibliothèque",
           "lines": [
-            { "who": "Sofia", "en": "I gotta write to the library. My book is two weeks late!", "fr": "Il faut que j'écrive à la bibliothèque. Mon livre a deux semaines de retard !" },
-            { "who": "Olivia", "en": "Okay, but don't start with “Hey”. Start with “Dear Sir or Madam”.", "fr": "OK, mais ne commence pas par « Hey ». Commence par « Dear Sir or Madam »." },
-            { "who": "Sofia", "en": "Then what? “I wanna give the book back later”?", "fr": "Et après ? « Je veux rendre le livre plus tard » ?" },
-            { "who": "Olivia", "en": "No way! Write: I am writing to request a few more days to return the book.", "fr": "Pas question ! Écris : Je vous écris pour demander quelques jours de plus pour rendre le livre." },
-            { "who": "Sofia", "en": "That sounds so much better. How do I end it?", "fr": "C'est vraiment mieux. Comment je termine ?" },
-            { "who": "Olivia", "en": "Thank you in advance for your assistance. I look forward to hearing from you.", "fr": "Je vous remercie à l'avance de votre aide. Au plaisir d'avoir de vos nouvelles." },
-            { "who": "Sofia", "en": "Perfect. Kind regards, Sofia!", "fr": "Parfait. Cordialement, Sofia !" }
+            {
+              "who": "Sofia",
+              "en": "I gotta write to the library. My book is two weeks late!",
+              "fr": "Il faut que j'écrive à la bibliothèque. Mon livre a deux semaines de retard !"
+            },
+            {
+              "who": "Olivia",
+              "en": "Okay, but don't start with “Hey”. Start with “Dear Sir or Madam”.",
+              "fr": "OK, mais ne commence pas par « Hey ». Commence par « Dear Sir or Madam »."
+            },
+            {
+              "who": "Sofia",
+              "en": "Then what? “I wanna give the book back later”?",
+              "fr": "Et après ? « Je veux rendre le livre plus tard » ?"
+            },
+            {
+              "who": "Olivia",
+              "en": "No way! Write: I am writing to request a few more days to return the book.",
+              "fr": "Pas question ! Écris : Je vous écris pour demander quelques jours de plus pour rendre le livre."
+            },
+            {
+              "who": "Sofia",
+              "en": "That sounds so much better. How do I end it?",
+              "fr": "C'est vraiment mieux. Comment je termine ?"
+            },
+            {
+              "who": "Olivia",
+              "en": "Thank you in advance for your assistance. I look forward to hearing from you.",
+              "fr": "Je vous remercie à l'avance de votre aide. Au plaisir d'avoir de vos nouvelles."
+            },
+            {
+              "who": "Sofia",
+              "en": "Perfect. Kind regards, Sofia!",
+              "fr": "Parfait. Cordialement, Sofia !"
+            }
           ]
         }
       ],
       "vocab": [
-        { "en": "request", "fr": "demander (formel)", "alt": [], "ex": "I am writing to request a refund." },
-        { "en": "assist", "fr": "aider (formel)", "alt": [], "ex": "Our staff will be happy to assist you." },
-        { "en": "require", "fr": "avoir besoin de, exiger (formel)", "alt": [], "ex": "This job requires a lot of patience." },
-        { "en": "purchase", "fr": "acheter (formel)", "alt": [], "ex": "You can purchase tickets at the door." },
-        { "en": "discover", "fr": "découvrir, apprendre (formel)", "alt": [], "ex": "We discovered that the museum was closed." },
-        { "en": "return", "fr": "rendre, remettre (formel)", "alt": [], "ex": "Please return the books before the end of June." },
-        { "en": "inform", "fr": "informer, prévenir (formel)", "alt": ["notify"], "ex": "We will inform you if anything changes." },
-        { "en": "receive", "fr": "recevoir", "alt": [], "ex": "Did you receive my email?" },
-        { "en": "regarding", "fr": "au sujet de, concernant", "alt": ["concerning"], "ex": "I have a question regarding the field trip." },
-        { "en": "sufficient", "fr": "suffisant (formel)", "alt": [], "ex": "One hour should be sufficient." },
-        { "en": "apologize", "fr": "s'excuser (formel)", "alt": [], "ex": "We apologize for the delay." },
-        { "en": "attached", "fr": "ci-joint, en pièce jointe", "alt": [], "ex": "Please find attached a copy of my report card." },
-        { "en": "grateful", "fr": "reconnaissant", "alt": ["thankful"], "ex": "I would be grateful if you could help me." },
-        { "en": "look forward to", "fr": "avoir hâte de (+ -ing)", "alt": [], "ex": "I look forward to meeting you." },
-        { "en": "sincerely", "fr": "veuillez agréer… (formule de fin très formelle)", "alt": [], "ex": "Sincerely, Jaden Moreau" },
-        { "en": "kind regards", "fr": "cordialement (fin de courriel)", "alt": ["best regards"], "ex": "Kind regards, Olivia" },
-        { "en": "gonna", "fr": "aller + verbe (familier, à l'oral)", "alt": [], "ex": "I'm gonna be late." },
-        { "en": "wanna", "fr": "vouloir + verbe (familier, à l'oral)", "alt": [], "ex": "Do you wanna play outside?" },
-        { "en": "gotta", "fr": "devoir + verbe (familier, à l'oral)", "alt": [], "ex": "Sorry, I gotta go!" },
-        { "en": "inconvenience", "fr": "dérangement, désagrément", "alt": [], "ex": "We apologize for any inconvenience." }
+        {
+          "en": "request",
+          "fr": "demander (formel)",
+          "alt": [],
+          "ex": "I am writing to request a refund."
+        },
+        {
+          "en": "assist",
+          "fr": "aider (formel)",
+          "alt": [],
+          "ex": "Our staff will be happy to assist you."
+        },
+        {
+          "en": "require",
+          "fr": "avoir besoin de, exiger (formel)",
+          "alt": [],
+          "ex": "This job requires a lot of patience."
+        },
+        {
+          "en": "purchase",
+          "fr": "acheter (formel)",
+          "alt": [],
+          "ex": "You can purchase tickets at the door."
+        },
+        {
+          "en": "discover",
+          "fr": "découvrir, apprendre (formel)",
+          "alt": [],
+          "ex": "We discovered that the museum was closed."
+        },
+        {
+          "en": "return",
+          "fr": "rendre, remettre (formel)",
+          "alt": [],
+          "ex": "Please return the books before the end of June."
+        },
+        {
+          "en": "inform",
+          "fr": "informer, prévenir (formel)",
+          "alt": [
+            "notify"
+          ],
+          "ex": "We will inform you if anything changes."
+        },
+        {
+          "en": "receive",
+          "fr": "recevoir",
+          "alt": [],
+          "ex": "Did you receive my email?"
+        },
+        {
+          "en": "regarding",
+          "fr": "au sujet de, concernant",
+          "alt": [
+            "concerning"
+          ],
+          "ex": "I have a question regarding the field trip."
+        },
+        {
+          "en": "sufficient",
+          "fr": "suffisant (formel)",
+          "alt": [],
+          "ex": "One hour should be sufficient."
+        },
+        {
+          "en": "apologize",
+          "fr": "s'excuser (formel)",
+          "alt": [],
+          "ex": "We apologize for the delay."
+        },
+        {
+          "en": "attached",
+          "fr": "ci-joint, en pièce jointe",
+          "alt": [],
+          "ex": "Please find attached a copy of my report card."
+        },
+        {
+          "en": "grateful",
+          "fr": "reconnaissant",
+          "alt": [
+            "thankful"
+          ],
+          "ex": "I would be grateful if you could help me."
+        },
+        {
+          "en": "look forward to",
+          "fr": "avoir hâte de (+ -ing)",
+          "alt": [],
+          "ex": "I look forward to meeting you."
+        },
+        {
+          "en": "sincerely",
+          "fr": "veuillez agréer… (formule de fin très formelle)",
+          "alt": [],
+          "ex": "Sincerely, Jaden Moreau"
+        },
+        {
+          "en": "kind regards",
+          "fr": "cordialement (fin de courriel)",
+          "alt": [
+            "best regards"
+          ],
+          "ex": "Kind regards, Olivia"
+        },
+        {
+          "en": "gonna",
+          "fr": "aller + verbe (familier, à l'oral)",
+          "alt": [],
+          "ex": "I'm gonna be late."
+        },
+        {
+          "en": "wanna",
+          "fr": "vouloir + verbe (familier, à l'oral)",
+          "alt": [],
+          "ex": "Do you wanna play outside?"
+        },
+        {
+          "en": "gotta",
+          "fr": "devoir + verbe (familier, à l'oral)",
+          "alt": [],
+          "ex": "Sorry, I gotta go!"
+        },
+        {
+          "en": "inconvenience",
+          "fr": "dérangement, désagrément",
+          "alt": [],
+          "ex": "We apologize for any inconvenience."
+        }
       ],
       "sentences": [
-        { "en": "I am writing to request information about your summer camp.", "fr": "Je vous écris pour demander des renseignements sur votre camp d'été.", "trap": ["for", "asking"], "alt": [] },
-        { "en": "I look forward to hearing from you.", "fr": "Au plaisir d'avoir de vos nouvelles.", "trap": ["hear", "forwards"], "alt": [] },
-        { "en": "I would be grateful if you could send me the schedule.", "fr": "Je vous serais reconnaissant de m'envoyer l'horaire.", "trap": ["sent", "gratefully"], "alt": [] },
-        { "en": "Please find attached a copy of my report card.", "fr": "Vous trouverez ci-joint une copie de mon bulletin.", "trap": ["join", "attach"], "alt": ["Please find a copy of my report card attached."] },
-        { "en": "We regret to inform you that the pool is closed today.", "fr": "Nous avons le regret de vous informer que la piscine est fermée aujourd'hui.", "trap": ["informing", "closing"], "alt": ["We regret to inform you that today the pool is closed."] },
-        { "en": "Do you wanna come to my place?", "fr": "Tu veux venir chez moi ?", "trap": ["want", "gonna"], "alt": [] },
-        { "en": "We apologize for any inconvenience this may cause.", "fr": "Nous nous excusons pour tout désagrément que cela pourrait causer.", "trap": ["excuse", "inconvenient"], "alt": [] },
-        { "en": "I am writing to complain about the noise from the construction site.", "fr": "Je vous écris pour me plaindre du bruit du chantier.", "trap": ["complaining", "for"], "alt": [] },
-        { "en": "Thank you in advance for your assistance.", "fr": "Je vous remercie à l'avance de votre aide.", "trap": ["advanced", "assist"], "alt": [] },
-        { "en": "I gotta go home, my mom is calling me.", "fr": "Faut que je rentre, ma mère m'appelle.", "trap": ["got", "to"], "alt": ["My mom is calling me, I gotta go home."] }
+        {
+          "en": "I am writing to request information about your summer camp.",
+          "fr": "Je vous écris pour demander des renseignements sur votre camp d'été.",
+          "trap": [
+            "for",
+            "asking"
+          ],
+          "alt": []
+        },
+        {
+          "en": "I look forward to hearing from you.",
+          "fr": "Au plaisir d'avoir de vos nouvelles.",
+          "trap": [
+            "hear",
+            "forwards"
+          ],
+          "alt": []
+        },
+        {
+          "en": "I would be grateful if you could send me the schedule.",
+          "fr": "Je vous serais reconnaissant de m'envoyer l'horaire.",
+          "trap": [
+            "sent",
+            "gratefully"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Please find attached a copy of my report card.",
+          "fr": "Vous trouverez ci-joint une copie de mon bulletin.",
+          "trap": [
+            "join",
+            "attach"
+          ],
+          "alt": [
+            "Please find a copy of my report card attached."
+          ]
+        },
+        {
+          "en": "We regret to inform you that the pool is closed today.",
+          "fr": "Nous avons le regret de vous informer que la piscine est fermée aujourd'hui.",
+          "trap": [
+            "informing",
+            "closing"
+          ],
+          "alt": [
+            "We regret to inform you that today the pool is closed."
+          ]
+        },
+        {
+          "en": "Do you wanna come to my place?",
+          "fr": "Tu veux venir chez moi ?",
+          "trap": [
+            "want",
+            "gonna"
+          ],
+          "alt": []
+        },
+        {
+          "en": "We apologize for any inconvenience this may cause.",
+          "fr": "Nous nous excusons pour tout désagrément que cela pourrait causer.",
+          "trap": [
+            "excuse",
+            "inconvenient"
+          ],
+          "alt": []
+        },
+        {
+          "en": "I am writing to complain about the noise from the construction site.",
+          "fr": "Je vous écris pour me plaindre du bruit du chantier.",
+          "trap": [
+            "complaining",
+            "for"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Thank you in advance for your assistance.",
+          "fr": "Je vous remercie à l'avance de votre aide.",
+          "trap": [
+            "advanced",
+            "assist"
+          ],
+          "alt": []
+        },
+        {
+          "en": "I gotta go home, my mom is calling me.",
+          "fr": "Faut que je rentre, ma mère m'appelle.",
+          "trap": [
+            "got",
+            "to"
+          ],
+          "alt": [
+            "My mom is calling me, I gotta go home."
+          ]
+        }
       ],
       "grammar": [
-        { "type": "mcq", "q": "Quelle phrase convient le mieux dans un courriel à ta directrice d'école ?", "choices": ["Hey! I wanna talk about the field trip.", "Dear Madam, I am writing regarding the field trip.", "Yo, what's up with the field trip?", "Hi! Gotta ask you something about the field trip."], "answer": 1, "explain": "Formule d'ouverture formelle (Dear Madam), pas de contraction, et regarding au lieu de about." },
-        { "type": "mcq", "q": "I look forward to ___ you at the meeting.", "choices": ["see", "saw", "seen", "seeing"], "answer": 3, "explain": "Dans look forward to, to est une préposition : on met le verbe en -ing." },
-        { "type": "mcq", "q": "Quelle est la version formelle de : « Can you tell me when the gym opens? »", "choices": ["Could you inform me when the gym opens?", "Can you tell me when does the gym open?", "Tell me when the gym opens.", "Wanna tell me when the gym opens?"], "answer": 0, "explain": "Could (plus poli que can) + inform (formel pour tell). La 2e phrase a en plus une erreur : pas d'inversion dans une question indirecte." },
-        { "type": "mcq", "q": "I'm ___ be late, sorry!", "choices": ["wanna", "gotta", "gonna", "going"], "answer": 2, "explain": "I'm gonna = I'm going to. I'm wanna et I'm gotta n'existent pas, et I'm going be oublie le to." },
-        { "type": "mcq", "q": "Quelle formule termine bien un courriel formel ?", "choices": ["See ya!", "Kind regards,", "Love,", "Later, buddy!"], "answer": 1, "explain": "Kind regards (ou Sincerely) est la formule de fin polie. Les autres sont pour les amis ou la famille." },
-        { "type": "mcq", "q": "Dans un courriel, le verbe anglais « demand » veut dire…", "choices": ["exiger", "demander poliment", "répondre", "proposer"], "answer": 0, "explain": "Faux ami ! demand = exiger (agressif). Pour demander poliment : request ou ask for." },
-        { "type": "fill", "q": "We ___ more chairs for the concert.", "hint": "need (formel)", "answer": ["require"], "explain": "need → require dans un registre formel." },
-        { "type": "fill", "q": "I am writing to ___ information about your summer jobs.", "hint": "demander (formel)", "answer": ["request"], "explain": "request information = demander des renseignements (formel). Jamais demand !" },
-        { "type": "fill", "q": "Please ___ the book to the library by Friday.", "hint": "give back (formel)", "answer": ["return"], "explain": "give back → return en registre formel." },
-        { "type": "fill", "q": "I look forward to ___ from you.", "hint": "hear", "answer": ["hearing"], "explain": "look forward to + -ing : hearing." },
-        { "type": "fill", "q": "We would like to ___ you that the meeting has been cancelled.", "hint": "tell (formel)", "answer": ["inform", "notify"], "explain": "tell someone → inform someone en registre formel." },
-        { "type": "fill", "q": "Sorry, I ___ go, my mom is calling me!", "hint": "have got to (familier, à l'oral)", "answer": ["gotta"], "explain": "À l'oral entre amis, have got to → gotta." },
-        { "type": "error", "q": "I look forward to meet you next week.", "wrong": 4, "fix": ["meeting"], "explain": "look forward to + -ing : meeting, pas meet." },
-        { "type": "error", "q": "I would be grateful if you could sending me a brochure.", "wrong": 7, "fix": ["send"], "explain": "Après could, le verbe est à la base : could send." },
-        { "type": "error", "q": "I am writing to demand information about the swimming lessons.", "wrong": 4, "fix": ["request"], "explain": "demand = exiger, c'est agressif ! Pour demander poliment des renseignements : request." },
-        { "type": "error", "q": "I'm gonna the mall with my cousins.", "wrong": 1, "fix": ["going to"], "explain": "gonna remplace seulement going to + verbe. Pour un lieu : I'm going to the mall." },
-        { "type": "error", "q": "We look forward to welcome you at the museum.", "wrong": 4, "fix": ["welcoming"], "explain": "look forward to + -ing : welcoming." }
+        {
+          "type": "mcq",
+          "q": "Quelle phrase convient le mieux dans un courriel à ta directrice d'école ?",
+          "choices": [
+            "Hey! I wanna talk about the field trip.",
+            "Dear Madam, I am writing regarding the field trip.",
+            "Yo, what's up with the field trip?",
+            "Hi! Gotta ask you something about the field trip."
+          ],
+          "answer": 1,
+          "explain": "Formule d'ouverture formelle (Dear Madam), pas de contraction, et regarding au lieu de about."
+        },
+        {
+          "type": "mcq",
+          "q": "I look forward to ___ you at the meeting.",
+          "choices": [
+            "see",
+            "saw",
+            "seen",
+            "seeing"
+          ],
+          "answer": 3,
+          "explain": "Dans look forward to, to est une préposition : on met le verbe en -ing."
+        },
+        {
+          "type": "mcq",
+          "q": "Quelle est la version formelle de : « Can you tell me when the gym opens? »",
+          "choices": [
+            "Could you inform me when the gym opens?",
+            "Can you tell me when does the gym open?",
+            "Tell me when the gym opens.",
+            "Wanna tell me when the gym opens?"
+          ],
+          "answer": 0,
+          "explain": "Could (plus poli que can) + inform (formel pour tell). La 2e phrase a en plus une erreur : pas d'inversion dans une question indirecte."
+        },
+        {
+          "type": "mcq",
+          "q": "I'm ___ be late, sorry!",
+          "choices": [
+            "wanna",
+            "gotta",
+            "gonna",
+            "going"
+          ],
+          "answer": 2,
+          "explain": "I'm gonna = I'm going to. I'm wanna et I'm gotta n'existent pas, et I'm going be oublie le to."
+        },
+        {
+          "type": "mcq",
+          "q": "Quelle formule termine bien un courriel formel ?",
+          "choices": [
+            "See ya!",
+            "Kind regards,",
+            "Love,",
+            "Later, buddy!"
+          ],
+          "answer": 1,
+          "explain": "Kind regards (ou Sincerely) est la formule de fin polie. Les autres sont pour les amis ou la famille."
+        },
+        {
+          "type": "mcq",
+          "q": "Dans un courriel, le verbe anglais « demand » veut dire…",
+          "choices": [
+            "exiger",
+            "demander poliment",
+            "répondre",
+            "proposer"
+          ],
+          "answer": 0,
+          "explain": "Faux ami ! demand = exiger (agressif). Pour demander poliment : request ou ask for."
+        },
+        {
+          "type": "fill",
+          "q": "We ___ more chairs for the concert.",
+          "hint": "need (formel)",
+          "answer": [
+            "require"
+          ],
+          "explain": "need → require dans un registre formel."
+        },
+        {
+          "type": "fill",
+          "q": "I am writing to ___ information about your summer jobs.",
+          "hint": "demander (formel)",
+          "answer": [
+            "request"
+          ],
+          "explain": "request information = demander des renseignements (formel). Jamais demand !"
+        },
+        {
+          "type": "fill",
+          "q": "Please ___ the book to the library by Friday.",
+          "hint": "give back (formel)",
+          "answer": [
+            "return"
+          ],
+          "explain": "give back → return en registre formel."
+        },
+        {
+          "type": "fill",
+          "q": "I look forward to ___ from you.",
+          "hint": "hear",
+          "answer": [
+            "hearing"
+          ],
+          "explain": "look forward to + -ing : hearing."
+        },
+        {
+          "type": "fill",
+          "q": "We would like to ___ you that the meeting has been cancelled.",
+          "hint": "tell (formel)",
+          "answer": [
+            "inform",
+            "notify"
+          ],
+          "explain": "tell someone → inform someone en registre formel."
+        },
+        {
+          "type": "fill",
+          "q": "Sorry, I ___ go, my mom is calling me!",
+          "hint": "have got to (familier, à l'oral)",
+          "answer": [
+            "gotta"
+          ],
+          "explain": "À l'oral entre amis, have got to → gotta."
+        },
+        {
+          "type": "error",
+          "q": "I look forward to meet you next week.",
+          "wrong": 4,
+          "fix": [
+            "meeting"
+          ],
+          "explain": "look forward to + -ing : meeting, pas meet."
+        },
+        {
+          "type": "error",
+          "q": "I would be grateful if you could sending me a brochure.",
+          "wrong": 7,
+          "fix": [
+            "send"
+          ],
+          "explain": "Après could, le verbe est à la base : could send."
+        },
+        {
+          "type": "error",
+          "q": "I am writing to demand information about the swimming lessons.",
+          "wrong": 4,
+          "fix": [
+            "request"
+          ],
+          "explain": "demand = exiger, c'est agressif ! Pour demander poliment des renseignements : request."
+        },
+        {
+          "type": "error",
+          "q": "I'm gonna the mall with my cousins.",
+          "wrong": 1,
+          "fix": [
+            "going to"
+          ],
+          "explain": "gonna remplace seulement going to + verbe. Pour un lieu : I'm going to the mall."
+        },
+        {
+          "type": "error",
+          "q": "We look forward to welcome you at the museum.",
+          "wrong": 4,
+          "fix": [
+            "welcoming"
+          ],
+          "explain": "look forward to + -ing : welcoming."
+        }
       ],
       "reading": {
         "title": "Two Messages, Two Styles",
         "text": "Jaden wanted to volunteer at the Riverside Community Centre this summer. First, he texted his best friend, Malik.\n\n“Hey! Gonna apply for that volunteer thing at the centre. Wanna do it with me? Gotta send the email tonight, so let me know!”\n\nMalik answered with a thumbs-up and three exclamation marks. Then Jaden opened his laptop to write to the manager, Sandra Okafor. His first try began with “Hi Sandra, I wanna help at your camp.” He read it aloud, frowned and deleted everything.\n\nHis older sister, Ana, was looking over his shoulder. “You're not texting a friend,” she said. “You're writing to someone who might give you a job. Make it sound professional.”\n\nForty minutes later, this is what Jaden sent:\n\nDear Sandra Okafor,\n\nI am writing to request information about volunteer positions at the Riverside Community Centre this summer. I am fourteen years old, I speak French and English, and I have assisted at my school's reading club for two years.\n\nI would be grateful if you could inform me whether you require any documents, such as a reference letter. I am available from the end of June until the end of August.\n\nThank you for your time. I look forward to hearing from you.\n\nSincerely,\nJaden Moreau\n\nTwo days later, he received an answer. The manager thanked him for his clear and polite message and invited him to an interview. At the bottom, she had added a short note: “It is rare to receive such a well-written email from a student.”\n\nJaden forwarded the message to Malik. A minute later, his phone buzzed: “Wait, you wrote that? Can you write mine too?”",
         "questions": [
-          { "q": "Why did Jaden delete his first try?", "choices": ["His computer stopped working.", "Malik told him to start again.", "It sounded too casual for a message to a manager.", "He had written to the wrong person."], "answer": 2 },
-          { "q": "Which of these did Jaden mention in his email?", "choices": ["His age and the languages he speaks", "His favourite sports", "Malik's phone number", "His marks in math"], "answer": 0 },
-          { "q": "What did Jaden want to know?", "choices": ["How much the job pays", "Whether he needs to send any documents", "Where the centre is", "If Malik can come too"], "answer": 1 },
-          { "q": "What can we guess about Ana?", "choices": ["She works at the community centre.", "She is younger than Jaden.", "She wants to volunteer too.", "She knows how a formal message should sound."], "answer": 3 },
-          { "q": "What did the manager think of Jaden's email?", "choices": ["She found it too long.", "She didn't understand it.", "She thought it was impressive for a student.", "She thought it was rude."], "answer": 2 },
-          { "q": "What does Malik's last text suggest?", "choices": ["He is surprised, and he would like help with his own email.", "He is angry that Jaden applied without him.", "He thinks the email is too formal.", "He has already been hired."], "answer": 0 }
+          {
+            "q": "Why did Jaden delete his first try?",
+            "choices": [
+              "His computer stopped working.",
+              "Malik told him to start again.",
+              "It sounded too casual for a message to a manager.",
+              "He had written to the wrong person."
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Which of these did Jaden mention in his email?",
+            "choices": [
+              "His age and the languages he speaks",
+              "His favourite sports",
+              "Malik's phone number",
+              "His marks in math"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "What did Jaden want to know?",
+            "choices": [
+              "How much the job pays",
+              "Whether he needs to send any documents",
+              "Where the centre is",
+              "If Malik can come too"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "What can we guess about Ana?",
+            "choices": [
+              "She works at the community centre.",
+              "She is younger than Jaden.",
+              "She wants to volunteer too.",
+              "She knows how a formal message should sound."
+            ],
+            "answer": 3
+          },
+          {
+            "q": "What did the manager think of Jaden's email?",
+            "choices": [
+              "She found it too long.",
+              "She didn't understand it.",
+              "She thought it was impressive for a student.",
+              "She thought it was rude."
+            ],
+            "answer": 2
+          },
+          {
+            "q": "What does Malik's last text suggest?",
+            "choices": [
+              "He is surprised, and he would like help with his own email.",
+              "He is angry that Jaden applied without him.",
+              "He thinks the email is too formal.",
+              "He has already been hired."
+            ],
+            "answer": 0
+          }
         ]
       }
     },
@@ -290,18 +1278,62 @@
         },
         {
           "type": "table",
-          "head": ["Expression", "Sens", "Exemple"],
+          "head": [
+            "Expression",
+            "Sens",
+            "Exemple"
+          ],
           "rows": [
-            ["no worries", "pas de souci, de rien", "[[Thanks! — No worries!]]"],
-            ["my bad", "c'est ma faute, oups", "[[My bad, I took your pencil.]]"],
-            ["fair enough", "c'est correct, ça se défend", "[[You're tired? Fair enough.]]"],
-            ["it's up to you", "c'est toi qui décides", "[[Pizza or tacos? It's up to you.]]"],
-            ["hang out", "passer du temps ensemble", "[[Wanna hang out after school?]]"],
-            ["I'm down", "je suis partant", "[[Skating? I'm down!]]"],
-            ["sketchy", "louche, pas fiable", "[[That website looks sketchy.]]"],
-            ["legit", "pour vrai, authentique", "[[Is this story legit?]]"],
-            ["take a rain check", "remettre à plus tard", "[[Can I take a rain check?]]"],
-            ["no way", "pas question ! / sans blague !", "[[No way, that's my seat!]]"]
+            [
+              "no worries",
+              "pas de souci, de rien",
+              "[[Thanks! — No worries!]]"
+            ],
+            [
+              "my bad",
+              "c'est ma faute, oups",
+              "[[My bad, I took your pencil.]]"
+            ],
+            [
+              "fair enough",
+              "c'est correct, ça se défend",
+              "[[You're tired? Fair enough.]]"
+            ],
+            [
+              "it's up to you",
+              "c'est toi qui décides",
+              "[[Pizza or tacos? It's up to you.]]"
+            ],
+            [
+              "hang out",
+              "passer du temps ensemble",
+              "[[Wanna hang out after school?]]"
+            ],
+            [
+              "I'm down",
+              "je suis partant",
+              "[[Skating? I'm down!]]"
+            ],
+            [
+              "sketchy",
+              "louche, pas fiable",
+              "[[That website looks sketchy.]]"
+            ],
+            [
+              "legit",
+              "pour vrai, authentique",
+              "[[Is this story legit?]]"
+            ],
+            [
+              "take a rain check",
+              "remettre à plus tard",
+              "[[Can I take a rain check?]]"
+            ],
+            [
+              "no way",
+              "pas question ! / sans blague !",
+              "[[No way, that's my seat!]]"
+            ]
           ]
         },
         {
@@ -317,11 +1349,26 @@
         {
           "type": "examples",
           "items": [
-            { "en": "My bad, I forgot to text you back.", "fr": "Ma faute, j'ai oublié de te répondre." },
-            { "en": "Do you have a toonie for the parking meter?", "fr": "As-tu une pièce de deux dollars pour le parcomètre ?" },
-            { "en": "That guy online seems sketchy.", "fr": "Ce gars en ligne a l'air louche." },
-            { "en": "Can I take a rain check on the movie?", "fr": "Est-ce qu'on peut remettre le film à plus tard ?" },
-            { "en": "Nice game, eh?", "fr": "Beau match, hein ?" }
+            {
+              "en": "My bad, I forgot to text you back.",
+              "fr": "Ma faute, j'ai oublié de te répondre."
+            },
+            {
+              "en": "Do you have a toonie for the parking meter?",
+              "fr": "As-tu une pièce de deux dollars pour le parcomètre ?"
+            },
+            {
+              "en": "That guy online seems sketchy.",
+              "fr": "Ce gars en ligne a l'air louche."
+            },
+            {
+              "en": "Can I take a rain check on the movie?",
+              "fr": "Est-ce qu'on peut remettre le film à plus tard ?"
+            },
+            {
+              "en": "Nice game, eh?",
+              "fr": "Beau match, hein ?"
+            }
           ]
         },
         {
@@ -336,80 +1383,527 @@
           "type": "dialogue",
           "title": "Au casse-croûte de l'aréna",
           "lines": [
-            { "who": "Liam", "en": "I'm starving. Wanna grab something before the game?", "fr": "Je meurs de faim. On prend quelque chose avant le match ?" },
-            { "who": "Noah", "en": "I'm down. Do you have a toonie? I only have a loonie.", "fr": "Je suis partant. As-tu une pièce de deux dollars ? J'ai juste un huard." },
-            { "who": "Liam", "en": "No worries, I've got you. A pop and some fries?", "fr": "Pas de souci, je t'invite. Une boisson gazeuse et des frites ?" },
-            { "who": "Noah", "en": "Legit, you're awesome. My dad is getting his usual double-double.", "fr": "Pour vrai, t'es génial. Mon père prend son double-double habituel." },
-            { "who": "Liam", "en": "Of course he is. Hey, where's the washroom?", "fr": "Évidemment. Hé, où sont les toilettes ?" },
-            { "who": "Noah", "en": "Down the hall, next to the skate rental. Hurry up, the game starts soon!", "fr": "Au bout du couloir, à côté de la location de patins. Dépêche-toi, le match commence bientôt !" },
-            { "who": "Liam", "en": "Wait, where's my toque? Oh, my bad, it's in my bag!", "fr": "Attends, où est ma tuque ? Oh, ma faute, elle est dans mon sac !" }
+            {
+              "who": "Liam",
+              "en": "I'm starving. Wanna grab something before the game?",
+              "fr": "Je meurs de faim. On prend quelque chose avant le match ?"
+            },
+            {
+              "who": "Noah",
+              "en": "I'm down. Do you have a toonie? I only have a loonie.",
+              "fr": "Je suis partant. As-tu une pièce de deux dollars ? J'ai juste un huard."
+            },
+            {
+              "who": "Liam",
+              "en": "No worries, I've got you. A pop and some fries?",
+              "fr": "Pas de souci, je t'invite. Une boisson gazeuse et des frites ?"
+            },
+            {
+              "who": "Noah",
+              "en": "Legit, you're awesome. My dad is getting his usual double-double.",
+              "fr": "Pour vrai, t'es génial. Mon père prend son double-double habituel."
+            },
+            {
+              "who": "Liam",
+              "en": "Of course he is. Hey, where's the washroom?",
+              "fr": "Évidemment. Hé, où sont les toilettes ?"
+            },
+            {
+              "who": "Noah",
+              "en": "Down the hall, next to the skate rental. Hurry up, the game starts soon!",
+              "fr": "Au bout du couloir, à côté de la location de patins. Dépêche-toi, le match commence bientôt !"
+            },
+            {
+              "who": "Liam",
+              "en": "Wait, where's my toque? Oh, my bad, it's in my bag!",
+              "fr": "Attends, où est ma tuque ? Oh, ma faute, elle est dans mon sac !"
+            }
           ]
         }
       ],
       "vocab": [
-        { "en": "no worries", "fr": "pas de souci, de rien", "alt": ["no problem"], "ex": "Thanks for the ride! — No worries!" },
-        { "en": "my bad", "fr": "c'est ma faute (oups !)", "alt": [], "ex": "My bad, I stepped on your foot." },
-        { "en": "fair enough", "fr": "c'est correct, ça se défend", "alt": [], "ex": "You want to stay home? Fair enough." },
-        { "en": "it's up to you", "fr": "c'est toi qui décides", "alt": [], "ex": "Pizza or tacos? It's up to you." },
-        { "en": "hang out", "fr": "passer du temps ensemble, traîner", "alt": [], "ex": "We usually hang out at the park after school." },
-        { "en": "awesome", "fr": "génial, super", "alt": ["amazing"], "ex": "Your new skateboard is awesome!" },
-        { "en": "sketchy", "fr": "louche, pas fiable", "alt": ["shady"], "ex": "That website looks sketchy." },
-        { "en": "legit", "fr": "pour vrai, authentique (familier)", "alt": [], "ex": "Is this autograph legit?" },
-        { "en": "eh", "fr": "hein ? (à la canadienne)", "alt": [], "ex": "Cold today, eh?" },
-        { "en": "washroom", "fr": "toilettes (dans un lieu public)", "alt": ["restroom"], "ex": "Excuse me, where is the washroom?" },
-        { "en": "double-double", "fr": "café deux crèmes, deux sucres", "alt": [], "ex": "My dad orders a double-double every morning." },
-        { "en": "loonie", "fr": "pièce de un dollar (huard)", "alt": [], "ex": "The parking costs a loonie." },
-        { "en": "toonie", "fr": "pièce de deux dollars", "alt": [], "ex": "Can I borrow a toonie?" },
-        { "en": "toque", "fr": "bonnet de laine pour l'hiver (tuque)", "alt": ["tuque"], "ex": "Don't forget your toque, it's freezing!" },
-        { "en": "keener", "fr": "élève très zélé, premier de classe (familier)", "alt": [], "ex": "Ana is a keener; she always does extra homework." },
-        { "en": "pop", "fr": "boisson gazeuse (liqueur)", "alt": ["soda", "soft drink"], "ex": "Can I have a pop with my fries?" },
-        { "en": "runners", "fr": "espadrilles, souliers de course", "alt": ["sneakers"], "ex": "Put on your runners, we're going for a walk." },
-        { "en": "take a rain check", "fr": "remettre une invitation à plus tard", "alt": [], "ex": "I'm busy tonight; can I take a rain check?" },
-        { "en": "I'm down", "fr": "je suis partant", "alt": ["I'm in"], "ex": "Ice cream after practice? I'm down!" },
-        { "en": "no way", "fr": "pas question ! / sans blague !", "alt": [], "ex": "No way, you met a real astronaut?" }
+        {
+          "en": "no worries",
+          "fr": "pas de souci, de rien",
+          "alt": [
+            "no problem"
+          ],
+          "ex": "Thanks for the ride! — No worries!"
+        },
+        {
+          "en": "my bad",
+          "fr": "c'est ma faute (oups !)",
+          "alt": [],
+          "ex": "My bad, I stepped on your foot."
+        },
+        {
+          "en": "fair enough",
+          "fr": "c'est correct, ça se défend",
+          "alt": [],
+          "ex": "You want to stay home? Fair enough."
+        },
+        {
+          "en": "it's up to you",
+          "fr": "c'est toi qui décides",
+          "alt": [],
+          "ex": "Pizza or tacos? It's up to you."
+        },
+        {
+          "en": "hang out",
+          "fr": "passer du temps ensemble, traîner",
+          "alt": [],
+          "ex": "We usually hang out at the park after school."
+        },
+        {
+          "en": "awesome",
+          "fr": "génial, super",
+          "alt": [
+            "amazing"
+          ],
+          "ex": "Your new skateboard is awesome!"
+        },
+        {
+          "en": "sketchy",
+          "fr": "louche, pas fiable",
+          "alt": [
+            "shady"
+          ],
+          "ex": "That website looks sketchy."
+        },
+        {
+          "en": "legit",
+          "fr": "pour vrai, authentique (familier)",
+          "alt": [],
+          "ex": "Is this autograph legit?"
+        },
+        {
+          "en": "eh",
+          "fr": "hein ? (à la canadienne)",
+          "alt": [],
+          "ex": "Cold today, eh?"
+        },
+        {
+          "en": "washroom",
+          "fr": "toilettes (dans un lieu public)",
+          "alt": [
+            "restroom"
+          ],
+          "ex": "Excuse me, where is the washroom?"
+        },
+        {
+          "en": "double-double",
+          "fr": "café deux crèmes, deux sucres",
+          "alt": [],
+          "ex": "My dad orders a double-double every morning."
+        },
+        {
+          "en": "loonie",
+          "fr": "pièce de un dollar (huard)",
+          "alt": [],
+          "ex": "The parking costs a loonie."
+        },
+        {
+          "en": "toonie",
+          "fr": "pièce de deux dollars",
+          "alt": [],
+          "ex": "Can I borrow a toonie?"
+        },
+        {
+          "en": "toque",
+          "fr": "bonnet de laine pour l'hiver (tuque)",
+          "alt": [
+            "tuque"
+          ],
+          "ex": "Don't forget your toque, it's freezing!"
+        },
+        {
+          "en": "keener",
+          "fr": "élève très zélé, premier de classe (familier)",
+          "alt": [],
+          "ex": "Ana is a keener; she always does extra homework."
+        },
+        {
+          "en": "pop",
+          "fr": "boisson gazeuse (liqueur)",
+          "alt": [
+            "soda",
+            "soft drink"
+          ],
+          "ex": "Can I have a pop with my fries?"
+        },
+        {
+          "en": "runners",
+          "fr": "espadrilles, souliers de course",
+          "alt": [
+            "sneakers"
+          ],
+          "ex": "Put on your runners, we're going for a walk."
+        },
+        {
+          "en": "take a rain check",
+          "fr": "remettre une invitation à plus tard",
+          "alt": [],
+          "ex": "I'm busy tonight; can I take a rain check?"
+        },
+        {
+          "en": "I'm down",
+          "fr": "je suis partant",
+          "alt": [
+            "I'm in"
+          ],
+          "ex": "Ice cream after practice? I'm down!"
+        },
+        {
+          "en": "no way",
+          "fr": "pas question ! / sans blague !",
+          "alt": [],
+          "ex": "No way, you met a real astronaut?"
+        }
       ],
       "sentences": [
-        { "en": "No worries, you can keep the toonie.", "fr": "Pas de souci, tu peux garder la pièce de deux dollars.", "trap": ["worry", "keeps"], "alt": [] },
-        { "en": "My bad, I thought the game started at seven.", "fr": "Ma faute, je pensais que le match commençait à sept heures.", "trap": ["fault", "begun"], "alt": [] },
-        { "en": "Where do you like to hang out with your friends?", "fr": "Où aimes-tu passer du temps avec tes amis ?", "trap": ["hangs", "likes"], "alt": [] },
-        { "en": "It's up to you, we can watch a movie or play outside.", "fr": "C'est toi qui décides, on peut regarder un film ou jouer dehors.", "trap": ["for", "its"], "alt": ["It's up to you, we can play outside or watch a movie."] },
-        { "en": "That website looks sketchy, so don't give them your address.", "fr": "Ce site a l'air louche, alors ne leur donne pas ton adresse.", "trap": ["look", "doesn't"], "alt": [] },
-        { "en": "Is this story legit, or did you make it up?", "fr": "Cette histoire est-elle vraie, ou tu l'as inventée ?", "trap": ["made", "invent"], "alt": [] },
-        { "en": "Excuse me, do you know where the washroom is?", "fr": "Excusez-moi, savez-vous où sont les toilettes ?", "trap": ["does", "are"], "alt": [] },
-        { "en": "My dad can't start his day without a double-double.", "fr": "Mon père ne peut pas commencer sa journée sans un double-double.", "trap": ["doesn't", "starts"], "alt": [] },
-        { "en": "Mom made me wear my toque to school.", "fr": "Maman m'a obligé à porter ma tuque pour aller à l'école.", "trap": ["wearing", "maked"], "alt": [] },
-        { "en": "Fair enough, but it's still my turn to choose.", "fr": "C'est correct, mais c'est quand même mon tour de choisir.", "trap": ["choosing", "its"], "alt": [] },
-        { "en": "Ana is a bit of a keener; she always does extra homework.", "fr": "Ana est un peu trop zélée : elle fait toujours des devoirs en plus.", "trap": ["keen", "do"], "alt": [] }
+        {
+          "en": "No worries, you can keep the toonie.",
+          "fr": "Pas de souci, tu peux garder la pièce de deux dollars.",
+          "trap": [
+            "worry",
+            "keeps"
+          ],
+          "alt": []
+        },
+        {
+          "en": "My bad, I thought the game started at seven.",
+          "fr": "Ma faute, je pensais que le match commençait à sept heures.",
+          "trap": [
+            "fault",
+            "begun"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Where do you like to hang out with your friends?",
+          "fr": "Où aimes-tu passer du temps avec tes amis ?",
+          "trap": [
+            "hangs",
+            "likes"
+          ],
+          "alt": []
+        },
+        {
+          "en": "It's up to you, we can watch a movie or play outside.",
+          "fr": "C'est toi qui décides, on peut regarder un film ou jouer dehors.",
+          "trap": [
+            "for",
+            "its"
+          ],
+          "alt": [
+            "It's up to you, we can play outside or watch a movie."
+          ]
+        },
+        {
+          "en": "That website looks sketchy, so don't give them your address.",
+          "fr": "Ce site a l'air louche, alors ne leur donne pas ton adresse.",
+          "trap": [
+            "look",
+            "doesn't"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Is this story legit, or did you make it up?",
+          "fr": "Cette histoire est-elle vraie, ou tu l'as inventée ?",
+          "trap": [
+            "made",
+            "invent"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Excuse me, do you know where the washroom is?",
+          "fr": "Excusez-moi, savez-vous où sont les toilettes ?",
+          "trap": [
+            "does",
+            "are"
+          ],
+          "alt": []
+        },
+        {
+          "en": "My dad can't start his day without a double-double.",
+          "fr": "Mon père ne peut pas commencer sa journée sans un double-double.",
+          "trap": [
+            "doesn't",
+            "starts"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Mom made me wear my toque to school.",
+          "fr": "Maman m'a obligé à porter ma tuque pour aller à l'école.",
+          "trap": [
+            "wearing",
+            "maked"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Fair enough, but it's still my turn to choose.",
+          "fr": "C'est correct, mais c'est quand même mon tour de choisir.",
+          "trap": [
+            "choosing",
+            "its"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Ana is a bit of a keener; she always does extra homework.",
+          "fr": "Ana est un peu trop zélée : elle fait toujours des devoirs en plus.",
+          "trap": [
+            "keen",
+            "do"
+          ],
+          "alt": []
+        }
       ],
       "grammar": [
-        { "type": "mcq", "q": "Ton ami te dit : « Sorry, I stepped on your foot! » Tu réponds gentiment :", "choices": ["My bad!", "No worries!", "Sketchy!", "I'm down!"], "answer": 1, "explain": "No worries = pas de souci. My bad, c'est ce que dit la personne qui a fait l'erreur." },
-        { "type": "mcq", "q": "Tu as pris le crayon de ton amie par erreur. Tu dis : « ___, here it is. »", "choices": ["Fair enough", "No way", "My bad", "I'm down"], "answer": 2, "explain": "My bad = c'est ma faute, oups. On le dit pour une petite erreur qu'on a faite soi-même." },
-        { "type": "mcq", "q": "Un inconnu en ligne t'offre des cadeaux gratuits si tu lui donnes ton mot de passe. C'est…", "choices": ["awesome", "legit", "a keener", "sketchy"], "answer": 3, "explain": "sketchy = louche, pas fiable. Ne donne jamais ton mot de passe !" },
-        { "type": "mcq", "q": "Au Canada, un toonie vaut…", "choices": ["deux dollars", "un dollar", "vingt-cinq cents", "cinq dollars"], "answer": 0, "explain": "toonie = la pièce de deux dollars (two + loonie). Le loonie vaut un dollar." },
-        { "type": "mcq", "q": "« Do you want to come skating? » — « ___ What time? »", "choices": ["My bad!", "I'm down!", "No worries!", "Fair enough!"], "answer": 1, "explain": "I'm down = je suis partant. C'est la seule réponse qui accepte l'invitation." },
-        { "type": "mcq", "q": "Ton amie explique qu'elle ne peut pas venir parce qu'elle a un rendez-vous chez le dentiste. Tu réponds : « ___. Next time, then! »", "choices": ["No way", "My bad", "Fair enough", "Sketchy"], "answer": 2, "explain": "Fair enough = c'est correct, je comprends ta raison." },
-        { "type": "mcq", "q": "Quel mot n'a PAS sa place dans un courriel formel ?", "choices": ["regarding", "grateful", "receive", "awesome"], "answer": 3, "explain": "awesome est familier. Les trois autres sont des mots formels de l'étape 11.2." },
-        { "type": "fill", "q": "Can you watch my bag? I need to go to the ___.", "hint": "toilettes (lieu public, au Canada)", "answer": ["washroom"], "explain": "Au Canada, les toilettes publiques : the washroom." },
-        { "type": "fill", "q": "Do you want to ___ at my place on Saturday?", "hint": "passer du temps ensemble", "answer": ["hang out"], "explain": "hang out = passer du temps ensemble (pas hang up, qui veut dire raccrocher)." },
-        { "type": "fill", "q": "I can't come tonight. Can I take a ___?", "hint": "remettre à plus tard", "answer": ["rain check"], "explain": "take a rain check = remettre une invitation à plus tard." },
-        { "type": "fill", "q": "Cold today, ___?", "hint": "hein ? (à la canadienne)", "answer": ["eh"], "explain": "Le fameux eh canadien, à la fin d'une phrase, pour chercher l'accord de l'autre." },
-        { "type": "fill", "q": "Wear your ___, it's minus twenty outside!", "hint": "bonnet de laine pour l'hiver", "answer": ["toque", "tuque"], "explain": "Une tuque = a toque (on voit aussi l'orthographe tuque en anglais canadien)." },
-        { "type": "fill", "q": "Pizza or tacos? I don't mind, it's ___ to you.", "hint": "c'est toi qui décides", "answer": ["up"], "explain": "It's up to you = c'est toi qui décides." },
-        { "type": "error", "q": "Can I borrow a looney for the vending machine?", "wrong": 4, "fix": ["loonie"], "explain": "La pièce de un dollar s'écrit loonie. looney veut dire « cinglé » !" },
-        { "type": "error", "q": "No worry, I'll help you clean up.", "wrong": 1, "fix": ["worries"], "explain": "L'expression est toujours au pluriel : No worries." },
-        { "type": "error", "q": "Do you want to hang up at the park after school?", "wrong": 5, "fix": ["out"], "explain": "hang out = passer du temps ensemble. hang up = raccrocher le téléphone." },
-        { "type": "error", "q": "It's up for you, we can leave whenever you want.", "wrong": 2, "fix": ["to"], "explain": "L'expression est It's up to you." }
+        {
+          "type": "mcq",
+          "q": "Ton ami te dit : « Sorry, I stepped on your foot! » Tu réponds gentiment :",
+          "choices": [
+            "My bad!",
+            "No worries!",
+            "Sketchy!",
+            "I'm down!"
+          ],
+          "answer": 1,
+          "explain": "No worries = pas de souci. My bad, c'est ce que dit la personne qui a fait l'erreur."
+        },
+        {
+          "type": "mcq",
+          "q": "Tu as pris le crayon de ton amie par erreur. Tu dis : « ___, here it is. »",
+          "choices": [
+            "Fair enough",
+            "No way",
+            "My bad",
+            "I'm down"
+          ],
+          "answer": 2,
+          "explain": "My bad = c'est ma faute, oups. On le dit pour une petite erreur qu'on a faite soi-même."
+        },
+        {
+          "type": "mcq",
+          "q": "Un inconnu en ligne t'offre des cadeaux gratuits si tu lui donnes ton mot de passe. C'est…",
+          "choices": [
+            "awesome",
+            "legit",
+            "a keener",
+            "sketchy"
+          ],
+          "answer": 3,
+          "explain": "sketchy = louche, pas fiable. Ne donne jamais ton mot de passe !"
+        },
+        {
+          "type": "mcq",
+          "q": "Au Canada, un toonie vaut…",
+          "choices": [
+            "deux dollars",
+            "un dollar",
+            "vingt-cinq cents",
+            "cinq dollars"
+          ],
+          "answer": 0,
+          "explain": "toonie = la pièce de deux dollars (two + loonie). Le loonie vaut un dollar."
+        },
+        {
+          "type": "mcq",
+          "q": "« Do you want to come skating? » — « ___ What time? »",
+          "choices": [
+            "My bad!",
+            "I'm down!",
+            "No worries!",
+            "Fair enough!"
+          ],
+          "answer": 1,
+          "explain": "I'm down = je suis partant. C'est la seule réponse qui accepte l'invitation."
+        },
+        {
+          "type": "mcq",
+          "q": "Ton amie explique qu'elle ne peut pas venir parce qu'elle a un rendez-vous chez le dentiste. Tu réponds : « ___. Next time, then! »",
+          "choices": [
+            "No way",
+            "My bad",
+            "Fair enough",
+            "Sketchy"
+          ],
+          "answer": 2,
+          "explain": "Fair enough = c'est correct, je comprends ta raison."
+        },
+        {
+          "type": "mcq",
+          "q": "Quel mot n'a PAS sa place dans un courriel formel ?",
+          "choices": [
+            "regarding",
+            "grateful",
+            "receive",
+            "awesome"
+          ],
+          "answer": 3,
+          "explain": "awesome est familier. Les trois autres sont des mots formels de l'étape 11.2."
+        },
+        {
+          "type": "fill",
+          "q": "Can you watch my bag? I need to go to the ___.",
+          "hint": "toilettes (lieu public, au Canada)",
+          "answer": [
+            "washroom"
+          ],
+          "explain": "Au Canada, les toilettes publiques : the washroom."
+        },
+        {
+          "type": "fill",
+          "q": "Do you want to ___ at my place on Saturday?",
+          "hint": "passer du temps ensemble",
+          "answer": [
+            "hang out"
+          ],
+          "explain": "hang out = passer du temps ensemble (pas hang up, qui veut dire raccrocher)."
+        },
+        {
+          "type": "fill",
+          "q": "I can't come tonight. Can I take a ___?",
+          "hint": "remettre à plus tard",
+          "answer": [
+            "rain check"
+          ],
+          "explain": "take a rain check = remettre une invitation à plus tard."
+        },
+        {
+          "type": "fill",
+          "q": "Cold today, ___?",
+          "hint": "hein ? (à la canadienne)",
+          "answer": [
+            "eh"
+          ],
+          "explain": "Le fameux eh canadien, à la fin d'une phrase, pour chercher l'accord de l'autre."
+        },
+        {
+          "type": "fill",
+          "q": "Wear your ___, it's minus twenty outside!",
+          "hint": "bonnet de laine pour l'hiver",
+          "answer": [
+            "toque",
+            "tuque"
+          ],
+          "explain": "Une tuque = a toque (on voit aussi l'orthographe tuque en anglais canadien)."
+        },
+        {
+          "type": "fill",
+          "q": "Pizza or tacos? I don't mind, it's ___ to you.",
+          "hint": "c'est toi qui décides",
+          "answer": [
+            "up"
+          ],
+          "explain": "It's up to you = c'est toi qui décides."
+        },
+        {
+          "type": "error",
+          "q": "Can I borrow a looney for the vending machine?",
+          "wrong": 4,
+          "fix": [
+            "loonie"
+          ],
+          "explain": "La pièce de un dollar s'écrit loonie. looney veut dire « cinglé » !"
+        },
+        {
+          "type": "error",
+          "q": "No worry, I'll help you clean up.",
+          "wrong": 1,
+          "fix": [
+            "worries"
+          ],
+          "explain": "L'expression est toujours au pluriel : No worries."
+        },
+        {
+          "type": "error",
+          "q": "Do you want to hang up at the park after school?",
+          "wrong": 5,
+          "fix": [
+            "out"
+          ],
+          "explain": "hang out = passer du temps ensemble. hang up = raccrocher le téléphone."
+        },
+        {
+          "type": "error",
+          "q": "It's up for you, we can leave whenever you want.",
+          "wrong": 2,
+          "fix": [
+            "to"
+          ],
+          "explain": "L'expression est It's up to you."
+        }
       ],
       "reading": {
         "title": "Karim's First Week",
         "text": "On his first day at his new school in Ottawa, Karim thought his English was pretty good. He had studied it for years in Paris. By lunchtime, however, he wasn't so sure.\n\nIn the hallway, a boy bumped into him and said, “My bad!” before running off. Karim had no idea what was bad, or whose it was. At recess, a girl named Chloé asked if he wanted to hang out after school. Karim imagined laundry hanging on a line and politely said no.\n\nLuckily, Chloé didn't give up. She sat next to him at lunch and offered him a cookie. When Karim thanked her, she answered, “No worries!” He wondered what she was supposed to be worried about.\n\nThen she asked if he had a loonie for the vending machine. Karim looked confused, so she showed him a gold-coloured coin with a bird on it. “It's a loon,” she explained. “That's why we call it a loonie. And the two-dollar coin is a toonie.” Karim laughed for the first time that day.\n\nAfter school, Chloé's dad picked them up. He was holding a coffee. “Double-double,” he said proudly, as if it were a secret password. Karim later learned that it meant two creams and two sugars.\n\nThat evening, Karim wrote a list in his notebook: my bad, no worries, hang out, loonie, toonie, double-double. At the bottom, he added one more word that he had heard at least ten times: eh.\n\nThe next morning, Chloé waved at him. “Want to hang out at recess?” she asked.\n\n“I'm down,” Karim answered with a grin.\n\nChloé raised her eyebrows. “Wow, you learn fast, eh?”",
         "questions": [
-          { "q": "Why did Karim say no when Chloé first invited him?", "choices": ["He had to go home early.", "He didn't like Chloé.", "He had too much homework.", "He didn't understand what “hang out” meant."], "answer": 3 },
-          { "q": "Why is the one-dollar coin called a loonie?", "choices": ["Because it shows a loon.", "Because it is gold-coloured.", "Because it was designed in Paris.", "Because it is used in vending machines."], "answer": 0 },
-          { "q": "What does “double-double” mean in the story?", "choices": ["A very large coffee", "A coffee with two creams and two sugars", "Two coffees", "A secret password"], "answer": 1 },
-          { "q": "How did Karim most likely feel during his first morning?", "choices": ["Proud of his perfect English", "Angry at his teachers", "Confused by the English he heard", "Bored and sleepy"], "answer": 2 },
-          { "q": "Why does Chloé raise her eyebrows at the end?", "choices": ["She is angry that Karim is late.", "She is surprised that Karim used a slang expression so naturally.", "She didn't hear Karim's answer.", "She thinks Karim is being rude."], "answer": 1 },
-          { "q": "What did Karim write in his notebook?", "choices": ["Chloé's phone number", "His homework", "A list of new expressions", "A letter to his friends in Paris"], "answer": 2 }
+          {
+            "q": "Why did Karim say no when Chloé first invited him?",
+            "choices": [
+              "He had to go home early.",
+              "He didn't like Chloé.",
+              "He had too much homework.",
+              "He didn't understand what “hang out” meant."
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Why is the one-dollar coin called a loonie?",
+            "choices": [
+              "Because it shows a loon.",
+              "Because it is gold-coloured.",
+              "Because it was designed in Paris.",
+              "Because it is used in vending machines."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "What does “double-double” mean in the story?",
+            "choices": [
+              "A very large coffee",
+              "A coffee with two creams and two sugars",
+              "Two coffees",
+              "A secret password"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "How did Karim most likely feel during his first morning?",
+            "choices": [
+              "Proud of his perfect English",
+              "Angry at his teachers",
+              "Confused by the English he heard",
+              "Bored and sleepy"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Why does Chloé raise her eyebrows at the end?",
+            "choices": [
+              "She is angry that Karim is late.",
+              "She is surprised that Karim used a slang expression so naturally.",
+              "She didn't hear Karim's answer.",
+              "She thinks Karim is being rude."
+            ],
+            "answer": 1
+          },
+          {
+            "q": "What did Karim write in his notebook?",
+            "choices": [
+              "Chloé's phone number",
+              "His homework",
+              "A list of new expressions",
+              "A letter to his friends in Paris"
+            ],
+            "answer": 2
+          }
         ]
       }
     },
@@ -425,22 +1919,82 @@
         },
         {
           "type": "table",
-          "head": ["Paire", "La différence", "Exemple"],
+          "head": [
+            "Paire",
+            "La différence",
+            "Exemple"
+          ],
           "rows": [
-            ["affect / effect", "verbe (influencer) / nom (un effet)", "[[The noise affects me. It has a bad effect on me.]]"],
-            ["lose / loose", "perdre / lâche, pas serré", "[[Don't lose your keys! My shoe is loose.]]"],
-            ["borrow / lend", "emprunter / prêter", "[[Can I borrow your pen? Can you lend me your pen?]]"],
-            ["say / tell", "dire quelque chose / dire à quelqu'un", "[[She said hello. She told me a secret.]]"],
-            ["rise / raise", "monter tout seul / lever quelque chose", "[[The sun rises. Raise your hand.]]"],
-            ["fewer / less", "moins de (qu'on compte) / moins de (qu'on ne compte pas)", "[[fewer cars, less traffic]]"],
-            ["advice / advise", "conseil (nom) / conseiller (verbe)", "[[good advice; I advise you to rest]]"],
-            ["quiet / quite", "silencieux / assez, plutôt", "[[a quiet room; quite cold]]"],
-            ["accept / except", "accepter / sauf", "[[I accept. Everyone except me.]]"],
-            ["then / than", "ensuite / que (comparaison)", "[[taller than me; and then we left]]"],
-            ["principal / principle", "directeur d'école / principe", "[[The principal has strong principles.]]"],
-            ["stationary / stationery", "immobile / articles de papeterie", "[[a stationary bus; a stationery store]]"],
-            ["compliment / complement", "éloge / complément", "[[a nice compliment; a good complement]]"],
-            ["practice / practise", "nom / verbe (au Canada)", "[[hockey practice; I practise every day]]"]
+            [
+              "affect / effect",
+              "verbe (influencer) / nom (un effet)",
+              "[[The noise affects me. It has a bad effect on me.]]"
+            ],
+            [
+              "lose / loose",
+              "perdre / lâche, pas serré",
+              "[[Don't lose your keys! My shoe is loose.]]"
+            ],
+            [
+              "borrow / lend",
+              "emprunter / prêter",
+              "[[Can I borrow your pen? Can you lend me your pen?]]"
+            ],
+            [
+              "say / tell",
+              "dire quelque chose / dire à quelqu'un",
+              "[[She said hello. She told me a secret.]]"
+            ],
+            [
+              "rise / raise",
+              "monter tout seul / lever quelque chose",
+              "[[The sun rises. Raise your hand.]]"
+            ],
+            [
+              "fewer / less",
+              "moins de (qu'on compte) / moins de (qu'on ne compte pas)",
+              "[[fewer cars, less traffic]]"
+            ],
+            [
+              "advice / advise",
+              "conseil (nom) / conseiller (verbe)",
+              "[[good advice; I advise you to rest]]"
+            ],
+            [
+              "quiet / quite",
+              "silencieux / assez, plutôt",
+              "[[a quiet room; quite cold]]"
+            ],
+            [
+              "accept / except",
+              "accepter / sauf",
+              "[[I accept. Everyone except me.]]"
+            ],
+            [
+              "then / than",
+              "ensuite / que (comparaison)",
+              "[[taller than me; and then we left]]"
+            ],
+            [
+              "principal / principle",
+              "directeur d'école / principe",
+              "[[The principal has strong principles.]]"
+            ],
+            [
+              "stationary / stationery",
+              "immobile / articles de papeterie",
+              "[[a stationary bus; a stationery store]]"
+            ],
+            [
+              "compliment / complement",
+              "éloge / complément",
+              "[[a nice compliment; a good complement]]"
+            ],
+            [
+              "practice / practise",
+              "nom / verbe (au Canada)",
+              "[[hockey practice; I practise every day]]"
+            ]
           ]
         },
         {
@@ -456,11 +2010,26 @@
         {
           "type": "examples",
           "items": [
-            { "en": "Can you lend me your charger?", "fr": "Peux-tu me prêter ton chargeur ?" },
-            { "en": "There are fewer students but less noise.", "fr": "Il y a moins d'élèves mais moins de bruit." },
-            { "en": "The dog is lying in its bed.", "fr": "Le chien est couché dans son lit." },
-            { "en": "They're leaving their bikes over there.", "fr": "Ils laissent leurs vélos là-bas." },
-            { "en": "My grandpa gave me some great advice.", "fr": "Mon grand-père m'a donné de très bons conseils." }
+            {
+              "en": "Can you lend me your charger?",
+              "fr": "Peux-tu me prêter ton chargeur ?"
+            },
+            {
+              "en": "There are fewer students but less noise.",
+              "fr": "Il y a moins d'élèves mais moins de bruit."
+            },
+            {
+              "en": "The dog is lying in its bed.",
+              "fr": "Le chien est couché dans son lit."
+            },
+            {
+              "en": "They're leaving their bikes over there.",
+              "fr": "Ils laissent leurs vélos là-bas."
+            },
+            {
+              "en": "My grandpa gave me some great advice.",
+              "fr": "Mon grand-père m'a donné de très bons conseils."
+            }
           ]
         },
         {
@@ -475,82 +2044,1204 @@
           "type": "dialogue",
           "title": "Devoirs à deux",
           "lines": [
-            { "who": "Emma", "en": "Can I borrow your eraser? I'll give it back right away.", "fr": "Je peux emprunter ta gomme à effacer ? Je te la redonne tout de suite." },
-            { "who": "Lucas", "en": "Sure, I'll lend it to you. Just don't lose it this time!", "fr": "Bien sûr, je te la prête. Mais ne la perds pas cette fois !" },
-            { "who": "Emma", "en": "Very funny. Hey, do we say fewer mistakes or less mistakes?", "fr": "Très drôle. Hé, on dit fewer mistakes ou less mistakes ?" },
-            { "who": "Lucas", "en": "Fewer mistakes, because you can count them. But less homework, because you can't.", "fr": "Fewer mistakes, parce qu'on peut les compter. Mais less homework, parce qu'on ne peut pas." },
-            { "who": "Emma", "en": "I wish we had less homework. Can I lie down for five minutes?", "fr": "J'aimerais qu'on ait moins de devoirs. Je peux m'allonger cinq minutes ?" },
-            { "who": "Lucas", "en": "No way. Your homework won't do itself, and it's due tomorrow.", "fr": "Pas question. Tes devoirs ne vont pas se faire tout seuls, et c'est pour demain." },
-            { "who": "Emma", "en": "Fine. But that's quite mean, you know.", "fr": "D'accord. Mais c'est plutôt méchant, tu sais." }
+            {
+              "who": "Emma",
+              "en": "Can I borrow your eraser? I'll give it back right away.",
+              "fr": "Je peux emprunter ta gomme à effacer ? Je te la redonne tout de suite."
+            },
+            {
+              "who": "Lucas",
+              "en": "Sure, I'll lend it to you. Just don't lose it this time!",
+              "fr": "Bien sûr, je te la prête. Mais ne la perds pas cette fois !"
+            },
+            {
+              "who": "Emma",
+              "en": "Very funny. Hey, do we say fewer mistakes or less mistakes?",
+              "fr": "Très drôle. Hé, on dit fewer mistakes ou less mistakes ?"
+            },
+            {
+              "who": "Lucas",
+              "en": "Fewer mistakes, because you can count them. But less homework, because you can't.",
+              "fr": "Fewer mistakes, parce qu'on peut les compter. Mais less homework, parce qu'on ne peut pas."
+            },
+            {
+              "who": "Emma",
+              "en": "I wish we had less homework. Can I lie down for five minutes?",
+              "fr": "J'aimerais qu'on ait moins de devoirs. Je peux m'allonger cinq minutes ?"
+            },
+            {
+              "who": "Lucas",
+              "en": "No way. Your homework won't do itself, and it's due tomorrow.",
+              "fr": "Pas question. Tes devoirs ne vont pas se faire tout seuls, et c'est pour demain."
+            },
+            {
+              "who": "Emma",
+              "en": "Fine. But that's quite mean, you know.",
+              "fr": "D'accord. Mais c'est plutôt méchant, tu sais."
+            }
           ]
         }
       ],
       "vocab": [
-        { "en": "affect", "fr": "influencer, avoir un effet sur (verbe)", "alt": [], "ex": "Lack of sleep can affect your marks." },
-        { "en": "effect", "fr": "effet, résultat (nom)", "alt": [], "ex": "The medicine had a quick effect." },
-        { "en": "loose", "fr": "lâche, trop grand (pas serré)", "alt": [], "ex": "My shoelace is loose." },
-        { "en": "lend", "fr": "prêter", "alt": [], "ex": "Can you lend me your bike?" },
-        { "en": "borrow", "fr": "emprunter", "alt": [], "ex": "Can I borrow your ruler?" },
-        { "en": "rise", "fr": "monter, se lever (tout seul)", "alt": [], "ex": "The sun rises in the east." },
-        { "en": "raise", "fr": "lever, augmenter (quelque chose)", "alt": [], "ex": "Raise your hand if you know the answer." },
-        { "en": "lie down", "fr": "s'allonger, se coucher", "alt": [], "ex": "I'm tired; I'm going to lie down." },
-        { "en": "lay", "fr": "poser à plat (passé : laid)", "alt": [], "ex": "Lay the map flat on the table." },
-        { "en": "fewer", "fr": "moins de (avec un pluriel qu'on compte)", "alt": [], "ex": "There are fewer cars on Sunday." },
-        { "en": "less", "fr": "moins de (avec ce qu'on ne compte pas)", "alt": [], "ex": "I have less homework this week." },
-        { "en": "advice", "fr": "conseil, des conseils (nom)", "alt": [], "ex": "Can you give me some advice?" },
-        { "en": "advise", "fr": "conseiller (verbe)", "alt": [], "ex": "The doctor advised me to rest." },
-        { "en": "quite", "fr": "assez, plutôt", "alt": ["pretty", "rather", "fairly"], "ex": "The test was quite easy." },
-        { "en": "quiet", "fr": "silencieux, tranquille", "alt": [], "ex": "Please be quiet in the library." },
-        { "en": "except", "fr": "sauf, à part", "alt": [], "ex": "Everyone came except Noah." },
-        { "en": "principal", "fr": "directeur, directrice d'école", "alt": [], "ex": "The principal visited our class." },
-        { "en": "principle", "fr": "principe", "alt": [], "ex": "Honesty is an important principle." },
-        { "en": "stationery", "fr": "articles de papeterie", "alt": [], "ex": "I need new stationery for school." },
-        { "en": "stationary", "fr": "immobile, à l'arrêt", "alt": [], "ex": "The bus was stationary at the red light." }
+        {
+          "en": "affect",
+          "fr": "influencer, avoir un effet sur (verbe)",
+          "alt": [],
+          "ex": "Lack of sleep can affect your marks."
+        },
+        {
+          "en": "effect",
+          "fr": "effet, résultat (nom)",
+          "alt": [],
+          "ex": "The medicine had a quick effect."
+        },
+        {
+          "en": "loose",
+          "fr": "lâche, trop grand (pas serré)",
+          "alt": [],
+          "ex": "My shoelace is loose."
+        },
+        {
+          "en": "lend",
+          "fr": "prêter",
+          "alt": [],
+          "ex": "Can you lend me your bike?"
+        },
+        {
+          "en": "borrow",
+          "fr": "emprunter",
+          "alt": [],
+          "ex": "Can I borrow your ruler?"
+        },
+        {
+          "en": "rise",
+          "fr": "monter, se lever (tout seul)",
+          "alt": [],
+          "ex": "The sun rises in the east."
+        },
+        {
+          "en": "raise",
+          "fr": "lever, augmenter (quelque chose)",
+          "alt": [],
+          "ex": "Raise your hand if you know the answer."
+        },
+        {
+          "en": "lie down",
+          "fr": "s'allonger, se coucher",
+          "alt": [],
+          "ex": "I'm tired; I'm going to lie down."
+        },
+        {
+          "en": "lay",
+          "fr": "poser à plat (passé : laid)",
+          "alt": [],
+          "ex": "Lay the map flat on the table."
+        },
+        {
+          "en": "fewer",
+          "fr": "moins de (avec un pluriel qu'on compte)",
+          "alt": [],
+          "ex": "There are fewer cars on Sunday."
+        },
+        {
+          "en": "less",
+          "fr": "moins de (avec ce qu'on ne compte pas)",
+          "alt": [],
+          "ex": "I have less homework this week."
+        },
+        {
+          "en": "advice",
+          "fr": "conseil, des conseils (nom)",
+          "alt": [],
+          "ex": "Can you give me some advice?"
+        },
+        {
+          "en": "advise",
+          "fr": "conseiller (verbe)",
+          "alt": [],
+          "ex": "The doctor advised me to rest."
+        },
+        {
+          "en": "quite",
+          "fr": "assez, plutôt",
+          "alt": [
+            "pretty",
+            "rather",
+            "fairly"
+          ],
+          "ex": "The test was quite easy."
+        },
+        {
+          "en": "quiet",
+          "fr": "silencieux, tranquille",
+          "alt": [],
+          "ex": "Please be quiet in the library."
+        },
+        {
+          "en": "except",
+          "fr": "sauf, à part",
+          "alt": [],
+          "ex": "Everyone came except Noah."
+        },
+        {
+          "en": "principal",
+          "fr": "directeur, directrice d'école",
+          "alt": [],
+          "ex": "The principal visited our class."
+        },
+        {
+          "en": "principle",
+          "fr": "principe",
+          "alt": [],
+          "ex": "Honesty is an important principle."
+        },
+        {
+          "en": "stationery",
+          "fr": "articles de papeterie",
+          "alt": [],
+          "ex": "I need new stationery for school."
+        },
+        {
+          "en": "stationary",
+          "fr": "immobile, à l'arrêt",
+          "alt": [],
+          "ex": "The bus was stationary at the red light."
+        }
       ],
       "sentences": [
-        { "en": "Can you lend me your charger until tomorrow?", "fr": "Peux-tu me prêter ton chargeur jusqu'à demain ?", "trap": ["borrow", "lent"], "alt": [] },
-        { "en": "The cold weather didn't affect our plans at all.", "fr": "Le froid n'a pas du tout influencé nos plans.", "trap": ["effect", "affected"], "alt": [] },
-        { "en": "There are fewer students in the class than last year.", "fr": "Il y a moins d'élèves dans la classe que l'an dernier.", "trap": ["less", "then"], "alt": [] },
-        { "en": "The dog is lying on the couch, and it's wagging its tail.", "fr": "Le chien est couché sur le divan et il remue la queue.", "trap": ["laying", "their"], "alt": [] },
-        { "en": "I laid my backpack on the floor and lay down on the bed.", "fr": "J'ai posé mon sac à dos par terre et je me suis allongé sur le lit.", "trap": ["layed", "lied"], "alt": [] },
-        { "en": "My grandma gave me some great advice about saving money.", "fr": "Ma grand-mère m'a donné de super conseils pour économiser.", "trap": ["advices", "advise"], "alt": [] },
-        { "en": "The library was so quiet that I could hear the clock.", "fr": "La bibliothèque était si silencieuse que j'entendais l'horloge.", "trap": ["quite", "than"], "alt": [] },
-        { "en": "Everyone was invited except Liam, who was sick.", "fr": "Tout le monde était invité sauf Liam, qui était malade.", "trap": ["accept", "which"], "alt": ["Everyone except Liam, who was sick, was invited."] },
-        { "en": "Our principal has one simple principle: respect everyone.", "fr": "Notre directrice a un principe tout simple : respecter tout le monde.", "trap": ["principals", "respects"], "alt": [] },
-        { "en": "Who's coming to the party, and whose jacket is this?", "fr": "Qui vient à la fête, et à qui est ce manteau ?", "trap": ["who", "whom"], "alt": ["Whose jacket is this, and who's coming to the party?"] },
-        { "en": "They're leaving their bikes over there by the fence.", "fr": "Ils laissent leurs vélos là-bas, près de la clôture.", "trap": ["there's", "theirs"], "alt": ["They're leaving their bikes by the fence over there."] },
-        { "en": "The price of bus tickets will rise again in January.", "fr": "Le prix des billets d'autobus va encore augmenter en janvier.", "trap": ["raise", "rises"], "alt": ["In January the price of bus tickets will rise again."] }
+        {
+          "en": "Can you lend me your charger until tomorrow?",
+          "fr": "Peux-tu me prêter ton chargeur jusqu'à demain ?",
+          "trap": [
+            "borrow",
+            "lent"
+          ],
+          "alt": []
+        },
+        {
+          "en": "The cold weather didn't affect our plans at all.",
+          "fr": "Le froid n'a pas du tout influencé nos plans.",
+          "trap": [
+            "effect",
+            "affected"
+          ],
+          "alt": []
+        },
+        {
+          "en": "There are fewer students in the class than last year.",
+          "fr": "Il y a moins d'élèves dans la classe que l'an dernier.",
+          "trap": [
+            "less",
+            "then"
+          ],
+          "alt": []
+        },
+        {
+          "en": "The dog is lying on the couch, and it's wagging its tail.",
+          "fr": "Le chien est couché sur le divan et il remue la queue.",
+          "trap": [
+            "laying",
+            "their"
+          ],
+          "alt": []
+        },
+        {
+          "en": "I laid my backpack on the floor and lay down on the bed.",
+          "fr": "J'ai posé mon sac à dos par terre et je me suis allongé sur le lit.",
+          "trap": [
+            "layed",
+            "lied"
+          ],
+          "alt": []
+        },
+        {
+          "en": "My grandma gave me some great advice about saving money.",
+          "fr": "Ma grand-mère m'a donné de super conseils pour économiser.",
+          "trap": [
+            "advices",
+            "advise"
+          ],
+          "alt": []
+        },
+        {
+          "en": "The library was so quiet that I could hear the clock.",
+          "fr": "La bibliothèque était si silencieuse que j'entendais l'horloge.",
+          "trap": [
+            "quite",
+            "than"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Everyone was invited except Liam, who was sick.",
+          "fr": "Tout le monde était invité sauf Liam, qui était malade.",
+          "trap": [
+            "accept",
+            "which"
+          ],
+          "alt": [
+            "Everyone except Liam, who was sick, was invited."
+          ]
+        },
+        {
+          "en": "Our principal has one simple principle: respect everyone.",
+          "fr": "Notre directrice a un principe tout simple : respecter tout le monde.",
+          "trap": [
+            "principals",
+            "respects"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Who's coming to the party, and whose jacket is this?",
+          "fr": "Qui vient à la fête, et à qui est ce manteau ?",
+          "trap": [
+            "who",
+            "whom"
+          ],
+          "alt": [
+            "Whose jacket is this, and who's coming to the party?"
+          ]
+        },
+        {
+          "en": "They're leaving their bikes over there by the fence.",
+          "fr": "Ils laissent leurs vélos là-bas, près de la clôture.",
+          "trap": [
+            "there's",
+            "theirs"
+          ],
+          "alt": [
+            "They're leaving their bikes by the fence over there."
+          ]
+        },
+        {
+          "en": "The price of bus tickets will rise again in January.",
+          "fr": "Le prix des billets d'autobus va encore augmenter en janvier.",
+          "trap": [
+            "raise",
+            "rises"
+          ],
+          "alt": [
+            "In January the price of bus tickets will rise again."
+          ]
+        }
       ],
       "grammar": [
-        { "type": "mcq", "q": "I have hockey ___ tonight.", "choices": ["practise", "practice", "practising", "practised"], "answer": 1, "explain": "Ici c'est un nom (l'entraînement) : practice avec un c. Au Canada, practise avec un s, c'est le verbe." },
-        { "type": "mcq", "q": "The new rule will ___ everyone in the school.", "choices": ["affect", "effect", "effects", "affection"], "answer": 0, "explain": "Il faut un verbe (influencer) : affect. effect est le nom." },
-        { "type": "mcq", "q": "My jeans are too ___; I need a belt.", "choices": ["lose", "lost", "loose", "loosen"], "answer": 2, "explain": "loose = lâche, trop grand. lose = perdre." },
-        { "type": "mcq", "q": "There were ___ people at the game than last week.", "choices": ["less", "lesser", "few", "fewer"], "answer": 3, "explain": "people se compte (un pluriel) : fewer." },
-        { "type": "mcq", "q": "When the teacher came in, everyone ___ from their seats.", "choices": ["raised", "rose", "rised", "raise"], "answer": 1, "explain": "On se lève tout seul : rise, rose, risen. raise a besoin d'un objet (raise your hand)." },
-        { "type": "mcq", "q": "Yesterday I was so tired that I ___ on the couch all afternoon.", "choices": ["laid", "lied", "lay", "layed"], "answer": 2, "explain": "S'allonger = lie, et son passé est lay. laid est le passé de lay (poser quelque chose)." },
-        { "type": "fill", "q": "My parents ___ me to study harder.", "hint": "conseiller (passé)", "answer": ["advised"], "explain": "Le verbe s'écrit avec un s : advise → advised. advice (avec un c) est le nom." },
-        { "type": "fill", "q": "Please ___ your hand if you know the answer.", "hint": "lever", "answer": ["raise", "put up"], "explain": "On lève quelque chose (la main) : raise." },
-        { "type": "fill", "q": "This sandwich costs ___ than the pizza.", "hint": "moins", "answer": ["less"], "explain": "costs less = coûte moins cher. fewer va seulement devant un nom pluriel qu'on peut compter." },
-        { "type": "fill", "q": "___ backpack is this? It's on my chair.", "hint": "à qui (whose ou who's ?)", "answer": ["Whose"], "explain": "À qui = whose. who's = who is." },
-        { "type": "fill", "q": "My brother is taller ___ me.", "hint": "que (then ou than ?)", "answer": ["than"], "explain": "Pour comparer : than. then veut dire ensuite." },
-        { "type": "fill", "q": "The students forgot ___ notebooks at home.", "hint": "leurs (their, there ou they're ?)", "answer": ["their"], "explain": "Possessif (leurs) : their." },
-        { "type": "error", "q": "Can you borrow me your eraser, please?", "wrong": 2, "fix": ["lend"], "explain": "Prêter = lend. borrow veut dire emprunter." },
-        { "type": "error", "q": "The dog wagged it's tail happily.", "wrong": 3, "fix": ["its"], "explain": "Possessif (sa queue) : its, sans apostrophe. it's = it is." },
-        { "type": "error", "q": "There were less cars on the road this morning.", "wrong": 2, "fix": ["fewer"], "explain": "cars se compte : fewer cars." },
-        { "type": "error", "q": "I need your advise on my essay.", "wrong": 3, "fix": ["advice"], "explain": "Ici c'est le nom (ton conseil) : advice, avec un c." },
-        { "type": "error", "q": "Please be quite during the test.", "wrong": 2, "fix": ["quiet"], "explain": "Silencieux = quiet. quite veut dire assez." },
-        { "type": "error", "q": "She said me the truth.", "wrong": 1, "fix": ["told"], "explain": "tell + personne : She told me the truth. (say ne prend pas la personne directement.)" }
+        {
+          "type": "mcq",
+          "q": "I have hockey ___ tonight.",
+          "choices": [
+            "practise",
+            "practice",
+            "practising",
+            "practised"
+          ],
+          "answer": 1,
+          "explain": "Ici c'est un nom (l'entraînement) : practice avec un c. Au Canada, practise avec un s, c'est le verbe."
+        },
+        {
+          "type": "mcq",
+          "q": "The new rule will ___ everyone in the school.",
+          "choices": [
+            "affect",
+            "effect",
+            "effects",
+            "affection"
+          ],
+          "answer": 0,
+          "explain": "Il faut un verbe (influencer) : affect. effect est le nom."
+        },
+        {
+          "type": "mcq",
+          "q": "My jeans are too ___; I need a belt.",
+          "choices": [
+            "lose",
+            "lost",
+            "loose",
+            "loosen"
+          ],
+          "answer": 2,
+          "explain": "loose = lâche, trop grand. lose = perdre."
+        },
+        {
+          "type": "mcq",
+          "q": "There were ___ people at the game than last week.",
+          "choices": [
+            "less",
+            "lesser",
+            "few",
+            "fewer"
+          ],
+          "answer": 3,
+          "explain": "people se compte (un pluriel) : fewer."
+        },
+        {
+          "type": "mcq",
+          "q": "When the teacher came in, everyone ___ from their seats.",
+          "choices": [
+            "raised",
+            "rose",
+            "rised",
+            "raise"
+          ],
+          "answer": 1,
+          "explain": "On se lève tout seul : rise, rose, risen. raise a besoin d'un objet (raise your hand)."
+        },
+        {
+          "type": "mcq",
+          "q": "Yesterday I was so tired that I ___ on the couch all afternoon.",
+          "choices": [
+            "laid",
+            "lied",
+            "lay",
+            "layed"
+          ],
+          "answer": 2,
+          "explain": "S'allonger = lie, et son passé est lay. laid est le passé de lay (poser quelque chose)."
+        },
+        {
+          "type": "fill",
+          "q": "My parents ___ me to study harder.",
+          "hint": "conseiller (passé)",
+          "answer": [
+            "advised"
+          ],
+          "explain": "Le verbe s'écrit avec un s : advise → advised. advice (avec un c) est le nom."
+        },
+        {
+          "type": "fill",
+          "q": "Please ___ your hand if you know the answer.",
+          "hint": "lever",
+          "answer": [
+            "raise",
+            "put up"
+          ],
+          "explain": "On lève quelque chose (la main) : raise."
+        },
+        {
+          "type": "fill",
+          "q": "This sandwich costs ___ than the pizza.",
+          "hint": "moins",
+          "answer": [
+            "less"
+          ],
+          "explain": "costs less = coûte moins cher. fewer va seulement devant un nom pluriel qu'on peut compter."
+        },
+        {
+          "type": "fill",
+          "q": "___ backpack is this? It's on my chair.",
+          "hint": "à qui (whose ou who's ?)",
+          "answer": [
+            "Whose"
+          ],
+          "explain": "À qui = whose. who's = who is."
+        },
+        {
+          "type": "fill",
+          "q": "My brother is taller ___ me.",
+          "hint": "que (then ou than ?)",
+          "answer": [
+            "than"
+          ],
+          "explain": "Pour comparer : than. then veut dire ensuite."
+        },
+        {
+          "type": "fill",
+          "q": "The students forgot ___ notebooks at home.",
+          "hint": "leurs (their, there ou they're ?)",
+          "answer": [
+            "their"
+          ],
+          "explain": "Possessif (leurs) : their."
+        },
+        {
+          "type": "error",
+          "q": "Can you borrow me your eraser, please?",
+          "wrong": 2,
+          "fix": [
+            "lend"
+          ],
+          "explain": "Prêter = lend. borrow veut dire emprunter."
+        },
+        {
+          "type": "error",
+          "q": "The dog wagged it's tail happily.",
+          "wrong": 3,
+          "fix": [
+            "its"
+          ],
+          "explain": "Possessif (sa queue) : its, sans apostrophe. it's = it is."
+        },
+        {
+          "type": "error",
+          "q": "There were less cars on the road this morning.",
+          "wrong": 2,
+          "fix": [
+            "fewer"
+          ],
+          "explain": "cars se compte : fewer cars."
+        },
+        {
+          "type": "error",
+          "q": "I need your advise on my essay.",
+          "wrong": 3,
+          "fix": [
+            "advice"
+          ],
+          "explain": "Ici c'est le nom (ton conseil) : advice, avec un c."
+        },
+        {
+          "type": "error",
+          "q": "Please be quite during the test.",
+          "wrong": 2,
+          "fix": [
+            "quiet"
+          ],
+          "explain": "Silencieux = quiet. quite veut dire assez."
+        },
+        {
+          "type": "error",
+          "q": "She said me the truth.",
+          "wrong": 1,
+          "fix": [
+            "told"
+          ],
+          "explain": "tell + personne : She told me the truth. (say ne prend pas la personne directement.)"
+        }
       ],
       "reading": {
         "title": "Ask Priya, the Word Detective",
         "text": "Every week, our school newspaper receives letters from students who are confused about English words. This week, Priya answers two of them.\n\nDear Priya,\nMy older brother says I should never borrow his headphones without asking. So last week, I asked him, “Can you borrow me your headphones?” He laughed so hard that he couldn't answer. What did I do wrong?\nEmbarrassed in Orleans\n\nDear Embarrassed,\nDon't worry, it's a very common mistake for French speakers! You borrow something from someone, but someone lends something to you. So next time, try: “Can you lend me your headphones?” or “Can I borrow your headphones?” Your brother will have fewer reasons to laugh, and you'll have more music.\n\nDear Priya,\nMy teacher circled “its” and “it's” in red on my essay about my dog. I thought they were the same word! She also says that “I laid down after the walk” is wrong. My dog lies down all the time. Why can't I?\nConfused in Kanata\n\nDear Confused,\nYou can, of course! But the verb is tricky. When you rest your body, you lie down, and in the past, you lay down. When you put an object somewhere, you lay it down, and in the past, you laid it. So: “I lay down after the walk,” but “I laid my keys on the table.”\n\nAs for its and it's, here is my secret: if you can say “it is” or “it has,” use the apostrophe. “It's a sunny day.” If not, it shows possession: “My dog loves its blanket.”\n\nRemember, these mistakes don't affect how smart you are. Even adults make them! But fixing them will have a great effect on your writing.\n\nKeep the letters coming!\nPriya",
         "questions": [
-          { "q": "Why did the brother laugh so hard?", "choices": ["His headphones were broken.", "The writer used “borrow” where “lend” was needed.", "He didn't want to share his headphones.", "He was listening to a funny podcast."], "answer": 1 },
-          { "q": "According to Priya, what is the simple past of “lie” when you rest your body?", "choices": ["lied", "laid", "lain", "lay"], "answer": 3 },
-          { "q": "Which sentence follows Priya's advice?", "choices": ["It's raining again.", "The bird hurt it's wing.", "The team lost it's first game.", "Its a great idea."], "answer": 0 },
-          { "q": "What does Priya mean when she says the brother “will have fewer reasons to laugh”?", "choices": ["The brother will stop telling jokes.", "The brother is sad.", "If the writer uses the right word, there will be no mistake to laugh at.", "The headphones will be returned."], "answer": 2 },
-          { "q": "What is Priya's attitude toward the students who write to her?", "choices": ["She makes fun of their mistakes.", "She is kind and encouraging.", "She is annoyed by their questions.", "She thinks their teachers are wrong."], "answer": 1 },
-          { "q": "Why does Priya say that even adults make these mistakes?", "choices": ["To criticize adults", "To prove that English is impossible", "To explain why the teacher is wrong", "To show that the mistakes are normal and not a sign of being less smart"], "answer": 3 }
+          {
+            "q": "Why did the brother laugh so hard?",
+            "choices": [
+              "His headphones were broken.",
+              "The writer used “borrow” where “lend” was needed.",
+              "He didn't want to share his headphones.",
+              "He was listening to a funny podcast."
+            ],
+            "answer": 1
+          },
+          {
+            "q": "According to Priya, what is the simple past of “lie” when you rest your body?",
+            "choices": [
+              "lied",
+              "laid",
+              "lain",
+              "lay"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Which sentence follows Priya's advice?",
+            "choices": [
+              "It's raining again.",
+              "The bird hurt it's wing.",
+              "The team lost it's first game.",
+              "Its a great idea."
+            ],
+            "answer": 0
+          },
+          {
+            "q": "What does Priya mean when she says the brother “will have fewer reasons to laugh”?",
+            "choices": [
+              "The brother will stop telling jokes.",
+              "The brother is sad.",
+              "If the writer uses the right word, there will be no mistake to laugh at.",
+              "The headphones will be returned."
+            ],
+            "answer": 2
+          },
+          {
+            "q": "What is Priya's attitude toward the students who write to her?",
+            "choices": [
+              "She makes fun of their mistakes.",
+              "She is kind and encouraging.",
+              "She is annoyed by their questions.",
+              "She thinks their teachers are wrong."
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Why does Priya say that even adults make these mistakes?",
+            "choices": [
+              "To criticize adults",
+              "To prove that English is impossible",
+              "To explain why the teacher is wrong",
+              "To show that the mistakes are normal and not a sign of being less smart"
+            ],
+            "answer": 3
+          }
+        ]
+      }
+    },
+    {
+      "id": "11.5",
+      "title": "L'anglais académique",
+      "titleEn": "Arguably Speaking",
+      "goal": "Écrire comme dans un rapport ou un essai : nuancer ses affirmations, rapporter une opinion de façon impersonnelle et transformer les verbes en noms.",
+      "lesson": [
+        {
+          "type": "p",
+          "text": "Dans un essai, un rapport ou à l'examen Cambridge C2, on n'écrit pas « Tout le monde sait que les ados sont paresseux ! ». L'anglais académique est **prudent** (il nuance), **impersonnel** (il cache le « je » et le « on ») et **compact** (il adore les noms). Trois outils pour sonner comme une vraie chercheuse… même quand tu écris sur les chaussettes perdues."
+        },
+        {
+          "type": "rule",
+          "title": "Nuancer : le hedging",
+          "text": "Pour éviter les affirmations trop absolues : [[It appears that…]] / [[It seems that…]] (il semble que) ; sujet + [[appears to]] / [[seems to]] + base verbale : [[The plan appears to work.]] ; [[tend to]] + base verbale (avoir tendance à) : [[Cats tend to sleep a lot.]] ; [[be likely to]] / [[be unlikely to]] + base verbale (il est probable / peu probable que) : [[Prices are likely to rise.]] ; l'adverbe [[arguably]] (on peut soutenir que, sans doute), placé devant ce qu'il nuance : [[This is arguably her best book.]] ; et [[to some extent]] (dans une certaine mesure). Les modaux [[may]], [[might]] et [[could]] nuancent aussi."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Trop absolu",
+            "Version académique"
+          ],
+          "rows": [
+            [
+              "[[Teenagers are lazy.]]",
+              "[[Teenagers tend to sleep later than adults.]]"
+            ],
+            [
+              "[[The bus will be late.]]",
+              "[[The bus is likely to be late.]]"
+            ],
+            [
+              "[[The machine is broken.]]",
+              "[[The machine appears to be broken.]]"
+            ],
+            [
+              "[[This is the best song ever.]]",
+              "[[This is arguably the best song of the decade.]]"
+            ],
+            [
+              "[[Screens ruin our sleep.]]",
+              "[[To some extent, screens may affect our sleep.]]"
+            ]
+          ]
+        },
+        {
+          "type": "rule",
+          "title": "Les structures impersonnelles",
+          "text": "Pour rapporter une opinion générale sans dire qui la pense (le « on dit que » du français) : **1.** [[It is]] + participe passé + [[that]] : [[It is widely believed that…]], [[It is said that…]], [[It is thought that…]], [[It is expected that…]], [[It is known that…]]. **2.** Sujet + [[is]] + participe passé + [[to]] + base verbale : [[The castle is said to be haunted.]] (On dit que le château est hanté.) **3.** Pour un fait **passé**, [[to have]] + participe passé : [[The cake is thought to have disappeared during the night.]] (On pense que le gâteau a disparu pendant la nuit.) Variante avec [[there]] : [[There is said to be a tunnel under the school.]]"
+        },
+        {
+          "type": "tip",
+          "text": "Pièges de francophone : **1.** « On dit que » ne se traduit pas par [[It is told that]] ✗ mais par [[It is said that]] ✓. **2.** Ne mélange pas les deux structures : [[He is believed that he is rich]] ✗ → [[He is believed to be rich]] ✓ ou [[It is believed that he is rich]] ✓. **3.** [[evidence]] (des preuves) et [[research]] (des recherches) sont **indénombrables** : jamais [[evidences]] ni [[researches]] ; on dit [[a piece of evidence]]. **4.** « Il est probable que Léa gagne » : [[Léa is likely to win]], jamais [[Léa is probable to win]] ✗. **5.** Après [[tend to]], [[appear to]] et [[be likely to]] : la **base verbale**, jamais -ing : [[tends to sleep]], pas [[tends to sleeping]]."
+        },
+        {
+          "type": "rule",
+          "title": "La nominalisation",
+          "text": "L'anglais académique transforme les verbes et les adjectifs en **noms** : la phrase devient plus compacte et plus objective. [[Prices rose quickly, which worried everyone.]] → [[The rapid rise in prices worried everyone.]] Remarque : l'adverbe ([[quickly]]) devient un **adjectif** ([[rapid]]), et le complément arrive avec [[of]] ou [[in]] : [[the introduction of a new rule]], [[a rise in prices]], [[the growth of the city]]. Le sujet peut devenir un possessif : [[The mayor decided…]] → [[The mayor's decision…]]"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Verbe / adjectif",
+            "Nom",
+            "Exemple"
+          ],
+          "rows": [
+            [
+              "decide",
+              "decision",
+              "[[The decision surprised us.]]"
+            ],
+            [
+              "introduce",
+              "introduction",
+              "[[the introduction of a new rule]]"
+            ],
+            [
+              "fail",
+              "failure",
+              "[[The failure of the plan was obvious.]]"
+            ],
+            [
+              "grow",
+              "growth",
+              "[[the growth of the city]]"
+            ],
+            [
+              "arrive",
+              "arrival",
+              "[[the arrival of winter]]"
+            ],
+            [
+              "refuse",
+              "refusal",
+              "[[her refusal to answer]]"
+            ],
+            [
+              "analyze",
+              "analysis",
+              "[[a careful analysis of the results]]"
+            ],
+            [
+              "able",
+              "ability",
+              "[[the ability to concentrate]]"
+            ],
+            [
+              "likely",
+              "likelihood",
+              "[[the likelihood of rain]]"
+            ]
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "It appears that the printer has run out of ink.",
+              "fr": "Il semble que l'imprimante n'ait plus d'encre."
+            },
+            {
+              "en": "Raccoons tend to visit our garbage bins on Tuesday nights.",
+              "fr": "Les ratons laveurs ont tendance à visiter nos poubelles le mardi soir."
+            },
+            {
+              "en": "It is widely believed that cats always land on their feet.",
+              "fr": "Beaucoup croient que les chats retombent toujours sur leurs pattes."
+            },
+            {
+              "en": "The painting is thought to have been hidden in the attic for decades.",
+              "fr": "On pense que le tableau a été caché dans le grenier pendant des décennies."
+            },
+            {
+              "en": "The arrival of the new puppy changed our routine completely.",
+              "fr": "L'arrivée du nouveau chiot a complètement changé notre routine."
+            },
+            {
+              "en": "Hockey is arguably the most popular sport in Canada.",
+              "fr": "Le hockey est sans doute le sport le plus populaire au Canada."
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "title": "Le rapport de Priya",
+          "lines": [
+            {
+              "who": "Priya",
+              "en": "Dad, can you read my science report? My teacher says it sounds too casual.",
+              "fr": "Papa, peux-tu lire mon rapport de sciences ? Mon enseignante dit qu'il sonne trop familier."
+            },
+            {
+              "who": "Dad",
+              "en": "Let's see. \"Everybody knows that dogs are smarter than cats.\" Hmm, that's a bit strong.",
+              "fr": "Voyons. « Tout le monde sait que les chiens sont plus intelligents que les chats. » Hum, c'est un peu fort."
+            },
+            {
+              "who": "Priya",
+              "en": "Fine. \"It is widely believed that dogs are smarter than cats.\" Better?",
+              "fr": "D'accord. « Beaucoup pensent que les chiens sont plus intelligents que les chats. » C'est mieux ?"
+            },
+            {
+              "who": "Dad",
+              "en": "Much better. And what about \"Our cat is lazy\"?",
+              "fr": "Beaucoup mieux. Et « Notre chat est paresseux » ?"
+            },
+            {
+              "who": "Priya",
+              "en": "\"Our cat tends to spend most of the day asleep.\"",
+              "fr": "« Notre chat a tendance à passer la plus grande partie de la journée à dormir. »"
+            },
+            {
+              "who": "Dad",
+              "en": "Excellent. And your conclusion?",
+              "fr": "Excellent. Et ta conclusion ?"
+            },
+            {
+              "who": "Priya",
+              "en": "\"Further research is needed. Arguably, the cat is the smartest member of this family.\"",
+              "fr": "« D'autres recherches sont nécessaires. On peut soutenir que le chat est le membre le plus intelligent de cette famille. »"
+            },
+            {
+              "who": "Dad",
+              "en": "That appears to be true, but let's not tell your mother.",
+              "fr": "Ça semble vrai, mais n'en parlons pas à ta mère."
+            }
+          ]
+        },
+        {
+          "type": "fun",
+          "text": "Le sais-tu ? Pendant la Seconde Guerre mondiale, les Britanniques ont fait circuler l'idée que leurs pilotes voyaient la nuit grâce aux carottes. Selon une explication souvent avancée, c'était pour cacher une nouvelle technologie : le radar. Résultat : [[it is still widely believed that carrots help you see in the dark]]. Elles contiennent bien de quoi fabriquer de la vitamine A, utile aux yeux, mais elles ne donnent pas une vision de chat ! Remarque comme cette anecdote est **nuancée** (« selon une explication souvent avancée », en anglais [[it is often said that]]) : c'est du hedging !"
+        }
+      ],
+      "vocab": [
+        {
+          "en": "arguably",
+          "fr": "on peut soutenir que, sans doute",
+          "alt": [],
+          "ex": "This is arguably the best poutine in Gatineau."
+        },
+        {
+          "en": "it appears that",
+          "fr": "il semble que (formel)",
+          "alt": [
+            "it seems that"
+          ],
+          "ex": "It appears that the meeting has been cancelled."
+        },
+        {
+          "en": "tend to",
+          "fr": "avoir tendance à",
+          "alt": [],
+          "ex": "Cats tend to sleep during the day."
+        },
+        {
+          "en": "be likely to",
+          "fr": "être probable que, risquer de (+ base verbale)",
+          "alt": [],
+          "ex": "The roads are likely to be icy tomorrow morning."
+        },
+        {
+          "en": "it is widely believed that",
+          "fr": "il est communément admis que",
+          "alt": [],
+          "ex": "It is widely believed that lightning never strikes the same place twice."
+        },
+        {
+          "en": "be thought to",
+          "fr": "on pense que… (X is thought to…)",
+          "alt": [],
+          "ex": "The ring is thought to be very old."
+        },
+        {
+          "en": "be said to",
+          "fr": "on dit que… (X is said to…)",
+          "alt": [],
+          "ex": "The lake is said to be bottomless."
+        },
+        {
+          "en": "to some extent",
+          "fr": "dans une certaine mesure",
+          "alt": [],
+          "ex": "To some extent, the weather affected the results."
+        },
+        {
+          "en": "evidence",
+          "fr": "preuves (indénombrable)",
+          "alt": [],
+          "ex": "There is no evidence that the dog ate my homework."
+        },
+        {
+          "en": "findings",
+          "fr": "résultats, conclusions (d'une étude)",
+          "alt": [],
+          "ex": "The findings of the study surprised the scientists."
+        },
+        {
+          "en": "research",
+          "fr": "recherche, recherches (indénombrable)",
+          "alt": [],
+          "ex": "More research is needed on this question."
+        },
+        {
+          "en": "significant",
+          "fr": "important, notable (en statistiques)",
+          "alt": [],
+          "ex": "There has been a significant increase in visitors this year."
+        },
+        {
+          "en": "growth",
+          "fr": "croissance",
+          "alt": [],
+          "ex": "The growth of the city has been very fast."
+        },
+        {
+          "en": "failure",
+          "fr": "échec",
+          "alt": [],
+          "ex": "The failure of the experiment taught us a lot."
+        },
+        {
+          "en": "likelihood",
+          "fr": "probabilité, chances (que…)",
+          "alt": [],
+          "ex": "The likelihood of snow tonight is very high."
+        },
+        {
+          "en": "assumption",
+          "fr": "supposition, hypothèse de départ",
+          "alt": [],
+          "ex": "Our first assumption turned out to be wrong."
+        },
+        {
+          "en": "claim",
+          "fr": "affirmer, prétendre (sans preuve)",
+          "alt": [],
+          "ex": "Some people claim that they have seen a ghost."
+        },
+        {
+          "en": "decline",
+          "fr": "baisse, déclin",
+          "alt": [],
+          "ex": "There has been a decline in the number of bees."
+        }
+      ],
+      "sentences": [
+        {
+          "en": "It is widely believed that breakfast is the most important meal of the day.",
+          "fr": "Il est communément admis que le déjeuner (petit-déjeuner) est le repas le plus important de la journée.",
+          "trap": [
+            "believing",
+            "more"
+          ],
+          "alt": []
+        },
+        {
+          "en": "The old house is thought to have been built over two centuries ago.",
+          "fr": "On pense que la vieille maison a été construite il y a plus de deux siècles.",
+          "trap": [
+            "thinks",
+            "build"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Teenagers tend to go to bed later than their parents.",
+          "fr": "Les ados ont tendance à se coucher plus tard que leurs parents.",
+          "trap": [
+            "tends",
+            "going"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Our neighbour's dog is likely to bark when the mail carrier arrives.",
+          "fr": "Le chien de notre voisin va sans doute japper quand le facteur arrivera.",
+          "trap": [
+            "arrive",
+            "barking"
+          ],
+          "alt": []
+        },
+        {
+          "en": "It appears that someone has eaten the last piece of cake.",
+          "fr": "Il semble que quelqu'un ait mangé le dernier morceau de gâteau.",
+          "trap": [
+            "seem",
+            "eat"
+          ],
+          "alt": []
+        },
+        {
+          "en": "There is no evidence that the house is haunted.",
+          "fr": "Il n'y a aucune preuve que la maison soit hantée.",
+          "trap": [
+            "evidences",
+            "any"
+          ],
+          "alt": []
+        },
+        {
+          "en": "This is arguably the best poutine in the whole city.",
+          "fr": "C'est sans doute la meilleure poutine de toute la ville.",
+          "trap": [
+            "arguable",
+            "more"
+          ],
+          "alt": [
+            "Arguably, this is the best poutine in the whole city."
+          ]
+        },
+        {
+          "en": "The introduction of longer recess was a great success.",
+          "fr": "L'introduction d'une récréation plus longue a été un grand succès.",
+          "trap": [
+            "introduce",
+            "introducing"
+          ],
+          "alt": []
+        },
+        {
+          "en": "The rapid growth of the city has caused serious traffic problems.",
+          "fr": "La croissance rapide de la ville a causé de graves problèmes de circulation.",
+          "trap": [
+            "grow",
+            "rapidly"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Her refusal to answer the question surprised the whole class.",
+          "fr": "Son refus de répondre à la question a surpris toute la classe.",
+          "trap": [
+            "refuse",
+            "refused"
+          ],
+          "alt": []
+        },
+        {
+          "en": "The findings of our class survey were rather surprising.",
+          "fr": "Les résultats du sondage de notre classe étaient plutôt surprenants.",
+          "trap": [
+            "was",
+            "finding"
+          ],
+          "alt": []
+        },
+        {
+          "en": "Moose are said to be excellent swimmers.",
+          "fr": "On dit que les orignaux sont d'excellents nageurs.",
+          "trap": [
+            "says",
+            "being"
+          ],
+          "alt": []
+        }
+      ],
+      "grammar": [
+        {
+          "type": "mcq",
+          "q": "The new bridge ___ to open next spring.",
+          "choices": [
+            "is expected",
+            "expects",
+            "is expecting",
+            "expected"
+          ],
+          "answer": 0,
+          "explain": "On veut dire « on s'attend à ce que le pont ouvre » : sujet + is expected + to. Le pont, lui, n'attend rien du tout !"
+        },
+        {
+          "type": "mcq",
+          "q": "Quelle phrase convient le mieux à un rapport académique ?",
+          "choices": [
+            "Everybody knows that kids hate vegetables.",
+            "Kids totally hate vegetables, for sure.",
+            "Children tend to prefer sweet foods to vegetables.",
+            "Kids hate vegetables, end of story."
+          ],
+          "answer": 2,
+          "explain": "Tend to nuance l'affirmation, et children est plus neutre que kids. Les autres phrases sont trop absolues et trop familières."
+        },
+        {
+          "type": "mcq",
+          "q": "The storm is thought ___ a lot of damage last night.",
+          "choices": [
+            "to cause",
+            "to have caused",
+            "causing",
+            "that it caused"
+          ],
+          "answer": 1,
+          "explain": "La tempête a eu lieu hier soir (fait passé) : is thought + to have + participe passé."
+        },
+        {
+          "type": "mcq",
+          "q": "Quel nom correspond au verbe « arrive » ?",
+          "choices": [
+            "arrivation",
+            "arriving",
+            "arrival",
+            "arrivance"
+          ],
+          "answer": 2,
+          "explain": "Arrive → arrival, comme refuse → refusal. Arrivation et arrivance n'existent pas."
+        },
+        {
+          "type": "mcq",
+          "q": "This is ___ the funniest movie the director has ever made.",
+          "choices": [
+            "arguable",
+            "arguably",
+            "argued",
+            "arguing"
+          ],
+          "answer": 1,
+          "explain": "Il faut un adverbe pour nuancer le superlatif : arguably (on peut soutenir que). Arguable est un adjectif."
+        },
+        {
+          "type": "mcq",
+          "q": "There ___ to be a secret tunnel under the old school.",
+          "choices": [
+            "is told",
+            "is saying",
+            "has said",
+            "is said"
+          ],
+          "answer": 3,
+          "explain": "« On dit qu'il y a… » = There is said to be… On ne dit jamais is told dans ce sens."
+        },
+        {
+          "type": "fill",
+          "q": "Our dog ___ to bark at anyone wearing a hat.",
+          "hint": "tend",
+          "answer": [
+            "tends"
+          ],
+          "explain": "Our dog = it : tend prend un -s, puis to + base verbale (bark)."
+        },
+        {
+          "type": "fill",
+          "q": "It is widely ___ that the early bird catches the worm.",
+          "hint": "believe",
+          "answer": [
+            "believed"
+          ],
+          "explain": "Structure impersonnelle : It is + participe passé + that. Believe → believed."
+        },
+        {
+          "type": "fill",
+          "lead": "People say that the old lighthouse is haunted.",
+          "q": "The old lighthouse ___ haunted.",
+          "key": "SAID",
+          "answer": [
+            "is said to be"
+          ],
+          "explain": "Sujet + is said + to + base verbale : The lighthouse is said to be haunted."
+        },
+        {
+          "type": "fill",
+          "lead": "People think that the thief escaped through the window.",
+          "q": "The thief ___ through the window.",
+          "key": "THOUGHT",
+          "answer": [
+            "is thought to have escaped"
+          ],
+          "explain": "La fuite est passée : is thought + to have + participe passé (escaped)."
+        },
+        {
+          "type": "fill",
+          "lead": "Because the team failed, the coach was furious.",
+          "q": "The team's ___ made the coach furious.",
+          "hint": "fail",
+          "answer": [
+            "failure"
+          ],
+          "explain": "Nominalisation : le verbe fail devient le nom failure (l'échec)."
+        },
+        {
+          "type": "fill",
+          "q": "Maya ___ win the race: she has trained all summer.",
+          "hint": "likely",
+          "answer": [
+            "is likely to"
+          ],
+          "explain": "Be likely to + base verbale = il est probable que. Maya = she, donc is."
+        },
+        {
+          "type": "fill",
+          "q": "The city has seen rapid ___ over the last ten years.",
+          "hint": "grow",
+          "answer": [
+            "growth"
+          ],
+          "explain": "Après l'adjectif rapid, il faut un nom : grow → growth (la croissance)."
+        },
+        {
+          "type": "error",
+          "q": "There is not enough evidences to prove that he cheated.",
+          "wrong": 4,
+          "fix": [
+            "evidence"
+          ],
+          "explain": "Evidence est indénombrable : jamais de -s. Pour une seule preuve : a piece of evidence."
+        },
+        {
+          "type": "error",
+          "q": "The ship is believed to have sank in a storm.",
+          "wrong": 6,
+          "fix": [
+            "sunk"
+          ],
+          "explain": "Après to have, il faut le participe passé : sink, sank, sunk."
+        },
+        {
+          "type": "error",
+          "q": "My little brother tends to asking the same question ten times.",
+          "wrong": 5,
+          "fix": [
+            "ask"
+          ],
+          "explain": "Tend to + base verbale : tends to ask, jamais -ing."
+        },
+        {
+          "type": "error",
+          "q": "It is widely belief that goldfish have a very short memory.",
+          "wrong": 3,
+          "fix": [
+            "believed"
+          ],
+          "explain": "Il faut le participe passé du verbe : It is widely believed that… Belief est le nom (la croyance)."
+        },
+        {
+          "type": "error",
+          "q": "The decide to cancel the trip disappointed everyone.",
+          "wrong": 1,
+          "fix": [
+            "decision"
+          ],
+          "explain": "Après The, il faut un nom : decide → decision."
+        }
+      ],
+      "reading": {
+        "title": "The Case of the Missing Socks",
+        "text": "For generations, it has been widely believed that washing machines eat socks. In most homes, the disappearance of single socks tends to be blamed on the dryer, the cat or a younger brother. However, there appears to be very little evidence for any of these claims. This report presents the findings of a small investigation carried out in my own home over a period of six weeks.\n\nThe research began with a simple assumption: socks do not simply vanish. Every sock that entered the laundry room was counted before and after each wash. The results were significant. During the investigation, eleven socks went missing, but nine of them were eventually found: four under beds, three in the sleeves of sweaters, one inside a duvet cover and one in the dog's basket.\n\nIt is therefore unlikely that the washing machine is responsible. The dog, on the other hand, is thought to have stolen at least one sock, although he has refused to comment. Arguably, the real problem is not the machine but human behaviour: socks tend to be dropped, kicked under furniture or forgotten in sports bags.\n\nOf course, this study has its limits. Only one family took part, and the likelihood of errors in counting is fairly high, especially when the person counting is a teenager who is easily distracted by video games. To some extent, the results may also have been affected by the fact that everyone knew about the investigation and was more careful than usual.\n\nNevertheless, the findings suggest that the growth of the famous \"sock monster\" legend is mainly due to our own carelessness. Further research is needed. In the meantime, two missing socks are still believed to be somewhere in the house.",
+        "questions": [
+          {
+            "q": "What was the starting point of the investigation?",
+            "choices": [
+              "The belief that washing machines eat socks",
+              "The idea that socks do not simply disappear",
+              "A complaint from the writer's younger brother",
+              "A science fair organized by the school"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Where were most of the missing socks found?",
+            "choices": [
+              "Under beds",
+              "In sports bags",
+              "In the sleeves of sweaters",
+              "In the dog's basket"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "According to the report, what is the main cause of missing socks?",
+            "choices": [
+              "The dryer",
+              "The family dog",
+              "People's own carelessness",
+              "A sock monster"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Why does the writer say that the dog \"has refused to comment\"?",
+            "choices": [
+              "Because the dog was sleeping during the interview",
+              "Because the writer is having fun with a serious academic style",
+              "Because the dog is afraid of the washing machine",
+              "Because the family decided not to ask the dog"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Which limit of the study does the writer mention?",
+            "choices": [
+              "The washing machine was too old.",
+              "The study lasted only one week.",
+              "The family did not count the socks.",
+              "Only one family took part."
+            ],
+            "answer": 3
+          },
+          {
+            "q": "What can we infer about the writer of the report?",
+            "choices": [
+              "He or she is a teenager in the family.",
+              "He or she is a professional scientist.",
+              "He or she sells washing machines.",
+              "He or she lives alone with a dog."
+            ],
+            "answer": 0
+          }
         ]
       }
     }

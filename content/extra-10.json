@@ -8,15 +8,51 @@
         "ipa": "/əv/",
         "explain": "Quand on parle vite, [[would have]] devient [[would've]] : « WOU-deuv ». Le [[have]] fond en un tout petit « euv » collé au modal, et le l de [[would]], [[should]] et [[could]] reste muet. Le piège, même pour les anglophones : comme « euv » sonne exactement comme [[of]], beaucoup écrivent « would of »… et c'est **toujours faux** ! À l'écrit, c'est [[would have]] ou [[would've]], point final. À l'oral, n'oublie pas non plus le petit « d » de [[if I'd known]] : c'est lui qui dit que c'est du passé.",
         "words": [
-          { "en": "would've", "fr": "aurait, aurais (would have)", "hint": "« WOU-deuv » : l muet, « euv » tout petit ; à l'écrit, jamais « would of »" },
-          { "en": "should've", "fr": "aurais dû (should have)", "hint": "« CHOU-deuv » : l muet, accent sur « chou »" },
-          { "en": "could've", "fr": "aurais pu (could have)", "hint": "« KOU-deuv » : l muet, comme [[could]]" },
-          { "en": "wouldn't have", "fr": "n'aurait pas, n'aurais pas", "hint": "« WOU-deun-teuv » : la négation est forte, le have se colle" },
-          { "en": "if I'd known", "fr": "si j'avais su", "hint": "« i-faïd-NÔN » : le k de [[known]] est muet ; garde le petit « d »" },
-          { "en": "I would've come", "fr": "je serais venu, je serais venue", "hint": "« aï-WOU-deuv-KEUM » : accent sur [[would]] et sur [[come]]" },
-          { "en": "you should've told me", "fr": "tu aurais dû me le dire", "hint": "« you-CHOU-deuv-TÔLD-mi » : [[me]] reste léger" },
-          { "en": "we could've won", "fr": "on aurait pu gagner", "hint": "« wi-KOU-deuv-OUEUN » : [[won]] se dit comme [[one]]" },
-          { "en": "I wouldn't have gone", "fr": "je ne serais pas allé, je ne serais pas allée", "hint": "« aï-WOU-deun-teuv-GÂN » : deux coups forts" }
+          {
+            "en": "would've",
+            "fr": "aurait, aurais (would have)",
+            "hint": "« WOU-deuv » : l muet, « euv » tout petit ; à l'écrit, jamais « would of »"
+          },
+          {
+            "en": "should've",
+            "fr": "aurais dû (should have)",
+            "hint": "« CHOU-deuv » : l muet, accent sur « chou »"
+          },
+          {
+            "en": "could've",
+            "fr": "aurais pu (could have)",
+            "hint": "« KOU-deuv » : l muet, comme [[could]]"
+          },
+          {
+            "en": "wouldn't have",
+            "fr": "n'aurait pas, n'aurais pas",
+            "hint": "« WOU-deun-teuv » : la négation est forte, le have se colle"
+          },
+          {
+            "en": "if I'd known",
+            "fr": "si j'avais su",
+            "hint": "« i-faïd-NÔN » : le k de [[known]] est muet ; garde le petit « d »"
+          },
+          {
+            "en": "I would've come",
+            "fr": "je serais venu, je serais venue",
+            "hint": "« aï-WOU-deuv-KEUM » : accent sur [[would]] et sur [[come]]"
+          },
+          {
+            "en": "you should've told me",
+            "fr": "tu aurais dû me le dire",
+            "hint": "« you-CHOU-deuv-TÔLD-mi » : [[me]] reste léger"
+          },
+          {
+            "en": "we could've won",
+            "fr": "on aurait pu gagner",
+            "hint": "« wi-KOU-deuv-OUEUN » : [[won]] se dit comme [[one]]"
+          },
+          {
+            "en": "I wouldn't have gone",
+            "fr": "je ne serais pas allé, je ne serais pas allée",
+            "hint": "« aï-WOU-deun-teuv-GÂN » : deux coups forts"
+          }
         ],
         "pairs": [],
         "practice": [
@@ -45,15 +81,51 @@
         "ipa": "/əv/",
         "explain": "Pour faire des déductions sur le passé, le [[have]] se réduit encore en « euv » : [[must've]] (« MEUS-teuv »), [[might've]] (« MAÏ-deuv »). Remarque que le t de [[might]] devient un « d » léger devant la voyelle, comme dans [[water]]. Par contre, la négation reste bien forte : [[can't have]], [[shouldn't have]], [[needn't have]], parce que c'est elle qui porte le sens. Le piège des francophones : dire [[can't]] trop vite, comme [[can]]… et ta déduction dit le contraire ! Truc de détective : « euv » léger pour une hypothèse, négation bien appuyée pour une certitude.",
         "words": [
-          { "en": "must've", "fr": "a dû (déduction : c'est sûrement ça)", "hint": "« MEUS-teuv » : « meus », jamais « mouste »" },
-          { "en": "might've", "fr": "a peut-être (might have)", "hint": "« MAÏ-deuv » : le t devient un « d » léger, comme dans [[water]]" },
-          { "en": "may have", "fr": "a peut-être (may have)", "hint": "« MÉI-euv » : le h disparaît dans une phrase rapide" },
-          { "en": "could've been", "fr": "aurait pu être", "hint": "« KOU-deuv-bin » : l muet ; [[been]] se dit « bin »" },
-          { "en": "can't have", "fr": "ne peut pas avoir (c'est impossible)", "hint": "« KANT-euv » : négation forte, le t s'entend bien" },
-          { "en": "can't have been", "fr": "ne peut pas avoir été", "hint": "« KANT-euv-bin » : tout l'accent sur [[can't]]" },
-          { "en": "shouldn't have", "fr": "n'aurait pas dû", "hint": "« CHOU-deun-teuv » : l muet, accent sur « chou »" },
-          { "en": "needn't have", "fr": "n'avait pas besoin de (mais l'a fait)", "hint": "« NII-deun-teuv » : accent sur « nii »" },
-          { "en": "didn't need to", "fr": "n'avait pas besoin de (et ne l'a pas fait)", "hint": "« DI-deunt-NII-deu » : [[to]] devient un petit « deu »" }
+          {
+            "en": "must've",
+            "fr": "a dû (déduction : c'est sûrement ça)",
+            "hint": "« MEUS-teuv » : « meus », jamais « mouste »"
+          },
+          {
+            "en": "might've",
+            "fr": "a peut-être (might have)",
+            "hint": "« MAÏ-deuv » : le t devient un « d » léger, comme dans [[water]]"
+          },
+          {
+            "en": "may have",
+            "fr": "a peut-être (may have)",
+            "hint": "« MÉI-euv » : le h disparaît dans une phrase rapide"
+          },
+          {
+            "en": "could've been",
+            "fr": "aurait pu être",
+            "hint": "« KOU-deuv-bin » : l muet ; [[been]] se dit « bin »"
+          },
+          {
+            "en": "can't have",
+            "fr": "ne peut pas avoir (c'est impossible)",
+            "hint": "« KANT-euv » : négation forte, le t s'entend bien"
+          },
+          {
+            "en": "can't have been",
+            "fr": "ne peut pas avoir été",
+            "hint": "« KANT-euv-bin » : tout l'accent sur [[can't]]"
+          },
+          {
+            "en": "shouldn't have",
+            "fr": "n'aurait pas dû",
+            "hint": "« CHOU-deun-teuv » : l muet, accent sur « chou »"
+          },
+          {
+            "en": "needn't have",
+            "fr": "n'avait pas besoin de (mais l'a fait)",
+            "hint": "« NII-deun-teuv » : accent sur « nii »"
+          },
+          {
+            "en": "didn't need to",
+            "fr": "n'avait pas besoin de (et ne l'a pas fait)",
+            "hint": "« DI-deunt-NII-deu » : [[to]] devient un petit « deu »"
+          }
         ],
         "pairs": [],
         "practice": [
@@ -82,16 +154,56 @@
         "ipa": "",
         "explain": "Une expression idiomatique se dit comme un seul gros mot, avec des coups forts sur les mots-clés et des petits mots avalés : [[a piece of cake]] sonne « eu-PII-seuv-KÉIK ». Le dernier mot-clé est souvent le plus fort, parce que c'est lui qui « fait la chute » : [[once in a blue moon]], [[call it a day]]. Le piège des francophones : traduire dans sa tête et marquer des pauses entre chaque mot… et l'expression perd tout son charme ! Truc : apprends chaque expression comme une petite chanson, avec son rythme.",
         "words": [
-          { "en": "a piece of cake", "fr": "un jeu d'enfant, du gâteau (très facile)", "hint": "« eu-PII-seuv-KÉIK » : [[of]] devient « euv », collé à [[piece]]" },
-          { "en": "break the ice", "fr": "briser la glace", "hint": "« BRÉIK-thi-AÏS » : devant une voyelle, [[the]] se dit « thi »" },
-          { "en": "under the weather", "fr": "pas dans son assiette, un peu malade", "hint": "« EUN-deur-theu-OUÈ-theur » : deux th doux" },
-          { "en": "once in a blue moon", "fr": "une fois de temps en temps, très rarement", "hint": "« OUEUN-si-neu-BLOU-MOUN » : tout glisse jusqu'à [[blue moon]]" },
-          { "en": "cost an arm and a leg", "fr": "coûter les yeux de la tête", "hint": "« KÂS-teu-NARM-eun-deu-LÈG » : les consonnes glissent sur les voyelles" },
-          { "en": "call it a day", "fr": "arrêter pour aujourd'hui", "hint": "« KÂ-li-deu-DÉI » : le t devient un « d » léger" },
-          { "en": "hit the books", "fr": "se mettre à étudier sérieusement", "hint": "« HIT-theu-BOUKS » : [[the]] minuscule, deux coups forts" },
-          { "en": "spill the beans", "fr": "vendre la mèche", "hint": "« SPIL-theu-BIINZ » : un z sonore à la fin" },
-          { "en": "hit the sack", "fr": "aller se coucher", "hint": "« HIT-theu-SAK » : « sak », bien ouvert" },
-          { "en": "pull someone's leg", "fr": "faire marcher quelqu'un, le taquiner", "hint": "« POUL-seum-weunz-LÈG » : accent fort sur [[pull]] et [[leg]]" }
+          {
+            "en": "a piece of cake",
+            "fr": "un jeu d'enfant, du gâteau (très facile)",
+            "hint": "« eu-PII-seuv-KÉIK » : [[of]] devient « euv », collé à [[piece]]"
+          },
+          {
+            "en": "break the ice",
+            "fr": "briser la glace",
+            "hint": "« BRÉIK-thi-AÏS » : devant une voyelle, [[the]] se dit « thi »"
+          },
+          {
+            "en": "under the weather",
+            "fr": "pas dans son assiette, un peu malade",
+            "hint": "« EUN-deur-theu-OUÈ-theur » : deux th doux"
+          },
+          {
+            "en": "once in a blue moon",
+            "fr": "une fois de temps en temps, très rarement",
+            "hint": "« OUEUN-si-neu-BLOU-MOUN » : tout glisse jusqu'à [[blue moon]]"
+          },
+          {
+            "en": "cost an arm and a leg",
+            "fr": "coûter les yeux de la tête",
+            "hint": "« KÂS-teu-NARM-eun-deu-LÈG » : les consonnes glissent sur les voyelles"
+          },
+          {
+            "en": "call it a day",
+            "fr": "arrêter pour aujourd'hui",
+            "hint": "« KÂ-li-deu-DÉI » : le t devient un « d » léger"
+          },
+          {
+            "en": "hit the books",
+            "fr": "se mettre à étudier sérieusement",
+            "hint": "« HIT-theu-BOUKS » : [[the]] minuscule, deux coups forts"
+          },
+          {
+            "en": "spill the beans",
+            "fr": "vendre la mèche",
+            "hint": "« SPIL-theu-BIINZ » : un z sonore à la fin"
+          },
+          {
+            "en": "hit the sack",
+            "fr": "aller se coucher",
+            "hint": "« HIT-theu-SAK » : « sak », bien ouvert"
+          },
+          {
+            "en": "pull someone's leg",
+            "fr": "faire marcher quelqu'un, le taquiner",
+            "hint": "« POUL-seum-weunz-LÈG » : accent fort sur [[pull]] et [[leg]]"
+          }
         ],
         "pairs": [],
         "practice": [
@@ -119,16 +231,56 @@
         "ipa": "",
         "explain": "Certains suffixes font **sauter** l'accent : avec [[-ity]], [[-ic]] et [[-ion]], l'accent tombe toujours sur la syllabe juste avant le suffixe. [[possible]] (« PÂ-si-beul ») devient [[possibility]] (« pâ-si-BI-li-ti »), [[economy]] devient [[economic]]. D'autres suffixes sont polis et ne touchent à rien : [[-ness]], [[-ment]], [[-ful]] gardent l'accent du mot de départ ([[happy]], [[happiness]]). Le piège des francophones : appuyer sur la fin de tous ces mots, comme en français (« possibili-TÉ »). Truc : « -ity, -ic, -ion » = accent juste avant moi !",
         "words": [
-          { "en": "possible", "fr": "possible", "hint": "« PÂ-si-beul » : accent au début, « beul » tout petit" },
-          { "en": "possibility", "fr": "une possibilité", "hint": "« pâ-si-BI-li-ti » : accent juste avant -ity" },
-          { "en": "economy", "fr": "l'économie", "hint": "« i-KÂ-neu-mi » : accent sur la 2e syllabe" },
-          { "en": "economic", "fr": "économique (lié à l'économie)", "hint": "« è-keu-NÂ-mik » : accent juste avant -ic" },
-          { "en": "electric", "fr": "électrique", "hint": "« i-LÈK-trik » : accent juste avant -ic" },
-          { "en": "electricity", "fr": "l'électricité", "hint": "« i-lèk-TRI-si-ti » : l'accent saute juste avant -ity" },
-          { "en": "educate", "fr": "éduquer, instruire", "hint": "« È-djeu-kéit » : accent au début ; « dj » comme dans [[juice]]" },
-          { "en": "education", "fr": "l'éducation, les études", "hint": "« è-djeu-KÉI-cheun » : accent juste avant -tion" },
-          { "en": "happy", "fr": "heureux, heureuse", "hint": "« HA-pi » : accent au début, h bien soufflé" },
-          { "en": "happiness", "fr": "le bonheur", "hint": "« HA-pi-neus » : -ness ne déplace rien, l'accent reste au début" }
+          {
+            "en": "possible",
+            "fr": "possible",
+            "hint": "« PÂ-si-beul » : accent au début, « beul » tout petit"
+          },
+          {
+            "en": "possibility",
+            "fr": "une possibilité",
+            "hint": "« pâ-si-BI-li-ti » : accent juste avant -ity"
+          },
+          {
+            "en": "economy",
+            "fr": "l'économie",
+            "hint": "« i-KÂ-neu-mi » : accent sur la 2e syllabe"
+          },
+          {
+            "en": "economic",
+            "fr": "économique (lié à l'économie)",
+            "hint": "« è-keu-NÂ-mik » : accent juste avant -ic"
+          },
+          {
+            "en": "electric",
+            "fr": "électrique",
+            "hint": "« i-LÈK-trik » : accent juste avant -ic"
+          },
+          {
+            "en": "electricity",
+            "fr": "l'électricité",
+            "hint": "« i-lèk-TRI-si-ti » : l'accent saute juste avant -ity"
+          },
+          {
+            "en": "educate",
+            "fr": "éduquer, instruire",
+            "hint": "« È-djeu-kéit » : accent au début ; « dj » comme dans [[juice]]"
+          },
+          {
+            "en": "education",
+            "fr": "l'éducation, les études",
+            "hint": "« è-djeu-KÉI-cheun » : accent juste avant -tion"
+          },
+          {
+            "en": "happy",
+            "fr": "heureux, heureuse",
+            "hint": "« HA-pi » : accent au début, h bien soufflé"
+          },
+          {
+            "en": "happiness",
+            "fr": "le bonheur",
+            "hint": "« HA-pi-neus » : -ness ne déplace rien, l'accent reste au début"
+          }
         ],
         "pairs": [],
         "practice": [
@@ -145,6 +297,73 @@
           "J'ai utilisé au moins trois suffixes ([[-ness]], [[-ment]], [[-ity]], [[-ful]], [[-less]], [[-ive]]…)",
           "J'ai choisi le bon préfixe négatif : [[impossible]], [[unclear]], pas [[unpossible]]",
           "En relisant à voix haute, j'ai placé l'accent juste avant [[-ity]] : [[creativity]]"
+        ]
+      }
+    },
+    {
+      "unit": "10.5",
+      "pron": {
+        "focus": "Les deux « the » : « theu » ou « thi » ?",
+        "ipa": "/ðə/ – /ði/",
+        "explain": "Le petit [[the]] a deux prononciations ! Devant un **son** de consonne, il est faible : « theu » ([[the homeless]], [[the young]]). Devant un **son** de voyelle, il devient « thi » ([[the elderly]], [[the injured]]). C'est le **son** qui compte, pas la lettre : [[the hour]] (h muet) se dit « thi », mais [[the university]] (son « you ») se dit « theu ». C'est la même logique que [[an hour]] et [[a university]]. Et garde ton « th » : langue entre les dents, jamais « de » ni « ze » !",
+        "words": [
+          {
+            "en": "the elderly",
+            "fr": "les personnes âgées",
+            "hint": "« thi ÈL-deu-li » : voyelle, donc « thi »"
+          },
+          {
+            "en": "the injured",
+            "fr": "les blessés",
+            "hint": "« thi IN-djeurd » : voyelle, donc « thi »"
+          },
+          {
+            "en": "the unemployed",
+            "fr": "les sans-emploi",
+            "hint": "« thi eun-im-PLOÏD » : voyelle, donc « thi »"
+          },
+          {
+            "en": "the hour",
+            "fr": "l'heure",
+            "hint": "« thi AOU-eur » : le h est muet, donc « thi »"
+          },
+          {
+            "en": "the homeless",
+            "fr": "les sans-abri",
+            "hint": "« theu HÔM-leuss » : le h s'entend, donc « theu »"
+          },
+          {
+            "en": "the young",
+            "fr": "les jeunes",
+            "hint": "« theu YEUNG » : consonne, donc « theu »"
+          },
+          {
+            "en": "the university",
+            "fr": "l'université",
+            "hint": "« theu you-ni-VEUR-si-ti » : ça commence par le son « you », donc « theu »"
+          },
+          {
+            "en": "the whole family",
+            "fr": "toute la famille",
+            "hint": "« theu HÔL FA-mi-li » : whole se dit comme [[hole]], le w est muet"
+          }
+        ],
+        "pairs": [],
+        "practice": [
+          "The injured skier waited an hour for the ambulance.",
+          "The elderly and the unemployed often visit the food bank.",
+          "The whole family went to the university open house."
+        ]
+      },
+      "mission": {
+        "type": "oral",
+        "prompt": "Ta famille organise un souper communautaire au centre du quartier. Au téléphone, explique à ta tante, en cinq à sept phrases, ce qui manque et ce qui reste, avec few / a few, little / a little, either / neither et the whole.",
+        "model": "Hi Auntie! So, for the community supper, we have plenty of plates, but very few forks, so could you bring a few? There's a little juice left, but hardly any milk. Neither of the ovens at the community centre works, so the whole meal has to be cooked at home. Either you or Uncle Karim could pick up the tables on Friday. Oh, and the elderly neighbours from the third floor are coming too, so we need a few extra chairs. Thanks, you're the best!",
+        "checklist": [
+          "J'ai dit [[a few]] / [[a little]] pour « quelques, un peu » et [[few]] / [[little]] pour « peu de »",
+          "J'ai utilisé [[neither]] avec un verbe affirmatif, jamais avec [[don't]]",
+          "J'ai dit [[the whole]] + nom singulier, pas [[the all]]",
+          "J'ai prononcé [[the]] « thi » devant une voyelle : [[the elderly]], [[the oven]]"
         ]
       }
     }

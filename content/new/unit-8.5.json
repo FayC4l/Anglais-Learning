@@ -1,0 +1,156 @@
+{
+  "unit": {
+    "id": "8.5",
+    "title": "Faire faire",
+    "titleEn": "Do It Yourself",
+    "goal": "Dire ce que tu fais faire par quelqu'un d'autre avec have / get something done, et utiliser les pronoms réfléchis, each other et by myself.",
+    "lesson": [
+      { "type": "p", "text": "Tu fais tout toi-même, ou tu demandes à un pro ? En anglais, la différence s'entend tout de suite. [[I cut my hair.]] laisse entendre que tu t'es coupé les cheveux **toi-même** (devant le miroir, avec des ciseaux… aïe). [[I had my hair cut.]] = je me suis **fait** couper les cheveux (par un coiffeur). Dans cette station : **faire faire**, les pronoms en **-self**, [[each other]] et [[by myself]]." },
+      { "type": "rule", "title": "Have something done : faire faire", "text": "Quand **quelqu'un d'autre** fait le travail pour toi, on utilise **have + chose + participe passé** : [[We had our car washed.]] (On a fait laver notre auto.) L'ordre est fixe : **have** → la chose → le **participe passé**. Seul **have** change de temps : [[I'm having my bike fixed.]], [[We'll have the windows cleaned.]] À l'oral, on dit très souvent **get** au lieu de **have** : [[I got my hair cut.]] [[Where do you get your hair cut?]]" },
+      { "type": "table", "head": ["Temps", "Exemple", "Sens"], "rows": [
+        ["Présent simple", "[[She has her nails done every month.]]", "Elle se fait faire les ongles chaque mois."],
+        ["Présent continu", "[[We're having our kitchen painted.]]", "On fait peindre notre cuisine (en ce moment)."],
+        ["Passé simple", "[[I had my hair cut yesterday.]]", "Je me suis fait couper les cheveux hier."],
+        ["Futur", "[[I'll get my bike fixed tomorrow.]]", "Je ferai réparer mon vélo demain."],
+        ["Present perfect", "[[Have you ever had your ears pierced?]]", "T'es-tu déjà fait percer les oreilles ?"],
+        ["Après un modal", "[[You should have your eyes checked.]]", "Tu devrais faire vérifier ta vue."]
+      ] },
+      { "type": "rule", "title": "Les pronoms réfléchis : -self, -selves", "text": "Quand le sujet fait l'action **sur lui-même**, on ajoute un pronom en **-self** (singulier) ou **-selves** (pluriel) : [[I hurt myself.]] (Je me suis fait mal.) [[Look at yourself!]] Ces pronoms servent aussi à **insister** : [[I made it myself.]] (Je l'ai fait moi-même.) Attention à l'orthographe : [[himself]] (jamais « hisself »), [[themselves]] (jamais « theirselves »), et **-selves** au pluriel : [[ourselves]], [[yourselves]]." },
+      { "type": "table", "head": ["Sujet", "Réfléchi", "Exemple"], "rows": [
+        ["I", "myself", "[[I taught myself to skate.]]"],
+        ["you (une personne)", "yourself", "[[Help yourself!]]"],
+        ["he", "himself", "[[He hurt himself.]]"],
+        ["she", "herself", "[[She's proud of herself.]]"],
+        ["it", "itself", "[[The oven cleans itself.]]"],
+        ["we", "ourselves", "[[We enjoyed ourselves.]]"],
+        ["you (plusieurs)", "yourselves", "[[Behave yourselves!]]"],
+        ["they", "themselves", "[[They introduced themselves.]]"]
+      ] },
+      { "type": "rule", "title": "Each other, themselves et by myself", "text": "[[each other]] = **l'un l'autre** (action réciproque) : [[Emma and Noah help each other.]] (Emma aide Noah, et Noah aide Emma.) [[themselves]] = chacun **soi-même** : [[They took pictures of themselves.]] (chacun s'est pris en photo). En français, « ils se regardent » peut vouloir dire les deux ; en anglais, il faut choisir ! Enfin, **by** + pronom réfléchi = **tout seul** (sans aide ou sans compagnie) : [[I did it by myself.]] [[Grandpa lives by himself.]] On dit aussi [[on my own]]." },
+      { "type": "examples", "items": [
+        { "en": "We had our car washed before the trip.", "fr": "On a fait laver notre auto avant le voyage." },
+        { "en": "She's getting her teeth checked this afternoon.", "fr": "Elle se fait examiner les dents cet après-midi." },
+        { "en": "Ouch! I cut myself with the scissors.", "fr": "Aïe ! Je me suis coupé avec les ciseaux." },
+        { "en": "Help yourselves, there's lots of food!", "fr": "Servez-vous, il y a plein de nourriture !" },
+        { "en": "The twins help each other with their homework.", "fr": "Les jumeaux s'aident l'un l'autre pour leurs devoirs." },
+        { "en": "My little sister tied her shoes by herself for the first time.", "fr": "Ma petite sœur a attaché ses souliers toute seule pour la première fois." }
+      ] },
+      { "type": "tip", "text": "Pièges de francophone : 1) L'ordre ! « I had cut my hair » = j'avais coupé mes cheveux **moi-même** (plus-que-parfait). Le bon ordre : [[I had my hair cut.]] 2) La même structure sert pour une mauvaise surprise : [[He had his bike stolen.]] = Il s'est fait voler son vélo. 3) Beaucoup de verbes réfléchis en français ne le sont **pas** en anglais : se lever = [[get up]], se réveiller = [[wake up]], se sentir = [[feel]], se dépêcher = [[hurry up]], se souvenir = [[remember]], s'habiller = [[get dressed]], se reposer = [[relax]]. On dit [[I feel tired.]], jamais « I feel myself tired »." },
+      { "type": "dialogue", "title": "Avant la visite des grands-parents", "lines": [
+        { "who": "Léa", "en": "Dad, did you cut your hair yourself?", "fr": "Papa, t'es-tu coupé les cheveux toi-même ?" },
+        { "who": "Dad", "en": "No way! I had it cut at the new barbershop downtown.", "fr": "Pas question ! Je les ai fait couper chez le nouveau barbier du centre-ville." },
+        { "who": "Léa", "en": "It looks great. Can I get my ears pierced for my birthday?", "fr": "Ça te va super bien. Est-ce que je peux me faire percer les oreilles pour ma fête ?" },
+        { "who": "Dad", "en": "We'll talk about it with Mom. Where's Ethan?", "fr": "On en parlera avec maman. Où est Ethan ?" },
+        { "who": "Léa", "en": "In the bathroom. He's taking selfies in the mirror. Again.", "fr": "Dans la salle de bain. Il prend des égoportraits dans le miroir. Encore." },
+        { "who": "Dad", "en": "Ethan! Stop admiring yourself! Grandma and Grandpa are coming at six.", "fr": "Ethan ! Arrête de t'admirer ! Grand-maman et grand-papa arrivent à six heures." },
+        { "who": "Ethan", "en": "Relax, Dad. Léa and I can set the table by ourselves.", "fr": "Relaxe, papa. Léa et moi, on peut mettre la table tout seuls." },
+        { "who": "Dad", "en": "Great. And behave yourselves: no fighting with each other!", "fr": "Parfait. Et tenez-vous bien : pas de chicane entre vous deux !" }
+      ] },
+      { "type": "fun", "text": "Le sais-tu ? Le mot [[selfie]] a été élu « mot de l'année » 2013 par les dictionnaires Oxford. Au Québec, l'Office québécois de la langue française propose un joli équivalent : **égoportrait**. Après tout, c'est une photo de toi… [[taken by yourself]] !" }
+    ],
+    "vocab": [
+      { "en": "have something done", "fr": "faire faire quelque chose (par un professionnel)", "alt": ["get something done"], "ex": "It's easier to have it done by a professional." },
+      { "en": "haircut", "fr": "coupe de cheveux", "alt": [], "ex": "I need a haircut before the school photo." },
+      { "en": "barber", "fr": "barbier (coiffeur pour hommes)", "alt": [], "ex": "My dad goes to the same barber every month." },
+      { "en": "dye", "fr": "teindre (les cheveux, un tissu)", "alt": [], "ex": "My aunt dyed her hair purple for fun." },
+      { "en": "pierce", "fr": "percer (les oreilles)", "alt": [], "ex": "Léa wants to get her ears pierced." },
+      { "en": "fix", "fr": "réparer", "alt": ["repair"], "ex": "Can you fix my bike before the weekend?" },
+      { "en": "deliver", "fr": "livrer", "alt": [], "ex": "We had the new sofa delivered on Saturday." },
+      { "en": "install", "fr": "installer (un appareil, un logiciel)", "alt": [], "ex": "We had solar panels installed on the roof." },
+      { "en": "renovate", "fr": "rénover", "alt": [], "ex": "Our neighbours are renovating their basement." },
+      { "en": "checkup", "fr": "examen de routine (chez le médecin, le dentiste)", "alt": ["check-up"], "ex": "I have a checkup at the dentist tomorrow." },
+      { "en": "by myself", "fr": "tout seul, toute seule (sans aide)", "alt": ["on my own"], "ex": "I built this snow fort by myself." },
+      { "en": "each other", "fr": "l'un l'autre, les uns les autres (mutuellement)", "alt": ["one another"], "ex": "My cousins and I call each other every Sunday." },
+      { "en": "help yourself", "fr": "se servir (Sers-toi !)", "alt": [], "ex": "Help yourself to some more pasta!" },
+      { "en": "enjoy yourself", "fr": "s'amuser (bien profiter du moment)", "alt": [], "ex": "Did you enjoy yourself at the party?" },
+      { "en": "hurt yourself", "fr": "se faire mal (se blesser)", "alt": [], "ex": "Be careful not to hurt yourself on the ice." },
+      { "en": "behave yourself", "fr": "bien se tenir (être sage)", "alt": [], "ex": "Behave yourself at Grandma's house!" },
+      { "en": "introduce yourself", "fr": "se présenter (dire qui on est)", "alt": [], "ex": "Stand up and introduce yourself to the class." },
+      { "en": "selfie", "fr": "égoportrait (selfie)", "alt": [], "ex": "Let's take a selfie in front of the Parliament!" },
+      { "en": "mirror", "fr": "miroir", "alt": [], "ex": "She looked at herself in the mirror." }
+    ],
+    "sentences": [
+      { "en": "I had my hair cut at the new salon downtown.", "fr": "Je me suis fait couper les cheveux au nouveau salon du centre-ville.", "trap": ["cutted", "myself"], "alt": [] },
+      { "en": "We're getting our kitchen painted next week.", "fr": "On fait peindre notre cuisine la semaine prochaine.", "trap": ["paint", "painting"], "alt": ["Next week, we're getting our kitchen painted."] },
+      { "en": "My neighbour had his bike stolen last night.", "fr": "Mon voisin s'est fait voler son vélo hier soir.", "trap": ["stole", "himself"], "alt": ["Last night, my neighbour had his bike stolen."] },
+      { "en": "Be careful, or you'll hurt yourself!", "fr": "Fais attention, sinon tu vas te faire mal !", "trap": ["you", "yourselves"], "alt": [] },
+      { "en": "Did you make this birthday cake by yourself?", "fr": "As-tu fait ce gâteau d'anniversaire tout seul ?", "trap": ["myself", "your"], "alt": [] },
+      { "en": "Mei and her grandma text each other every evening.", "fr": "Mei et sa grand-mère s'écrivent des textos tous les soirs.", "trap": ["themselves", "theirselves"], "alt": [] },
+      { "en": "Help yourself to the cookies I made myself!", "fr": "Sers-toi des biscuits que j'ai faits moi-même !", "trap": ["you", "me"], "alt": [] },
+      { "en": "We enjoyed ourselves so much at the cottage this summer.", "fr": "On s'est tellement amusés au chalet cet été.", "trap": ["us", "ourself"], "alt": ["This summer, we enjoyed ourselves so much at the cottage."] },
+      { "en": "I wake up early and I feel great.", "fr": "Je me réveille tôt et je me sens super bien.", "trap": ["me", "myself"], "alt": [] },
+      { "en": "Where do you usually get your hair cut?", "fr": "Où te fais-tu couper les cheveux, d'habitude ?", "trap": ["cutting", "yourself"], "alt": [] },
+      { "en": "The robot vacuum cleans the house by itself.", "fr": "L'aspirateur robot nettoie la maison tout seul.", "trap": ["himself", "it"], "alt": [] },
+      { "en": "You should have your eyes checked before you buy new glasses.", "fr": "Tu devrais faire vérifier ta vue avant d'acheter de nouvelles lunettes.", "trap": ["check", "yourself"], "alt": ["Before you buy new glasses, you should have your eyes checked."] }
+    ],
+    "grammar": [
+      { "type": "mcq", "q": "I ___ at the dentist yesterday. They're so white now!", "choices": ["cleaned my teeth", "had my teeth cleaned", "had cleaned my teeth", "have my teeth cleaned"], "answer": 1, "explain": "C'est le dentiste qui a fait le travail, hier : had + chose + participe passé, had my teeth cleaned." },
+      { "type": "mcq", "q": "Be careful with that knife, or you'll cut ___!", "choices": ["you", "yourself", "your", "yourselves"], "answer": 1, "explain": "Tu te coupes toi-même (une seule personne) : pronom réfléchi yourself." },
+      { "type": "mcq", "q": "Emma and Zoé are best friends. They text ___ every evening.", "choices": ["themselves", "theirselves", "each other", "them"], "answer": 2, "explain": "Emma écrit à Zoé et Zoé écrit à Emma : action réciproque, each other." },
+      { "type": "mcq", "q": "My little brother is only six, but he can get dressed ___.", "choices": ["by him", "by hisself", "himself by", "by himself"], "answer": 3, "explain": "Tout seul = by + pronom réfléchi : by himself (jamais hisself)." },
+      { "type": "mcq", "q": "« Je me sens fatigué. » → ___", "choices": ["I feel tired.", "I feel myself tired.", "I feel me tired.", "I'm feeling me tired."], "answer": 0, "explain": "Se sentir = feel, sans pronom réfléchi en anglais : I feel tired." },
+      { "type": "mcq", "q": "Last night, Malik ___. He's furious!", "choices": ["stole his bike", "had stolen his bike", "had his bike stolen", "has his bike stole"], "answer": 2, "explain": "Il s'est fait voler son vélo (une mauvaise surprise) : had + chose + participe passé, had his bike stolen." },
+      { "type": "fill", "q": "Every November, Mom ___ at the garage.", "hint": "get / her tires / change, présent simple", "answer": ["gets her tires changed"], "explain": "Habitude, quelqu'un d'autre fait le travail : gets + chose + participe passé (changed)." },
+      { "type": "fill", "q": "Your glasses are broken! You should ___.", "hint": "have / them / fix", "answer": ["have them fixed"], "explain": "Après should, have reste à la base : have + them + participe passé (fixed)." },
+      { "type": "fill", "q": "We're having a new dishwasher ___ on Monday.", "hint": "install", "answer": ["installed"], "explain": "Have something done : après la chose, on met le participe passé, installed." },
+      { "type": "fill", "q": "Did you make this cake ___? It's delicious!", "hint": "toi-même, une seule personne", "answer": ["yourself"], "explain": "Pour insister (toi-même, une personne) : yourself." },
+      { "type": "fill", "q": "We really enjoyed ___ at the water park.", "hint": "réfléchi de we", "answer": ["ourselves"], "explain": "Enjoy est suivi d'un pronom réfléchi : we → ourselves (avec -selves au pluriel)." },
+      { "type": "fill", "q": "Priya and Karim live next door, but they never talk to ___.", "hint": "l'un à l'autre", "answer": ["each other"], "explain": "Action réciproque (Priya ne parle pas à Karim, et Karim ne parle pas à Priya) : each other." },
+      { "type": "fill", "q": "My grandma doesn't need any help: she lives ___.", "hint": "toute seule, avec by", "answer": ["by herself"], "explain": "Tout seul = by + pronom réfléchi : she → by herself." },
+      { "type": "error", "q": "He hurt hisself playing hockey.", "wrong": 2, "fix": ["himself"], "explain": "Le réfléchi de he est himself ; « hisself » n'existe pas." },
+      { "type": "error", "q": "We had our windows wash last week.", "wrong": 4, "fix": ["washed"], "explain": "Have something done : have + chose + participe passé, donc washed." },
+      { "type": "error", "q": "Hurry yourself, the bus is coming!", "wrong": 1, "fix": ["up"], "explain": "Se dépêcher = hurry up : ce verbe n'est pas réfléchi en anglais." },
+      { "type": "error", "q": "They built the treehouse by theirselves.", "wrong": 5, "fix": ["themselves"], "explain": "Le réfléchi de they est themselves ; « theirselves » n'existe pas." },
+      { "type": "error", "q": "Ethan and Malik are cousins, so they see themselves every weekend.", "wrong": 8, "fix": ["each other"], "explain": "Ethan voit Malik et Malik voit Ethan : action réciproque, each other." }
+    ],
+    "reading": {
+      "title": "Dad Does It Himself",
+      "text": "Last spring, Félix's dad made a big announcement at dinner. \"From now on, we won't pay anybody to do things for us. I'll do everything myself!\"\n\nFirst, he decided to cut Félix's hair. \"Why pay a barber when you can do it yourself?\" he asked. Twenty minutes later, Félix looked at himself in the mirror and screamed. One side was much shorter than the other. The next morning, he had his hair cut again at the barbershop, and it cost twice as much as usual.\n\nNext, Dad tried to fix the dripping kitchen tap by himself. By the evening, the kitchen floor looked like a lake. Félix and his sister, Zoé, looked at each other but said nothing. It wasn't the right moment for jokes. Finally, Mom called a plumber, and they had the tap fixed in ten minutes.\n\nIn June, Dad wanted to paint the fence. This time, Félix and Zoé helped him, and the three of them really enjoyed themselves. The fence looked great. Well, almost: there was green paint on the dog too.\n\n\"So, what did you learn?\" Mom asked. Dad smiled. \"Next year, I'm getting everything done by professionals. Except the fence. Our dog loves his new colour.\"",
+      "questions": [
+        { "q": "What did Dad decide at the beginning of the story?", "choices": ["To become a barber", "To do all the work himself", "To have the house painted", "To buy a new kitchen tap"], "answer": 1 },
+        { "q": "Why did Félix scream when he looked in the mirror?", "choices": ["His hair was green.", "He had cut himself.", "His haircut was uneven.", "His dad had broken the mirror."], "answer": 2 },
+        { "q": "Who fixed the kitchen tap in the end?", "choices": ["Dad, by himself", "Félix and Zoé", "Mom", "A plumber"], "answer": 3 },
+        { "q": "Why didn't Félix and Zoé say anything about the kitchen floor?", "choices": ["They didn't want to make a bad situation worse.", "They didn't see the water.", "They were angry with each other.", "They were at the barbershop."], "answer": 0 },
+        { "q": "Which job did the family do more or less successfully?", "choices": ["Cutting Félix's hair", "Fixing the tap", "Painting the fence", "Washing the dog"], "answer": 2 },
+        { "q": "What can we guess about Dad's plan to save money?", "choices": ["It saved the family a lot of money.", "It probably cost the family more money in the end.", "Mom paid the plumber with Dad's savings.", "The barber gave Félix a free haircut."], "answer": 1 }
+      ]
+    }
+  },
+  "extra": {
+    "unit": "8.5",
+    "pron": {
+      "focus": "L'accent de -self et -selves",
+      "ipa": "/self/ – /selvz/",
+      "explain": "Dans les pronoms réfléchis, l'accent tombe **toujours** sur [[self]] ou [[selves]] : « maï-SÈLF », « theum-SÈLVZ ». Au pluriel, le **f** devient un **v** bien vibré, suivi d'un « z » : [[ourselves]], [[themselves]]. Le piège des francophones : dire « mi-self » avec deux syllabes égales, ou avaler le « v ». Et [[each other]] se dit d'un seul bloc, avec la force sur [[other]] : « itch-EU-theur ».",
+      "words": [
+        { "en": "myself", "fr": "moi-même", "hint": "« maï-SÈLF » : accent sur self" },
+        { "en": "yourself", "fr": "toi-même", "hint": "« yeur-SÈLF » : [[your]] tout petit" },
+        { "en": "himself", "fr": "lui-même", "hint": "« him-SÈLF » : le « h » s'entend" },
+        { "en": "herself", "fr": "elle-même", "hint": "« heur-SÈLF » : souffle le « h »" },
+        { "en": "ourselves", "fr": "nous-mêmes", "hint": "« aour-SÈLVZ » : le f devient « v », puis « z »" },
+        { "en": "yourselves", "fr": "vous-mêmes", "hint": "« yeur-SÈLVZ » : fais vibrer le « v »" },
+        { "en": "themselves", "fr": "eux-mêmes, elles-mêmes", "hint": "« theum-SÈLVZ » : « th » de [[the]], langue entre les dents" },
+        { "en": "each other", "fr": "l'un l'autre", "hint": "« itch-EU-theur » : un seul bloc, accent sur other" },
+        { "en": "by myself", "fr": "tout seul", "hint": "« baï-maï-SÈLF » : la force tout à la fin" }
+      ],
+      "pairs": [],
+      "practice": [
+        "I made it myself, and they made it themselves.",
+        "We taught ourselves to skate on the canal.",
+        "My sisters help each other with their homework."
+      ]
+    },
+    "mission": {
+      "type": "oral",
+      "prompt": "Tes grands-parents viennent en visite et toute la famille prépare la maison. Ton ami anglophone t'appelle : explique-lui ce que vous faites vous-mêmes, ce que vous faites faire par des professionnels, et qui s'entraide.",
+      "model": "My grandparents are visiting next weekend, so we're very busy! We're having the living room painted by a professional. Dad is fixing the fence by himself, and he's very proud of himself. My sister and I are cleaning our rooms ourselves, and we're helping each other. Tomorrow, I'm getting my hair cut, because Grandma always says it's too long. What about you, are you doing anything fun?",
+      "checklist": [
+        "J'ai utilisé [[have]] ou [[get]] + chose + participe passé ([[having the living room painted]])",
+        "J'ai choisi le bon pronom réfléchi ([[himself]], [[ourselves]]…)",
+        "J'ai utilisé [[each other]] pour une action réciproque",
+        "J'ai dit « tout seul » avec [[by]] + pronom réfléchi",
+        "J'ai mis l'accent sur [[self]] / [[selves]]"
+      ]
+    }
+  }
+}

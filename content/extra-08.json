@@ -8,15 +8,51 @@
         "ipa": "/wər/ – /d/",
         "explain": "Dans une phrase, [[were]] et [[would]] se font tout petits : [[were]] devient un « weur » rapide, et [[would]] fond souvent en un simple « d » collé au sujet : [[I'd]], [[you'd]], [[we'd]]. Le piège des francophones : prononcer [[were]] comme [[where]] (« wèr »), ou oublier le petit « d »… et dire [[I buy]] au lieu de [[I'd buy]] ! Par contre, [[wouldn't]] reste toujours fort, parce que la négation est importante. Truc : [[were]] rime avec [[her]], et [[where]] rime avec [[hair]].",
         "words": [
-          { "en": "were", "fr": "étais, étions, étaient (passé de be)", "hint": "« weur » : comme le mot « heure » avec un w devant ; jamais « wèr » !" },
-          { "en": "if I were you", "fr": "si j'étais toi (à ta place)", "hint": "« i-faï-weur-YOU » : le verbe se fait tout petit, l'accent va sur le dernier mot" },
-          { "en": "I wish I were taller", "fr": "j'aimerais être plus grand", "hint": "« aï-WICH-aï-weur-TÂ-leur » : « weur » très rapide, sans accent" },
-          { "en": "I'd", "fr": "je + conditionnel (I would)", "hint": "« aïd » : le d est minuscule, mais il change tout" },
-          { "en": "I'd buy a dog", "fr": "j'achèterais un chien", "hint": "« aïd-BAÏ-eu-DÂG » : sans le d, la phrase passe au présent !" },
-          { "en": "you'd love it", "fr": "tu adorerais ça", "hint": "« youd-LEUV-it » : le d se colle au verbe qui suit" },
-          { "en": "what would you do", "fr": "que ferais-tu ?", "hint": "« WEUT-wou-djeu-DOU » : les deux mots du milieu se fondent en « woudjeu »" },
-          { "en": "wouldn't", "fr": "ne… pas (au conditionnel)", "hint": "« WOU-deunt » : la négation reste forte ; le l est muet" },
-          { "en": "I wouldn't worry", "fr": "je ne m'inquiéterais pas", "hint": "« aï-WOU-deunt-WEU-ri » : deux coups forts" }
+          {
+            "en": "were",
+            "fr": "étais, étions, étaient (passé de be)",
+            "hint": "« weur » : comme le mot « heure » avec un w devant ; jamais « wèr » !"
+          },
+          {
+            "en": "if I were you",
+            "fr": "si j'étais toi (à ta place)",
+            "hint": "« i-faï-weur-YOU » : le verbe se fait tout petit, l'accent va sur le dernier mot"
+          },
+          {
+            "en": "I wish I were taller",
+            "fr": "j'aimerais être plus grand",
+            "hint": "« aï-WICH-aï-weur-TÂ-leur » : « weur » très rapide, sans accent"
+          },
+          {
+            "en": "I'd",
+            "fr": "je + conditionnel (I would)",
+            "hint": "« aïd » : le d est minuscule, mais il change tout"
+          },
+          {
+            "en": "I'd buy a dog",
+            "fr": "j'achèterais un chien",
+            "hint": "« aïd-BAÏ-eu-DÂG » : sans le d, la phrase passe au présent !"
+          },
+          {
+            "en": "you'd love it",
+            "fr": "tu adorerais ça",
+            "hint": "« youd-LEUV-it » : le d se colle au verbe qui suit"
+          },
+          {
+            "en": "what would you do",
+            "fr": "que ferais-tu ?",
+            "hint": "« WEUT-wou-djeu-DOU » : les deux mots du milieu se fondent en « woudjeu »"
+          },
+          {
+            "en": "wouldn't",
+            "fr": "ne… pas (au conditionnel)",
+            "hint": "« WOU-deunt » : la négation reste forte ; le l est muet"
+          },
+          {
+            "en": "I wouldn't worry",
+            "fr": "je ne m'inquiéterais pas",
+            "hint": "« aï-WOU-deunt-WEU-ri » : deux coups forts"
+          }
         ],
         "pairs": [],
         "practice": [
@@ -45,16 +81,56 @@
         "ipa": "",
         "explain": "En anglais, quand un mot change de forme, l'accent peut **sauter** d'une syllabe à l'autre ! [[photograph]] appuie sur la première syllabe (« FÔ-teu-graf »), [[photography]] et [[photographer]] sur la deuxième (« feu-TÂ-greu-fi »), et [[photographic]] sur la troisième (« fô-teu-GRA-fik »). Avec les fins -ic et -tion, l'accent se place juste avant ([[scientific]], [[publication]]), mais [[invent]], [[invention]] et [[inventor]] gardent tous l'accent sur « vèn ». Le piège des francophones : dire tous ces mots à plat, en appuyant sur la dernière syllabe comme en français. Truc : tape dans tes mains sur la syllabe forte en répétant chaque famille !",
         "words": [
-          { "en": "photograph", "fr": "une photo (photographie)", "hint": "« FÔ-teu-graf » : accent sur la première syllabe" },
-          { "en": "photography", "fr": "la photographie (l'art)", "hint": "« feu-TÂ-greu-fi » : l'accent saute sur la deuxième syllabe" },
-          { "en": "photographic", "fr": "photographique", "hint": "« fô-teu-GRA-fik » : la fin -ic attire l'accent juste avant elle" },
-          { "en": "invent", "fr": "inventer", "hint": "« in-VÈNT » : accent sur la deuxième syllabe, sans son nasal" },
-          { "en": "invention", "fr": "une invention", "hint": "« in-VÈN-cheun » : l'accent ne bouge pas" },
-          { "en": "inventor", "fr": "un inventeur, une inventrice", "hint": "« in-VÈN-teur » : toujours sur « vèn »" },
-          { "en": "science", "fr": "la science", "hint": "« SAÏ-euns » : accent au début ; « saï » comme dans « aïe »" },
-          { "en": "scientific", "fr": "scientifique (adjectif)", "hint": "« saï-eun-TI-fik » : la fin -ic attire l'accent juste avant elle" },
-          { "en": "publish", "fr": "publier", "hint": "« PEU-blich » : accent au début" },
-          { "en": "publication", "fr": "une publication", "hint": "« peu-bli-KÉI-cheun » : l'accent saute juste avant « cheun »" }
+          {
+            "en": "photograph",
+            "fr": "une photo (photographie)",
+            "hint": "« FÔ-teu-graf » : accent sur la première syllabe"
+          },
+          {
+            "en": "photography",
+            "fr": "la photographie (l'art)",
+            "hint": "« feu-TÂ-greu-fi » : l'accent saute sur la deuxième syllabe"
+          },
+          {
+            "en": "photographic",
+            "fr": "photographique",
+            "hint": "« fô-teu-GRA-fik » : la fin -ic attire l'accent juste avant elle"
+          },
+          {
+            "en": "invent",
+            "fr": "inventer",
+            "hint": "« in-VÈNT » : accent sur la deuxième syllabe, sans son nasal"
+          },
+          {
+            "en": "invention",
+            "fr": "une invention",
+            "hint": "« in-VÈN-cheun » : l'accent ne bouge pas"
+          },
+          {
+            "en": "inventor",
+            "fr": "un inventeur, une inventrice",
+            "hint": "« in-VÈN-teur » : toujours sur « vèn »"
+          },
+          {
+            "en": "science",
+            "fr": "la science",
+            "hint": "« SAÏ-euns » : accent au début ; « saï » comme dans « aïe »"
+          },
+          {
+            "en": "scientific",
+            "fr": "scientifique (adjectif)",
+            "hint": "« saï-eun-TI-fik » : la fin -ic attire l'accent juste avant elle"
+          },
+          {
+            "en": "publish",
+            "fr": "publier",
+            "hint": "« PEU-blich » : accent au début"
+          },
+          {
+            "en": "publication",
+            "fr": "une publication",
+            "hint": "« peu-bli-KÉI-cheun » : l'accent saute juste avant « cheun »"
+          }
         ],
         "pairs": [],
         "practice": [
@@ -81,16 +157,56 @@
         "ipa": "",
         "explain": "Dans les noms de métiers, c'est la fin du mot qui commande l'accent ! Avec la fin « -ian », il tombe juste avant : [[electrician]] (« i-lèk-TRI-cheun »), [[musician]], [[librarian]]. La fin « -eer », elle, garde l'accent pour elle toute seule ([[engineer]] : « èn-dji-NIIR », [[volunteer]]), et « -ist » ne change rien : [[journalist]] garde l'accent de [[journal]], [[scientist]] celui de [[science]]. Le piège des francophones : appuyer sur la fin partout, comme dans « in-gé-NIEUR » ou « é-lec-tri-CIEN ». Truc : « -eer » est une vedette qui veut tout l'accent, alors que « -ian » est timide et le pousse juste devant elle !",
         "words": [
-          { "en": "electrician", "fr": "un électricien, une électricienne", "hint": "« i-lèk-TRI-cheun » : accent juste avant la fin ; « cheun », pas « sien »" },
-          { "en": "musician", "fr": "un musicien, une musicienne", "hint": "« miou-ZI-cheun » : « miou » au début, comme un chat !" },
-          { "en": "librarian", "fr": "un ou une bibliothécaire", "hint": "« laï-BRÈ-ri-eun » : accent sur « brè » ; et ce n'est pas un libraire !" },
-          { "en": "engineer", "fr": "un ingénieur, une ingénieure", "hint": "« èn-dji-NIIR » : l'accent tombe sur la toute fin" },
-          { "en": "volunteer", "fr": "un ou une bénévole", "hint": "« vâ-leun-TIIR » : accent sur la fin, comme tous les mots en « -eer »" },
-          { "en": "journalist", "fr": "un ou une journaliste", "hint": "« DJEUR-neu-list » : accent au début ; « dj », pas « j »" },
-          { "en": "scientist", "fr": "un ou une scientifique (la personne)", "hint": "« SAÏ-eun-tist » : accent au début, comme pour « la science »" },
-          { "en": "pharmacist", "fr": "un pharmacien, une pharmacienne", "hint": "« FAR-meu-sist » : accent au début ; « ph » se dit f" },
-          { "en": "mechanic", "fr": "un mécanicien, une mécanicienne", "hint": "« meu-KA-nik » : accent sur la deuxième syllabe ; « ch » se dit k" },
-          { "en": "lawyer", "fr": "un avocat, une avocate", "hint": "« LOÏ-eur » : accent au début ; rien à voir avec un loyer !" }
+          {
+            "en": "electrician",
+            "fr": "un électricien, une électricienne",
+            "hint": "« i-lèk-TRI-cheun » : accent juste avant la fin ; « cheun », pas « sien »"
+          },
+          {
+            "en": "musician",
+            "fr": "un musicien, une musicienne",
+            "hint": "« miou-ZI-cheun » : « miou » au début, comme un chat !"
+          },
+          {
+            "en": "librarian",
+            "fr": "un ou une bibliothécaire",
+            "hint": "« laï-BRÈ-ri-eun » : accent sur « brè » ; et ce n'est pas un libraire !"
+          },
+          {
+            "en": "engineer",
+            "fr": "un ingénieur, une ingénieure",
+            "hint": "« èn-dji-NIIR » : l'accent tombe sur la toute fin"
+          },
+          {
+            "en": "volunteer",
+            "fr": "un ou une bénévole",
+            "hint": "« vâ-leun-TIIR » : accent sur la fin, comme tous les mots en « -eer »"
+          },
+          {
+            "en": "journalist",
+            "fr": "un ou une journaliste",
+            "hint": "« DJEUR-neu-list » : accent au début ; « dj », pas « j »"
+          },
+          {
+            "en": "scientist",
+            "fr": "un ou une scientifique (la personne)",
+            "hint": "« SAÏ-eun-tist » : accent au début, comme pour « la science »"
+          },
+          {
+            "en": "pharmacist",
+            "fr": "un pharmacien, une pharmacienne",
+            "hint": "« FAR-meu-sist » : accent au début ; « ph » se dit f"
+          },
+          {
+            "en": "mechanic",
+            "fr": "un mécanicien, une mécanicienne",
+            "hint": "« meu-KA-nik » : accent sur la deuxième syllabe ; « ch » se dit k"
+          },
+          {
+            "en": "lawyer",
+            "fr": "un avocat, une avocate",
+            "hint": "« LOÏ-eur » : accent au début ; rien à voir avec un loyer !"
+          }
         ],
         "pairs": [],
         "practice": [
@@ -117,16 +233,56 @@
         "ipa": "",
         "explain": "Dans un phrasal verb, c'est la petite particule qui prend l'accent : [[give up]] (« gi-VEUP »), [[pick it up]] (« pi-ki-TEUP »). Remarque comme tout se colle : la consonne de la fin glisse sur la voyelle qui suit, comme une liaison en français. Mais quand le phrasal verb devient un **nom**, l'accent saute au début : [[to break down]] (tomber en panne) devient [[a breakdown]] (une panne), [[to set up]] devient [[a setup]]. Le piège des francophones : appuyer sur le verbe et avaler la particule… alors que c'est elle qui porte le sens ! Truc : verbe, accent à la fin ; nom, accent au début.",
         "words": [
-          { "en": "give up", "fr": "abandonner, lâcher", "hint": "« gi-VEUP » : le v glisse sur la particule, qui prend l'accent" },
-          { "en": "turn it off", "fr": "éteins-le", "hint": "« teur-ni-TÂF » : trois mots collés en un seul, accent à la fin" },
-          { "en": "pick it up", "fr": "ramasse-le", "hint": "« pi-ki-TEUP » : tout collé, accent sur la particule" },
-          { "en": "look after", "fr": "prendre soin de, garder", "hint": "« lou-KAF-teur » : le k glisse, accent sur « kaf »" },
-          { "en": "to break down", "fr": "tomber en panne", "hint": "« bréik-DAOUN » : verbe, donc accent à la fin" },
-          { "en": "a breakdown", "fr": "une panne", "hint": "« BRÉIK-daoun » : nom, donc accent au début" },
-          { "en": "to set up", "fr": "installer, organiser", "hint": "« sè-TEUP » : verbe, donc accent à la fin" },
-          { "en": "a setup", "fr": "une installation, un montage", "hint": "« SÈ-teup » : nom, donc accent au début" },
-          { "en": "to grow up", "fr": "grandir", "hint": "« grô-WEUP » : verbe, donc accent à la fin" },
-          { "en": "a grown-up", "fr": "un adulte, une adulte", "hint": "« GRÔ-neup » : nom, donc accent au début" }
+          {
+            "en": "give up",
+            "fr": "abandonner, lâcher",
+            "hint": "« gi-VEUP » : le v glisse sur la particule, qui prend l'accent"
+          },
+          {
+            "en": "turn it off",
+            "fr": "éteins-le",
+            "hint": "« teur-ni-TÂF » : trois mots collés en un seul, accent à la fin"
+          },
+          {
+            "en": "pick it up",
+            "fr": "ramasse-le",
+            "hint": "« pi-ki-TEUP » : tout collé, accent sur la particule"
+          },
+          {
+            "en": "look after",
+            "fr": "prendre soin de, garder",
+            "hint": "« lou-KAF-teur » : le k glisse, accent sur « kaf »"
+          },
+          {
+            "en": "to break down",
+            "fr": "tomber en panne",
+            "hint": "« bréik-DAOUN » : verbe, donc accent à la fin"
+          },
+          {
+            "en": "a breakdown",
+            "fr": "une panne",
+            "hint": "« BRÉIK-daoun » : nom, donc accent au début"
+          },
+          {
+            "en": "to set up",
+            "fr": "installer, organiser",
+            "hint": "« sè-TEUP » : verbe, donc accent à la fin"
+          },
+          {
+            "en": "a setup",
+            "fr": "une installation, un montage",
+            "hint": "« SÈ-teup » : nom, donc accent au début"
+          },
+          {
+            "en": "to grow up",
+            "fr": "grandir",
+            "hint": "« grô-WEUP » : verbe, donc accent à la fin"
+          },
+          {
+            "en": "a grown-up",
+            "fr": "un adulte, une adulte",
+            "hint": "« GRÔ-neup » : nom, donc accent au début"
+          }
         ],
         "pairs": [],
         "practice": [
@@ -144,6 +300,79 @@
           "Avec un pronom, je l'ai mis au milieu : [[turn it off]], jamais [[turn off it]]",
           "Avec [[look after]], le complément va après : [[look after him]]",
           "J'ai donné des consignes claires et polies ([[please]], [[don't]]…)"
+        ]
+      }
+    },
+    {
+      "unit": "8.5",
+      "pron": {
+        "focus": "L'accent de -self et -selves",
+        "ipa": "/self/ – /selvz/",
+        "explain": "Dans les pronoms réfléchis, l'accent tombe **toujours** sur [[self]] ou [[selves]] : « maï-SÈLF », « theum-SÈLVZ ». Au pluriel, le **f** devient un **v** bien vibré, suivi d'un « z » : [[ourselves]], [[themselves]]. Le piège des francophones : dire « mi-self » avec deux syllabes égales, ou avaler le « v ». Et [[each other]] se dit d'un seul bloc, avec la force sur [[other]] : « itch-EU-theur ».",
+        "words": [
+          {
+            "en": "myself",
+            "fr": "moi-même",
+            "hint": "« maï-SÈLF » : accent sur self"
+          },
+          {
+            "en": "yourself",
+            "fr": "toi-même",
+            "hint": "« yeur-SÈLF » : [[your]] tout petit"
+          },
+          {
+            "en": "himself",
+            "fr": "lui-même",
+            "hint": "« him-SÈLF » : le « h » s'entend"
+          },
+          {
+            "en": "herself",
+            "fr": "elle-même",
+            "hint": "« heur-SÈLF » : souffle le « h »"
+          },
+          {
+            "en": "ourselves",
+            "fr": "nous-mêmes",
+            "hint": "« aour-SÈLVZ » : le f devient « v », puis « z »"
+          },
+          {
+            "en": "yourselves",
+            "fr": "vous-mêmes",
+            "hint": "« yeur-SÈLVZ » : fais vibrer le « v »"
+          },
+          {
+            "en": "themselves",
+            "fr": "eux-mêmes, elles-mêmes",
+            "hint": "« theum-SÈLVZ » : « th » de [[the]], langue entre les dents"
+          },
+          {
+            "en": "each other",
+            "fr": "l'un l'autre",
+            "hint": "« itch-EU-theur » : un seul bloc, accent sur other"
+          },
+          {
+            "en": "by myself",
+            "fr": "tout seul",
+            "hint": "« baï-maï-SÈLF » : la force tout à la fin"
+          }
+        ],
+        "pairs": [],
+        "practice": [
+          "I made it myself, and they made it themselves.",
+          "We taught ourselves to skate on the canal.",
+          "My sisters help each other with their homework."
+        ]
+      },
+      "mission": {
+        "type": "oral",
+        "prompt": "Tes grands-parents viennent en visite et toute la famille prépare la maison. Ton ami anglophone t'appelle : explique-lui ce que vous faites vous-mêmes, ce que vous faites faire par des professionnels, et qui s'entraide.",
+        "model": "My grandparents are visiting next weekend, so we're very busy! We're having the living room painted by a professional. Dad is fixing the fence by himself, and he's very proud of himself. My sister and I are cleaning our rooms ourselves, and we're helping each other. Tomorrow, I'm getting my hair cut, because Grandma always says it's too long. What about you, are you doing anything fun?",
+        "checklist": [
+          "J'ai utilisé [[have]] ou [[get]] + chose + participe passé ([[having the living room painted]])",
+          "J'ai choisi le bon pronom réfléchi ([[himself]], [[ourselves]]…)",
+          "J'ai utilisé [[each other]] pour une action réciproque",
+          "J'ai dit « tout seul » avec [[by]] + pronom réfléchi",
+          "J'ai mis l'accent sur [[self]] / [[selves]]"
         ]
       }
     }
