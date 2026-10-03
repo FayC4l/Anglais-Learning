@@ -7,6 +7,7 @@ import { go } from "../router.js";
 import { sfx } from "../audio.js";
 import { shake } from "../fx.js";
 import { avatarEl } from "./who.js";
+import { backupCard } from "./backup.js";
 import { dailyCount, currentLevel } from "./daily.js";
 import { jokeOfTheDay, mooseSays, quip } from "../humor.js";
 import { EXTRA } from "../content.js";
@@ -84,7 +85,7 @@ export function map(view) {
     lines.append(lineEl(L, lvl, next));
   }
 
-  view.append(h("div", { class: "map" }, header, stats, mooseSays(quip("welcome"), "sm"), hero, tools, jokeCard, h("h2", { class: "section-title" }, "Le réseau"), h("p", { class: "section-sub" }, "Chaque ligne est un niveau. Réussis le test de chaque station pour avancer, puis bats le boss au terminus."), lines));
+  view.append(h("div", { class: "map" }, header, stats, backupCard(), mooseSays(quip("welcome"), "sm"), hero, tools, jokeCard, h("h2", { class: "section-title" }, "Le réseau"), h("p", { class: "section-sub" }, "Chaque ligne est un niveau. Réussis le test de chaque station pour avancer, puis bats le boss au terminus."), lines));
 
   // Scroll the next station into view on load.
   requestAnimationFrame(() => {

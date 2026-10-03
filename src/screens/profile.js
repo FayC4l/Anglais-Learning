@@ -6,7 +6,8 @@ import { family, saveFamily, listProfiles, profileState, updateProfile, deletePr
 import { go } from "../router.js";
 import { englishVoices, ttsReady, coachReady, speak, speakParts, sfx } from "../audio.js";
 import { avatarEl } from "./who.js";
-import { downloadJSON, pickBackupFile, backupName } from "./backup.js";
+import { downloadJSON, pickBackupFile, backupName, downloadFamilyBackup } from "./backup.js";
+import { autoSupported, autoStatus, chooseAutoFile, resumeAuto, disableAuto, daysSinceBackup } from "../autobackup.js";
 
 export function profileScreen(view) {
   const s = state.stats;
@@ -77,6 +78,9 @@ export function profileScreen(view) {
         "div",
         { class: "settings" },
         h("p", { class: "set-help" }, "La progression est enregistrée dans ce navigateur. Pour la mettre à l'abri ou la passer sur un autre appareil, télécharge un fichier de sauvegarde (ou copie ton code)."),
+        h("p", { class: "set-help" }, daysSinceBackup() == null ? "Aucune sauvegarde de la famille pour l'instant." : daysSinceBackup() === 0 ? "Dernière sauvegarde de la famille : aujourd'hui." : `Dernière sauvegarde de la famille : il y a ${daysSinceBackup()} jour${daysSinceBackup() > 1 ? "s" : ""}.`),
+        h("div", { class: "row" }, h("button", { type: "button", class: "btn btn-small btn-primary", onClick: () => (downloadFamilyBackup(), toast("Sauvegarde de la famille téléchargée.", "ok")) }, h("span", { html: icon("copy") }), "Sauvegarder toute la famille")),
+        autoBlock(),
         h("div", { class: "row" }, h("button", { type: "button", class: "btn btn-small", onClick: () => downloadJSON(exportProfile(state.player.id), backupName(state.player.name.toLowerCase().replace(/[^a-z0-9]+/g, "-") || "profil")) }, h("span", { html: icon("copy") }), "Télécharger ma sauvegarde"), h("button", { type: "button", class: "btn btn-small btn-ghost", onClick: () => restoreFile() }, "Restaurer un fichier")),
         h("div", { class: "row" }, h("button", { type: "button", class: "btn btn-small btn-ghost", onClick: async () => {
           codeOut.value = exportCode();
@@ -111,6 +115,39 @@ export function profileScreen(view) {
       ),
     ),
   );
+}
+
+/** Automatic backup file (Chrome / Edge on a computer). */
+function autoBlock() {
+  if (!autoSupported()) return h("p", { class: "set-help" }, "Sauvegarde automatique : disponible sur ordinateur avec Chrome ou Edge. Sur téléphone, utilise le rappel quotidien de la carte.");
+  const box = h("div", { class: "auto-backup" });
+  const render = async () => {
+    const st = await autoStatus();
+    const label = { off: "désactivée", on: "activée : le fichier est mis à jour après chaque séance", paused: "en pause : le navigateur redemande l'autorisation" }[st];
+    box.replaceChildren(
+      h("p", null, h("strong", null, "Sauvegarde automatique : "), label),
+      h("p", { class: "set-help" }, "Choisis un fichier une fois (idéalement dans ton dossier Google Drive ou OneDrive synchronisé) : l'app le réécrit toute seule, 20 secondes après chaque changement et quand tu fermes la page."),
+      h(
+        "div",
+        { class: "row" },
+        st !== "on" ? h("button", { type: "button", class: "btn btn-small", onClick: async () => {
+          try {
+            if (st === "paused" && (await resumeAuto())) toast("Sauvegarde automatique réactivée.", "ok");
+            else {
+              const name = await chooseAutoFile();
+              toast(`Sauvegarde automatique dans « ${name} ».`, "ok");
+            }
+          } catch (e) {
+            if (e?.name !== "AbortError") toast("Impossible d'écrire ce fichier.", "ko");
+          }
+          render();
+        } }, st === "paused" ? "Réactiver" : "Choisir le fichier de sauvegarde") : null,
+        st !== "off" ? h("button", { type: "button", class: "btn btn-small btn-ghost", onClick: async () => (await disableAuto(), toast("Sauvegarde automatique désactivée."), render()) }, "Désactiver") : null,
+      ),
+    );
+  };
+  render();
+  return box;
 }
 
 async function editMe() {
@@ -241,7 +278,7 @@ function zone(view) {
       h("h1", { class: "page-title" }, "Zone gestion"),
       h("h2", { class: "section-title" }, "La famille"),
       h("div", { class: "l-table-wrap" }, h("table", { class: "l-table track family" }, h("thead", null, h("tr", null, ["Profil", "Âge", "Placement", "Lignes", "XP", "Réussite", "Temps", "Rédaction", ""].map((t) => h("th", null, t)))), h("tbody", null, familyRows))),
-      h("div", { class: "row" }, h("button", { type: "button", class: "btn btn-small", onClick: () => downloadJSON(exportFamily(), backupName("famille")) }, h("span", { html: icon("copy") }), "Télécharger la sauvegarde de toute la famille"), h("button", { type: "button", class: "btn btn-small btn-ghost", onClick: () => restoreFile() }, "Restaurer un fichier")),
+      h("div", { class: "row" }, h("button", { type: "button", class: "btn btn-small", onClick: () => (downloadFamilyBackup(), toast("Sauvegarde téléchargée.", "ok")) }, h("span", { html: icon("copy") }), "Télécharger la sauvegarde de toute la famille"), h("button", { type: "button", class: "btn btn-small btn-ghost", onClick: () => restoreFile() }, "Restaurer un fichier")),
       h("h2", { class: "section-title" }, `Difficulté pour ${state.player.name}`),
       diffSel,
       h("p", { class: "set-help" }, "Conseil : Difficile par défaut. Si un test est raté 3 fois de suite malgré l'entraînement, passe en Normal un moment : le but est de progresser, pas d'abandonner. Chaque profil a sa propre difficulté."),

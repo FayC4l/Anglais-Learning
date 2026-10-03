@@ -3,6 +3,7 @@ import { register, go, route } from "./router.js";
 import { flushSave } from "./store.js";
 import { initProfiles, family, listProfiles, selectProfile } from "./profiles.js";
 import { persistent } from "./storage.js";
+import { startAutoBackup } from "./autobackup.js";
 import { unlockAudio } from "./audio.js";
 import { toast } from "./ui.js";
 import { map } from "./screens/home.js";
@@ -45,6 +46,8 @@ const unlock = () => {
 };
 addEventListener("pointerdown", unlock);
 addEventListener("keydown", unlock);
+// Automatic backup file (Chrome / Edge on a computer, once chosen in the profile).
+startAutoBackup();
 // Never lose the last answers when the tab closes.
 addEventListener("pagehide", flushSave);
 addEventListener("visibilitychange", () => document.visibilityState === "hidden" && flushSave());

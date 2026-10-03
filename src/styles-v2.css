@@ -233,3 +233,12 @@
 .c2-scale small { font-family: var(--font-mono); font-size: .75rem; color: var(--ink-2); }
 .c2-scale.a, .c2-mock-last.a { border-color: var(--go); } .c2-scale.no { border-color: var(--stop); }
 .c2-continue { margin-top: 8px; }
+
+/* Daily backup */
+.backup-card { display: grid; gap: 8px; padding: 12px 16px; border-radius: 14px; background: var(--card); border: 2px solid var(--l5); margin: 10px 0; }
+.backup-card p { margin: 0; }
+.backup-card.late { border-color: var(--amber); background: color-mix(in srgb, var(--amber) 8%, var(--card)); }
+.backup-card.ok { grid-template-columns: auto 1fr; align-items: center; border-color: var(--go); }
+.backup-card.ok .ic { color: var(--go); width: 26px; height: 26px; }
+.auto-backup { padding: 10px 14px; border-radius: 12px; background: var(--card-2); display: grid; gap: 6px; }
+.auto-backup p { margin: 0; }

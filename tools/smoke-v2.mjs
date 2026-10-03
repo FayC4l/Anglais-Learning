@@ -191,6 +191,27 @@ await step("boss phases", async () => {
   await shot("12-boss");
 });
 
+await step("daily backup reminder", async () => {
+  // Pretend the family was created two days ago and never backed up.
+  await page.evaluate(() => {
+    const g = JSON.parse(localStorage.getItem("mission-bilingue:global"));
+    g.profiles.forEach((p) => (p.createdAt = new Date(Date.now() - 2 * 86400000).toISOString()));
+    delete g.lastBackup;
+    localStorage.setItem("mission-bilingue:global", JSON.stringify(g));
+  });
+  await page.reload();
+  await page.locator(".who-card", { hasText: "Lina" }).click();
+  await page.waitForSelector(".backup-card.late");
+  await shot("13-backup-reminder");
+  const [download] = await Promise.all([page.waitForEvent("download"), page.click(".backup-card >> text=Télécharger la sauvegarde")]);
+  if (!/mission-bilingue-famille-.*\.json$/.test(download.suggestedFilename())) throw new Error(`bad file name ${download.suggestedFilename()}`);
+  await page.waitForSelector(".backup-card.ok");
+  await page.reload();
+  await page.locator(".who-card", { hasText: "Lina" }).click();
+  await page.waitForSelector(".map");
+  if (await page.locator(".backup-card").count()) throw new Error("reminder still shown after today's backup");
+});
+
 await ctx.close();
 await browser.close();
 console.log(errors.length ? errors.join("\n") : "NO ERRORS");

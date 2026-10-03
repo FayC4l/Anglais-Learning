@@ -5,6 +5,7 @@ L'appli d'anglais de toute la famille : du premier « hello » jusqu'au niveau C
 ## Ce qu'il y a dedans
 
 - **Profils familiaux** : écran « Qui joue ? », un profil par personne (prénom, avatar, âge enfant / ado / adulte), progression séparée, sauvegarde par fichier ou par code.
+- **Sauvegarde quotidienne** : rappel une fois par jour sur la carte (téléchargement en un clic) et, sur ordinateur avec Chrome ou Edge, fichier de sauvegarde mis à jour automatiquement (Profil → Sauvegarde automatique).
 - **Test de placement adaptatif** (A1 → C2) : les questions montent ou descendent selon tes réponses, puis tu commences à la bonne ligne.
 - **12 lignes, 60 stations, 12 boss** : leçon narrée, atelier de prononciation, mots, 9 mini-jeux, mission orale ou écrite, test de 15 questions.
 - **Boss imprévisibles** : 3 phases (reconnaissance, production, rage), 60 questions réservées par boss, questions générées à l'infini et mémoire anti-répétition (un nouvel essai reprend au plus 20 % des questions du précédent).
