@@ -25,7 +25,13 @@ for (const v of VERBS) {
     if (wrong !== v.past && wrong !== v.pp && !v.pastAlt?.includes(wrong)) OVERREG.set(wrong, v.past);
   }
 }
-for (const [w, r] of Object.entries({ runned: "ran", swimmed: "swam", sitted: "sat", getted: "got", putted: "put", cutted: "cut", hitted: "hit", letted: "let", setted: "set", beginned: "began", winned: "won", forgetted: "forgot", shutted: "shut", quitted: "quit", hurted: "hurt", costed: "cost", bringed: "brought", thinked: "thought", buyed: "bought", catched: "caught", teached: "taught", goed: "went", eated: "ate", drinked: "drank", writed: "wrote", speaked: "spoke", taked: "took", maked: "made", gived: "gave", comed: "came", knowed: "knew", seed: "saw", sayed: "said", payed: "paid", leaved: "left", feeled: "felt", finded: "found", losed: "lost", meeted: "met", sleeped: "slept", standed: "stood", understanded: "understood", weared: "wore", growed: "grew", throwed: "threw", drived: "drove", flied: "flew", choosed: "chose", falled: "fell", breaked: "broke", stealed: "stole", telled: "told", sended: "sent", spended: "spent", selled: "sold", builded: "built", keeped: "kept", leaded: "led", holded: "held", rided: "rode", singed: "sang", hided: "hid", wined: "won", fighted: "fought", feeded: "fed", digged: "dug" })) OVERREG.set(w, r);
+// Hand-written list: these are never real English words, so they are always flagged. Generated forms are
+// flagged only when the dictionary does not know them ("bed" is a real word, not the past of "be").
+const MANUAL_OVERREG = new Set();
+for (const [w, r] of Object.entries({ runned: "ran", swimmed: "swam", sitted: "sat", getted: "got", putted: "put", cutted: "cut", hitted: "hit", letted: "let", setted: "set", beginned: "began", winned: "won", forgetted: "forgot", shutted: "shut", hurted: "hurt", bringed: "brought", thinked: "thought", buyed: "bought", catched: "caught", teached: "taught", goed: "went", eated: "ate", drinked: "drank", writed: "wrote", speaked: "spoke", taked: "took", maked: "made", gived: "gave", comed: "came", knowed: "knew", sayed: "said", payed: "paid", leaved: "left", feeled: "felt", finded: "found", losed: "lost", meeted: "met", sleeped: "slept", standed: "stood", understanded: "understood", weared: "wore", growed: "grew", throwed: "threw", drived: "drove", flied: "flew", choosed: "chose", falled: "fell", breaked: "broke", stealed: "stole", telled: "told", sended: "sent", spended: "spent", selled: "sold", builded: "built", keeped: "kept", holded: "held", rided: "rode", singed: "sang", hided: "hid", fighted: "fought", feeded: "fed", digged: "dug" })) {
+  OVERREG.set(w, r);
+  MANUAL_OVERREG.add(w);
+}
 
 const AUX_BEFORE_BASE = new Set(["do", "does", "did", "don't", "doesn't", "didn't", "can", "could", "will", "would", "should", "must", "may", "might", "shall", "can't", "couldn't", "won't", "wouldn't", "shouldn't", "mustn't", "let", "lets", "make", "makes", "made", "help", "helps", "helped", "watch", "watched", "see", "saw", "hear", "heard", "feel", "felt", "that", "to", "not", "and", "or", "'ll", "'d", "i'll", "you'll", "we'll", "they'll", "rather", "better", "than"]);
 const FREQ_ADV = new Set(["always", "usually", "often", "sometimes", "never", "rarely", "seldom", "also", "really", "still", "just", "even", "only", "already", "generally", "normally", "frequently", "hardly", "ever"]);
@@ -141,7 +147,9 @@ const PHRASES = [
 
 /** Day / month / language names that need a capital letter. */
 const PROPER = new Set(["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday", "january", "february", "april", "june", "july", "august", "september", "october", "november", "december", "english", "french", "spanish", "german", "italian", "chinese", "japanese", "arabic", "canadian", "american", "british", "canada", "quebec", "ottawa", "montreal", "toronto", "vancouver", "christmas", "halloween", "europe", "africa", "america", "algeria", "algerian", "france", "paris"]);
-const A_EXCEPT = /^(uni(?!nt|mp|nd|mag|ns)|use|usu|eu|one|once|ukulele|utensil|util)/; // vowel letter, consonant sound
+/** Words that often start a sentence (used to spot a missing full stop: "…my brother We always…"). */
+const COMMON_STARTERS = new Set(["the", "then", "we", "they", "he", "she", "it", "my", "our", "after", "before", "when", "school", "but", "and", "so", "there", "this", "that", "these", "those", "in", "on", "at", "yesterday", "today", "tomorrow", "finally", "first", "next", "also", "however", "what", "where", "why", "how", "who", "you", "his", "her", "their", "every", "some", "many", "one", "if", "because", "although", "now", "later", "suddenly", "unfortunately", "luckily", "last", "on", "a", "an"]);
+const A_EXCEPT =/^(uni(?!nt|mp|nd|mag|ns)|use|usu|eu|one|once|ukulele|utensil|util)/; // vowel letter, consonant sound
 const AN_EXCEPT = /^(hour|honest|honour|honor|heir)/; // silent h
 
 function tokenRules(tk) {
@@ -161,6 +169,10 @@ function tokenRules(tk) {
       // Lowercase i, proper names
       if (t.text === "i") add(t.i, t.i, "mechanics", "capital-i", "« je » = **I**, toujours en majuscule.", "I");
       else if (PROPER.has(lw) && /^[a-z]/.test(t.text) && k > 0) add(t.i, t.i, "mechanics", "capital-proper", "En anglais, les jours, les mois, les langues et les nationalités prennent une **majuscule**.", t.text.charAt(0).toUpperCase() + t.text.slice(1));
+      // A common word with a capital in the middle of a sentence, right after a word: a full stop is missing.
+      if (prev && k > 0 && /^[A-Z][a-z]+$/.test(t.text) && t.text !== "I" && !PROPER.has(lw) && tierOf(lw) > 0 && tierOf(lw) <= 2 && W[k] === W[k - 1] + 1 && /^[a-z]/.test(prev.text) && COMMON_STARTERS.has(lw)) {
+        add(prev.i, prev.i, "mechanics", "missing-period", "Il manque un **point** entre ces deux phrases.", `${prev.text}.`);
+      }
       // Repeated word
       if (prev && prev.lower === lw && !["had", "that", "very", "really", "so", "bye", "ha", "no"].includes(lw) && W[k] === W[k - 1] + 1) add(t.i, t.i, "mechanics", "repeat", "Mot répété deux fois.", "");
       // a / an
@@ -171,7 +183,7 @@ function tokenRules(tk) {
         if (lw === "an" && !vowelSound) add(t.i, t.i, "grammar", "a-an", `Devant un son consonne, on écrit **a** : [[a ${nw}]].`, keepCase(t.text, "a"));
       }
       // Over-regularized past (goed, buyed…)
-      if (OVERREG.has(lw)) add(t.i, t.i, "grammar", "overreg", `Verbe irrégulier : le passé est **${OVERREG.get(lw)}**.`, keepCase(t.text, OVERREG.get(lw)));
+      if (OVERREG.has(lw) && (MANUAL_OVERREG.has(lw) || tierOf(lw) === 0)) add(t.i, t.i, "grammar", "overreg", `Verbe irrégulier : le passé est **${OVERREG.get(lw)}**.`, keepCase(t.text, OVERREG.get(lw)));
       // he/she/it + base verb (missing -s)
       if (SUBJ_3S.has(lw) && next && (!prev || !AUX_BEFORE_BASE.has(prev.lower))) {
         let j = k + 1;
@@ -268,6 +280,8 @@ function spellingRules(tk, suggestFn) {
     if (/^[A-Z]{2,}$/.test(t.text)) continue;
     if (tierOf(t.lower) > 0) continue;
     if (/[À-ÿ]/.test(t.text)) {
+      if (/^[A-ZÀ-Ý]/.test(t.text)) continue; // a name such as Félix or Zoé
+
       out.push({ start: t.start, end: t.end, cat: "spelling", rule: "french-word", msg: "Ce mot a un accent : il est en français ? En anglais, on n'utilise pas d'accents.", fix: [] });
       continue;
     }

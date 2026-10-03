@@ -20,7 +20,7 @@ function expectations(L) {
     soph: L <= 4 ? 0.06 : L <= 8 ? 0.12 : 0.2,
     connectorsPer100: L <= 2 ? 1.5 : L <= 4 ? 2.5 : L <= 6 ? 3 : L <= 8 ? 3.5 : 4,
     tenses: L <= 2 ? 1 : L <= 4 ? 2 : L <= 6 ? 3 : L <= 8 ? 4 : 5,
-    errorZero: L <= 4 ? 14 : L <= 8 ? 11 : 9, // weighted errors per 100 words that bring accuracy to 0
+    errorZero: L <= 4 ? 10 : L <= 8 ? 9 : 8, // weighted errors per 100 words that bring accuracy to 0
   };
 }
 
@@ -87,6 +87,12 @@ export function score(a, prompt = {}) {
     priorities.push("Certaines phrases sont très longues : coupe-les pour rester clair.");
   }
   if (a.sdSentence >= 3 && a.sentences >= 4) comm += 0.4;
+  // Sentences glued together without full stops are hard to read.
+  const runOns = a.issues.filter((x) => x.rule === "missing-period").length;
+  if (runOns) {
+    comm -= Math.min(1.5, runOns * 0.35);
+    priorities.push("Plusieurs phrases sont collées sans point : une idée = une phrase, avec un point à la fin.");
+  }
   comm = clamp(comm, 0, 5);
 
   // ----- Organisation: connectors and paragraphs -----
