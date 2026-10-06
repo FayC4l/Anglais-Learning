@@ -7,18 +7,19 @@ L'appli d'anglais de toute la famille : du premier « hello » jusqu'au niveau C
 - **Profils familiaux** : écran « Qui joue ? », un profil par personne (prénom, avatar, âge enfant / ado / adulte), progression séparée, sauvegarde par fichier ou par code.
 - **Sauvegarde quotidienne** : rappel une fois par jour sur la carte (téléchargement en un clic) et, sur ordinateur avec Chrome ou Edge, fichier de sauvegarde mis à jour automatiquement (Profil → Sauvegarde automatique).
 - **Test de placement adaptatif** (A1 → C2) : les questions montent ou descendent selon tes réponses, puis tu commences à la bonne ligne.
-- **12 lignes, 60 stations, 12 boss** : leçon narrée, atelier de prononciation, mots, 9 mini-jeux, mission orale ou écrite, test de 15 questions.
+- **11 lignes, 55 stations, 11 boss** : leçon narrée, atelier de prononciation, mots, 9 mini-jeux, mission orale ou écrite, test de 15 questions.
+- **Niveau 12 : la Tour de Chikh Fayçal** : un boss à chaque étage (conjugaison de plus en plus dure, grammaire, révisions, et un boss d'expression écrite tous les 5 étages), 10 cœurs pour toute la montée (un boss perdu, abandonné ou fui = un cœur ; plus de cœurs = retour à l'étage 1, avec une petite scène dramatique), et au sommet l'examen blanc complet du C2 Proficiency (200 points pour gagner). La tour ne montre que quelques étages et le boss final… et elle a tendance à grandir.
+- **Difficulté unique « Moyenne +++ »** pour tout le monde : 85 % pour réussir un test, chrono serré.
 - **3 vies par boss** : chaque défaite coûte une vie ; sans vie, toutes les stations du niveau sont « à refaire » et les 3 vies reviennent quand leurs tests sont réussis à nouveau.
 - **Boss imprévisibles** : 3 phases (reconnaissance, production, rage), 60 questions réservées par boss, questions générées à l'infini et mémoire anti-répétition (un nouvel essai reprend au plus 20 % des questions du précédent).
 - **Générateurs de questions** : conjugaison (≈ 250 verbes, tous les temps, passif), pluriels, comparatifs, nombres, heure, formation des mots, conditionnels…
 - **Phrases à trous** : une case par mot attendu, avec le nombre de mots affiché.
 - **Conjugueur** de référence et entraînement par verbe.
 - **Entraînement du jour** : répétition espacée (5 boîtes) avec les mots étudiés, les erreurs du carnet et ≈ 1 800 mots de lexique par niveau.
-- **Atelier d'écriture** : 96 sujets + 8 sujets C2, correcteur intégré (orthographe, ≈ 80 règles sur les fautes typiques des francophones, mots de liaison, temps verbaux, consignes) et **note sur 20** en 4 critères. Option : correction par Claude (clé API à saisir dans la zone gestion).
+- **Atelier d'écriture** : 96 sujets + 8 sujets C2, correcteur intégré (orthographe, ≈ 80 règles sur les fautes typiques des francophones, mots de liaison, temps verbaux, consignes) et **note sur 20** en 4 critères. Option : correction par Claude (clé API à saisir dans le profil).
 - **Prépa C2 Proficiency** : Reading & Use of English (parties 1 à 7), Listening, Writing, Speaking, examens blancs notés sur la Cambridge English Scale. Textes 100 % originaux.
 - **Tableau de bord** : radar des compétences, niveau estimé, certificats imprimables.
 - **Chikh Fayçal**, le prof d'anglais de l'app (barbe, gilet crème, cravate et thé à la menthe), pince-sans-rire et bienveillant : répliques, blague du jour (118 jeux de mots expliqués).
-- **Zone gestion** (code à 4 chiffres) : difficulté par profil, suivi de toute la famille, correcteur IA, sauvegarde familiale.
 
 ## Jouer
 
@@ -26,7 +27,7 @@ Ouvre `index.html` dans Chrome, Edge ou Safari (ou le site GitHub Pages du dép�
 
 ### Correction par IA (optionnelle)
 
-Dans Profil → Zone gestion → « Correcteur IA », colle une clé API Anthropic (console.anthropic.com). La clé reste dans ce navigateur, n'est jamais incluse dans les sauvegardes, et chaque correction est facturée sur le compte de la clé. Modèle par défaut : Claude Opus 5.5.
+Dans Profil → « Correcteur IA (optionnel) », colle une clé API Anthropic (console.anthropic.com). La clé reste dans ce navigateur, n'est jamais incluse dans les sauvegardes, et chaque correction est facturée sur le compte de la clé. Modèle par défaut : Claude Opus 5.5.
 
 ## Développer
 
@@ -36,6 +37,7 @@ npm run validate     # vérifie tout le contenu (niveaux, prononciation, V2)
 npm test             # tests unitaires (conjugueur, générateurs, placement, SRS, correcteur…)
 npm run build        # régénère index.html (minifié ; --dev pour la version lisible)
 npm run smoke        # tests navigateur (Playwright + Chrome/Edge installé)
+node tools/climb-tower.mjs   # la Tour en entier comme un joueur parfait (≈ 10 min, build de test)
 ```
 
 ## Contenu

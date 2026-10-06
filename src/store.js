@@ -1,6 +1,10 @@
 // Progress of the active profile: persistence, unlocking rules, XP, streaks, badges, save codes.
 import { LEVELS } from "./content.js";
 import { readJSON, writeJSON, profileKey } from "./storage.js";
+import { freshTower, recordFloor, TOWER_LEVEL } from "./tower.js";
+
+/** One difficulty for the whole site (the management zone is gone): "moyenne +++". */
+export const FIXED_DIFFICULTY = { label: "Moyenne +++", pass: 0.85, time: 0.9, hearts: 3, replays: 2, desc: "85 % pour réussir, chrono serré, 3 cœurs contre les boss." };
 
 export const DIFFICULTY = {
   normal: { label: "Normal", pass: 0.7, time: 1.4, hearts: 4, replays: 3, desc: "70 % pour réussir, plus de temps, 4 cœurs contre les boss." },
@@ -34,6 +38,7 @@ export function fresh() {
     writing: [], // essays: { id, prompt, text, score, at }
     placement: null, // { band, line, at }
     c2: {}, // part id: { best, attempts }
+    tower: null, // level 12: { floor, lives, best, resets, won }
   };
 }
 
@@ -41,6 +46,7 @@ export function merge(base, saved) {
   const out = { ...base, ...saved };
   for (const k of ["player", "settings", "stats", "streak"]) out[k] = { ...base[k], ...(saved?.[k] || {}) };
   delete out.settings.pin; // moved to the family settings in v2
+  out.unlockAll = false; // "tout débloquer" no longer exists
   out.v = 2;
   return out;
 }
@@ -84,7 +90,7 @@ export function save() {
 }
 export const onChange = (fn) => (listeners.add(fn), () => listeners.delete(fn));
 
-export const diff = () => DIFFICULTY[state.settings.difficulty] || DIFFICULTY.hard;
+export const diff = () => FIXED_DIFFICULTY;
 
 // ---------- Unlock rules ----------
 
@@ -117,11 +123,12 @@ export const bossLocked = (L) => !state.unlockAll && !levelDone(L) && bossLives(
 /** Stations of a level still to be redone after losing the 3 lives. */
 export const redoUnits = (L) => (LEVELS.find((l) => l.id === L)?.units || []).filter((u) => unitState(u.id).redo);
 
-/** The next thing to do: first unlocked, unpassed (or to-redo) unit, or the boss. */
+/** The next thing to do: first unlocked, unpassed (or to-redo) unit, the boss, or the Tower of level 12. */
 export function nextStep() {
   for (const lvl of LEVELS) {
     if (!levelUnlocked(lvl.id)) break;
     if (levelDone(lvl.id)) continue;
+    if (lvl.id === TOWER_LEVEL) return { type: "tower", level: lvl, floor: tower().floor };
     for (let i = 0; i < lvl.units.length; i++) {
       const u = lvl.units[i];
       if ((!unitState(u.id).passed || unitState(u.id).redo) && unitUnlocked(lvl.id, i + 1)) return { type: "unit", level: lvl, unit: u };
@@ -425,6 +432,43 @@ export function resetAll() {
   state.player = { ...state.player, id: keepPlayer.id, name: keepPlayer.name, avatar: keepPlayer.avatar, age: keepPlayer.age };
   state.settings = { ...state.settings, sound: keepSettings.sound, voice: keepSettings.voice, rate: keepSettings.rate, difficulty: keepSettings.difficulty };
   save();
+}
+
+// ---------- The Tower (level 12) ----------
+
+/** The Tower of the active profile (created on first use). */
+export function tower() {
+  if (!state.tower) state.tower = freshTower();
+  return state.tower;
+}
+
+/** A timed boss starts: until its result is saved, leaving (reload, closed tab) counts as a defeat. */
+export function startTowerFloor(n) {
+  tower().pending = n;
+  save();
+  flushSave();
+}
+
+/** The reveal of the current floor has been played. */
+export function towerRevealed() {
+  const t = tower();
+  t.shown = Math.max(t.shown || 0, t.floor);
+  save();
+}
+
+/** Saves the result of a floor boss; a victory at the top validates level 12. */
+export function recordTowerFloor(n, win) {
+  const r = recordFloor(tower(), n, win);
+  if (r.event === "next") addXp(40 + n * 4);
+  if (r.event === "victory") {
+    addXp(1000);
+    state.bosses[TOWER_LEVEL] = { ...(state.bosses[TOWER_LEVEL] || {}), defeated: true, at: new Date().toISOString(), lives: 3 };
+  }
+  if (r.event !== "ignored") state.stats.bosses++;
+  touchStreak();
+  save();
+  flushSave();
+  return r;
 }
 
 // ---------- Placement ----------

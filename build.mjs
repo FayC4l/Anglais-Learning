@@ -48,6 +48,8 @@ const js = await build({
   target: "es2020",
   write: false,
   minify: !process.argv.includes("--dev"),
+  // Test builds (MB_TEST=1) expose the current question to the browser tests; normal builds drop that code.
+  define: { __MB_TEST__: process.env.MB_TEST ? "true" : "false" },
   legalComments: "none",
 });
 const css = ["src/styles.css", "src/styles-v2.css"].filter((p) => existsSync(join(root, p))).map((p) => readFileSync(join(root, p), "utf8")).join("\n");

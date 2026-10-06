@@ -11,6 +11,9 @@ import { score, CRITERIA_FR, CAT_FR } from "../writing/score.js";
 import { dictionaryReady } from "../writing/spell.js";
 import { quip, mentorSays } from "../humor.js";
 import { currentLevel } from "./daily.js";
+import { floorSpec, copiedShare, surprise } from "../tower.js";
+import { recordTowerFloor, tower } from "../store.js";
+import { drama } from "./tower.js";
 
 const RANGE = (L) => (L <= 2 ? [25, 60] : L <= 4 ? [50, 100] : L <= 6 ? [80, 140] : L <= 8 ? [120, 180] : L <= 10 ? [160, 240] : [220, 320]);
 const CEFR_OF = (L) => (L <= 2 ? "A1" : L <= 4 ? "A2" : L <= 6 ? "B1" : L <= 9 ? "B2" : L <= 11 ? "C1" : "C2");
@@ -26,8 +29,8 @@ export function allPrompts() {
 const promptById = (id) => allPrompts().find((p) => p.id === id) || null;
 const freePrompt = (L, type = "essay") => ({ id: `free-${L}`, level: L, cefr: CEFR_OF(L), type, title: "Sujet libre", prompt: "Écris sur le sujet de ton choix, en utilisant ce que tu as appris.", words: RANGE(L), require: [] });
 
-export function writingScreen(view, { promptId, level } = {}) {
-  if (promptId) return editor(view, promptById(promptId) || freePrompt(currentLevel()), state.writingDraft?.[promptId] || "");
+export function writingScreen(view, { promptId, level, tower: tw } = {}) {
+  if (promptId) return editor(view, promptById(promptId) || freePrompt(currentLevel()), state.writingDraft?.[promptId] || "", tw);
   return list(view, Number(level) || currentLevel());
 }
 
@@ -71,7 +74,8 @@ const bestOf = (pid) => Math.max(...state.writing.filter((w) => w.promptId === p
 
 // ---------- Editor ----------
 
-function editor(view, p, initial) {
+/** `tw` = number of the Tower floor when this essay is a writing boss of level 12. */
+function editor(view, p, initial, tw) {
   const area = h("textarea", { class: "field w-area", id: "w-text", rows: 12, spellcheck: "false", autocapitalize: "sentences", placeholder: "Write your text here…", "aria-label": "Ton texte en anglais" });
   area.value = initial;
   const counter = h("span", { class: "w-count" });
@@ -88,13 +92,14 @@ function editor(view, p, initial) {
   correct.addEventListener("click", () => {
     if (countWords(area.value) < 5) return toast("Écris au moins une phrase complète.");
     save();
-    report(view, p, area.value);
+    report(view, p, area.value, tw);
   });
   view.replaceChildren(
     h(
       "div",
       { class: "writing" },
-      h("div", { class: "topbar" }, h("button", { type: "button", class: "icon-btn", "aria-label": "Retour aux sujets", html: icon("back"), onClick: () => (save(), back(p)) }), h("span", { class: "topbar-title" }, p.c2 ? "Prépa C2 · Writing" : "Atelier d'écriture")),
+      h("div", { class: "topbar" }, h("button", { type: "button", class: "icon-btn", "aria-label": "Retour", html: icon("back"), onClick: () => (save(), tw ? go("tower") : back(p)) }), h("span", { class: "topbar-title" }, tw ? `La Tour · étage ${tw}` : p.c2 ? "Prépa C2 · Writing" : "Atelier d'écriture")),
+      tw ? h("div", { class: "tower-banner" }, h("strong", null, `Boss d'écriture de l'étage ${tw}. `), `Il faut au moins ${floorSpec(tw).pass}/20. Raté = un cœur de la tour en moins. Recopier le modèle ne marche pas : le correcteur le détecte.`) : null,
       promptCard(p),
       h("label", { class: "field-label", for: "w-text" }, "Ton texte"),
       area,
@@ -145,9 +150,13 @@ function issueDetail(x, text) {
   );
 }
 
-function report(view, p, text) {
+function report(view, p, text, tw) {
   const a = analyze(text, p);
   const s = score(a, p);
+  // Tower writing boss: the mark (and no copy of the model) decides.
+  const copied = tw && p.model ? copiedShare(text, p.model) > 0.35 : false;
+  const towerPass = tw ? !copied && s.total >= floorSpec(tw).pass : false;
+  const tr = tw ? recordTowerFloor(tw, towerPass) : null;
   const entry = { id: `${Date.now().toString(36)}`, promptId: p.id, title: p.title, type: p.type, level: p.level, text, score: s.total, criteria: s.criteria, band: s.textBand, at: new Date().toISOString(), c2: !!p.c2 };
   const first = !state.writing.some((w) => w.promptId === p.id);
   const prevBest = first ? 0 : bestOf(p.id);
@@ -188,6 +197,15 @@ function report(view, p, text) {
       { class: "writing w-report" },
       h("div", { class: "topbar" }, h("button", { type: "button", class: "icon-btn", "aria-label": "Retour", html: icon("back"), onClick: () => back(p) }), h("span", { class: "topbar-title" }, "Correction")),
       h("p", { class: "eyebrow" }, `${p.title} · niveau visé ${p.cefr}`),
+      tw && tr.event !== "ignored"
+        ? h(
+            "div",
+            { class: `tower-banner ${towerPass ? "ok" : "ko"}` },
+            towerPass
+              ? [h("strong", null, `Étage ${tw} vaincu ! `), `${s.total}/20, il fallait ${floorSpec(tw).pass}/20.`]
+              : [h("strong", null, copied ? "Copie du modèle détectée. " : `Raté : ${s.total}/20, il fallait ${floorSpec(tw).pass}/20. `), tr.event === "collapse" ? "La tour s'est effondrée." : `Il te reste ${tr.lives} cœurs.`],
+          )
+        : null,
       h("div", { class: "w-score" }, ring, h("div", null, bars, h("p", { class: "set-help" }, `Ton texte ressemble à un niveau `, h("strong", null, s.textBand), ` · ${a.words} mots · ${a.issues.length} remarque${a.issues.length > 1 ? "s" : ""}. La langue compte un peu plus que les autres critères, comme aux vrais examens.`))),
       mentorSays(quip(s.total >= 14 ? "writing_good" : "writing_bad")),
       h("h2", { class: "section-title" }, "Ton texte corrigé"),
@@ -201,14 +219,16 @@ function report(view, p, text) {
       s.priorities.length ? h("h2", { class: "section-title" }, "Pour gagner des points") : null,
       s.priorities.length ? h("ul", { class: "w-list todo" }, s.priorities.map((x) => h("li", null, x))) : null,
       a.issues.length ? h("details", { class: "w-all" }, h("summary", null, `Toutes les remarques (${a.issues.length})`), a.issues.map((x) => issueDetail(x, text))) : null,
-      p.model ? h("details", { class: "w-model" }, h("summary", null, "Voir un exemple de très bonne copie"), h("div", { class: "w-model-text" }, p.model.split(/\n+/).map((para) => h("p", null, para))), h("button", { type: "button", class: "btn btn-small btn-ghost", onClick: () => speak(p.model) }, h("span", { html: icon("speaker") }), "Écouter")) : null,
+      p.model && (!tw || towerPass) ? h("details", { class: "w-model" }, h("summary", null, "Voir un exemple de très bonne copie"), h("div", { class: "w-model-text" }, p.model.split(/\n+/).map((para) => h("p", null, para))), h("button", { type: "button", class: "btn btn-small btn-ghost", onClick: () => speak(p.model) }, h("span", { html: icon("speaker") }), "Écouter")) : null,
       aiBox,
       h(
         "div",
         { class: "result-actions" },
-        h("button", { type: "button", class: "btn btn-primary btn-xl", onClick: () => editor(view, p, text) }, "Corriger mon texte et resoumettre"),
+        tw && (towerPass || tr.event === "collapse")
+          ? h("button", { type: "button", class: "btn btn-primary btn-xl", onClick: () => go("tower") }, towerPass ? (surprise(tower()) ? "Affronter le boss final" : `Monter à l'étage ${tw + 1}`) : "Retour à la tour")
+          : h("button", { type: "button", class: "btn btn-primary btn-xl", onClick: () => editor(view, p, text, tw && tr.event === "life" ? tw : undefined) }, tw ? "Corriger mon texte et retenter (un cœur si raté)" : "Corriger mon texte et resoumettre"),
         aiBtn,
-        h("button", { type: "button", class: "btn btn-ghost", onClick: () => back(p) }, "Autre sujet"),
+        h("button", { type: "button", class: "btn btn-ghost", onClick: () => (tw ? go("tower") : back(p)) }, tw ? "Retour à la tour" : "Autre sujet"),
       ),
       h("div", { class: "xp-gain" }, h("span", { html: icon("bolt") }), `+${xpGain} XP`),
       badges.length ? h("div", { class: "new-badges" }, badges.map((b) => h("div", { class: "badge-pop" }, h("span", { html: icon("trophy") }), h("strong", null, b.name), h("small", null, b.desc)))) : null,
@@ -222,6 +242,7 @@ function report(view, p, text) {
     confetti({ count: 80 });
   } else sfx.level();
   window.scrollTo({ top: 0 });
+  if (tw && !towerPass && tr.event !== "ignored") drama(tr, copied ? "Le correcteur a reconnu le texte modèle." : `${s.total}/20 au lieu de ${floorSpec(tw).pass}/20.`);
 }
 
 async function runAi(box, btn, p, text, entry) {

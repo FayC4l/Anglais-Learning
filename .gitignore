@@ -1,3 +1,10 @@
 node_modules/
 dist/
 shots/
+
+# Family photos and the private intro video: never published
+assets/bilal/
+assets/hamza/
+assets/lynda/
+video/
+

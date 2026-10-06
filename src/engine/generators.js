@@ -1,7 +1,7 @@
 // Procedural question generators. Each question has a stable ref "gen:<id>|<params>" and can be rebuilt
 // from it (mistakes notebook, spaced repetition). Pure: no DOM.
 import { makeRng } from "./rng.js";
-import { VERBS, verb, forms, conjugate, contract, pastForms, ppForms, personOf, regularPast } from "./verbs.js";
+import { VERBS, verb, forms, conjugate, contract, pastForms, ppForms, personOf, regularPast, TENSES } from "./verbs.js";
 import { ADJECTIVES, COMPARATIVE, SUPERLATIVE } from "./adjectives.js";
 
 // ---------- Data ----------
@@ -373,8 +373,76 @@ def("wordform", "10.4", "vocabulaire", (rng, L) => {
   return it ? fill(b, { q: it.q, hint: it.stem, answer: it.answer, explain: it.explain }) : null;
 });
 
+// ---------- Any verb, any tense (the Tower of level 12) ----------
+// A time marker that makes each tense natural, and the structure explained in French.
+const TENSE_TAIL = {
+  present_simple: ["every day", "on Saturdays", "every morning"],
+  present_continuous: ["right now", "at the moment", "this week"],
+  past_simple: ["yesterday", "last week", "two days ago"],
+  past_continuous: ["when you called", "at eight o'clock last night", "when the lights went out"],
+  present_perfect: ["this week", "this year", "recently"],
+  present_perfect_continuous: ["for two hours", "since this morning", "all afternoon"],
+  past_perfect: ["before the party started", "by the time we arrived", "before lunch"],
+  past_perfect_continuous: ["for an hour when we arrived", "all morning before the storm", "for weeks before the holidays"],
+  will: ["tomorrow", "next week", "one day"],
+  going_to: ["next weekend", "tonight", "after school"],
+  future_continuous: ["this time tomorrow", "at noon tomorrow", "all day Sunday"],
+  future_perfect: ["by next Friday", "by the end of the month", "before the summer"],
+  would: ["with a bit more free time", "if it were sunny", "if the teacher asked"],
+  would_have: ["with a bit more time", "if it hadn't rained", "if someone had asked"],
+};
+const STRUCT = {
+  present_simple: "sujet + verbe (+ -s avec he / she / it) ; négation et question avec do / does",
+  present_continuous: "am / is / are + verbe en -ing",
+  past_simple: "prétérit du verbe ; négation et question avec did + verbe de base",
+  past_continuous: "was / were + verbe en -ing",
+  present_perfect: "have / has + participe passé",
+  present_perfect_continuous: "have / has been + verbe en -ing",
+  past_perfect: "had + participe passé",
+  past_perfect_continuous: "had been + verbe en -ing",
+  will: "will + verbe de base",
+  going_to: "am / is / are going to + verbe de base",
+  future_continuous: "will be + verbe en -ing",
+  future_perfect: "will have + participe passé",
+  would: "would + verbe de base",
+  would_have: "would have + participe passé",
+};
+
+// One-off actions ("catch the bus") make no sense with a duration ("for two hours"): those tenses take an activity.
+const ONE_OFF = new Set(["send", "take", "call", "buy", "bring", "catch", "order", "make"]);
+const LASTING = FRAMES.map((f, i) => (ONE_OFF.has(f[0]) ? -1 : i)).filter((i) => i >= 0);
+const DURATION = new Set(["present_perfect_continuous", "past_perfect_continuous", "future_continuous"]);
+
+// params: [tense index, frame, subject, mode (0 affirmative, 1 negative, 2 question), marker]
+def("conj", "12.1", "conjugaison", (rng) => [rnd(rng, TENSES.length), rnd(rng, FRAMES.length), rnd(rng, SUBJECTS.length), rnd(rng, 3), rnd(rng, 3)], ([ti, fi, si, mode, mi], rng, b) => {
+  const t = TENSES[ti];
+  if (!t) return null;
+  const [v, o] = FRAMES[DURATION.has(t.id) && ONE_OFF.has(FRAMES[fi]?.[0]) ? LASTING[fi % LASTING.length] : fi];
+  const s = SUBJECTS[si];
+  const tail = TENSE_TAIL[t.id][mi % 3];
+  const explain = `${cap(t.fr)} : ${STRUCT[t.id]}.`;
+  if (mode === 2) {
+    const ans = cap(conjugate(v, t.id, s, { question: true }));
+    return fill(b, { q: `___ ${o} ${tail}?`, hint: `${s.text} / ${v} — ${t.fr}, question`, answer: [ans], explain });
+  }
+  const full = conjugate(v, t.id, s, { neg: mode === 1 });
+  const ans = /^am not\b/.test(full) ? full : contract(full);
+  return fill(b, { q: `${subj(si, true)} ___ ${o} ${tail}.`, hint: `${mode === 1 ? "not / " : ""}${v} — ${t.fr}`, answer: [ans], explain });
+});
+
 export const GENERATORS = G;
 const BY_ID = new Map(G.map((g) => [g.id, g]));
+
+/**
+ * A conjugation question in one of the given tenses (ids of TENSES); `negQ` is the share of negative and
+ * interrogative forms. Rebuildable from its ref like every generated question.
+ */
+export function conjQuestion(rng, { tenses = null, negQ = 0.3 } = {}) {
+  const allowed = TENSES.map((t, i) => (!tenses || tenses.includes(t.id) ? i : -1)).filter((i) => i >= 0);
+  if (!allowed.length) return null;
+  const mode = rng() < negQ ? 1 + rng.int(2) : 0;
+  return assemble(BY_ID.get("conj"), [rng.pick(allowed), rng.int(FRAMES.length), rng.int(SUBJECTS.length), mode, rng.int(3)]);
+}
 
 const unitKey = (uid) => {
   const [L, U] = String(uid).split(".").map(Number);

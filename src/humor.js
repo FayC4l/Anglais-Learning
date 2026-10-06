@@ -23,6 +23,7 @@ const MOODS = {
   writing_bad: ["skeptical", "laptop"],
   warning: ["serious", "determined"],
   cool: ["hoodie", "cool"],
+  troll: ["laughing", "cool", "gamer"],
 };
 
 /** A line of Chikh Fayçal for a situation, suited to the player's age, avoiding the last ones shown. */

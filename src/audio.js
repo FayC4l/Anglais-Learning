@@ -233,6 +233,30 @@ export const sfx = {
     tone(2093, 0.7, { type: "triangle", vol: 0.12, at: 0.45 });
   },
   type: () => on() && tone(1800 + Math.random() * 400, 0.015, { type: "square", vol: 0.015 }),
+  /** "Dun dun duuun": a heart is lost in the Tower. */
+  drama: () => {
+    if (!on()) return;
+    [[196, 0], [185, 0.45], [147, 0.9]].forEach(([f, at], i) => {
+      tone(f, i === 2 ? 2.2 : 0.4, { type: "sawtooth", vol: 0.09, at, attack: 0.02 });
+      tone(f / 2, i === 2 ? 2.4 : 0.45, { type: "triangle", vol: 0.18, at, attack: 0.02 });
+      noise(0.35, { vol: 0.12, at, freq: 180, type: "lowpass" });
+    });
+    tone(73, 3, { type: "sine", vol: 0.22, at: 0.9, slide: 55 });
+  },
+  /** A floor appears in the Tower: rumble, a rising "ta-daaa", then the mocking "wah wah". */
+  surprise: () => {
+    if (!on()) return;
+    noise(0.7, { vol: 0.2, freq: 140, type: "lowpass" });
+    [392, 523, 659].forEach((f, i) => tone(f, i === 2 ? 0.45 : 0.14, { type: "square", vol: 0.07, at: 0.5 + i * 0.12 }));
+    [[311, 1.25], [294, 1.6], [277, 1.95]].forEach(([f, at], i) => tone(f, i === 2 ? 0.9 : 0.32, { type: "sawtooth", vol: 0.07, at, slide: i === 2 ? 220 : f * 0.97, attack: 0.03 }));
+  },
+  /** The Tower collapses: long rumble and falling tones. */
+  collapse: () => {
+    if (!on()) return;
+    for (let i = 0; i < 8; i++) noise(0.6, { vol: 0.25, at: i * 0.35, freq: 120 + i * 20, type: "lowpass" });
+    [392, 349, 311, 262, 233, 196, 147, 98].forEach((f, i) => tone(f, 0.5, { type: "sawtooth", vol: 0.07, at: i * 0.32, slide: f * 0.8 }));
+    tone(55, 3.5, { type: "sine", vol: 0.28, at: 0.2, slide: 35 });
+  },
 };
 
 /** Must be called from a user gesture once, so later sounds may play. */

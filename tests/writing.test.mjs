@@ -159,6 +159,13 @@ test("tense detection", () => {
   assert.ok(t.passive >= 1);
 });
 
+test("perfect tenses with any verb: been, forms equal to the base, regular verbs outside the course list", () => {
+  const pp = (s) => detectTenses(tokenize(s).tokens).past_perfect;
+  for (const s of ["I had set my alarm.", "My phone had died.", "He had been a teacher.", "I wish I had thanked him.", "We had been waiting for hours.", "If I hadn't missed the bus, I would have arrived."]) assert.equal(pp(s), 1, s);
+  assert.equal(detectTenses(tokenize("I have been to Paris twice.").tokens).present_perfect, 1);
+  assert.equal(pp("I had a dog and I had lunch at noon."), 0);
+});
+
 test("model answers score well, and mistakes lower the mark", () => {
   const prompts = JSON.parse(readFileSync("content/writing.json", "utf8")).prompts;
   const low = [];

@@ -2,10 +2,11 @@
 import { h, esc, icon, shuffle, sample, pick, plain, $ } from "./ui.js";
 import { matches, tiles, tileKey, diffWords, clean } from "./answer.js";
 import { gapWords, joinBoxes } from "./fill.js";
-import { regen, generate, generatorsOf, generatorsUpTo } from "./engine/generators.js";
+import { regen, generate, generatorsOf, generatorsUpTo, conjQuestion, GENERATORS } from "./engine/generators.js";
+import { floorSpec } from "./tower.js";
 import { pickFresh, recordSeen } from "./engine/pool.js";
 import { rng } from "./engine/rng.js";
-import { resolveRef, unitById, levelById, levelVocab, vocabRefs, sentenceRefs, grammarRefs, readingRefs, bossRefs } from "./content.js";
+import { resolveRef, unitById, levelById, levelVocab, vocabRefs, sentenceRefs, grammarRefs, readingRefs, bossRefs, EXTRA } from "./content.js";
 import { speak, stopSpeaking, ttsReady, sfx } from "./audio.js";
 import { diff, state, save } from "./store.js";
 
@@ -271,6 +272,48 @@ export function bossExam(L) {
   // Phase order, shuffled inside each phase.
   return all.map((q) => ({ ...q, phase: PHASE[q.kind] || 2 })).sort((a, b) => a.phase - b.phase || Math.random() - 0.5);
 }
+/**
+ * The boss of a Tower floor (level 12): conjugation in the floor's tenses, review of earlier tenses, the block's
+ * generators, grammar items of the matching stations and boss banks, and C2 key word transformations at the top.
+ */
+export function towerExam(n) {
+  const spec = floorSpec(n);
+  if (spec.kind !== "conj") return [];
+  const history = state.seen.tower || {};
+  const used = new Set();
+  const out = [];
+  const push = (q) => q && out.length < spec.count && out.push(q);
+  const own = spec.tenses.length ? spec.tenses : spec.review;
+  const nConj = Math.round(spec.count * (spec.tenses.length ? 0.45 : 0.15));
+  const nRev = spec.review.length && spec.tenses.length ? Math.round(spec.count * 0.15) : 0;
+  const nGen = spec.gens.length ? Math.round(spec.count * 0.2) : 0;
+  const nPart4 = spec.part4 ? Math.round(spec.count * 0.15) : 0;
+  for (let i = 0; i < nConj; i++) push(makeQuestion("fill", conjQuestion(rng, { tenses: own, negQ: spec.negQ })?.ref));
+  for (let i = 0; i < nRev; i++) push(makeQuestion("fill", conjQuestion(rng, { tenses: spec.review, negQ: spec.negQ })?.ref));
+  const gens = GENERATORS.filter((g) => spec.gens.includes(g.id));
+  generated(gens, nGen, 12).forEach(push);
+  shuffle(EXTRA.c2uoe?.part4 || [])
+    .slice(0, nPart4)
+    .forEach((t) => push({ kind: "fill", ref: null, skill: "grammaire", unitId: "12.0", level: 12, q: t.q, lead: t.lead, key: t.key, accept: t.answer, expected: t.answer[0], explain: t.explain, time: 150 }));
+  // Grammar of the matching stations and of their boss banks, freshest first.
+  const pool = spec.units.flatMap((uid) => {
+    const unit = unitById(uid);
+    const L = Number(uid.split(".")[0]);
+    return unit ? [...grammarRefs(unit), ...bossRefs(L).filter((r) => resolveRef(r)?.item.unit === uid)] : [];
+  });
+  while (out.length < spec.count) {
+    const ref = pickFresh(pool, history, used);
+    if (!ref) break;
+    used.add(ref);
+    push(makeQuestion(resolveRef(ref).item.type, ref));
+  }
+  while (out.length < spec.count) push(makeQuestion("fill", conjQuestion(rng, { tenses: [...own, ...spec.review], negQ: spec.negQ })?.ref));
+  out.forEach((q) => (q.time = Math.max(12, Math.round(q.time * spec.time))));
+  state.seen.tower = recordSeen(history, out.map((q) => q.ref));
+  save();
+  return out.map((q) => ({ ...q, phase: PHASE[q.kind] || 2 })).sort((a, b) => a.phase - b.phase || Math.random() - 0.5);
+}
+
 /** A question for a reference, choosing a kind suited to reviewing it. */
 export function reviewQuestion(ref) {
   const kinds = kindsForRef(ref).map(silentKind);

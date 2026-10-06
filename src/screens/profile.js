@@ -1,7 +1,7 @@
 // Profile: stats, badges, settings, backups, and the PIN-protected family management zone.
 import { h, icon, toast, dialog, copyText, esc } from "../ui.js";
 import { LEVELS } from "../content.js";
-import { state, save, rank, wordsLearned, mistakeCount, streakAlive, BADGES, DIFFICULTY, exportCode, importCode, resetAll, highestLevelDone } from "../store.js";
+import { state, save, rank, wordsLearned, mistakeCount, streakAlive, BADGES, exportCode, importCode, resetAll, highestLevelDone } from "../store.js";
 import { family, saveFamily, listProfiles, profileState, updateProfile, deleteProfile, exportFamily, exportProfile, importBackup, AGES, AVATARS } from "../profiles.js";
 import { go } from "../router.js";
 import { englishVoices, ttsReady, coachReady, speak, speakParts, sfx } from "../audio.js";
@@ -102,8 +102,8 @@ export function profileScreen(view) {
           }
         } }, "Restaurer depuis un code")),
       ),
-      h("h2", { class: "section-title" }, "Zone gestion"),
-      h("div", { class: "settings" }, h("p", { class: "set-help" }, "Réservée aux parents (ou au grand frère) : difficulté de chaque profil, suivi de toute la famille, correcteur IA, sauvegarde familiale. Protégée par un code à 4 chiffres."), h("button", { type: "button", class: "btn btn-small", onClick: () => openZone(view) }, h("span", { html: icon("shield") }), "Ouvrir la zone gestion")),
+      h("h2", { class: "section-title" }, "Correcteur IA (optionnel)"),
+      aiBlock(),
       h("h2", { class: "section-title" }, "Conseils pour progresser vite"),
       h(
         "ul",
@@ -175,160 +175,37 @@ async function restoreFile() {
   }
 }
 
-async function openZone(view) {
-  const pin = h("input", { class: "field pin", type: "password", inputmode: "numeric", maxlength: 4, id: "pin", autocomplete: "off", "aria-label": "Code à 4 chiffres" });
-  const hasPin = !!family.pin;
-  const v = await dialog({
-    title: hasPin ? "Code de gestion" : "Choisis un code à 4 chiffres",
-    body: h("div", null, h("p", null, hasPin ? "Entre le code pour accéder à la zone gestion." : "Ce code protège les réglages de toute la famille. Garde-le pour toi !"), pin),
-    actions: [
-      { label: "Annuler", value: null },
-      { label: "Valider", value: () => pin.value, primary: true },
-    ],
-  });
-  if (v == null) return;
-  if (!/^\d{4}$/.test(v)) return toast("Le code doit avoir 4 chiffres.");
-  if (!hasPin) {
-    family.pin = v;
-    saveFamily();
-    toast("Code enregistré.", "ok");
-  } else if (v !== family.pin) {
-    sfx.wrong();
-    return toast("Mauvais code.", "ko");
-  }
-  zone(view);
-}
-
-function zone(view) {
-  const diffSel = h("div", { class: "diff-options" }, Object.entries(DIFFICULTY).map(([k, d]) => h("label", { class: `diff-opt ${state.settings.difficulty === k ? "on" : ""}`, for: `diff-${k}` }, h("input", { type: "radio", name: "diff", id: `diff-${k}`, value: k, checked: state.settings.difficulty === k }), h("strong", null, d.label), h("small", null, d.desc))));
-  diffSel.addEventListener("change", (e) => {
-    state.settings.difficulty = e.target.value;
-    save();
-    diffSel.querySelectorAll(".diff-opt").forEach((o) => o.classList.toggle("on", o.querySelector("input").checked));
-    toast(`Mode ${DIFFICULTY[e.target.value].label} activé pour ${state.player.name}.`, "ok");
-  });
-  const unlock = h("input", { type: "checkbox", id: "unlock-all", checked: state.unlockAll });
-  unlock.addEventListener("change", () => {
-    state.unlockAll = unlock.checked;
-    save();
-    toast(unlock.checked ? "Tout est débloqué pour ce profil." : "Progression normale rétablie.");
-  });
-
-  // Family overview.
-  const familyRows = listProfiles().map((p) => {
-    const st = profileState(p.id);
-    const top = Object.entries(st?.bosses || {}).filter(([, b]) => b.defeated).reduce((m, [L]) => Math.max(m, Number(L)), 0);
-    const answers = st?.stats?.answers || 0;
-    const lastWriting = (st?.writing || []).slice(-1)[0];
-    return h(
-      "tr",
-      null,
-      h("th", { scope: "row" }, avatarEl(p.avatar), " ", p.name),
-      h("td", null, AGES[p.age]?.label || ""),
-      h("td", null, st?.placement ? st.placement.band : "—"),
-      h("td", null, `${top}/12`),
-      h("td", null, (st?.xp || 0).toLocaleString("fr-CA")),
-      h("td", null, answers ? `${Math.round(((st.stats.correct || 0) / answers) * 100)} %` : "—"),
-      h("td", null, `${Math.round((st?.stats?.ms || 0) / 60000)} min`),
-      h("td", null, lastWriting ? `${lastWriting.score}/20` : "—"),
-      h(
-        "td",
-        null,
-        p.id === state.player.id
-          ? h("em", null, "actif")
-          : h("button", { type: "button", class: "btn btn-small btn-danger", onClick: async () => {
-              const ok = await dialog({ title: `Supprimer ${p.name} ?`, body: `<p>Toute la progression de <strong>${esc(p.name)}</strong> sera effacée de cet appareil. Pense à télécharger une sauvegarde avant.</p>`, actions: [{ label: "Annuler", value: false }, { label: "Supprimer", value: true, danger: true }] });
-              if (!ok) return;
-              deleteProfile(p.id);
-              toast(`${p.name} supprimé.`);
-              zone(view);
-            } }, "Supprimer"),
-      ),
-    );
-  });
-
-  // Per-unit tracking of the active profile.
-  const rows = LEVELS.map((l) =>
-    h(
-      "tr",
-      null,
-      h("th", { scope: "row" }, h("span", { class: "bullet sm", style: { "--line": `var(--l${l.id})`, "--line-ink": `var(--l${l.id}-ink)` } }, l.id)),
-      ...l.units.map((u) => {
-        const st = state.units[u.id] || {};
-        return h("td", { class: st.passed ? "ok" : "" }, st.attempts ? `${Math.round((st.best || 0) * 100)} % · ${st.attempts}×` : st.placed ? "placé" : st.passed ? "validée" : "—");
-      }),
-      ...Array.from({ length: Math.max(0, 5 - l.units.length) }, () => h("td", null, "")),
-      h("td", { class: state.bosses[l.id]?.defeated ? "ok" : "" }, state.bosses[l.id]?.attempts ? `${state.bosses[l.id].defeated ? "battu" : "pas encore"} · ${state.bosses[l.id].attempts}×` : state.bosses[l.id]?.placed ? "placé" : "—"),
-    ),
-  );
-
-  const newPin = h("input", { class: "field pin", type: "password", inputmode: "numeric", maxlength: 4, id: "new-pin", placeholder: "Nouveau code", autocomplete: "off", "aria-label": "Nouveau code" });
+/** Optional AI correction: the Anthropic API key stays on this device and is never in the backups. */
+function aiBlock() {
   const aiKey = h("input", { class: "field", type: "password", id: "ai-key", placeholder: "sk-ant-…", autocomplete: "off", value: family.aiKey || "", "aria-label": "Clé API Anthropic" });
   const aiModel = h(
     "select",
     { class: "field", id: "ai-model", "aria-label": "Modèle IA" },
     [["claude-opus-5-5", "Claude Opus 5.5 (recommandé, le plus fin)"], ["claude-sonnet-5-5", "Claude Sonnet 5.5 (plus économique)"], ["claude-haiku-4-5", "Claude Haiku 4.5 (le plus rapide et le moins cher)"]].map(([v, l]) => h("option", { value: v, selected: v === family.aiModel }, l)),
   );
-  const resetConfirm = h("input", { class: "field", type: "text", id: "reset-confirm", placeholder: "Tape EFFACER", autocomplete: "off", "aria-label": "Confirmation" });
-  view.replaceChildren(
+  return h(
+    "div",
+    { class: "settings" },
+    h("p", { class: "set-help" }, "Le correcteur intégré fonctionne sans internet. Avec une clé API Anthropic, l'atelier d'écriture propose aussi une correction par Claude. La clé reste sur cet appareil et n'est jamais incluse dans les sauvegardes ; chaque correction est facturée sur le compte de la clé."),
+    h("label", { class: "field-label", for: "ai-key" }, "Clé API"),
+    aiKey,
+    h("label", { class: "field-label", for: "ai-model" }, "Modèle"),
+    aiModel,
     h(
       "div",
-      { class: "profile zone" },
-      h("div", { class: "topbar" }, h("button", { type: "button", class: "icon-btn", "aria-label": "Retour au profil", html: icon("back"), onClick: () => go("profile") }), h("span", { class: "topbar-title" }, "Zone gestion")),
-      h("h1", { class: "page-title" }, "Zone gestion"),
-      h("h2", { class: "section-title" }, "La famille"),
-      h("div", { class: "l-table-wrap" }, h("table", { class: "l-table track family" }, h("thead", null, h("tr", null, ["Profil", "Âge", "Placement", "Lignes", "XP", "Réussite", "Temps", "Rédaction", ""].map((t) => h("th", null, t)))), h("tbody", null, familyRows))),
-      h("div", { class: "row" }, h("button", { type: "button", class: "btn btn-small", onClick: () => (downloadFamilyBackup(), toast("Sauvegarde téléchargée.", "ok")) }, h("span", { html: icon("copy") }), "Télécharger la sauvegarde de toute la famille"), h("button", { type: "button", class: "btn btn-small btn-ghost", onClick: () => restoreFile() }, "Restaurer un fichier")),
-      h("h2", { class: "section-title" }, `Difficulté pour ${state.player.name}`),
-      diffSel,
-      h("p", { class: "set-help" }, "Conseil : Difficile par défaut. Si un test est raté 3 fois de suite malgré l'entraînement, passe en Normal un moment : le but est de progresser, pas d'abandonner. Chaque profil a sa propre difficulté."),
-      h("h2", { class: "section-title" }, `Suivi détaillé de ${state.player.name}`),
-      h("p", { class: "set-help" }, "Meilleur score et nombre d'essais par station (colonnes 1 à 5) et contre le boss."),
-      h("div", { class: "l-table-wrap" }, h("table", { class: "l-table track" }, h("thead", null, h("tr", null, h("th", null, "Ligne"), ["1", "2", "3", "4", "5"].map((t) => h("th", null, t)), h("th", null, "Boss"))), h("tbody", null, rows))),
-      h("h2", { class: "section-title" }, "Correcteur IA (optionnel)"),
-      h(
-        "div",
-        { class: "settings" },
-        h("p", { class: "set-help" }, "Le correcteur intégré fonctionne sans internet. Avec une clé API Anthropic, l'atelier d'écriture propose aussi une correction par Claude (sens, style, version corrigée). La clé reste sur cet appareil et n'est jamais incluse dans les sauvegardes. Chaque correction est facturée sur le compte Anthropic de la clé."),
-        h("label", { class: "field-label", for: "ai-key" }, "Clé API"),
-        aiKey,
-        h("label", { class: "field-label", for: "ai-model" }, "Modèle"),
-        aiModel,
-        h(
-          "div",
-          { class: "row" },
-          h("button", { type: "button", class: "btn btn-small", onClick: () => {
-            family.aiKey = aiKey.value.trim();
-            family.aiModel = aiModel.value;
-            saveFamily();
-            toast(family.aiKey ? "Correcteur IA activé." : "Correcteur IA désactivé.", "ok");
-          } }, "Enregistrer"),
-          h("button", { type: "button", class: "btn btn-small btn-ghost", onClick: () => {
-            family.aiKey = "";
-            aiKey.value = "";
-            saveFamily();
-            toast("Clé effacée.");
-          } }, "Effacer la clé"),
-        ),
-      ),
-      h("h2", { class: "section-title" }, "Explorer le contenu"),
-      h("label", { class: "set-row", for: "unlock-all" }, h("span", null, h("strong", null, "Tout débloquer pour ce profil"), h("small", null, "Pour vérifier le contenu des 12 niveaux. Pense à le désactiver ensuite.")), unlock),
-      h("h2", { class: "section-title" }, "Code de gestion"),
-      h("div", { class: "row" }, newPin, h("button", { type: "button", class: "btn btn-small", onClick: () => {
-        if (!/^\d{4}$/.test(newPin.value)) return toast("4 chiffres, s'il te plaît.");
-        family.pin = newPin.value;
+      { class: "row" },
+      h("button", { type: "button", class: "btn btn-small", onClick: () => {
+        family.aiKey = aiKey.value.trim();
+        family.aiModel = aiModel.value;
         saveFamily();
-        newPin.value = "";
-        toast("Code changé.", "ok");
-      } }, "Changer le code")),
-      h("h2", { class: "section-title" }, `Recommencer à zéro (${state.player.name})`),
-      h("p", { class: "set-help" }, "Efface la progression de ce profil (XP, stations, boss, carnet, rédactions). Impossible à annuler, sauf avec une sauvegarde."),
-      h("div", { class: "row" }, resetConfirm, h("button", { type: "button", class: "btn btn-small btn-danger", onClick: () => {
-        if (resetConfirm.value.trim().toUpperCase() !== "EFFACER") return toast("Tape EFFACER pour confirmer.");
-        resetAll();
-        toast("Progression effacée.");
-        go("welcome");
-      } }, "Effacer la progression")),
+        toast(family.aiKey ? "Correcteur IA activé." : "Correcteur IA désactivé.", "ok");
+      } }, "Enregistrer"),
+      h("button", { type: "button", class: "btn btn-small btn-ghost", onClick: () => {
+        family.aiKey = "";
+        aiKey.value = "";
+        saveFamily();
+        toast("Clé effacée.");
+      } }, "Effacer la clé"),
     ),
   );
 }

@@ -14,6 +14,9 @@ export function encodeTier(words) {
     })
     .join(",");
 }
+// Real words missing from the SCOWL lists used here (found while testing the corrector on original essays).
+const MODERN = "storytelling storyteller storytellers storyline storylines smartphone smartphones online offline website websites podcast podcasts livestream livestreams playlist playlists selfie selfies emoji emojis hashtag hashtags gameplay multiplayer esports streamer streamers influencer influencers cyberbullying screenshot screenshots wifi laptop laptops app apps blog blogs blogger vlog vlogger videogame videogames skateboarding snowboarding homeschooling teammate teammates lifestyle lifestyles workout workouts".split(" ");
+
 export function buildDictionary(root, levels = []) {
   const dir = join(root, "node_modules", "wordlist-english");
   if (!existsSync(dir)) return "";
@@ -29,8 +32,8 @@ export function buildDictionary(root, levels = []) {
     set.forEach((x) => seen.add(x));
     return set;
   });
-  // Every word of the course content is known too (tier 2).
-  const contentWords = JSON.stringify(levels).match(/\b[A-Za-z]{2,}\b/g) || [];
+  // Every word of the course content is known too (tier 2), with modern words the lists lack.
+  const contentWords = [...(JSON.stringify(levels).match(/\b[A-Za-z]{2,}\b/g) || []), ...MODERN];
   for (const w of contentWords) {
     const x = w.toLowerCase();
     if (!seen.has(x)) {

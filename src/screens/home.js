@@ -8,6 +8,8 @@ import { sfx } from "../audio.js";
 import { shake } from "../fx.js";
 import { avatarEl } from "./who.js";
 import { backupCard } from "./backup.js";
+import { tower } from "../store.js";
+import { FLOORS, TOWER_LIVES, TOWER_LEVEL, VISIBLE, visibleTop } from "../tower.js";
 import { dailyCount, currentLevel } from "./daily.js";
 import { jokeOfTheDay, mentorSays, quip } from "../humor.js";
 import { EXTRA } from "../content.js";
@@ -48,6 +50,16 @@ export function map(view) {
   let hero;
   if (!LEVELS.length) {
     hero = h("div", { class: "next-card" }, h("p", null, "Le contenu des niveaux n'est pas chargé."));
+  } else if (next?.type === "tower") {
+    const t = tower();
+    hero = h(
+      "button",
+      { type: "button", class: "next-card tower-hero", style: { "--line": "var(--l12)", "--line-ink": "var(--l12-ink)" }, onClick: () => go("tower") },
+      h("span", { class: "next-eyebrow" }, `La Tour · ${t.lives} cœur${t.lives > 1 ? "s" : ""} sur ${TOWER_LIVES}`),
+      h("span", { class: "next-title" }, t.floor >= FLOORS ? "Le boss final" : `Étage ${t.floor} / ${visibleTop(t)}`),
+      h("span", { class: "next-sub" }, "Au sommet : le C2… et un jeu PlayStation + 25 $"),
+      h("span", { class: "next-go" }, "Grimper", h("span", { html: icon("play") })),
+    );
   } else if (next) {
     const L = next.level.id;
     const isBoss = next.type === "boss";
@@ -101,6 +113,7 @@ function lineEl(L, lvl, next) {
   if (!lvl) {
     return h("section", { class: "line locked", style }, h("header", { class: "line-head" }, h("span", { class: "bullet" }, L), h("div", { class: "line-name" }, h("h3", null, `Niveau ${L}`), h("p", null, "En construction"))));
   }
+  if (L === TOWER_LEVEL) return towerLineEl(L, lvl);
   const passed = lvl.units.filter((u) => unitState(u.id).passed && !unitState(u.id).redo).length;
   const head = h(
     "header",
@@ -182,6 +195,36 @@ function lineEl(L, lvl, next) {
     section.append(h("button", { type: "button", class: "skip-link", onClick: () => skipChallenge(L, lvl) }, "Tu connais déjà ce niveau ? Défie le boss directement"));
   }
   if (!unlocked) section.append(h("p", { class: "line-lock" }, `Bats le boss de la ligne ${L - 1} pour ouvrir cette ligne.`));
+  return section;
+}
+
+/** Line 12 is the Tower: one card instead of stations. */
+function towerLineEl(L, lvl) {
+  const unlocked = levelUnlocked(L);
+  const t = tower();
+  const style = { "--line": `var(--l${L})`, "--line-ink": `var(--l${L}-ink)` };
+  const head = h(
+    "header",
+    { class: "line-head" },
+    h("span", { class: "bullet" }, L),
+    h("div", { class: "line-name" }, h("h3", null, "La Tour de Chikh Fayçal"), h("p", null, `${visibleTop(t)} étages + le boss final · ${lvl.cefr}`)),
+    h("span", { class: "line-progress" }, t.won ? h("span", { class: "done-badge", html: icon("check") }) : `${t.floor - 1}/${visibleTop(t)}`),
+  );
+  const card = h(
+    "button",
+    { type: "button", class: "tower-card", onClick: () => {
+      if (!unlocked) {
+        sfx.wrong();
+        return toast(`Bats le boss de la ligne ${L - 1} pour ouvrir la tour.`);
+      }
+      go("tower");
+    } },
+    h("span", { class: "tower-card-floors", "aria-hidden": "true" }, Array.from({ length: 10 }, (_, i) => h("span", { class: i < Math.floor(((t.floor - 1) / visibleTop(t)) * 10) ? "on" : "" }))),
+    h("span", { class: "tower-card-text" }, h("strong", null, unlocked ? (t.won ? "Tour conquise : C2 !" : t.floor >= FLOORS ? "Le boss final" : `Étage ${t.floor} / ${visibleTop(t)}`) : "Fermée"), h("small", null, unlocked ? `${t.lives} cœurs · conjugaison, grammaire, écriture, puis le C2` : `${VISIBLE} étages, un boss de conjugaison, de grammaire ou d'écriture à chaque étage, puis le C2.`)),
+    unlocked && !t.won ? h("span", { class: "boss-lives", html: Array.from({ length: TOWER_LIVES }, (_, i) => `<span class="life ${i < t.lives ? "on" : "lost"}">${icon("heart")}</span>`).join("") }) : null,
+  );
+  const section = h("section", { class: `line tower-line ${unlocked ? "" : "locked"} ${t.won ? "complete" : ""}`, style, id: `line-${L}` }, head, card);
+  if (!unlocked) section.append(h("p", { class: "line-lock" }, `Bats le boss de la ligne ${L - 1} pour ouvrir la tour.`));
   return section;
 }
 

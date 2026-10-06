@@ -48,7 +48,7 @@ export function runQuiz(root, questions, opts = {}) {
     cancelAnimationFrame(timerRaf);
     const v = await dialog({
       title: "Abandonner ?",
-      body: "<p>Si tu quittes maintenant, ce test ne compte pas. Les erreurs déjà faites restent dans ton carnet.</p>",
+      body: opts.quitBody || "<p>Si tu quittes maintenant, ce test ne compte pas. Les erreurs déjà faites restent dans ton carnet.</p>",
       actions: [
         { label: "Continuer", value: false, primary: true },
         { label: "Quitter", value: true, danger: true },
@@ -188,6 +188,7 @@ export function runQuiz(root, questions, opts = {}) {
       return;
     }
     const q = questions[index];
+    if (__MB_TEST__) window.__mbQ = q; // test builds only (tools/climb-tower.mjs)
     counter.textContent = `${index + 1} / ${questions.length}`;
     [...segs.children].forEach((s, i) => s.classList.toggle("now", i === index));
     mount.classList.remove("enter");

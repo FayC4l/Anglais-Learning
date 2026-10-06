@@ -1,6 +1,7 @@
 // Text analysis: tenses, connectors, lexical range, requirement checks, then the issues. Pure.
 import { tokenize } from "./tokenize.js";
 import { checkRules, S_FORM, PAST, PP, ING, BASE } from "./rules.js";
+import { VERBS } from "../engine/verbs.js";
 import { tierOf, suggest } from "./spell.js";
 
 export const CONNECTORS = [
@@ -41,6 +42,11 @@ function expand(tokens) {
 }
 
 const isPP = (w) => PP.has(w) || (/ed$/.test(w) && (PAST.has(w) || BASE.has(w.replace(/d$/, "")) || BASE.has(w.replace(/ed$/, "")) || BASE.has(w.replace(/ied$/, "y"))));
+// After have / had, a participle may also be "been", a form equal to the base (set, put, read, come…), or any
+// real -ed word of the dictionary (died, thanked…): the verb list of the course does not hold every verb.
+const SAME_PP = new Set(VERBS.filter((v) => v.pp === v.base).map((v) => v.base));
+const NOT_PP = new Set(["need", "seed", "feed", "weed", "deed", "shed", "sled", "speed", "greed", "breed", "naked", "sacred", "wicked", "hundred", "kindred"]);
+const isPerfectPart = (w) => isPP(w) || w === "been" || SAME_PP.has(w) || (/ed$/.test(w) && w.length > 3 && !NOT_PP.has(w) && tierOf(w) > 0);
 const isIng = (w) => ING.has(w) || (/ing$/.test(w) && w.length > 5 && tierOf(w) > 0 && !["thing", "nothing", "something", "anything", "everything", "morning", "evening", "during", "ceiling", "building", "wedding", "pudding", "king", "ring", "spring", "string", "wing", "sibling"].includes(w));
 
 /** Counts verb phrases per tense (approximate, good enough to check a requirement). */
@@ -59,11 +65,11 @@ export function detectTenses(tokens) {
       else if (BE_PAST.has(w)) c.past_simple++;
       continue;
     }
-    if (HAVE_PRES.has(w) && isPP(n) && n !== "to") {
+    if (HAVE_PRES.has(w) && isPerfectPart(n) && n !== "to") {
       c.present_perfect++;
       continue;
     }
-    if ((w === "had" || w === "hadn't" || w === "'d") && isPP(n)) {
+    if ((w === "had" || w === "hadn't" || w === "'d") && isPerfectPart(n)) {
       c.past_perfect++;
       continue;
     }

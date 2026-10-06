@@ -112,7 +112,7 @@ function record(id, pct) {
 
 // ---------- One exercise of a part ----------
 
-function practice(view, partId, { set, onDone } = {}) {
+function practice(view, partId, { set, onDone, onQuit } = {}) {
   const pools = { part1: U().part1, part2: U().part2, part3: U().part3, reading5: P().reading5, reading6: P().reading6, reading7: P().reading7, listening: P().listening, speaking: P().speaking };
   const done = state.c2?.[`seen-${partId}`] || [];
   const pick = (arr) => set || arr.find((x) => !done.includes(x.id)) || shuffle(arr)[0];
@@ -123,15 +123,18 @@ function practice(view, partId, { set, onDone } = {}) {
     if (onDone) return onDone(pct);
     resultPanel(view, partId, pct);
   };
-  if (partId === "part4") return transformations(view, finish, onDone);
+  if (partId === "part4") return transformations(view, finish, onDone, onQuit);
   const item = pick(pools[partId] || []);
   if (!item) return go("c2");
+  // In a mock exam a text counts as seen as soon as it is shown: quitting will not bring it back.
+  if (onDone) state.c2[`seen-${partId}`] = [...done.filter((x) => x !== item.id), item.id].slice(-50);
+  if (__MB_TEST__) window.__mbItem = { partId, item };
   const shell = (title, sub, ...body) => {
     view.replaceChildren(
       h(
         "div",
         { class: "c2 c2-ex" },
-        h("div", { class: "topbar" }, h("button", { type: "button", class: "icon-btn", "aria-label": "Quitter", html: icon("close"), onClick: () => (stopSpeaking(), onDone ? confirmQuit(view) : go("c2")) }), h("span", { class: "topbar-title" }, PARTS.find((p) => p.id === partId).title)),
+        h("div", { class: "topbar" }, h("button", { type: "button", class: "icon-btn", "aria-label": "Quitter", html: icon("close"), onClick: () => (stopSpeaking(), onDone ? confirmQuit(view, onQuit) : go("c2")) }), h("span", { class: "topbar-title" }, PARTS.find((p) => p.id === partId).title)),
         h("h1", { class: "c2-title" }, title),
         sub ? h("p", { class: "set-help" }, sub) : null,
         ...body,
@@ -148,9 +151,10 @@ function practice(view, partId, { set, onDone } = {}) {
   return undefined;
 }
 
-async function confirmQuit(view) {
-  const ok = await dialog({ title: "Quitter l'examen blanc ?", body: "<p>Ta progression dans cet examen sera perdue.</p>", actions: [{ label: "Continuer", value: false, primary: true }, { label: "Quitter", value: true, danger: true }] });
-  if (ok) go("c2");
+async function confirmQuit(view, onQuit) {
+  const body = onQuit ? "<p><strong>C'est le boss final de la tour : abandonner = perdre un cœur.</strong></p>" : "<p>Ta progression dans cet examen sera perdue.</p>";
+  const ok = await dialog({ title: "Quitter l'examen blanc ?", body, actions: [{ label: "Continuer", value: false, primary: true }, { label: "Quitter", value: true, danger: true }] });
+  if (ok) (onQuit ? onQuit() : go("c2"));
 }
 
 const submitBtn = (label = "Corriger") => h("button", { type: "button", class: "btn btn-primary btn-xl" }, label);
@@ -198,17 +202,19 @@ function gapped(item, partId, shell, finish) {
 const continueBtn = (fn) => h("button", { type: "button", class: "btn btn-primary btn-xl c2-continue", onClick: fn }, "Continuer");
 
 /** Part 4: key word transformations, played with the normal quiz runner (one box per word). */
-function transformations(view, finish, inMock) {
+function transformations(view, finish, inMock, onQuit) {
   const all = U().part4 || [];
   const seen = new Set(state.c2?.["seen-part4"] || []);
   const fresh = all.filter((t) => !seen.has(t.id));
   const chosen = shuffle(fresh.length >= 6 ? fresh : all).slice(0, 6);
   const questions = chosen.map((t) => ({ kind: "fill", ref: null, skill: "grammaire", unitId: "12.0", level: 12, q: t.q, lead: t.lead, key: t.key, accept: t.answer, expected: t.answer[0], explain: t.explain, time: 150 }));
+  if (inMock) state.c2["seen-part4"] = [...seen, ...chosen.map((t) => t.id)].slice(-60);
   const quiz = runQuiz(view, questions, {
     title: "Part 4 · Key word transformation",
     accent: "var(--l12)",
+    quitBody: onQuit ? "<p><strong>C'est le boss final de la tour : abandonner = perdre un cœur.</strong></p>" : undefined,
     onDone: (results, { quit }) => {
-      if (quit) return go("c2");
+      if (quit) return onQuit ? onQuit() : go("c2");
       state.c2["seen-part4"] = [...seen, ...chosen.map((t) => t.id)].slice(-60);
       finish(scoreOf(results));
     },
@@ -413,7 +419,10 @@ async function mockExam(view, kind) {
   next(0);
 }
 
-async function mockResult(view, kind, plan, scores) {
+const FULL_PLAN = ["part1", "part2", "part3", "part4", "reading5", "reading6", "reading7", "listening", "listening"];
+
+/** Scores of a mock exam on the Cambridge scale (Writing = latest C2 essay of the last 30 days, if any). */
+function mockScores(kind, plan, scores) {
   const rIdx = plan.map((p, i) => (p !== "listening" ? i : -1)).filter((i) => i >= 0);
   const lIdx = plan.map((p, i) => (p === "listening" ? i : -1)).filter((i) => i >= 0);
   const avg = (idx) => idx.reduce((s, i) => s + scores[i], 0) / idx.length;
@@ -423,6 +432,26 @@ async function mockResult(view, kind, plan, scores) {
   papers.forEach((p) => (p.scale = cambridgeScale(p.pct)));
   const overall = Math.round(papers.reduce((s, p) => s + p.scale, 0) / papers.length);
   state.c2.mock = { scale: overall, kind, at: new Date().toISOString(), papers: papers.map((p) => ({ name: p.name, scale: p.scale })) };
+  return { overall, papers, recent };
+}
+
+/** The final boss of the Tower: the full mock exam, then `onFinish(scale)`. */
+export function towerFinal(view, onFinish, onQuit) {
+  const scores = [];
+  const next = (i) => {
+    if (i >= FULL_PLAN.length) {
+      const { overall } = mockScores("full", FULL_PLAN, scores);
+      addXp(300);
+      save();
+      return onFinish(overall);
+    }
+    practice(view, FULL_PLAN[i], { onDone: (pct) => (scores.push(pct), next(i + 1)), onQuit });
+  };
+  next(0);
+}
+
+async function mockResult(view, kind, plan, scores) {
+  const { overall, papers, recent } = mockScores(kind, plan, scores);
   addXp(kind === "full" ? 300 : 150);
   touchStreak();
   save();

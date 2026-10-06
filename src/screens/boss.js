@@ -267,6 +267,7 @@ export function bossScreen(view, { level }) {
   const L = Number(level);
   const lvl = levelById(L);
   if (!lvl || !levelUnlocked(L)) return go("map");
+  if (L === 12) return go("tower"); // level 12 is the Tower
   if (bossLocked(L)) {
     toast(`Plus de vies contre ce boss : refais d'abord les stations de la ligne ${L}.`);
     return go("map");
