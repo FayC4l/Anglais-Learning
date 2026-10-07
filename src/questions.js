@@ -331,12 +331,14 @@ export function renderQuestion(q, mount, { onAnswer, replays = diff().replays, a
   let answered = false;
   let replaysLeft = replays;
   const cleanups = [];
-  const finish = (ok, given) => {
+  // When the time runs out, what is already typed (or built) is sent for correction instead of counting as wrong.
+  let sendTyped = null;
+  const finish = (ok, given, auto = false) => {
     if (answered) return;
     answered = true;
     stopSpeaking();
     mount.classList.add("answered");
-    onAnswer({ ok, given });
+    onAnswer({ ok, given, auto });
   };
 
   const audioBtn = (text, { slow = true } = {}) => {
@@ -403,6 +405,11 @@ export function renderQuestion(q, mount, { onAnswer, replays = diff().replays, a
       check(input.value);
     };
     btn.addEventListener("click", go);
+    sendTyped = () => {
+      if (!input.value.trim()) return false;
+      check(input.value, true);
+      return true;
+    };
     input.addEventListener("keydown", (e) => {
       if (e.key === "Enter" && !e.shiftKey) {
         e.preventDefault();
@@ -420,14 +427,14 @@ export function renderQuestion(q, mount, { onAnswer, replays = diff().replays, a
   switch (q.kind) {
     case "type_en": {
       const input = textInput("Écris en anglais…");
-      card.append(head("Écris en anglais", null), h("div", { class: "q-prompt fr" }, q.fr), input, submitRow(input, (v) => finish(!(q.noDigits && /\d/.test(v)) && matches(v, q.accept), v)));
+      card.append(head("Écris en anglais", null), h("div", { class: "q-prompt fr" }, q.fr), input, submitRow(input, (v, auto) => finish(!(q.noDigits && /\d/.test(v)) && matches(v, q.accept), v, auto)));
       setTimeout(() => input.focus(), 60);
       break;
     }
     case "listen_type": {
       audio = audioBtn(q.say);
       const input = textInput("Écris ce que tu entends…");
-      card.append(head("Écoute et écris le mot"), audio.el, h("div", { class: "q-hint" }, "Sens : ", h("strong", null, q.fr)), input, submitRow(input, (v) => finish(matches(v, q.accept), v)));
+      card.append(head("Écoute et écris le mot"), audio.el, h("div", { class: "q-hint" }, "Sens : ", h("strong", null, q.fr)), input, submitRow(input, (v, auto) => finish(matches(v, q.accept), v, auto)));
       setTimeout(() => input.focus(), 60);
       break;
     }
@@ -493,6 +500,12 @@ export function renderQuestion(q, mount, { onAnswer, replays = diff().replays, a
         const words = [...line.children].map((t) => t.textContent);
         finish(q.accepted.includes(tileKey(words)), words.join(" "));
       });
+      sendTyped = () => {
+        if (!placed.length) return false;
+        const words = [...line.children].map((t) => t.textContent);
+        finish(q.accepted.includes(tileKey(words)), words.join(" "), true);
+        return true;
+      };
       const onKey = (e) => {
         if (e.key === "Enter" && !answered) btn.click();
         if (e.key === "Backspace" && !answered && placed.length) placed[placed.length - 1].click();
@@ -506,7 +519,7 @@ export function renderQuestion(q, mount, { onAnswer, replays = diff().replays, a
     case "dictation": {
       audio = audioBtn(q.say);
       const input = textInput("Écris toute la phrase…", { multiline: true });
-      card.append(head("Dictée : écris la phrase entière"), audio.el, input, submitRow(input, (v) => finish(matches(v, q.accept), v)));
+      card.append(head("Dictée : écris la phrase entière"), audio.el, input, submitRow(input, (v, auto) => finish(matches(v, q.accept), v, auto)));
       setTimeout(() => input.focus(), 60);
       break;
     }
@@ -553,7 +566,7 @@ export function renderQuestion(q, mount, { onAnswer, replays = diff().replays, a
         q.key ? h("div", { class: "q-key" }, "Mot imposé : ", h("strong", null, q.key)) : null,
         sentence,
         h("div", { class: "q-hint" }, h("span", { class: "gap-count" }, `${n} mot${n > 1 ? "s" : ""}`), q.hint ? [" · Indice : ", h("strong", null, q.hint)] : null),
-        submitRow(proxy, (v) => finish(matches(v, q.accept), v)),
+        submitRow(proxy, (v, auto) => finish(matches(v, q.accept), v, auto)),
       );
       setTimeout(() => boxes[0].focus(), 60);
       break;
@@ -575,7 +588,7 @@ export function renderQuestion(q, mount, { onAnswer, replays = diff().replays, a
           b.classList.add("picked");
           fixZone.hidden = false;
           const input = textInput("Écris la correction…");
-          fixZone.append(h("label", { class: "fix-label", for: "answer-input" }, "Bien vu ! Corrige ce mot :"), input, submitRow(input, (v) => finish(matches(v, q.accept), v)));
+          fixZone.append(h("label", { class: "fix-label", for: "answer-input" }, "Bien vu ! Corrige ce mot :"), input, submitRow(input, (v, auto) => finish(matches(v, q.accept), v, auto)));
           setTimeout(() => input.focus(), 60);
         });
         words.append(b);
@@ -611,6 +624,8 @@ export function renderQuestion(q, mount, { onAnswer, replays = diff().replays, a
       stopSpeaking();
     },
     timeout() {
+      if (answered) return;
+      if (sendTyped?.()) return;
       finish(false, "");
     },
     get answered() {

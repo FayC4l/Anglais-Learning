@@ -7,6 +7,10 @@ import { sfx, speak } from "./audio.js";
 import { floatText, shake, burstAt } from "./fx.js";
 import { quip, mentorSays } from "./humor.js";
 
+/** Seconds added to the timer of every question, everywhere in the app. */
+export const TIME_BONUS = 10;
+const limitOf = (q) => q.time + TIME_BONUS;
+
 const ENCOURAGE_OK = ["Correct !", "Exact !", "Bien joué !", "Parfait !", "Yes!", "Nailed it!", "Bravo !"];
 const ENCOURAGE_KO = ["Pas tout à fait…", "Presque !", "Pas encore…", "Bonne tentative !", "Regarde bien :"];
 
@@ -70,7 +74,7 @@ export function runQuiz(root, questions, opts = {}) {
     if (stopped || !current || current.answered) return;
     const q = timedQ;
     const left = deadline - performance.now();
-    const k = Math.max(0, left / (q.time * 1000));
+    const k = Math.max(0, left / (limitOf(q) * 1000));
     timerFill.style.transform = `scaleX(${k})`;
     timer.classList.toggle("low", left < 6000);
     const s = Math.ceil(left / 1000);
@@ -89,7 +93,7 @@ export function runQuiz(root, questions, opts = {}) {
     cancelAnimationFrame(timerRaf);
     timedQ = q;
     startedAt = performance.now();
-    deadline = startedAt + q.time * 1000;
+    deadline = startedAt + limitOf(q) * 1000;
     lastTick = -1;
     timerRaf = requestAnimationFrame(frame);
   }
@@ -100,11 +104,12 @@ export function runQuiz(root, questions, opts = {}) {
     current?.destroy();
   }
 
-  async function onAnswer(q, { ok, given }) {
+  // auto: the time ran out with an answer typed in, which was sent for correction.
+  async function onAnswer(q, { ok, given, auto = false }) {
     cancelAnimationFrame(timerRaf);
     const ms = performance.now() - startedAt;
     const timedOut = !ok && given === "";
-    results.push({ q, ok, given, ms, timedOut });
+    results.push({ q, ok, given, ms, timedOut, auto });
     recordAnswer(q.ref, ok, ms, q.skill);
     save();
     const seg = segs.children[index];
@@ -132,7 +137,7 @@ export function runQuiz(root, questions, opts = {}) {
       await sleep(ok ? 450 : 900);
       return next(extra.stop);
     }
-    showFeedback(q, ok, given, timedOut, extra.stop);
+    showFeedback(q, ok, given, timedOut, extra.stop, auto);
   }
 
   /** Chikh Fayçal comments now and then: always on a long combo or a timeout, sometimes otherwise. */
@@ -144,8 +149,8 @@ export function runQuiz(root, questions, opts = {}) {
     return null;
   }
 
-  function showFeedback(q, ok, given, timedOut, stopAfter) {
-    const title = ok ? ENCOURAGE_OK[Math.floor(Math.random() * ENCOURAGE_OK.length)] : timedOut ? "Temps écoulé !" : ENCOURAGE_KO[Math.floor(Math.random() * ENCOURAGE_KO.length)];
+  function showFeedback(q, ok, given, timedOut, stopAfter, auto = false) {
+    const title = auto ? (ok ? "Juste à temps ! Ta réponse a été envoyée." : "Temps écoulé : ta réponse a été corrigée.") : ok ? ENCOURAGE_OK[Math.floor(Math.random() * ENCOURAGE_OK.length)] : timedOut ? "Temps écoulé !" : ENCOURAGE_KO[Math.floor(Math.random() * ENCOURAGE_KO.length)];
     const hearBtn =
       q.expected && /[a-z]/i.test(q.expected) && q.kind !== "choose_fr" && q.kind !== "reading" && q.kind !== "listening"
         ? h("button", { type: "button", class: "icon-btn fb-hear", "aria-label": "Écouter la bonne réponse", html: icon("speaker"), onClick: () => speak(q.kind === "error" ? fixedSentence(q) : q.say || q.expected) })

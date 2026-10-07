@@ -14,6 +14,7 @@ L'appli d'anglais de toute la famille : du premier « hello » jusqu'au niveau C
 - **Boss imprévisibles** : 3 phases (reconnaissance, production, rage), 60 questions réservées par boss, questions générées à l'infini et mémoire anti-répétition (un nouvel essai reprend au plus 20 % des questions du précédent).
 - **Générateurs de questions** : conjugaison (≈ 250 verbes, tous les temps, passif), pluriels, comparatifs, nombres, heure, formation des mots, conditionnels…
 - **Phrases à trous** : une case par mot attendu, avec le nombre de mots affiché.
+- **Chrono généreux** : 10 secondes de plus sur chaque question ; quand le temps est écoulé, la réponse déjà tapée (ou la phrase déjà construite) est envoyée et corrigée au lieu d'être comptée fausse.
 - **Conjugueur** de référence et entraînement par verbe.
 - **Entraînement du jour** : répétition espacée (5 boîtes) avec les mots étudiés, les erreurs du carnet et ≈ 1 800 mots de lexique par niveau.
 - **Atelier d'écriture** : 96 sujets + 8 sujets C2, correcteur intégré (orthographe, ≈ 80 règles sur les fautes typiques des francophones, mots de liaison, temps verbaux, consignes) et **note sur 20** en 4 critères. Option : correction par Claude (clé API à saisir dans le profil).
