@@ -126,7 +126,9 @@ test("the climb gets harder: more questions, fewer mistakes allowed, less time, 
     const qs = towerExam(n).filter((q) => tenseOf(q));
     return qs.reduce((s, q) => s + q.time, 0) / qs.length;
   };
-  assert.ok(time(49) < time(1), "shorter timer at the top");
+  assert.ok(time(12) >= time(11) + 15, "20 more seconds per question from floor 12");
+  assert.ok(time(49) < time(12), "the timer still tightens above floor 12");
+  assert.ok(time(11) < time(1), "and below it");
   for (let n = 2; n < FLOORS; n++) {
     const a = floorSpec(n - 1);
     const b = floorSpec(n);

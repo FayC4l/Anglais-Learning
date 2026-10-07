@@ -1,7 +1,7 @@
 // Progress of the active profile: persistence, unlocking rules, XP, streaks, badges, save codes.
 import { LEVELS } from "./content.js";
 import { readJSON, writeJSON, profileKey } from "./storage.js";
-import { freshTower, recordFloor, TOWER_LEVEL } from "./tower.js";
+import { freshTower, recordFloor, newestTower, topUpLives, TOWER_LEVEL } from "./tower.js";
 
 /** One difficulty for the whole site (the management zone is gone): "moyenne +++". */
 export const FIXED_DIFFICULTY = { label: "Moyenne +++", pass: 0.85, time: 0.9, hearts: 3, replays: 2, desc: "85 % pour réussir, chrono serré, 3 cœurs contre les boss." };
@@ -38,7 +38,7 @@ export function fresh() {
     writing: [], // essays: { id, prompt, text, score, at }
     placement: null, // { band, line, at }
     c2: {}, // part id: { best, attempts }
-    tower: null, // level 12: { floor, lives, best, resets, won }
+    tower: null, // level 12: see freshTower() in tower.js
   };
 }
 
@@ -104,7 +104,8 @@ export function levelUnlocked(L) {
 }
 export function unitUnlocked(L, U) {
   if (!levelUnlocked(L)) return false;
-  if (state.unlockAll || U === 1 || levelDone(L)) return true;
+  // The lessons of level 12 stay open to revise for the Tower (its stations are not on the map).
+  if (state.unlockAll || U === 1 || levelDone(L) || L === TOWER_LEVEL) return true;
   return !!unitState(`${L}.${U - 1}`).passed;
 }
 export function bossReady(L) {
@@ -436,29 +437,70 @@ export function resetAll() {
 
 // ---------- The Tower (level 12) ----------
 
-/** The Tower of the active profile (created on first use). */
+// Every change of a Tower is also written to a register shared by the whole device (outside the profiles):
+// restoring an old save code or backup, or saving from a forgotten tab, cannot bring hearts back.
+const TOWER_REGISTER = "mission-bilingue:towers";
+const register = () => readJSON(TOWER_REGISTER) || {};
+
+/** The Tower of the active profile (created on first use); a more advanced copy in the register wins. */
 export function tower() {
   if (!state.tower) state.tower = freshTower();
+  if (!state.tower.id) Object.assign(state.tower, { id: freshTower().id, seq: state.tower.seq || 0 });
+  const known = newestTower(state.tower, register()[state.tower.id]);
+  if (known !== state.tower) {
+    state.tower = known;
+    save();
+  }
+  // Towers started with 10 hearts get the new total (the hearts already lost stay lost).
+  if (topUpLives(state.tower)) {
+    stampTower();
+    save();
+  }
   return state.tower;
+}
+
+/** Counts a change of the Tower and records it in the register. */
+function stampTower() {
+  const t = tower();
+  t.seq = (t.seq || 0) + 1;
+  const all = register();
+  all[t.id] = { ...t };
+  writeJSON(TOWER_REGISTER, all);
 }
 
 /** A timed boss starts: until its result is saved, leaving (reload, closed tab) counts as a defeat. */
 export function startTowerFloor(n) {
   tower().pending = n;
+  stampTower();
   save();
   flushSave();
+}
+
+/** The writing subject of a floor is drawn once: reloading the page cannot draw another one. */
+export function towerPrompt(n, draw) {
+  const t = tower();
+  t.prompts ||= {};
+  if (!t.prompts[n]) {
+    t.prompts[n] = draw();
+    stampTower();
+    save();
+    flushSave();
+  }
+  return t.prompts[n];
 }
 
 /** The reveal of the current floor has been played. */
 export function towerRevealed() {
   const t = tower();
   t.shown = Math.max(t.shown || 0, t.floor);
+  stampTower();
   save();
 }
 
 /** Saves the result of a floor boss; a victory at the top validates level 12. */
 export function recordTowerFloor(n, win) {
   const r = recordFloor(tower(), n, win);
+  if (r.event !== "ignored") stampTower();
   if (r.event === "next") addXp(40 + n * 4);
   if (r.event === "victory") {
     addXp(1000);
@@ -472,6 +514,13 @@ export function recordTowerFloor(n, win) {
 }
 
 // ---------- Placement ----------
+
+/** A placement test taken again after the course has started: the estimated level only, no line skipped. */
+export function recordPlacementBand(result) {
+  state.placement = { ...(state.placement || {}), band: result.band, at: new Date().toISOString(), asked: result.asked, correct: result.correct, line: state.placement?.line || 1 };
+  touchStreak();
+  save();
+}
 
 /** Starts the course at `line`: earlier lines are validated (marked "placed", no stars). */
 export function applyPlacement(result) {

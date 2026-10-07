@@ -1,9 +1,9 @@
-// The Tower of Chikh Fayçal (level 12): 50 floors, a boss on each, 10 hearts, dramatic losses, the C2 at the top.
+// The Tower of Chikh Fayçal (level 12): 50 floors, a boss on each, 200 hearts, dramatic losses, the C2 at the top.
 // The player only ever sees 5 floors and the final boss: every floor won past the 5th makes a new one appear.
 import { h, icon, sleep, reducedMotion, dialog } from "../ui.js";
-import { EXTRA } from "../content.js";
-import { state, tower, recordTowerFloor, startTowerFloor, towerRevealed, levelUnlocked, checkBadges } from "../store.js";
-import { FLOORS, TOWER_LIVES, TOWER_LEVEL, VISIBLE, floorSpec, visibleTop, surprise, BLOCKS } from "../tower.js";
+import { EXTRA, unitById } from "../content.js";
+import { state, tower, recordTowerFloor, startTowerFloor, towerRevealed, towerPrompt, levelUnlocked, checkBadges } from "../store.js";
+import { FLOORS, TOWER_LIVES, TOWER_LEVEL, VISIBLE, floorSpec, visibleTop, surprise, heartBar, BLOCKS } from "../tower.js";
 import { go } from "../router.js";
 import { runQuiz, scoreOf } from "../runner.js";
 import { towerExam } from "../questions.js";
@@ -15,7 +15,11 @@ import { printCertificate } from "./dashboard.js";
 
 export const REWARD = "un jeu PlayStation de ton choix + 25 $";
 
-const heartsHtml = (n, max = TOWER_LIVES) => Array.from({ length: max }, (_, i) => `<span class="life ${i < n ? "on" : "lost"}">${icon("heart")}</span>`).join("");
+/** The hearts as icons (10 icons of 20 hearts each with 200 hearts). */
+export function heartsHtml(n, max = TOWER_LIVES) {
+  const b = heartBar(n, max);
+  return Array.from({ length: b.total }, (_, i) => `<span class="life ${i < b.on ? "on" : "lost"}">${icon("heart")}</span>`).join("");
+}
 const floorTitle = (s) => (s.kind === "final" ? "Boss final : le C2" : s.kind === "writing" ? (s.c2 ? "Écriture C2" : "Boss d'écriture") : s.title);
 
 /** The Tower: the final boss on top, then the visible floors from the highest to the first. */
@@ -49,7 +53,7 @@ export function towerScreen(view) {
         h("p", { class: "tower-reward" }, "🎮 ", h("strong", null, "Au sommet : "), `le C2… et ${REWARD}.`),
         t.resets ? h("p", { class: "tower-resets" }, `La tour s'est déjà effondrée ${t.resets} fois. Elle se souvient de toi.`) : null,
       ),
-      mentorSays(welcomeLine(t), "", t.lives <= 3 ? "warning" : "welcome"),
+      mentorSays(welcomeLine(t), "", t.lives <= Math.ceil(TOWER_LIVES / 10) ? "warning" : "welcome"),
       h("button", { type: "button", class: "btn btn-primary btn-xl tower-go", onClick: () => startFloor(view, t.floor) }, s.kind === "final" ? "Affronter le boss final" : `Affronter l'étage ${t.floor} : ${floorTitle(s)}`),
       h("div", { class: "tower-shaft" }, list),
     ),
@@ -61,7 +65,7 @@ export function towerScreen(view) {
 
 function welcomeLine(t) {
   if (t.floor >= FLOORS) return "Cette fois, c'est vraiment le boss final. Plus d'étage caché. Je le jure sur mon thé.";
-  if (t.floor === 1 && !t.resets) return "Bienvenue dans ma tour. Cinq petits étages, dix cœurs, et le C2 au sommet. Facile, non ? … Non.";
+  if (t.floor === 1 && !t.resets) return `Bienvenue dans ma tour. Cinq petits étages, ${TOWER_LIVES} cœurs, et le C2 au sommet. Facile, non ? … Non.`;
   return quip("welcome");
 }
 
@@ -166,8 +170,9 @@ function floorIntro(view, n, s) {
         { class: "test-rules boss-rules" },
         h("li", null, h("span", { html: icon("book") }), `${s.count} questions : ${s.tenses.length ? "conjugaison" : "grammaire"} et révisions.`),
         h("li", null, h("span", { html: icon("heart") }), `${s.hearts} erreurs et tu perds le combat (et un cœur de la tour).`),
-        h("li", null, h("span", { html: icon("clock") }), "Le chrono est plus court que dans le reste du jeu. Fermer la page en plein combat = combat perdu."),
+        h("li", null, h("span", { html: icon("clock") }), s.extraTime ? `Chrono serré, mais ${s.extraTime} secondes de bonus par question. Fermer la page en plein combat = combat perdu.` : "Le chrono est plus court que dans le reste du jeu. Fermer la page en plein combat = combat perdu."),
       ),
+      reviseLinks(s),
       start,
     ),
   );
@@ -180,6 +185,17 @@ function floorIntro(view, n, s) {
   return () => monster.stop();
 }
 
+/** Before a fight: the lessons of the floor's block, to revise (they open in a normal station page). */
+function reviseLinks(s) {
+  const units = (s.units || []).map((uid) => unitById(uid)).filter(Boolean);
+  if (!units.length) return null;
+  return h(
+    "div",
+    { class: "tower-revise" },
+    h("p", { class: "set-help" }, "Réviser les leçons de ce bloc avant le combat :"),
+    h("div", { class: "row" }, units.map((u) => h("button", { type: "button", class: "btn btn-small btn-ghost", onClick: () => go("unit", { uid: u.id }) }, `${u.id} · ${u.title}`))),
+  );
+}
 function fight(view, n, s) {
   const questions = towerExam(n);
   startTowerFloor(n);
@@ -267,10 +283,14 @@ async function floorWon(view, n, score) {
 function writingFloor(n, s) {
   const prompts = s.c2 ? EXTRA.c2papers?.writing || [] : (EXTRA.writing?.prompts || []).filter((p) => p.level === s.level && (!p.ages || p.ages.includes(state.player.age) || p.ages.includes("adulte")));
   if (!prompts.length) return go("tower");
-  const t = tower();
-  t.prompts ||= {};
-  if (!t.prompts[n]) t.prompts[n] = prompts[Math.floor(Math.random() * prompts.length)].id;
-  go("writing", { promptId: t.prompts[n], tower: n });
+  let id = towerPrompt(n, () => prompts[Math.floor(Math.random() * prompts.length)].id);
+  // A subject removed from the content since it was drawn: draw again.
+  const exists = (s.c2 ? EXTRA.c2papers?.writing || [] : (EXTRA.writing?.prompts || []).filter((p) => p.level === s.level)).some((p) => p.id === id);
+  if (!exists) {
+    delete tower().prompts[n];
+    id = towerPrompt(n, () => prompts[Math.floor(Math.random() * prompts.length)].id);
+  }
+  go("writing", { promptId: id, tower: n });
 }
 
 /** The top: the full C2 Proficiency mock exam; 200 on the Cambridge scale wins the Tower. */

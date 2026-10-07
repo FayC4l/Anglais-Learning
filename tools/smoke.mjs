@@ -45,7 +45,7 @@ async function run({ name, viewport, scheme, tts, placement = false }) {
   await page.addInitScript(mockTTS, !!tts);
   page.on("pageerror", (e) => errors.push(`[${name}] pageerror: ${e.message}`));
   page.on("console", (m) => m.type() === "error" && !/fonts\.g|ERR_|net::/.test(m.text()) && errors.push(`[${name}] console: ${m.text()}`));
-  await page.goto(`file:///${file.replace(/\\/g, "/").replace(/^\//, "")}`);
+  await page.goto(`file:///${file.replace(/\\/g, "/").replace(/^\//, "")}`, { waitUntil: "domcontentloaded", timeout: 30000 });
   const shot = async (n) => shots && page.screenshot({ path: `${outDir}/${name}-${n}.png`, fullPage: false });
   const step = async (label, fn) => {
     try {

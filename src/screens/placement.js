@@ -1,7 +1,7 @@
 // Welcome after profile creation, and the adaptive placement test.
 import { h, icon, shuffle, sleep, countUp } from "../ui.js";
 import { placementItems, levelById, LEVELS, grammarRefs } from "../content.js";
-import { state, applyPlacement, checkBadges, recordAnswer, save } from "../store.js";
+import { state, applyPlacement, recordPlacementBand, checkBadges, recordAnswer, save } from "../store.js";
 import { go } from "../router.js";
 import { renderQuestion, makeQuestion, feedbackDetails, kindsForRef } from "../questions.js";
 import { createPlacement, BANDS, BAND_LINE } from "../placement.js";
@@ -117,6 +117,7 @@ export function placementScreen(view, { start = "A2" } = {}) {
   async function finish() {
     save();
     const r = pl.result();
+    const started = Object.values(state.bosses).some((b) => b.defeated) || Object.values(state.units).some((u) => u.passed);
     const info = BAND_INFO[r.band];
     const lvl = levelById(r.line);
     const lower = LEVELS.filter((l) => l.id < r.line);
@@ -133,14 +134,17 @@ export function placementScreen(view, { start = "A2" } = {}) {
         h("p", { class: "results-line" }, h("strong", null, pct), ` % de bonnes réponses sur ${r.asked} questions.`),
         h("div", { class: "band-scale" }, BANDS.map((b) => h("span", { class: `${b === r.band ? "on" : ""} ${BANDS.indexOf(b) < BANDS.indexOf(r.band) ? "past" : ""}` }, b))),
         mentorSays(r.band === "A1" ? "Tout le monde commence quelque part. Moi, à ton âge, je croyais que « teacher » se prononçait « tichère ». On va bien s'amuser." : r.band === "C2" ? "C2 ?! Ma moustache en tremble. Tu vas pouvoir t'attaquer directement à la prépa Cambridge." : `Niveau ${r.band}, pas mal du tout ! Je t'ai réservé une place sur la ligne ${r.line}.`),
-        h("label", { class: "field-label", for: "start-line" }, "Par où veux-tu commencer ?"),
-        choose,
-        h("p", { class: "set-help" }, "Les lignes avant ton point de départ sont validées, mais restent ouvertes si tu veux réviser."),
+        // Once the course has started, a new test only updates the estimated level: it never skips lines.
+        started ? h("p", { class: "set-help" }, "Ton niveau estimé est mis à jour. Comme tu as déjà commencé le parcours, le test ne fait pas sauter de ligne : continue là où tu en es.") : null,
+        started ? null : h("label", { class: "field-label", for: "start-line" }, "Par où veux-tu commencer ?"),
+        started ? null : choose,
+        started ? null : h("p", { class: "set-help" }, "Les lignes avant ton point de départ sont validées, mais restent ouvertes si tu veux réviser."),
         h("div", { class: "result-actions" }, h("button", { type: "button", class: "btn btn-primary btn-xl", onClick: () => {
-          applyPlacement({ ...r, line: Number(choose.value) });
+          if (started) recordPlacementBand(r);
+          else applyPlacement({ ...r, line: Number(choose.value) });
           checkBadges();
           go("map");
-        } }, "C'est parti !")),
+        } }, started ? "Retour au réseau" : "C'est parti !")),
       ),
     );
     countUp(pct, r.asked ? Math.round((r.correct / r.asked) * 100) : 0, 900);

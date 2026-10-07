@@ -46,7 +46,7 @@ Tes explications et tes commentaires sont en français, clairs, encourageants, a
 
 /** Turns SDK errors into a French message for the learner. */
 function frenchError(e) {
-  if (e instanceof Anthropic.AuthenticationError) return "La clé API est refusée : vérifie-la dans la zone gestion.";
+  if (e instanceof Anthropic.AuthenticationError) return "La clé API est refusée : vérifie-la dans Profil → Correcteur IA.";
   if (e instanceof Anthropic.PermissionDeniedError) return "Cette clé API n'a pas accès à ce modèle.";
   if (e instanceof Anthropic.RateLimitError) return "Trop de demandes pour le moment : réessaie dans une minute.";
   if (e instanceof Anthropic.BadRequestError) return `Demande refusée par l'API : ${e.message}`;
@@ -61,7 +61,7 @@ function frenchError(e) {
  * Throws an Error with a French message on failure.
  */
 export async function aiCorrect({ apiKey, model = "claude-opus-5-5", text, prompt = {}, age = "ado" }) {
-  if (!apiKey) throw new Error("Aucune clé API : ajoute-la dans la zone gestion.");
+  if (!apiKey) throw new Error("Aucune clé API : ajoute-la dans Profil → Correcteur IA.");
   const client = new Anthropic({ apiKey, dangerouslyAllowBrowser: true, timeout: 120_000 });
   const level = prompt.cefr || prompt.band || "B1";
   const user = [

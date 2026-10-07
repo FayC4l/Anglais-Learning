@@ -1,11 +1,14 @@
-// The Tower of Chikh Fayçal (level 12): 50 floors, each guarded by a boss, 10 hearts for the whole climb.
+// The Tower of Chikh Fayçal (level 12): 50 floors, each guarded by a boss, 200 hearts for the whole climb.
 // Floors 5, 10 … 45 are writing bosses, floor 50 is the C2 Proficiency mock exam. Pure (no DOM).
 
 export const FLOORS = 50;
-export const TOWER_LIVES = 10;
+export const TOWER_LIVES = 200;
 export const TOWER_LEVEL = 12;
 /** The player only sees 5 floors and the final boss: each floor won past the 5th reveals one more (a running joke). */
 export const VISIBLE = 5;
+/** From this floor on, every question of a fight gets extra seconds on its timer. */
+export const EXTRA_TIME_FROM = 12;
+export const EXTRA_TIME = 20;
 
 /** Themes: blocks of 5 floors (the 5th floor of each block is a writing boss). */
 export const BLOCKS = [
@@ -44,12 +47,34 @@ export function floorSpec(n) {
     part4: !!block.part4,
     count: 10 + Math.floor(n / 5), // 10 → 19 questions
     hearts: n < 21 ? 3 : 2, // mistakes allowed in the fight
-    time: Math.max(0.65, 1 - n * 0.007), // the timer tightens
+    time: Math.max(0.65, 1 - n * 0.007), // the timer tightens…
+    extraTime: n >= EXTRA_TIME_FROM ? EXTRA_TIME : 0, // …but the long sentences of the upper floors get 20 s more
     negQ: Math.min(0.75, 0.2 + k * 0.08 + n / 150), // more negatives and questions
   };
 }
 
-export const freshTower = () => ({ floor: 1, lives: TOWER_LIVES, best: 1, resets: 0, won: false, wonAt: "", shown: VISIBLE, pending: 0 });
+export const freshTower = () => ({ id: Math.random().toString(36).slice(2, 10), seq: 0, floor: 1, lives: TOWER_LIVES, maxLives: TOWER_LIVES, best: 1, resets: 0, won: false, wonAt: "", shown: VISIBLE, pending: 0 });
+
+/**
+ * A Tower started when it had fewer hearts (10 at first) gets the new total, minus the hearts already lost.
+ * Returns true when the Tower was changed.
+ */
+export function topUpLives(t) {
+  const had = t.maxLives || 10;
+  if (had >= TOWER_LIVES) return false;
+  t.lives = Math.min(TOWER_LIVES, (t.lives ?? had) + (TOWER_LIVES - had));
+  t.maxLives = TOWER_LIVES;
+  return true;
+}
+
+/** Hearts drawn on screen: one icon per heart up to 10, otherwise 10 icons that each stand for a tenth. */
+export const heartBar = (lives, max = TOWER_LIVES) => (max <= 10 ? { total: max, on: lives } : { total: 10, on: Math.ceil((Math.max(0, lives) / max) * 10) });
+
+/**
+ * Between two copies of the same Tower, the one with more recorded events wins: an old save code, a backup
+ * file or a forgotten browser tab can never bring hearts back.
+ */
+export const newestTower = (current, known) => (known && current && known.id === current.id && (known.seq || 0) > (current.seq || 0) ? { ...known } : current);
 
 /** Highest ordinary floor on display (the final boss is always drawn on top of it). */
 export const visibleTop = (t) => (t.won ? FLOORS - 1 : Math.min(FLOORS - 1, Math.max(VISIBLE, t.floor)));
@@ -80,6 +105,7 @@ export function recordFloor(t, n, win, now = new Date()) {
     t.lives = TOWER_LIVES;
     t.resets = (t.resets || 0) + 1;
     t.shown = VISIBLE; // the floors vanish with the tower… and will surprise again
+    t.prompts = {}; // new writing subjects for the next climb
     return { event: "collapse", lives: t.lives, floor: 1 };
   }
   return { event: "life", lives: t.lives, floor: t.floor };

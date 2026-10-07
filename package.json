@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "node build.mjs",
-    "test": "node --test tests/fill.test.mjs tests/profiles.test.mjs tests/placement.test.mjs tests/verbs.test.mjs tests/generators.test.mjs tests/pool.test.mjs tests/srs.test.mjs tests/writing.test.mjs tests/autobackup.test.mjs tests/lives.test.mjs tests/tower.test.mjs tests/tower-exams.test.mjs",
+    "test": "node --test tests/fill.test.mjs tests/profiles.test.mjs tests/placement.test.mjs tests/verbs.test.mjs tests/generators.test.mjs tests/pool.test.mjs tests/srs.test.mjs tests/writing.test.mjs tests/autobackup.test.mjs tests/lives.test.mjs tests/tower.test.mjs tests/tower-exams.test.mjs tests/tower-register.test.mjs",
     "validate": "node tools/validate.mjs && node tools/validate-extra.mjs && node tools/validate-v2.mjs",
     "smoke": "node tools/smoke.mjs index.html && node tools/smoke-v2.mjs index.html && node tools/smoke-tower.mjs index.html"
   },

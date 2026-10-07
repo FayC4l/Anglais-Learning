@@ -1,8 +1,7 @@
-// Profile: stats, badges, settings, backups, and the PIN-protected family management zone.
-import { h, icon, toast, dialog, copyText, esc } from "../ui.js";
-import { LEVELS } from "../content.js";
-import { state, save, rank, wordsLearned, mistakeCount, streakAlive, BADGES, exportCode, importCode, resetAll, highestLevelDone } from "../store.js";
-import { family, saveFamily, listProfiles, profileState, updateProfile, deleteProfile, exportFamily, exportProfile, importBackup, AGES, AVATARS } from "../profiles.js";
+// Profile: stats, badges, settings, backups and the optional AI corrector.
+import { h, icon, toast, dialog, copyText } from "../ui.js";
+import { state, save, rank, wordsLearned, mistakeCount, streakAlive, BADGES, exportCode, importCode, highestLevelDone } from "../store.js";
+import { family, saveFamily, listProfiles, updateProfile, exportProfile, importBackup, AGES, AVATARS } from "../profiles.js";
 import { go } from "../router.js";
 import { englishVoices, ttsReady, coachReady, speak, speakParts, sfx } from "../audio.js";
 import { avatarEl } from "./who.js";
@@ -177,7 +176,10 @@ async function restoreFile() {
 
 /** Optional AI correction: the Anthropic API key stays on this device and is never in the backups. */
 function aiBlock() {
-  const aiKey = h("input", { class: "field", type: "password", id: "ai-key", placeholder: "sk-ant-…", autocomplete: "off", value: family.aiKey || "", "aria-label": "Clé API Anthropic" });
+  // The saved key is never put back in the field (a password field can be revealed): only its last characters show.
+  const keyHint = () => (family.aiKey ? `Une clé est enregistrée (…${family.aiKey.slice(-4)}). Pour la changer, colle la nouvelle clé.` : "Aucune clé enregistrée.");
+  const status = h("p", { class: "set-help", id: "ai-key-status" }, keyHint());
+  const aiKey = h("input", { class: "field", type: "password", id: "ai-key", placeholder: "sk-ant-…", autocomplete: "new-password", value: "", "aria-label": "Clé API Anthropic" });
   const aiModel = h(
     "select",
     { class: "field", id: "ai-model", "aria-label": "Modèle IA" },
@@ -188,6 +190,7 @@ function aiBlock() {
     { class: "settings" },
     h("p", { class: "set-help" }, "Le correcteur intégré fonctionne sans internet. Avec une clé API Anthropic, l'atelier d'écriture propose aussi une correction par Claude. La clé reste sur cet appareil et n'est jamais incluse dans les sauvegardes ; chaque correction est facturée sur le compte de la clé."),
     h("label", { class: "field-label", for: "ai-key" }, "Clé API"),
+    status,
     aiKey,
     h("label", { class: "field-label", for: "ai-model" }, "Modèle"),
     aiModel,
@@ -195,15 +198,19 @@ function aiBlock() {
       "div",
       { class: "row" },
       h("button", { type: "button", class: "btn btn-small", onClick: () => {
-        family.aiKey = aiKey.value.trim();
+        // An empty field keeps the saved key (only the model changes).
+        if (aiKey.value.trim()) family.aiKey = aiKey.value.trim();
         family.aiModel = aiModel.value;
         saveFamily();
+        aiKey.value = "";
+        status.textContent = keyHint();
         toast(family.aiKey ? "Correcteur IA activé." : "Correcteur IA désactivé.", "ok");
       } }, "Enregistrer"),
       h("button", { type: "button", class: "btn btn-small btn-ghost", onClick: () => {
         family.aiKey = "";
         aiKey.value = "";
         saveFamily();
+        status.textContent = keyHint();
         toast("Clé effacée.");
       } }, "Effacer la clé"),
     ),

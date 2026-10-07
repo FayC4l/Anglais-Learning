@@ -25,7 +25,7 @@ page.setDefaultTimeout(7000);
 await page.addInitScript(mockTTS);
 page.on("pageerror", (e) => errors.push(`pageerror: ${e.message}`));
 page.on("console", (m) => m.type() === "error" && !/fonts\.g|ERR_|net::/.test(m.text()) && errors.push(`console: ${m.text()}`));
-await page.goto(`file:///${file.replace(/\\/g, "/").replace(/^\//, "")}`);
+await page.goto(`file:///${file.replace(/\\/g, "/").replace(/^\//, "")}`, { waitUntil: "domcontentloaded", timeout: 30000 });
 const shot = async (n) => shots && page.screenshot({ path: `${outDir}/v2-${n}.png` });
 const step = async (label, fn) => {
   try {
@@ -69,7 +69,7 @@ await step("create two profiles", async () => {
   await page.waitForSelector(".welcome");
   await page.click("text=Je débute de zéro");
   await page.waitForSelector(".map");
-  await page.reload();
+  await page.reload({ waitUntil: "domcontentloaded" });
   await page.waitForSelector(".who");
   const n = await page.locator(".who-card:not(.add)").count();
   if (n !== 2) throw new Error(`${n} profiles on the picker`);
@@ -199,14 +199,14 @@ await step("daily backup reminder", async () => {
     delete g.lastBackup;
     localStorage.setItem("mission-bilingue:global", JSON.stringify(g));
   });
-  await page.reload();
+  await page.reload({ waitUntil: "domcontentloaded" });
   await page.locator(".who-card", { hasText: "Lina" }).click();
   await page.waitForSelector(".backup-card.late");
   await shot("13-backup-reminder");
   const [download] = await Promise.all([page.waitForEvent("download"), page.click(".backup-card >> text=Télécharger la sauvegarde")]);
   if (!/mission-bilingue-famille-.*\.json$/.test(download.suggestedFilename())) throw new Error(`bad file name ${download.suggestedFilename()}`);
   await page.waitForSelector(".backup-card.ok");
-  await page.reload();
+  await page.reload({ waitUntil: "domcontentloaded" });
   await page.locator(".who-card", { hasText: "Lina" }).click();
   await page.waitForSelector(".map");
   if (await page.locator(".backup-card").count()) throw new Error("reminder still shown after today's backup");
@@ -222,7 +222,7 @@ await step("boss lives: losing the last life sends the stations back", async () 
     s.settings.difficulty = "brutal"; // 2 hearts: the fight ends quickly
     localStorage.setItem(key, JSON.stringify(s));
   });
-  await page.reload();
+  await page.reload({ waitUntil: "domcontentloaded" });
   await page.locator(".who-card", { hasText: "Lina" }).click();
   await page.waitForSelector(".map");
   await page.locator("#line-1 .station.boss .station-btn").click();

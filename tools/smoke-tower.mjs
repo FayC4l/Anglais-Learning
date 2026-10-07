@@ -4,6 +4,7 @@
 import { chromium } from "playwright-core";
 import { resolve } from "node:path";
 import { mkdirSync, existsSync } from "node:fs";
+import { TOWER_LIVES } from "../src/tower.js";
 
 const file = resolve(process.argv[2] && !process.argv[2].startsWith("--") ? process.argv[2] : "index.html");
 const shots = process.argv.includes("--shots");
@@ -38,10 +39,17 @@ const patch = async (fn) => {
     const s = JSON.parse(localStorage.getItem(key));
     new Function("s", src)(s);
     localStorage.setItem(key, JSON.stringify(s));
+    localStorage.removeItem("mission-bilingue:towers"); // the test edits the tower on purpose
   }, `(${fn})(s)`);
-  await page.reload();
+  await page.reload({ waitUntil: "domcontentloaded" });
   await page.waitForSelector(".map");
 };
+/** The Tower saved in the browser for the active profile. */
+const towerState = () =>
+  page.evaluate(() => {
+    const g = JSON.parse(localStorage.getItem("mission-bilingue:global"));
+    return JSON.parse(localStorage.getItem(`mission-bilingue:p:${g.activeId}`)).tower;
+  });
 const answerWrong = async () => {
   const card = page.locator(".q-card");
   await card.waitFor();
@@ -61,7 +69,7 @@ const answerWrong = async () => {
   } else await page.locator(".choices .choice").last().click();
 };
 
-await page.goto(`file:///${file.replace(/\\/g, "/").replace(/^\//, "")}`);
+await page.goto(`file:///${file.replace(/\\/g, "/").replace(/^\//, "")}`, { waitUntil: "domcontentloaded", timeout: 30000 });
 await step("setup a player at level 12", async () => {
   await page.fill("#player-name", "Hamza");
   await page.click(".age-opt[data-age=ado]");
@@ -114,8 +122,9 @@ await step("a lost floor costs a heart, with drama", async () => {
   await shot("03-drama-life");
   await page.click(".drama-btn");
   await page.waitForSelector(".tower");
-  const hearts = await page.locator(".tower-lives .life.on").count();
-  if (hearts !== 9) throw new Error(`${hearts} hearts after a defeat`);
+  const hearts = (await towerState()).lives;
+  if (hearts !== TOWER_LIVES - 1) throw new Error(`${hearts} hearts after a defeat`);
+  if (!(await page.locator(".tower-lives").innerText()).includes(`${TOWER_LIVES - 1} / ${TOWER_LIVES}`)) throw new Error("hearts count not shown");
 });
 
 await step("closing the page during a fight costs a heart", async () => {
@@ -123,7 +132,7 @@ await step("closing the page during a fight costs a heart", async () => {
   await page.click(".tower-go");
   await page.click("text=Combattre");
   await page.waitForSelector(".arena");
-  await page.reload();
+  await page.reload({ waitUntil: "domcontentloaded" });
   await page.waitForSelector(".map");
   await page.click(".next-card.tower-hero");
   await page.waitForSelector(".drama.life");
@@ -131,8 +140,8 @@ await step("closing the page during a fight costs a heart", async () => {
   if (!/fuir/i.test(txt)) throw new Error(`drama text: ${txt}`);
   await page.click(".drama-btn");
   await page.waitForSelector(".tower");
-  const hearts = await page.locator(".tower-lives .life.on").count();
-  if (hearts !== 8) throw new Error(`${hearts} hearts after fleeing (8 expected)`);
+  const hearts = (await towerState()).lives;
+  if (hearts !== TOWER_LIVES - 2) throw new Error(`${hearts} hearts after fleeing (${TOWER_LIVES - 2} expected)`);
 });
 
 await step("losing the last heart collapses the tower", async () => {
@@ -152,7 +161,7 @@ await step("losing the last heart collapses the tower", async () => {
     const g = JSON.parse(localStorage.getItem("mission-bilingue:global"));
     return JSON.parse(localStorage.getItem(`mission-bilingue:p:${g.activeId}`)).tower;
   });
-  if (t.floor !== 1 || t.lives !== 10 || t.resets !== 1) throw new Error(`after collapse: ${JSON.stringify(t)}`);
+  if (t.floor !== 1 || t.lives !== TOWER_LIVES || t.resets !== 1) throw new Error(`after collapse: ${JSON.stringify(t)}`);
 });
 
 await step("a floor past the 5th appears as a surprise, once", async () => {
@@ -166,7 +175,7 @@ await step("a floor past the 5th appears as a surprise, once", async () => {
   await page.waitForSelector(".reveal", { state: "detached" });
   const rows = await page.locator(".tower-floor").count();
   if (rows !== 7) throw new Error(`${rows} rows after the reveal (6 floors + the boss expected)`);
-  await page.reload();
+  await page.reload({ waitUntil: "domcontentloaded" });
   await page.waitForSelector(".map");
   await page.click(".next-card.tower-hero");
   await page.waitForSelector(".tower");
@@ -189,6 +198,19 @@ await step("writing boss: a weak essay fails", async () => {
   if (await page.locator(".w-model").count()) throw new Error("the model answer is shown before the floor is won");
 });
 
+await step("the lessons of the block can be revised, level 12 included", async () => {
+  await patch((s) => Object.assign(s.tower, { floor: 42, shown: 42, lives: 150 }));
+  await page.click(".next-card.tower-hero");
+  await page.click(".tower-go");
+  await page.waitForSelector(".tower-intro .tower-revise");
+  const intro = await page.locator(".tower-intro").innerText();
+  if (!/20 secondes de bonus/.test(intro)) throw new Error("the 20 s bonus is not announced on floor 42");
+  await page.click(".tower-revise >> text=12.1");
+  await page.waitForSelector('#view[data-screen="unit"]');
+  await shot("08-revise-12-1");
+  await page.reload({ waitUntil: "domcontentloaded" });
+  await page.waitForSelector(".map");
+});
 await step("victory screen with the reward", async () => {
   await patch((s) => Object.assign(s.tower, { won: true, wonAt: new Date().toISOString() }));
   await page.click("#line-12 .tower-card");

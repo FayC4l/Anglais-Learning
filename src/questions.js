@@ -308,7 +308,7 @@ export function towerExam(n) {
     push(makeQuestion(resolveRef(ref).item.type, ref));
   }
   while (out.length < spec.count) push(makeQuestion("fill", conjQuestion(rng, { tenses: [...own, ...spec.review], negQ: spec.negQ })?.ref));
-  out.forEach((q) => (q.time = Math.max(12, Math.round(q.time * spec.time))));
+  out.forEach((q) => (q.time = Math.max(12, Math.round(q.time * spec.time)) + spec.extraTime));
   state.seen.tower = recordSeen(history, out.map((q) => q.ref));
   save();
   return out.map((q) => ({ ...q, phase: PHASE[q.kind] || 2 })).sort((a, b) => a.phase - b.phase || Math.random() - 0.5);

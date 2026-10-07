@@ -150,6 +150,9 @@ function issueDetail(x, text) {
   );
 }
 
+// A subject drawn for a Tower floor not won yet: its model answer stays hidden, in the workshop too.
+const towerSecret = (id) => { const t = state.tower; return !!t && !t.won && Object.entries(t.prompts || {}).some(([n, pid]) => pid === id && Number(n) >= t.floor); };
+
 function report(view, p, text, tw) {
   const a = analyze(text, p);
   const s = score(a, p);
@@ -219,7 +222,7 @@ function report(view, p, text, tw) {
       s.priorities.length ? h("h2", { class: "section-title" }, "Pour gagner des points") : null,
       s.priorities.length ? h("ul", { class: "w-list todo" }, s.priorities.map((x) => h("li", null, x))) : null,
       a.issues.length ? h("details", { class: "w-all" }, h("summary", null, `Toutes les remarques (${a.issues.length})`), a.issues.map((x) => issueDetail(x, text))) : null,
-      p.model && (!tw || towerPass) ? h("details", { class: "w-model" }, h("summary", null, "Voir un exemple de très bonne copie"), h("div", { class: "w-model-text" }, p.model.split(/\n+/).map((para) => h("p", null, para))), h("button", { type: "button", class: "btn btn-small btn-ghost", onClick: () => speak(p.model) }, h("span", { html: icon("speaker") }), "Écouter")) : null,
+      p.model && (tw ? towerPass : !towerSecret(p.id)) ? h("details", { class: "w-model" }, h("summary", null, "Voir un exemple de très bonne copie"), h("div", { class: "w-model-text" }, p.model.split(/\n+/).map((para) => h("p", null, para))), h("button", { type: "button", class: "btn btn-small btn-ghost", onClick: () => speak(p.model) }, h("span", { html: icon("speaker") }), "Écouter")) : null,
       aiBox,
       h(
         "div",

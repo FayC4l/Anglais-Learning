@@ -351,3 +351,5 @@
 @keyframes stamp { from { opacity: 0; transform: rotate(-8deg) scale(3); } to { opacity: 1; transform: rotate(-8deg) scale(1); } }
 @keyframes new-floor { from { opacity: 0; transform: translateY(-20px) scale(.9); } to { opacity: 1; transform: none; } }
 @media (prefers-reduced-motion: reduce) { .reveal *, .reveal, .tower-floor.is-new { animation: none !important; } }
+.tower-revise { display: grid; gap: 6px; justify-items: center; text-align: center; }
+.tower-revise .row { justify-content: center; flex-wrap: wrap; }

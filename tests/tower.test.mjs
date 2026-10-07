@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { FLOORS, TOWER_LIVES, VISIBLE, floorSpec, freshTower, recordFloor, copiedShare, visibleTop, surprise, BLOCKS } from "../src/tower.js";
+import { FLOORS, TOWER_LIVES, VISIBLE, EXTRA_TIME, floorSpec, freshTower, recordFloor, copiedShare, visibleTop, surprise, topUpLives, heartBar, newestTower, BLOCKS } from "../src/tower.js";
 import { GENERATORS } from "../src/engine/generators.js";
 import { TENSES } from "../src/engine/verbs.js";
 
@@ -43,7 +43,8 @@ test("a won floor opens the next one; floor 50 is the victory", () => {
   assert.equal(t.won, true);
 });
 
-test("10 hearts for the whole tower; the last one lost makes it collapse", () => {
+test("200 hearts for the whole tower; the last one lost makes it collapse", () => {
+  assert.equal(TOWER_LIVES, 200);
   const t = freshTower();
   t.floor = 23;
   for (let i = 1; i < TOWER_LIVES; i++) assert.equal(recordFloor(t, 23, false).event, "life");
@@ -104,4 +105,35 @@ test("a pending fight is cleared by its result", () => {
   t.pending = 1;
   recordFloor(t, 1, true);
   assert.equal(t.pending, 0);
+});
+test("from floor 12, every fight question gets 20 more seconds", () => {
+  assert.equal(floorSpec(11).extraTime, 0);
+  assert.equal(floorSpec(12).extraTime, EXTRA_TIME);
+  assert.equal(floorSpec(49).extraTime, 20);
+});
+
+test("a Tower started with 10 hearts gets 200, minus the hearts already lost (once)", () => {
+  const t = { floor: 9, lives: 7, best: 9, resets: 0, won: false };
+  assert.equal(topUpLives(t), true);
+  assert.equal(t.lives, 197);
+  assert.equal(topUpLives(t), false);
+  assert.equal(t.lives, 197);
+  assert.equal(topUpLives(freshTower()), false);
+});
+
+test("200 hearts are drawn as 10 icons of 20", () => {
+  assert.deepEqual(heartBar(200), { total: 10, on: 10 });
+  assert.deepEqual(heartBar(181), { total: 10, on: 10 });
+  assert.deepEqual(heartBar(180), { total: 10, on: 9 });
+  assert.deepEqual(heartBar(1), { total: 10, on: 1 });
+  assert.deepEqual(heartBar(0), { total: 10, on: 0 });
+  assert.deepEqual(heartBar(2, 3), { total: 3, on: 2 });
+});
+
+test("between two copies of a Tower, the one with more events wins", () => {
+  const a = { ...freshTower(), seq: 5, lives: 150 };
+  assert.equal(newestTower(a, { ...a, seq: 4, lives: 200 }), a);
+  assert.equal(newestTower(a, { ...a, seq: 6, lives: 149 }).lives, 149);
+  assert.equal(newestTower(a, { ...a, id: "other", seq: 99 }), a);
+  assert.equal(newestTower(a, undefined), a);
 });

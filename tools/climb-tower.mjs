@@ -7,7 +7,7 @@ import { chromium } from "playwright-core";
 import { execSync } from "node:child_process";
 import { resolve } from "node:path";
 import { mkdirSync, existsSync, readFileSync } from "node:fs";
-import { floorSpec, FLOORS, VISIBLE } from "../src/tower.js";
+import { floorSpec, FLOORS, VISIBLE, TOWER_LIVES } from "../src/tower.js";
 import { gapWords } from "../src/fill.js";
 
 const arg = (name, def) => {
@@ -44,21 +44,21 @@ const towerState = () => page.evaluate(() => {
 });
 
 // ---------- Setup: a teenager who reached level 12 ----------
-await page.goto(`file:///${file.replace(/\\/g, "/").replace(/^\//, "")}`);
+await page.goto(`file:///${file.replace(/\\/g, "/").replace(/^\//, "")}`, { waitUntil: "domcontentloaded", timeout: 30000 });
 await page.fill("#player-name", "Hamza");
 await page.click(".age-opt[data-age=ado]");
 await page.click("text=Monter à bord");
 await page.click("text=Je débute de zéro");
 await page.waitForSelector(".map");
-await page.evaluate(({ from, prompts, visibleFloors }) => {
+await page.evaluate(({ from, prompts, visibleFloors, lives }) => {
   const g = JSON.parse(localStorage.getItem("mission-bilingue:global"));
   const key = `mission-bilingue:p:${g.activeId}`;
   const s = JSON.parse(localStorage.getItem(key));
   for (let L = 1; L <= 11; L++) s.bosses[L] = { defeated: true, at: new Date().toISOString() };
-  s.tower = { floor: from, lives: 10, best: from, resets: 0, won: false, wonAt: "", shown: Math.max(visibleFloors, from), pending: 0, prompts };
+  s.tower = { floor: from, lives: lives, maxLives: lives, best: from, resets: 0, won: false, wonAt: "", shown: Math.max(visibleFloors, from), pending: 0, prompts };
   localStorage.setItem(key, JSON.stringify(s));
-}, { from, prompts, visibleFloors: VISIBLE });
-await page.reload();
+}, { from, prompts, visibleFloors: VISIBLE, lives: TOWER_LIVES });
+await page.reload({ waitUntil: "domcontentloaded" });
 await page.waitForSelector(".map");
 await page.click(".next-card.tower-hero");
 
@@ -203,7 +203,7 @@ for (let guard = 0; guard < 6000; guard++) {
         const rows = await page.locator(".tower-floor").count();
         const want = Math.min(FLOORS - 1, Math.max(VISIBLE, floor)) + 1;
         if (rows !== want) errors.push(`floor ${floor}: ${rows} rows shown instead of ${want}`);
-        if (t.lives !== 10) errors.push(`floor ${floor}: ${t.lives} hearts`);
+        if (t.lives !== TOWER_LIVES) errors.push(`floor ${floor}: ${t.lives} hearts`);
         console.log(`floor ${floor} (${floorSpec(floor).kind}) · ${answered} answers so far · ${Math.round((Date.now() - started) / 1000)} s`);
         lastFloor = floor;
       }
@@ -225,7 +225,7 @@ if (await visible(".tower-victory")) {
   const t = await towerState();
   const txt = await page.locator(".tower-victory").innerText();
   if (!/PlayStation/.test(txt) || !/25 \$/.test(txt)) errors.push("victory without the reward");
-  if (!t.won || t.lives !== 10 || t.resets) errors.push(`final state: ${JSON.stringify(t)}`);
+  if (!t.won || t.lives !== TOWER_LIVES || t.resets) errors.push(`final state: ${JSON.stringify(t)}`);
   if (shots) await page.screenshot({ path: "shots/climb-victory.png" });
 } else errors.push(`no victory (stopped on floor ${floor})`);
 const wantReveals = Array.from({ length: FLOORS - 1 }, (_, i) => i + 1).filter((n) => n > Math.max(VISIBLE, from));

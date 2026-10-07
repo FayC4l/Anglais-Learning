@@ -10,6 +10,7 @@ import { avatarEl } from "./who.js";
 import { backupCard } from "./backup.js";
 import { tower } from "../store.js";
 import { FLOORS, TOWER_LIVES, TOWER_LEVEL, VISIBLE, visibleTop } from "../tower.js";
+import { heartsHtml } from "./tower.js";
 import { dailyCount, currentLevel } from "./daily.js";
 import { jokeOfTheDay, mentorSays, quip } from "../humor.js";
 import { EXTRA } from "../content.js";
@@ -221,7 +222,7 @@ function towerLineEl(L, lvl) {
     } },
     h("span", { class: "tower-card-floors", "aria-hidden": "true" }, Array.from({ length: 10 }, (_, i) => h("span", { class: i < Math.floor(((t.floor - 1) / visibleTop(t)) * 10) ? "on" : "" }))),
     h("span", { class: "tower-card-text" }, h("strong", null, unlocked ? (t.won ? "Tour conquise : C2 !" : t.floor >= FLOORS ? "Le boss final" : `Étage ${t.floor} / ${visibleTop(t)}`) : "Fermée"), h("small", null, unlocked ? `${t.lives} cœurs · conjugaison, grammaire, écriture, puis le C2` : `${VISIBLE} étages, un boss de conjugaison, de grammaire ou d'écriture à chaque étage, puis le C2.`)),
-    unlocked && !t.won ? h("span", { class: "boss-lives", html: Array.from({ length: TOWER_LIVES }, (_, i) => `<span class="life ${i < t.lives ? "on" : "lost"}">${icon("heart")}</span>`).join("") }) : null,
+    unlocked && !t.won ? h("span", { class: "boss-lives", html: heartsHtml(t.lives) }) : null,
   );
   const section = h("section", { class: `line tower-line ${unlocked ? "" : "locked"} ${t.won ? "complete" : ""}`, style, id: `line-${L}` }, head, card);
   if (!unlocked) section.append(h("p", { class: "line-lock" }, `Bats le boss de la ligne ${L - 1} pour ouvrir la tour.`));
