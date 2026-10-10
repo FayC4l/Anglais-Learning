@@ -68,9 +68,13 @@ await step("leaving the app outside a question: no laugh", async () => {
 
 await page.click("text=Prépa C2");
 await page.click(".c2-part >> text=Part 4");
-await page.waitForSelector(".quiz .gap-box");
+await page.waitForSelector(".quiz .gap-box").catch(async (e) => {
+  await page.screenshot({ path: "shots/anticheat-fail-part4.png" });
+  console.log(errors.join("\n"));
+  throw e;
+});
 
-await step("questions cannot be translated, selected or copied, and carry a watermark", async () => {
+await step("questions cannot be translated, selected or copied", async () => {
   const html = await page.evaluate(() => ({ translate: document.documentElement.getAttribute("translate"), meta: document.querySelector('meta[name="google"]')?.content }));
   if (html.translate !== "no" || html.meta !== "notranslate") throw new Error(`page not marked notranslate: ${JSON.stringify(html)}`);
   const select = await page.evaluate(() => getComputedStyle(document.querySelector(".q-card .q-prompt") || document.querySelector(".q-card")).userSelect);
@@ -85,9 +89,7 @@ await step("questions cannot be translated, selected or copied, and carry a wate
   await page.locator(".q-mount .gap-box").first().fill("still typing");
   if ((await page.locator(".q-mount .gap-box").first().inputValue()) !== "still typing") throw new Error("the answer boxes no longer accept typing");
   await page.locator(".q-mount .gap-box").first().fill("");
-  const wm = await page.evaluate(() => decodeURIComponent(document.querySelector(".quiz .wm").style.getPropertyValue("--wm")));
-  if (!/Hamza/.test(wm)) throw new Error("no watermark with the player's name");
-  if (shots) await page.screenshot({ path: "shots/anticheat-00-watermark.png" });
+  if (await page.locator(".wm").count()) throw new Error("the watermark is back");
 });
 
 await step("a short absence (notification) is forgiven", async () => {
@@ -96,9 +98,10 @@ await step("a short absence (notification) is forgiven", async () => {
   if (await laughShown()) throw new Error("laughed after 1 s away");
 });
 
-await step("leaving the app during a question: he laughs and it is counted", async () => {
+await step("leaving the app during a question: he laughs, it is counted, and the question is cancelled", async () => {
   await away(8000);
   await page.waitForSelector(".laugh .laugh-face");
+  if (!/Question annulée/.test(await page.locator(".feedback:not([hidden]) .fb-title").innerText())) throw new Error("the question was not cancelled");
   await page.clock.runFor(700);
   if (shots) await page.screenshot({ path: "shots/anticheat-01-phone-leave.png" });
   const n = await alerts();
@@ -122,9 +125,25 @@ await step("Windows+Shift: he shows up before the S, counted once the capture to
   if ((await alerts()) !== 2) throw new Error("counted before the capture was certain");
   await page.evaluate(() => window.dispatchEvent(new Event("blur")));
   await page.clock.runFor(200);
+  await page.evaluate(() => window.dispatchEvent(new Event("focus")));
   await page.keyboard.up("Shift");
   await page.keyboard.up("Meta");
   if ((await alerts()) !== 3) throw new Error(`${await alerts()} alerts after the capture tool opened`);
+  await closeLaugh();
+});
+
+await step("losing the focus to another window or an AI overlay cancels the question too", async () => {
+  await page.keyboard.press("Enter"); // = Continuer
+  await page.clock.runFor(400);
+  await page.waitForSelector(".q-mount:not(.answered) .gap-box");
+  await page.evaluate(() => window.dispatchEvent(new Event("blur")));
+  await page.clock.runFor(3000);
+  await page.evaluate(() => window.dispatchEvent(new Event("focus")));
+  await page.waitForSelector(".laugh");
+  if (!/Question annulée/.test(await page.locator(".feedback:not([hidden]) .fb-title").innerText())) throw new Error("the question was not cancelled");
+  await page.clock.runFor(300);
+  if ((await alerts()) !== 4) throw new Error(`${await alerts()} alerts`);
+  if (shots) await page.screenshot({ path: "shots/anticheat-03-cancelled.png" });
   await closeLaugh();
 });
 
@@ -132,7 +151,7 @@ await step("a page translated anyway (Google Translate) makes him laugh, counted
   await page.evaluate(() => document.documentElement.classList.add("translated-ltr"));
   await page.waitForSelector(".laugh");
   await page.clock.runFor(300);
-  if ((await alerts()) !== 4) throw new Error(`${await alerts()} alerts`);
+  if ((await alerts()) !== 5) throw new Error(`${await alerts()} alerts`);
   await closeLaugh();
   await page.evaluate(() => document.documentElement.classList.remove("translated-ltr"));
 });
@@ -180,10 +199,10 @@ await step("Tower: leaving the app during a fight loses it, after the laugh", as
   await page.waitForSelector(".tower");
   const t = await towerSaved();
   if (t.lives !== before - 1 || t.pending) throw new Error(`after leaving a fight: ${JSON.stringify({ lives: t.lives, before, pending: t.pending })}`);
-  if ((await alerts()) !== 5) throw new Error(`${await alerts()} alerts`);
+  if ((await alerts()) !== 6) throw new Error(`${await alerts()} alerts`);
 });
 
-await step("Tower writing boss: no pasting, and leaving is noticed (no heart lost)", async () => {
+await step("Tower writing boss: no pasting; leaving draws a new subject (text kept, no heart lost)", async () => {
   await patch((s) => Object.assign(s.tower, { floor: 5, shown: 5 }));
   await page.click(".next-card.tower-hero");
   await page.click(".tower-go");
@@ -199,12 +218,18 @@ await step("Tower writing boss: no pasting, and leaving is noticed (no heart los
   if (pasted) throw new Error("pasting into the writing boss is allowed");
   await page.waitForSelector(".laugh");
   await closeLaugh();
-  if ((await alerts()) !== 6) throw new Error(`${await alerts()} alerts after pasting`);
+  if ((await alerts()) !== 7) throw new Error(`${await alerts()} alerts after pasting`);
+  const subject = (await towerSaved()).prompts[5];
+  await page.fill("#w-text", "My first sentences stay here.");
   await away(3000);
   await page.waitForSelector(".laugh");
   await closeLaugh();
-  if ((await alerts()) !== 7) throw new Error(`${await alerts()} alerts after leaving the writing boss`);
+  await page.waitForSelector(".w-new-subject");
+  if ((await towerSaved()).prompts[5] === subject) throw new Error("the subject did not change");
+  if ((await page.locator("#w-text").inputValue()) !== "My first sentences stay here.") throw new Error("the text was lost");
+  if ((await alerts()) !== 8) throw new Error(`${await alerts()} alerts after leaving the writing boss`);
   if ((await towerSaved()).lives !== lives) throw new Error("a heart was lost for leaving the writing boss");
+  if (shots) await page.screenshot({ path: "shots/anticheat-04-new-subject.png" });
 });
 
 await step("the profile shows the alerts", async () => {
@@ -213,7 +238,7 @@ await step("the profile shows the alerts", async () => {
   await page.click(".player-chip");
   await page.waitForSelector(".profile");
   const txt = await page.locator(".profile").innerText();
-  if (!/7\s*alertes Chikh Faycal/i.test(txt.replace(/\n/g, " "))) throw new Error("alert count missing in the profile");
+  if (!/8\s*alertes Chikh Faycal/i.test(txt.replace(/\n/g, " "))) throw new Error("alert count missing in the profile");
   if (shots) await page.screenshot({ path: "shots/anticheat-02-profile.png", fullPage: false });
 });
 

@@ -333,12 +333,13 @@ export function renderQuestion(q, mount, { onAnswer, replays = diff().replays, a
   const cleanups = [];
   // When the time runs out, what is already typed (or built) is sent for correction instead of counting as wrong.
   let sendTyped = null;
-  const finish = (ok, given, auto = false) => {
+  // auto: sent when the time ran out; left: cancelled because the player left the app.
+  const finish = (ok, given, auto = false, left = false) => {
     if (answered) return;
     answered = true;
     stopSpeaking();
     mount.classList.add("answered");
-    onAnswer({ ok, given, auto });
+    onAnswer({ ok, given, auto, left });
   };
 
   const audioBtn = (text, { slow = true } = {}) => {
@@ -627,6 +628,10 @@ export function renderQuestion(q, mount, { onAnswer, replays = diff().replays, a
       if (answered) return;
       if (sendTyped?.()) return;
       finish(false, "");
+    },
+    /** The player left the app during the question (an answer from elsewhere would come back): it counts as wrong. */
+    forfeit() {
+      finish(false, "", false, true);
     },
     get answered() {
       return answered;

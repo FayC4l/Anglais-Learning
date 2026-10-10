@@ -297,9 +297,22 @@ async function floorWon(view, n, score) {
   confetti({ count: 80 });
 }
 
+/** Subjects a writing floor can draw from. */
+const floorPrompts = (s) => (s.c2 ? EXTRA.c2papers?.writing || [] : (EXTRA.writing?.prompts || []).filter((p) => p.level === s.level && (!p.ages || p.ages.includes(state.player.age) || p.ages.includes("adulte"))));
+
+/** The player left the app during a writing boss: another subject is drawn (an essay prepared elsewhere is useless). */
+export function newWritingSubject(n) {
+  const t = tower();
+  const current = t.prompts?.[n];
+  const others = floorPrompts(floorSpec(n)).filter((p) => p.id !== current);
+  if (!others.length) return current;
+  delete t.prompts[n];
+  return towerPrompt(n, () => others[Math.floor(Math.random() * others.length)].id);
+}
+
 /** Writing floors: a prompt of the right level, corrected by the workshop; the mark decides. */
 function writingFloor(n, s) {
-  const prompts = s.c2 ? EXTRA.c2papers?.writing || [] : (EXTRA.writing?.prompts || []).filter((p) => p.level === s.level && (!p.ages || p.ages.includes(state.player.age) || p.ages.includes("adulte")));
+  const prompts = floorPrompts(s);
   if (!prompts.length) return go("tower");
   let id = towerPrompt(n, () => prompts[Math.floor(Math.random() * prompts.length)].id);
   // A subject removed from the content since it was drawn: draw again.

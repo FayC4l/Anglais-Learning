@@ -1,13 +1,14 @@
 // Anti-cheat. Phones do not tell web pages about screenshots, so the app watches what cheating needs instead:
-// - leaving the app during a question (to send a screenshot, translate, ask someone…): Chikh Faycal waits for the
-//   player with a grotesque laugh; during a Tower fight or the final exam, the fight is also lost (guardLeaving);
+// - leaving the app during a question (to send a screenshot to an AI, translate, ask someone…), or losing the focus
+//   to a window opened over it (AI or search overlay, other window): Chikh Faycal waits for the player with a grotesque
+//   laugh and the question is cancelled (guardQuestion); a Tower fight or the final exam is lost (guardLeaving); the
+//   Tower writing boss gets a new subject;
 // - translating: the page is marked "notranslate", question texts cannot be selected, copied or right-clicked, and a
 //   page translated anyway (Google Translate) makes him laugh too; nothing can be pasted into the Tower writing boss;
 // - on a computer, the screenshot shortcuts (Print Screen, Windows+Shift+S, Cmd+Shift+3/4/5). With Windows+Shift or
 //   Cmd+Shift he shows up as soon as those two keys are down, so the capture shows him instead of the question;
-// - a watermark with the player's name and the date on every question: a shared capture gives its author away.
 // Alerts during questions are recorded in the profile (state.alerts) and shown on the Tower victory screen.
-import { h, esc } from "./ui.js";
+import { h } from "./ui.js";
 import { state, save } from "./store.js";
 import { mentorFaceHtml } from "./humor.js";
 import { sfx } from "./audio.js";
@@ -49,6 +50,8 @@ let leftDuring = false;
 let translated = false;
 /** While a Tower fight or the final exam is on: called with a promise that settles when the laugh is closed. */
 let guard = null;
+/** While a question (or a Tower writing boss) is on: called when the player comes back, to cancel it. */
+let questionGuard = null;
 
 const pick = (list) => list[Math.floor(Math.random() * list.length)];
 /** The writing boss of a Tower floor is being written. */
@@ -63,6 +66,14 @@ export function guardLeaving(fn) {
   guard = fn;
   return () => {
     if (guard === fn) guard = null;
+  };
+}
+
+/** Registers how to cancel the current question when the player leaves the app; returns the unregister. */
+export function guardQuestion(fn) {
+  questionGuard = fn;
+  return () => {
+    if (questionGuard === fn) questionGuard = null;
   };
 }
 
@@ -125,21 +136,25 @@ const protectedTarget = (t) => {
 };
 
 export function initAntiCheat() {
-  // Leaving the app during a question (phones above all).
-  document.addEventListener("visibilitychange", () => {
-    if (document.visibilityState === "hidden") {
-      leftAt = Date.now();
-      leftDuring = (inQuestion() || !!guard) && !allowed();
-      return;
-    }
+  // Leaving the app (hidden page) or losing the focus (an AI or search window over it) during a question.
+  const leave = () => {
+    if (leftAt) return;
+    leftAt = Date.now();
+    leftDuring = (inQuestion() || !!guard) && !allowed();
+  };
+  const back = () => {
+    if (!leftAt || document.visibilityState === "hidden") return;
     const away = Date.now() - leftAt;
-    if (leftAt && leftDuring && away >= AWAY_MIN_MS && !open) {
-      const closed = show(pick(LEAVE_LINES), true);
-      record("sortie de l'appli pendant une question", true);
-      guard?.(closed);
-    }
+    const during = leftDuring;
     leftAt = 0;
-  });
+    if (!during || away < AWAY_MIN_MS || open) return;
+    const closed = show(pick(LEAVE_LINES), true);
+    record("sortie de l'appli pendant une question", true);
+    if (guard) guard(closed);
+    else questionGuard?.();
+  };
+  document.addEventListener("visibilitychange", () => (document.visibilityState === "hidden" ? leave() : back()));
+  addEventListener("focus", back);
 
   // No selecting, copying, dragging or right-clicking the questions (the way to "Translate" a sentence).
   for (const type of ["copy", "cut", "contextmenu", "selectstart", "dragstart"]) {
@@ -193,20 +208,13 @@ export function initAntiCheat() {
     },
     true,
   );
-  // Windows+Shift+S opens the capture tool, which takes the focus away from the page.
+  // Losing the focus: Windows+Shift+S opens the capture tool; otherwise another window or overlay took it.
   addEventListener("blur", () => {
     if (metaDown && shiftDown) caught("capture d'écran", true);
     metaDown = false;
     shiftDown = false;
+    leave();
   });
-}
-
-/** The player's name and today's date, written faintly across a question area. */
-export function watermarkEl() {
-  const label = `${state.player?.name || "Mission Bilingue"} · ${new Date().toLocaleDateString("fr-CA")}`;
-  // The text is a mask: its colour comes from the theme (dark ink in light mode, light ink in dark mode).
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="300" height="170"><text x="150" y="95" text-anchor="middle" transform="rotate(-24 150 85)" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#000">${esc(label)}</text></svg>`;
-  return h("div", { class: "wm", "aria-hidden": "true", style: { "--wm": `url("data:image/svg+xml,${encodeURIComponent(svg)}")` } });
 }
 
 /** Alerts recorded for the active profile (captures, translations and exits during questions). */

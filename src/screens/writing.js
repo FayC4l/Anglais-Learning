@@ -13,7 +13,8 @@ import { quip, mentorSays } from "../humor.js";
 import { currentLevel } from "./daily.js";
 import { floorSpec, copiedShare, surprise } from "../tower.js";
 import { recordTowerFloor, tower } from "../store.js";
-import { drama } from "./tower.js";
+import { drama, newWritingSubject } from "./tower.js";
+import { guardQuestion } from "../anticheat.js";
 
 const RANGE = (L) => (L <= 2 ? [25, 60] : L <= 4 ? [50, 100] : L <= 6 ? [80, 140] : L <= 8 ? [120, 180] : L <= 10 ? [160, 240] : [220, 320]);
 const CEFR_OF = (L) => (L <= 2 ? "A1" : L <= 4 ? "A2" : L <= 6 ? "B1" : L <= 9 ? "B2" : L <= 11 ? "C1" : "C2");
@@ -74,8 +75,8 @@ const bestOf = (pid) => Math.max(...state.writing.filter((w) => w.promptId === p
 
 // ---------- Editor ----------
 
-/** `tw` = number of the Tower floor when this essay is a writing boss of level 12. */
-function editor(view, p, initial, tw) {
+/** `tw` = number of the Tower floor when this essay is a writing boss of level 12 (`changed`: new subject drawn). */
+function editor(view, p, initial, tw, changed = false) {
   const area = h("textarea", { class: "field w-area", id: "w-text", rows: 12, spellcheck: "false", autocapitalize: "sentences", placeholder: "Write your text here…", "aria-label": "Ton texte en anglais" });
   area.value = initial;
   const counter = h("span", { class: "w-count" });
@@ -99,7 +100,8 @@ function editor(view, p, initial, tw) {
       "div",
       { class: "writing" },
       h("div", { class: "topbar" }, h("button", { type: "button", class: "icon-btn", "aria-label": "Retour", html: icon("back"), onClick: () => (save(), tw ? go("tower") : back(p)) }), h("span", { class: "topbar-title" }, tw ? `La Tour · étage ${tw}` : p.c2 ? "Prépa C2 · Writing" : "Atelier d'écriture")),
-      tw ? h("div", { class: "tower-banner" }, h("strong", null, `Boss d'écriture de l'étage ${tw}. `), `Il faut au moins ${floorSpec(tw).pass}/20. Raté = un cœur de la tour en moins. Recopier le modèle ne marche pas : le correcteur le détecte.`) : null,
+      tw ? h("div", { class: "tower-banner" }, h("strong", null, `Boss d'écriture de l'étage ${tw}. `), `Il faut au moins ${floorSpec(tw).pass}/20. Raté = un cœur de la tour en moins. Recopier le modèle ne marche pas : le correcteur le détecte. Quitter l'appli fait changer le sujet.`) : null,
+      changed ? h("div", { class: "tower-banner ko w-new-subject" }, h("strong", null, "Tu as quitté l'appli : nouveau sujet ! "), "Ton texte est gardé, mais il doit maintenant répondre à ce sujet-ci.") : null,
       promptCard(p),
       h("label", { class: "field-label", for: "w-text" }, "Ton texte"),
       area,
@@ -108,6 +110,15 @@ function editor(view, p, initial, tw) {
     ),
   );
   setTimeout(() => area.focus(), 100);
+  if (tw) {
+    // Leaving the app during the writing boss draws a new subject: an essay asked to an AI for the old one is useless.
+    const unguard = guardQuestion(() => {
+      unguard();
+      if (!view.contains(area)) return;
+      save();
+      editor(view, promptById(newWritingSubject(tw)) || p, area.value, tw, true);
+    });
+  }
   return undefined;
 }
 
