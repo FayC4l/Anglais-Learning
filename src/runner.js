@@ -140,7 +140,7 @@ export function runQuiz(root, questions, opts = {}) {
     showFeedback(q, ok, given, timedOut, extra.stop, auto);
   }
 
-  /** Chikh Fayçal comments now and then: always on a long combo or a timeout, sometimes otherwise. */
+  /** Chikh Faycal comments now and then: always on a long combo or a timeout, sometimes otherwise. */
   function mentorLine(ok, timedOut) {
     if (opts.mentor === false) return null;
     if (timedOut) return mentorSays(quip("timeout"), "sm");

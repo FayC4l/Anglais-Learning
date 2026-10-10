@@ -8,19 +8,20 @@ L'appli d'anglais de toute la famille : du premier « hello » jusqu'au niveau C
 - **Sauvegarde quotidienne** : rappel une fois par jour sur la carte (téléchargement en un clic) et, sur ordinateur avec Chrome ou Edge, fichier de sauvegarde mis à jour automatiquement (Profil → Sauvegarde automatique).
 - **Test de placement adaptatif** (A1 → C2) : les questions montent ou descendent selon tes réponses, puis tu commences à la bonne ligne.
 - **11 lignes, 55 stations, 11 boss** : leçon narrée, atelier de prononciation, mots, 9 mini-jeux, mission orale ou écrite, test de 15 questions.
-- **Niveau 12 : la Tour de Chikh Fayçal** : un boss à chaque étage (conjugaison de plus en plus dure, grammaire, révisions, et un boss d'expression écrite tous les 5 étages), 200 cœurs pour toute la montée (un boss perdu, abandonné ou fui = un cœur ; plus de cœurs = retour à l'étage 1, avec une petite scène dramatique ; un ancien code de sauvegarde ou un vieil onglet ne rend pas les cœurs perdus), 20 secondes de plus par question à partir de l'étage 12, les leçons du bloc à réviser avant chaque combat, et au sommet l'examen blanc complet du C2 Proficiency (200 points pour gagner). La tour ne montre que quelques étages et le boss final… et elle a tendance à grandir.
+- **Niveau 12 : la Tour de Chikh Faycal** : un boss à chaque étage (conjugaison de plus en plus dure, grammaire, révisions, et un boss d'expression écrite tous les 5 étages), 200 cœurs pour toute la montée (un boss perdu, abandonné ou fui = un cœur ; plus de cœurs = retour à l'étage 1, avec une petite scène dramatique ; un ancien code de sauvegarde ou un vieil onglet ne rend pas les cœurs perdus), 20 secondes de plus par question à partir de l'étage 12, les leçons du bloc à réviser avant chaque combat, et au sommet l'examen blanc complet du C2 Proficiency (200 points pour gagner). La tour ne montre que quelques étages et le boss final… et elle a tendance à grandir.
 - **Difficulté unique « Moyenne +++ »** pour tout le monde : 85 % pour réussir un test, chrono serré.
 - **3 vies par boss** : chaque défaite coûte une vie ; sans vie, toutes les stations du niveau sont « à refaire » et les 3 vies reviennent quand leurs tests sont réussis à nouveau.
 - **Boss imprévisibles** : 3 phases (reconnaissance, production, rage), 60 questions réservées par boss, questions générées à l'infini et mémoire anti-répétition (un nouvel essai reprend au plus 20 % des questions du précédent).
 - **Générateurs de questions** : conjugaison (≈ 250 verbes, tous les temps, passif), pluriels, comparatifs, nombres, heure, formation des mots, conditionnels…
 - **Phrases à trous** : une case par mot attendu, avec le nombre de mots affiché.
+- **Anti-triche qui fait rire** : si le joueur quitte l'appli pendant une question (pour envoyer une capture, traduire, demander à quelqu'un…), Chikh Faycal l'attend à son retour avec un fou rire grotesque ; sur ordinateur, les raccourcis de capture d'écran (Impr. écran, Windows+Maj+S, Cmd+Maj+3/4/5) le font apparaître, avant même la dernière touche. Chaque alerte est notée dans le profil et sur l'écran de victoire de la Tour. (Un téléphone ne signale pas les captures d'écran aux sites web : c'est la sortie de l'appli qui est détectée.)
 - **Chrono généreux** : 10 secondes de plus sur chaque question ; quand le temps est écoulé, la réponse déjà tapée (ou la phrase déjà construite) est envoyée et corrigée au lieu d'être comptée fausse.
 - **Conjugueur** de référence et entraînement par verbe.
 - **Entraînement du jour** : répétition espacée (5 boîtes) avec les mots étudiés, les erreurs du carnet et ≈ 1 800 mots de lexique par niveau.
 - **Atelier d'écriture** : 96 sujets + 8 sujets C2, correcteur intégré (orthographe, ≈ 80 règles sur les fautes typiques des francophones, mots de liaison, temps verbaux, consignes) et **note sur 20** en 4 critères. Option : correction par Claude (clé API à saisir dans le profil).
 - **Prépa C2 Proficiency** : Reading & Use of English (parties 1 à 7), Listening, Writing, Speaking, examens blancs notés sur la Cambridge English Scale. Textes 100 % originaux.
 - **Tableau de bord** : radar des compétences, niveau estimé, certificats imprimables.
-- **Chikh Fayçal**, le prof d'anglais de l'app (barbe, gilet crème, cravate et thé à la menthe), pince-sans-rire et bienveillant : répliques, blague du jour (118 jeux de mots expliqués).
+- **Chikh Faycal**, le prof d'anglais de l'app (barbe, gilet crème, cravate et thé à la menthe), pince-sans-rire et bienveillant : répliques, blague du jour (118 jeux de mots expliqués).
 
 ## Jouer
 
@@ -52,8 +53,8 @@ node tools/monkey.mjs        # des centaines de clics au hasard (ordinateur et t
 | `content/lexicon-XX.json` | 150 mots de plus par niveau (entraînement du jour) | idem |
 | `content/placement.json` | 150 questions du test de placement | idem |
 | `content/writing.json` | sujets de rédaction | idem |
-| `content/humor.json` | répliques de Chikh Fayçal et blagues | idem |
-| `content/mentor.json` | images de Chikh Fayçal (générées par `node tools/mentor-sprites.mjs` depuis `assets/`) | — |
+| `content/humor.json` | répliques de Chikh Faycal et blagues | idem |
+| `content/mentor.json` | images de Chikh Faycal (générées par `node tools/mentor-sprites.mjs` depuis `assets/`) | — |
 | `content/wordform.json` | formation des mots | idem |
 | `content/c2-uoe.json`, `content/c2-papers.json` | épreuves C2 Proficiency | idem |
 

@@ -5,6 +5,7 @@ import { family, saveFamily, listProfiles, updateProfile, exportProfile, importB
 import { go } from "../router.js";
 import { englishVoices, ttsReady, coachReady, speak, speakParts, sfx } from "../audio.js";
 import { avatarEl } from "./who.js";
+import { alertCount } from "../anticheat.js";
 import { downloadJSON, pickBackupFile, backupName, downloadFamilyBackup } from "./backup.js";
 import { autoSupported, autoStatus, chooseAutoFile, resumeAuto, disableAuto, daysSinceBackup } from "../autobackup.js";
 
@@ -60,7 +61,8 @@ export function profileScreen(view) {
         h("button", { type: "button", class: "btn btn-small btn-ghost", onClick: () => go("placement", { start: placement?.band || "A2" }) }, h("span", { html: icon("refresh") }), "Repasser le test de placement"),
         listProfiles().length > 1 ? h("button", { type: "button", class: "btn btn-small btn-ghost", onClick: () => go("who") }, "Changer de joueur") : h("button", { type: "button", class: "btn btn-small btn-ghost", onClick: () => go("onboarding", { adding: true }) }, "Ajouter un membre de la famille"),
       ),
-      h("div", { class: "pstats" }, stat(state.xp.toLocaleString("fr-CA"), "XP"), stat(streakAlive(), "jours de suite"), stat(passed, "stations réussies"), stat(wordsLearned(), "mots réussis"), stat(`${acc} %`, "de bonnes réponses"), stat(`${minutes} min`, "de réflexion"), stat(mistakeCount(), "erreurs à revoir"), stat(Object.values(state.bosses).filter((b) => b.defeated && !b.placed).length, "boss battus")),
+      h("div", { class: "pstats" }, stat(state.xp.toLocaleString("fr-CA"), "XP"), stat(streakAlive(), "jours de suite"), stat(passed, "stations réussies"), stat(wordsLearned(), "mots réussis"), stat(`${acc} %`, "de bonnes réponses"), stat(`${minutes} min`, "de réflexion"), stat(mistakeCount(), "erreurs à revoir"), stat(Object.values(state.bosses).filter((b) => b.defeated && !b.placed).length, "boss battus"), stat(alertCount(), "alertes Chikh Faycal")),
+      alertCount() ? h("p", { class: "set-help alerts-help" }, `Alertes : captures d'écran ou sorties de l'appli pendant une question. Dernière : ${new Date(state.alerts[state.alerts.length - 1].at).toLocaleString("fr-CA")}.`) : null,
       h("h2", { class: "section-title" }, "Badges"),
       h("div", { class: "badges" }, BADGES.map((b) => h("div", { class: `badge ${state.badges[b.id] ? "got" : ""}` }, h("span", { class: "badge-ic", html: icon(state.badges[b.id] ? "trophy" : "lock") }), h("strong", null, b.name), h("small", null, b.desc)))),
       h("h2", { class: "section-title" }, "Réglages"),

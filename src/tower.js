@@ -1,4 +1,4 @@
-// The Tower of Chikh Fayçal (level 12): 50 floors, each guarded by a boss, 200 hearts for the whole climb.
+// The Tower of Chikh Faycal (level 12): 50 floors, each guarded by a boss, 200 hearts for the whole climb.
 // Floors 5, 10 … 45 are writing bosses, floor 50 is the C2 Proficiency mock exam. Pure (no DOM).
 
 export const FLOORS = 50;

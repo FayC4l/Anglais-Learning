@@ -250,6 +250,39 @@ export const sfx = {
     [392, 523, 659].forEach((f, i) => tone(f, i === 2 ? 0.45 : 0.14, { type: "square", vol: 0.07, at: 0.5 + i * 0.12 }));
     [[311, 1.25], [294, 1.6], [277, 1.95]].forEach(([f, at], i) => tone(f, i === 2 ? 0.9 : 0.32, { type: "sawtooth", vol: 0.07, at, slide: i === 2 ? 220 : f * 0.97, attack: 0.03 }));
   },
+  /** Chikh Faycal's grotesque laugh: "HA HA HA HO HO" through two vowel formants, wobbling and falling. */
+  laugh: () => {
+    if (!on()) return;
+    const c = ac();
+    if (!c) return;
+    const syllables = [[300, 0], [285, 0.17], [270, 0.34], [255, 0.51], [240, 0.68], [300, 0.95], [230, 1.12], [200, 1.32], [150, 1.6]];
+    syllables.forEach(([f, at], i) => {
+      const t = c.currentTime + at;
+      const dur = i === syllables.length - 1 ? 0.5 : 0.13;
+      const o = c.createOscillator();
+      o.type = "sawtooth";
+      o.frequency.setValueAtTime(f * 1.15, t);
+      o.frequency.exponentialRampToValueAtTime(f * 0.8, t + dur);
+      const g = c.createGain();
+      g.gain.setValueAtTime(0.0001, t);
+      g.gain.exponentialRampToValueAtTime(0.5, t + 0.015);
+      g.gain.exponentialRampToValueAtTime(0.0001, t + dur);
+      // "a" for the first ones, "o" for the last: two band-pass formants.
+      const [f1, f2] = i < 7 ? [800, 1250] : [500, 900];
+      for (const [fq, q, vol] of [[f1, 6, 0.9], [f2, 8, 0.5]]) {
+        const bp = c.createBiquadFilter();
+        bp.type = "bandpass";
+        bp.frequency.value = fq;
+        bp.Q.value = q;
+        const v = c.createGain();
+        v.gain.value = vol;
+        o.connect(g).connect(bp).connect(v).connect(master);
+      }
+      o.start(t);
+      o.stop(t + dur + 0.03);
+      noise(0.05, { vol: 0.12, at, freq: 2500, q: 0.7 }); // the breath of the "h"
+    });
+  },
   /** The Tower collapses: long rumble and falling tones. */
   collapse: () => {
     if (!on()) return;

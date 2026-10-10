@@ -6,6 +6,7 @@ import { persistent } from "./storage.js";
 import { startAutoBackup } from "./autobackup.js";
 import { unlockAudio } from "./audio.js";
 import { toast } from "./ui.js";
+import { initAntiCheat } from "./anticheat.js";
 import { map } from "./screens/home.js";
 import { whoScreen, onboarding } from "./screens/who.js";
 import { welcomeScreen, placementScreen } from "./screens/placement.js";
@@ -48,6 +49,8 @@ const unlock = () => {
 };
 addEventListener("pointerdown", unlock);
 addEventListener("keydown", unlock);
+// Chikh Faycal laughs at screenshots and at leaving the app during a question.
+initAntiCheat();
 // Automatic backup file (Chrome / Edge on a computer, once chosen in the profile).
 startAutoBackup();
 // Never lose the last answers when the tab closes.

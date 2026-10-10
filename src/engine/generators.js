@@ -10,7 +10,7 @@ const S = (text, p) => ({ text, p });
 const SUBJECTS = [
   S("I", "1s"), S("you", "2"), S("he", "3s"), S("she", "3s"), S("we", "1p"), S("they", "3p"),
   S("my sister", "3s"), S("my parents", "3p"), S("Emma", "3s"), S("Noah", "3s"), S("our neighbours", "3p"),
-  S("Chikh Fayçal", "3s"), S("my best friend", "3s"), S("the kids", "3p"), S("Grandpa", "3s"), S("my cousins", "3p"),
+  S("Chikh Faycal", "3s"), S("my best friend", "3s"), S("the kids", "3p"), S("Grandpa", "3s"), S("my cousins", "3p"),
 ];
 const THIRD = SUBJECTS.map((s, i) => (s.p === "3s" ? i : -1)).filter((i) => i >= 0);
 
@@ -86,7 +86,7 @@ const DURATIONS = ["ten years", "three months", "two weeks", "a long time", "fiv
 const POINTS = ["Monday", "last summer", "January", "the spring", "the beginning of the year", "Christmas", "I was a kid"];
 const FOR_SINCE = [
   ["I have known Léa ___ {X}.", "known"], ["We have lived in this apartment ___ {X}.", "lived"], ["She has worked at the hospital ___ {X}.", "worked"],
-  ["They have been friends ___ {X}.", "been"], ["Chikh Fayçal has waited for the bus ___ {X}.", "waited"], ["My dad has played the guitar ___ {X}.", "played"],
+  ["They have been friends ___ {X}.", "been"], ["Chikh Faycal has waited for the bus ___ {X}.", "waited"], ["My dad has played the guitar ___ {X}.", "played"],
 ];
 
 // Passive voice: subject, person, verb, tense, end of the sentence.
@@ -109,7 +109,7 @@ const COND2 = [
   ["If she ___ the answer, she would tell you.", "know", ["knew"], "if + prétérit : know → knew (irrégulier)."],
   ["If my parents won the lottery, they ___ a bigger house.", "buy", ["would buy"], "Conséquence imaginaire : would + buy."],
   ["If I ___ you, I would apologize.", "be", ["were", "was"], "If I were you : avec if, on emploie were (was est accepté à l'oral)."],
-  ["If Chikh Fayçal ___ a car, he would drive to Montreal every weekend.", "have", ["had"], "Situation imaginaire : if + had."],
+  ["If Chikh Faycal ___ a car, he would drive to Montreal every weekend.", "have", ["had"], "Situation imaginaire : if + had."],
   ["If you practised every day, you ___ much faster.", "improve", ["would improve"], "would + verbe de base dans la proposition principale."],
   ["If they ___ closer, we would visit them more often.", "live", ["lived"], "if + prétérit : lived."],
   ["If I could fly, I ___ to Japan for lunch.", "go", ["would go"], "Rêve impossible : would + go."],
@@ -124,7 +124,7 @@ const COND3 = [
   ["If I had known about the party, I ___.", "come", ["would have come"], "would have + participe passé : come → come."],
   ["If it ___, we would have gone to the beach.", "not rain", ["hadn't rained"], "Condition négative dans le passé : hadn't + participe passé."],
   ["If they had taken the bus, they ___ on time.", "arrive", ["would have arrived"], "would have + arrived."],
-  ["If Chikh Fayçal ___ the map, he wouldn't have ended up in Toronto.", "read", ["had read"], "if + had + participe passé : read → read."],
+  ["If Chikh Faycal ___ the map, he wouldn't have ended up in Toronto.", "read", ["had read"], "if + had + participe passé : read → read."],
   ["If you had told me the truth, I ___ angry.", "not be", ["wouldn't have been"], "Conséquence négative passée : wouldn't have been."],
   ["If we ___ a ticket, we would have won a million dollars.", "buy", ["had bought"], "if + had bought (buy → bought)."],
   ["If he had set an alarm, he ___ the meeting.", "not miss", ["wouldn't have missed"], "wouldn't have + participe passé."],

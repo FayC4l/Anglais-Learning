@@ -1,4 +1,4 @@
-// Builds content/mentor.json from the artwork of Chikh Fayçal:
+// Builds content/mentor.json from the artwork of Chikh Faycal:
 //   assets/chikh-faycal-avatar.png  (round portrait)   → "avatar"
 //   assets/chikh-faycal.png         (4 × 4 sheet of expressions) → 16 named expressions
 // Each picture is cut, its plain background (white / checkerboard / beige) made transparent by a flood fill from

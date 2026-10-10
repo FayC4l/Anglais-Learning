@@ -29,6 +29,8 @@ export function go(name, params = {}) {
     if (typeof out === "function") cleanup = out;
   };
   if (document.startViewTransition && !reducedMotion() && route.name) {
-    document.startViewTransition(swap);
+    // A transition can be aborted (e.g. the phone's viewport changes size): the screen is still swapped.
+    const t = document.startViewTransition(swap);
+    for (const p of [t.ready, t.finished, t.updateCallbackDone]) p?.catch(() => {});
   } else swap();
 }

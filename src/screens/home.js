@@ -90,7 +90,7 @@ export function map(view) {
   );
   const joke = jokeOfTheDay(currentLevel());
   const jokeCard = joke
-    ? h("div", { class: "joke-card" }, h("span", { class: "eyebrow" }, "La blague du jour de Chikh Fayçal"), h("p", { class: "joke-en" }, joke.en), h("details", null, h("summary", null, "Je ne comprends pas…"), h("p", null, joke.fr)))
+    ? h("div", { class: "joke-card" }, h("span", { class: "eyebrow" }, "La blague du jour de Chikh Faycal"), h("p", { class: "joke-en" }, joke.en), h("details", null, h("summary", null, "Je ne comprends pas…"), h("p", null, joke.fr)))
     : null;
   const lines = h("div", { class: "lines" });
   for (let L = 1; L <= LINE_COUNT; L++) {
@@ -208,7 +208,7 @@ function towerLineEl(L, lvl) {
     "header",
     { class: "line-head" },
     h("span", { class: "bullet" }, L),
-    h("div", { class: "line-name" }, h("h3", null, "La Tour de Chikh Fayçal"), h("p", null, `${visibleTop(t)} étages + le boss final · ${lvl.cefr}`)),
+    h("div", { class: "line-name" }, h("h3", null, "La Tour de Chikh Faycal"), h("p", null, `${visibleTop(t)} étages + le boss final · ${lvl.cefr}`)),
     h("span", { class: "line-progress" }, t.won ? h("span", { class: "done-badge", html: icon("check") }) : `${t.floor - 1}/${visibleTop(t)}`),
   );
   const card = h(

@@ -1,4 +1,4 @@
-// One-off: turns Maurice the moose into Chikh Fayçal, a human English teacher, in content/humor.json.
+// One-off: turns Maurice the moose into Chikh Faycal, a human English teacher, in content/humor.json.
 import { readFileSync, writeFileSync } from "node:fs";
 
 const file = "content/humor.json";
@@ -7,13 +7,13 @@ const NEW = {
   welcome: {
     0: "[[Hello]] ! J'ai ciré ma moustache pour l'occasion. Tu peux l'admirer, c'est gratuit aujourd'hui.",
     2: "Bienvenue ! Prends un siège, un thé à la menthe et un peu d'anglais. Dans cet ordre, si tu veux.",
-    4: "Salut ! Chikh Fayçal : prof d'anglais, élégant, modeste. Bon, deux sur trois, c'est déjà pas mal.",
+    4: "Salut ! Chikh Faycal : prof d'anglais, élégant, modeste. Bon, deux sur trois, c'est déjà pas mal.",
     5: "[[Ready]] ? Moi, oui. Je suis né prêt. Avec un stylo rouge à la main, d'après ma mère.",
     6: "Bienvenue au cours le plus prestigieux du quartier. Le seul cours du quartier, mais prestigieux quand même.",
     8: "Te revoilà ! Mon cousin de Londres te dit [[hello]]. Avec un accent que même moi, je ne comprends pas.",
     9: "On commence ? J'ai révisé toute la nuit. Bon, j'ai surtout bu du café, mais devant un dictionnaire.",
     13: "[[Good morning]]… ou [[good evening]]. J'ai oublié ma montre, mais jamais mes verbes irréguliers.",
-    14: "Un élève sauvage apparaît ! Chikh Fayçal utilise… [[Welcome]] ! C'est super efficace.",
+    14: "Un élève sauvage apparaît ! Chikh Faycal utilise… [[Welcome]] ! C'est super efficace.",
     16: "[[Nice to see you]] ! Ton cerveau est prêt ? Le mien est échauffé. Ma moustache aussi, par solidarité.",
     20: "Bonjour ! Les verbes irréguliers sont en place, le tableau est propre. Il ne manquait plus que toi.",
     23: "Nouvelle séance chargée ! Pas de pub, pas de microtransactions, juste un prof très classe.",
@@ -28,11 +28,11 @@ const NEW = {
     14: "Bonne réponse ! Ne prends pas la grosse tête, par contre : ici, c'est moi qui ai la plus belle moustache.",
     17: "Exactement ! L'anglais t'a tendu un piège, et tu l'as enjambé comme un champion de saut de haies.",
     18: "Bonne réponse ! Je fais semblant d'être calme. À l'intérieur, je fais la danse de la craie.",
-    19: "[[Correct]] ! Tu viens de gagner le respect de Chikh Fayçal. Ça ne s'achète pas, et ça brille longtemps.",
+    19: "[[Correct]] ! Tu viens de gagner le respect de Chikh Faycal. Ça ne s'achète pas, et ça brille longtemps.",
     22: "Bonne réponse ! [[GG]], comme disent les jeunes. Je suis jeune. Dans ma tête. Et dans ma moustache.",
   },
   wrong: {
-    0: "Faux, mais avec une confiance admirable. Chikh Fayçal respecte ça.",
+    0: "Faux, mais avec une confiance admirable. Chikh Faycal respecte ça.",
     7: "Faux ! Pas grave : chaque erreur muscle le cerveau. C'est scientifique. Presque.",
     9: "[[Not quite]]. L'anglais, c'est comme un thé trop chaud : parfois, ça brûle un peu. On souffle et on continue.",
     11: "Raté ! Mon cousin de Londres aurait fait pire : il aurait répondu avec l'accent cockney.",
@@ -52,7 +52,7 @@ const NEW = {
   timeout: {
     3: "Le sablier gagne cette manche. Mais il n'a pas de moustache, lui. Il ne gagnera pas la guerre.",
     6: "Oups, l'horloge a sonné. J'ai essayé de la retenir avec ma règle. Elle m'a filé entre les doigts.",
-    7: "[[Out of time]] ! Astuce de Chikh Fayçal : lis bien la question, puis fais confiance à ton premier réflexe.",
+    7: "[[Out of time]] ! Astuce de Chikh Faycal : lis bien la question, puis fais confiance à ton premier réflexe.",
     9: "Fini ! Moi aussi, je suis lent le matin. Surtout avant mon café.",
     17: "Fini ! Même mon cousin de Londres répond plus vite. Bon, il répond n'importe quoi, mais vite.",
   },
@@ -90,7 +90,7 @@ const NEW = {
   writing_bad: {
     3: "Bon début ! Ton texte est comme ma moustache à vingt ans : il va pousser et devenir magnifique.",
     7: "Courage ! Mon correcteur automatique fait pire : hier, il a changé « [[teacher]] » en « tea chair ». On a tous nos défis.",
-    8: "Pas encore au point. Astuce de Chikh Fayçal : des phrases courtes, un verbe par phrase, et on vérifie le temps.",
+    8: "Pas encore au point. Astuce de Chikh Faycal : des phrases courtes, un verbe par phrase, et on vérifie le temps.",
     14: "Ton texte a besoin d'un petit coup de peigne, comme ma moustache au réveil. Regarde les corrections et on recoiffe.",
   },
 };
@@ -103,7 +103,7 @@ for (const [sit, lines] of Object.entries(NEW)) {
     n++;
   }
 }
-data.jokes = data.jokes.map((j) => ({ ...j, fr: j.fr.replace("Maurice approuve totalement.", "Chikh Fayçal approuve totalement.").replace(" Typique de Maurice.", " Un orignal courageux !") }));
+data.jokes = data.jokes.map((j) => ({ ...j, fr: j.fr.replace("Maurice approuve totalement.", "Chikh Faycal approuve totalement.").replace(" Typique de Maurice.", " Un orignal courageux !") }));
 const left = JSON.stringify(data).match(/Maurice|orignal(?!s? courageux)|mes bois|andouiller/gi) || [];
 writeFileSync(file, JSON.stringify(data, null, 2) + "\n");
 console.log(`${n} lines rewritten; leftovers: ${left.join(", ") || "none"}`);

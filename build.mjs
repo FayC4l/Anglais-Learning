@@ -56,8 +56,10 @@ const css = ["src/styles.css", "src/styles-v2.css"].filter((p) => existsSync(joi
 const data = JSON.stringify(levels).replace(/</g, "\\u003c");
 const extraData = JSON.stringify(extra).replace(/</g, "\\u003c");
 const dictData = JSON.stringify(dict);
-const fonts =
-  '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=JetBrains+Mono:wght@500;700&display=swap">';
+// The web fonts never block the start of the app: loaded as "print" (not render-blocking), switched on once
+// they arrive. If Google Fonts is slow or unreachable, the app starts at once with the system fonts.
+const FONTS_URL = "https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=JetBrains+Mono:wght@500;700&display=swap";
+const fonts = `<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="${FONTS_URL}" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="${FONTS_URL}"></noscript>`;
 
 const body = `<div id="app"><main id="view"><noscript><p>Mission Bilingue a besoin de JavaScript.</p></noscript></main></div>
 <script>window.__CONTENT__=${data};window.__EXTRA__=${extraData};window.__DICT__=${dictData};</script>

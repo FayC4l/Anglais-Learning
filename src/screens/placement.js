@@ -18,7 +18,7 @@ export const BAND_INFO = {
   C2: { name: "Maîtrise", desc: "Tu joues avec la langue comme un natif cultivé. Objectif : C2 Proficiency !" },
 };
 
-/** First screen of a new profile: Chikh Fayçal says hello and proposes the placement test. */
+/** First screen of a new profile: Chikh Faycal says hello and proposes the placement test. */
 export function welcomeScreen(view) {
   const opt = (title, sub, onClick, primary = false) => h("button", { type: "button", class: `welcome-opt ${primary ? "primary" : ""}`, onClick }, h("strong", null, title), h("small", null, sub));
   view.append(
@@ -27,7 +27,7 @@ export function welcomeScreen(view) {
       { class: "welcome" },
       h("p", { class: "eyebrow" }, `Bienvenue, ${state.player.name} !`),
       h("h1", { class: "page-title" }, "D'où pars-tu ?"),
-      mentorSays(`Salut ${state.player.name} ! Moi c'est Chikh Fayçal, ton prof d'anglais. Avant de grimper, je dois savoir où tu en es. Promis, je ne regarde pas tes réponses… enfin, un peu.`),
+      mentorSays(`Salut ${state.player.name} ! Moi c'est Chikh Faycal, ton prof d'anglais. Avant de grimper, je dois savoir où tu en es. Promis, je ne regarde pas tes réponses… enfin, un peu.`),
       h(
         "div",
         { class: "welcome-opts" },

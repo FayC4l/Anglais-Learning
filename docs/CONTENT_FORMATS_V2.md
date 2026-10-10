@@ -142,7 +142,7 @@ missions déjà présentes dans le niveau.
 
 ## 6. `content/humor.json` — mascotte et blagues
 
-Le prof de l'app s'appelle **Chikh Fayçal** : un prof d'anglais humain, un peu vaniteux, très fier de sa barbe,
+Le prof de l'app s'appelle **Chikh Faycal** : un prof d'anglais humain, un peu vaniteux, très fier de sa barbe,
 de sa cravate, de ses lunettes de soleil et de son thé à la menthe, pince-sans-rire mais bienveillant. Il parle français avec quelques mots anglais en `[[chips]]`.
 ```json
 {

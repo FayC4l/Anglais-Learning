@@ -97,7 +97,7 @@ export function printCertificate(band) {
   <body><div class="c"><div class="m">${mentorFaceHtml("love")}</div><p>Mission Bilingue certifie que</p><p class="n">${esc(state.player.name)}</p>
   <p>a atteint en anglais le niveau</p><p class="b">${band}</p><h1>${names[band]}</h1>
   <p>du Cadre européen commun de référence pour les langues (CECR), selon ses résultats dans l'application.</p>
-  <div class="s"><span>Le ${new Date().toLocaleDateString("fr-CA")}</span><span>Chikh Fayçal, professeur et examinateur en chef</span></div>
+  <div class="s"><span>Le ${new Date().toLocaleDateString("fr-CA")}</span><span>Chikh Faycal, professeur et examinateur en chef</span></div>
   <p style="font-size:.75rem;color:#777;margin-top:24px">Certificat d'encouragement, sans valeur officielle. Pour un diplôme reconnu : Cambridge C2 Proficiency.</p></div>
   <script>setTimeout(()=>print(),400)<\/script></body></html>`;
   const w = window.open("", "_blank");

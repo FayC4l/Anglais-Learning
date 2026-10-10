@@ -39,6 +39,7 @@ export function fresh() {
     placement: null, // { band, line, at }
     c2: {}, // part id: { best, attempts }
     tower: null, // level 12: see freshTower() in tower.js
+    alerts: [], // { at, screen, how }: screenshots or exits during questions (anticheat.js)
   };
 }
 
