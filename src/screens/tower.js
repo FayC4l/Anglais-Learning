@@ -12,7 +12,7 @@ import { confetti, flash, shake, burst } from "../fx.js";
 import { mentorSays, mentorFaceHtml, quip } from "../humor.js";
 import { createMonster } from "./boss.js";
 import { printCertificate } from "./dashboard.js";
-import { alertCount } from "../anticheat.js";
+import { alertCount, guardLeaving } from "../anticheat.js";
 
 export const REWARD = "un jeu PlayStation de ton choix + 25 $";
 
@@ -50,7 +50,7 @@ export function towerScreen(view) {
         "div",
         { class: "tower-rules" },
         h("p", null, h("strong", null, `${top} étages, un boss à chaque étage${grown ? " (pour l'instant)" : ". C'est tout, promis"}. `), "Conjugaison et grammaire de plus en plus dures, un boss d'expression écrite tous les 5 étages, puis le boss final : l'examen blanc du C2 Proficiency."),
-        h("p", null, h("strong", null, `${TOWER_LIVES} cœurs pour toute la montée. `), "Chaque boss perdu, abandonné ou fui (page fermée en plein combat) coûte un cœur. Plus de cœurs : la tour s'effondre et tu recommences à l'étage 1."),
+        h("p", null, h("strong", null, `${TOWER_LIVES} cœurs pour toute la montée. `), "Chaque boss perdu, abandonné ou fui (appli quittée ou page fermée en plein combat) coûte un cœur. Plus de cœurs : la tour s'effondre et tu recommences à l'étage 1."),
         h("p", { class: "tower-reward" }, "🎮 ", h("strong", null, "Au sommet : "), `le C2… et ${REWARD}.`),
         t.resets ? h("p", { class: "tower-resets" }, `La tour s'est déjà effondrée ${t.resets} fois. Elle se souvient de toi.`) : null,
       ),
@@ -171,7 +171,7 @@ function floorIntro(view, n, s) {
         { class: "test-rules boss-rules" },
         h("li", null, h("span", { html: icon("book") }), `${s.count} questions : ${s.tenses.length ? "conjugaison" : "grammaire"} et révisions.`),
         h("li", null, h("span", { html: icon("heart") }), `${s.hearts} erreurs et tu perds le combat (et un cœur de la tour).`),
-        h("li", null, h("span", { html: icon("clock") }), s.extraTime ? `Chrono serré, mais ${s.extraTime} secondes de bonus par question. Fermer la page en plein combat = combat perdu.` : "Le chrono est plus court que dans le reste du jeu. Fermer la page en plein combat = combat perdu."),
+        h("li", null, h("span", { html: icon("clock") }), s.extraTime ? `Chrono serré, mais ${s.extraTime} secondes de bonus par question. Quitter l'appli ou fermer la page en plein combat = combat perdu.` : "Le chrono est plus court que dans le reste du jeu. Quitter l'appli ou fermer la page en plein combat = combat perdu."),
       ),
       reviseLinks(s),
       start,
@@ -209,6 +209,20 @@ function fight(view, n, s) {
   const arena = h("div", { class: "arena", style: { "--line": `var(--l${(n % 11) + 1})` } }, h("div", { class: "arena-head" }, h("span", { class: "arena-name" }, `Étage ${n}`), h("div", { class: "hp" }, hpFill)), canvas, heartsEl);
   let monster = null;
   let hp = questions.length;
+  let over = false;
+  // Leaving the app during the fight (to look the answer up) loses it, once Chikh Faycal has finished laughing.
+  const unguard = guardLeaving(async (laughed) => {
+    if (over) return;
+    over = true;
+    unguard();
+    quiz.stop();
+    monster?.stop();
+    const r = recordTowerFloor(n, false);
+    checkBadges();
+    await laughed;
+    await drama(r, "Tu as quitté l'appli en plein combat : dans la tour, c'est un combat perdu.");
+    go("tower");
+  });
   const quiz = runQuiz(view, questions, {
     title: `Tour · étage ${n}`,
     accent: "var(--l12)",
@@ -235,6 +249,9 @@ function fight(view, n, s) {
       return {};
     },
     onDone: async (results, { quit }) => {
+      if (over) return;
+      over = true;
+      unguard();
       monster?.stop();
       const win = !quit && hearts > 0 && results.length === questions.length;
       const r = recordTowerFloor(n, win);
@@ -298,15 +315,29 @@ function writingFloor(n, s) {
 async function finalFloor(view) {
   const ok = await dialog({
     title: "Le boss final",
-    body: "<p>L'examen blanc <strong>complet</strong> du C2 Proficiency : Reading & Use of English puis Listening (environ 2 h). Ta dernière copie d'écriture C2 compte aussi.</p><p>Il faut <strong>200</strong> sur l'échelle Cambridge pour vaincre la tour. Sinon, tu perds un cœur.</p><p><strong>Une fois commencé, abandonner ou fermer la page = un cœur perdu.</strong> Prévois deux heures au calme.</p>",
+    body: "<p>L'examen blanc <strong>complet</strong> du C2 Proficiency : Reading & Use of English puis Listening (environ 2 h). Ta dernière copie d'écriture C2 compte aussi.</p><p>Il faut <strong>200</strong> sur l'échelle Cambridge pour vaincre la tour. Sinon, tu perds un cœur.</p><p><strong>Une fois commencé, abandonner, quitter l'appli ou fermer la page = un cœur perdu.</strong> Prévois deux heures au calme.</p>",
     actions: [{ label: "Plus tard", value: false }, { label: "Je suis prêt(e)", value: true, primary: true }],
   });
   if (!ok) return;
   startTowerFloor(FLOORS);
   const { towerFinal } = await import("./c2.js");
+  let over = false;
+  const unguard = guardLeaving(async (laughed) => {
+    if (over) return;
+    over = true;
+    unguard();
+    const r = recordTowerFloor(FLOORS, false);
+    checkBadges();
+    await laughed;
+    await drama(r, "Tu as quitté l'appli pendant l'examen final : c'est un examen perdu.");
+    go("tower");
+  });
   towerFinal(
     view,
     async (scale) => {
+      if (over) return;
+      over = true;
+      unguard();
       const r = recordTowerFloor(FLOORS, scale >= 200);
       checkBadges();
       if (r.event === "victory") return victory(view, scale);
@@ -314,6 +345,9 @@ async function finalFloor(view) {
       go("tower");
     },
     async () => {
+      if (over) return;
+      over = true;
+      unguard();
       const r = recordTowerFloor(FLOORS, false);
       checkBadges();
       await drama(r, "Abandonner l'examen final, c'est le perdre.");

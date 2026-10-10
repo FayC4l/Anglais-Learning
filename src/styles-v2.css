@@ -373,3 +373,7 @@
 .laugh-tear.left { left: 30%; } .laugh-tear.right { left: 57%; animation-delay: .35s; }
 @keyframes mouth { from { transform: scaleY(.45) scaleX(.92); } to { transform: scaleY(1.15) scaleX(1.06); } }
 @keyframes tear { from { transform: translateY(0) scale(.6); opacity: 0; } 20% { opacity: 1; } to { transform: translateY(160%) scale(1); opacity: 0; } }
+/* Anti-cheat: questions cannot be selected (no "Translate" menu, no copy), faint watermark with the player's name */
+.quiz, .c2-ex { position: relative; -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; }
+.quiz input, .quiz textarea, .c2-ex input, .c2-ex textarea, .c2-ex select { -webkit-user-select: text; user-select: text; -webkit-touch-callout: default; }
+.wm { position: absolute; inset: 0; z-index: 4; pointer-events: none; background-repeat: repeat; }

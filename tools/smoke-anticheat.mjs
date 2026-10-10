@@ -70,6 +70,26 @@ await page.click("text=Prépa C2");
 await page.click(".c2-part >> text=Part 4");
 await page.waitForSelector(".quiz .gap-box");
 
+await step("questions cannot be translated, selected or copied, and carry a watermark", async () => {
+  const html = await page.evaluate(() => ({ translate: document.documentElement.getAttribute("translate"), meta: document.querySelector('meta[name="google"]')?.content }));
+  if (html.translate !== "no" || html.meta !== "notranslate") throw new Error(`page not marked notranslate: ${JSON.stringify(html)}`);
+  const select = await page.evaluate(() => getComputedStyle(document.querySelector(".q-card .q-prompt") || document.querySelector(".q-card")).userSelect);
+  if (select !== "none") throw new Error(`question text selectable (${select})`);
+  const blocked = await page.evaluate(() => {
+    const ev = new MouseEvent("contextmenu", { bubbles: true, cancelable: true });
+    (document.querySelector(".q-card .q-prompt") || document.querySelector(".q-card")).dispatchEvent(ev);
+    return ev.defaultPrevented;
+  });
+  if (!blocked) throw new Error("right-click / long-press menu not blocked on the question");
+  await page.clock.runFor(200);
+  await page.locator(".q-mount .gap-box").first().fill("still typing");
+  if ((await page.locator(".q-mount .gap-box").first().inputValue()) !== "still typing") throw new Error("the answer boxes no longer accept typing");
+  await page.locator(".q-mount .gap-box").first().fill("");
+  const wm = await page.evaluate(() => decodeURIComponent(getComputedStyle(document.querySelector(".quiz .wm")).backgroundImage));
+  if (!/Hamza/.test(wm)) throw new Error("no watermark with the player's name");
+  if (shots) await page.screenshot({ path: "shots/anticheat-00-watermark.png" });
+});
+
 await step("a short absence (notification) is forgiven", async () => {
   await away(1000);
   await page.clock.runFor(200);
@@ -108,16 +128,92 @@ await step("Windows+Shift: he shows up before the S, counted once the capture to
   await closeLaugh();
 });
 
-await step("the profile shows the alerts", async () => {
+await step("a page translated anyway (Google Translate) makes him laugh, counted", async () => {
+  await page.evaluate(() => document.documentElement.classList.add("translated-ltr"));
+  await page.waitForSelector(".laugh");
+  await page.clock.runFor(300);
+  if ((await alerts()) !== 4) throw new Error(`${await alerts()} alerts`);
+  await closeLaugh();
+  await page.evaluate(() => document.documentElement.classList.remove("translated-ltr"));
+});
+
+/** Edits the saved progress (the Tower register is cleared: the test edits the tower on purpose), then reloads. */
+async function patch(fn) {
+  await page.evaluate((src) => {
+    const g = JSON.parse(localStorage.getItem("mission-bilingue:global"));
+    const key = `mission-bilingue:p:${g.activeId}`;
+    const s = JSON.parse(localStorage.getItem(key));
+    new Function("s", src)(s);
+    localStorage.setItem(key, JSON.stringify(s));
+    localStorage.removeItem("mission-bilingue:towers");
+  }, `(${fn})(s)`);
+  await page.reload({ waitUntil: "domcontentloaded" });
+  await page.waitForSelector(".map");
+}
+const towerSaved = () =>
+  page.evaluate(() => {
+    const g = JSON.parse(localStorage.getItem("mission-bilingue:global"));
+    return JSON.parse(localStorage.getItem(`mission-bilingue:p:${g.activeId}`)).tower;
+  });
+
+await step("Tower: leaving the app during a fight loses it, after the laugh", async () => {
   await page.locator(".quiz-top .icon-btn").click();
   await page.click(".dialog >> text=Quitter");
   await page.clock.runFor(500);
+  await patch((s) => {
+    for (let L = 1; L <= 11; L++) s.bosses[L] = { defeated: true, at: new Date().toISOString() };
+    s.tower = null;
+  });
+  await page.click(".next-card.tower-hero");
+  await page.click(".tower-go");
+  await page.click("text=Combattre");
+  await page.waitForSelector(".arena");
+  const before = (await towerSaved()).lives;
+  await away(3000);
+  await page.waitForSelector(".laugh");
+  await closeLaugh();
+  await page.waitForSelector(".drama");
+  if (!/combat perdu/.test(await page.locator(".drama").innerText())) throw new Error("the drama does not say the fight is lost");
+  await page.clock.runFor(3000);
+  await page.click(".drama-btn");
+  await page.clock.runFor(500);
+  await page.waitForSelector(".tower");
+  const t = await towerSaved();
+  if (t.lives !== before - 1 || t.pending) throw new Error(`after leaving a fight: ${JSON.stringify({ lives: t.lives, before, pending: t.pending })}`);
+  if ((await alerts()) !== 5) throw new Error(`${await alerts()} alerts`);
+});
+
+await step("Tower writing boss: no pasting, and leaving is noticed (no heart lost)", async () => {
+  await patch((s) => Object.assign(s.tower, { floor: 5, shown: 5 }));
+  await page.click(".next-card.tower-hero");
+  await page.click(".tower-go");
+  await page.waitForSelector("#w-text");
+  const lives = (await towerSaved()).lives;
+  const pasted = await page.evaluate(() => {
+    const dt = new DataTransfer();
+    dt.setData("text/plain", "An essay written by someone else.");
+    const ev = new ClipboardEvent("paste", { clipboardData: dt, bubbles: true, cancelable: true });
+    document.querySelector("#w-text").dispatchEvent(ev);
+    return !ev.defaultPrevented;
+  });
+  if (pasted) throw new Error("pasting into the writing boss is allowed");
+  await page.waitForSelector(".laugh");
+  await closeLaugh();
+  if ((await alerts()) !== 6) throw new Error(`${await alerts()} alerts after pasting`);
+  await away(3000);
+  await page.waitForSelector(".laugh");
+  await closeLaugh();
+  if ((await alerts()) !== 7) throw new Error(`${await alerts()} alerts after leaving the writing boss`);
+  if ((await towerSaved()).lives !== lives) throw new Error("a heart was lost for leaving the writing boss");
+});
+
+await step("the profile shows the alerts", async () => {
   await page.goto(`file:///${file.replace(/\\/g, "/").replace(/^\//, "")}`, { waitUntil: "domcontentloaded", timeout: 30000 });
   await page.waitForSelector(".map");
   await page.click(".player-chip");
   await page.waitForSelector(".profile");
   const txt = await page.locator(".profile").innerText();
-  if (!/3\s*alertes Chikh Faycal/i.test(txt.replace(/\n/g, " "))) throw new Error("alert count missing in the profile");
+  if (!/7\s*alertes Chikh Faycal/i.test(txt.replace(/\n/g, " "))) throw new Error("alert count missing in the profile");
   if (shots) await page.screenshot({ path: "shots/anticheat-02-profile.png", fullPage: false });
 });
 

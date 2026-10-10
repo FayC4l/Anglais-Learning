@@ -76,11 +76,12 @@ const out = process.env.OUT_PREFIX || "mission-bilingue";
 writeFileSync(join(root, `dist/${out}.html`), page);
 
 const standalone = `<!doctype html>
-<html lang="fr-CA">
+<html lang="fr-CA" translate="no">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0b6fd0">
+<meta name="google" content="notranslate">
 <title>Mission Bilingue</title>
 <meta name="description" content="Le défi d'anglais en 12 niveaux : leçons, prononciation, mini-jeux, tests et boss.">
 ${fonts}

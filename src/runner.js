@@ -6,6 +6,7 @@ import { recordAnswer, save } from "./store.js";
 import { sfx, speak } from "./audio.js";
 import { floatText, shake, burstAt } from "./fx.js";
 import { quip, mentorSays } from "./humor.js";
+import { watermarkEl } from "./anticheat.js";
 
 /** Seconds added to the timer of every question, everywhere in the app. */
 export const TIME_BONUS = 10;
@@ -44,7 +45,7 @@ export function runQuiz(root, questions, opts = {}) {
   const fb = h("div", { class: "feedback", hidden: true, role: "status", "aria-live": "assertive" });
   const counter = h("span", { class: "quiz-count" });
   const top = h("div", { class: "quiz-top" }, quitBtn, h("div", { class: "quiz-top-mid" }, h("div", { class: "quiz-meta" }, h("span", { class: "quiz-title" }, opts.title || ""), counter, timerText), segs), comboEl);
-  const wrap = h("div", { class: "quiz", style: opts.accent ? { "--accent": opts.accent } : null }, top, timer, opts.aside || null, mount, fb);
+  const wrap = h("div", { class: "quiz", style: opts.accent ? { "--accent": opts.accent } : null }, top, timer, opts.aside || null, mount, fb, watermarkEl());
   root.replaceChildren(wrap);
 
   quitBtn.addEventListener("click", async () => {

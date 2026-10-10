@@ -9,6 +9,7 @@ import { runQuiz, scoreOf } from "../runner.js";
 import { micAvailable, listenOnce } from "../mic.js";
 import { confetti } from "../fx.js";
 import { mentorSays, quip } from "../humor.js";
+import { watermarkEl } from "../anticheat.js";
 
 const U = () => EXTRA.c2uoe || {};
 const P = () => EXTRA.c2papers || {};
@@ -134,6 +135,7 @@ function practice(view, partId, { set, onDone, onQuit } = {}) {
       h(
         "div",
         { class: "c2 c2-ex" },
+        watermarkEl(),
         h("div", { class: "topbar" }, h("button", { type: "button", class: "icon-btn", "aria-label": "Quitter", html: icon("close"), onClick: () => (stopSpeaking(), onDone ? confirmQuit(view, onQuit) : go("c2")) }), h("span", { class: "topbar-title" }, PARTS.find((p) => p.id === partId).title)),
         h("h1", { class: "c2-title" }, title),
         sub ? h("p", { class: "set-help" }, sub) : null,
