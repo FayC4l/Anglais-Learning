@@ -204,8 +204,9 @@ export function initAntiCheat() {
 /** The player's name and today's date, written faintly across a question area. */
 export function watermarkEl() {
   const label = `${state.player?.name || "Mission Bilingue"} · ${new Date().toLocaleDateString("fr-CA")}`;
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="300" height="170"><text x="150" y="95" text-anchor="middle" transform="rotate(-24 150 85)" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="rgba(25,35,70,0.10)">${esc(label)}</text></svg>`;
-  return h("div", { class: "wm", "aria-hidden": "true", style: { backgroundImage: `url("data:image/svg+xml,${encodeURIComponent(svg)}")` } });
+  // The text is a mask: its colour comes from the theme (dark ink in light mode, light ink in dark mode).
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="300" height="170"><text x="150" y="95" text-anchor="middle" transform="rotate(-24 150 85)" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#000">${esc(label)}</text></svg>`;
+  return h("div", { class: "wm", "aria-hidden": "true", style: { "--wm": `url("data:image/svg+xml,${encodeURIComponent(svg)}")` } });
 }
 
 /** Alerts recorded for the active profile (captures, translations and exits during questions). */

@@ -85,7 +85,7 @@ await step("questions cannot be translated, selected or copied, and carry a wate
   await page.locator(".q-mount .gap-box").first().fill("still typing");
   if ((await page.locator(".q-mount .gap-box").first().inputValue()) !== "still typing") throw new Error("the answer boxes no longer accept typing");
   await page.locator(".q-mount .gap-box").first().fill("");
-  const wm = await page.evaluate(() => decodeURIComponent(getComputedStyle(document.querySelector(".quiz .wm")).backgroundImage));
+  const wm = await page.evaluate(() => decodeURIComponent(document.querySelector(".quiz .wm").style.getPropertyValue("--wm")));
   if (!/Hamza/.test(wm)) throw new Error("no watermark with the player's name");
   if (shots) await page.screenshot({ path: "shots/anticheat-00-watermark.png" });
 });

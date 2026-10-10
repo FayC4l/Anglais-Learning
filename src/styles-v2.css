@@ -376,4 +376,6 @@
 /* Anti-cheat: questions cannot be selected (no "Translate" menu, no copy), faint watermark with the player's name */
 .quiz, .c2-ex { position: relative; -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; }
 .quiz input, .quiz textarea, .c2-ex input, .c2-ex textarea, .c2-ex select { -webkit-user-select: text; user-select: text; -webkit-touch-callout: default; }
-.wm { position: absolute; inset: 0; z-index: 4; pointer-events: none; background-repeat: repeat; }
+.wm { position: absolute; inset: 0; z-index: 4; pointer-events: none; background-color: var(--ink); opacity: .1; -webkit-mask-image: var(--wm); mask-image: var(--wm); -webkit-mask-repeat: repeat; mask-repeat: repeat; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .wm { opacity: .13; } }
+:root[data-theme="dark"] .wm { opacity: .13; }

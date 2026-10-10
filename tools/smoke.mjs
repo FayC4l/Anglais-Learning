@@ -234,21 +234,26 @@ async function run({ name, viewport, scheme, tts, placement = false }) {
     await page.waitForSelector(".review");
   });
   await shot("13-review");
-  await step("profile + big brother", async () => {
+  await step("profile", async () => {
     await page.click(".topbar .icon-btn");
     await page.click(".player-chip");
     await page.waitForSelector(".profile");
     await shot("14-profile");
-    await page.click("text=Ouvrir la zone gestion");
-    await page.fill("#pin", "1234");
-    await page.click(".dialog >> text=Valider");
-    await page.waitForSelector(".zone");
-    await page.check("#unlock-all");
-    await shot("15-zone");
+    // The management zone (PIN) and its "unlock all" switch were removed on purpose.
+    if (await page.locator("text=Ouvrir la zone gestion").count()) throw new Error("the management zone is back");
+    await page.waitForSelector("#ai-key");
+    if (await page.locator("#ai-key").inputValue()) throw new Error("the saved API key is put back in the field");
   });
   await step("boss", async () => {
-    await page.click(".topbar .icon-btn");
-    await page.click(".topbar .icon-btn");
+    // The boss of line 1 opens once its stations are passed.
+    await page.evaluate(() => {
+      const g = JSON.parse(localStorage.getItem("mission-bilingue:global"));
+      const key = `mission-bilingue:p:${g.activeId}`;
+      const s = JSON.parse(localStorage.getItem(key));
+      for (const u of ["1.1", "1.2", "1.3", "1.4", "1.5"]) s.units[u] = { ...(s.units[u] || {}), passed: true, best: 0.9, stars: 1 };
+      localStorage.setItem(key, JSON.stringify(s));
+    });
+    await page.reload({ waitUntil: "domcontentloaded" });
     await page.waitForSelector(".map");
     await page.locator(".station.boss .station-btn").first().click();
     await page.waitForTimeout(400);
@@ -304,3 +309,4 @@ await run({ name: "mobile-light", viewport: { width: 390, height: 844 }, scheme:
 await run({ name: "desktop-dark", viewport: { width: 1280, height: 860 }, scheme: "dark", tts: false, placement: true });
 await browser.close();
 console.log(errors.length ? errors.join("\n") : "NO ERRORS");
+process.exit(errors.length ? 1 : 0);
