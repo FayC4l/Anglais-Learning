@@ -46,7 +46,7 @@ export function floorSpec(n) {
     units: block.units,
     part4: !!block.part4,
     count: 10 + Math.floor(n / 5), // 10 → 19 questions
-    hearts: n < 21 ? 3 : 2, // mistakes allowed in the fight
+    hearts: n < 21 ? 4 : 3, // mistakes allowed in the fight
     time: Math.max(0.65, 1 - n * 0.007), // the timer tightens…
     extraTime: n >= EXTRA_TIME_FROM ? EXTRA_TIME : 0, // …but the long sentences of the upper floors get 20 s more
     negQ: Math.min(0.75, 0.2 + k * 0.08 + n / 150), // more negatives and questions

@@ -104,7 +104,7 @@ await step("a lost floor costs a heart, with drama", async () => {
   await page.click(".tower-go");
   await page.click("text=Combattre");
   await page.waitForSelector(".arena");
-  for (let i = 0; i < 10 && !(await page.locator(".drama").count()); i++) {
+  for (let i = 0; i < 24 && !(await page.locator(".drama").count()); i++) {
     if (await page.locator(".feedback:not([hidden]) .btn-continue").count()) {
       await page.click(".btn-continue");
       await page.waitForTimeout(500);

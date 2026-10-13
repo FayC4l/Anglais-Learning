@@ -137,3 +137,9 @@ test("between two copies of a Tower, the one with more events wins", () => {
   assert.equal(newestTower(a, { ...a, id: "other", seq: 99 }), a);
   assert.equal(newestTower(a, undefined), a);
 });
+test("each fight allows 4 mistakes up to floor 20, then 3", () => {
+  assert.equal(floorSpec(1).hearts, 4);
+  assert.equal(floorSpec(20 - 1).hearts, 4);
+  assert.equal(floorSpec(21).hearts, 3);
+  assert.equal(floorSpec(49).hearts, 3);
+});
